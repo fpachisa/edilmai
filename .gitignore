@@ -21,3 +21,4 @@ client/web/build/
 
 # OS
 .DS_Store
+api/.env

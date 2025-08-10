@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'ui/app_theme.dart';
+import 'state/game_state.dart';
 import 'config.dart';
 import 'auth_service.dart';
 import 'screens/home_screen.dart';
@@ -18,6 +20,12 @@ void main() async {
       print('Firebase init error: $e');
     }
   }
+  // Load local game state (web localStorage if available)
+  try {
+    await GameStateController.instance.load();
+  } catch (e) {
+    // ignore
+  }
   runApp(const EdilApp());
 }
 
@@ -26,11 +34,7 @@ class EdilApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = ThemeData(
-      useMaterial3: true,
-      colorSchemeSeed: Colors.indigo,
-      textTheme: GoogleFonts.interTextTheme(),
-    );
+    final theme = AppTheme.theme();
     return MaterialApp(
       title: 'EDIL AI Tutor',
       theme: theme,

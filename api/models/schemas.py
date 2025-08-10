@@ -65,6 +65,11 @@ class SessionStartRequest(BaseModel):
     item_id: str
 
 
+class AdaptiveSessionStartRequest(BaseModel):
+    learner_id: str
+    item_id: Optional[str] = None
+
+
 class SessionStartResponse(BaseModel):
     session_id: str
     step_id: str

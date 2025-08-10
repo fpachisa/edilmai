@@ -1,28 +1,13 @@
 from __future__ import annotations
-from typing import Tuple, Optional, Dict, Any
-import re
+from typing import Tuple, Optional, Dict, Any, List
 from sympy import sympify, Eq
 
 from core.config import settings
 from .llm import build_llm, LLMClient
 
 
-def regex_match(user: str, patterns) -> bool:
-    if not patterns:
-        return False
-    normalized = user.replace(" ", "").lower()
-    for p in patterns:
-        eq = p.get("equivalent_to")
-        if not eq:
-            continue
-        if normalized == eq.replace(" ", "").lower():
-            return True
-        if re.fullmatch(eq, normalized):
-            return True
-    return False
-
-
 def cas_equivalent(user: str, target: str) -> bool:
+    """Fallback CAS check for complex algebraic expressions."""
     try:
         return bool(Eq(sympify(user), sympify(target)))
     except Exception:
@@ -33,43 +18,79 @@ class SimpleOrchestrator:
     def __init__(self, llm: LLMClient | None = None):
         self._llm = llm or build_llm()
 
-    def evaluate(self, user_response: str, item: dict, step: dict, attempts_so_far: int) -> Tuple[Optional[bool], Optional[str], Optional[str]]:
-        """Evaluate response against rules and return (correctness, next_prompt, hint).
+    def evaluate(self, user_response: str, item: dict, step: dict, attempts_so_far: int, 
+                session: dict = None) -> Tuple[Optional[bool], Optional[str], Optional[str], Optional[str]]:
+        """Evaluate response using AI tutor and return (correctness, next_prompt, hint, learning_insight).
 
         - correctness True: caller should advance to next step and show next prompt (if any)
         - correctness None/False: keep same step; provide hint based on attempts
         """
-        rules = (item.get("evaluation") or {}).get("rules") or {}
-        # 1) Regex exact/normalised
-        if settings.regex_enabled and regex_match(user_response, rules.get("regex")):
-            return True, "Great! Let's go to the next step.", None
-        # 2) CAS equivalence if enabled
-        if settings.cas_enabled and rules.get("algebraic_equivalence"):
-            targets = [r.get("equivalent_to") for r in (rules.get("regex") or []) if r.get("equivalent_to")]
-            for t in targets:
-                if cas_equivalent(user_response, t):
-                    return True, "Nice work. Next step coming up.", None
-        # 3) Not correct → prefer human-like Socratic nudge via LLM
-        if self._llm:
-            msg = self._llm.generate_socratic(
-                problem_text=item.get("problem_text", ""),
-                step_prompt=step.get("prompt", ""),
-                user_response=user_response,
-                attempts=attempts_so_far,
-            )
-            if msg:
-                return None, None, msg
-        # Fallback: choose a concise hint from the ladder
-        hint_text = self._pick_hint(step, attempts_so_far)
-        return None, None, hint_text
+        if not self._llm:
+            # Fallback if LLM is not available
+            return None, None, "I need to think about this. Let's try again.", None
 
-    def _pick_hint(self, step: Dict[str, Any], attempts_so_far: int) -> str:
-        hints = step.get("hints") or []
-        # Map attempts 0→L1, 1→L2, 2+→L3 (cap)
-        desired_level = min(3, attempts_so_far + 1)
-        # try exact level, else the highest available below desired, else any
-        for level in (desired_level, desired_level - 1, desired_level + 1):
-            for h in hints:
-                if h.get("level") == level:
-                    return h.get("text") or "Think about the operation needed."
-        return (hints[0].get("text") if hints else None) or "Let's break it down: what changes from b when 4 are added?"
+        # Extract hints from step to use as guidelines
+        hints_guidelines = step.get("hints", [])
+        
+        # Extract expected answers from evaluation rules
+        expected_answers = []
+        rules = (item.get("evaluation") or {}).get("rules") or {}
+        regex_patterns = rules.get("regex", [])
+        for pattern in regex_patterns:
+            if pattern.get("equivalent_to"):
+                expected_answers.append(pattern["equivalent_to"])
+
+        # Get conversation context if session is provided
+        conversation_history = []
+        learning_insights = []
+        if session:
+            conversation_history = session.get("conversation_history", [])
+            learning_insights = session.get("learning_insights", [])
+            # Add misconception context to insights
+            misconception_summary = session.get("misconceptions", {})
+            if misconception_summary:
+                misconception_text = "Past misconceptions: " + ", ".join([
+                    f"{tag} ({data['count']}x)" for tag, data in misconception_summary.items()
+                ])
+                learning_insights.append({"insight": misconception_text, "confidence": 1.0})
+
+        # Use AI to evaluate and respond
+        ai_response = self._llm.evaluate_and_respond(
+            problem_text=item.get("problem_text", ""),
+            step_prompt=step.get("prompt", ""),
+            user_response=user_response,
+            attempts=attempts_so_far,
+            hints_guidelines=hints_guidelines,
+            expected_answers=expected_answers,
+            conversation_history=conversation_history,
+            learning_insights=learning_insights
+        )
+
+        is_correct = ai_response.get("is_correct", False)
+        response_text = ai_response.get("response", "Let's try again.")
+        should_advance = ai_response.get("should_advance", False)
+        learning_insight = ai_response.get("learning_insight", "")
+        misconception_tags = ai_response.get("misconception_tags", [])
+        confidence_level = ai_response.get("confidence_level", 1.0)
+
+        # Additional CAS check as fallback for complex algebraic expressions
+        if not is_correct and settings.cas_enabled and expected_answers:
+            for expected in expected_answers:
+                if cas_equivalent(user_response.strip(), expected.strip()):
+                    is_correct = True
+                    should_advance = True
+                    response_text = "Excellent! That's mathematically equivalent. Let's move on."
+                    break
+
+        # Return results with misconception data
+        result = {
+            "learning_insight": learning_insight,
+            "misconception_tags": misconception_tags,
+            "confidence_level": confidence_level
+        }
+        
+        if is_correct and should_advance:
+            return True, response_text, None, result
+        else:
+            # Return as hint for incorrect responses
+            return None, None, response_text, result

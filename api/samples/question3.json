@@ -1,0 +1,48 @@
+{
+  "topic": "Algebra",
+  "version": "enhanced-v1", 
+  "items": [
+    {
+      "id": "ALG-S1-M1",
+      "topic": "Algebra",
+      "title": "Division as a Fraction", 
+      "learn_step": 1,
+      "complexity": "Medium",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": ["use-variable", "form-division-expression"],
+      "estimated_time_seconds": 45,
+      "problem_text": "A rope of 'k' metres long is cut into 8 equal pieces. Write an expression for the length of each piece of rope.",
+      "assets": {"manipulatives": [], "image_url": null, "svg_code": null},
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "s1",
+            "prompt": "If a rope of k metres is cut into 8 equal pieces, what is the length of each piece?", 
+            "hints": [
+              {"level": 1, "text": "The total length is k metres."},
+              {"level": 2, "text": "Cut into equal pieces means division."},
+              {"level": 3, "text": "Write it as k/8 (k divided by 8)."}
+            ]
+          }
+        ],
+        "reflect_prompts": ["Why is it division and not subtraction?"],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": ["k/8"],
+        "common_pitfalls": [{"text": "k-8 instead of k/8", "tag": "subtraction-for-division"}]
+      },
+      "telemetry": {"scoring": {"xp": 15, "bonus_no_hints": 3}, "prereqs": [], "next_items": []},
+      "evaluation": {
+        "rules": {
+          "regex": [{"equivalent_to": "k/8"}],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Regex → CAS → LLM adjudication"
+      }
+    }
+  ]
+}

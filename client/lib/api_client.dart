@@ -37,6 +37,42 @@ class ApiClient {
     return res.data as Map<String, dynamic>;
   }
 
+  Future<Map<String, dynamic>> startAdaptiveSession({required String learnerId, String? itemId}) async {
+    final data = {'learner_id': learnerId};
+    if (itemId != null) {
+      data['item_id'] = itemId;
+    }
+    final res = await _dio.post('/v1/session/start-adaptive', data: data);
+    return res.data as Map<String, dynamic>;
+  }
+
+  Future<Map<String, dynamic>> continueProgression({required String sessionId}) async {
+    final res = await _dio.post('/v1/session/continue-progression', data: {
+      'session_id': sessionId,
+    });
+    return res.data as Map<String, dynamic>;
+  }
+
+  Future<Map<String, dynamic>> getSession({required String sessionId}) async {
+    final res = await _dio.get('/v1/session/$sessionId');
+    return res.data as Map<String, dynamic>;
+  }
+
+  Future<Map<String, dynamic>> getProgressionStatus({required String learnerId}) async {
+    final res = await _dio.get('/v1/session/progression-status/$learnerId');
+    return res.data as Map<String, dynamic>;
+  }
+
+  Future<Map<String, dynamic>> getItem({required String itemId}) async {
+    final res = await _dio.get('/v1/items/$itemId');
+    return res.data as Map<String, dynamic>;
+  }
+
+  Future<Map<String, dynamic>> ingestJson({required String jsonData}) async {
+    final res = await _dio.post('/v1/items/ingest', data: jsonDecode(jsonData));
+    return res.data as Map<String, dynamic>;
+  }
+
   Future<Map<String, dynamic>> step({
     required String sessionId,
     required String stepId,
@@ -58,6 +94,21 @@ class ApiClient {
   Future<Map<String, dynamic>> whoAmI() async {
     final res = await _dio.get('/whoami');
     return res.data as Map<String, dynamic>;
+  }
+
+  Future<Map<String, dynamic>> getHomeFeed({required String learnerId}) async {
+    final res = await _dio.get('/v1/homefeed/$learnerId');
+    return res.data as Map<String, dynamic>;
+  }
+
+  Future<List<dynamic>> listTopics() async {
+    final res = await _dio.get('/v1/catalog/topics');
+    return res.data as List<dynamic>;
+  }
+
+  Future<List<dynamic>> listCollections() async {
+    final res = await _dio.get('/v1/catalog/collections');
+    return res.data as List<dynamic>;
   }
 
   Future<void> ensureSampleItem() async {

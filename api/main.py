@@ -5,7 +5,7 @@ from pathlib import Path
 from fastapi.responses import JSONResponse
 import os
 
-from routers.v1 import items, session, leaderboards, profiles
+from routers.v1 import items, session, leaderboards, profiles, home
 from core.config import settings
 from core.auth import init_firebase, verify_bearer_token
 
@@ -53,6 +53,7 @@ app.include_router(items.router, prefix="/v1", tags=["items"])
 app.include_router(session.router, prefix="/v1", tags=["session"])
 app.include_router(leaderboards.router, prefix="/v1", tags=["leaderboards"])
 app.include_router(profiles.router, prefix="/v1", tags=["profiles"])
+app.include_router(home.router, prefix="/v1", tags=["home"])
 
 
 # Enable permissive CORS in dev to allow local web UI testing

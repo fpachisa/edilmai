@@ -1,0 +1,48 @@
+{
+  "topic": "Algebra",
+  "version": "enhanced-v1",
+  "items": [
+    {
+      "id": "ALG-S1-E2",
+      "topic": "Algebra", 
+      "title": "Multiplying an Unknown",
+      "learn_step": 1,
+      "complexity": "Easy",
+      "difficulty": 0.3,
+      "skill": "Algebraic Expressions",
+      "subskills": ["use-variable", "form-multiplication-expression"],
+      "estimated_time_seconds": 30,
+      "problem_text": "A box contains 'n' pencils. How many pencils are there in 5 such boxes? Write an expression in terms of 'n'.",
+      "assets": {"manipulatives": [], "image_url": null, "svg_code": null},
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "s1",
+            "prompt": "If one box has n pencils, how many pencils are in 5 boxes total?",
+            "hints": [
+              {"level": 1, "text": "Think about finding the total for multiple groups."},
+              {"level": 2, "text": "The operation needed is multiplication."},
+              {"level": 3, "text": "Write it as 5n (5 times n)."}
+            ]
+          }
+        ],
+        "reflect_prompts": ["Why is it multiplication and not addition?"],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": ["5n"],
+        "common_pitfalls": [{"text": "n+5 instead of 5n", "tag": "addition-for-multiply"}]
+      },
+      "telemetry": {"scoring": {"xp": 10, "bonus_no_hints": 2}, "prereqs": [], "next_items": []},
+      "evaluation": {
+        "rules": {
+          "regex": [{"equivalent_to": "5n"}],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Regex → CAS → LLM adjudication"
+      }
+    }
+  ]
+}

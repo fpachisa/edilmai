@@ -12,3 +12,4 @@ black==24.4.2
 jsonschema==4.23.0
 pytest==8.3.2
 google-cloud-aiplatform==1.64.0
+google-generativeai==0.8.3
