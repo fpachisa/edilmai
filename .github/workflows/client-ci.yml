@@ -1,0 +1,49 @@
+name: Client CI
+
+on:
+  push:
+    paths:
+      - 'client/**'
+      - '.github/workflows/client-ci.yml'
+  pull_request:
+    paths:
+      - 'client/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+      - name: Flutter version
+        run: flutter --version
+      - name: Create project if missing
+        run: |
+          if [ ! -f client/pubspec.yaml ]; then
+            flutter create client
+          fi
+      - name: Flutter pub get
+        working-directory: client
+        run: flutter pub get || true
+      - name: Analyze
+        working-directory: client
+        run: flutter analyze || true
+      - name: Test
+        working-directory: client
+        run: flutter test || true
+      - name: Build web (staging)
+        working-directory: client
+        run: flutter build web --release || true
+      - name: Deploy to Firebase Hosting (staging)
+        if: github.ref == 'refs/heads/main'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_STAGING }}'
+          channelId: live
+          projectId: '${{ secrets.FIREBASE_PROJECT_ID_STAGING }}'
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
+

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EDIL Tutor Demo UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>EDIL AI Tutor — Demo</h1>
+      <div class="card">
+        <label>API Base URL</label>
+        <input id="apiUrl" type="text" value="http://localhost:8000" />
+      </div>
+      <div class="row">
+        <button id="btnIngest">Ingest Sample Items</button>
+        <input id="learnerId" type="text" placeholder="learner id" value="demo" />
+        <button id="btnStart">Start Session</button>
+        <button id="btnEnd" disabled>End Session</button>
+      </div>
+      <div id="sessionInfo" class="card small"></div>
+      <div id="prompt" class="prompt"></div>
+      <div class="row">
+        <input id="answer" type="text" placeholder="Type your answer (e.g., b+4)" />
+        <button id="btnSubmit" disabled>Submit Answer</button>
+      </div>
+      <div id="hint" class="hint"></div>
+      <pre id="log" class="log"></pre>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
+

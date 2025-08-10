@@ -1,0 +1,2775 @@
+{
+  "topic": "Algebra",
+  "version": "enhanced-v1",
+  "items": [
+    {
+      "id": "ALG-S1-E1",
+      "topic": "Algebra",
+      "title": "Adding to an Unknown",
+      "learn_step": 1,
+      "complexity": "Easy",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "form-expression"
+      ],
+      "estimated_time_seconds": 30,
+      "problem_text": "Amelia has 'b' books. She buys 4 more books. Write an expression for the total number of books she has now.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Identify the initial quantity, which is 'b' books.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Start with the initial number of books, which is 'b'.",
+              "L2": "The term 'more' suggests addition.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Identify the change, which is adding 4 books.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The term 'more' suggests addition.",
+              "L2": "Combine the initial amount and the new amount.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Write the expression by combining the initial quantity and the change: b + 4.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Combine the initial amount and the new amount.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "b + 4"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Identify the initial quantity, which is 'b' books.",
+          "Step 2: Identify the change, which is adding 4 books.",
+          "Step 3: Write the expression by combining the initial quantity and the change: b + 4."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Writing '4b', which implies multiplication.",
+            "tag": null
+          },
+          {
+            "text": "Writing 'b - 4', which would mean she lost books.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "b + 4"
+            },
+            {
+              "regex": "^b\\+4$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S1-E2",
+      "topic": "Algebra",
+      "title": "Multiplying an Unknown",
+      "learn_step": 1,
+      "complexity": "Easy",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "form-expression"
+      ],
+      "estimated_time_seconds": 30,
+      "problem_text": "A box contains 'n' pencils. How many pencils are there in 5 such boxes? Write an expression in terms of 'n'.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: The number of pencils in one box is 'n'.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Think about finding the total for multiple groups.",
+              "L2": "The operation needed is multiplication.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: To find the total for 5 boxes, we need to multiply the number of pencils per box by 5.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The operation needed is multiplication.",
+              "L2": "In algebra, we write the number before the letter.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: The expression is 5 × n, which is written as '5n' in algebra.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "In algebra, we write the number before the letter.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "5n"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: The number of pencils in one box is 'n'.",
+          "Step 2: To find the total for 5 boxes, we need to multiply the number of pencils per box by 5.",
+          "Step 3: The expression is 5 × n, which is written as '5n' in algebra."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Writing 'n + 5', which would mean adding 5 pencils instead of 5 boxes.",
+            "tag": null
+          },
+          {
+            "text": "Writing 'n5' instead of the conventional '5n'.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "5n"
+            },
+            {
+              "regex": "^5n$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S1-M1",
+      "topic": "Algebra",
+      "title": "Division as a Fraction",
+      "learn_step": 1,
+      "complexity": "Medium",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "form-expression"
+      ],
+      "estimated_time_seconds": 45,
+      "problem_text": "A rope of 'k' metres long is cut into 8 equal pieces. Write an expression for the length of each piece of rope.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: The total length of the rope is 'k' metres.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The total length is 'k'.",
+              "L2": "The rope is 'cut into equal pieces', which means division.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: It is divided into 8 equal parts.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The rope is 'cut into equal pieces', which means division.",
+              "L2": "In algebra, division is often written as a fraction.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: The operation is k ÷ 8.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "In algebra, division is often written as a fraction.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: Write this as a fraction: k/8.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "In algebra, division is often written as a fraction.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "k/8"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: The total length of the rope is 'k' metres.",
+          "Step 2: It is divided into 8 equal parts.",
+          "Step 3: The operation is k ÷ 8.",
+          "Step 4: Write this as a fraction: k/8."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Writing '8/k', which would mean dividing 8 by the length of the rope.",
+            "tag": null
+          },
+          {
+            "text": "Writing 'k - 8', which is subtraction.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "k/8"
+            },
+            {
+              "regex": "^k/8$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S1-M2",
+      "topic": "Algebra",
+      "title": "Two-Step Expression",
+      "learn_step": 1,
+      "complexity": "Medium",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "form-expression"
+      ],
+      "estimated_time_seconds": 60,
+      "problem_text": "Raju has 'x' stickers. Ken has twice as many stickers as Raju. Ken then gives away 7 stickers. Write an expression for the number of stickers Ken has left.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Raju has 'x' stickers.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "First, find out how many stickers Ken has in terms of 'x'. 'Twice as many' means multiply by 2.",
+              "L2": "Then, account for the stickers Ken 'gives away'. This means subtraction.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Ken has twice as many, so Ken has 2 × x = 2x stickers.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Then, account for the stickers Ken 'gives away'. This means subtraction.",
+              "L2": "Combine these two steps into one expression.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Ken gives away 7 stickers, so we subtract 7 from his total.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Combine these two steps into one expression.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: The final expression for the number of stickers Ken has is 2x - 7.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Combine these two steps into one expression.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "2x - 7"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Raju has 'x' stickers.",
+          "Step 2: Ken has twice as many, so Ken has 2 × x = 2x stickers.",
+          "Step 3: Ken gives away 7 stickers, so we subtract 7 from his total.",
+          "Step 4: The final expression for the number of stickers Ken has is 2x - 7."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Writing 'x + 2 - 7', which misunderstands 'twice'.",
+            "tag": null
+          },
+          {
+            "text": "Writing '2(x - 7)', which would mean Raju gave away stickers first.",
+            "tag": null
+          },
+          {
+            "text": "Calculating 'x - 7' first, which is incorrect.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "2x - 7"
+            },
+            {
+              "regex": "^2x\\-7$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S1-H1",
+      "topic": "Algebra",
+      "title": "Expression with Unit Conversion",
+      "learn_step": 1,
+      "complexity": "Hard",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "form-expression"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "A container has a total of 'w' litres of water. If the water is used to fill bottles that can each hold 500 ml, write an expression for the total number of bottles that can be filled.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Recall the conversion: 1 litre = 1000 ml.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The units are different (litres and ml). You must make them the same first.",
+              "L2": "How many ml are there in 1 litre?",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Convert the total volume of water from litres to ml. Total volume = w × 1000 = 1000w ml.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "How many ml are there in 1 litre?",
+              "L2": "Convert the total volume to ml, then divide by the volume of one bottle.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Each bottle holds 500 ml.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Convert the total volume to ml, then divide by the volume of one bottle.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: To find the number of bottles, divide the total volume in ml by the volume of one bottle: 1000w / 500.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Convert the total volume to ml, then divide by the volume of one bottle.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Step 5: Simplify the expression: 1000/500 = 2. The final expression is 2w.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Convert the total volume to ml, then divide by the volume of one bottle.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S6",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "2w"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Recall the conversion: 1 litre = 1000 ml.",
+          "Step 2: Convert the total volume of water from litres to ml. Total volume = w × 1000 = 1000w ml.",
+          "Step 3: Each bottle holds 500 ml.",
+          "Step 4: To find the number of bottles, divide the total volume in ml by the volume of one bottle: 1000w / 500.",
+          "Step 5: Simplify the expression: 1000/500 = 2. The final expression is 2w."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Dividing 'w' by 500 directly, without converting units (w/500).",
+            "tag": null
+          },
+          {
+            "text": "Multiplying instead of dividing.",
+            "tag": null
+          },
+          {
+            "text": "Using the wrong conversion factor for litres to millilitres.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "2w"
+            },
+            {
+              "regex": "^2w$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S2-E1",
+      "topic": "Algebra",
+      "title": "Combining Like Terms (Addition)",
+      "learn_step": 2,
+      "complexity": "Easy",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "simplify-expression"
+      ],
+      "estimated_time_seconds": 20,
+      "problem_text": "Simplify the following expression: 7a + 5a",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Identify that both 7a and 5a are like terms.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The terms '7a' and '5a' are 'like terms' because they both have the variable 'a'.",
+              "L2": "Think of it as '7 apples + 5 apples'.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Add the coefficients (the numbers): 7 + 5 = 12.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Think of it as '7 apples + 5 apples'.",
+              "L2": "Add the numbers (coefficients) in front of the letter.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Keep the common variable 'a'.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Add the numbers (coefficients) in front of the letter.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: The simplified expression is 12a.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Add the numbers (coefficients) in front of the letter.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "12a"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Identify that both 7a and 5a are like terms.",
+          "Step 2: Add the coefficients (the numbers): 7 + 5 = 12.",
+          "Step 3: Keep the common variable 'a'.",
+          "Step 4: The simplified expression is 12a."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Leaving the answer as '12', forgetting the 'a'.",
+            "tag": null
+          },
+          {
+            "text": "Thinking the terms cannot be combined.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "12a"
+            },
+            {
+              "regex": "^12a$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S2-E2",
+      "topic": "Algebra",
+      "title": "Simplifying with a Constant",
+      "learn_step": 2,
+      "complexity": "Easy",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "simplify-expression"
+      ],
+      "estimated_time_seconds": 30,
+      "problem_text": "Simplify the following expression: 10 + 4k + 3",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Identify the like terms. The constants '10' and '3' are like terms. '4k' is a separate term.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "You can only combine 'like terms'.",
+              "L2": "Which terms are the numbers (constants)? Which terms have 'k'?",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Group the like terms: 4k + (10 + 3).. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Which terms are the numbers (constants)? Which terms have 'k'?",
+              "L2": "Group the like terms together before adding.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Combine the constants: 10 + 3 = 13.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Group the like terms together before adding.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: The simplified expression is 4k + 13.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Group the like terms together before adding.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "4k + 13"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Identify the like terms. The constants '10' and '3' are like terms. '4k' is a separate term.",
+          "Step 2: Group the like terms: 4k + (10 + 3).",
+          "Step 3: Combine the constants: 10 + 3 = 13.",
+          "Step 4: The simplified expression is 4k + 13."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Adding everything together to get '17k'.",
+            "tag": null
+          },
+          {
+            "text": "Thinking that '4k' and '13' can be combined.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "4k + 13"
+            },
+            {
+              "regex": "^4k\\+13$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S2-M1",
+      "topic": "Algebra",
+      "title": "Simplifying with Subtraction",
+      "learn_step": 2,
+      "complexity": "Medium",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "simplify-expression"
+      ],
+      "estimated_time_seconds": 45,
+      "problem_text": "Simplify the following expression: 9p + 6 - 5p + 2",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Rearrange and group the like terms: (9p - 5p) + (6 + 2).. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Group the terms with 'p' together.",
+              "L2": "Group the number terms (constants) together.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Simplify the 'p' terms: 9p - 5p = 4p.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Group the number terms (constants) together.",
+              "L2": "Be careful with the signs (+ and -) when combining.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Simplify the constant terms: 6 + 2 = 8.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Be careful with the signs (+ and -) when combining.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: Combine the results: 4p + 8.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Be careful with the signs (+ and -) when combining.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "4p + 8"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Rearrange and group the like terms: (9p - 5p) + (6 + 2).",
+          "Step 2: Simplify the 'p' terms: 9p - 5p = 4p.",
+          "Step 3: Simplify the constant terms: 6 + 2 = 8.",
+          "Step 4: Combine the results: 4p + 8."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Incorrectly subtracting or adding the numbers.",
+            "tag": null
+          },
+          {
+            "text": "Combining 'p' terms with constant terms, for example '4p + 8 = 12p'.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "4p + 8"
+            },
+            {
+              "regex": "^4p\\+8$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S2-H1",
+      "topic": "Algebra",
+      "title": "Simplifying with Multiple Variables",
+      "learn_step": 2,
+      "complexity": "Hard",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "simplify-expression"
+      ],
+      "estimated_time_seconds": 75,
+      "problem_text": "Simplify the following expression: 8x + 10 + 3y - 5x - y + 4",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Identify and group the 'x' terms: 8x - 5x.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "There are three types of terms here: terms with 'x', terms with 'y', and constants.",
+              "L2": "Group each type of like term together.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Identify and group the 'y' terms: 3y - y.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Group each type of like term together.",
+              "L2": "Remember that '- y' means '- 1y'.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Identify and group the constant terms: 10 + 4.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Remember that '- y' means '- 1y'.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: Simplify each group: (8x - 5x) = 3x. (3y - y) = 2y. (10 + 4) = 14.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Remember that '- y' means '- 1y'.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Step 5: Combine the simplified groups to get the final answer: 3x + 2y + 14.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Remember that '- y' means '- 1y'.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S6",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "3x + 2y + 14"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Identify and group the 'x' terms: 8x - 5x.",
+          "Step 2: Identify and group the 'y' terms: 3y - y.",
+          "Step 3: Identify and group the constant terms: 10 + 4.",
+          "Step 4: Simplify each group: (8x - 5x) = 3x. (3y - y) = 2y. (10 + 4) = 14.",
+          "Step 5: Combine the simplified groups to get the final answer: 3x + 2y + 14."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Mixing up the 'x' and 'y' terms.",
+            "tag": null
+          },
+          {
+            "text": "Making errors with the signs, especially with '- y'.",
+            "tag": null
+          },
+          {
+            "text": "Forgetting to combine the constants.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "3x + 2y + 14"
+            },
+            {
+              "regex": "^3x\\+2y\\+14$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S2-H2",
+      "topic": "Algebra",
+      "title": "Simplifying Fractional Expressions",
+      "learn_step": 2,
+      "complexity": "Hard",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "simplify-expression"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "Mr Tan had (5k/2) kg of flour. He used 2 kg of it and bought another (k/2) kg of flour. How much flour does he have now in terms of k?",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Write the expression from the story: (5k/2) - 2 + (k/2).. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "First, write out the expression representing the changes.",
+              "L2": "Identify the like terms. Terms with 'k' can be combined.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Group the like terms: (5k/2) + (k/2) - 2.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Identify the like terms. Terms with 'k' can be combined.",
+              "L2": "To combine the fractional 'k' terms, their denominators are already the same.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Combine the 'k' terms: (5k + k) / 2 = 6k / 2.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "To combine the fractional 'k' terms, their denominators are already the same.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: Simplify the 'k' term: 6k / 2 = 3k.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "To combine the fractional 'k' terms, their denominators are already the same.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Step 5: Include the constant term to get the final expression: 3k - 2.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "To combine the fractional 'k' terms, their denominators are already the same.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S6",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "3k - 2"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Write the expression from the story: (5k/2) - 2 + (k/2).",
+          "Step 2: Group the like terms: (5k/2) + (k/2) - 2.",
+          "Step 3: Combine the 'k' terms: (5k + k) / 2 = 6k / 2.",
+          "Step 4: Simplify the 'k' term: 6k / 2 = 3k.",
+          "Step 5: Include the constant term to get the final expression: 3k - 2."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Incorrectly combining the term '-2' with the 'k' terms.",
+            "tag": null
+          },
+          {
+            "text": "Errors in adding the fractions, e.g., adding the denominators.",
+            "tag": null
+          },
+          {
+            "text": "Forgetting the '-2' in the final answer.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "3k - 2"
+            },
+            {
+              "regex": "^3k\\-2$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S3-E1",
+      "topic": "Algebra",
+      "title": "Basic Substitution",
+      "learn_step": 3,
+      "complexity": "Easy",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "substitution"
+      ],
+      "estimated_time_seconds": 30,
+      "problem_text": "Find the value of the expression 15 - x when x = 9.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Start with the expression: 15 - x.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Replace the letter 'x' with the number '9'.",
+              "L2": "Perform the subtraction.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Substitute x = 9 into the expression: 15 - 9.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Perform the subtraction.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Calculate the result: 15 - 9 = 6.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Perform the subtraction.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "6"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Start with the expression: 15 - x.",
+          "Step 2: Substitute x = 9 into the expression: 15 - 9.",
+          "Step 3: Calculate the result: 15 - 9 = 6."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Accidentally adding instead of subtracting (15 + 9).",
+            "tag": null
+          },
+          {
+            "text": "Subtracting in the wrong order (9 - 15).",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "6"
+            },
+            {
+              "regex": "^6$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S3-M1",
+      "topic": "Algebra",
+      "title": "Substitution with Multiplication",
+      "learn_step": 3,
+      "complexity": "Medium",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "substitution"
+      ],
+      "estimated_time_seconds": 45,
+      "problem_text": "Find the value of 7p + 5 when p = 6.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Start with the expression: 7p + 5.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Remember that '7p' means 7 multiplied by 'p'.",
+              "L2": "Replace 'p' with 6.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Substitute p = 6: (7 × 6) + 5.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Replace 'p' with 6.",
+              "L2": "Do multiplication before addition.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Follow BODMAS/PEMDAS. Multiply first: 7 × 6 = 42.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Do multiplication before addition.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: Then, add: 42 + 5 = 47.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Do multiplication before addition.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "47"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Start with the expression: 7p + 5.",
+          "Step 2: Substitute p = 6: (7 × 6) + 5.",
+          "Step 3: Follow BODMAS/PEMDAS. Multiply first: 7 × 6 = 42.",
+          "Step 4: Then, add: 42 + 5 = 47."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Adding before multiplying: 7 * (6+5) = 7 * 11 = 77.",
+            "tag": null
+          },
+          {
+            "text": "Seeing '7p' with p=6 and writing '76'.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "47"
+            },
+            {
+              "regex": "^47$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S3-M2",
+      "topic": "Algebra",
+      "title": "Substitution with Division",
+      "learn_step": 3,
+      "complexity": "Medium",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "substitution"
+      ],
+      "estimated_time_seconds": 50,
+      "problem_text": "Find the value of (m/4) + 10 when m = 24.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Start with the expression: (m/4) + 10.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The fraction m/4 means m divided by 4.",
+              "L2": "Replace 'm' with 24.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Substitute m = 24: (24 / 4) + 10.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Replace 'm' with 24.",
+              "L2": "Do the division first, then the addition.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Perform the division: 24 / 4 = 6.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Do the division first, then the addition.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: Perform the addition: 6 + 10 = 16.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Do the division first, then the addition.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "16"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Start with the expression: (m/4) + 10.",
+          "Step 2: Substitute m = 24: (24 / 4) + 10.",
+          "Step 3: Perform the division: 24 / 4 = 6.",
+          "Step 4: Perform the addition: 6 + 10 = 16."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Mistakes in the division calculation.",
+            "tag": null
+          },
+          {
+            "text": "Adding 10 to 24 before dividing by 4.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "16"
+            },
+            {
+              "regex": "^16$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S3-H1",
+      "topic": "Algebra",
+      "title": "Simplify then Substitute",
+      "learn_step": 3,
+      "complexity": "Hard",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "substitution",
+        "simplify-expression"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "Simplify the expression 8k + 9 - 3k - 2 and then find its value when k = 5.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Simplify the expression 8k + 9 - 3k - 2.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "First, simplify the expression by combining like terms.",
+              "L2": "Group the 'k' terms and the number terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Group like terms: (8k - 3k) + (9 - 2).. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Group the 'k' terms and the number terms.",
+              "L2": "Once you have the simplified expression, substitute k = 5 to find the final value.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Combine them: 5k + 7.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Once you have the simplified expression, substitute k = 5 to find the final value.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: Now substitute k = 5 into the simplified expression: 5(5) + 7.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Once you have the simplified expression, substitute k = 5 to find the final value.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Step 5: Calculate the value: 25 + 7 = 32.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Once you have the simplified expression, substitute k = 5 to find the final value.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S6",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "32"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Simplify the expression 8k + 9 - 3k - 2.",
+          "Step 2: Group like terms: (8k - 3k) + (9 - 2).",
+          "Step 3: Combine them: 5k + 7.",
+          "Step 4: Now substitute k = 5 into the simplified expression: 5(5) + 7.",
+          "Step 5: Calculate the value: 25 + 7 = 32."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Substituting before simplifying, which involves more calculations and a higher chance of error.",
+            "tag": null
+          },
+          {
+            "text": "Making a mistake during the initial simplification step.",
+            "tag": null
+          },
+          {
+            "text": "Errors in multiplication or addition after substitution.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "32"
+            },
+            {
+              "regex": "^32$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S3-H2",
+      "topic": "Algebra",
+      "title": "Substitution with Two Variables",
+      "learn_step": 3,
+      "complexity": "Hard",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "substitution"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "Find the value of 4x + 3y - 9 when x = 5 and y = 2.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Start with the expression: 4x + 3y - 9.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Replace 'x' with 5 and 'y' with 2 in the expression.",
+              "L2": "Calculate the multiplication parts first (4x and 3y).",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Substitute x = 5 and y = 2: 4(5) + 3(2) - 9.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Calculate the multiplication parts first (4x and 3y).",
+              "L2": "Finally, perform the addition and subtraction from left to right.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Perform multiplications: 20 + 6 - 9.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Finally, perform the addition and subtraction from left to right.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: Perform addition: 26 - 9.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Finally, perform the addition and subtraction from left to right.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Step 5: Perform subtraction: 17.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Finally, perform the addition and subtraction from left to right.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S6",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "17"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Start with the expression: 4x + 3y - 9.",
+          "Step 2: Substitute x = 5 and y = 2: 4(5) + 3(2) - 9.",
+          "Step 3: Perform multiplications: 20 + 6 - 9.",
+          "Step 4: Perform addition: 26 - 9.",
+          "Step 5: Perform subtraction: 17."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Mixing up the values for x and y.",
+            "tag": null
+          },
+          {
+            "text": "Performing addition/subtraction before multiplication.",
+            "tag": null
+          },
+          {
+            "text": "Calculation errors.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "17"
+            },
+            {
+              "regex": "^17$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S4-E1",
+      "topic": "Algebra",
+      "title": "One-Step Equation (Addition)",
+      "learn_step": 4,
+      "complexity": "Easy",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "solve-linear-equation"
+      ],
+      "estimated_time_seconds": 60,
+      "problem_text": "Devi baked some cookies. After she gave away 12 cookies, she had 30 cookies left. How many cookies did she bake at first? Let 'c' be the number of cookies she baked.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Form an equation. Let 'c' be the initial number of cookies. The equation is c - 12 = 30.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Set up an equation. 'Gave away' means subtraction.",
+              "L2": "The equation is c - 12 = 30.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: To solve for 'c', we need to isolate it. Add 12 to both sides of the equation.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The equation is c - 12 = 30.",
+              "L2": "To find 'c', you need to do the opposite of subtracting 12.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: c = 30 + 12.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "To find 'c', you need to do the opposite of subtracting 12.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: Calculate the result: c = 42. She baked 42 cookies at first.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "To find 'c', you need to do the opposite of subtracting 12.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "42"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Form an equation. Let 'c' be the initial number of cookies. The equation is c - 12 = 30.",
+          "Step 2: To solve for 'c', we need to isolate it. Add 12 to both sides of the equation.",
+          "Step 3: c = 30 + 12.",
+          "Step 4: Calculate the result: c = 42. She baked 42 cookies at first."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Subtracting 12 from 30 (30 - 12 = 18).",
+            "tag": null
+          },
+          {
+            "text": "Setting up the equation incorrectly, e.g., 12 - c = 30.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "42"
+            },
+            {
+              "regex": "^42$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S4-M1",
+      "topic": "Algebra",
+      "title": "One-Step Equation (Multiplication)",
+      "learn_step": 4,
+      "complexity": "Medium",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "solve-linear-equation"
+      ],
+      "estimated_time_seconds": 70,
+      "problem_text": "Mdm Lim paid $56 for 4 identical blouses. What is the cost of one blouse? Let 'b' be the cost of one blouse.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Form the equation. The cost of 4 blouses is 4 times the cost of one blouse ('b'). So, 4b = 56.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The cost of 4 blouses can be written as 4b.",
+              "L2": "The total cost is $56, so the equation is 4b = 56.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: To solve for 'b', divide both sides by 4.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The total cost is $56, so the equation is 4b = 56.",
+              "L2": "To find 'b', do the opposite of multiplying by 4.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: b = 56 ÷ 4.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "To find 'b', do the opposite of multiplying by 4.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: Calculate the result: b = 14. The cost of one blouse is $14.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "To find 'b', do the opposite of multiplying by 4.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "14"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Form the equation. The cost of 4 blouses is 4 times the cost of one blouse ('b'). So, 4b = 56.",
+          "Step 2: To solve for 'b', divide both sides by 4.",
+          "Step 3: b = 56 ÷ 4.",
+          "Step 4: Calculate the result: b = 14. The cost of one blouse is $14."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Multiplying 56 by 4.",
+            "tag": null
+          },
+          {
+            "text": "Setting up the equation as b + 4 = 56.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "14"
+            },
+            {
+              "regex": "^14$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S4-M2",
+      "topic": "Algebra",
+      "title": "Two-Step Word Problem",
+      "learn_step": 4,
+      "complexity": "Medium",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "use-variable"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "Farhan bought a book for $15 and 5 identical pens. He spent a total of $25. What was the cost of one pen? Let 'p' be the cost of one pen.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Form the equation. Cost of 5 pens is 5p. Total cost is 5p + 15. So, 5p + 15 = 25.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "First, write an expression for the total cost: cost of 5 pens plus the cost of the book.",
+              "L2": "Set up the equation: 5p + 15 = 25.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Subtract 15 from both sides to find the cost of the 5 pens: 5p = 25 - 15.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Set up the equation: 5p + 15 = 25.",
+              "L2": "To solve, first subtract 15 from both sides, then divide by 5.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Simplify: 5p = 10.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "To solve, first subtract 15 from both sides, then divide by 5.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: Divide both sides by 5 to find the cost of one pen: p = 10 ÷ 5.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "To solve, first subtract 15 from both sides, then divide by 5.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Step 5: Calculate the result: p = 2. The cost of one pen was $2.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "To solve, first subtract 15 from both sides, then divide by 5.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S6",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "2"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Form the equation. Cost of 5 pens is 5p. Total cost is 5p + 15. So, 5p + 15 = 25.",
+          "Step 2: Subtract 15 from both sides to find the cost of the 5 pens: 5p = 25 - 15.",
+          "Step 3: Simplify: 5p = 10.",
+          "Step 4: Divide both sides by 5 to find the cost of one pen: p = 10 ÷ 5.",
+          "Step 5: Calculate the result: p = 2. The cost of one pen was $2."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Adding $15 and $25.",
+            "tag": null
+          },
+          {
+            "text": "Dividing $25 by 5 first.",
+            "tag": null
+          },
+          {
+            "text": "Forgetting one of the steps in solving the equation.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "2"
+            },
+            {
+              "regex": "^2$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S4-H1",
+      "topic": "Algebra",
+      "title": "Word Problem with Combined Variables",
+      "learn_step": 4,
+      "complexity": "Hard",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "use-variable"
+      ],
+      "estimated_time_seconds": 120,
+      "problem_text": "A pouch contains some black and white marbles. The number of black marbles is twice the number of white marbles. If there are 63 marbles in total, how many white marbles are there? Let 'w' be the number of white marbles.",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Express the number of each type of marble. White marbles = w. Black marbles = 2w.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Express the number of black marbles in terms of 'w'.",
+              "L2": "The total number of marbles is the sum of white and black marbles.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Form the equation for the total number of marbles: w + 2w = 63.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The total number of marbles is the sum of white and black marbles.",
+              "L2": "Form an equation: w + 2w = 63.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Simplify the left side of the equation: 3w = 63.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Form an equation: w + 2w = 63.",
+              "L2": "First, simplify the expression on the left by combining like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: Solve for 'w' by dividing both sides by 3: w = 63 ÷ 3.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "First, simplify the expression on the left by combining like terms.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Step 5: Calculate the result: w = 21. There are 21 white marbles.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "First, simplify the expression on the left by combining like terms.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S6",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "21"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Express the number of each type of marble. White marbles = w. Black marbles = 2w.",
+          "Step 2: Form the equation for the total number of marbles: w + 2w = 63.",
+          "Step 3: Simplify the left side of the equation: 3w = 63.",
+          "Step 4: Solve for 'w' by dividing both sides by 3: w = 63 ÷ 3.",
+          "Step 5: Calculate the result: w = 21. There are 21 white marbles."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Setting up the equation as 2w = 63, ignoring the white marbles.",
+            "tag": null
+          },
+          {
+            "text": "Making 'w' the number of black marbles and getting confused.",
+            "tag": null
+          },
+          {
+            "text": "Finding the number of black marbles instead of white marbles.",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "21"
+            },
+            {
+              "regex": "^21$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    },
+    {
+      "id": "ALG-S4-H2",
+      "topic": "Algebra",
+      "title": "Problem Involving a Future State",
+      "learn_step": 4,
+      "complexity": "Hard",
+      "difficulty": 0.5,
+      "skill": "Algebraic Expressions",
+      "subskills": [
+        "use-variable"
+      ],
+      "estimated_time_seconds": 150,
+      "problem_text": "Ben is 'y' years old. His mother is 4 times his age. In 3 years' time, the sum of their ages will be 51. How old is Ben now?",
+      "assets": {
+        "manipulatives": [],
+        "image_url": null,
+        "svg_code": null
+      },
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Step 1: Write expressions for their current ages: Ben = y, Mother = 4y.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Write their current ages: Ben is 'y', Mother is '4y'.",
+              "L2": "Write their ages in 3 years' time: Ben will be 'y+3', Mother will be '4y+3'.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Step 2: Write expressions for their ages in 3 years: Ben = y + 3, Mother = 4y + 3.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Write their ages in 3 years' time: Ben will be 'y+3', Mother will be '4y+3'.",
+              "L2": "Form the equation by adding their future ages: (y+3) + (4y+3) = 51.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Step 3: Form the equation for the sum of their future ages: (y + 3) + (4y + 3) = 51.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Form the equation by adding their future ages: (y+3) + (4y+3) = 51.",
+              "L2": "Simplify the equation by combining like terms, then solve for 'y'.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Step 4: Simplify the equation by combining like terms: 5y + 6 = 51.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Simplify the equation by combining like terms, then solve for 'y'.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Step 5: Solve the two-step equation. First, subtract 6 from both sides: 5y = 45.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Simplify the equation by combining like terms, then solve for 'y'.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S6",
+            "prompt": "Step 6: Then, divide by 5: y = 9. Ben is 9 years old now.. What should we do next?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Simplify the equation by combining like terms, then solve for 'y'.",
+              "L2": "Rewrite the algebra carefully; watch signs and like terms.",
+              "L3": "Try a simpler numeric example to test your idea before returning to the variables."
+            }
+          },
+          {
+            "id": "S7",
+            "prompt": "State your final expression/answer.",
+            "answer_type": "algebra",
+            "acceptable_responses": [
+              {
+                "equivalent_to": "9"
+              }
+            ],
+            "format_rules": {
+              "remove_spaces": true
+            },
+            "hints": {
+              "L1": "Combine like terms and check the operation matches the story.",
+              "L2": "Is your form simplest (e.g., b+4 instead of 4+b is also okay)?",
+              "L3": "Substitute small numbers to sanity-check."
+            }
+          }
+        ],
+        "reflect_prompts": [
+          "Why is your chosen operation or transformation appropriate here?",
+          "How would your answer change if one number in the question changed?"
+        ],
+        "micro_drills": []
+      },
+      "teacher_view": {
+        "solutions_teacher": [
+          "Step 1: Write expressions for their current ages: Ben = y, Mother = 4y.",
+          "Step 2: Write expressions for their ages in 3 years: Ben = y + 3, Mother = 4y + 3.",
+          "Step 3: Form the equation for the sum of their future ages: (y + 3) + (4y + 3) = 51.",
+          "Step 4: Simplify the equation by combining like terms: 5y + 6 = 51.",
+          "Step 5: Solve the two-step equation. First, subtract 6 from both sides: 5y = 45.",
+          "Step 6: Then, divide by 5: y = 9. Ben is 9 years old now."
+        ],
+        "common_pitfalls": [
+          {
+            "text": "Adding 3 only once, e.g., y + 4y + 3 = 51.",
+            "tag": null
+          },
+          {
+            "text": "Using their current ages to sum to 51: y + 4y = 51.",
+            "tag": null
+          },
+          {
+            "text": "Mistakes in simplifying the equation, e.g., not combining the constants (3+3).",
+            "tag": null
+          }
+        ]
+      },
+      "telemetry": {
+        "scoring": {
+          "xp": 10,
+          "bonus_no_hints": 2
+        },
+        "prereqs": [],
+        "next_items": []
+      },
+      "evaluation": {
+        "rules": {
+          "regex": [
+            {
+              "equivalent_to": "9"
+            },
+            {
+              "regex": "^9$",
+              "normalize": "strip_spaces"
+            }
+          ],
+          "algebraic_equivalence": true,
+          "llm_fallback": true
+        },
+        "notes": "Order: try regex/normalisation → attempt algebraic equivalence (CAS or symbolic) → LLM adjudication with chain-of-thought hidden and rubric."
+      }
+    }
+  ]
+}

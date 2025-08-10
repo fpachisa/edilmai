@@ -1,2 +1,23 @@
 # Google App Engine generated folder
 appengine-generated/
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node/Functions (future)
+node_modules/
+
+# Flutter
+client/build/
+client/.dart_tool/
+client/.flutter-plugins*
+client/.packages
+client/ios/Pods/
+client/android/.gradle/
+client/android/app/build/
+client/web/build/
+
+# OS
+.DS_Store

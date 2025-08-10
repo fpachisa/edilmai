@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/enhanced_item_v1.schema.json",
+  "title": "Enhanced Item File",
+  "type": "object",
+  "required": ["topic", "version", "items"],
+  "properties": {
+    "topic": {"type": "string"},
+    "version": {"const": "enhanced-v1"},
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "topic",
+          "title",
+          "learn_step",
+          "complexity",
+          "difficulty",
+          "skill",
+          "problem_text",
+          "student_view",
+          "evaluation"
+        ],
+        "properties": {
+          "id": {"type": "string"},
+          "topic": {"type": "string"},
+          "title": {"type": "string"},
+          "learn_step": {"type": "integer", "minimum": 0},
+          "complexity": {"enum": ["Easy", "Medium", "Hard"]},
+          "difficulty": {"type": "number", "minimum": 0, "maximum": 1},
+          "skill": {"type": "string"},
+          "subskills": {"type": "array", "items": {"type": "string"}},
+          "estimated_time_seconds": {"type": "integer", "minimum": 0},
+          "problem_text": {"type": "string"},
+          "assets": {"type": "object"},
+          "student_view": {
+            "type": "object",
+            "required": ["socratic", "steps"],
+            "properties": {
+              "socratic": {"type": "boolean"},
+              "steps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["id", "prompt"],
+                  "properties": {
+                    "id": {"type": "string"},
+                    "prompt": {"type": "string"},
+                    "hints": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": ["level", "text"],
+                        "properties": {
+                          "level": {"type": "integer", "minimum": 1, "maximum": 5},
+                          "text": {"type": "string"}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "reflect_prompts": {"type": "array", "items": {"type": "string"}},
+              "micro_drills": {"type": "array", "items": {"type": "string"}}
+            }
+          },
+          "teacher_view": {"type": "object"},
+          "telemetry": {"type": "object"},
+          "evaluation": {
+            "type": "object",
+            "required": ["rules"],
+            "properties": {
+              "rules": {
+                "type": "object",
+                "properties": {
+                  "regex": {"type": "array", "items": {"type": "object"}},
+                  "algebraic_equivalence": {"type": "boolean"},
+                  "llm_fallback": {"type": "boolean"}
+                }
+              },
+              "notes": {"type": "string"}
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
