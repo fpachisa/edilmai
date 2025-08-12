@@ -46,4 +46,3 @@ abstract class GameStateStore {
   Future<GameStateSnapshot?> load();
   Future<void> save(GameStateSnapshot snapshot);
 }
-

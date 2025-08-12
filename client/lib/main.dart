@@ -4,9 +4,8 @@ import 'ui/app_theme.dart';
 import 'state/game_state.dart';
 import 'config.dart';
 import 'auth_service.dart';
-import 'screens/home_screen.dart';
-import 'screens/progress_screen.dart';
-import 'screens/profile_screen.dart';
+import 'auth_wrapper.dart';
+import 'screens/auth_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,38 +35,13 @@ class EdilApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = AppTheme.theme();
     return MaterialApp(
-      title: 'EDIL AI Tutor',
+      title: 'PSLE AI Tutor',
       theme: theme,
-      home: const AppShell(),
+      home: const AuthWrapper(),
+      routes: {
+        '/auth': (context) => const AuthScreen(),
+      },
     );
   }
 }
 
-class AppShell extends StatefulWidget {
-  const AppShell({super.key});
-
-  @override
-  State<AppShell> createState() => _AppShellState();
-}
-
-class _AppShellState extends State<AppShell> {
-  int _tab = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    final pages = [const HomeScreen(), const ProgressScreen(), const ProfileScreen()];
-    return Scaffold(
-      appBar: AppBar(title: const Text('EDIL AI Tutor')),
-      body: pages[_tab],
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: _tab,
-        destinations: const [
-          NavigationDestination(icon: Icon(Icons.school_rounded), label: 'Learn'),
-          NavigationDestination(icon: Icon(Icons.insights_rounded), label: 'Progress'),
-          NavigationDestination(icon: Icon(Icons.person_rounded), label: 'Profile'),
-        ],
-        onDestinationSelected: (i) => setState(() => _tab = i),
-      ),
-    );
-  }
-}

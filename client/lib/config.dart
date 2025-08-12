@@ -7,5 +7,5 @@ const String kDefaultApiBase = String.fromEnvironment(
 
 const bool kUseFirebaseAuth = bool.fromEnvironment(
   'USE_FIREBASE_AUTH',
-  defaultValue: false,
+  defaultValue: true,
 );
