@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../ui/app_theme.dart';
 import '../state/game_state.dart';
+import '../auth_service.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -16,9 +17,12 @@ class ProfileScreen extends StatelessWidget {
                 _GradientAvatar(size: 72),
                 const SizedBox(width: 16),
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Text('Learner Demo', style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
+                  Text(
+                    AuthService.currentUser?.displayName ?? AuthService.currentUser?.email ?? 'Learner',
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800),
+                  ),
                   const SizedBox(height: 6),
-                  Text('Level 3 • Algebra Explorer', style: TextStyle(color: Colors.white.withOpacity(0.8))),
+                  Text('Keep the streak going!', style: TextStyle(color: Colors.white.withOpacity(0.8))),
                 ]),
               ]),
               const SizedBox(height: 16),

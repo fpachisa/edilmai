@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'screens/landing_screen.dart';
-import 'screens/home_screen.dart';
+import 'screens/enhanced_home_screen.dart';
 import 'screens/progress_screen.dart';
 import 'screens/profile_screen.dart';
+import 'screens/create_learner_screen.dart';
 import 'auth_service.dart';
 import 'ui/app_theme.dart';
+import 'state/app_mode.dart';
+import 'state/active_learner.dart';
+import 'api_client.dart';
+import 'config.dart';
 
 class AuthWrapper extends StatelessWidget {
   const AuthWrapper({super.key});
@@ -99,6 +104,37 @@ class AppShell extends StatefulWidget {
 
 class _AppShellState extends State<AppShell> {
   int _tab = 0;
+  bool _initialized = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _bootstrapLearner();
+  }
+
+  Future<void> _bootstrapLearner() async {
+    // If we already have an active learner, nothing to do
+    if (ActiveLearner.instance.id != null) {
+      setState(() => _initialized = true);
+      return;
+    }
+    try {
+      final api = ApiClient(kDefaultApiBase);
+      final learners = await api.listLearners();
+      if (!mounted) return;
+      if (learners.isEmpty) {
+        // Route to create learner, then continue
+        await Navigator.of(context).push(MaterialPageRoute(builder: (_) => const CreateLearnerScreen()));
+      } else {
+        final first = learners.first as Map<String, dynamic>;
+        ActiveLearner.instance.setActive(id: first['learner_id'] as String, name: (first['name'] as String?) ?? 'Your Learner');
+      }
+    } catch (_) {
+      // If call fails, allow app to continue; Home will show errors as needed
+    } finally {
+      if (mounted) setState(() => _initialized = true);
+    }
+  }
 
   Future<void> _signOut() async {
     try {
@@ -116,11 +152,18 @@ class _AppShellState extends State<AppShell> {
   @override
   Widget build(BuildContext context) {
     final user = AuthService.currentUser;
-    final pages = [const HomeScreen(), const ProgressScreen(), const ProfileScreen()];
+    final pages = [const EnhancedHomeScreen(), const ProgressScreen(), const ProfileScreen()];
     
-    return Scaffold(
+    if (!_initialized) {
+      return const Scaffold(body: Center(child: CircularProgressIndicator())) ;
+    }
+    return AnimatedBuilder(
+      animation: AppModeController.instance,
+      builder: (context, _) => Scaffold(
       appBar: AppBar(
-        title: const Text('PSLE AI Tutor'),
+        title: Text(
+          AppModeController.instance.isLearner ? 'PSLE AI Tutor — Learner' : 'PSLE AI Tutor — Parent',
+        ),
         actions: [
           PopupMenuButton<String>(
             onSelected: (value) {
@@ -130,6 +173,16 @@ class _AppShellState extends State<AppShell> {
                   break;
                 case 'signout':
                   _signOut();
+                  break;
+                case 'switch_mode':
+                  final toParent = AppModeController.instance.isLearner;
+                  AppModeController.instance.toggle();
+                  setState(() {
+                    _tab = toParent ? 1 : 0; // Parent→Progress, Learner→Learn
+                  });
+                  break;
+                case 'create_learner':
+                  Navigator.of(context).push(MaterialPageRoute(builder: (_) => const CreateLearnerScreen()));
                   break;
               }
             },
@@ -141,6 +194,26 @@ class _AppShellState extends State<AppShell> {
                     const Icon(Icons.person_rounded),
                     const SizedBox(width: 8),
                     Text(user?.displayName ?? user?.email ?? 'Profile'),
+                  ],
+                ),
+              ),
+              PopupMenuItem(
+                value: 'switch_mode',
+                child: Row(
+                  children: [
+                    const Icon(Icons.swap_horiz_rounded),
+                    const SizedBox(width: 8),
+                    Text(AppModeController.instance.isLearner ? 'Switch to Parent Mode' : 'Switch to Learner Mode'),
+                  ],
+                ),
+              ),
+              const PopupMenuItem(
+                value: 'create_learner',
+                child: Row(
+                  children: [
+                    Icon(Icons.person_add_alt_1_rounded),
+                    SizedBox(width: 8),
+                    Text("Add Child's Account"),
                   ],
                 ),
               ),
@@ -187,7 +260,7 @@ class _AppShellState extends State<AppShell> {
         ],
         onDestinationSelected: (i) => setState(() => _tab = i),
       ),
-    );
+    ));
   }
 
   String _getInitials(String name) {

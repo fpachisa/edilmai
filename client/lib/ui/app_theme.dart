@@ -1,58 +1,254 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'design_tokens.dart';
 
 class AppTheme {
   static ThemeData theme() {
     final base = ThemeData(useMaterial3: true, brightness: Brightness.dark);
     final scheme = ColorScheme.fromSeed(
-      seedColor: const Color(0xFF6C63FF),
+      seedColor: DesignTokens.primaryMagic,
       brightness: Brightness.dark,
     );
+    
     return base.copyWith(
-      colorScheme: scheme,
-      textTheme: GoogleFonts.interTextTheme(base.textTheme).apply(
-        bodyColor: Colors.white,
-        displayColor: Colors.white,
+      colorScheme: scheme.copyWith(
+        primary: DesignTokens.primaryMagic,
+        secondary: DesignTokens.primaryMagicLight,
+        surface: DesignTokens.neutralSurface,
+        background: DesignTokens.neutralDark,
+        error: DesignTokens.errorPulse,
       ),
+      
+      // Enhanced text theme with design tokens
+      textTheme: GoogleFonts.interTextTheme(base.textTheme).copyWith(
+        displayLarge: DesignTokens.heroTitle.copyWith(color: Colors.white),
+        displayMedium: DesignTokens.sectionTitle.copyWith(color: Colors.white),
+        displaySmall: DesignTokens.subtitle.copyWith(color: Colors.white),
+        headlineLarge: DesignTokens.sectionTitle.copyWith(color: Colors.white),
+        headlineMedium: DesignTokens.subtitle.copyWith(color: Colors.white),
+        headlineSmall: DesignTokens.problemText.copyWith(color: Colors.white),
+        titleLarge: DesignTokens.subtitle.copyWith(color: Colors.white),
+        titleMedium: DesignTokens.problemText.copyWith(color: Colors.white),
+        titleSmall: DesignTokens.bodyText.copyWith(color: Colors.white),
+        bodyLarge: DesignTokens.bodyText.copyWith(color: Colors.white),
+        bodyMedium: DesignTokens.bodyText.copyWith(color: Colors.white),
+        bodySmall: DesignTokens.captionText.copyWith(color: Colors.white),
+        labelLarge: DesignTokens.buttonText.copyWith(color: Colors.white),
+        labelMedium: DesignTokens.captionText.copyWith(color: Colors.white),
+        labelSmall: DesignTokens.captionText.copyWith(color: Colors.white),
+      ),
+      
+      // Enhanced app bar theme
       appBarTheme: AppBarTheme(
         backgroundColor: Colors.transparent,
         elevation: 0,
         scrolledUnderElevation: 0,
-        foregroundColor: scheme.onSurface,
+        foregroundColor: Colors.white,
+        titleTextStyle: DesignTokens.sectionTitle.copyWith(color: Colors.white),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
-      chipTheme: base.chipTheme.copyWith(
-        backgroundColor: scheme.surfaceVariant.withOpacity(0.7),
-        labelStyle: const TextStyle(color: Colors.white),
-        side: BorderSide(color: Colors.white.withOpacity(0.08)),
+      
+      // Enhanced button themes
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: DesignTokens.primaryMagic,
+          foregroundColor: Colors.white,
+          padding: const EdgeInsets.symmetric(
+            horizontal: DesignTokens.spaceLG,
+            vertical: DesignTokens.spaceMD,
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(DesignTokens.radiusMD),
+          ),
+          textStyle: DesignTokens.buttonText,
+          elevation: DesignTokens.elevationCard,
+        ),
       ),
+      
+      filledButtonTheme: FilledButtonThemeData(
+        style: FilledButton.styleFrom(
+          backgroundColor: DesignTokens.primaryMagic,
+          foregroundColor: Colors.white,
+          padding: const EdgeInsets.symmetric(
+            horizontal: DesignTokens.spaceLG,
+            vertical: DesignTokens.spaceMD,
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(DesignTokens.radiusMD),
+          ),
+          textStyle: DesignTokens.buttonText,
+        ),
+      ),
+      
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          foregroundColor: DesignTokens.primaryMagic,
+          side: BorderSide(color: DesignTokens.primaryMagic, width: 2),
+          padding: const EdgeInsets.symmetric(
+            horizontal: DesignTokens.spaceLG,
+            vertical: DesignTokens.spaceMD,
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(DesignTokens.radiusMD),
+          ),
+          textStyle: DesignTokens.buttonText,
+        ),
+      ),
+      
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          foregroundColor: DesignTokens.primaryMagic,
+          padding: const EdgeInsets.symmetric(
+            horizontal: DesignTokens.spaceMD,
+            vertical: DesignTokens.spaceSM,
+          ),
+          textStyle: DesignTokens.buttonText,
+        ),
+      ),
+      
+      // Enhanced input decoration theme
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
-        fillColor: scheme.surfaceVariant.withOpacity(0.6),
+        fillColor: DesignTokens.neutralSurface.withOpacity(0.6),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(DesignTokens.radiusMD),
           borderSide: BorderSide(color: Colors.white.withOpacity(0.12)),
         ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(DesignTokens.radiusMD),
           borderSide: BorderSide(color: Colors.white.withOpacity(0.12)),
         ),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(14),
-          borderSide: BorderSide(color: scheme.primary, width: 1.6),
+          borderRadius: BorderRadius.circular(DesignTokens.radiusMD),
+          borderSide: BorderSide(color: DesignTokens.primaryMagic, width: 2),
         ),
-        hintStyle: TextStyle(color: Colors.white.withOpacity(0.6)),
-      ),
-      filledButtonTheme: FilledButtonThemeData(
-        style: FilledButton.styleFrom(
-          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(DesignTokens.radiusMD),
+          borderSide: BorderSide(color: DesignTokens.errorPulse, width: 2),
         ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(DesignTokens.radiusMD),
+          borderSide: BorderSide(color: DesignTokens.errorPulse, width: 2),
+        ),
+        hintStyle: DesignTokens.bodyText.copyWith(
+          color: Colors.white.withOpacity(0.6),
+        ),
+        labelStyle: DesignTokens.bodyText.copyWith(color: Colors.white),
+        contentPadding: const EdgeInsets.all(DesignTokens.spaceMD),
       ),
+      
+      // Enhanced card theme
       cardTheme: CardThemeData(
-        color: scheme.surface.withOpacity(0.4),
-        elevation: 0,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        color: DesignTokens.neutralSurface.withOpacity(0.4),
+        elevation: DesignTokens.elevationCard,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(DesignTokens.radiusLG),
+        ),
+        shadowColor: Colors.black.withOpacity(0.3),
+      ),
+      
+      // Enhanced chip theme
+      chipTheme: base.chipTheme.copyWith(
+        backgroundColor: DesignTokens.neutralSurface.withOpacity(0.7),
+        labelStyle: DesignTokens.captionText.copyWith(color: Colors.white),
+        side: BorderSide(color: Colors.white.withOpacity(0.08)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(DesignTokens.radiusSM),
+        ),
+      ),
+      
+      // Enhanced dialog theme
+      dialogTheme: DialogThemeData(
+        backgroundColor: DesignTokens.neutralSurface,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(DesignTokens.radiusLG),
+        ),
+        elevation: DesignTokens.elevationModal,
+        titleTextStyle: DesignTokens.sectionTitle.copyWith(color: Colors.white),
+        contentTextStyle: DesignTokens.bodyText.copyWith(color: Colors.white),
+      ),
+      
+      // Enhanced bottom sheet theme
+      bottomSheetTheme: BottomSheetThemeData(
+        backgroundColor: DesignTokens.neutralSurface,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(DesignTokens.radiusLG),
+            topRight: Radius.circular(DesignTokens.radiusLG),
+          ),
+        ),
+        elevation: DesignTokens.elevationModal,
+      ),
+      
+      // Enhanced floating action button theme
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+        backgroundColor: DesignTokens.primaryMagic,
+        foregroundColor: Colors.white,
+        elevation: DesignTokens.elevationFAB,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(DesignTokens.radiusMD),
+        ),
+      ),
+      
+      // Enhanced list tile theme
+      listTileTheme: ListTileThemeData(
+        textColor: Colors.white,
+        iconColor: Colors.white,
+        tileColor: Colors.transparent,
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: DesignTokens.spaceMD,
+          vertical: DesignTokens.spaceSM,
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(DesignTokens.radiusMD),
+        ),
+      ),
+      
+      // Enhanced switch theme
+      switchTheme: SwitchThemeData(
+        thumbColor: MaterialStateProperty.resolveWith((states) {
+          if (states.contains(MaterialState.selected)) {
+            return Colors.white;
+          }
+          return Colors.grey;
+        }),
+        trackColor: MaterialStateProperty.resolveWith((states) {
+          if (states.contains(MaterialState.selected)) {
+            return DesignTokens.primaryMagic;
+          }
+          return Colors.grey.withOpacity(0.3);
+        }),
+      ),
+      
+      // Enhanced slider theme
+      sliderTheme: SliderThemeData(
+        activeTrackColor: DesignTokens.primaryMagic,
+        inactiveTrackColor: DesignTokens.primaryMagic.withOpacity(0.3),
+        thumbColor: Colors.white,
+        overlayColor: DesignTokens.primaryMagic.withOpacity(0.2),
+        valueIndicatorColor: DesignTokens.primaryMagic,
+        valueIndicatorTextStyle: DesignTokens.captionText.copyWith(
+          color: Colors.white,
+        ),
+      ),
+      
+      // Enhanced progress indicator theme
+      progressIndicatorTheme: ProgressIndicatorThemeData(
+        color: DesignTokens.primaryMagic,
+        linearTrackColor: DesignTokens.primaryMagic.withOpacity(0.3),
+        circularTrackColor: DesignTokens.primaryMagic.withOpacity(0.3),
+      ),
+      
+      // Enhanced snack bar theme
+      snackBarTheme: SnackBarThemeData(
+        backgroundColor: DesignTokens.neutralSurface,
+        contentTextStyle: DesignTokens.bodyText.copyWith(color: Colors.white),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(DesignTokens.radiusMD),
+        ),
+        behavior: SnackBarBehavior.floating,
+        elevation: DesignTokens.elevationCard,
       ),
     );
   }

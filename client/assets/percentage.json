@@ -1,0 +1,2094 @@
+{
+  "topic": "Percentage",
+  "version": "enhanced-v1",
+  "metadata": {
+    "generated_at": "2025-08-13T17:42:53.476986",
+    "generator_version": "complete-v1.0",
+    "target_problems": 60,
+    "singapore_moe_aligned": true,
+    "completed_at": "2025-08-13T17:48:36.120522",
+    "total_problems": 60
+  },
+  "items": [
+    {
+      "id": "PERCENTAGE-S1-E1",
+      "topic": "Percentage",
+      "title": "Mary's Pocket Money",
+      "complexity": "Basic Application",
+      "difficulty": "Easy",
+      "skill": "find-whole-from-percentage-part",
+      "subskills": [
+        "percentage-of-a-quantity",
+        "unit-method"
+      ],
+      "estimated_time_seconds": 120,
+      "problem_text": "Mary spent 30% of her pocket money on a new storybook. If the storybook cost $12, how much pocket money did Mary have at first?",
+      "student_view": {
+        "problem": "Mary spent 30% of her pocket money on a new storybook. If the storybook cost $12, how much pocket money did Mary have at first?",
+        "socratic_steps": [
+          "What does '30% of her pocket money' mean in relation to the total amount she had?",
+          "If 30% of her money is equal to $12, how can you find the value of 10% of her money?",
+          "Once you know 10%, how can you find the total amount (100%) she had at first?"
+        ],
+        "hints": [
+          "Think of the total pocket money as 100%.",
+          "You can use a unit method or proportion to solve this."
+        ]
+      },
+      "learn_step": 1
+    },
+    {
+      "id": "PERCENTAGE-S1-E2",
+      "topic": "Percentage",
+      "title": "School Population Growth",
+      "complexity": "Multi-step Calculation",
+      "difficulty": "Medium",
+      "skill": "percentage-increase-decrease",
+      "subskills": [
+        "find-percentage-change",
+        "calculate-percentage-of-a-quantity"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "Last year, Unity Primary School had 800 students. This year, the student population increased to 840 students. What was the percentage increase in the student population? (Give your answer to 1 decimal place if necessary.)",
+      "student_view": {
+        "problem": "Last year, Unity Primary School had 800 students. This year, the student population increased to 840 students. What was the percentage increase in the student population? (Give your answer to 1 decimal place if necessary.)",
+        "socratic_steps": [
+          "First, calculate the *actual increase* in the number of students. How many more students are there this year compared to last year?",
+          "When calculating percentage increase, what is the 'original' or 'base' value that we compare the increase against?",
+          "How do you express the increase as a percentage of the original number of students?"
+        ],
+        "hints": [
+          "Percentage Increase = (Increase / Original Amount) × 100%.",
+          "Remember to use the *original* number of students as the base for the percentage calculation."
+        ]
+      },
+      "learn_step": 1
+    },
+    {
+      "id": "PERCENTAGE-S1-E3",
+      "topic": "Percentage",
+      "title": "Discounted Laptop Price",
+      "complexity": "Inverse Percentage Calculation",
+      "difficulty": "Medium",
+      "skill": "before-after-concept",
+      "subskills": [
+        "find-whole-from-percentage-part",
+        "percentage-decrease"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "During a Great Singapore Sale, a laptop was sold at a 20% discount. Mr. Lim paid $1600 for the laptop. What was the original price of the laptop before the discount?",
+      "student_view": {
+        "problem": "During a Great Singapore Sale, a laptop was sold at a 20% discount. Mr. Lim paid $1600 for the laptop. What was the original price of the laptop before the discount?",
+        "socratic_steps": [
+          "If the laptop was sold at a 20% discount, what percentage of the *original* price did Mr. Lim pay?",
+          "You know the actual amount Mr. Lim paid ($1600) corresponds to this percentage. How can you use this information to find the value of 1% of the original price?",
+          "Once you find 1%, how can you calculate the original price (100%)?"
+        ],
+        "hints": [
+          "The original price always represents 100%.",
+          "The price paid is the original price minus the discount amount."
+        ]
+      },
+      "learn_step": 1
+    },
+    {
+      "id": "PERCENTAGE-S1-E4",
+      "topic": "Percentage",
+      "title": "Sports Survey Results",
+      "complexity": "Nested Percentages",
+      "difficulty": "Hard",
+      "skill": "percentage-of-percentage",
+      "subskills": [
+        "find-percentage-of-a-quantity",
+        "multi-step-problem-solving"
+      ],
+      "estimated_time_seconds": 300,
+      "problem_text": "In a survey conducted among 500 Primary 6 students, 60% stated that they enjoyed playing sports. Of those students who enjoyed playing sports, 25% specifically chose badminton as their favourite sport. How many students chose badminton as their favourite sport?",
+      "student_view": {
+        "problem": "In a survey conducted among 500 Primary 6 students, 60% stated that they enjoyed playing sports. Of those students who enjoyed playing sports, 25% specifically chose badminton as their favourite sport. How many students chose badminton as their favourite sport?",
+        "socratic_steps": [
+          "First, calculate the number of students who enjoyed playing sports. What is 60% of the total 500 students?",
+          "Now, you have a new 'whole' for the next step: the number of students who enjoy sports. What percentage of *these* students chose badminton?",
+          "How do you calculate 25% of the number you found in the first step?"
+        ],
+        "hints": [
+          "This problem involves finding a percentage *of* a percentage.",
+          "You can also think of it as finding '25% of 60% of the total students'."
+        ]
+      },
+      "learn_step": 1
+    },
+    {
+      "id": "PERCENTAGE-S1-E5",
+      "topic": "Percentage",
+      "title": "Robotics Club Membership Changes",
+      "complexity": "Multi-stage Before-After",
+      "difficulty": "Hard",
+      "skill": "before-after-concept",
+      "subskills": [
+        "percentage-increase-decrease",
+        "percentage-change-calculation",
+        "sequential-change"
+      ],
+      "estimated_time_seconds": 360,
+      "problem_text": "At the start of the year, there were 240 members in the Innovate Robotics Club. In June, 25% of the members left the club. In December, the remaining members increased by 20%.\n\n(a) How many members were there in the Robotics Club at the end of the year?\n(b) What was the overall percentage change in membership from the start to the end of the year?",
+      "student_view": {
+        "problem": "At the start of the year, there were 240 members in the Innovate Robotics Club. In June, 25% of the members left the club. In December, the remaining members increased by 20%.\n\n(a) How many members were there in the Robotics Club at the end of the year?\n(b) What was the overall percentage change in membership from the start to the end of the year?",
+        "socratic_steps": [
+          "**For Part (a):**",
+          "1. How many members left the club in June? (What is 25% of 240?)",
+          "2. How many members were left *after* June?",
+          "3. In December, the remaining members increased by 20%. What is this new increase based on? (Hint: It's based on the number of members *after* June).",
+          "4. Calculate the number of members who joined in December.",
+          "5. What is the total number of members in the club at the end of the year?",
+          "**For Part (b):**",
+          "1. What was the *original* number of members at the start of the year?",
+          "2. What is the *final* number of members at the end of the year (from Part A)?",
+          "3. Calculate the *net change* (increase or decrease) in membership from the start to the end.",
+          "4. How do you calculate the overall percentage change? (Remember to divide the net change by the *original* number of members and multiply by 100%)."
+        ],
+        "hints": [
+          "For sequential percentage changes, calculate each change step-by-step. The base for the next percentage change is the *new* amount after the previous change.",
+          "For overall percentage change, always compare the *final* amount to the *original* starting amount."
+        ]
+      },
+      "learn_step": 1
+    },
+    {
+      "id": "PERCENTAGE-S1-E6",
+      "topic": "Percentage",
+      "title": "School Survey Results",
+      "complexity": "Basic",
+      "difficulty": "Easy",
+      "skill": "find-whole-from-percentage-part",
+      "subskills": [
+        "percentage-calculation",
+        "reverse-percentage"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "In a survey of P6 students about their favourite co-curricular activity (CCA), 45% of the students chose Badminton. If 108 students chose Badminton, how many P6 students participated in the survey altogether?",
+      "student_view": {
+        "socratic_steps": [
+          "What does 45% represent in terms of the total number of students in the survey?",
+          "If 45% of the total students corresponds to 108 students, how can you find what 1% of the total students represents?",
+          "Once you know what 1% is, how can you find the total number of students, which represents 100%?",
+          "Alternatively, can you think of a single step to find the whole (100%) if you know what a part (45%) is?"
+        ],
+        "hints": [
+          "Think of '45%' as a fraction: 45/100. If 45 parts out of 100 total parts is 108 students, how much is 1 part?",
+          "To find the total, you need to find the value of 100 parts."
+        ]
+      },
+      "learn_step": 1
+    },
+    {
+      "id": "PERCENTAGE-S1-E7",
+      "topic": "Percentage",
+      "title": "Shopping Discount",
+      "complexity": "Standard",
+      "difficulty": "Easy-Medium",
+      "skill": "percentage-increase-decrease",
+      "subskills": [
+        "percentage-of-a-quantity",
+        "discount-calculation"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "During a Mid-Year Sale, a laptop was advertised with a 20% discount. The original price of the laptop was $1250.\n(a) What was the discount amount in dollars?\n(b) What was the price of the laptop after the discount?",
+      "student_view": {
+        "socratic_steps": [
+          "For part (a), what does '20% discount' mean in terms of the original price?",
+          "How do you calculate 20% of $1250?",
+          "For part (b), once you have the discount amount, how do you find the final price? Will it be more or less than the original price?",
+          "Can you think of a way to calculate the final price directly as a percentage of the original price without first finding the discount amount? (Hint: If there's a 20% discount, what percentage of the original price are you paying?)"
+        ],
+        "hints": [
+          "To find a percentage of a number, convert the percentage to a decimal or a fraction and multiply.",
+          "The discounted price is Original Price - Discount Amount."
+        ]
+      },
+      "learn_step": 1
+    },
+    {
+      "id": "PERCENTAGE-S1-E8",
+      "topic": "Percentage",
+      "title": "Pocket Money Spending",
+      "complexity": "Moderate",
+      "difficulty": "Medium",
+      "skill": "before-after-concept",
+      "subskills": [
+        "percentage-of-remainder",
+        "reverse-percentage"
+      ],
+      "estimated_time_seconds": 300,
+      "problem_text": "Sarah spent 30% of her pocket money on a storybook and 40% of the *remainder* on stationery. If she had $16.80 left, how much pocket money did Sarah have at first?",
+      "student_view": {
+        "socratic_steps": [
+          "Let's break this down. First, if Sarah spent 30% of her pocket money, what percentage of her pocket money was left?",
+          "Next, '40% of the remainder' was spent on stationery. What does 'remainder' refer to? If 40% of *that* remainder was spent, what percentage of the remainder was left?",
+          "You now have a percentage of the *remainder* that was left. How can you convert this into a percentage of the *original* pocket money?",
+          "Now you know what percentage of her original pocket money $16.80 represents. How can you use this information to find her total original pocket money (100%)?",
+          "Can drawing a model help you visualise the 'before-after' steps?"
+        ],
+        "hints": [
+          "If 30% is spent, 70% remains (100% - 30%).",
+          "If 40% of the remainder is spent, then 60% of the remainder is left (100% - 40%).",
+          "The final amount left is (60% of 70%) of the original pocket money."
+        ]
+      },
+      "learn_step": 1
+    },
+    {
+      "id": "PERCENTAGE-S1-E9",
+      "topic": "Percentage",
+      "title": "Academic Awards",
+      "complexity": "Challenging",
+      "difficulty": "Medium-Hard",
+      "skill": "percentage-of-percentage",
+      "subskills": [
+        "multi-step-percentage",
+        "reverse-percentage"
+      ],
+      "estimated_time_seconds": 360,
+      "problem_text": "In a P6 Math exam, 60% of the students scored an 'A'. Among those who scored an 'A', 25% received a Distinction award. If 30 students received a Distinction award, what was the total number of P6 students who took the Math exam?",
+      "student_view": {
+        "socratic_steps": [
+          "Start from the known number: 30 students received a Distinction award. What percentage of the 'A' scorers does this 30 students represent?",
+          "If 25% of the 'A' scorers is 30 students, how can you find the total number of students who scored an 'A'?",
+          "Now you know the number of students who scored an 'A'. What percentage of the *total* P6 students does this group of 'A' scorers represent?",
+          "If 60% of the total P6 students is the number you just found, how can you determine the total number of P6 students who took the exam?",
+          "Consider working backwards step-by-step to find the total."
+        ],
+        "hints": [
+          "To find the whole given a part and its percentage, divide the part by the percentage (e.g., 30 / 0.25 or 30 / (25/100)).",
+          "This problem involves finding the whole from a part twice."
+        ]
+      },
+      "learn_step": 1
+    },
+    {
+      "id": "PERCENTAGE-S1-E10",
+      "topic": "Percentage",
+      "title": "Robotics Club Membership",
+      "complexity": "Advanced",
+      "difficulty": "Hard",
+      "skill": "before-after-concept",
+      "subskills": [
+        "algebraic-modelling",
+        "percentage-change-simultaneous",
+        "unit-method"
+      ],
+      "estimated_time_seconds": 480,
+      "problem_text": "At the start of the year, the number of boys in the Robotics Club was 80% of the number of girls. During the year, 10 boys joined and 5 girls left the club. The number of boys is now 90% of the number of girls.\nHow many boys and girls were there in the Robotics Club at the start of the year?",
+      "student_view": {
+        "socratic_steps": [
+          "Let 'B' be the initial number of boys and 'G' be the initial number of girls. How can you express the first statement ('number of boys was 80% of the number of girls') using B and G?",
+          "Now, consider the changes. How many boys are there after 10 joined? How many girls are there after 5 left? Write these new quantities in terms of B and G.",
+          "How can you express the second statement ('number of boys is now 90% of the number of girls') using the new quantities of boys and girls?",
+          "You now have two equations relating B and G. What strategy can you use to solve for B and G? (Hint: Can you substitute one expression into the other, or use the 'units' method?)",
+          "If you use the 'units' method, how can you represent the initial ratio of boys to girls in units? Then, how would the 'before' and 'after' units change with the increase/decrease in members?"
+        ],
+        "hints": [
+          "Initial: B = 0.8G (or B = 4/5 G).",
+          "After changes: (B + 10) = 0.9 (G - 5).",
+          "Substitute the first equation into the second, or try to express B and G in terms of units for 'before' and 'after' scenarios."
+        ]
+      },
+      "learn_step": 1
+    },
+    {
+      "id": "PERCENTAGE-S1-E11",
+      "topic": "Percentage",
+      "title": "School CCA Participation",
+      "complexity": "Basic",
+      "difficulty": "Easy",
+      "skill": "find-whole-from-percentage-part",
+      "subskills": [
+        "calculate-whole",
+        "unit-method"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "At Lakeside Primary School, 35% of the students participate in CCAs. If 280 students participate in CCAs, what is the total number of students in Lakeside Primary School?",
+      "student_view": {
+        "socratic_steps": [
+          "What specific information is given about the students who participate in CCAs?",
+          "If 35% of the students represent 280 students, how can you find out how many students represent 1%?",
+          "Once you know the number of students for 1%, how can you find the total number of students in the school, which represents 100%?",
+          "Perform the calculations to find the total number of students."
+        ],
+        "hints": [
+          "Think of 35% as a part of the whole. You need to find the whole.",
+          "To find 1%, divide the given number of students by the given percentage.",
+          "To find 100%, multiply the value of 1% by 100."
+        ]
+      },
+      "learn_step": 2
+    },
+    {
+      "id": "PERCENTAGE-S1-E12",
+      "topic": "Percentage",
+      "title": "Savings Account Growth",
+      "complexity": "Standard",
+      "difficulty": "Easy-Medium",
+      "skill": "percentage-increase-decrease",
+      "subskills": [
+        "calculate-percentage-increase",
+        "identify-base-value"
+      ],
+      "estimated_time_seconds": 300,
+      "problem_text": "Sarah had $80 in her savings account. After her birthday, she received some money and deposited it into her account. Her savings increased to $104. What was the percentage increase in Sarah's savings?",
+      "student_view": {
+        "socratic_steps": [
+          "What was Sarah's initial amount of savings before her birthday?",
+          "What was Sarah's final amount of savings after depositing the new money?",
+          "First, calculate the actual dollar amount by which Sarah's savings increased. How much more money does she have?",
+          "When calculating percentage increase, what is the 'original' or 'base' amount that you should compare the increase against?",
+          "Now, use the formula for percentage increase: (Increase in amount / Original amount) × 100% to find the answer."
+        ],
+        "hints": [
+          "The increase is the difference between the final and initial amounts.",
+          "The base for the percentage increase is always the *original* amount.",
+          "Make sure to express your final answer as a percentage."
+        ]
+      },
+      "learn_step": 2
+    },
+    {
+      "id": "PERCENTAGE-S1-E13",
+      "topic": "Percentage",
+      "title": "Laptop Purchase Discount and Tax",
+      "complexity": "Moderate",
+      "difficulty": "Medium",
+      "skill": "before-after-concept",
+      "subskills": [
+        "sequential-percentage-calculation",
+        "discount-calculation",
+        "tax-calculation"
+      ],
+      "estimated_time_seconds": 420,
+      "problem_text": "During a Mid-Year Sale, a laptop was advertised with a 20% discount. Mrs. Tan bought the laptop and then had to pay an 8% Goods and Services Tax (GST) on the discounted price. If the original price of the laptop was $1800, how much did Mrs. Tan pay for the laptop in total?",
+      "student_view": {
+        "socratic_steps": [
+          "What was the original price of the laptop before any discount?",
+          "First, calculate the price of the laptop *after* the 20% discount. If there's a 20% discount, what percentage of the original price does Mrs. Tan pay?",
+          "Next, Mrs. Tan pays an 8% GST. Is this 8% calculated on the original price or the *discounted price*?",
+          "If she pays an 8% GST on the discounted price, what percentage of the discounted price does she pay in total (discounted price + GST)?",
+          "Perform the calculations step-by-step: first the discounted price, then the final price including GST."
+        ],
+        "hints": [
+          "A 20% discount means you pay 80% of the original price.",
+          "The base for the GST calculation changes to the *discounted* price.",
+          "Paying 8% GST means the new price is 108% of the discounted price.",
+          "Break the problem into two distinct steps."
+        ]
+      },
+      "learn_step": 2
+    },
+    {
+      "id": "PERCENTAGE-S1-E14",
+      "topic": "Percentage",
+      "title": "School Sports Participation Survey",
+      "complexity": "Intermediate",
+      "difficulty": "Medium-Hard",
+      "skill": "percentage-of-percentage",
+      "subskills": [
+        "calculate-subgroup-percentage",
+        "combine-percentages",
+        "fraction-of-fraction"
+      ],
+      "estimated_time_seconds": 480,
+      "problem_text": "In a school of 1200 students, 60% are boys. Of the boys, 45% play soccer. Of the girls, 30% play netball.\n(a) How many boys play soccer?\n(b) How many girls play netball?\n(c) What percentage of the total student population plays either soccer or netball? (Round to 1 decimal place if necessary)",
+      "student_view": {
+        "socratic_steps": [
+          "For part (a), what is the total number of students, and what percentage of them are boys? Calculate the total number of boys first.",
+          "Once you have the total number of boys, how do you find out how many of them play soccer (45% of the boys)?",
+          "For part (b), if 60% of the students are boys, what percentage of the students must be girls? Calculate the total number of girls.",
+          "Once you have the total number of girls, how do you find out how many of them play netball (30% of the girls)?",
+          "For part (c), you need to find the total number of students who play either soccer or netball. What do you need to do with the numbers from (a) and (b)?",
+          "Finally, to find the percentage of the *total student population* that plays either sport, how do you express this combined number as a percentage of the school's total student population? Remember to round if needed."
+        ],
+        "hints": [
+          "Part (a) and (b) involve finding a percentage of a quantity, then finding a percentage of *that* quantity.",
+          "Total students = boys + girls.",
+          "For part (c), the base for the percentage is the *total* number of students in the school.",
+          "Percentage = (Part / Whole) × 100%."
+        ]
+      },
+      "learn_step": 2
+    },
+    {
+      "id": "PERCENTAGE-S1-E15",
+      "topic": "Percentage",
+      "title": "Adventure Club Membership Changes",
+      "complexity": "Advanced",
+      "difficulty": "Hard",
+      "skill": "before-after-concept",
+      "subskills": [
+        "reverse-percentage",
+        "algebraic-modelling",
+        "unit-method-complex"
+      ],
+      "estimated_time_seconds": 600,
+      "problem_text": "At the start of the year, the Adventure Club had a certain number of members. In April, 20% of the members left the club. In August, 30 new members joined, and the club's membership became 90% of its original number at the start of the year. How many members were in the Adventure Club at the start of the year?",
+      "student_view": {
+        "socratic_steps": [
+          "Let the original number of members at the start of the year be represented by '100 units'.",
+          "If 20% of the members left in April, how many units of members were remaining in the club?",
+          "In August, 30 new members joined. How can you express the number of members in August, combining the units from April and the new members?",
+          "The problem states that the membership in August became 90% of its *original* number. How many units does 90% of the original 100 units represent?",
+          "Now you have two expressions for the number of members in August (one in terms of units + 30, and one in terms of 90 units). Set these two expressions equal to each other.",
+          "Solve the resulting equation to find the value of '1 unit'.",
+          "Finally, calculate the original number of members, which was 100 units."
+        ],
+        "hints": [
+          "Visualise or draw a bar model to represent the 'before' and 'after' scenarios.",
+          "Let the unknown original quantity be 'x' or '100u' to make it easier to work with percentages.",
+          "The key is to set up an equation that equates the number of members after all changes to the final percentage of the original."
+        ]
+      },
+      "learn_step": 2
+    },
+    {
+      "id": "PERCENTAGE-S1-E16",
+      "topic": "Percentage",
+      "title": "School Survey: Favourite CCA",
+      "complexity": "Low",
+      "difficulty": "Easy",
+      "skill": "find-whole-from-percentage-part",
+      "subskills": [
+        "understand-percentage-as-part-of-a-whole",
+        "unitary-method"
+      ],
+      "estimated_time_seconds": 120,
+      "problem_text": "In a school survey, 35% of the students chose Reading as their favourite CCA (Co-Curricular Activity). If 140 students chose Reading, what is the total number of students who participated in the survey?",
+      "student_view": {
+        "problem_statement": "In a school survey, 35% of the students chose Reading as their favourite CCA (Co-Curricular Activity). If 140 students chose Reading, what is the total number of students who participated in the survey?",
+        "socratic_steps": [
+          {
+            "question": "What percentage of the students chose Reading?",
+            "hint": "Look at the first sentence of the problem."
+          },
+          {
+            "question": "The problem tells us that 140 students chose Reading. So, what percentage do these 140 students represent?",
+            "hint": "Connect the number of students to the percentage given."
+          },
+          {
+            "question": "If you know what 35% represents, how can you find out what 1% of the students is?",
+            "hint": "Divide the number of students by the percentage it represents."
+          },
+          {
+            "question": "Once you know the number of students representing 1%, how can you find the total number of students, which is 100%?",
+            "hint": "Multiply your answer for 1% by 100."
+          }
+        ]
+      },
+      "learn_step": 2
+    },
+    {
+      "id": "PERCENTAGE-S1-E17",
+      "topic": "Percentage",
+      "title": "Temperature Change in Singapore",
+      "complexity": "Medium",
+      "difficulty": "Medium",
+      "skill": "percentage-increase-decrease",
+      "subskills": [
+        "calculate-increase",
+        "formula-for-percentage-change"
+      ],
+      "estimated_time_seconds": 150,
+      "problem_text": "The temperature in Singapore was 30°C on Monday. On Tuesday, it increased to 33°C. What was the percentage increase in temperature from Monday to Tuesday?",
+      "student_view": {
+        "problem_statement": "The temperature in Singapore was 30°C on Monday. On Tuesday, it increased to 33°C. What was the percentage increase in temperature from Monday to Tuesday?",
+        "socratic_steps": [
+          {
+            "question": "What was the original temperature on Monday?",
+            "hint": "This is your 'starting' value."
+          },
+          {
+            "question": "What was the temperature on Tuesday?",
+            "hint": "This is your 'new' value."
+          },
+          {
+            "question": "How much did the temperature increase from Monday to Tuesday? (Calculate the difference)",
+            "hint": "Subtract the original temperature from the new temperature."
+          },
+          {
+            "question": "To find the percentage increase, what value should you divide the increase by? (Is it the original temperature or the new temperature?)",
+            "hint": "Percentage increase is always calculated based on the *original* value."
+          },
+          {
+            "question": "After dividing the increase by the original temperature, what must you do to express it as a percentage?",
+            "hint": "Multiply the result by 100%."
+          }
+        ]
+      },
+      "learn_step": 2
+    },
+    {
+      "id": "PERCENTAGE-S1-E18",
+      "topic": "Percentage",
+      "title": "Shopping Discount: Original Price",
+      "complexity": "Medium",
+      "difficulty": "Medium",
+      "skill": "before-after-concept",
+      "subskills": [
+        "find-whole-from-percentage-part",
+        "understand-discount-percentage"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "A bag was sold at a discount of 20%. The discounted price was $120. What was the original price of the bag before the discount?",
+      "student_view": {
+        "problem_statement": "A bag was sold at a discount of 20%. The discounted price was $120. What was the original price of the bag before the discount?",
+        "socratic_steps": [
+          {
+            "question": "If the original price of the bag represents 100%, and there was a 20% discount, what percentage of the original price did the customer actually pay?",
+            "hint": "Think: 100% - Discount % = Paid %"
+          },
+          {
+            "question": "The discounted price was $120. So, what percentage of the original price does this $120 represent?",
+            "hint": "Connect the discounted price to the percentage you just calculated."
+          },
+          {
+            "question": "Now that you know what percentage $120 represents, how can you find the value of 1% of the original price?",
+            "hint": "Divide the price by the percentage it represents."
+          },
+          {
+            "question": "Finally, how do you find the original price, which is 100%?",
+            "hint": "Multiply your value for 1% by 100."
+          }
+        ]
+      },
+      "learn_step": 2
+    },
+    {
+      "id": "PERCENTAGE-S1-E19",
+      "topic": "Percentage",
+      "title": "School Demographics: Girls Wearing Spectacles",
+      "complexity": "High",
+      "difficulty": "Hard",
+      "skill": "percentage-of-percentage",
+      "subskills": [
+        "multi-step-percentage-calculations",
+        "sequential-calculation"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "In a school, 60% of the students are girls. 25% of the girls wear spectacles. If there are 1500 students in total, how many girls wear spectacles?",
+      "student_view": {
+        "problem_statement": "In a school, 60% of the students are girls. 25% of the girls wear spectacles. If there are 1500 students in total, how many girls wear spectacles?",
+        "socratic_steps": [
+          {
+            "question": "First, how many students are there in total in the school?",
+            "hint": "This is the initial 'whole' for your first calculation."
+          },
+          {
+            "question": "What percentage of the *total* students are girls?",
+            "hint": "Identify the first percentage given in the problem."
+          },
+          {
+            "question": "Calculate the number of girls in the school. (60% of 1500)",
+            "hint": "Convert the percentage to a decimal or fraction, then multiply by the total number of students."
+          },
+          {
+            "question": "Now, we know how many girls there are. The problem states that 25% of *these girls* wear spectacles. What is your 'new whole' for this second percentage calculation?",
+            "hint": "The 'new whole' is the number of girls you just calculated."
+          },
+          {
+            "question": "Finally, calculate 25% of the number of girls to find how many girls wear spectacles.",
+            "hint": "Convert 25% to a decimal or fraction, then multiply it by the number of girls."
+          }
+        ]
+      },
+      "learn_step": 2
+    },
+    {
+      "id": "PERCENTAGE-S1-E20",
+      "topic": "Percentage",
+      "title": "Chess Club Membership Changes",
+      "complexity": "High",
+      "difficulty": "Hard",
+      "skill": "before-after-concept",
+      "subskills": [
+        "multi-step-reverse-percentage",
+        "sequential-percentage-change"
+      ],
+      "estimated_time_seconds": 300,
+      "problem_text": "The number of members in a chess club decreased by 10% in January. In February, the number of members increased by 20% compared to January's number. If there were 288 members in February, how many members were there in the club at the beginning of January?",
+      "student_view": {
+        "problem_statement": "The number of members in a chess club decreased by 10% in January. In February, the number of members increased by 20% compared to January's number. If there were 288 members in February, how many members were there in the club at the beginning of January?",
+        "socratic_steps": [
+          {
+            "question": "Let's work backward from February. The 20% increase in February was based on January's number of members. If January's number is considered 100% for this increase, what percentage does the 288 members in February represent?",
+            "hint": "If it increased by 20%, it means the new number is 100% + 20% of the original (January's) number."
+          },
+          {
+            "question": "Now, use this information to find the number of members in January. If 288 members represent 120% of January's number, how do you find what 100% (January's number) is?",
+            "hint": "Find 1% first, then multiply by 100."
+          },
+          {
+            "question": "You've found the number of members at the end of January (or start of February). Now, let's consider the first change: the 10% decrease in January. If the original number of members at the beginning of January was 100%, what percentage was left after a 10% decrease?",
+            "hint": "100% - 10% = ?"
+          },
+          {
+            "question": "The number of members you just calculated for January (from the previous step) represents this percentage (90%). How can you use this to find the original number of members at the beginning of January (100%)?",
+            "hint": "Divide January's number by 90 to find 1%, then multiply by 100."
+          }
+        ]
+      },
+      "learn_step": 2
+    },
+    {
+      "id": "PERCENTAGE-S1-E21",
+      "topic": "Percentage",
+      "title": "Favourite Fruit Survey",
+      "complexity": "Basic",
+      "difficulty": "Easy",
+      "skill": "find-whole-from-percentage-part",
+      "subskills": [
+        "unit-method",
+        "pictorial-model-concept"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "In a survey about favourite fruits, 240 students chose mango. This represents 30% of all students surveyed. How many students were surveyed in total?",
+      "student_view": {
+        "problem": "In a survey about favourite fruits, 240 students chose mango. This represents 30% of all students surveyed. How many students were surveyed in total?",
+        "socratic_steps": [
+          {
+            "question": "What does the information '240 students chose mango, which represents 30% of all students surveyed' tell us about the relationship between the number of students and the percentage?",
+            "hint": "Think about what 30% of the total actually means in terms of a specific quantity."
+          },
+          {
+            "question": "If 30% of the total number of students is 240, how can you find out how many students represent 1% of the total?",
+            "hint": "You're trying to find a 'unit' value. What operation would you use to go from 30 units to 1 unit?"
+          },
+          {
+            "question": "Once you know the number of students that corresponds to 1%, how can you find the total number of students surveyed (which is 100%)?",
+            "hint": "If you know 1% and you want 100%, what should you multiply by?"
+          }
+        ],
+        "answer_format": "Provide your final answer as a number."
+      },
+      "learn_step": 3
+    },
+    {
+      "id": "PERCENTAGE-S1-E22",
+      "topic": "Percentage",
+      "title": "David's Savings Increase",
+      "complexity": "Intermediate",
+      "difficulty": "Medium",
+      "skill": "percentage-increase-decrease",
+      "subskills": [
+        "calculate-percentage-change",
+        "identify-base-value"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "David saved $120 in January. In February, he saved $150. What was the percentage increase in his savings from January to February?",
+      "student_view": {
+        "problem": "David saved $120 in January. In February, he saved $150. What was the percentage increase in his savings from January to February?",
+        "socratic_steps": [
+          {
+            "question": "First, what is the *actual amount* by which David's savings increased from January to February?",
+            "hint": "Find the difference between his February savings and his January savings."
+          },
+          {
+            "question": "When calculating percentage increase, what is the *original amount* or the base amount you compare the increase to?",
+            "hint": "Is it the savings in January or February that you should use as the starting point for comparison?"
+          },
+          {
+            "question": "Now, how do you express this increase as a percentage of the original amount? Remember the formula for percentage change.",
+            "hint": "Formula: (Change / Original Amount) × 100%. Don't forget the percentage symbol in your final answer."
+          }
+        ],
+        "answer_format": "Provide your final answer as a percentage (e.g., 25%)."
+      },
+      "learn_step": 3
+    },
+    {
+      "id": "PERCENTAGE-S1-E23",
+      "topic": "Percentage",
+      "title": "Laptop Discount",
+      "complexity": "Intermediate",
+      "difficulty": "Medium",
+      "skill": "before-after-concept",
+      "subskills": [
+        "find-original-value-after-discount",
+        "unit-method"
+      ],
+      "estimated_time_seconds": 300,
+      "problem_text": "A laptop was sold at a discount of 25% during a store's anniversary sale. Sarah paid $1350 for the laptop. What was the original price of the laptop before the discount?",
+      "student_view": {
+        "problem": "A laptop was sold at a discount of 25% during a store's anniversary sale. Sarah paid $1350 for the laptop. What was the original price of the laptop before the discount?",
+        "socratic_steps": [
+          {
+            "question": "If the original price represents 100%, and there was a 25% discount, what percentage of the original price did Sarah actually pay?",
+            "hint": "Subtract the discount percentage from the full percentage."
+          },
+          {
+            "question": "You know that $1350 is the amount Sarah paid, and this amount represents a certain percentage of the original price (from the previous step). How can you use this information to find what 1% of the original price is worth?",
+            "hint": "If X% corresponds to $1350, how do you find the value of 1%?"
+          },
+          {
+            "question": "Once you know the value of 1% of the original price, how can you find the original price (which is 100%)?",
+            "hint": "Multiply the value of 1% by 100."
+          }
+        ],
+        "answer_format": "Provide your final answer in dollars (e.g., $1800)."
+      },
+      "learn_step": 3
+    },
+    {
+      "id": "PERCENTAGE-S1-E24",
+      "topic": "Percentage",
+      "title": "Lakeside Primary School Demographics",
+      "complexity": "Advanced",
+      "difficulty": "Hard",
+      "skill": "percentage-of-percentage",
+      "subskills": [
+        "multi-step-percentage-problems",
+        "working-backwards"
+      ],
+      "estimated_time_seconds": 360,
+      "problem_text": "In Lakeside Primary School, 60% of the students are boys. Of the boys, 40% wear spectacles. If there are 120 boys who wear spectacles, how many students are there in Lakeside Primary School in total?",
+      "student_view": {
+        "problem": "In Lakeside Primary School, 60% of the students are boys. Of the boys, 40% wear spectacles. If there are 120 boys who wear spectacles, how many students are there in Lakeside Primary School in total?",
+        "socratic_steps": [
+          {
+            "question": "The 120 boys who wear spectacles represent 40% *of the total number of boys*. Can you use this information to find the total number of boys in the school?",
+            "hint": "If 40% of boys is 120, first find 1% of boys, then 100% of boys."
+          },
+          {
+            "question": "Now that you know the total number of boys, remember that this number represents 60% *of all students* in the school. How can you use this to find the total number of students in Lakeside Primary School?",
+            "hint": "If 60% of all students is the number of boys you just found, use a similar method to find 1% of all students, then 100% of all students."
+          },
+          {
+            "question": "Think about the sequence of calculations. You're working backward from a 'part of a part' to the 'whole'. Does your answer make sense in the context of the problem?",
+            "hint": "Always check if your calculated 'whole' is larger than the 'parts' as expected."
+          }
+        ],
+        "answer_format": "Provide your final answer as a number of students."
+      },
+      "learn_step": 3
+    },
+    {
+      "id": "PERCENTAGE-S1-E25",
+      "topic": "Percentage",
+      "title": "Robotics Club Membership",
+      "complexity": "Advanced",
+      "difficulty": "Hard",
+      "skill": "before-after-concept",
+      "subskills": [
+        "chained-percentage-changes",
+        "reverse-percentage-calculation"
+      ],
+      "estimated_time_seconds": 420,
+      "problem_text": "The number of members in the Robotics Club increased by 20% in January. In February, 15 new members joined, bringing the total membership to 90. How many members were there in the Robotics Club before January?",
+      "student_view": {
+        "problem": "The number of members in the Robotics Club increased by 20% in January. In February, 15 new members joined, bringing the total membership to 90. How many members were there in the Robotics Club before January?",
+        "socratic_steps": [
+          {
+            "question": "Let's work backward from the end. If the total membership in February was 90, and 15 new members joined *in February*, how many members were there *at the end of January* (before the 15 new members joined in February)?",
+            "hint": "Subtract the new members that joined in February from the final total."
+          },
+          {
+            "question": "The number of members you found for the end of January represents a 20% increase from the number of members *before January*. If the original number of members (before January) is 100%, what percentage does the end-of-January number represent?",
+            "hint": "An increase of 20% means the new amount is 100% + 20% of the original."
+          },
+          {
+            "question": "You now know that a certain percentage (from step 2) corresponds to a specific number of members (from step 1). How can you use this to find the original number of members before January (100%)?",
+            "hint": "If X% corresponds to a number, first find 1%, then find 100%. This is similar to 'finding the whole from a part'."
+          },
+          {
+            "question": "Review your steps. You've reversed two changes to find the initial state. Does the answer seem reasonable given the increases?",
+            "hint": "The number before January should be smaller than the number at the end of January, which should be smaller than the final number in February."
+          }
+        ],
+        "answer_format": "Provide your final answer as a number of members."
+      },
+      "learn_step": 3
+    },
+    {
+      "id": "PERCENTAGE-S1-E26",
+      "topic": "Percentage",
+      "title": "Walking to School",
+      "complexity": "Basic",
+      "difficulty": "Easy",
+      "skill": "find-whole-from-percentage-part",
+      "subskills": [
+        "percentage-calculation",
+        "whole-from-part"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "At Northwood Primary School, 35% of the students walk to school. If 280 students walk to school, what is the total number of students in Northwood Primary School?",
+      "student_view": {
+        "socratic_steps": [
+          {
+            "step": "What does '35% of the students walk to school' tell us about the relationship between the number of students who walk and the total number of students?",
+            "hint": "Think about what 'percent' means. It's 'per hundred'."
+          },
+          {
+            "step": "If 35% of the total students is 280 students, how can you find out what 1% of the total students is?",
+            "hint": "If you know the value of 35 units, how do you find the value of 1 unit?"
+          },
+          {
+            "step": "Once you know the number of students that represents 1%, how can you find the total number of students in the school?",
+            "hint": "The total number of students represents 100% of the school population."
+          },
+          {
+            "step": "Perform the calculation to find the final answer.",
+            "hint": "Multiply the value of 1% by 100."
+          }
+        ]
+      },
+      "learn_step": 3
+    },
+    {
+      "id": "PERCENTAGE-S1-E27",
+      "topic": "Percentage",
+      "title": "Discounted Headphones",
+      "complexity": "Moderate",
+      "difficulty": "Medium",
+      "skill": "percentage-increase-decrease",
+      "subskills": [
+        "reverse-percentage",
+        "discount-calculation"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "During a Mid-Year Sale, a pair of wireless headphones was sold at a 20% discount. Mrs. Tan paid $160 for the headphones. What was the original price of the headphones before the discount?",
+      "student_view": {
+        "socratic_steps": [
+          {
+            "step": "If the headphones were sold at a 20% discount, what percentage of the original price did Mrs. Tan pay?",
+            "hint": "The original price represents 100%. If you take away 20%, what's left?"
+          },
+          {
+            "step": "You know that $160 is the price Mrs. Tan paid, and you've identified what percentage this amount represents of the original price. How can you set up a relationship to find the original price?",
+            "hint": "If X% corresponds to $160, how can you find 1%?"
+          },
+          {
+            "step": "Once you know what 1% of the original price is, how do you find the original price itself?",
+            "hint": "The original price is always 100%."
+          },
+          {
+            "step": "Calculate the original price.",
+            "hint": "Divide $160 by the percentage it represents, then multiply by 100."
+          }
+        ]
+      },
+      "learn_step": 3
+    },
+    {
+      "id": "PERCENTAGE-S1-E28",
+      "topic": "Percentage",
+      "title": "Savings Goal",
+      "complexity": "Intermediate",
+      "difficulty": "Medium",
+      "skill": "before-after-concept",
+      "subskills": [
+        "percentage-increase",
+        "total-calculation",
+        "multi-step-problem"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "Sarah saved some money last month. This month, she saved 25% more than she did last month. If she saved $300 this month, what was the total amount she saved over these two months?",
+      "student_view": {
+        "socratic_steps": [
+          {
+            "step": "Let's represent Sarah's savings last month as 100%. How can you express her savings this month as a percentage of last month's savings?",
+            "hint": "25% more means you add 25% to the original 100%."
+          },
+          {
+            "step": "You are given that Sarah saved $300 this month. This amount corresponds to the percentage you identified in the previous step. How can you use this information to find the amount she saved last month?",
+            "hint": "If X% corresponds to $300, first find out what 1% corresponds to."
+          },
+          {
+            "step": "Once you have the amount Sarah saved last month, what is the final step to answer the problem's question?",
+            "hint": "The question asks for the *total* amount saved over *both* months."
+          },
+          {
+            "step": "Perform the necessary calculations to find the amount saved last month and then the total amount saved.",
+            "hint": "Calculate 1% from $300, then multiply by 100 to get last month's savings. Add last month's savings to this month's savings."
+          }
+        ]
+      },
+      "learn_step": 3
+    },
+    {
+      "id": "PERCENTAGE-S1-E29",
+      "topic": "Percentage",
+      "title": "Sports Club Survey",
+      "complexity": "Advanced",
+      "difficulty": "Hard",
+      "skill": "percentage-of-percentage",
+      "subskills": [
+        "multi-step-percentage",
+        "fraction-of-fraction-concept"
+      ],
+      "estimated_time_seconds": 300,
+      "problem_text": "In a survey of 450 students about their favourite sports, 60% chose team sports. Of those who chose team sports, 35% chose basketball. How many students chose basketball?",
+      "student_view": {
+        "socratic_steps": [
+          {
+            "step": "First, you need to find out how many students chose team sports. The survey involved 450 students in total, and 60% of them chose team sports. How do you calculate this number?",
+            "hint": "Multiply the total number of students by the percentage that chose team sports. Remember to convert the percentage to a decimal or fraction."
+          },
+          {
+            "step": "Now that you have the number of students who chose team sports, the problem states that 35% of *these* students chose basketball. How do you calculate this next step?",
+            "hint": "Take the number of students who chose team sports as your new 'whole' for this step, then find 35% of that number."
+          },
+          {
+            "step": "Perform the calculations carefully to arrive at the final number of students who chose basketball.",
+            "hint": "Step 1: 0.60 * 450. Step 2: 0.35 * (result from Step 1)."
+          }
+        ]
+      },
+      "learn_step": 3
+    },
+    {
+      "id": "PERCENTAGE-S1-E30",
+      "topic": "Percentage",
+      "title": "Math Test Scores",
+      "complexity": "Advanced",
+      "difficulty": "Hard",
+      "skill": "before-after-concept",
+      "subskills": [
+        "percentage-increase",
+        "percentage-decrease",
+        "sequential-calculation"
+      ],
+      "estimated_time_seconds": 300,
+      "problem_text": "In a Mathematics test, Ben scored 80 marks. Ali scored 15% more than Ben. Cindy scored 20% less than Ali. What was Cindy's score?",
+      "student_view": {
+        "socratic_steps": [
+          {
+            "step": "What is Ben's score? This is your starting point.",
+            "hint": "The problem states it directly."
+          },
+          {
+            "step": "Ali scored 15% more than Ben. How can you calculate Ali's score? Consider Ben's score as 100% when calculating Ali's score.",
+            "hint": "Ali's score is 100% + 15% = 115% of Ben's score. Calculate 115% of 80."
+          },
+          {
+            "step": "Now that you have Ali's score, Cindy scored 20% less than Ali. When calculating Cindy's score, what is the new 'whole' or 100% you should refer to?",
+            "hint": "Cindy's score is based on Ali's score. So, Ali's score is the new 100% for this calculation."
+          },
+          {
+            "step": "Calculate Cindy's score. If she scored 20% less than Ali, what percentage of Ali's score is Cindy's score?",
+            "hint": "Cindy's score is 100% - 20% = 80% of Ali's score. Calculate 80% of Ali's score."
+          },
+          {
+            "step": "Perform all calculations carefully, step-by-step, to find Cindy's final score.",
+            "hint": "First, calculate Ali's score. Then, use Ali's score to calculate Cindy's score."
+          }
+        ]
+      },
+      "learn_step": 3
+    },
+    {
+      "id": "PERCENTAGE-S1-E31",
+      "topic": "Percentage",
+      "title": "Discounted Handbag",
+      "complexity": "Basic",
+      "difficulty": "Easy",
+      "skill": "find-whole-from-percentage-part",
+      "subskills": [
+        "percentage-discount",
+        "reverse-percentage-simple"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "During a sale, a handbag was sold at a 20% discount. Mrs. Lee paid $120 for the handbag. What was the original price of the handbag before the discount?",
+      "student_view": {
+        "problem": "During a sale, a handbag was sold at a 20% discount. Mrs. Lee paid $120 for the handbag. What was the original price of the handbag before the discount?",
+        "socratic_steps": [
+          {
+            "question": "If the handbag was sold at a 20% discount, what percentage of the original price did Mrs. Lee actually pay?",
+            "hints": [
+              "Think of the original price as 100%.",
+              "If 20% was taken off, how much is left?"
+            ],
+            "answer": "Mrs. Lee paid 100% - 20% = 80% of the original price."
+          },
+          {
+            "question": "The $120 Mrs. Lee paid represents what percentage of the original price?",
+            "hints": [
+              "Connect the amount paid to the percentage you just found."
+            ],
+            "answer": "$120 represents 80% of the original price."
+          },
+          {
+            "question": "How can you find the value of 1% of the original price?",
+            "hints": [
+              "If you know what 80% is, how do you get to 1%?"
+            ],
+            "answer": "To find 1%, divide the amount by the percentage: $120 ÷ 80 = $1.50."
+          },
+          {
+            "question": "Now that you know the value of 1%, how can you find the original price (which is 100%)?",
+            "hints": [
+              "Multiply the value of 1% by 100."
+            ],
+            "answer": "Multiply $1.50 by 100: $1.50 × 100 = $150. The original price was $150."
+          }
+        ]
+      },
+      "learn_step": 4
+    },
+    {
+      "id": "PERCENTAGE-S1-E32",
+      "topic": "Percentage",
+      "title": "Nature Club Membership Growth",
+      "complexity": "Intermediate",
+      "difficulty": "Medium",
+      "skill": "percentage-increase-decrease",
+      "subskills": [
+        "calculate-percentage-change",
+        "before-after-concept"
+      ],
+      "estimated_time_seconds": 120,
+      "problem_text": "The Nature Club had 250 members last year. This year, the number of members increased by 12%. How many members are there in the Nature Club this year?",
+      "student_view": {
+        "problem": "The Nature Club had 250 members last year. This year, the number of members increased by 12%. How many members are there in the Nature Club this year?",
+        "socratic_steps": [
+          {
+            "question": "What does 'increased by 12%' mean in terms of the new total percentage of members compared to last year?",
+            "hints": [
+              "Think of last year's members as 100%.",
+              "If there's an increase, you add the percentage."
+            ],
+            "answer": "The new number of members is 100% + 12% = 112% of last year's members."
+          },
+          {
+            "question": "How can you calculate the exact number of members that represents a 12% increase?",
+            "hints": [
+              "Calculate 12% of 250 members."
+            ],
+            "answer": "Increase in members = 12/100 × 250 = 0.12 × 250 = 30 members."
+          },
+          {
+            "question": "Now that you know the original number of members and the increase, how do you find the total number of members this year?",
+            "hints": [
+              "Add the increase to the original number."
+            ],
+            "answer": "Total members this year = Original members + Increase = 250 + 30 = 280 members."
+          },
+          {
+            "question": "Can you think of a more direct way to calculate the total members using the percentage from the first step?",
+            "hints": [
+              "If this year's members are 112% of last year's, how can you calculate 112% of 250 directly?"
+            ],
+            "answer": "Yes, you can directly calculate 112% of 250: 1.12 × 250 = 280 members."
+          }
+        ]
+      },
+      "learn_step": 4
+    },
+    {
+      "id": "PERCENTAGE-S1-E33",
+      "topic": "Percentage",
+      "title": "Pocket Money Savings",
+      "complexity": "Intermediate",
+      "difficulty": "Medium",
+      "skill": "before-after-concept",
+      "subskills": [
+        "find-whole-from-percentage-part",
+        "multi-step-problem"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "Sarah and Ben each received some pocket money. Sarah spent 60% of her pocket money and had $24 left. Ben spent 75% of his pocket money and had $15 left. What was the total amount of pocket money they received altogether?",
+      "student_view": {
+        "problem": "Sarah and Ben each received some pocket money. Sarah spent 60% of her pocket money and had $24 left. Ben spent 75% of his pocket money and had $15 left. What was the total amount of pocket money they received altogether?",
+        "socratic_steps": [
+          {
+            "question": "Let's first focus on Sarah. If she spent 60% of her pocket money, what percentage did she have left?",
+            "hints": [
+              "Original amount is 100%."
+            ],
+            "answer": "Sarah had 100% - 60% = 40% of her pocket money left."
+          },
+          {
+            "question": "We know Sarah had $24 left. So, $24 represents what percentage of Sarah's original pocket money?",
+            "hints": [
+              "Connect the amount to the percentage you just calculated."
+            ],
+            "answer": "$24 represents 40% of Sarah's original pocket money."
+          },
+          {
+            "question": "How can you find Sarah's original pocket money?",
+            "hints": [
+              "If 40% is $24, what is 1%? Then what is 100%?"
+            ],
+            "answer": "Sarah's original pocket money = ($24 ÷ 40) × 100 = $0.60 × 100 = $60."
+          },
+          {
+            "question": "Now, let's apply the same logic to Ben. If he spent 75% of his pocket money, what percentage did he have left, and what amount does that represent?",
+            "hints": [
+              "Ben had 100% - 75% = 25% of his pocket money left.",
+              "This 25% is equal to $15."
+            ],
+            "answer": "Ben had 25% of his pocket money left, which is $15."
+          },
+          {
+            "question": "How can you find Ben's original pocket money?",
+            "hints": [
+              "If 25% is $15, what is 100%?"
+            ],
+            "answer": "Ben's original pocket money = ($15 ÷ 25) × 100 = $0.60 × 100 = $60."
+          },
+          {
+            "question": "Finally, what is the total amount of pocket money they received altogether?",
+            "hints": [
+              "Add Sarah's original amount and Ben's original amount."
+            ],
+            "answer": "Total pocket money = Sarah's original + Ben's original = $60 + $60 = $120."
+          }
+        ]
+      },
+      "learn_step": 4
+    },
+    {
+      "id": "PERCENTAGE-S1-E34",
+      "topic": "Percentage",
+      "title": "Reading Preferences Survey",
+      "complexity": "Advanced",
+      "difficulty": "Hard",
+      "skill": "percentage-of-percentage",
+      "subskills": [
+        "multi-step-percentage",
+        "fraction-of-fraction-concept"
+      ],
+      "estimated_time_seconds": 210,
+      "problem_text": "In a survey of 400 students, 60% said they enjoyed reading. Of those who enjoyed reading, 25% preferred sci-fi books. How many students preferred sci-fi books?",
+      "student_view": {
+        "problem": "In a survey of 400 students, 60% said they enjoyed reading. Of those who enjoyed reading, 25% preferred sci-fi books. How many students preferred sci-fi books?",
+        "socratic_steps": [
+          {
+            "question": "First, let's find out how many students enjoyed reading. How do you calculate 60% of 400 students?",
+            "hints": [
+              "Convert the percentage to a decimal or fraction and multiply."
+            ],
+            "answer": "Number of students who enjoyed reading = 60/100 × 400 = 0.60 × 400 = 240 students."
+          },
+          {
+            "question": "Now, the problem states that 'Of those who enjoyed reading, 25% preferred sci-fi books.' What is the 'whole' we are now taking 25% from?",
+            "hints": [
+              "It's not 25% of the *original* 400 students.",
+              "It's 25% of the group who *enjoyed reading*."
+            ],
+            "answer": "The 'whole' is the 240 students who enjoyed reading."
+          },
+          {
+            "question": "So, how do you find 25% of these students (the ones who enjoyed reading)?",
+            "hints": [
+              "Calculate 25% of 240."
+            ],
+            "answer": "Number of students who preferred sci-fi books = 25/100 × 240 = 0.25 × 240 = 60 students."
+          },
+          {
+            "question": "Can you think of a single calculation that combines these steps to find the final answer?",
+            "hints": [
+              "You found 60% of 400, then 25% of that result.",
+              "This is like finding 25% *of* 60% *of* 400."
+            ],
+            "answer": "Yes, you can calculate (25/100) × (60/100) × 400 = 0.25 × 0.60 × 400 = 0.15 × 400 = 60 students."
+          }
+        ]
+      },
+      "learn_step": 4
+    },
+    {
+      "id": "PERCENTAGE-S1-E35",
+      "topic": "Percentage",
+      "title": "Wildlife Park Visitors",
+      "complexity": "Advanced",
+      "difficulty": "Hard",
+      "skill": "before-after-concept",
+      "subskills": [
+        "reverse-percentage-calculation",
+        "percentage-decrease",
+        "finding-original-value"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "The number of visitors to a wildlife park decreased by 15% in July compared to June. If there were 17000 visitors in July, how many visitors were there in June?",
+      "student_view": {
+        "problem": "The number of visitors to a wildlife park decreased by 15% in July compared to June. If there were 17000 visitors in July, how many visitors were there in June?",
+        "socratic_steps": [
+          {
+            "question": "Let's represent the number of visitors in June as 100%. If the number of visitors decreased by 15% in July, what percentage of June's visitors visited in July?",
+            "hints": [
+              "Original total minus the decrease."
+            ],
+            "answer": "The number of visitors in July represents 100% - 15% = 85% of the visitors in June."
+          },
+          {
+            "question": "We know that there were 17000 visitors in July. So, 17000 represents what percentage of the visitors in June?",
+            "hints": [
+              "Connect the given number to the percentage you just found."
+            ],
+            "answer": "17000 visitors represents 85% of the visitors in June."
+          },
+          {
+            "question": "How can you find the number of visitors that corresponds to 1% of June's visitors?",
+            "hints": [
+              "Divide the number of visitors by its corresponding percentage."
+            ],
+            "answer": "To find 1%, divide the number of visitors by 85: 17000 ÷ 85 = 200 visitors."
+          },
+          {
+            "question": "Now that you know the value of 1%, how can you find the total number of visitors in June (which is 100%)?",
+            "hints": [
+              "Multiply the value of 1% by 100."
+            ],
+            "answer": "Multiply 200 by 100: 200 × 100 = 20000 visitors. There were 20000 visitors in June."
+          },
+          {
+            "question": "This is often called a 'reverse percentage' problem. If 'X' was the number of visitors in June, how would you set up an equation to find X?",
+            "hints": [
+              "July's visitors = Percentage of June's visitors * June's visitors."
+            ],
+            "answer": "0.85 × X = 17000. So, X = 17000 / 0.85 = 20000."
+          }
+        ]
+      },
+      "learn_step": 4
+    },
+    {
+      "id": "PERCENTAGE-S1-E36",
+      "topic": "Percentage",
+      "title": "Favourite Hobby Survey",
+      "complexity": "Low",
+      "difficulty": "Easy",
+      "skill": "find-whole-from-percentage-part",
+      "subskills": [
+        "understand-percentage-as-part-of-whole",
+        "calculate-whole-from-given-percentage"
+      ],
+      "estimated_time_seconds": 120,
+      "problem_text": "In a survey of Primary 6 students, 60% chose 'Reading' as their favourite hobby. If 180 students chose 'Reading', how many students participated in the survey altogether?",
+      "student_view": {
+        "problem_statement": "In a survey of Primary 6 students, 60% chose 'Reading' as their favourite hobby. If 180 students chose 'Reading', how many students participated in the survey altogether?",
+        "socratic_steps": [
+          {
+            "step": "What percentage of the total students does the 180 students who chose 'Reading' represent?",
+            "hint": "Look at the given information about the percentage for 'Reading'."
+          },
+          {
+            "step": "If 60% of the students is equal to 180 students, how can you find out how many students represent just 1%?",
+            "hint": "Think about dividing the given number of students by the given percentage value."
+          },
+          {
+            "step": "Once you know the number of students that represents 1%, how can you find the total number of students who participated in the survey (which is 100%)?",
+            "hint": "Multiply the value of 1% by the total percentage (100%)."
+          }
+        ]
+      },
+      "learn_step": 4
+    },
+    {
+      "id": "PERCENTAGE-S1-E37",
+      "topic": "Percentage",
+      "title": "Nature Club Membership Growth",
+      "complexity": "Medium",
+      "difficulty": "Medium",
+      "skill": "percentage-increase-decrease",
+      "subskills": [
+        "calculate-percentage-increase",
+        "before-after-concept"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "Last year, the Nature Club had 120 members. This year, the number of members increased by 15%. How many members are there in the Nature Club this year?",
+      "student_view": {
+        "problem_statement": "Last year, the Nature Club had 120 members. This year, the number of members increased by 15%. How many members are there in the Nature Club this year?",
+        "socratic_steps": [
+          {
+            "step": "What was the original number of members in the Nature Club?",
+            "hint": "This is the 'before' value."
+          },
+          {
+            "step": "An 'increase by 15%' means the new number of members will be the original number plus an additional 15% of the original. How can you calculate the value of this 15% increase?",
+            "hint": "You can find 15% of 120."
+          },
+          {
+            "step": "Once you have the amount of increase, what operation should you perform with the original number of members to find the total number of members this year?",
+            "hint": "Since it's an 'increase', you should add."
+          },
+          {
+            "step": "Alternatively, if the original number is 100%, and it increased by 15%, what percentage does the new number of members represent of the original number?",
+            "hint": "100% + 15% = ?"
+          }
+        ]
+      },
+      "learn_step": 4
+    },
+    {
+      "id": "PERCENTAGE-S1-E38",
+      "topic": "Percentage",
+      "title": "Bicycle Sale Discount",
+      "complexity": "Medium",
+      "difficulty": "Medium",
+      "skill": "before-after-concept",
+      "subskills": [
+        "calculate-original-value-after-percentage-decrease",
+        "find-whole-from-percentage-part"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "During a year-end sale, a bicycle was sold for $360 after a 20% discount. What was the original price of the bicycle before the discount?",
+      "student_view": {
+        "problem_statement": "During a year-end sale, a bicycle was sold for $360 after a 20% discount. What was the original price of the bicycle before the discount?",
+        "socratic_steps": [
+          {
+            "step": "If the bicycle had a 20% discount, what percentage of the *original* price did the customer pay?",
+            "hint": "The original price is 100%. If 20% was taken off, what percentage is left?"
+          },
+          {
+            "step": "So, the discounted price of $360 represents what percentage of the original price?",
+            "hint": "Connect your answer from the previous step to the given sale price."
+          },
+          {
+            "step": "If this percentage (from the previous step) corresponds to $360, how can you find out what 1% of the original price is?",
+            "hint": "Divide the amount by the percentage it represents."
+          },
+          {
+            "step": "Once you know the value of 1% of the original price, how can you find the total original price (which is 100%)?",
+            "hint": "Multiply the value of 1% by 100."
+          }
+        ]
+      },
+      "learn_step": 4
+    },
+    {
+      "id": "PERCENTAGE-S1-E39",
+      "topic": "Percentage",
+      "title": "Alex's Pocket Money",
+      "complexity": "High",
+      "difficulty": "Hard",
+      "skill": "percentage-of-percentage",
+      "subskills": [
+        "before-after-concept",
+        "multiple-percentage-changes",
+        "find-whole-from-percentage-part"
+      ],
+      "estimated_time_seconds": 300,
+      "problem_text": "Alex received some pocket money. He spent 40% of it on a book. Of the *remaining* money, he spent 25% on a snack. If he had $27 left, how much pocket money did Alex receive at first?",
+      "student_view": {
+        "problem_statement": "Alex received some pocket money. He spent 40% of it on a book. Of the *remaining* money, he spent 25% on a snack. If he had $27 left, how much pocket money did Alex receive at first?",
+        "socratic_steps": [
+          {
+            "step": "If Alex spent 40% of his pocket money on a book, what percentage of his pocket money was *remaining* after buying the book?",
+            "hint": "If the total is 100%, and he spent 40%, how much is left?"
+          },
+          {
+            "step": "He then spent 25% of this *remaining* money on a snack. What percentage of the *remaining* money did he have left after buying the snack? (Think: If the 'remaining money' is a new 100% for this step, what is 100% - 25%?)",
+            "hint": "Focus on the 'remaining money' as a new whole for this step."
+          },
+          {
+            "step": "The $27 he had left represents the percentage you found in the previous step, but of the *first remaining amount*. If this percentage of the remaining money is $27, how can you find the full amount of money that was *remaining* after he bought the book?",
+            "hint": "This is similar to finding the whole from a part, but apply it to the 'remaining money' from the first step."
+          },
+          {
+            "step": "Now you know the actual amount of money that was *remaining* after buying the book. This amount represents what percentage of his *original* pocket money (from your first step)?",
+            "hint": "Connect this amount back to the percentage of the original total pocket money."
+          },
+          {
+            "step": "Finally, if this amount (the money remaining after the book) represents that percentage of his original pocket money, how can you find his total original pocket money (100%)?",
+            "hint": "Another step of finding the whole from a part and its percentage."
+          }
+        ]
+      },
+      "learn_step": 4
+    },
+    {
+      "id": "PERCENTAGE-S1-E40",
+      "topic": "Percentage",
+      "title": "School Population Changes",
+      "complexity": "High",
+      "difficulty": "Hard",
+      "skill": "percentage-increase-decrease",
+      "subskills": [
+        "sequential-percentage-changes",
+        "before-after-concept"
+      ],
+      "estimated_time_seconds": 300,
+      "problem_text": "The number of students in Innova Primary School increased by 10% in 2022 compared to 2021. In 2023, the number of students decreased by 10% compared to 2022. If there were 900 students in 2021, how many students were there in the school in 2023?",
+      "student_view": {
+        "problem_statement": "The number of students in Innova Primary School increased by 10% in 2022 compared to 2021. In 2023, the number of students decreased by 10% compared to 2022. If there were 900 students in 2021, how many students were there in the school in 2023?",
+        "socratic_steps": [
+          {
+            "step": "What was the initial number of students in 2021?",
+            "hint": "This is your starting point."
+          },
+          {
+            "step": "For 2022, the number of students increased by 10% compared to 2021. How do you calculate the number of students in 2022?",
+            "hint": "Calculate 10% of the 2021 number, then add it to the 2021 number. Or, think of 100% + 10% = 110% of the 2021 number."
+          },
+          {
+            "step": "Now, for 2023, the number of students decreased by 10% compared to *2022*. What is the base number you should use for this 10% decrease?",
+            "hint": "Be careful! The percentage decrease is based on the *new* total from 2022, not the original 2021 number."
+          },
+          {
+            "step": "How do you calculate the actual number of students in 2023? (Think about subtracting 10% of the 2022 number from the 2022 number, or finding 90% of the 2022 number).",
+            "hint": "Calculate 10% of the 2022 number, then subtract it. Or, 100% - 10% = 90% of the 2022 number."
+          },
+          {
+            "step": "After calculating the number of students in 2023, compare it to the initial number in 2021. Did the school return to 900 students? Why or why not?",
+            "hint": "Consider that the 10% increase was on 900, but the 10% decrease was on a larger number."
+          }
+        ]
+      },
+      "learn_step": 4
+    },
+    {
+      "id": "PERCENTAGE-S1-E41",
+      "topic": "Percentage",
+      "title": "School Library Fiction Books",
+      "complexity": "Easy",
+      "difficulty": "Easy",
+      "skill": "find-whole-from-percentage-part",
+      "subskills": [
+        "understand-percentage-as-part-of-whole",
+        "unit-method-percentage"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "In Parkview Primary School library, 40% of the books are fiction. If there are 360 fiction books, what is the total number of books in the library?",
+      "student_view": {
+        "socratic_steps": [
+          {
+            "step": "Understand the given information:",
+            "question": "What does '40% of the books are fiction' tell us in relation to the total number of books?",
+            "hints": [
+              "This means that for every 100 books, 40 are fiction.",
+              "If the total number of books represents 100%, what percentage represents fiction books?"
+            ]
+          },
+          {
+            "step": "Relate percentage to the given number:",
+            "question": "We know that 40% corresponds to 360 fiction books. How can you find out what 1% of the total books is?",
+            "hints": [
+              "If 40 units equal 360, how many does 1 unit equal?",
+              "Think about division."
+            ]
+          },
+          {
+            "step": "Calculate the total number of books:",
+            "question": "If you know the value of 1%, how can you find the total number of books, which represents 100%?",
+            "hints": [
+              "The total is 100 times the value of 1%.",
+              "What operation should you use after finding 1%?"
+            ]
+          }
+        ]
+      },
+      "learn_step": 5
+    },
+    {
+      "id": "PERCENTAGE-S1-E42",
+      "topic": "Percentage",
+      "title": "Community Club Membership Growth",
+      "complexity": "Medium",
+      "difficulty": "Medium",
+      "skill": "percentage-increase-decrease",
+      "subskills": [
+        "calculate-change-amount",
+        "find-percentage-of-original-value"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "Last year, the Sunshine Community Club had 250 members. This year, the number of members increased to 310. What is the percentage increase in membership?",
+      "student_view": {
+        "socratic_steps": [
+          {
+            "step": "Identify the original and new values:",
+            "question": "What was the initial number of members (the 'original' amount) and what is the new number of members?",
+            "hints": [
+              "The number of members last year is the original value.",
+              "The number of members this year is the new value."
+            ]
+          },
+          {
+            "step": "Calculate the absolute change:",
+            "question": "How many more members joined this year compared to last year? (What is the increase in the number of members?)",
+            "hints": [
+              "Subtract the original number from the new number.",
+              "Change = New Value - Original Value."
+            ]
+          },
+          {
+            "step": "Formulate the percentage change:",
+            "question": "To find the percentage increase, you need to compare the increase in members to the original number of members. What is the formula for percentage increase?",
+            "hints": [
+              "Percentage Increase = (Increase / Original Amount) × 100%",
+              "Remember to divide the increase by the *starting* amount."
+            ]
+          },
+          {
+            "step": "Perform the calculation:",
+            "question": "Now, substitute your values into the formula and calculate the percentage increase.",
+            "hints": [
+              "Ensure you express your final answer as a percentage."
+            ]
+          }
+        ]
+      },
+      "learn_step": 5
+    },
+    {
+      "id": "PERCENTAGE-S1-E43",
+      "topic": "Percentage",
+      "title": "Discounted Bicycle Price",
+      "complexity": "Medium",
+      "difficulty": "Medium",
+      "skill": "before-after-concept",
+      "subskills": [
+        "reverse-percentage-calculation",
+        "find-original-value-after-discount"
+      ],
+      "estimated_time_seconds": 270,
+      "problem_text": "During a Great Singapore Sale, a bicycle was sold at a 15% discount. Mr. Lee paid $340 for the bicycle. What was the original price of the bicycle before the discount?",
+      "student_view": {
+        "socratic_steps": [
+          {
+            "step": "Understand the effect of the discount:",
+            "question": "If the bicycle had a 15% discount, what percentage of its original price did Mr. Lee pay?",
+            "hints": [
+              "The original price represents 100%.",
+              "If 15% was taken off, how much is left?"
+            ]
+          },
+          {
+            "step": "Relate the paid amount to the percentage:",
+            "question": "You know that $340 is the amount Mr. Lee paid, and you've determined what percentage this amount represents. How can you set up an equation or model to find the original 100% price?",
+            "hints": [
+              "If 'X%' of the original price is $340, what is 1%?",
+              "Consider using the 'unit method' or working backwards."
+            ]
+          },
+          {
+            "step": "Calculate the original price:",
+            "question": "Once you've found the value of 1% (or equivalent), how do you calculate the full original price (100%)?",
+            "hints": [
+              "Multiply the value of 1% by 100.",
+              "Original Price = Paid Amount / (Percentage Paid as Decimal)"
+            ]
+          }
+        ]
+      },
+      "learn_step": 5
+    },
+    {
+      "id": "PERCENTAGE-S1-E44",
+      "topic": "Percentage",
+      "title": "Student Interest Groups Survey",
+      "complexity": "Hard",
+      "difficulty": "Hard",
+      "skill": "percentage-of-percentage",
+      "subskills": [
+        "multi-step-percentage-problems",
+        "find-whole-from-nested-percentage"
+      ],
+      "estimated_time_seconds": 360,
+      "problem_text": "In Compass Primary School, 60% of the students indicated interest in joining an art-related club. Of those who chose an art-related club, 25% specifically wanted to join the Photography Club. If there are 150 students who want to join the Photography Club, what is the total number of students in Compass Primary School?",
+      "student_view": {
+        "socratic_steps": [
+          {
+            "step": "Work backwards: Photography Club to Art-related Clubs:",
+            "question": "You know 150 students want to join the Photography Club, and this is 25% of all students interested in art-related clubs. How can you find the total number of students who want to join *any* art-related club?",
+            "hints": [
+              "If 25% corresponds to 150 students, what does 100% (the total art-related club students) correspond to?",
+              "Think: 150 is 1/4 of what number?"
+            ]
+          },
+          {
+            "step": "Relate Art-related Clubs to Total School Population:",
+            "question": "Now you have the total number of students interested in art-related clubs. This number represents 60% of the *entire* school population. How can you use this information to find the total number of students in the school?",
+            "hints": [
+              "If 60% of the total school population is the number you just calculated, how can you find 1% of the school population?",
+              "Then, how do you find 100% (the total school population)?"
+            ]
+          },
+          {
+            "step": "Final Calculation:",
+            "question": "Combine your steps to calculate the total number of students in Compass Primary School.",
+            "hints": [
+              "Break down the problem into two distinct 'find the whole' steps.",
+              "Ensure your calculations are accurate at each stage."
+            ]
+          }
+        ]
+      },
+      "learn_step": 5
+    },
+    {
+      "id": "PERCENTAGE-S1-E45",
+      "topic": "Percentage",
+      "title": "Online Gadget Store Sales Fluctuations",
+      "complexity": "Hard",
+      "difficulty": "Hard",
+      "skill": "before-after-concept",
+      "subskills": [
+        "iterative-percentage-change",
+        "reverse-multi-step-percentage"
+      ],
+      "estimated_time_seconds": 420,
+      "problem_text": "An online gadget store's sales increased by 20% in May compared to April. In June, the sales decreased by 10% compared to May. If the sales in June were $13,500, what were the sales in April?",
+      "student_view": {
+        "socratic_steps": [
+          {
+            "step": "Work backwards from June to May sales:",
+            "question": "June sales are $13,500, and this is a 10% decrease from May's sales. If May's sales represent 100%, what percentage of May's sales does $13,500 represent?",
+            "hints": [
+              "A 10% decrease means the June sales are 100% - 10% of May's sales.",
+              "Set up an equation: (Percentage of May's sales / 100) × May's Sales = $13,500."
+            ]
+          },
+          {
+            "step": "Calculate May's sales:",
+            "question": "Using the percentage you've identified, calculate the actual sales amount for May.",
+            "hints": [
+              "Divide June's sales by the percentage (as a decimal) representing June's sales relative to May's.",
+              "May's Sales = June's Sales / (1 - 0.10)."
+            ]
+          },
+          {
+            "step": "Work backwards from May to April sales:",
+            "question": "Now you have May's sales. These sales represent a 20% increase compared to April's sales. If April's sales represent 100%, what percentage of April's sales does May's sales represent?",
+            "hints": [
+              "A 20% increase means May's sales are 100% + 20% of April's sales.",
+              "Set up an equation: (Percentage of April's sales / 100) × April's Sales = May's Sales (which you just found)."
+            ]
+          },
+          {
+            "step": "Calculate April's sales:",
+            "question": "Using the percentage and May's sales amount, calculate the original sales amount for April.",
+            "hints": [
+              "Divide May's sales by the percentage (as a decimal) representing May's sales relative to April's.",
+              "April's Sales = May's Sales / (1 + 0.20)."
+            ]
+          }
+        ]
+      },
+      "learn_step": 5
+    },
+    {
+      "id": "PERCENTAGE-S1-E46",
+      "topic": "Percentage",
+      "title": "School Choir Members",
+      "complexity": "single_concept",
+      "difficulty": "Easy",
+      "skill": "find-whole-from-percentage-part",
+      "subskills": [
+        "part-whole-relationship",
+        "unit-method"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "In Springdale Primary School, 35% of the students are in the school choir. If there are 175 students in the choir, what is the total number of students in Springdale Primary School?",
+      "student_view": {
+        "socratic_steps": [
+          "What information are we given about the choir members in terms of percentage and actual number?",
+          "If 35% of the total students is equal to 175 students, how can you find out how many students represent 1%?",
+          "Once you know the number of students for 1%, how can you calculate the total number of students in the school (which represents 100%)?"
+        ],
+        "hints": [
+          "Think about what 'the whole' means in this problem.",
+          "To find the total, you need to find the value of 100%."
+        ]
+      },
+      "learn_step": 5
+    },
+    {
+      "id": "PERCENTAGE-S1-E47",
+      "topic": "Percentage",
+      "title": "Robotics Club Growth",
+      "complexity": "multi_step",
+      "difficulty": "Medium",
+      "skill": "percentage-increase-decrease",
+      "subskills": [
+        "calculate-percentage-of-a-number",
+        "increase-concept"
+      ],
+      "estimated_time_seconds": 300,
+      "problem_text": "Last year, the Robotics Club had 80 members. This year, the number of members increased by 25%. How many members are there in the Robotics Club this year?",
+      "student_view": {
+        "socratic_steps": [
+          "What was the original number of members in the Robotics Club?",
+          "What does 'increased by 25%' mean in terms of calculation? Are you finding 25% of the original number or 125% of the original number?",
+          "Calculate the actual number of members that represents the 25% increase.",
+          "Now that you have the original number and the increase, how do you find the total number of members this year?"
+        ],
+        "hints": [
+          "You can find the increase first, then add it to the original number.",
+          "Alternatively, if it increased by 25%, the new number is 100% + 25% = 125% of the original number."
+        ]
+      },
+      "learn_step": 5
+    },
+    {
+      "id": "PERCENTAGE-S1-E48",
+      "topic": "Percentage",
+      "title": "Discounted Shirt with GST",
+      "complexity": "multi_step",
+      "difficulty": "Medium",
+      "skill": "percentage-of-percentage",
+      "subskills": [
+        "sequential-percentage-calculation",
+        "discount-calculation",
+        "tax-calculation"
+      ],
+      "estimated_time_seconds": 360,
+      "problem_text": "A shirt was originally priced at $60. During a sale, it was given a 20% discount. After the discount, a 7% GST (Goods and Services Tax) was added to the discounted price. What was the final price of the shirt?",
+      "student_view": {
+        "socratic_steps": [
+          "First, calculate the price of the shirt after the 20% discount. If there's a 20% discount, what percentage of the original price do you pay?",
+          "What is the discounted price? (Calculate this value)",
+          "Next, the 7% GST is added. Is this 7% calculated on the original price or the discounted price?",
+          "Calculate the amount of GST. What is 7% of the discounted price?",
+          "Finally, how do you find the total final price after adding the GST?"
+        ],
+        "hints": [
+          "Work step-by-step: discount first, then GST.",
+          "Remember that 20% discount means you pay 80% of the original price.",
+          "7% GST added means you pay 107% of the price before tax."
+        ]
+      },
+      "learn_step": 5
+    },
+    {
+      "id": "PERCENTAGE-S1-E49",
+      "topic": "Percentage",
+      "title": "Amanda's Savings Journey",
+      "complexity": "reasoning",
+      "difficulty": "Hard",
+      "skill": "before-after-concept",
+      "subskills": [
+        "working-backwards",
+        "percentage-of-remaining-amount"
+      ],
+      "estimated_time_seconds": 420,
+      "problem_text": "Amanda spent 40% of her pocket money on a book. She then spent 25% of the *remaining* money on snacks. If she had $9 left, how much pocket money did Amanda have at first?",
+      "student_view": {
+        "socratic_steps": [
+          "Let's work backward from the $9 she had left. This $9 is after spending 25% of her *remaining* money on snacks. What percentage of the money she had *before* buying snacks does $9 represent?",
+          "If $9 represents 75% of the money she had before snacks, how much money did she have before she bought the snacks? (This is also the amount left after buying the book).",
+          "Now, consider the first purchase. Amanda spent 40% of her *total* pocket money on a book. The amount you just found (the money before snacks) is what percentage of her *total* original pocket money?",
+          "If the amount she had after buying the book represents 60% of her total pocket money, how can you find her total pocket money at first?"
+        ],
+        "hints": [
+          "This is a 'working backwards' problem.",
+          "Be careful: the second percentage (25%) is based on the *remaining* amount, not the original total.",
+          "If she spent 25% of the remaining, she has 75% of that remaining amount left."
+        ]
+      },
+      "learn_step": 5
+    },
+    {
+      "id": "PERCENTAGE-S1-E50",
+      "topic": "Percentage",
+      "title": "Sports Club Membership Change",
+      "complexity": "complex_reasoning",
+      "difficulty": "Hard",
+      "skill": "before-after-concept",
+      "subskills": [
+        "algebraic-approach-to-percentage",
+        "multi-group-percentage-change",
+        "reverse-percentage",
+        "simultaneous-change"
+      ],
+      "estimated_time_seconds": 480,
+      "problem_text": "In a sports club, 60% of the members were adults and the rest were children. After 20 new adult members joined and 10 children left, the number of adult members increased by 25%. What was the total number of members in the club at first?",
+      "student_view": {
+        "socratic_steps": [
+          "Let's focus on the adult members first. We know their number increased by 25% due to 20 new members joining. If 'A' is the original number of adult members, how can you express the new number of adult members in terms of 'A' and the increase?",
+          "You also know the new number of adults is 125% of the original number of adults. Can you set up an equation using these two pieces of information to solve for 'A'?",
+          "Once you find the original number of adult members (A), what percentage of the *total* initial club members did adults represent?",
+          "If 'A' represents 60% of the total initial members, how can you calculate the total number of members in the club at first?"
+        ],
+        "hints": [
+          "Define a variable for the unknown original number of adults.",
+          "The increase of 25% on original adults means New Adults = 1.25 × Original Adults.",
+          "The increase of 20 adults means New Adults = Original Adults + 20.",
+          "Equate these two expressions for New Adults to solve for Original Adults."
+        ]
+      },
+      "learn_step": 5
+    },
+    {
+      "id": "PERCENTAGE-S1-E51",
+      "topic": "Percentage",
+      "title": "Library Books Collection",
+      "complexity": "Basic",
+      "difficulty": "Easy",
+      "skill": "find-whole-from-percentage-part",
+      "subskills": [
+        "percentage-to-fraction",
+        "finding-total"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "30% of the books in a school library are fiction books. If there are 270 fiction books, how many books are there in total in the library?",
+      "student_view": {
+        "socratic_steps": [
+          "What does '30%' represent in terms of parts of the total number of books?",
+          "If 30% corresponds to 270 fiction books, how can you find the number of books that represents 1%?",
+          "Once you know the value of 1%, how would you find the total number of books (which is 100%)?",
+          "Can you think of 30% as a fraction? How can that fraction help you find the total?"
+        ],
+        "hints": [
+          "Think: If 30 units = 270 books, how many books is 1 unit?",
+          "Total books = 100 units."
+        ]
+      },
+      "learn_step": 6
+    },
+    {
+      "id": "PERCENTAGE-S1-E52",
+      "topic": "Percentage",
+      "title": "Siti's Savings Progress",
+      "complexity": "Straightforward",
+      "difficulty": "Medium",
+      "skill": "percentage-increase-decrease",
+      "subskills": [
+        "calculate-percentage-change",
+        "percentage-increase"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "Siti saved $120 in January. In February, she managed to save $150. What was the percentage increase in her savings from January to February?",
+      "student_view": {
+        "socratic_steps": [
+          "First, determine the actual dollar amount of increase in Siti's savings.",
+          "When calculating percentage increase, what is the 'original' amount you should use as the base for comparison?",
+          "How do you express the 'increase amount' as a fraction of the 'original amount'?",
+          "Finally, how do you convert this fraction into a percentage?"
+        ],
+        "hints": [
+          "Percentage increase = (Increase / Original Amount) × 100%.",
+          "The original amount is what she saved in January."
+        ]
+      },
+      "learn_step": 6
+    },
+    {
+      "id": "PERCENTAGE-S1-E53",
+      "topic": "Percentage",
+      "title": "School Assembly Dynamics",
+      "complexity": "Moderate",
+      "difficulty": "Medium-Hard",
+      "skill": "before-after-concept",
+      "subskills": [
+        "percentage-change-ratios",
+        "constant-quantity"
+      ],
+      "estimated_time_seconds": 360,
+      "problem_text": "In a school assembly, 60% of the students were boys. After 50 girls left the hall, the percentage of boys in the hall increased to 75%. How many students were there in the hall at first?",
+      "student_view": {
+        "socratic_steps": [
+          "What quantity remains constant throughout the problem, even though the total number of students changes?",
+          "Before: If boys make up 60% of the total, what percentage do girls make up? What is the ratio of boys to girls?",
+          "After: If boys make up 75% of the new total, what percentage do girls make up? What is the new ratio of boys to girls?",
+          "Since the number of boys did not change, can you make the 'number of units' representing boys the same in both 'before' and 'after' scenarios? (Hint: Find a common multiple for the boys' 'parts' in your ratios).",
+          "Now that the number of boys is represented by the same number of units/parts, compare the units representing girls 'before' and 'after'. What is the difference in units?",
+          "This difference in units represents the 50 girls who left. What is the value of one unit?",
+          "Once you know the value of one unit, how can you find the total number of students at first?"
+        ],
+        "hints": [
+          "Let the initial total students be 100 units. Boys = 60 units, Girls = 40 units.",
+          "After 50 girls left, the new total is different, but the number of boys is the same 60 units. These 60 units now represent 75% of the *new* total.",
+          "If 75% = 60 units, what is 25% (girls) in terms of units for the 'after' scenario?",
+          "Compare the 'before' and 'after' units for girls to find the change."
+        ]
+      },
+      "learn_step": 6
+    },
+    {
+      "id": "PERCENTAGE-S1-E54",
+      "topic": "Percentage",
+      "title": "Shopping Spree Discounts",
+      "complexity": "Complex",
+      "difficulty": "Hard",
+      "skill": "percentage-of-percentage",
+      "subskills": [
+        "successive-discounts",
+        "multi-step-percentage"
+      ],
+      "estimated_time_seconds": 420,
+      "problem_text": "A laptop originally cost $1800. During a promotion, it received a 20% discount. On top of that, members got an additional 10% discount on the discounted price. What was the final price of the laptop for a member?",
+      "student_view": {
+        "socratic_steps": [
+          "What is the first step in calculating the price of the laptop after the initial 20% discount?",
+          "How do you calculate 20% of $1800? What is the price after this first discount?",
+          "The additional 10% discount for members is applied to which price? Is it the original price or the price after the first discount?",
+          "How do you calculate 10% of this *new* discounted price?",
+          "What is the final price of the laptop after both discounts have been applied?",
+          "Can you think of a more efficient way to calculate a price after a discount? (e.g., if there's a 20% discount, what percentage of the original price are you paying?)"
+        ],
+        "hints": [
+          "A 20% discount means you pay 100% - 20% = 80% of the original price.",
+          "An additional 10% discount on the discounted price means you pay 90% of the *new* price.",
+          "Remember that the second discount is NOT calculated on the original $1800."
+        ]
+      },
+      "learn_step": 6
+    },
+    {
+      "id": "PERCENTAGE-S1-E55",
+      "topic": "Percentage",
+      "title": "Survey Satisfaction Changes",
+      "complexity": "Advanced",
+      "difficulty": "Hard",
+      "skill": "before-after-concept",
+      "subskills": [
+        "simultaneous-changes",
+        "algebraic-modelling-with-units"
+      ],
+      "estimated_time_seconds": 480,
+      "problem_text": "In a survey, 70% of the respondents were satisfied. The remaining respondents were dissatisfied. If 120 more respondents were satisfied and 30 fewer respondents were dissatisfied, the percentage of satisfied respondents would increase to 80%. How many respondents were there in the survey initially?",
+      "student_view": {
+        "socratic_steps": [
+          "Let's represent the initial number of satisfied and dissatisfied respondents using units based on their initial percentages. If 70% are satisfied, and 30% are dissatisfied, what is the initial ratio of satisfied to dissatisfied respondents?",
+          "How would you represent the initial total number of respondents in terms of these units?",
+          "After the changes, how would you express the *new* number of satisfied respondents and *new* number of dissatisfied respondents in terms of your initial units and the given numbers (120 and 30)?",
+          "What is the *new* total number of respondents after these changes?",
+          "In the 'after' scenario, 80% of respondents are satisfied. What percentage are dissatisfied? What is the new ratio of satisfied to dissatisfied respondents?",
+          "Now you have two expressions for the ratio of (new satisfied) to (new dissatisfied): one in terms of units and numbers (from step 3) and one as a simple ratio (from step 5). Can you set these equal to each other to form an equation?",
+          "Solve the equation to find the value of one unit. Then use this value to find the initial total number of respondents."
+        ],
+        "hints": [
+          "Initial: S : D = 7 : 3. So S = 7u, D = 3u, Total = 10u.",
+          "After: New S = 7u + 120. New D = 3u - 30.",
+          "After: New S : New D = 80 : 20 = 4 : 1. This means (7u + 120) / (3u - 30) = 4/1.",
+          "Remember to cross-multiply to solve the equation."
+        ]
+      },
+      "learn_step": 6
+    },
+    {
+      "id": "PERCENTAGE-S1-E56",
+      "topic": "Percentage",
+      "title": "School Survey on Hobbies",
+      "complexity": "Basic",
+      "difficulty": "Easy",
+      "skill": "find-whole-from-percentage-part",
+      "subskills": [
+        "pictorial-model",
+        "converting-percentage-to-fraction"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "In a survey of Primary 6 students, 60% of them chose reading as their favourite hobby. If 150 students chose reading, how many Primary 6 students were surveyed in total?",
+      "student_view": {
+        "socratic_steps": [
+          "What does 60% represent in this problem?",
+          "If 60% corresponds to 150 students, how can we find out what 1% corresponds to?",
+          "Once you know what 1% represents, how can you find the total number of students (which is 100%)?",
+          "Can you think of another way using fractions? For example, what is 60% as a simplified fraction?"
+        ],
+        "hints": [
+          "Remember that the 'whole' or 'total' is always 100%.",
+          "Think of 'parts' and 'whole'. If 60 parts out of 100 is 150, what is 1 part?"
+        ]
+      },
+      "learn_step": 6
+    },
+    {
+      "id": "PERCENTAGE-S1-E57",
+      "topic": "Percentage",
+      "title": "Community Club Membership Drive",
+      "complexity": "Intermediate",
+      "difficulty": "Medium",
+      "skill": "percentage-increase-decrease",
+      "subskills": [
+        "before-after-concept",
+        "calculating-percentage-change"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "The Community Club had 250 members last year. This year, due to a successful membership drive, the number of members increased by 18%. How many members does the Community Club have now?",
+      "student_view": {
+        "socratic_steps": [
+          "What was the original number of members?",
+          "What does an 18% increase mean in terms of the original percentage? If the original is 100%, what is the new total percentage?",
+          "How can you calculate 18% of the original number of members?",
+          "Once you find the increase, how do you find the new total number of members?",
+          "Alternatively, can you directly calculate the new total by finding 118% of the original number?"
+        ],
+        "hints": [
+          "An increase means you add the percentage to 100%. A decrease means you subtract it from 100%.",
+          "You can find the amount of increase first, then add it to the original."
+        ]
+      },
+      "learn_step": 6
+    },
+    {
+      "id": "PERCENTAGE-S1-E58",
+      "topic": "Percentage",
+      "title": "Discounted Shopping Spree",
+      "complexity": "Intermediate",
+      "difficulty": "Medium",
+      "skill": "before-after-concept",
+      "subskills": [
+        "working-backwards",
+        "percentage-decrease"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "During a sale, a watch was sold at a 20% discount. John paid $160 for the watch. What was the original price of the watch before the discount?",
+      "student_view": {
+        "socratic_steps": [
+          "What does a 20% discount mean?",
+          "If the original price is 100%, what percentage of the original price did John pay after the discount?",
+          "You know that this percentage of the original price is $160. How can you find what 1% of the original price is?",
+          "Once you know what 1% represents, how can you find the original price (100%)?"
+        ],
+        "hints": [
+          "The price John paid ($160) represents a certain percentage of the *original* price.",
+          "Think: 'The amount I paid is what's left after the discount.'"
+        ]
+      },
+      "learn_step": 6
+    },
+    {
+      "id": "PERCENTAGE-S1-E59",
+      "topic": "Percentage",
+      "title": "Sarah's Savings Challenge",
+      "complexity": "Advanced",
+      "difficulty": "Hard",
+      "skill": "percentage-of-percentage",
+      "subskills": [
+        "multi-step-problem",
+        "before-after-concept"
+      ],
+      "estimated_time_seconds": 300,
+      "problem_text": "Sarah had some money in her savings. She spent 25% of it on a new book. Of the remaining money, she spent 40% on art supplies. If she had $90 left, how much money did Sarah have at first?",
+      "student_view": {
+        "socratic_steps": [
+          "Let the initial amount of money be 100%. After spending 25% on a book, what percentage of her money did Sarah have left?",
+          "She then spent 40% *of the remaining money* on art supplies. What does 'remaining money' refer to in this step?",
+          "If she spent 40% of the remaining, what percentage of the *remaining* money did she have left?",
+          "So, the $90 she had left is 60% of the 75% of her original money. Can you express 60% of 75% as a single percentage of the original amount?",
+          "Now you know that $90 represents a certain percentage of her original money. How can you find the total original amount (100%)?"
+        ],
+        "hints": [
+          "Be careful with 'of the remaining'. This means the base for the next percentage calculation changes.",
+          "You need to find a single percentage that represents the $90 relative to the *original* amount."
+        ]
+      },
+      "learn_step": 6
+    },
+    {
+      "id": "PERCENTAGE-S1-E60",
+      "topic": "Percentage",
+      "title": "Basketball Team Performance",
+      "complexity": "Advanced",
+      "difficulty": "Hard",
+      "skill": "before-after-concept",
+      "subskills": [
+        "working-backwards",
+        "successive-percentage-change"
+      ],
+      "estimated_time_seconds": 360,
+      "problem_text": "In January, the school basketball team won 80% of their games. In February, their performance dropped, and they won 25% fewer games than they did in January. If they won 12 games in February, how many games did they play in total in January?",
+      "student_view": {
+        "socratic_steps": [
+          "Let the number of games won in January be represented by a variable. How can we express the games won in February in relation to the games won in January, given the 25% drop?",
+          "You are given that they won 12 games in February. Use this information to find the actual number of games won in January.",
+          "Once you have the number of games won in January, recall that this amount represents 80% of the *total games played* in January. How can you use this to find the total games played in January?",
+          "What is the final answer you are looking for?"
+        ],
+        "hints": [
+          "Break down the problem into two distinct 'before-after' scenarios, working backwards from the known information.",
+          "First, find out how many games were won in January. Then, use that to find the total games played in January."
+        ]
+      },
+      "learn_step": 6
+    }
+  ]
+}

@@ -1,0 +1,3044 @@
+{
+  "topic": "Fractions",
+  "version": "enhanced-v1",
+  "metadata": {
+    "generated_at": "2025-08-13T17:25:15.051065",
+    "generator_version": "fast-v1.0",
+    "target_problems": 80,
+    "singapore_moe_aligned": true,
+    "completed_at": "2025-08-13T17:39:52.753914",
+    "total_problems": 80
+  },
+  "items": [
+    {
+      "id": "FRACTIONS-S1-E1",
+      "topic": "Fractions",
+      "title": "Sharing a Delicious Cake",
+      "learn_step": 1,
+      "complexity": "Easy",
+      "difficulty": 0.3,
+      "skill": "fraction-division",
+      "subskills": [
+        "fraction-division-by-whole"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "Mei Ling had 3/4 of a cake left after her birthday party. She wanted to share this remaining cake equally among herself and 2 friends. What fraction of the original cake did each person receive?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "How many people are sharing the cake in total?",
+            "answer_type": "numeric",
+            "acceptable_responses": ["3"],
+            "hints": {
+              "L1": "Read the problem carefully. Who is sharing the cake?",
+              "L2": "It's Mei Ling AND 2 friends. How many does that make?",
+              "L3": "Mei Ling (1 person) + 2 friends = 3 people."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "If 3/4 of the cake is being shared equally among these people, what mathematical operation should you use?",
+            "answer_type": "free",
+            "acceptable_responses": ["division", "divide", "÷"],
+            "hints": {
+              "L1": "When you share something 'equally', what operation does that often suggest?",
+              "L2": "Think about splitting a quantity into smaller, equal parts.",
+              "L3": "The operation to use is division."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Now, perform the division. How do you divide a proper fraction by a whole number?",
+            "answer_type": "free",
+            "acceptable_responses": ["3/4 ÷ 3", "(3/4) × (1/3)", "1/4", "3/12"],
+            "hints": {
+              "L1": "Remember that dividing by a whole number is the same as multiplying by its reciprocal.",
+              "L2": "Convert the whole number into a fraction first (e.g., 3 becomes 3/1), then invert and multiply.",
+              "L3": "Your calculation should be (3/4) ÷ 3. This is equivalent to (3/4) × (1/3) = 3/12 = 1/4."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E2",
+      "topic": "Fractions",
+      "title": "Crafting with Ribbons",
+      "learn_step": 2,
+      "complexity": "Easy",
+      "difficulty": 0.4,
+      "skill": "fraction-division",
+      "subskills": [
+        "whole-division-by-fraction"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "Mrs. Tan has 4 metres of ribbon. She wants to cut pieces, each 1/5 metre long, to make decorations for the school concert. How many pieces of ribbon can she cut?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What is the total length of ribbon Mrs. Tan has, and what is the length of each small piece she wants to cut?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Look for the key numbers and their units in the problem.",
+              "L2": "Total length is 4m, each piece is 1/5m.",
+              "L3": "Identify the 'whole' amount and the 'part' amount."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "To find out how many small pieces can be cut from the total length, what mathematical operation should you use?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "When you want to know 'how many times does one quantity fit into another', what operation is usually involved?",
+              "L2": "Think about dividing the total length into segments of a specific size.",
+              "L3": "The operation to use is division."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Now, perform the division. How do you divide a whole number by a proper fraction?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Remember the rule: 'Keep, Change, Flip'. Keep the first number, change division to multiplication, flip (invert) the second fraction.",
+              "L2": "Convert the whole number into a fraction (e.g., 4 becomes 4/1) before applying 'Keep, Change, Flip'.",
+              "L3": "Your calculation should be 4 ÷ (1/5), which is equal to 4 × (5/1)."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-M1",
+      "topic": "Fractions",
+      "title": "Buying Apples at the Market",
+      "learn_step": 3,
+      "complexity": "Medium",
+      "difficulty": 0.6,
+      "skill": "fraction-division",
+      "subskills": [
+        "fraction-division-by-fraction",
+        "multi-step-problem"
+      ],
+      "estimated_time_seconds": 120,
+      "problem_text": "Mr. Lim bought 2 1/2 kg of apples. He packed them into smaller bags, each containing 1/4 kg of apples. How many small bags of apples did Mr. Lim pack?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What are the key quantities given in the problem? What is the total mass of apples, and what is the mass of apples in each small bag?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Identify the mixed number and the proper fraction.",
+              "L2": "Total mass is 2 1/2 kg. Mass per bag is 1/4 kg.",
+              "L3": "The goal is to find how many 1/4 kg portions fit into 2 1/2 kg."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Before you can perform division easily, what should you do with the mixed number 2 1/2?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "It's often easier to work with fractions when they are in a specific form.",
+              "L2": "Convert the mixed number into an improper fraction.",
+              "L3": "2 1/2 = (2 × 2 + 1)/2 = 5/2."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Now that both quantities are in proper or improper fraction form, what operation will help you find the number of bags? How do you perform this operation with fractions?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Similar to the ribbon problem, you are finding how many times one quantity fits into another.",
+              "L2": "Use division: (Total mass) ÷ (Mass per bag). Remember to 'Keep, Change, Flip' when dividing fractions.",
+              "L3": "The calculation is (5/2) ÷ (1/4), which is (5/2) × (4/1)."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-M2",
+      "topic": "Fractions",
+      "title": "Our School Library's Collection",
+      "learn_step": 4,
+      "complexity": "Medium",
+      "difficulty": 0.7,
+      "skill": "part-whole-models",
+      "subskills": [
+        "multi-step-problem",
+        "fraction-of-a-remainder"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "In the school library, 3/5 of the books are fiction. Of the remaining books, 1/4 are reference books and the rest are non-fiction. If there are 1200 books in total, how many non-fiction books are there?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What fraction of the books are fiction? What does 'remaining books' mean in this context, and how can you find the fraction of books that are NOT fiction?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The 'whole' collection of books can be represented by 1. If 3/5 are fiction, what's left?",
+              "L2": "Subtract the fiction fraction from the whole: 1 - 3/5.",
+              "L3": "The remaining fraction is 2/5 of the total books."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "We know 1/4 of the REMAINING books are reference books. How do you find the actual fraction of the TOTAL books that are reference books?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "You need to find a 'fraction of a fraction'.",
+              "L2": "Multiply the fraction of remaining books by the fraction that are reference books.",
+              "L3": "Calculate (1/4) × (2/5) to find the fraction of reference books out of the total."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Now that you know the fraction of fiction books and reference books (out of the total), how can you find the fraction of non-fiction books (which are the 'rest' of the remaining books)?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Non-fiction books make up the rest of the 'remaining' portion. You found the remaining portion in S1 and the reference portion in S2.",
+              "L2": "Subtract the reference book fraction (calculated in S2) from the total 'remaining' fraction (calculated in S1).",
+              "L3": "Alternatively, if 1/4 of remaining are reference, then 3/4 of remaining are non-fiction. So, (3/4) × (2/5)."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Finally, you have the fraction of non-fiction books out of the total. If there are 1200 books in total, how do you find the actual number of non-fiction books?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "To find a fraction 'of' a whole number, what operation do you use?",
+              "L2": "Multiply the fraction of non-fiction books by the total number of books.",
+              "L3": "Your final calculation will be (Fraction of non-fiction books) × 1200."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-H1",
+      "topic": "Fractions",
+      "title": "The School Sports Day Race",
+      "learn_step": 5,
+      "complexity": "Hard",
+      "difficulty": 0.9,
+      "skill": "comparison-models",
+      "subskills": [
+        "multi-step-problem",
+        "non-routine-problem",
+        "fraction-difference"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "During the school sports day race, Jamie had completed 3/8 of the race. Chloe had completed 5/6 of the race. If the difference in the distance they had completed was 70 metres, what was the total length of the race?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What fractions represent the distance Jamie and Chloe completed? To find the difference between these two fractions, what is the first important step you should take?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Jamie: 3/8. Chloe: 5/6. You cannot directly subtract or compare fractions with different denominators.",
+              "L2": "Find a common denominator for 3/8 and 5/6. Think of the least common multiple of 8 and 6.",
+              "L3": "The least common multiple of 8 and 6 is 24. Convert both fractions to have a denominator of 24."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Now that you have the fractions with a common denominator, calculate the difference between the fractions of the race completed by Chloe and Jamie.",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Subtract the smaller fraction from the larger fraction to find the difference.",
+              "L2": "Chloe's fraction is (5/6) = (20/24). Jamie's fraction is (3/8) = (9/24).",
+              "L3": "Difference = (20/24) - (9/24)."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "The problem states that this fractional difference corresponds to 70 metres. How can you use this information to find the total length of the race? Think about what one 'unit' or the whole represents.",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "You have found that a certain fraction of the race is equal to 70 metres.",
+              "L2": "If 'X' fraction of the race is 70 metres, how can you find what the entire '1' (whole) race is?",
+              "L3": "If (11/24) of the race is 70m, then 1/24 of the race is 70m ÷ 11. Once you find 1/24, you can find 24/24 (the whole)."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Perform the final calculation to find the total length of the race in metres.",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Use the unit method: If the difference fraction (e.g., 11/24) represents 70m, then 1/24 represents 70 ÷ 11 m.",
+              "L2": "To find the total race (24/24), multiply the value of 1/24 by 24.",
+              "L3": "Total length = 70 ÷ (11/24) or 70 × (24/11)."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E6",
+      "topic": "Fractions",
+      "title": "Sharing Delicious Pandan Cake",
+      "learn_step": 1,
+      "complexity": "Easy",
+      "difficulty": 0.3,
+      "skill": "fraction-division-by-whole",
+      "subskills": [
+        "divide-proper-fraction-by-whole-number"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "Auntie Lee baked a rectangular pandan cake. After her family ate some, $\\frac{3}{4}$ of the cake was left. She wanted to share the remaining cake equally among her 3 grandchildren. What fraction of the original cake did each grandchild receive?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What fraction of the cake is remaining and needs to be shared?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "3/4",
+              "three-quarters",
+              "0.75"
+            ],
+            "hints": {
+              "L1": "Look at the problem statement carefully to find the initial fraction of cake left.",
+              "L2": "The problem states how much cake was 'left'.",
+              "L3": "The remaining cake is given as $\\frac{3}{4}$."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Auntie Lee is sharing the cake equally among how many grandchildren?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              3
+            ],
+            "hints": {
+              "L1": "How many people are receiving a share of the cake?",
+              "L2": "The number of grandchildren is stated directly in the problem.",
+              "L3": "She shares it among '3 grandchildren'."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "When you share something equally, what mathematical operation should you use?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "division",
+              "divide"
+            ],
+            "hints": {
+              "L1": "Think about what 'sharing equally' means in mathematics.",
+              "L2": "If you have a total amount and you split it into equal parts, what operation applies?",
+              "L3": "The operation for 'sharing equally' is division."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Now, perform the division: $\\frac{3}{4} \\div 3$. Remember, dividing by a whole number is the same as multiplying by its reciprocal. What is the reciprocal of 3?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "1/3",
+              "one-third"
+            ],
+            "hints": {
+              "L1": "The reciprocal of a whole number 'n' is $\\frac{1}{n}$.",
+              "L2": "If the whole number is 3, what would its reciprocal be?",
+              "L3": "The reciprocal of 3 is $\\frac{1}{3}$."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Calculate the final answer: $\\frac{3}{4} \\times \\frac{1}{3}$. Simplify your answer to its simplest form.",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "1/4",
+              "one-quarter",
+              "0.25"
+            ],
+            "hints": {
+              "L1": "Multiply the numerators together and the denominators together.",
+              "L2": "$\\frac{3 \\times 1}{4 \\times 3}$",
+              "L3": "You can simplify by cancelling out common factors before multiplying, or simplify after. For example, the '3' in the numerator and denominator can cancel out."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E7",
+      "topic": "Fractions",
+      "title": "Tropical Fruit Punch Party",
+      "learn_step": 1,
+      "complexity": "Easy",
+      "difficulty": 0.3,
+      "skill": "whole-division-by-fraction",
+      "subskills": [
+        "divide-whole-number-by-proper-fraction"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "Mrs. Tan is making her famous tropical fruit punch for a party. Each glass of fruit punch requires $\\frac{1}{6}$ litre of juice. If Mrs. Tan has 2 litres of juice, how many glasses of fruit punch can she make?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What is the total amount of juice Mrs. Tan has?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              2
+            ],
+            "hints": {
+              "L1": "Look for the total quantity of juice mentioned.",
+              "L2": "The problem states 'Mrs. Tan has 2 litres of juice'.",
+              "L3": "The total is 2 litres."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "What fraction of a litre is needed for *one* glass of fruit punch?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "1/6",
+              "one-sixth"
+            ],
+            "hints": {
+              "L1": "The problem tells you the amount required 'per glass'.",
+              "L2": "It says 'Each glass of fruit punch requires $\\frac{1}{6}$ litre'.",
+              "L3": "It is $\\frac{1}{6}$ litre per glass."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "To find out how many equal portions (glasses) can be made from a total amount, what mathematical operation should you use?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "division",
+              "divide"
+            ],
+            "hints": {
+              "L1": "You are dividing a whole into smaller, equal parts.",
+              "L2": "If you have a total quantity and you want to know how many times a smaller quantity fits into it, what operation is that?",
+              "L3": "It's a division problem."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Now, perform the division: $2 \\div \\frac{1}{6}$. Remember, dividing by a fraction is the same as multiplying by its reciprocal. What is the reciprocal of $\\frac{1}{6}$?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              6
+            ],
+            "hints": {
+              "L1": "To find the reciprocal of a fraction, 'flip' it.",
+              "L2": "If the fraction is $\\frac{a}{b}$, its reciprocal is $\\frac{b}{a}$.",
+              "L3": "The reciprocal of $\\frac{1}{6}$ is $\\frac{6}{1}$, which is 6."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Calculate the final answer: $2 \\times 6$. What is the total number of glasses Mrs. Tan can make?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              12
+            ],
+            "hints": {
+              "L1": "Perform the multiplication.",
+              "L2": "Two multiplied by six.",
+              "L3": "$2 \\times 6 = 12$."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E8",
+      "topic": "Fractions",
+      "title": "Crafting with Ribbons",
+      "learn_step": 1,
+      "complexity": "Medium",
+      "difficulty": 0.6,
+      "skill": "fraction-division-by-fraction",
+      "subskills": [
+        "divide-proper-fraction-by-proper-fraction"
+      ],
+      "estimated_time_seconds": 150,
+      "problem_text": "Janice has a roll of ribbon that is $\\frac{7}{8}$ metre long. She wants to cut the ribbon into smaller pieces, each measuring $\\frac{1}{4}$ metre, to decorate her craft project. How many such pieces of ribbon can Janice cut?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What is the total length of the ribbon Janice has?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "7/8",
+              "seven-eighths"
+            ],
+            "hints": {
+              "L1": "Find the starting length of the ribbon.",
+              "L2": "The problem states the length of 'a roll of ribbon that is...'",
+              "L3": "The total length is $\\frac{7}{8}$ metre."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "What is the length of each smaller piece Janice wants to cut?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "1/4",
+              "one-quarter"
+            ],
+            "hints": {
+              "L1": "Look for the size of the individual pieces she wants to make.",
+              "L2": "It specifies 'each measuring...'",
+              "L3": "Each piece is $\\frac{1}{4}$ metre long."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "To find out how many times a smaller length fits into a larger length, what mathematical operation should you perform?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "division",
+              "divide"
+            ],
+            "hints": {
+              "L1": "You are trying to count how many segments of a certain size are in a total length.",
+              "L2": "This is similar to 'how many groups of X are in Y'.",
+              "L3": "You should divide the total length by the length of each small piece."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Perform the division: $\\frac{7}{8} \\div \\frac{1}{4}$. Remember the 'Keep, Change, Flip' rule. What is the reciprocal of $\\frac{1}{4}$?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              4
+            ],
+            "hints": {
+              "L1": "To find the reciprocal of a fraction, invert it.",
+              "L2": "Flip $\\frac{1}{4}$ upside down.",
+              "L3": "The reciprocal of $\\frac{1}{4}$ is $\\frac{4}{1}$, which is 4."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Now, multiply $\\frac{7}{8}$ by the reciprocal you found. Simplify your answer to its simplest form. What is the total number of pieces Janice can cut?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "3.5",
+              "3 1/2",
+              "seven-halves",
+              "7/2"
+            ],
+            "hints": {
+              "L1": "Your multiplication will be $\\frac{7}{8} \\times 4$.",
+              "L2": "Multiply the numerators and denominators. Then simplify. You might be able to cross-cancel.",
+              "L3": "$7 \\times 4 = 28$, and $8 \\times 1 = 8$. So $\\frac{28}{8}$. Now simplify this improper fraction."
+            }
+          },
+          {
+            "id": "S6",
+            "prompt": "The previous answer represents the number of pieces. Can Janice cut a fractional piece of ribbon if she needs whole pieces for decoration? What is the maximum number of *whole* pieces she can cut?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              3
+            ],
+            "hints": {
+              "L1": "Think about what a 'piece' of ribbon means. Can you have half a piece if you need a full one?",
+              "L2": "If you calculate $3 \\frac{1}{2}$ pieces, you can only actually cut 3 full pieces and have some leftover.",
+              "L3": "The question asks 'How many such pieces', implying whole, usable pieces. So, take the whole number part of your answer."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E9",
+      "topic": "Fractions",
+      "title": "Library Book Collection",
+      "learn_step": 1,
+      "complexity": "Medium",
+      "difficulty": 0.6,
+      "skill": "part-whole-models",
+      "subskills": [
+        "solve-multi-step-fraction-problem",
+        "find-total-from-part",
+        "fraction-of-remainder"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "In a school library, $\\frac{2}{5}$ of the books are fiction. Of the remaining books, $\\frac{1}{3}$ are non-fiction and the rest are magazines. If there are 120 fiction books, how many magazines are there in the library?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What fraction of the books in the library are fiction?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "2/5",
+              "two-fifths"
+            ],
+            "hints": {
+              "L1": "This information is given at the beginning of the problem.",
+              "L2": "The problem states '$\\frac{2}{5}$ of the books are fiction'.",
+              "L3": "It's $\\frac{2}{5}$."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "If $\\frac{2}{5}$ of the books are fiction, what fraction of the books are *remaining* (non-fiction and magazines)?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "3/5",
+              "three-fifths"
+            ],
+            "hints": {
+              "L1": "Think of the total as 1 whole or $\\frac{5}{5}$. Subtract the fiction part from the whole.",
+              "L2": "Total books are $\\frac{5}{5}$. If $\\frac{2}{5}$ are fiction, then $\\frac{5}{5} - \\frac{2}{5}$ is remaining.",
+              "L3": "The remaining fraction is $\\frac{3}{5}$."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "You know that $\\frac{2}{5}$ of the books are fiction, and there are 120 fiction books. If 2 units (or parts) represent 120 books, how many books does 1 unit represent?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              60
+            ],
+            "hints": {
+              "L1": "Divide the total number of fiction books by the number of units they represent.",
+              "L2": "120 books $\\div$ 2 units = ?",
+              "L3": "$120 \\div 2 = 60$ books per unit."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Now that you know how many books 1 unit represents, how many 'units' represent the *remaining* books (from S2)? Calculate the number of *remaining* books.",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              180
+            ],
+            "hints": {
+              "L1": "You found that $\\frac{3}{5}$ of the books are remaining. How many units is $\\frac{3}{5}$?",
+              "L2": "If 1 unit is 60 books, and there are 3 units remaining, then $3 \\times 60 = $?",
+              "L3": "$3 \\times 60 = 180$ remaining books."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Of these *remaining* books, $\\frac{1}{3}$ are non-fiction and the rest are magazines. What fraction of these *remaining* books are magazines?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "2/3",
+              "two-thirds"
+            ],
+            "hints": {
+              "L1": "Consider the 'remaining books' as a new whole (1 or $\\frac{3}{3}$). If $\\frac{1}{3}$ are non-fiction, what's left?",
+              "L2": "Subtract the non-fiction fraction from the 'whole' of the remaining books: $1 - \\frac{1}{3}$.",
+              "L3": "The fraction of magazines among the remaining books is $\\frac{2}{3}$."
+            }
+          },
+          {
+            "id": "S6",
+            "prompt": "Finally, calculate the number of magazines. You know the total number of *remaining* books (from S4) and the fraction of *those* that are magazines (from S5).",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              120
+            ],
+            "hints": {
+              "L1": "Multiply the number of remaining books by the fraction representing magazines.",
+              "L2": "Number of magazines = (Number of remaining books) $\\times$ (Fraction of magazines among remaining books).",
+              "L3": "Number of magazines = $180 \\times \\frac{2}{3}$."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E10",
+      "topic": "Fractions",
+      "title": "Charity Fair Refreshments",
+      "learn_step": 1,
+      "complexity": "Hard",
+      "difficulty": 0.9,
+      "skill": "multi-step-and-non-routine-fraction-problems",
+      "subskills": [
+        "fraction-of-remainder",
+        "work-backwards-with-fractions",
+        "solve-complex-fraction-problems"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "At a school charity fair, the refreshment booth sold $\\frac{3}{5}$ of its drinks in the morning. In the afternoon, it sold $\\frac{1}{2}$ of the *remaining* drinks. If there were 75 drinks left unsold by the end of the day, how many drinks did the booth have at the start of the day?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What fraction of the drinks were sold in the morning?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "3/5",
+              "three-fifths"
+            ],
+            "hints": {
+              "L1": "This is stated directly in the problem.",
+              "L2": "It sold '$\\frac{3}{5}$ of its drinks in the morning'.",
+              "L3": "The fraction sold is $\\frac{3}{5}$."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "If $\\frac{3}{5}$ of the drinks were sold in the morning, what fraction of the drinks were *remaining* after the morning sales?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "2/5",
+              "two-fifths"
+            ],
+            "hints": {
+              "L1": "Think of the total drinks as 1 whole or $\\frac{5}{5}$.",
+              "L2": "Subtract the sold fraction from the whole: $1 - \\frac{3}{5}$.",
+              "L3": "The fraction remaining is $\\frac{2}{5}$."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "In the afternoon, $\\frac{1}{2}$ of the *remaining* drinks were sold. What fraction of the *original total* drinks does this amount sold in the afternoon represent?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "1/5",
+              "one-fifth"
+            ],
+            "hints": {
+              "L1": "You need to find $\\frac{1}{2}$ 'of' the remaining fraction from S2.",
+              "L2": "To find a fraction 'of' another fraction, you multiply them. So, multiply $\\frac{1}{2}$ by the fraction you found in S2.",
+              "L3": "$\\frac{1}{2} \\times \\frac{2}{5} = \\frac{2}{10}$, which simplifies to $\\frac{1}{5}$."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "If $\\frac{1}{2}$ of the remaining drinks were sold in the afternoon, what fraction of the *remaining* drinks (from the morning) were *left unsold* by the end of the day?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "1/2",
+              "one-half"
+            ],
+            "hints": {
+              "L1": "If half of something is sold, what fraction is left?",
+              "L2": "Think of the 'remaining drinks' as a new whole for the afternoon sales.",
+              "L3": "If $\\frac{1}{2}$ were sold, then $1 - \\frac{1}{2} = \\frac{1}{2}$ were left unsold from that portion."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Now, combine the results. What fraction of the *original total* drinks were left unsold at the end of the day? (Hint: Multiply the fraction of drinks remaining after morning (S2) by the fraction left unsold from *those* in the afternoon (S4).)",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "1/5",
+              "one-fifth"
+            ],
+            "hints": {
+              "L1": "This is $\\frac{1}{2}$ 'of' the $\\frac{2}{5}$ that were remaining after the morning.",
+              "L2": "Multiply the fractions from S2 and S4: $\\frac{2}{5} \\times \\frac{1}{2}$.",
+              "L3": "$\\frac{2}{5} \\times \\frac{1}{2} = \\frac{2}{10}$, which simplifies to $\\frac{1}{5}$."
+            }
+          },
+          {
+            "id": "S6",
+            "prompt": "You are told that 75 drinks were left unsold. This number (75) represents the fraction of the *original total* drinks that you found in S5. If $\\frac{1}{5}$ of the total drinks is 75, what is the total number of drinks at the start of the day?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              375
+            ],
+            "hints": {
+              "L1": "If 1 part out of 5 parts is 75 drinks, how many drinks are in all 5 parts?",
+              "L2": "To find the total, you multiply the value of one part by the total number of parts.",
+              "L3": "Total drinks = $75 \\times 5 = 375$."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E11",
+      "topic": "Fractions",
+      "title": "Sharing A Portion of Cake",
+      "learn_step": 1,
+      "complexity": "Easy",
+      "difficulty": 0.3,
+      "skill": "Division of Fractions",
+      "subskills": [
+        "fraction-division-by-whole"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "Auntie Leong baked a delicious pandan cake. Her family ate some, and now `3/4` of the cake remains. She wants to share this remaining cake equally among her 3 nieces who are visiting. What fraction of the *whole* cake does each niece receive?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What does 'sharing equally' imply about the mathematical operation we need to perform?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Think about what happens when you divide something into parts.",
+              "L2": "If you have a total quantity and you want to give the same amount to several people, what operation do you use?",
+              "L3": "Sharing equally means dividing the total amount by the number of people."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "How can you express the division of a fraction by a whole number as a multiplication problem?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Remember the rule for dividing fractions: 'Keep, Change, Flip' or 'multiply by the reciprocal'.",
+              "L2": "A whole number, like 3, can be written as a fraction: 3/1. What is the reciprocal of 3/1?",
+              "L3": "To divide by 3, you multiply by its reciprocal, which is 1/3."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E12",
+      "topic": "Fractions",
+      "title": "Cutting Ribbons for Art",
+      "learn_step": 1,
+      "complexity": "Easy",
+      "difficulty": 0.35,
+      "skill": "Division of Fractions",
+      "subskills": [
+        "whole-division-by-fraction"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "During an Art & Craft lesson, Chloe has a 4-metre long ribbon. She wants to cut it into smaller pieces, each `1/5` metre long, to decorate her art project. How many such pieces of ribbon can she get?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What is the total length of the ribbon, and what is the length of each small piece Chloe wants to cut?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Identify the 'whole' amount and the 'part' size.",
+              "L2": "The total ribbon is 4 metres, and each piece is 1/5 metre.",
+              "L3": "You are trying to find how many '1/5 metre' segments fit into '4 metres'."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Which operation should you use to find out how many times a smaller quantity fits into a larger quantity?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "When you're finding 'how many groups of...', what operation comes to mind?",
+              "L2": "It's the opposite of multiplication.",
+              "L3": "You need to divide the total length by the length of one piece."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E13",
+      "topic": "Fractions",
+      "title": "Baking Muffins for Friends",
+      "learn_step": 1,
+      "complexity": "Medium",
+      "difficulty": 0.5,
+      "skill": "Division of Fractions",
+      "subskills": [
+        "fraction-division-by-fraction"
+      ],
+      "estimated_time_seconds": 150,
+      "problem_text": "Mei Lin has `5/6` cup of chocolate chips. A recipe for one batch of mini muffins requires `1/3` cup of chocolate chips. How many complete batches of mini muffins can Mei Lin bake?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What is the total amount of chocolate chips Mei Lin has, and how much is needed for *one* batch?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Write down the given quantities.",
+              "L2": "Total chips: 5/6 cup. Chips per batch: 1/3 cup.",
+              "L3": "You're trying to figure out how many '1/3 cup' portions are in '5/6 cup'."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "How do you divide a fraction by another fraction? What is the method often taught?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Think about 'Keep, Change, Flip'.",
+              "L2": "The 'flip' part refers to the second fraction, also known as the divisor.",
+              "L3": "Keep the first fraction, change division to multiplication, and flip (find the reciprocal of) the second fraction."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "After performing the division, what does the resulting number represent? How should you interpret it in the context of 'complete batches'?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "If you get a mixed number, does the fractional part mean you can make a 'complete' batch?",
+              "L2": "For example, if the answer is 2 1/2, can you bake 2 and a half batches, or just 2 complete batches?",
+              "L3": "Only the whole number part of your answer represents the number of complete batches."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E14",
+      "topic": "Fractions",
+      "title": "Uncle Tan's Spending Habits",
+      "learn_step": 1,
+      "complexity": "Medium",
+      "difficulty": 0.65,
+      "skill": "Problem Solving with Fractions",
+      "subskills": [
+        "part-whole-models",
+        "multi-step-fraction-problems"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "Uncle Tan spent `1/3` of his money on groceries at the market. After that, he spent `1/4` of his *remaining* money on a new pair of spectacles. If he had $75 left after these purchases, how much money did Uncle Tan have at first?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "If Uncle Tan spent `1/3` of his money, what fraction of his money was remaining before he bought the spectacles?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Think of the total money as 1 whole.",
+              "L2": "If 1/3 is spent, what is 1 - 1/3?",
+              "L3": "Represent the whole amount as 3/3."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "He spent `1/4` of the *remaining* money on spectacles. What fraction of his *original total money* did he spend on spectacles?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "You need to find a fraction OF a fraction.",
+              "L2": "Multiply the fraction representing the 'remaining money' by the fraction spent on spectacles (1/4).",
+              "L3": "If he spent 1/4 of 2/3, what is (1/4) × (2/3)?"
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Now, calculate the total fraction of his money that Uncle Tan spent. Then, what fraction of his *original total money* was left?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Add the fraction spent on groceries and the fraction spent on spectacles.",
+              "L2": "Subtract the total fraction spent from the whole (1) to find the fraction left.",
+              "L3": "If the total spent is X, then 1 - X is the fraction left."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "You know the fraction of money left, and you know the actual dollar amount ($75) that represents this fraction. How can you find the total amount of money he had at first?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "If 'x' fraction equals $75, how do you find 1 whole?",
+              "L2": "Divide the dollar amount by the fraction it represents.",
+              "L3": "Use the unitary method: If 1/2 of the money is $75, then 1 (whole) is $75 ÷ 1/2."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E15",
+      "topic": "Fractions",
+      "title": "Carnival Participants with Glasses",
+      "learn_step": 1,
+      "complexity": "Hard",
+      "difficulty": 0.85,
+      "skill": "Advanced Fraction Problem Solving",
+      "subskills": [
+        "comparison-models",
+        "multi-step-fraction-problems",
+        "non-routine-fraction-problems",
+        "calculator-fraction-operations"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "At a school carnival, `2/5` of the participants were boys and the rest were girls. `1/3` of the boys wore glasses, and `1/2` of the girls wore glasses. If there were 60 more girls than boys who wore glasses, how many participants were there in total at the carnival?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What fraction of the total participants were girls?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The total participants represent 1 whole.",
+              "L2": "If 2/5 are boys, then 1 - 2/5 are girls.",
+              "L3": "Think of the whole as 5/5."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "What fraction of the *total* participants were boys who wore glasses? What fraction of the *total* participants were girls who wore glasses?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "For boys with glasses: find 1/3 of the fraction of boys.",
+              "L2": "For girls with glasses: find 1/2 of the fraction of girls.",
+              "L3": "Multiply the fractions: (fraction of boys) × (fraction of boys with glasses) and (fraction of girls) × (fraction of girls with glasses)."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "What is the fractional difference between the number of girls with glasses and the number of boys with glasses, in relation to the *total* participants?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Subtract the smaller fraction (boys with glasses) from the larger fraction (girls with glasses).",
+              "L2": "You'll need a common denominator to subtract these fractions.",
+              "L3": "Find the Lowest Common Multiple (LCM) of the denominators."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "You now have a fraction that represents 60 participants. How can you use this information to find the total number of participants?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "If 'X' fraction of the total is 60, how do you find the whole?",
+              "L2": "Divide the number of participants (60) by the fraction it represents.",
+              "L3": "This is similar to the unitary method. If 1/6 of total is 60, then the total is 60 ÷ (1/6)."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E16",
+      "topic": "Fractions",
+      "title": "Sharing Leftover Cake",
+      "learn_step": 16,
+      "complexity": "Easy",
+      "difficulty": 0.3,
+      "skill": "fraction-division-by-whole",
+      "subskills": [],
+      "estimated_time_seconds": 90,
+      "problem_text": "Siti baked a delicious cake. After her family ate some, 3/4 of the cake was left. She decided to share this remaining cake equally among herself and 3 of her friends for a picnic. What fraction of the *original* cake did each person receive?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "How many people will be sharing the cake in total?",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Remember to count Siti herself!",
+              "L2": "It's Siti + 3 friends.",
+              "L3": "Siti (1 person) + 3 friends = 4 people."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "You have a fraction of the cake (3/4) and you need to divide it equally among the total number of people. How would you write this as a division expression?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Think: (amount of cake) divided by (number of people).",
+              "L2": "It's (3/4) divided by the number you found in the previous step.",
+              "L3": "The expression should be 3/4 ÷ 4."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "When dividing a fraction by a whole number, what is the rule? (Hint: Think about multiplying by the reciprocal).",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Division by a number is the same as multiplication by its inverse.",
+              "L2": "The reciprocal of 4 is 1/4. So, it's 3/4 × 1/4.",
+              "L3": "To divide by a whole number, you multiply the fraction by the reciprocal of that whole number. For example, a/b ÷ c = a/b × 1/c."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Calculate the final fraction. Remember to simplify if possible.",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Multiply the numerators and the denominators.",
+              "L2": "(3 × 1) / (4 × 4)",
+              "L3": "The answer is 3/16."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E17",
+      "topic": "Fractions",
+      "title": "Packing Chillies at the Market",
+      "learn_step": 17,
+      "complexity": "Easy",
+      "difficulty": 0.35,
+      "skill": "whole-division-by-fraction",
+      "subskills": [],
+      "estimated_time_seconds": 90,
+      "problem_text": "Mr. Lim is preparing for his weekly market stall. He has 5 kg of fresh chillies. He packs them into small bags, with each bag containing 1/4 kg of chillies. How many such small bags of chillies can Mr. Lim pack?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "You have a total amount of chillies and you want to know how many portions of a specific size you can make. What operation should you use?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "If you have 10 apples and want to put 2 in each bag, what operation tells you how many bags?",
+              "L2": "You are dividing the total amount into smaller, equal parts.",
+              "L3": "The operation is division."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Write down the division expression representing this problem.",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Total chillies ÷ amount per bag.",
+              "L2": "5 kg ÷ 1/4 kg.",
+              "L3": "The expression is 5 ÷ 1/4."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "When dividing by a fraction, what is the key rule you need to remember?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "It involves 'flipping' the second fraction.",
+              "L2": "You multiply by the reciprocal.",
+              "L3": "To divide by a fraction, multiply by its reciprocal (invert the divisor and multiply)."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Calculate the total number of bags Mr. Lim can pack.",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "5 × (reciprocal of 1/4).",
+              "L2": "5 × 4.",
+              "L3": "The answer is 20 bags."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E18",
+      "topic": "Fractions",
+      "title": "Making Friendship Bracelets",
+      "learn_step": 18,
+      "complexity": "Medium",
+      "difficulty": 0.6,
+      "skill": "fraction-division-by-fraction",
+      "subskills": [
+        "simplifying-fractions"
+      ],
+      "estimated_time_seconds": 120,
+      "problem_text": "Mei Ling is making colourful friendship bracelets. She has a long piece of string measuring 7/10 metres. Each bracelet requires 1/5 metres of string. How many complete friendship bracelets can Mei Ling make?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "To find out how many small pieces fit into a larger piece, what mathematical operation should you perform?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "You are portioning a total length into smaller, equal lengths.",
+              "L2": "This is a sharing or grouping problem.",
+              "L3": "The operation is division."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Write the division expression for this problem.",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Total length of string ÷ length needed per bracelet.",
+              "L2": "7/10 ÷ 1/5.",
+              "L3": "The expression is 7/10 ÷ 1/5."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Recall the rule for dividing fractions. What is the reciprocal of the divisor fraction?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The divisor is 1/5.",
+              "L2": "To find the reciprocal, flip the numerator and the denominator.",
+              "L3": "The reciprocal of 1/5 is 5/1 (or simply 5)."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Rewrite the division as a multiplication problem and calculate the answer. Remember to simplify before or after multiplying if possible.",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "It's 7/10 × 5/1. Can you cross-simplify?",
+              "L2": "The 5 in the numerator and 10 in the denominator can be simplified (5 ÷ 5 = 1, 10 ÷ 5 = 2).",
+              "L3": "(7/2) × (1/1) = 7/2."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Since Mei Ling can only make 'complete' bracelets, what should you do if your answer is not a whole number?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "If you have 3 and a half items, can you make 3 and a half complete items?",
+              "L2": "You can only use the whole number part of the answer.",
+              "L3": "Take the whole number part only. (7/2 = 3 and 1/2, so Mei Ling can make 3 complete bracelets)."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E19",
+      "topic": "Fractions",
+      "title": "Ethan's Holiday Spending",
+      "learn_step": 19,
+      "complexity": "Medium",
+      "difficulty": 0.7,
+      "skill": "part-whole-models",
+      "subskills": [
+        "fractions-of-remainder",
+        "working-backwards"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "During the school holidays, Ethan spent 2/5 of his savings on a new LEGO set. He then spent 1/3 of his *remaining* savings on some art supplies. If he had $36 left after these purchases, how much money did Ethan have in his savings at first?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "After spending 2/5 of his savings on LEGO, what fraction of his savings did Ethan have *remaining*?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The 'whole' is 1. If he spent 2/5, how much is left from 1?",
+              "L2": "1 - 2/5. Convert 1 to 5/5.",
+              "L3": "He had 3/5 of his savings remaining."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Ethan spent 1/3 of this *remaining* amount on art supplies. What fraction of his *original* savings did he spend on art supplies?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "You need to find '1/3 of 3/5'.",
+              "L2": "Multiply the two fractions: 1/3 × 3/5.",
+              "L3": "He spent 1/5 of his original savings on art supplies."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "What total fraction of his original savings did Ethan spend (on LEGO and art supplies)?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Add the fraction spent on LEGO (2/5) and the fraction spent on art supplies (from S2).",
+              "L2": "2/5 + 1/5.",
+              "L3": "He spent a total of 3/5 of his original savings."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "If 3/5 of his savings were spent, what fraction of his original savings was *left*?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "If 3/5 is spent, how much is left from the whole (1)?",
+              "L2": "1 - 3/5.",
+              "L3": "He had 2/5 of his original savings left."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "You know that the 2/5 of his original savings is equal to $36. How can you find the total original savings?",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "If 2 parts out of 5 is $36, how much is 1 part?",
+              "L2": "If 2 units = $36, then 1 unit = $36 ÷ 2 = $18. How much are 5 units?",
+              "L3": "The total original savings was $18 × 5 = $90."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E20",
+      "topic": "Fractions",
+      "title": "P6 Sports Day Relay Team",
+      "learn_step": 20,
+      "complexity": "Hard",
+      "difficulty": 0.9,
+      "skill": "comparison-models",
+      "subskills": [
+        "fractions-of-a-group",
+        "complex-part-whole",
+        "working-backwards"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "In a P6 Sports Day relay team, 3/7 of the team members are girls. 2/3 of the girls wear spectacles. Among the boys, 1/4 do not wear spectacles. If there are 18 girls who do not wear spectacles, what is the total number of team members in the relay team?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "You are given that 2/3 of the girls wear spectacles. What fraction of the girls do *not* wear spectacles?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Think about the total fraction of girls as a whole (1).",
+              "L2": "1 - 2/3.",
+              "L3": "1/3 of the girls do not wear spectacles."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "You know that 18 girls do not wear spectacles, and this represents 1/3 of the total number of girls. How many girls are there in the relay team?",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "If 1 unit (1/3) is 18, what is the total (3 units)?",
+              "L2": "Multiply 18 by 3.",
+              "L3": "There are 18 × 3 = 54 girls in the team."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Now you know the total number of girls (54) and that girls make up 3/7 of the *entire team*. How can you find the total number of team members?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "If 3/7 of the team is 54, how much is 1/7 of the team?",
+              "L2": "If 3 units = 54, then 1 unit = 54 ÷ 3 = 18. How many units are there in total for the whole team?",
+              "L3": "The total team members = (54 ÷ 3) × 7 = 18 × 7."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "The problem also gives information about boys and spectacles. Do you need this information to find the total number of team members? Why or why not?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Have you already found the total team members using only the girls' information?",
+              "L2": "The information about boys is extra. You have enough information from the girls' fraction and number.",
+              "L3": "No, this information is not needed to find the total number of team members. We could use it to verify or find the number of boys, but not the total team members if we already found the 'whole' from the girls' part."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Calculate the total number of team members.",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Perform the calculation from step S3.",
+              "L2": "18 × 7.",
+              "L3": "The total number of team members is 126."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E21",
+      "topic": "Fractions",
+      "title": "Sharing Remaining Cake",
+      "learn_step": 1,
+      "complexity": "Easy",
+      "difficulty": 0.3,
+      "skill": "fraction-division-by-whole",
+      "subskills": [
+        "divide-proper-fraction-by-whole-number",
+        "subtraction-of-fractions"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "Mrs. Lim baked a delicious chocolate cake. Her family ate 1/2 of the cake. She wants to share the remaining cake equally among her 3 neighbours. What fraction of the original cake does each neighbour receive?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "First, if Mrs. Lim's family ate 1/2 of the cake, what fraction of the cake is left?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              "1/2",
+              "0.5"
+            ],
+            "hints": {
+              "L1": "Think about the whole cake as 1. If half is gone, what remains?",
+              "L2": "The whole cake is represented by 1. Subtract the eaten portion from the whole.",
+              "L3": "Calculation: 1 - 1/2 = ?"
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Now that you know the remaining fraction, how would you divide this amount equally among 3 neighbours?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "divide by 3",
+              "multiply by 1/3"
+            ],
+            "hints": {
+              "L1": "If you are sharing something equally among a certain number of people, what mathematical operation should you use?",
+              "L2": "The remaining cake needs to be split into 3 equal portions.",
+              "L3": "The operation needed is division. Write down the expression: (remaining fraction) ÷ 3."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Perform the calculation to find the fraction of the original cake each neighbour receives. (Remember: To divide a fraction by a whole number, you can multiply the fraction by the reciprocal of the whole number).",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              "1/6"
+            ],
+            "hints": {
+              "L1": "The remaining cake is 1/2. You need to calculate 1/2 ÷ 3.",
+              "L2": "The reciprocal of 3 is 1/3. So, it's 1/2 × 1/3.",
+              "L3": "Multiply the numerators and multiply the denominators: (1 × 1) / (2 × 3)."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E22",
+      "topic": "Fractions",
+      "title": "Cutting Ribbons for Cards",
+      "learn_step": 2,
+      "complexity": "Easy",
+      "difficulty": 0.4,
+      "skill": "whole-division-by-fraction",
+      "subskills": [
+        "divide-whole-number-by-proper-fraction"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "Hui Ling has 4 metres of beautiful colourful ribbon. She wants to cut the ribbon into smaller pieces, each measuring 2/5 of a metre, to decorate her handmade cards. How many pieces of ribbon can she cut?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "To find out how many small pieces of ribbon fit into the total length, what mathematical operation should you use?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "division",
+              "divide"
+            ],
+            "hints": {
+              "L1": "If you have a total quantity and you want to know how many times a smaller quantity fits into it, what operation is that?",
+              "L2": "You are sharing the total length into equal smaller lengths.",
+              "L3": "The total length is 4 metres, and each piece is 2/5 metres. The operation is division."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Write down the division expression using the given numbers.",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "4 ÷ 2/5",
+              "4 / (2/5)"
+            ],
+            "hints": {
+              "L1": "The total length is the dividend, and the length of each small piece is the divisor.",
+              "L2": "Total length goes first, followed by the division sign, then the length of one piece.",
+              "L3": "It should look like: (Total Metres) ÷ (Metres per piece)."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Now, perform the calculation. Remember, to divide by a fraction, you can multiply by its reciprocal.",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              "10"
+            ],
+            "hints": {
+              "L1": "The reciprocal of 2/5 is 5/2.",
+              "L2": "So, your calculation becomes 4 × 5/2.",
+              "L3": "Multiply 4 by 5, then divide the result by 2. Or, simplify 4 and 2 first."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-M23",
+      "topic": "Fractions",
+      "title": "Baking with Limited Sugar",
+      "learn_step": 3,
+      "complexity": "Medium",
+      "difficulty": 0.6,
+      "skill": "fraction-division-by-fraction",
+      "subskills": [
+        "add-fractions-with-different-denominators",
+        "divide-proper-fraction-by-proper-fraction",
+        "multi-step-problem"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "A delicious recipe for Pandan Chiffon Cake requires 3/4 cup of sugar. Mrs. Tan has 1/2 cup of sugar left in her container. She found a new bag of sugar that contains 5/6 cup of sugar. After combining all her sugar, how many times can she make the recipe?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "First, you need to find the total amount of sugar Mrs. Tan has. How would you combine the sugar from her container and the new bag?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "add the fractions",
+              "1/2 + 5/6"
+            ],
+            "hints": {
+              "L1": "To find a total, what mathematical operation is usually involved?",
+              "L2": "You have two quantities of sugar and you need to find their sum.",
+              "L3": "The operation is addition. You need to add 1/2 cup and 5/6 cup. Remember to find a common denominator."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "What is the total amount of sugar Mrs. Tan has after adding 1/2 cup and 5/6 cup?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              "8/6",
+              "4/3",
+              "1 1/3"
+            ],
+            "hints": {
+              "L1": "The common denominator for 2 and 6 is 6. Convert 1/2 to an equivalent fraction with denominator 6.",
+              "L2": "1/2 = 3/6. Now add 3/6 + 5/6.",
+              "L3": "3/6 + 5/6 = 8/6. Can this fraction be simplified? Can it be expressed as a mixed number?"
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Now that you know the total sugar Mrs. Tan has, and you know how much sugar one recipe needs, what operation will you use to find out how many times she can make the recipe?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "division",
+              "divide"
+            ],
+            "hints": {
+              "L1": "You have a total quantity of sugar, and you're dividing it into portions, each sufficient for one recipe.",
+              "L2": "The question is 'how many times can she make the recipe', which implies splitting the total sugar into portions.",
+              "L3": "The operation is division: (Total sugar) ÷ (Sugar per recipe)."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Perform the division. How many times can Mrs. Tan make the recipe?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              "1 7/9",
+              "16/9"
+            ],
+            "hints": {
+              "L1": "Your calculation is (Total sugar from S2) ÷ 3/4. Let's use the improper fraction form for total sugar (8/6 or 4/3).",
+              "L2": "If you use 4/3 as total sugar, you need to calculate 4/3 ÷ 3/4. Remember to multiply by the reciprocal of the divisor.",
+              "L3": "4/3 × 4/3 = 16/9. Convert this to a mixed number if needed."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-M24",
+      "topic": "Fractions",
+      "title": "Rice Shopping at the Market",
+      "learn_step": 4,
+      "complexity": "Medium",
+      "difficulty": 0.7,
+      "skill": "comparison-models",
+      "subskills": [
+        "multiply-fraction-by-whole-number",
+        "multiply-mixed-number-by-fraction",
+        "multi-step-problem"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "At the market, Mr. Koh bought 5 kg of rice. Mr. Tan bought 3/5 of the amount of rice Mr. Koh bought. Mr. Lee bought 1 1/2 times the amount of rice Mr. Tan bought. How much rice did Mr. Lee buy?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "Let's start with Mr. Tan. How can you find the amount of rice Mr. Tan bought, given that he bought 3/5 of Mr. Koh's amount?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "multiply 3/5 by 5",
+              "3/5 * 5"
+            ],
+            "hints": {
+              "L1": "The word 'of' in fraction problems usually indicates which mathematical operation?",
+              "L2": "You need to find a fraction of a whole number. This is done by multiplication.",
+              "L3": "Calculate: 3/5 × 5 kg."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "Calculate the amount of rice Mr. Tan bought.",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              "3"
+            ],
+            "hints": {
+              "L1": "3/5 × 5 is equivalent to (3 × 5) / 5.",
+              "L2": "You can simplify by cancelling out the 5s.",
+              "L3": "The answer should be in kilograms."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Now, let's find the amount Mr. Lee bought. He bought 1 1/2 times the amount Mr. Tan bought. What is the first step to calculate this?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "convert 1 1/2 to an improper fraction",
+              "multiply 1 1/2 by Mr. Tan's amount"
+            ],
+            "hints": {
+              "L1": "When multiplying with mixed numbers, it's usually easier to convert them first.",
+              "L2": "Convert 1 1/2 into an improper fraction.",
+              "L3": "1 1/2 = (1 × 2 + 1) / 2 = 3/2."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "Finally, calculate the amount of rice Mr. Lee bought.",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              "4.5",
+              "4 1/2",
+              "9/2"
+            ],
+            "hints": {
+              "L1": "You need to multiply Mr. Tan's amount (from S2) by the improper fraction from S3.",
+              "L2": "Calculation: 3 kg × 3/2.",
+              "L3": "3 × 3/2 = 9/2. Convert to a mixed number if preferred."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-H25",
+      "topic": "Fractions",
+      "title": "School Library Book Collection",
+      "learn_step": 5,
+      "complexity": "Hard",
+      "difficulty": 0.85,
+      "skill": "part-whole-models",
+      "subskills": [
+        "multi-step-problem",
+        "non-routine-problem",
+        "working-backwards",
+        "fraction-of-a-remainder"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "A school library has a collection of English, Malay, and Chinese books. 1/4 of the books are English books. 2/3 of the *remaining* books are Malay books. If there are 120 Chinese books, how many books are there in the library altogether?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "If 1/4 of the books are English, what fraction of the books are *remaining* (i.e., not English)?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              "3/4"
+            ],
+            "hints": {
+              "L1": "Think of the total books as 1 whole unit.",
+              "L2": "Subtract the fraction of English books from the total.",
+              "L3": "1 - 1/4 = ?"
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "The problem states that 2/3 of the *remaining* books are Malay books. Using the fraction you found in S1, what fraction of the *total* books are Malay books?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              "1/2",
+              "2/4",
+              "3/6"
+            ],
+            "hints": {
+              "L1": "You need to find a fraction 'of' a fraction. This means multiplication.",
+              "L2": "Multiply the fraction of remaining books by 2/3.",
+              "L3": "Calculation: 2/3 × (fraction from S1)."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Now you know the fraction of English books and the fraction of Malay books (both based on the *total* collection). What fraction of the *total* books are Chinese books?",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              "1/4"
+            ],
+            "hints": {
+              "L1": "The three types of books (English, Malay, Chinese) make up the entire collection (1 whole).",
+              "L2": "Subtract the fractions for English and Malay books from 1 (the total).",
+              "L3": "Calculation: 1 - (Fraction of English) - (Fraction of Malay from S2). Or, look at the remainder after Malay books are taken out (1/3 of the 3/4 remaining)."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "You found the fraction of Chinese books, and you are given that there are 120 Chinese books. How can you use this information to find the total number of books in the library?",
+            "answer_type": "free",
+            "acceptable_responses": [
+              "divide 120 by the fraction",
+              "120 is X fraction, find 1 whole"
+            ],
+            "hints": {
+              "L1": "If a certain number represents a specific fraction of the total, how do you find the total?",
+              "L2": "If (Fraction of Chinese) units = 120 books, then 1 unit (the total) = 120 ÷ (Fraction of Chinese).",
+              "L3": "Remember that dividing by a fraction is the same as multiplying by its reciprocal."
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "Calculate the total number of books in the library.",
+            "answer_type": "numeric",
+            "acceptable_responses": [
+              "480"
+            ],
+            "hints": {
+              "L1": "You should be dividing 120 by the fraction you found in S3.",
+              "L2": "If the fraction was 1/4, then 120 ÷ 1/4 = 120 × 4.",
+              "L3": "Perform the multiplication to get the final answer."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E26",
+      "topic": "Fractions",
+      "title": "Sharing Leftover Cake",
+      "learn_step": 1,
+      "complexity": "Easy",
+      "difficulty": 0.3,
+      "skill": "fraction-division-by-whole",
+      "subskills": [
+        "divide-proper-fraction-by-whole"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "During Joel's birthday party, 3/4 of a chocolate cake was left. Joel decided to share this remaining cake equally among himself and 3 friends. How much cake did each person receive?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "How many people are sharing the cake in total?",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Remember to include Joel himself!",
+              "L2": "It's Joel + his 3 friends.",
+              "L3": "1 (Joel) + 3 (friends) = ?"
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "If you have a fraction of cake and you divide it equally among a certain number of people, what mathematical operation should you use?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Think about sharing equally.",
+              "L2": "The problem asks 'How much did each person receive?', implying splitting a total.",
+              "L3": "The operation is 'division'."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "How do you divide a fraction by a whole number?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Remember 'Keep, Change, Flip' for division.",
+              "L2": "A whole number can be written as a fraction over 1. Then, what's the reciprocal?",
+              "L3": "Multiply the fraction by the reciprocal of the whole number."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E27",
+      "topic": "Fractions",
+      "title": "Baking Cookies for Sale",
+      "learn_step": 1,
+      "complexity": "Easy",
+      "difficulty": 0.4,
+      "skill": "whole-division-by-fraction",
+      "subskills": [
+        "divide-whole-number-by-proper-fraction"
+      ],
+      "estimated_time_seconds": 90,
+      "problem_text": "A baker has 2 kg of flour. Each batch of cookies requires 1/8 kg of flour. How many batches of cookies can the baker make with all the flour?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What does the problem ask you to find?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Look at the question at the end of the problem.",
+              "L2": "It asks for the number of 'batches'.",
+              "L3": "You need to find out how many times 1/8 kg fits into 2 kg."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "If you want to find out how many times a smaller quantity (1/8 kg) fits into a larger quantity (2 kg), what mathematical operation should you use?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "When you want to know 'how many groups of...', what operation comes to mind?",
+              "L2": "This is a typical 'number of groups' type of problem.",
+              "L3": "The operation is 'division'."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "How do you divide a whole number by a fraction? What is the reciprocal of 1/8?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Remember 'Keep, Change, Flip'.",
+              "L2": "To find the reciprocal, flip the numerator and denominator.",
+              "L3": "Multiply the whole number by the reciprocal of the fraction."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E28",
+      "topic": "Fractions",
+      "title": "Cutting Ribbons for Gift Boxes",
+      "learn_step": 1,
+      "complexity": "Medium",
+      "difficulty": 0.5,
+      "skill": "fraction-division-by-fraction",
+      "subskills": [
+        "divide-proper-fraction-by-proper-fraction",
+        "mixed-number-to-improper-fraction"
+      ],
+      "estimated_time_seconds": 120,
+      "problem_text": "Mdm Lee has a roll of ribbon that is 2 1/4 metres long. She wants to cut the ribbon into smaller pieces, each 3/8 metre long, to decorate gift boxes. How many full pieces of ribbon can she cut?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "What is the total length of the ribbon in improper fraction form?",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "How many quarters are there in 2 whole metres?",
+              "L2": "2 wholes = 2 x 4/4 = 8/4. Then add the 1/4.",
+              "L3": "Multiply the whole number by the denominator, then add the numerator. Keep the same denominator."
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "To find out how many smaller pieces can be cut from a longer piece, what operation should you use?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Similar to how many batches of cookies can be made from flour.",
+              "L2": "You are trying to fit smaller units into a larger total.",
+              "L3": "The operation is 'division'."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "How do you divide a fraction by another fraction? What should you do if the answer is not a whole number?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Recall 'Keep, Change, Flip'.",
+              "L2": "The problem asks for 'full pieces'. What does that imply if you get a remainder?",
+              "L3": "Multiply the first fraction by the reciprocal of the second fraction. If there's a remainder, it means you can only take the whole number part."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E29",
+      "topic": "Fractions",
+      "title": "Amelia's Shopping Spree",
+      "learn_step": 1,
+      "complexity": "Medium",
+      "difficulty": 0.6,
+      "skill": "part-whole-models",
+      "subskills": [
+        "fraction-of-remainder",
+        "multi-step-fraction-operations"
+      ],
+      "estimated_time_seconds": 180,
+      "problem_text": "Amelia had some money. She spent 1/3 of her money on a book and 2/5 of the *remaining* money on a new pen. If she had $36 left, how much money did Amelia have at first?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "After spending 1/3 of her money on a book, what fraction of her money was left?",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The total money can be represented as 1 whole (or 3/3).",
+              "L2": "Subtract the spent fraction from the total fraction.",
+              "L3": "1 - 1/3 = ?"
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "The problem says she spent 2/5 of the *remaining* money on a pen. How would you represent this as a fraction of her *original* money?",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Multiply the fraction of the remainder (2/5) by the fraction that was remaining (from S1).",
+              "L2": "Remember 'of' means multiplication in fractions.",
+              "L3": "Calculate 2/5 x (fraction from S1)."
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "Now, what fraction of her *original* money does $36 represent? (Hint: It's the money left after spending on the book AND the pen.)",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "First, find the fraction of money spent in total (book + pen as fraction of original).",
+              "L2": "Subtract the total fraction spent from the original 1 whole.",
+              "L3": "Alternatively, if 2/5 of remainder was spent on pen, 3/5 of remainder was left. Calculate 3/5 of the fraction from S1."
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "If you know the value of a fraction of the total, how can you find the total amount?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "If 'X' represents 'Y/Z' of the total, how do you find the total?",
+              "L2": "You can find the value of one unit, then multiply by the total units.",
+              "L3": "Divide the known value ($36) by the fraction it represents."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-S1-E30",
+      "topic": "Fractions",
+      "title": "Library Volunteers",
+      "learn_step": 1,
+      "complexity": "Hard",
+      "difficulty": 0.7,
+      "skill": "comparison-models",
+      "subskills": [
+        "multi-step-non-routine-problem",
+        "finding-common-whole"
+      ],
+      "estimated_time_seconds": 240,
+      "problem_text": "At the school library, 3/7 of the volunteers are boys and the rest are girls. 1/4 of the boys and 1/3 of the girls are Primary 6 students. If there are 28 Primary 6 volunteers in total, how many volunteers are there in the library altogether?",
+      "student_view": {
+        "socratic": true,
+        "steps": [
+          {
+            "id": "S1",
+            "prompt": "If 3/7 of the volunteers are boys, what fraction of the volunteers are girls?",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "The total fraction of volunteers is 1 whole (or 7/7).",
+              "L2": "Subtract the fraction of boys from the total.",
+              "L3": "1 - 3/7 = ?"
+            }
+          },
+          {
+            "id": "S2",
+            "prompt": "What fraction of the *total* volunteers are Primary 6 boys?",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "1/4 of the boys are P6. And boys are 3/7 of the total.",
+              "L2": "Think 'fraction of a fraction'. Multiply the two fractions.",
+              "L3": "1/4 × 3/7 = ?"
+            }
+          },
+          {
+            "id": "S3",
+            "prompt": "What fraction of the *total* volunteers are Primary 6 girls?",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "1/3 of the girls are P6. Use the fraction of girls you found in S1.",
+              "L2": "Multiply the fraction of P6 girls by the total fraction of girls.",
+              "L3": "1/3 × (fraction from S1) = ?"
+            }
+          },
+          {
+            "id": "S4",
+            "prompt": "What fraction of the *total* volunteers are Primary 6 students altogether?",
+            "answer_type": "numeric",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "Add the fraction of P6 boys (from S2) and P6 girls (from S3).",
+              "L2": "Ensure you have a common denominator before adding.",
+              "L3": "(Fraction from S2) + (Fraction from S3) = ?"
+            }
+          },
+          {
+            "id": "S5",
+            "prompt": "If 28 volunteers represent this total fraction of Primary 6 students, how can you find the total number of volunteers?",
+            "answer_type": "free",
+            "acceptable_responses": [],
+            "hints": {
+              "L1": "You have a part (28) and the fraction it represents (from S4).",
+              "L2": "To find the whole, divide the part by the fraction.",
+              "L3": "28 ÷ (Fraction from S4) = ?"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "problem_number": 31,
+      "difficulty": "Easy",
+      "context": "Food portions and sharing",
+      "skill_covered": "fraction-division-by-whole",
+      "question": "Mrs. Lim baked a delicious chocolate cake. Her family ate 1/4 of the cake during tea time. The remaining cake was then divided equally among 3 neighbours. What fraction of the original cake did each neighbour receive?",
+      "socratic_questions": [
+        "What fraction of the cake was left after Mrs. Lim's family ate some?",
+        "If the remaining cake is divided equally among 3 neighbours, what mathematical operation should you use?",
+        "How do you divide a fraction by a whole number?",
+        "Can you express the division of a fraction by a whole number as a multiplication problem?"
+      ]
+    },
+    {
+      "problem_number": 32,
+      "difficulty": "Medium",
+      "context": "Art and craft projects",
+      "skill_covered": "whole-division-by-fraction",
+      "question": "For an art project, Sarah has a roll of wire that is 6 metres long. She needs to cut pieces of wire, each 3/4 metre long, to make small sculptures. How many pieces of wire can she cut from the roll?",
+      "socratic_questions": [
+        "What is the total length of the wire Sarah has?",
+        "What is the length of each small piece she needs?",
+        "To find out how many small pieces fit into the total length, what mathematical operation should you use?",
+        "How do you divide a whole number by a fraction?",
+        "After cutting the pieces, will there be any wire left over? How can you tell?"
+      ]
+    },
+    {
+      "problem_number": 33,
+      "difficulty": "Medium-Hard",
+      "context": "Sports and games",
+      "skill_covered": "fraction-division-by-fraction, multi-step",
+      "question": "A school running track is 7/8 km long. During a training session, Peter ran 2/3 of the track. He then decided to finish the remaining distance by running smaller laps, each 1/12 km long. How many of these smaller laps did Peter need to run to complete the track?",
+      "socratic_questions": [
+        "What is the total length of the running track?",
+        "What fraction of the track did Peter run initially?",
+        "What fraction of the track is remaining for Peter to complete?",
+        "What is the actual distance (in km) of the remaining part of the track?",
+        "How do you find out how many 1/12 km segments fit into that remaining distance? What operation is this?"
+      ]
+    },
+    {
+      "problem_number": 34,
+      "difficulty": "Hard",
+      "context": "Shopping and markets",
+      "skill_covered": "part-whole-models, multi-step fraction problems",
+      "question": "During the Great Singapore Sale, Emily spent 3/7 of her savings on a new dress. She then spent 1/2 of her *remaining* savings on a pair of shoes. If she had $160 left after these purchases, how much savings did Emily have at first?",
+      "socratic_questions": [
+        "If Emily spent 3/7 of her savings, what fraction of her savings was remaining?",
+        "She spent 1/2 of her *remaining* savings. How can you represent this information visually, perhaps with a part-whole model?",
+        "If 1/2 of the remainder was spent, what fraction of the remainder was left?",
+        "How can you relate this 'fraction of the remainder' to the original total savings?",
+        "If you know the fraction of the total savings that $160 represents, how can you find the total amount Emily had at first?"
+      ]
+    },
+    {
+      "problem_number": 35,
+      "difficulty": "Hard",
+      "context": "Library activities",
+      "skill_covered": "comparison-models, multi-step, combining fractions, non-routine",
+      "question": "At the community library, 2/5 of the books are fiction books. The remaining books are non-fiction books and magazines. There are 180 more non-fiction books than fiction books. The number of magazines is 1/3 of the total number of non-fiction books. How many books are there in the library altogether?",
+      "socratic_questions": [
+        "What fraction of the books are non-fiction and magazines combined?",
+        "How can you represent the relationship between fiction and non-fiction books using a model based on the fractions given?",
+        "You are given that there are 180 more non-fiction books than fiction books. How can you use this difference with your model to find the value of one 'unit' or 'part' of the books?",
+        "Once you find the number of units that represent 180 books, how can you determine the total number of fiction books and non-fiction books?",
+        "How do you calculate the number of magazines, given it's 1/3 of the non-fiction books?",
+        "Finally, how do you find the total number of books in the library?"
+      ]
+    },
+    {
+      "problem_number": 36,
+      "difficulty": "Easy",
+      "context": "Birthday celebrations",
+      "skill_focus": [
+        "fraction-division-by-whole",
+        "part-whole-models"
+      ],
+      "problem_statement": "After a birthday party, 3/4 of a large chocolate cake was left. Mrs. Lee decided to share this remaining cake equally among her 6 neighbours. What fraction of the original whole cake did each neighbour receive?",
+      "socratic_questions": [
+        "What does the fraction 3/4 represent in this problem?",
+        "If this remaining cake is shared equally among 6 neighbours, what mathematical operation should you use to find each neighbour's share?",
+        "How do you divide a fraction by a whole number?",
+        "Can you simplify your final answer?"
+      ]
+    },
+    {
+      "problem_number": 37,
+      "difficulty": "Easy-Medium",
+      "context": "Cooking and recipes",
+      "skill_focus": [
+        "whole-division-by-fraction",
+        "part-whole-models"
+      ],
+      "problem_statement": "Auntie Mary has 5 kg of flour. A recipe for a batch of cookies requires 2/5 kg of flour. How many full batches of cookies can Auntie Mary make with the flour she has?",
+      "socratic_questions": [
+        "What are you trying to find out: how many times does 2/5 kg fit into 5 kg? Which mathematical operation is suitable for this?",
+        "When you divide a whole number by a fraction, what is the 'keep, change, flip' rule you should remember?",
+        "Your answer might be a mixed number. What does the whole number part of your answer tell you about the number of 'full' batches?"
+      ]
+    },
+    {
+      "problem_number": 38,
+      "difficulty": "Medium",
+      "context": "Library activities",
+      "skill_focus": [
+        "fraction-division-by-fraction"
+      ],
+      "problem_statement": "A librarian needs to arrange some new books on a shelf. The available shelf space is 4/5 metre long. Each book is 1/10 metre thick. How many books can fit on the shelf?",
+      "socratic_questions": [
+        "What quantities are you comparing to find 'how many' books fit?",
+        "What mathematical operation should you use to find how many times 1/10 metre fits into 4/5 metre?",
+        "How do you divide a fraction by another fraction? What's the first step?",
+        "Does your answer make sense in the context of fitting books on a shelf?"
+      ]
+    },
+    {
+      "problem_number": 39,
+      "difficulty": "Medium-Hard",
+      "context": "Sports and games",
+      "skill_focus": [
+        "comparison-models",
+        "calculator-fraction-operations"
+      ],
+      "problem_statement": "Ahmad, Ben, and Clara participated in a school charity run. Ahmad ran 3 1/2 km. Ben ran 2/3 of the distance Ahmad ran. Clara ran 1 1/4 km more than Ben. What was the total distance covered by all three students?",
+      "socratic_questions": [
+        "Who is the first person whose distance you need to calculate based on a fraction of another person's distance?",
+        "How can you calculate Ben's distance? What does '2/3 of Ahmad's distance' mean mathematically?",
+        "Once you know Ben's distance, how do you find Clara's distance? Pay close attention to the phrase 'more than'.",
+        "What is the final step to answer the question about the total distance? What tools can you use to accurately add up these distances, especially if they are mixed numbers or improper fractions?"
+      ]
+    },
+    {
+      "problem_number": 40,
+      "difficulty": "Hard",
+      "context": "Shopping and markets",
+      "skill_focus": [
+        "part-whole-models",
+        "multi-step-non-routine"
+      ],
+      "problem_statement": "A grocer had a large stock of rice. On Monday, he sold 1/4 of his total stock. On Tuesday, he sold 2/3 of the *remaining* stock. If he had 120 kg of rice left, what was the original total stock of rice the grocer had?",
+      "socratic_questions": [
+        "After selling 1/4 of the stock on Monday, what fraction of the *total original stock* was left?",
+        "On Tuesday, he sold 2/3 of the *remaining* stock. What fraction of that *remainder* was left unsold?",
+        "You know the actual amount left (120 kg) corresponds to a fraction of the *remainder* after Monday. How can you use this information to find the actual amount of rice that was left at the end of Monday (the 'remainder')?",
+        "Now you know the 'remainder' from Monday. This 'remainder' represents a specific fraction of the *original total stock*. How can you use this to calculate the original total stock of rice?",
+        "Why is it important to distinguish between fractions of the 'original' total and fractions of the 'remainder' in problems like this?"
+      ]
+    },
+    {
+      "problem_number": 41,
+      "difficulty": "Easy",
+      "context": "Food portions and sharing",
+      "skill_focus": [
+        "fraction-division-by-whole"
+      ],
+      "question": "Mrs. Lim baked a delicious chocolate cake. After her family ate some, 3/4 of the cake was left. She decided to share this remaining cake equally among her 3 neighbours. What fraction of the *whole* cake did each neighbour receive?",
+      "socratic_questions": [
+        "What fraction of the cake is being shared among the neighbours?",
+        "How many neighbours are sharing this amount equally?",
+        "If you divide something into equal parts, what mathematical operation are you performing?",
+        "How can you represent this division using fractions? (Hint: Think about (fraction) ÷ (whole number) )"
+      ]
+    },
+    {
+      "problem_number": 42,
+      "difficulty": "Medium",
+      "context": "Cooking and recipes",
+      "skill_focus": [
+        "whole-division-by-fraction"
+      ],
+      "question": "Devi has 4 cups of flour. A single batch of her special oatmeal cookies requires 2/3 cup of flour. How many full batches of cookies can Devi make?",
+      "socratic_questions": [
+        "What is the total amount of flour Devi has?",
+        "How much flour is needed for *one* batch of cookies?",
+        "You want to find out how many 2/3 cup portions are in 4 cups. What operation should you use?",
+        "When dividing by a fraction, what is the 'reciprocal' and how is it used?"
+      ]
+    },
+    {
+      "problem_number": 43,
+      "difficulty": "Medium",
+      "context": "Art and craft projects",
+      "skill_focus": [
+        "fraction-division-by-fraction",
+        "part-whole-models"
+      ],
+      "question": "Mei Ling has a roll of ribbon that is 5/6 meter long. She wants to cut it into smaller pieces, each 1/12 meter long, to decorate gift boxes. How many pieces of ribbon can Mei Ling cut?",
+      "socratic_questions": [
+        "What is the total length of the ribbon Mei Ling has?",
+        "What is the length of *each* small piece she wants to cut?",
+        "To find out how many smaller pieces fit into a larger length, what mathematical operation should you perform?",
+        "How does inverting the second fraction (the divisor) help you solve the division problem?"
+      ]
+    },
+    {
+      "problem_number": 44,
+      "difficulty": "Harder Medium",
+      "context": "Shopping and markets",
+      "skill_focus": [
+        "calculator-fraction-operations",
+        "comparison-models"
+      ],
+      "question": "At the market, Mrs. Tan bought 2 1/4 kg of apples. She bought 3/5 kg *less* oranges than apples, and 1 1/2 kg *more* grapes than oranges. What is the total mass of fruits Mrs. Tan bought? (You may use a calculator for this question.)",
+      "socratic_questions": [
+        "What is the first step you need to take after knowing the mass of apples?",
+        "How can you find the mass of oranges, knowing it's 3/5 kg *less* than apples? What operation will you use?",
+        "Once you have the mass of oranges, how can you find the mass of grapes, knowing it's 1 1/2 kg *more* than oranges?",
+        "What is the final step to find the total mass of fruits purchased?",
+        "How do you handle mixed numbers when adding or subtracting using a calculator? (Hint: inputting them correctly or converting them first)."
+      ]
+    },
+    {
+      "problem_number": 45,
+      "difficulty": "Hard",
+      "context": "School activities",
+      "skill_focus": [
+        "multi-step",
+        "non-routine",
+        "part-whole-models"
+      ],
+      "question": "Sarah read a novel over three days. On Monday, she read 1/3 of the book. On Tuesday, she read 1/4 of the *remaining* pages. On Wednesday, she read the last 90 pages to finish the book. How many pages did the book have in total?",
+      "socratic_questions": [
+        "What fraction of the book was *left* after Sarah finished reading on Monday?",
+        "On Tuesday, Sarah read 1/4 of the *remaining* pages. How can you calculate what fraction of the *entire book* she read on Tuesday?",
+        "What fraction of the *entire book* did Sarah read on Monday and Tuesday combined?",
+        "If Monday and Tuesday's reading represents a certain fraction of the book, what fraction of the book must the 90 pages read on Wednesday represent?",
+        "If you know a specific fraction of the book corresponds to 90 pages, how can you find the total number of pages in the book?"
+      ]
+    },
+    {
+      "problem_number": 46,
+      "title": "Sharing Leftover Pizza",
+      "context": "Food portions and sharing",
+      "learning_objectives": [
+        "Divide proper fraction by whole number without calculator"
+      ],
+      "key_skills": [
+        "fraction-division-by-whole",
+        "part-whole-models"
+      ],
+      "difficulty": "Easy",
+      "problem_statement": "Sarah had 3/4 of a pizza left. She wanted to share it equally among herself and 2 friends. What fraction of the original whole pizza did each person get?",
+      "socratic_questions": [
+        "How many people are sharing the pizza in total?",
+        "What mathematical operation should you use when you want to share something equally?",
+        "Can you draw a simple model to represent the 3/4 pizza and then divide it into equal parts?",
+        "How do you perform the division of a fraction by a whole number?"
+      ],
+      "model_hint": "Draw a rectangular bar to represent the whole pizza. Shade 3/4 of it. Then, divide the shaded part (or the whole bar) into the number of equal portions."
+    },
+    {
+      "problem_number": 47,
+      "title": "Baking Multiple Batches",
+      "context": "Cooking and recipes",
+      "learning_objectives": [
+        "Divide whole number by proper fraction without calculator"
+      ],
+      "key_skills": [
+        "whole-division-by-fraction"
+      ],
+      "difficulty": "Medium",
+      "problem_statement": "Mrs. Tan has 4 kg of flour. A recipe for one batch of cookies requires 2/5 kg of flour. How many batches of cookies can Mrs. Tan bake?",
+      "socratic_questions": [
+        "What information are you given about the total flour and the flour needed per batch?",
+        "What question are you trying to answer? (How many times does 2/5 kg fit into 4 kg?)",
+        "Which mathematical operation is used to find out how many times one quantity is contained in another?",
+        "How do you divide a whole number by a proper fraction? Remember the 'Keep, Change, Flip' rule.",
+        "Will your answer be a whole number or a fraction? Why?"
+      ],
+      "model_hint": "Draw a bar model representing 4 kg. Then, consider how many segments of 2/5 kg fit into this 4 kg. You might think about converting 4 kg to 'fifths'."
+    },
+    {
+      "problem_number": 48,
+      "title": "Cutting Fabric Pieces",
+      "context": "Shopping and markets",
+      "learning_objectives": [
+        "Divide proper fraction by proper fraction without calculator"
+      ],
+      "key_skills": [
+        "fraction-division-by-fraction"
+      ],
+      "difficulty": "Medium",
+      "problem_statement": "Mr. Lim bought a roll of fabric that was 5/6 m long. He wants to cut it into pieces, each 1/8 m long, to make small decorations. How many full pieces of fabric can he cut?",
+      "socratic_questions": [
+        "What is the total length of fabric Mr. Lim has?",
+        "What is the length required for each small piece?",
+        "To find out how many pieces can be cut, what operation should you use?",
+        "How do you divide a fraction by another fraction?",
+        "What should you do if your answer is not a whole number? The question asks for 'full pieces'."
+      ],
+      "model_hint": "Draw a rectangular bar representing 5/6 m. Then, try to visualize how many segments of 1/8 m can fit within this 5/6 m. Finding a common denominator for the fractions might help visualize the division."
+    },
+    {
+      "problem_number": 49,
+      "title": "School Project Time Management",
+      "context": "School activities",
+      "learning_objectives": [
+        "Solve problems using part-whole and comparison models",
+        "Use calculator for 4 operations with fractions including mixed numbers"
+      ],
+      "key_skills": [
+        "comparison-models",
+        "multi-step-operations",
+        "calculator-fraction-operations"
+      ],
+      "difficulty": "Hard",
+      "problem_statement": "For a school project, John spent 2 1/4 hours. Mary spent 1/3 of the time John spent. David spent 1 1/2 times as long as Mary. How much time did David spend on the project? Express your final answer as a mixed number in simplest form.",
+      "socratic_questions": [
+        "What is the first step you need to calculate based on the information given?",
+        "How do you find a fraction of a quantity (e.g., 1/3 of John's time)?",
+        "Once you know Mary's time, how will you use that to find David's time?",
+        "What does '1 1/2 times as long' mean in terms of multiplication?",
+        "Should you convert the mixed numbers to improper fractions before multiplying or dividing?",
+        "Which model would be most helpful to visualize the relationship between John's, Mary's, and David's time?",
+        "You may use a calculator to verify your final fraction calculations, especially for multiplication of mixed numbers."
+      ],
+      "model_hint": "Use a comparison model. Draw a bar for John's time. Then, draw a bar for Mary's time showing it as 1/3 of John's. Finally, draw a bar for David's time showing it as 1 1/2 times Mary's."
+    },
+    {
+      "problem_number": 50,
+      "title": "Library Book Collection",
+      "context": "Library activities",
+      "learning_objectives": [
+        "Solve problems using part-whole and comparison models",
+        "Work in groups to solve multi-step and non-routine fraction problems",
+        "Use calculator for 4 operations with fractions including mixed numbers"
+      ],
+      "key_skills": [
+        "multi-step-operations",
+        "part-whole-models",
+        "non-routine-problems"
+      ],
+      "difficulty": "Hard",
+      "problem_statement": "At the school library, 3/5 of the books are fiction. Of the remaining books, 1/4 are reference books and the rest are non-fiction. If there are 120 reference books, how many books are there in the library altogether?",
+      "socratic_questions": [
+        "If 3/5 of the books are fiction, what fraction of the books are *not* fiction?",
+        "The 'remaining books' represent a certain fraction of the total. If 1/4 of *these remaining books* are reference books, what fraction of the *total* library books are reference books?",
+        "You know the number of reference books (120) and the fraction they represent of the *total* books. How can you find the total number of books?",
+        "Can you represent this problem using a 'unit' method or a model to clarify the relationship between the parts and the whole?",
+        "This is a multi-step problem. Plan out each step carefully before calculating."
+      ],
+      "model_hint": "Use a part-whole model (rectangular bar). Divide the bar into 5 units to represent the total. Shade 3 units for fiction. The remaining 2 units represent the non-fiction and reference books. Then, subdivide these 2 units to show that 1/4 of them are reference books. This will help you find the total number of units and how many units 120 books represent."
+    },
+    {
+      "problem_number": 51,
+      "difficulty": "Easy",
+      "context": "Food portions and sharing",
+      "skill_focus": [
+        "fraction-division-by-whole"
+      ],
+      "problem_statement": "Mei Ling had 3/4 of a chocolate cake left after her birthday party. She wanted to share this remaining cake equally among herself and 3 friends. What fraction of the original whole cake did each person receive?",
+      "socratic_questions": [
+        "How many people are sharing the cake altogether?",
+        "What fraction of the cake is being shared?",
+        "To find out what fraction each person receives, what mathematical operation should you use?"
+      ],
+      "answer": "3/16"
+    },
+    {
+      "problem_number": 52,
+      "difficulty": "Medium",
+      "context": "Art and craft projects",
+      "skill_focus": [
+        "whole-division-by-fraction",
+        "part-whole-models"
+      ],
+      "problem_statement": "Mr. Lee bought a 6-metre long string for his art project. He wants to cut it into smaller pieces, each measuring 3/5 metre, to hang up drawings. How many pieces of string can he cut?",
+      "socratic_questions": [
+        "What is the total length of the string Mr. Lee has?",
+        "What is the length of each smaller piece Mr. Lee wants to cut?",
+        "To find out how many small pieces fit into the total length, what operation should you use?",
+        "If you were to draw a long bar representing the 6-metre string, how would you visualise dividing it into segments of 3/5 metre?"
+      ],
+      "answer": "10"
+    },
+    {
+      "problem_number": 53,
+      "difficulty": "Medium",
+      "context": "Shopping and markets",
+      "skill_focus": [
+        "fraction-division-by-fraction",
+        "comparison-models"
+      ],
+      "problem_statement": "At the fruit stall, Mrs. Wong bought 2 1/4 kg of grapes and 3/8 kg of strawberries. How many times heavier were the grapes compared to the strawberries?",
+      "socratic_questions": [
+        "What are the weights of the grapes and the strawberries?",
+        "To find out 'how many times heavier' one item is compared to another, what mathematical operation is typically used?",
+        "Before you perform the division, what should you do with the mixed number?",
+        "If you were to draw a comparison model, how would you represent the weights of the grapes and strawberries to show 'how many times' one fits into the other?"
+      ],
+      "answer": "6"
+    },
+    {
+      "problem_number": 54,
+      "difficulty": "Hard",
+      "context": "Cooking and recipes",
+      "skill_focus": [
+        "calculator-fraction-operations",
+        "multi-step"
+      ],
+      "problem_statement": "A recipe for a fruit smoothie calls for 1 1/2 cups of milk and 2/3 cup of yogurt. Sarah wants to make a batch of smoothie that is 1 3/4 times the original recipe for her family gathering. If she only has 1 1/4 cups of milk at home, how much more milk does she need after adjusting the recipe? (You may use a calculator for this problem.)",
+      "socratic_questions": [
+        "How much milk is needed for the original recipe?",
+        "By what factor does Sarah want to increase the recipe?",
+        "Calculate the total amount of milk needed for the increased recipe. (Hint: This is where a calculator can be useful for mixed number multiplication).",
+        "How much milk does Sarah currently have?",
+        "To find out how much more milk is needed, what operation should you perform using the calculated amount and the amount Sarah has?"
+      ],
+      "answer": "1 3/8 cups"
+    },
+    {
+      "problem_number": 55,
+      "difficulty": "Hard",
+      "context": "Library activities",
+      "skill_focus": [
+        "part-whole-models",
+        "multi-step",
+        "non-routine"
+      ],
+      "problem_statement": "At the school library, 1/3 of the books are fiction, 1/5 are non-fiction, and the rest are reference books. Of the fiction books, 3/4 are mystery novels. If there are 180 mystery novels, how many reference books are there in the library?",
+      "socratic_questions": [
+        "What fraction of the books are fiction and non-fiction combined?",
+        "What fraction of the books are reference books?",
+        "What fraction of the *fiction* books are mystery novels?",
+        "If 3/4 of the *fiction* books represent 180 mystery novels, how can you find the total number of fiction books?",
+        "Now that you know the total number of fiction books, and you know fiction books represent 1/3 of the *total library books*, how can you find the total number of books in the entire library?",
+        "Finally, using the total number of books and the fraction of reference books, how can you find the actual number of reference books?",
+        "How would drawing a part-whole model for the entire library help you visualise the fractions and work backwards from the known number of mystery novels?"
+      ],
+      "answer": "216"
+    },
+    {
+      "id": 56,
+      "difficulty": "Easy",
+      "skill_covered": "fraction-division-by-whole",
+      "context": "Food portions and sharing",
+      "problem_statement": "After a birthday party, there was 3/4 of a cake left. Mrs. Tan decided to share this remaining cake equally among her 3 children. What fraction of the original cake did each child receive?",
+      "socratic_questions": [
+        "What is the total amount of cake left?",
+        "How many people is Mrs. Tan sharing the cake with?",
+        "When you 'share equally', what mathematical operation does that imply?",
+        "How would you write this as a division sum? (e.g., (3/4) ÷ 3)",
+        "Remember, dividing by a whole number is the same as multiplying by its reciprocal. What is the reciprocal of 3?",
+        "Calculate the final answer and simplify if necessary."
+      ]
+    },
+    {
+      "id": 57,
+      "difficulty": "Medium",
+      "skill_covered": "whole-division-by-fraction",
+      "context": "Art and craft projects",
+      "problem_statement": "Sarah has a roll of ribbon that is 8 metres long. She wants to cut smaller pieces, each 2/5 of a metre long, to make bookmarks. How many bookmarks can she make?",
+      "socratic_questions": [
+        "What is the total length of the ribbon Sarah has?",
+        "What is the length of ribbon needed for each bookmark?",
+        "To find out how many small pieces fit into a larger length, what mathematical operation should you use?",
+        "Write down the division sum: 8 ÷ (2/5).",
+        "How do you divide a whole number by a fraction? (Hint: Keep, Change, Flip!)",
+        "Calculate the answer. What does this number represent in the context of the problem?"
+      ]
+    },
+    {
+      "id": 58,
+      "difficulty": "Medium-Hard",
+      "skill_covered": "fraction-division-by-fraction",
+      "context": "Sports and games",
+      "problem_statement": "A running track is 5/8 km long. Tom completed 4/5 of the track. If each lap Tom ran was 1/10 km long, how many laps did he complete?",
+      "socratic_questions": [
+        "What is the total length of the track?",
+        "What fraction of the track did Tom complete?",
+        "First, calculate the actual distance Tom ran in km. (Hint: Distance = (4/5) of (5/8) km)",
+        "Once you have the total distance Tom ran, what is the length of one lap?",
+        "To find out how many laps he ran, what operation should you use with the total distance run and the length of one lap?",
+        "Formulate the division problem. (Total distance run) ÷ (1/10).",
+        "Remember how to divide a fraction by a fraction.",
+        "Calculate the number of laps."
+      ]
+    },
+    {
+      "id": 59,
+      "difficulty": "Hard",
+      "skill_covered": "part-whole-models, multi-step, calculator-fraction-operations",
+      "context": "Shopping and markets",
+      "problem_statement": "Mrs. Lee bought a large bag of flour. She used 3/5 of the flour for baking cakes and 1/4 of the *remaining* flour for making bread. If she had 3.6 kg of flour left, how much flour did she buy at first?",
+      "socratic_questions": [
+        "This problem involves parts of a whole. How can you represent the total amount of flour using a model, such as a bar model?",
+        "What fraction of the flour was used for cakes?",
+        "After using 3/5 for cakes, what fraction of the flour *remained*?",
+        "Mrs. Lee used 1/4 of *this remaining* flour for bread. How would you calculate the fraction of the *original* total flour used for bread?",
+        "Now, what fraction of the *original* total flour is left after baking cakes and bread?",
+        "You are given that the remaining flour is 3.6 kg. If the fraction you just found corresponds to 3.6 kg, how can you find the total original amount? (Hint: If 'a' fraction is 'b' kg, what is the whole '1'?)",
+        "If you draw a model, how many units represent the original total? How many units represent the remaining flour?",
+        "Perform the calculations carefully, you may use a calculator for the decimal if needed."
+      ]
+    },
+    {
+      "id": 60,
+      "difficulty": "Hard",
+      "skill_covered": "comparison-models, multi-step, non-routine",
+      "context": "Library activities",
+      "problem_statement": "A library bookshelf is 5/6 full of books. 3/4 of the books on the shelf are fiction, and the rest are non-fiction. If there are 30 more fiction books than non-fiction books, what is the total capacity of the bookshelf (in terms of number of books)?",
+      "socratic_questions": [
+        "The bookshelf is 5/6 full. Let's focus on the 5/6 that is currently filled with books.",
+        "Within these books on the shelf, what fraction are fiction? (It's 3/4 of the books *on the shelf*).",
+        "Calculate the *actual fraction of the entire bookshelf's capacity* that is taken up by fiction books.",
+        "If 3/4 of the books *on the shelf* are fiction, what fraction of the *books on the shelf* are non-fiction?",
+        "Calculate the *actual fraction of the entire bookshelf's capacity* that is taken up by non-fiction books.",
+        "You are told there are 30 more fiction books than non-fiction books. What is the *difference in fractions* between fiction and non-fiction books, in relation to the *entire bookshelf's capacity*?",
+        "This fractional difference corresponds to 30 books. If (Fraction A - Fraction B) = 30 books, how can you find the value of one whole unit or the total books currently on the shelf?",
+        "Once you have the total number of books *currently on the shelf*, how can you find the *total capacity* of the bookshelf? (Remember, the books on the shelf represent 5/6 of the total capacity).",
+        "Work through the steps systematically, breaking down the problem into smaller, manageable parts."
+      ]
+    },
+    {
+      "problem_number": 61,
+      "title": "Sharing Leftover Pizza",
+      "context": "Food portions and sharing",
+      "difficulty": "Easy",
+      "skills_covered": [
+        "fraction-division-by-whole"
+      ],
+      "problem_statement": "After a party, there was \\(\\frac{3}{4}\\) of a large pizza left. Jamie decided to share this remaining pizza equally among herself and her 2 friends. What fraction of the original whole pizza did each person receive?",
+      "socratic_questions": [
+        "How many people are sharing the remaining pizza in total?",
+        "If you have a fraction of something and you divide it into equal parts, what mathematical operation are you performing?",
+        "How do you divide a fraction by a whole number? (Hint: Think about multiplying by the reciprocal of the whole number)."
+      ],
+      "answer_explanation": "1. Identify the total number of people sharing: Jamie + 2 friends = 3 people.\n2. Identify the fraction of pizza remaining: \\(\\frac{3}{4}\\).\n3. To find out what fraction each person received, divide the remaining pizza by the number of people:\n   \\(\\frac{3}{4} \\div 3\\)\n4. To divide a fraction by a whole number, multiply the fraction by the reciprocal of the whole number. The reciprocal of 3 is \\(\\frac{1}{3}\\).\n   \\(\\frac{3}{4} \\times \\frac{1}{3}\\)\n5. Multiply the numerators and the denominators. You can cancel out common factors first (3 and 3):\n   \\(\\frac{1}{\\text{4}} \\times \\frac{1}{1} = \\frac{1}{4}\\)\nEach person received \\(\\frac{1}{4}\\) of the original whole pizza.",
+      "final_answer": "\\(\\frac{1}{4}\\)"
+    },
+    {
+      "problem_number": 62,
+      "title": "Baking Cookies Quantity",
+      "context": "Cooking and recipes",
+      "difficulty": "Medium",
+      "skills_covered": [
+        "whole-division-by-fraction"
+      ],
+      "problem_statement": "Auntie Lily needs \\(\\frac{2}{3}\\) cup of sugar for one batch of cookies. If she has 8 cups of sugar in her pantry, how many full batches of cookies can she make?",
+      "socratic_questions": [
+        "What is the total amount of sugar Auntie Lily has, and what amount is needed for one batch?",
+        "When you want to find out how many times a smaller quantity fits into a larger quantity, what mathematical operation should you use?",
+        "How do you divide a whole number by a fraction? (Hint: Remember to change the division into multiplication by the reciprocal)."
+      ],
+      "answer_explanation": "1. Identify the total sugar available: 8 cups.\n2. Identify the sugar needed per batch: \\(\\frac{2}{3}\\) cup.\n3. To find the number of batches, divide the total sugar by the sugar needed per batch:\n   \\(8 \\div \\frac{2}{3}\\)\n4. To divide by a fraction, multiply the whole number by the reciprocal of the fraction. The reciprocal of \\(\\frac{2}{3}\\) is \\(\\frac{3}{2}\\).\n   \\(8 \\times \\frac{3}{2}\\)\n5. Multiply the whole number by the numerator and divide by the denominator:\n   \\(\\frac{8 \\times 3}{2} = \\frac{24}{2} = 12\\)\nAuntie Lily can make 12 full batches of cookies.",
+      "final_answer": "12 full batches"
+    },
+    {
+      "problem_number": 63,
+      "title": "Ribbon for Art Project",
+      "context": "School activities (Art and Craft project)",
+      "difficulty": "Medium",
+      "skills_covered": [
+        "fraction-division-by-fraction",
+        "part-whole-models"
+      ],
+      "problem_statement": "For an Art & Craft project, Primary 6 students were given a large roll of ribbon. Each student needed \\(\\frac{3}{20}\\) metre of ribbon. If the teacher cut \\(\\frac{9}{10}\\) of the entire roll for a group, and that portion was enough for all students in that group, how many students were in that group?",
+      "socratic_questions": [
+        "What is the total length of ribbon (as a fraction of the roll) that was allocated to the group?",
+        "What is the length of ribbon each student needs?",
+        "To find out how many students can get ribbon from the total allocated length, what operation do you perform?",
+        "How do you divide a fraction by another fraction?"
+      ],
+      "answer_explanation": "1. Identify the total portion of ribbon cut for the group: \\(\\frac{9}{10}\\) of the roll.\n2. Identify the length of ribbon each student needed: \\(\\frac{3}{20}\\) metre. (We assume the 'roll' represents a unit length consistent with 'metres' for this calculation).\n3. To find the number of students, divide the total ribbon for the group by the ribbon needed per student:\n   \\(\\frac{9}{10} \\div \\frac{3}{20}\\)\n4. To divide by a fraction, multiply by its reciprocal. The reciprocal of \\(\\frac{3}{20}\\) is \\(\\frac{20}{3}\\).\n   \\(\\frac{9}{10} \\times \\frac{20}{3}\\)\n5. Simplify before multiplying by cancelling common factors (9 with 3, and 20 with 10):\n   \\(\\frac{9^{\\div 3}}{10^{\\div 10}} \\times \\frac{20^{\\div 10}}{3^{\\div 3}} = \\frac{3}{1} \\times \\frac{2}{1} = 6\\)\nThere were 6 students in that group.",
+      "final_answer": "6 students"
+    },
+    {
+      "problem_number": 64,
+      "title": "Bookstore Textbook Purchase",
+      "context": "Shopping and markets",
+      "difficulty": "Hard",
+      "skills_covered": [
+        "comparison-models",
+        "calculator-fraction-operations"
+      ],
+      "problem_statement": "At a bookstore, a Mathematics textbook costs S$50. A Science textbook costs \\(\\frac{3}{5}\\) of the price of the Mathematics textbook. An English textbook costs \\(1\\frac{1}{4}\\) times the price of the Science textbook. Mrs. Tan bought all three textbooks and received a discount of \\(\\frac{1}{8}\\) off the total price. How much did Mrs. Tan pay in total? (You may use a calculator for this multi-step problem).",
+      "socratic_questions": [
+        "What is the first step to find the price of the Science textbook?",
+        "How will you then calculate the price of the English textbook from the Science textbook's price?",
+        "Once you have the individual prices of all three textbooks, what should you do to find the total original price before any discount?",
+        "How do you calculate the amount to pay after a discount given as a fraction? (Hint: Think about the fraction of the price that needs to be paid).",
+        "What is the final amount Mrs. Tan paid, rounded to the nearest cent?"
+      ],
+      "answer_explanation": "1.  **Price of Mathematics textbook:** S$50\n2.  **Price of Science textbook:**\n    \\(\\frac{3}{5}\\) of S$50 = \\(\\frac{3}{5} \\times 50 = 3 \\times 10 = S\\$30\\)\n3.  **Price of English textbook:**\n    \\(1\\frac{1}{4}\\) times the price of Science textbook. Convert mixed number to improper fraction: \\(1\\frac{1}{4} = \\frac{5}{4}\\).\n    Price of English textbook = \\(\\frac{5}{4} \\times 30 = \\frac{150}{4} = S\\$37.50\\)\n4.  **Total original price:**\n    S$50 (Math) + S$30 (Science) + S$37.50 (English) = S$117.50\n5.  **Amount paid after discount:**\n    Discount is \\(\\frac{1}{8}\\) off the total price. This means Mrs. Tan paid \\(1 - \\frac{1}{8} = \\frac{7}{8}\\) of the total price.\n    Amount paid = \\(\\frac{7}{8} \\times 117.50\\)\n    Amount paid = \\(\\frac{7}{8} \\times \\frac{235}{2} = \\frac{1645}{16} = 102.8125\\)\n6.  **Rounding to the nearest cent:** S$102.81\n\nMrs. Tan paid S$102.81 in total.",
+      "final_answer": "S$102.81"
+    },
+    {
+      "problem_number": 65,
+      "title": "Cross-Country Race Positions",
+      "context": "Sports and games",
+      "difficulty": "Hard",
+      "skills_covered": [
+        "part-whole-models",
+        "comparison-models",
+        "multi-step"
+      ],
+      "problem_statement": "In a school cross-country race, Bryan had completed \\(\\frac{3}{5}\\) of the race distance. Chloe was \\(\\frac{1}{3}\\) of the *remaining* distance behind Bryan. Daniel was \\(\\frac{1}{4}\\) of the *total* race distance ahead of Chloe.\n    (a) What fraction of the total race distance had Chloe completed?\n    (b) What fraction of the total race distance was Daniel ahead of Bryan?",
+      "socratic_questions": [
+        "For part (a), what fraction of the race distance was *remaining* after Bryan completed his portion?",
+        "How do you calculate Chloe's distance behind Bryan if it's a fraction of the *remaining* distance?",
+        "Once you know Bryan's progress and the distance Chloe was behind him, how do you find Chloe's completed fraction of the race?",
+        "For part (b), what fraction of the total race distance had Daniel completed, given his position relative to Chloe?",
+        "Now that you know both Daniel's and Bryan's completed fractions, how do you find the difference between their positions?"
+      ],
+      "answer_explanation": "Let the total race distance be 1 unit.\n\n**Bryan's progress:** \\(\\frac{3}{5}\\) of the race.\n**Remaining distance:** \\(1 - \\frac{3}{5} = \\frac{2}{5}\\) of the race.\n\n**(a) Chloe's progress:**\n1.  Chloe was \\(\\frac{1}{3}\\) of the *remaining* distance behind Bryan.\n    Distance Chloe was behind Bryan = \\(\\frac{1}{3} \\times \\frac{2}{5} = \\frac{2}{15}\\) of the total race distance.\n2.  Chloe's completed distance = Bryan's completed distance - distance Chloe was behind Bryan\n    Chloe's completed distance = \\(\\frac{3}{5} - \\frac{2}{15}\\)\n3.  Find a common denominator, which is 15:\n    \\(\\frac{3}{5} = \\frac{3 \\times 3}{5 \\times 3} = \\frac{9}{15}\\)\n    Chloe's completed distance = \\(\\frac{9}{15} - \\frac{2}{15} = \\frac{7}{15}\\) of the total race distance.\n\n**(b) Daniel's position relative to Bryan:**\n1.  Daniel was \\(\\frac{1}{4}\\) of the *total* race distance ahead of Chloe.\n    Daniel's completed distance = Chloe's completed distance + \\(\\frac{1}{4}\\)\n    Daniel's completed distance = \\(\\frac{7}{15} + \\frac{1}{4}\\)\n2.  Find a common denominator for 15 and 4, which is 60:\n    \\(\\frac{7}{15} = \\frac{7 \\times 4}{15 \\times 4} = \\frac{28}{60}\\)\n    \\(\\frac{1}{4} = \\frac{1 \\times 15}{4 \\times 15} = \\frac{15}{60}\\)\n    Daniel's completed distance = \\(\\frac{28}{60} + \\frac{15}{60} = \\frac{43}{60}\\) of the total race distance.\n3.  Difference between Daniel and Bryan = Daniel's completed distance - Bryan's completed distance\n    Difference = \\(\\frac{43}{60} - \\frac{3}{5}\\)\n4.  Find a common denominator, which is 60:\n    \\(\\frac{3}{5} = \\frac{3 \\times 12}{5 \\times 12} = \\frac{36}{60}\\)\n    Difference = \\(\\frac{43}{60} - \\frac{36}{60} = \\frac{7}{60}\\) of the total race distance.\n\n",
+      "final_answer": "(a) Chloe completed \\(\\frac{7}{15}\\) of the race.\n(b) Daniel was \\(\\frac{7}{60}\\) of the total race distance ahead of Bryan."
+    },
+    {
+      "problem_number": 66,
+      "context": "Food portions and sharing",
+      "difficulty": "Easy",
+      "learning_objective": "Divide proper fraction by whole number without calculator",
+      "question": "Emma had 3/4 of a chocolate cake left from her birthday party. She decided to share it equally among herself and 2 friends. What fraction of the original whole cake did each person receive?",
+      "socratic_steps": [
+        {
+          "step_number": 1,
+          "question": "How many people are sharing the cake in total?",
+          "hint": "Don't forget to count Emma herself!"
+        },
+        {
+          "step_number": 2,
+          "question": "What mathematical operation should you use to share a quantity equally?",
+          "hint": "When you share something into equal parts, what operation comes to mind?"
+        },
+        {
+          "step_number": 3,
+          "question": "How do you perform division of a fraction by a whole number? Can you write down the expression?",
+          "hint": "Remember, dividing by a whole number is the same as multiplying by its reciprocal."
+        },
+        {
+          "step_number": 4,
+          "question": "After performing the calculation, can the resulting fraction be simplified to its simplest form?",
+          "hint": "Look for common factors in the numerator and denominator."
+        }
+      ]
+    },
+    {
+      "problem_number": 67,
+      "context": "Art and craft projects",
+      "difficulty": "Easy-Medium",
+      "learning_objective": "Divide whole number by proper fraction without calculator",
+      "question": "Mrs. Tan has a roll of coloured paper that is 5 metres long. She needs to cut strips of paper, each 2/5 of a metre long, to make paper chains for the school carnival. How many full strips of paper can she cut from the roll?",
+      "socratic_steps": [
+        {
+          "step_number": 1,
+          "question": "What is the total length of the paper roll, and what is the length required for each strip?",
+          "hint": "Identify the 'whole' and the 'part' you are measuring with."
+        },
+        {
+          "step_number": 2,
+          "question": "To find out how many times a smaller quantity fits into a larger quantity, which mathematical operation is appropriate?",
+          "hint": "You are trying to find 'how many groups of 2/5 can be made from 5'."
+        },
+        {
+          "step_number": 3,
+          "question": "How do you divide a whole number by a proper fraction? Write down your division expression.",
+          "hint": "Transform the whole number into a fraction (e.g., 5 as 5/1), then apply the 'multiply by reciprocal' rule."
+        },
+        {
+          "step_number": 4,
+          "question": "After calculating, what does the resulting number tell you? If there's a remainder or a decimal, how should you interpret it in the context of 'full strips'?",
+          "hint": "Can you cut a 'part' of a strip? You only want *full* strips."
+        }
+      ]
+    },
+    {
+      "problem_number": 68,
+      "context": "Cooking and recipes",
+      "difficulty": "Medium",
+      "learning_objective": "Divide proper fraction by proper fraction without calculator",
+      "question": "A recipe for a large batch of cookies calls for 7/8 cup of flour. If Mrs. Lee only wants to make a smaller batch and finds she has only 1/4 cup of flour available, what fraction of the original large batch can she make?",
+      "socratic_steps": [
+        {
+          "step_number": 1,
+          "question": "What is the total amount of flour needed for a full batch, and what is the amount of flour Mrs. Lee currently has?",
+          "hint": "Clearly identify the 'required' amount and the 'available' amount."
+        },
+        {
+          "step_number": 2,
+          "question": "To determine what 'fraction of the original batch' can be made, how should you set up the division? Is it (available flour) ÷ (required flour) or vice versa?",
+          "hint": "You're trying to see what proportion of the *full recipe* (7/8 cup) the *available flour* (1/4 cup) represents."
+        },
+        {
+          "step_number": 3,
+          "question": "How do you divide a proper fraction by another proper fraction? Show your steps.",
+          "hint": "Remember to 'Keep, Change, Flip' (KCF) or 'invert and multiply'."
+        },
+        {
+          "step_number": 4,
+          "question": "Is your final answer in its simplest form? Can any common factors be cancelled?",
+          "hint": "Simplifying before or after multiplication can make calculations easier."
+        }
+      ]
+    },
+    {
+      "problem_number": 69,
+      "context": "Library activities",
+      "difficulty": "Medium-Hard",
+      "learning_objective": "Solve problems using part-whole and comparison models",
+      "question": "In a school library, 3/5 of the books are fiction. Of the remaining books, 1/4 are science books and the rest are history books. If there are 180 more fiction books than history books, how many books are there in the library altogether?",
+      "socratic_steps": [
+        {
+          "step_number": 1,
+          "question": "If 3/5 of the books are fiction, what fraction of the books are 'remaining' (non-fiction)?",
+          "hint": "Think of the total as 1 whole."
+        },
+        {
+          "step_number": 2,
+          "question": "The science books are 1/4 of the *remaining* books. What fraction of the *total* library books are science books? (Use multiplication).",
+          "hint": "Multiply the fraction for 'remaining' by 1/4."
+        },
+        {
+          "step_number": 3,
+          "question": "If science books are 1/4 of the remaining, what fraction of the *remaining* books are history books? Then, what fraction of the *total* library books are history books?",
+          "hint": "The 'rest' means 1 minus the fraction for science books within the remaining part."
+        },
+        {
+          "step_number": 4,
+          "question": "Now that you have the fraction for fiction books and history books, what is the difference between these two fractions?",
+          "hint": "Subtract the smaller fraction from the larger one. You might need to find a common denominator."
+        },
+        {
+          "step_number": 5,
+          "question": "The problem states that this fractional difference corresponds to 180 books. How can you use this information to find the total number of books in the library?",
+          "hint": "If a certain fraction of the total equals 180, divide 180 by that fraction."
+        },
+        {
+          "step_number": 6,
+          "question": "Consider drawing a 'part-whole' or 'comparison' model to visually represent the fractions and the relationships. How would that help you check your steps?",
+          "hint": "Draw a long bar, divide it into 5 parts for the total. Shade 3 for fiction. The remaining 2 parts can then be subdivided."
+        }
+      ]
+    },
+    {
+      "problem_number": 70,
+      "context": "Shopping and markets",
+      "difficulty": "Hard",
+      "learning_objective": "Solve multi-step and non-routine fraction problems, possibly with calculator for efficiency",
+      "question": "Mr. Lee spent 1/3 of his money on groceries and 1/4 of the remaining money on a new shirt. He then used 2/5 of his original amount of money to buy a present for his wife. If he had $90 left, how much money did he have at first?",
+      "socratic_steps": [
+        {
+          "step_number": 1,
+          "question": "After spending 1/3 of his money on groceries, what fraction of his money was 'remaining'?",
+          "hint": "Total money is 1 whole."
+        },
+        {
+          "step_number": 2,
+          "question": "He spent 1/4 of the *remaining* money on a shirt. What fraction of his *original total money* does this represent?",
+          "hint": "Multiply the fraction of 'remaining money' by 1/4."
+        },
+        {
+          "step_number": 3,
+          "question": "Calculate the total fraction of money spent on groceries, the shirt, *and* the present for his wife (which was 2/5 of his *original* money).",
+          "hint": "Add the three fractions of the *original* money: groceries (1/3), shirt (from Step 2), and present (2/5). Remember to find a common denominator."
+        },
+        {
+          "step_number": 4,
+          "question": "If you know the total fraction of money spent, what fraction of his money was left?",
+          "hint": "Subtract the total fraction spent from 1 (representing his original total money)."
+        },
+        {
+          "step_number": 5,
+          "question": "The problem states that the remaining fraction of money is equal to $90. How can you use this information to find the total money Mr. Lee had at first?",
+          "hint": "If 'x' is the total money, and (fraction left) * x = $90, how do you find x?"
+        },
+        {
+          "step_number": 6,
+          "question": "How could drawing a 'part-whole' bar model help you visualise the different expenditures and the remaining amount?",
+          "hint": "Draw a large bar representing his total money. Divide it to show 1/3 for groceries, then divide the *remaining* part for the shirt, and then add another section for the present, relating it back to the *original* whole."
+        }
+      ]
+    },
+    {
+      "problem_number": 71,
+      "difficulty": "Easy",
+      "context": "Food portions and sharing",
+      "skill_focus": [
+        "fraction-division-by-whole"
+      ],
+      "question": "Janelle had \\( \\frac{3}{4} \\) of a pizza. She decided to share it equally among herself and 2 friends. What fraction of the original whole pizza did each person receive?",
+      "socratic_questions": [
+        "How many people, including Janelle, are sharing the pizza?",
+        "What is the total fraction of the pizza available to be shared?",
+        "When you share something equally, which mathematical operation are you performing?",
+        "How would you write the division expression to solve this problem?"
+      ],
+      "answer_steps": [
+        "Total people sharing = Janelle + 2 friends = 3 people.",
+        "Fraction of pizza available = \\( \\frac{3}{4} \\).",
+        "Each person's share = \\( \\frac{3}{4} \\div 3 \\).",
+        "\\( \\frac{3}{4} \\div 3 = \\frac{3}{4} \\times \\frac{1}{3} = \\frac{3}{12} = \\frac{1}{4} \\).",
+        "Each person received \\( \\frac{1}{4} \\) of the original whole pizza."
+      ],
+      "final_answer": "\\( \\frac{1}{4} \\)"
+    },
+    {
+      "problem_number": 72,
+      "difficulty": "Easy-Medium",
+      "context": "Art and craft projects",
+      "skill_focus": [
+        "whole-division-by-fraction"
+      ],
+      "question": "Mrs. Lim has a 5-metre long ribbon. She wants to cut it into smaller pieces, each \\( \\frac{1}{4} \\) metre long, to make decorative bookmarks. How many bookmarks can she make from the ribbon?",
+      "socratic_questions": [
+        "What is the total length of the ribbon Mrs. Lim has?",
+        "What is the length of each small piece she wants to cut?",
+        "To find out how many smaller pieces fit into a larger length, what mathematical operation should you use?",
+        "If you had 1 metre of ribbon, how many \\( \\frac{1}{4} \\)-metre pieces could you get from it? How does this help you think about 5 metres?"
+      ],
+      "answer_steps": [
+        "Total length of ribbon = 5 metres.",
+        "Length of each piece = \\( \\frac{1}{4} \\) metre.",
+        "Number of bookmarks = Total length \\( \\div \\) Length per bookmark.",
+        "Number of bookmarks = \\( 5 \\div \\frac{1}{4} \\).",
+        "\\( 5 \\div \\frac{1}{4} = 5 \\times \\frac{4}{1} = 20 \\).",
+        "Mrs. Lim can make 20 bookmarks."
+      ],
+      "final_answer": "20 bookmarks"
+    },
+    {
+      "problem_number": 73,
+      "difficulty": "Medium",
+      "context": "Shopping and markets",
+      "skill_focus": [
+        "fraction-division-by-fraction",
+        "part-whole-models"
+      ],
+      "question": "A large bag contains \\( \\frac{7}{8} \\) kg of coffee beans. Mr. Tan scoops \\( \\frac{1}{16} \\) kg of coffee beans into each small packet. How many small packets can he fill completely?",
+      "socratic_questions": [
+        "What is the total amount of coffee beans Mr. Tan has?",
+        "What is the amount of coffee beans that goes into each small packet?",
+        "How would you set up the division problem to find the number of packets?",
+        "When dividing by a fraction, what is the rule you should apply?",
+        "Can you simplify the fractions involved before performing the multiplication?"
+      ],
+      "answer_steps": [
+        "Total coffee beans = \\( \\frac{7}{8} \\) kg.",
+        "Amount per packet = \\( \\frac{1}{16} \\) kg.",
+        "Number of packets = Total coffee beans \\( \\div \\) Amount per packet.",
+        "Number of packets = \\( \\frac{7}{8} \\div \\frac{1}{16} \\).",
+        "\\( \\frac{7}{8} \\div \\frac{1}{16} = \\frac{7}{8} \\times \\frac{16}{1} \\).",
+        "Simplify before multiplying: \\( \\frac{7}{\\cancel{8}_1} \\times \\frac{\\cancel{16}^2}{1} = 7 \\times 2 = 14 \\).",
+        "Mr. Tan can fill 14 small packets."
+      ],
+      "final_answer": "14 packets"
+    },
+    {
+      "problem_number": 74,
+      "difficulty": "Medium-Hard",
+      "context": "Library activities",
+      "skill_focus": [
+        "mixed-fraction-operations",
+        "part-whole-models",
+        "comparison-models"
+      ],
+      "question": "John finished reading \\( \\frac{3}{5} \\) of a novel on Monday. On Tuesday, he read \\( \\frac{1}{3} \\) of the *remainder*. The novel has 240 pages in total. How many pages did John read in total by the end of Tuesday?",
+      "socratic_questions": [
+        "What fraction of the novel did John read on Monday?",
+        "If John read \\( \\frac{3}{5} \\) on Monday, what fraction of the novel was left (the remainder)?",
+        "On Tuesday, he read \\( \\frac{1}{3} \\) of this remainder. How do you calculate a fraction of a fraction?",
+        "Once you know the fraction read on Monday and the fraction read on Tuesday, how do you find the total fraction of the novel he read?",
+        "The novel has 240 pages. How do you convert the total fraction read into the actual number of pages?"
+      ],
+      "answer_steps": [
+        "Fraction read on Monday = \\( \\frac{3}{5} \\).",
+        "Fraction remaining after Monday = \\( 1 - \\frac{3}{5} = \\frac{2}{5} \\).",
+        "Fraction read on Tuesday = \\( \\frac{1}{3} \\) of the remainder = \\( \\frac{1}{3} \\times \\frac{2}{5} = \\frac{2}{15} \\).",
+        "Total fraction read by end of Tuesday = Fraction (Monday) + Fraction (Tuesday) = \\( \\frac{3}{5} + \\frac{2}{15} \\).",
+        "Find common denominator: \\( \\frac{9}{15} + \\frac{2}{15} = \\frac{11}{15} \\).",
+        "Total pages in novel = 240 pages.",
+        "Number of pages read = \\( \\frac{11}{15} \\) of 240 pages = \\( \\frac{11}{15} \\times 240 \\).",
+        "\\( \\frac{11}{\\cancel{15}_1} \\times \\cancel{240}^{16} = 11 \\times 16 = 176 \\).",
+        "John read 176 pages in total by the end of Tuesday."
+      ],
+      "final_answer": "176 pages"
+    },
+    {
+      "problem_number": 75,
+      "difficulty": "Hard",
+      "context": "Cooking and recipes",
+      "skill_focus": [
+        "calculator-fraction-operations",
+        "multi-step-problem",
+        "comparison-models"
+      ],
+      "question": "A recipe calls for \\( 2 \\frac{1}{4} \\) cups of flour and \\( 1 \\frac{1}{2} \\) cups of sugar to make a batch of cookies. Sarah wants to make enough cookies for a large party, so she uses \\( 7 \\frac{1}{2} \\) cups of sugar. How many cups of flour will Sarah need?",
+      "socratic_questions": [
+        "What is the original amount of flour and sugar required for one batch?",
+        "Sarah is using \\( 7 \\frac{1}{2} \\) cups of sugar. How many times more sugar is this than the original recipe calls for?",
+        "Why is it important to find this 'scaling factor' (how many times more sugar she used)?",
+        "Once you find the scaling factor, what should you do with the original amount of flour?",
+        "How can you convert mixed numbers into improper fractions to make calculations easier?",
+        "Could a calculator with fraction functions be helpful for this problem, especially for checking your work?"
+      ],
+      "answer_steps": [
+        "Original recipe: Flour = \\( 2 \\frac{1}{4} \\) cups, Sugar = \\( 1 \\frac{1}{2} \\) cups.",
+        "Convert mixed numbers to improper fractions:",
+        "Flour = \\( 2 \\frac{1}{4} = \\frac{9}{4} \\) cups.",
+        "Sugar (recipe) = \\( 1 \\frac{1}{2} = \\frac{3}{2} \\) cups.",
+        "Sugar (Sarah) = \\( 7 \\frac{1}{2} = \\frac{15}{2} \\) cups.",
+        "Find the scaling factor for the sugar: (Sarah's sugar) \\( \\div \\) (Recipe's sugar).",
+        "Scaling factor = \\( \\frac{15}{2} \\div \\frac{3}{2} = \\frac{15}{2} \\times \\frac{2}{3} = \\frac{15}{\\cancel{2}_1} \\times \\frac{\\cancel{2}_1}{3} = \\frac{15}{3} = 5 \\).",
+        "Sarah is making 5 times the original recipe.",
+        "Now, calculate the flour needed by multiplying the original flour by the scaling factor.",
+        "Flour needed = \\( \\frac{9}{4} \\times 5 = \\frac{45}{4} \\) cups.",
+        "Convert back to mixed number: \\( \\frac{45}{4} = 11 \\frac{1}{4} \\) cups.",
+        "Sarah will need \\( 11 \\frac{1}{4} \\) cups of flour."
+      ],
+      "final_answer": "\\( 11 \\frac{1}{4} \\) cups"
+    },
+    {
+      "problem_id": 76,
+      "context": "Food portions and sharing",
+      "difficulty": "Easy",
+      "question": "After a potluck party, Mrs. Tan had 2/3 of a large lasagna left. She wants to divide this remaining lasagna equally among her 4 neighbours. What fraction of the original whole lasagna will each neighbour receive?",
+      "skills_covered": [
+        "fraction-division-by-whole"
+      ],
+      "socratic_questions": [
+        "What operation should you use when you are sharing something equally?",
+        "How do you divide a proper fraction by a whole number? Think about multiplying by the reciprocal."
+      ]
+    },
+    {
+      "problem_id": 77,
+      "context": "Cooking and recipes",
+      "difficulty": "Medium",
+      "question": "Chef David has 8 kg of sugar in his pantry. If each cake recipe requires 3/4 kg of sugar, how many whole cakes can Chef David bake?",
+      "skills_covered": [
+        "whole-division-by-fraction"
+      ],
+      "socratic_questions": [
+        "What does the question ask you to find? How many portions of 3/4 kg are there in 8 kg?",
+        "How do you divide a whole number by a proper fraction? Remember to 'keep, change, flip'."
+      ]
+    },
+    {
+      "problem_id": 78,
+      "context": "Art and craft projects",
+      "difficulty": "Medium-Hard",
+      "question": "Sarah bought a roll of colourful string that is 7/10 metre long. She needs to cut pieces that are each 1/5 metre long for her scrapbooking project. How many full pieces of string can Sarah cut from the roll?",
+      "skills_covered": [
+        "fraction-division-by-fraction"
+      ],
+      "socratic_questions": [
+        "To find out how many times one length fits into another, what mathematical operation should you use?",
+        "How do you divide a fraction by another fraction? What should you do with the second fraction?",
+        "If your answer is a mixed number, why is it important to consider 'full pieces' in this context?"
+      ]
+    },
+    {
+      "problem_id": 79,
+      "context": "Shopping and markets",
+      "difficulty": "Hard",
+      "question": "At a local fruit stall, 1/4 of the fruits are mangoes, 1/3 are papayas, and the rest are durians. If there are 80 more durians than mangoes, what is the total number of fruits at the stall?",
+      "skills_covered": [
+        "part-whole-models",
+        "comparison-models",
+        "multi-step"
+      ],
+      "socratic_questions": [
+        "What fraction of the fruits are durians? How can you find this 'rest' part?",
+        "What is the fractional difference between the number of durians and mangoes?",
+        "If that fractional difference corresponds to 80 fruits, how can you use this information to find the total number of fruits? Consider drawing a model to represent the parts."
+      ]
+    },
+    {
+      "problem_id": 80,
+      "context": "School activities",
+      "difficulty": "Very Hard",
+      "question": "In a school, 2/5 of the students participate in sports, 1/3 of the remaining students are in the music club, and the other 120 students are in the robotics club. How many students are there in the school in total?",
+      "skills_covered": [
+        "multi-step",
+        "non-routine",
+        "part-whole-models",
+        "calculator-fraction-operations (optional for complex calculations)"
+      ],
+      "socratic_questions": [
+        "If 2/5 of the students are in sports, what fraction of the students are 'remaining'?",
+        "Of these 'remaining' students, 1/3 are in the music club. What fraction of the *total* students is this (music club)?",
+        "What fraction of the 'remaining' students are in the robotics club? (Hint: if 1/3 are music, what fraction is left?)",
+        "If you know the fraction of total students in robotics and the actual number (120), how can you find the total number of students in the school?",
+        "Consider drawing a bar model to help visualise the 'remaining' parts and how they relate to the total."
+      ]
+    }
+  ]
+}

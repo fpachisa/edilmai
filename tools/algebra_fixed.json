@@ -1,0 +1,82 @@
+[
+  {
+    "step": 1,
+    "hint_text": "Let 'x' represent the number of stickers Amelia had at first. How would you write an equation to show the total number of stickers after Ben gave her more?"
+  },
+  {
+    "step": 2,
+    "hint_text": "The equation should look like: x + (stickers Ben gave) = (total stickers). Now, substitute the numbers from the problem into this equation."
+  },
+  {
+    "step": 3,
+    "hint_text": "You should have x + 15 = 42. To find x, you need to perform the inverse operation. What is the opposite of adding 15?"
+  },
+  {
+    "step": 1,
+    "hint_text": "Let 'c' represent the cost of one curry puff. If Mrs. Tan bought 6 curry puffs, how would you write the total cost in terms of 'c'?"
+  },
+  {
+    "step": 2,
+    "hint_text": "The total cost is 6 times the cost of one curry puff. So, 6c = (total paid). Substitute the total amount paid into this equation."
+  },
+  {
+    "step": 3,
+    "hint_text": "You should have 6c = 18. To find 'c', you need to perform the inverse operation. What is the opposite of multiplying by 6?"
+  },
+  {
+    "step": 1,
+    "hint_text": "Let 'm' represent the amount of money Jian Ming had saved initially. He received an additional $12, and then he had enough for the $45 toy car. How would you write this as an equation?"
+  },
+  {
+    "step": 2,
+    "hint_text": "The equation should represent: (initial savings) + (money from grandmother) = (cost of toy car). Fill in the numbers."
+  },
+  {
+    "step": 3,
+    "hint_text": "You should have m + 12 = 45. To find 'm', you need to isolate it. What operation should you perform to both sides of the equation?"
+  },
+  {
+    "step": 1,
+    "hint_text": "Let 'x' represent the total number of marbles Raju had at first. If he shared them equally among 4 friends, how would you write the number of marbles each friend received in terms of 'x'?"
+  },
+  {
+    "step": 2,
+    "hint_text": "The number of marbles each friend received is (total marbles) divided by (number of friends). So, x / 4 = (marbles per friend). Substitute the given number into this equation."
+  },
+  {
+    "step": 3,
+    "hint_text": "You should have x / 4 = 9. To find 'x', you need to perform the inverse operation. What is the opposite of dividing by 4?"
+  },
+  {
+    "step": 1,
+    "hint_text": "Let 'a' represent Adam's age. The problem states Siti is 3 years older than Adam. How would you express Siti's age in terms of 'a'?"
+  },
+  {
+    "step": 2,
+    "hint_text": "Siti's age is Adam's age plus 3. So, a + 3 = (Siti's age). Substitute Siti's actual age into the equation."
+  },
+  {
+    "step": 3,
+    "hint_text": "You should have a + 3 = 11. To find 'a', perform the inverse operation. What is the opposite of adding 3?"
+  },
+  {
+    "step": 1,
+    "hint_text": "Let 'a' represent the number of apples. You know the number of oranges and the total number of fruits. How can you write an equation using these numbers?"
+  },
+  {
+    "step": 2,
+    "hint_text": "The total number of fruits is the sum of apples and oranges. So, a + (number of oranges) = (total fruits). Fill in the numbers."
+  },
+  {
+    "step": 3,
+    "hint_text": "You should have a + 8 = 23. To find 'a', you need to perform the inverse operation. What is the opposite of adding 8?"
+  },
+  {
+    "step": 1,
+    "hint_text": "Let 'L' represent the number of laps John jogged. You know the distance of one lap and the total distance covered. How can you write an equation using these numbers?"
+  },
+  {
+    "step": 2,
+    "hint_text": "The total distance is the distance per lap multiplied by the number of laps. So, (distance per lap) * L = (total distance). Fill in the numbers."
+  }
+]

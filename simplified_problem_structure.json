@@ -1,0 +1,48 @@
+{
+  "curriculum": "Singapore PSLE Mathematics",
+  "topic": "Algebra",
+  "questions": [
+    {
+      "id": "ALG-S1-E1",      
+      "sub_topic": "Introduction to Algebra",
+      "title": "Adding to an Unknown",
+      "complexity": "Easy",
+      "problem_text": "Amelia has 'b' books. She buys 4 more books. Write an expression for the total number of books she has now.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='100' height='50' xmlns='http://www.w3.org/2000/svg'><text x='10' y='30' font-family='Arial' font-size='16'>b + 4</text></svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "b + 4",
+        "alternative_answers": [
+          "4 + b"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Direct comparison with accepted answers, ignoring whitespace.",
+        "keywords": ["total", "more", "add", "sum"],
+        "common_misconceptions": {
+          "4b": "This would mean '4 times b', which is multiplication. The question asks for '4 more', which means addition.",
+          "b - 4": "This would be the expression if Amelia gave away 4 books. 'Buys more' indicates addition."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Think about what 'buys 4 more' means. Are you adding or subtracting from the original number of books ('b')?"
+          },
+          {
+            "step": 2,
+            "hint_text": "You started with 'b' books. When you add 4 more, you are combining the two amounts. What mathematical symbol do we use for combining or 'adding'?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The expression should show the starting number of books ('b') plus the new books. The final expression is simply 'b + 4'."
+          }
+        ],
+        "full_solution": "Let 'b' be the initial number of books Amelia has. When she buys 4 more books, we add 4 to the initial amount. Therefore, the expression for the total number of books is b + 4."
+      }
+    }
+  ]
+}

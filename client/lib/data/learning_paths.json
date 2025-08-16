@@ -1,0 +1,587 @@
+{
+  "algebra": {
+    "title": "Algebra", 
+    "description": "Master variables, expressions, and equations with AI guidance",
+    "icon": "functions_rounded",
+    "color": "blueAccent",
+    "totalEstimatedMinutes": 120,
+    "subtopics": [
+      "Unknowns and notation",
+      "Simplify linear expressions", 
+      "Evaluate by substitution",
+      "Solve simple linear equations"
+    ],
+    "modules": [
+      {
+        "id": "alg-unknowns-basic",
+        "title": "Introduction to Variables",
+        "description": "Learn what variables represent and how to form basic expressions",
+        "estimatedMinutes": 15,
+        "difficulty": "Beginner",
+        "learningObjectives": [
+          "Understand what a variable represents",
+          "Form simple expressions with addition and subtraction",
+          "Recognize variables in word problems"
+        ],
+        "aiPromptContext": "You are teaching students about algebraic variables and basic expression formation. Focus on variables as placeholders for unknown values, the difference between numbers and variables, how to translate simple word problems into expressions, and common operations: addition, subtraction, multiplication. Use Socratic questioning to guide students through understanding.",
+        "referenceItemIds": ["ALG-S1-E1", "ALG-S1-E2", "ALG-S1-E3"],
+        "prerequisites": []
+      },
+      {
+        "id": "alg-unknowns-advanced", 
+        "title": "Complex Expressions",
+        "description": "Build multi-step expressions and work with multiple variables",
+        "estimatedMinutes": 20,
+        "difficulty": "Intermediate",
+        "learningObjectives": [
+          "Form two-step and multi-step expressions",
+          "Work with multiple variables in one expression",
+          "Handle unit conversions in algebraic contexts"
+        ],
+        "aiPromptContext": "You are teaching students about complex algebraic expressions. Focus on building expressions that require multiple operations, working with problems involving multiple unknown quantities, unit conversion within algebraic contexts, and order of operations in expression building.",
+        "referenceItemIds": ["ALG-S1-E4", "ALG-S1-E5"],
+        "prerequisites": ["alg-unknowns-basic"]
+      },
+      {
+        "id": "alg-simplify-basic",
+        "title": "Combining Like Terms", 
+        "description": "Learn to simplify expressions by combining similar terms",
+        "estimatedMinutes": 18,
+        "difficulty": "Intermediate",
+        "learningObjectives": [
+          "Identify like terms in expressions",
+          "Combine terms with the same variable", 
+          "Simplify expressions with addition and subtraction"
+        ],
+        "aiPromptContext": "You are teaching students about simplifying algebraic expressions. Focus on what makes terms 'like' terms (same variable, same power), the distributive property and combining terms, maintaining expression equivalence during simplification, and common mistakes like combining unlike terms.",
+        "referenceItemIds": ["ALG-S2-E1", "ALG-S2-E2", "ALG-S2-E3"],
+        "prerequisites": ["alg-unknowns-basic"]
+      },
+      {
+        "id": "alg-simplify-advanced",
+        "title": "Advanced Simplification",
+        "description": "Simplify complex expressions with multiple variables and fractions", 
+        "estimatedMinutes": 25,
+        "difficulty": "Advanced",
+        "learningObjectives": [
+          "Simplify expressions with multiple different variables",
+          "Work with fractional coefficients",
+          "Handle more complex algebraic structures"
+        ],
+        "aiPromptContext": "You are teaching students advanced expression simplification. Focus on working with multiple variables (x, y, z, etc.), fractional coefficients and how to combine them, more complex algebraic manipulations, and checking work by substituting test values.",
+        "referenceItemIds": ["ALG-S2-E4", "ALG-S2-E5"],
+        "prerequisites": ["alg-simplify-basic"]
+      },
+      {
+        "id": "alg-substitution-basic",
+        "title": "Basic Substitution",
+        "description": "Learn to evaluate expressions by substituting values for variables",
+        "estimatedMinutes": 20,
+        "difficulty": "Intermediate", 
+        "learningObjectives": [
+          "Substitute single values into expressions",
+          "Evaluate expressions after substitution",
+          "Understand the relationship between variables and their values"
+        ],
+        "aiPromptContext": "You are teaching students about evaluating expressions through substitution. Focus on the concept of substitution - replacing variables with actual numbers, order of operations when evaluating, the importance of careful substitution (especially with negatives), and how substitution helps verify algebraic work.",
+        "referenceItemIds": ["ALG-S3-E1", "ALG-S3-E2", "ALG-S3-E3"],
+        "prerequisites": ["alg-unknowns-basic"]
+      },
+      {
+        "id": "alg-substitution-advanced",
+        "title": "Advanced Substitution", 
+        "description": "Master substitution with complex expressions and multiple variables",
+        "estimatedMinutes": 25,
+        "difficulty": "Advanced",
+        "learningObjectives": [
+          "Simplify expressions before substituting",
+          "Work with multiple variable substitution",
+          "Combine simplification and substitution strategies"
+        ],
+        "aiPromptContext": "You are teaching students advanced substitution techniques. Focus on the strategic choice of when to simplify vs. when to substitute, working with multiple variables simultaneously, complex expressions requiring careful order of operations, and real-world applications of substitution.",
+        "referenceItemIds": ["ALG-S3-E4", "ALG-S3-E5"],
+        "prerequisites": ["alg-substitution-basic", "alg-simplify-basic"]
+      },
+      {
+        "id": "alg-equations-basic",
+        "title": "One-Step Equations",
+        "description": "Learn to solve simple equations with one operation", 
+        "estimatedMinutes": 22,
+        "difficulty": "Intermediate",
+        "learningObjectives": [
+          "Solve equations involving addition/subtraction",
+          "Solve equations involving multiplication/division",
+          "Understand equation solving as 'undoing' operations"
+        ],
+        "aiPromptContext": "You are teaching students to solve basic linear equations. Focus on equations as balanced scales - what you do to one side, do to the other, inverse operations - addition/subtraction, multiplication/division, checking solutions by substituting back into original equation, and building intuition about equation solving.",
+        "referenceItemIds": ["ALG-S4-E1", "ALG-S4-E2"],
+        "prerequisites": ["alg-unknowns-basic"]
+      },
+      {
+        "id": "alg-equations-applications",
+        "title": "Equation Word Problems",
+        "description": "Apply equation solving to real-world word problems",
+        "estimatedMinutes": 30,
+        "difficulty": "Advanced",
+        "learningObjectives": [
+          "Translate word problems into equations",
+          "Solve multi-step word problems", 
+          "Interpret solutions in context"
+        ],
+        "aiPromptContext": "You are teaching students to apply equation solving to word problems. Focus on reading comprehension - identifying the unknown and relationships, translation skills - turning words into mathematical expressions, problem-solving process - define variable, write equation, solve, check in context, and real-world relevance of algebraic problem solving.",
+        "referenceItemIds": ["ALG-S4-E3", "ALG-S4-E4", "ALG-S4-E5"],
+        "prerequisites": ["alg-equations-basic"]
+      }
+    ]
+  },
+  "fractions": {
+    "title": "Fractions",
+    "description": "Master fraction operations and real-world applications",
+    "icon": "pie_chart_rounded", 
+    "color": "greenAccent",
+    "totalEstimatedMinutes": 180,
+    "subtopics": [
+      "Understanding fractions",
+      "Fraction operations", 
+      "Mixed numbers",
+      "Real-world applications"
+    ],
+    "modules": [
+      {
+        "id": "frac-understanding",
+        "title": "Understanding Fractions",
+        "description": "Learn what fractions represent and basic concepts",
+        "estimatedMinutes": 25,
+        "difficulty": "Beginner",
+        "learningObjectives": [
+          "Understand fraction notation",
+          "Compare and order fractions", 
+          "Identify equivalent fractions"
+        ],
+        "aiPromptContext": "You are teaching students about basic fraction concepts. Focus on fractions as parts of a whole, numerator and denominator meaning, equivalent fractions, and visual representations using pie charts and number lines.",
+        "referenceItemIds": ["FRACTIONS-S1-E1", "FRACTIONS-S1-E2"],
+        "prerequisites": []
+      },
+      {
+        "id": "frac-operations",
+        "title": "Fraction Operations", 
+        "description": "Master addition, subtraction, multiplication and division of fractions",
+        "estimatedMinutes": 35,
+        "difficulty": "Intermediate",
+        "learningObjectives": [
+          "Add and subtract fractions with common denominators",
+          "Multiply and divide fractions",
+          "Work with mixed operations"
+        ],
+        "aiPromptContext": "You are teaching students fraction operations. Focus on finding common denominators, the keep-change-flip method for division, and step-by-step problem solving approaches.",
+        "referenceItemIds": ["FRACTIONS-S1-E3", "FRACTIONS-S1-E4", "FRACTIONS-S1-E5"],
+        "prerequisites": ["frac-understanding"]
+      },
+      {
+        "id": "frac-mixed-numbers",
+        "title": "Mixed Numbers",
+        "description": "Work with mixed numbers and improper fractions",
+        "estimatedMinutes": 30,
+        "difficulty": "Intermediate", 
+        "learningObjectives": [
+          "Convert between mixed numbers and improper fractions",
+          "Add and subtract mixed numbers",
+          "Solve problems involving mixed numbers"
+        ],
+        "aiPromptContext": "You are teaching students about mixed numbers. Focus on conversion strategies, operations with mixed numbers, and real-world contexts where mixed numbers appear naturally.",
+        "referenceItemIds": ["FRACTIONS-S1-M1", "FRACTIONS-S1-M2"],
+        "prerequisites": ["frac-operations"]
+      },
+      {
+        "id": "frac-applications",
+        "title": "Real-World Applications",
+        "description": "Apply fraction skills to solving real-world problems",
+        "estimatedMinutes": 40,
+        "difficulty": "Advanced",
+        "learningObjectives": [
+          "Solve word problems involving fractions",
+          "Apply fractions to measurement and cooking",
+          "Work with fraction concepts in different contexts"
+        ],
+        "aiPromptContext": "You are teaching students real-world fraction applications. Focus on problem-solving strategies, connecting fractions to everyday situations, and building confidence in applying fraction skills.",
+        "referenceItemIds": ["FRACTIONS-S1-H1", "FRACTIONS-S1-E6", "FRACTIONS-S1-E7", "FRACTIONS-S1-E8"],
+        "prerequisites": ["frac-mixed-numbers"]
+      }
+    ]
+  },
+  "percentage": {
+    "title": "Percentage",
+    "description": "Master percentage calculations and applications",
+    "icon": "percent_rounded",
+    "color": "orangeAccent", 
+    "totalEstimatedMinutes": 120,
+    "subtopics": [
+      "Understanding percentages",
+      "Converting between forms",
+      "Percentage calculations", 
+      "Real-world applications"
+    ],
+    "modules": [
+      {
+        "id": "perc-understanding",
+        "title": "Understanding Percentages",
+        "description": "Learn what percentages represent and basic concepts",
+        "estimatedMinutes": 20,
+        "difficulty": "Beginner",
+        "learningObjectives": [
+          "Understand percentage as parts per hundred",
+          "Recognize percentages in everyday contexts",
+          "Compare percentages visually"
+        ],
+        "aiPromptContext": "You are teaching students about percentage concepts. Focus on the meaning of 'per cent', visual representations, and common percentages like 25%, 50%, 75%.",
+        "referenceItemIds": ["PERCENTAGE-S1-E1"],
+        "prerequisites": []
+      },
+      {
+        "id": "perc-conversion", 
+        "title": "Converting Between Forms",
+        "description": "Convert between percentages, decimals, and fractions",
+        "estimatedMinutes": 25,
+        "difficulty": "Intermediate",
+        "learningObjectives": [
+          "Convert percentages to decimals and fractions",
+          "Convert decimals and fractions to percentages",
+          "Work flexibly between different forms"
+        ],
+        "aiPromptContext": "You are teaching students format conversion. Focus on the relationship between percentages, decimals, and fractions, and when each form is most useful.",
+        "referenceItemIds": ["PERCENTAGE-S1-E2", "PERCENTAGE-S1-E3"],
+        "prerequisites": ["perc-understanding"]
+      },
+      {
+        "id": "perc-calculations",
+        "title": "Percentage Calculations",
+        "description": "Calculate percentages of numbers and solve percentage problems",
+        "estimatedMinutes": 35,
+        "difficulty": "Intermediate",
+        "learningObjectives": [
+          "Find a percentage of a number",
+          "Find what percentage one number is of another", 
+          "Find the whole when given a part and percentage"
+        ],
+        "aiPromptContext": "You are teaching students percentage calculations. Focus on the three types of percentage problems and systematic approaches to solving them.",
+        "referenceItemIds": ["PERCENTAGE-S1-M1", "PERCENTAGE-S1-M2"],
+        "prerequisites": ["perc-conversion"]
+      },
+      {
+        "id": "perc-applications",
+        "title": "Real-World Applications", 
+        "description": "Apply percentage skills to practical situations",
+        "estimatedMinutes": 40,
+        "difficulty": "Advanced",
+        "learningObjectives": [
+          "Solve problems involving discounts and sales",
+          "Calculate tips, taxes, and interest",
+          "Interpret percentage data and statistics"
+        ],
+        "aiPromptContext": "You are teaching students real-world percentage applications. Focus on consumer math, data interpretation, and building practical life skills.",
+        "referenceItemIds": ["PERCENTAGE-S1-H1", "PERCENTAGE-S1-A1"],
+        "prerequisites": ["perc-calculations"]
+      }
+    ]
+  },
+  "ratio": {
+    "title": "Ratio & Proportion",
+    "description": "Master ratios, rates, and proportional relationships",
+    "icon": "balance_rounded",
+    "color": "pinkAccent",
+    "totalEstimatedMinutes": 150,
+    "subtopics": [
+      "Understanding ratios",
+      "Equivalent ratios",
+      "Solving proportions",
+      "Real-world applications"
+    ], 
+    "modules": [
+      {
+        "id": "ratio-understanding",
+        "title": "Understanding Ratios",
+        "description": "Learn what ratios represent and how to write them",
+        "estimatedMinutes": 25,
+        "difficulty": "Beginner",
+        "learningObjectives": [
+          "Understand ratios as comparisons",
+          "Write ratios in different forms",
+          "Interpret ratios in context"
+        ],
+        "aiPromptContext": "You are teaching students about ratio concepts. Focus on ratios as comparisons between quantities, different ways to write ratios, and real-world examples.",
+        "referenceItemIds": ["RATIO-S1-E1", "RATIO-S1-E2"],
+        "prerequisites": []
+      },
+      {
+        "id": "ratio-equivalent",
+        "title": "Equivalent Ratios",
+        "description": "Find and create equivalent ratios",
+        "estimatedMinutes": 30,
+        "difficulty": "Intermediate", 
+        "learningObjectives": [
+          "Identify equivalent ratios",
+          "Scale ratios up and down",
+          "Simplify ratios to lowest terms"
+        ],
+        "aiPromptContext": "You are teaching students about equivalent ratios. Focus on the concept that ratios represent relationships that can be scaled, and methods for finding equivalent ratios.",
+        "referenceItemIds": ["RATIO-S1-E3", "RATIO-S1-M1"],
+        "prerequisites": ["ratio-understanding"]
+      },
+      {
+        "id": "ratio-proportions",
+        "title": "Solving Proportions",
+        "description": "Set up and solve proportion equations",
+        "estimatedMinutes": 35,
+        "difficulty": "Advanced",
+        "learningObjectives": [
+          "Set up proportions from word problems",
+          "Solve proportions using cross multiplication",
+          "Check solutions for reasonableness"
+        ],
+        "aiPromptContext": "You are teaching students to solve proportions. Focus on setting up proportions correctly, cross multiplication method, and verifying answers make sense in context.",
+        "referenceItemIds": ["RATIO-S1-M2", "RATIO-S1-H1"],
+        "prerequisites": ["ratio-equivalent"]
+      },
+      {
+        "id": "ratio-applications",
+        "title": "Real-World Applications",
+        "description": "Apply ratio and proportion skills to practical problems", 
+        "estimatedMinutes": 40,
+        "difficulty": "Advanced",
+        "learningObjectives": [
+          "Solve problems involving rates and unit rates",
+          "Work with scale drawings and maps",
+          "Apply proportional reasoning"
+        ],
+        "aiPromptContext": "You are teaching students real-world ratio applications. Focus on unit rates, scaling, recipe adjustments, and other practical uses of proportional thinking.",
+        "referenceItemIds": ["RATIO-S1-A1", "RATIO-S1-A2"],
+        "prerequisites": ["ratio-proportions"]
+      }
+    ]
+  },
+  "geometry": {
+    "title": "Geometry", 
+    "description": "Explore shapes, areas, perimeters, and spatial relationships",
+    "icon": "change_history_rounded",
+    "color": "blueAccent",
+    "totalEstimatedMinutes": 140,
+    "subtopics": [
+      "Basic shapes and properties",
+      "Perimeter and area",
+      "Volume and surface area", 
+      "Geometric reasoning"
+    ],
+    "modules": [
+      {
+        "id": "geom-shapes",
+        "title": "Basic Shapes and Properties",
+        "description": "Learn about 2D and 3D shapes and their properties",
+        "estimatedMinutes": 30,
+        "difficulty": "Beginner",
+        "learningObjectives": [
+          "Identify and classify 2D shapes",
+          "Understand properties of triangles, quadrilaterals, and circles",
+          "Recognize 3D shapes and their features"
+        ],
+        "aiPromptContext": "You are teaching students about geometric shapes. Focus on shape identification, properties that define each shape, and real-world examples of geometric shapes.",
+        "referenceItemIds": ["GEOMETRY-S1-E1", "GEOMETRY-S1-E2"],
+        "prerequisites": []
+      },
+      {
+        "id": "geom-perimeter-area",
+        "title": "Perimeter and Area",
+        "description": "Calculate perimeters and areas of common shapes", 
+        "estimatedMinutes": 35,
+        "difficulty": "Intermediate",
+        "learningObjectives": [
+          "Calculate perimeters of rectangles and other shapes",
+          "Find areas of rectangles, triangles, and circles",
+          "Solve problems involving perimeter and area"
+        ],
+        "aiPromptContext": "You are teaching students perimeter and area calculations. Focus on formulas, when to use each measurement, and practical applications.",
+        "referenceItemIds": ["GEOMETRY-S1-M1", "GEOMETRY-S1-M2"],
+        "prerequisites": ["geom-shapes"]
+      },
+      {
+        "id": "geom-volume", 
+        "title": "Volume and Surface Area",
+        "description": "Work with 3D measurements and calculations",
+        "estimatedMinutes": 40,
+        "difficulty": "Advanced",
+        "learningObjectives": [
+          "Calculate volumes of cubes and rectangular prisms",
+          "Find surface areas of 3D shapes",
+          "Apply volume concepts to real-world problems"
+        ],
+        "aiPromptContext": "You are teaching students about volume and surface area. Focus on 3D visualization, practical applications, and the difference between volume and surface area.",
+        "referenceItemIds": ["GEOMETRY-S1-H1", "GEOMETRY-S1-A1"],
+        "prerequisites": ["geom-perimeter-area"]
+      },
+      {
+        "id": "geom-reasoning",
+        "title": "Geometric Reasoning",
+        "description": "Develop logical thinking about geometric relationships",
+        "estimatedMinutes": 35,
+        "difficulty": "Advanced", 
+        "learningObjectives": [
+          "Use geometric properties to solve problems",
+          "Make logical deductions about shapes",
+          "Apply geometric thinking to complex problems"
+        ],
+        "aiPromptContext": "You are teaching students geometric reasoning. Focus on logical thinking, making connections between geometric concepts, and problem-solving strategies.",
+        "referenceItemIds": ["GEOMETRY-S1-A2"],
+        "prerequisites": ["geom-volume"]
+      }
+    ]
+  },
+  "speed": {
+    "title": "Speed & Distance",
+    "description": "Master time, distance, and speed calculations", 
+    "icon": "speed_rounded",
+    "color": "yellowAccent",
+    "totalEstimatedMinutes": 110,
+    "subtopics": [
+      "Understanding speed",
+      "Time-distance relationships",
+      "Speed calculations",
+      "Real-world applications"
+    ],
+    "modules": [
+      {
+        "id": "speed-understanding",
+        "title": "Understanding Speed",
+        "description": "Learn what speed represents and common units",
+        "estimatedMinutes": 20,
+        "difficulty": "Beginner",
+        "learningObjectives": [
+          "Understand speed as distance per unit time",
+          "Work with common speed units",
+          "Compare different speeds"
+        ],
+        "aiPromptContext": "You are teaching students about speed concepts. Focus on speed as a rate, different units of measurement, and everyday examples of speed.",
+        "referenceItemIds": ["SPEED-S1-E1"], 
+        "prerequisites": []
+      },
+      {
+        "id": "speed-relationships",
+        "title": "Time-Distance Relationships", 
+        "description": "Explore how time, distance, and speed relate to each other",
+        "estimatedMinutes": 25,
+        "difficulty": "Intermediate",
+        "learningObjectives": [
+          "Understand the relationship between time, distance, and speed",
+          "Use the speed formula: Speed = Distance ÷ Time",
+          "Rearrange the formula to solve for different variables"
+        ],
+        "aiPromptContext": "You are teaching students time-distance-speed relationships. Focus on the fundamental formula, triangle method for remembering relationships, and when to use each form.",
+        "referenceItemIds": ["SPEED-S1-E2", "SPEED-S1-M1"],
+        "prerequisites": ["speed-understanding"]
+      },
+      {
+        "id": "speed-calculations",
+        "title": "Speed Calculations",
+        "description": "Solve problems involving speed, time, and distance",
+        "estimatedMinutes": 30,
+        "difficulty": "Intermediate",
+        "learningObjectives": [
+          "Calculate speed given distance and time",
+          "Find distance given speed and time", 
+          "Determine time given speed and distance"
+        ],
+        "aiPromptContext": "You are teaching students speed calculations. Focus on systematic problem-solving, unit consistency, and checking answers for reasonableness.",
+        "referenceItemIds": ["SPEED-S1-M2", "SPEED-S1-H1"],
+        "prerequisites": ["speed-relationships"]
+      },
+      {
+        "id": "speed-applications",
+        "title": "Real-World Applications",
+        "description": "Apply speed concepts to practical situations",
+        "estimatedMinutes": 35,
+        "difficulty": "Advanced",
+        "learningObjectives": [
+          "Solve transportation and travel problems",
+          "Work with average speed over multiple segments", 
+          "Apply speed concepts to sports and other contexts"
+        ],
+        "aiPromptContext": "You are teaching students real-world speed applications. Focus on practical problem-solving, complex scenarios, and connecting math to everyday experiences.",
+        "referenceItemIds": ["SPEED-S1-A1", "SPEED-S1-A2"],
+        "prerequisites": ["speed-calculations"]
+      }
+    ]
+  },
+  "statistics": {
+    "title": "Statistics",
+    "description": "Analyze data, interpret graphs, and understand probability",
+    "icon": "bar_chart_rounded", 
+    "color": "purpleAccent",
+    "totalEstimatedMinutes": 130,
+    "subtopics": [
+      "Data collection and organization",
+      "Graphs and charts",
+      "Measures of central tendency",
+      "Probability basics"
+    ],
+    "modules": [
+      {
+        "id": "stat-data",
+        "title": "Data Collection and Organization", 
+        "description": "Learn to collect, organize, and present data",
+        "estimatedMinutes": 25,
+        "difficulty": "Beginner",
+        "learningObjectives": [
+          "Understand different types of data",
+          "Organize data using tables and lists",
+          "Identify appropriate data collection methods"
+        ],
+        "aiPromptContext": "You are teaching students about data collection and organization. Focus on the importance of data in decision-making, different data types, and systematic organization methods.",
+        "referenceItemIds": ["STATISTICS-S1-E1"],
+        "prerequisites": []
+      },
+      {
+        "id": "stat-graphs",
+        "title": "Graphs and Charts",
+        "description": "Create and interpret various types of graphs",
+        "estimatedMinutes": 35, 
+        "difficulty": "Intermediate",
+        "learningObjectives": [
+          "Create bar graphs, line graphs, and pie charts",
+          "Interpret information from graphs",
+          "Choose appropriate graph types for different data"
+        ],
+        "aiPromptContext": "You are teaching students about graphs and charts. Focus on when to use each type of graph, how to read and create them, and what stories data visualizations tell.",
+        "referenceItemIds": ["STATISTICS-S1-E2", "STATISTICS-S1-M1"],
+        "prerequisites": ["stat-data"]
+      },
+      {
+        "id": "stat-central-tendency",
+        "title": "Measures of Central Tendency",
+        "description": "Calculate and interpret mean, median, and mode",
+        "estimatedMinutes": 35,
+        "difficulty": "Intermediate", 
+        "learningObjectives": [
+          "Calculate mean, median, and mode",
+          "Understand when each measure is most useful",
+          "Interpret measures of central tendency in context"
+        ],
+        "aiPromptContext": "You are teaching students about measures of central tendency. Focus on what each measure tells us, when to use each one, and how they help us understand data sets.",
+        "referenceItemIds": ["STATISTICS-S1-M2", "STATISTICS-S1-H1"],
+        "prerequisites": ["stat-graphs"]
+      },
+      {
+        "id": "stat-probability", 
+        "title": "Probability Basics",
+        "description": "Understand and calculate basic probability",
+        "estimatedMinutes": 35,
+        "difficulty": "Advanced",
+        "learningObjectives": [
+          "Understand probability as likelihood of events",
+          "Calculate probabilities of simple events",
+          "Use probability to make predictions"
+        ],
+        "aiPromptContext": "You are teaching students basic probability. Focus on probability as a way to quantify uncertainty, using fractions and percentages, and connecting to everyday experiences with chance.",
+        "referenceItemIds": ["STATISTICS-S1-A1", "STATISTICS-S1-A2"],
+        "prerequisites": ["stat-central-tendency"]
+      }
+    ]
+  }
+}

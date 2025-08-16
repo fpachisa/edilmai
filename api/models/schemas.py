@@ -96,3 +96,17 @@ class SessionStepResponse(BaseModel):
 
 class SessionEndRequest(BaseModel):
     session_id: str
+
+
+# Parents & Learners
+class CreateLearnerRequest(BaseModel):
+    name: str = Field(min_length=1, max_length=50)
+    grade_level: str = Field(default="P6", description="e.g., P6")
+    subjects: List[str] = Field(default_factory=lambda: ["maths"])
+
+
+class LearnerSummary(BaseModel):
+    learner_id: str
+    name: str
+    grade_level: str = "P6"
+    subjects: List[str] = ["maths"]

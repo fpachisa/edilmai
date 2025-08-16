@@ -79,6 +79,24 @@ class GameStateController extends ChangeNotifier {
     await _store.save(snap);
   }
 
+  // Hydrate from server profile (non-authoritative fallback to local when missing)
+  void hydrate({int? xp, int? streakDays, Map<String, double>? masteryPct, Iterable<String>? badges}) {
+    if (xp != null) _xp = xp;
+    if (streakDays != null) _streakDays = streakDays;
+    if (badges != null) {
+      _badges
+        ..clear()
+        ..addAll(badges);
+    }
+    if (masteryPct != null) {
+      _mastery
+        ..clear()
+        ..addAll({for (final e in masteryPct.entries) e.key: _SkillProgress.fromPct(e.value)});
+    }
+    notifyListeners();
+    _save();
+  }
+
   void onPromptShown() {
     _attemptsSincePrompt = 0;
     _save();

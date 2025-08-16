@@ -116,7 +116,11 @@ class InMemoryProfilesRepo:
             "xp": 0, 
             "badges": [],
             "completed_items": [],
-            "current_session_id": None
+            "current_session_id": None,
+            # Metadata
+            "name": "Your Learner",
+            "grade_level": "P6",
+            "subjects": ["maths"],
         })
 
     def add_xp(self, learner_id: str, amount: int):
@@ -138,3 +142,29 @@ class InMemoryProfilesRepo:
         """Clear current session when completed."""
         p = self.get_profile(learner_id)
         p["current_session_id"] = None
+
+    def create_learner(self, *, name: str, grade_level: str = "P6", subjects: Optional[list[str]] = None, learner_id: Optional[str] = None) -> str:
+        import uuid
+        lid = learner_id or str(uuid.uuid4())
+        p = self.get_profile(lid)
+        p["name"] = name or "Your Learner"
+        p["grade_level"] = grade_level or "P6"
+        p["subjects"] = subjects or ["maths"]
+        self.profiles[lid] = p
+        return lid
+
+
+@dataclass
+class InMemoryParentsRepo:
+    parents: Dict[str, dict] = field(default_factory=dict)
+
+    def _get(self, parent_uid: str) -> dict:
+        return self.parents.setdefault(parent_uid, {"children": []})
+
+    def add_child(self, parent_uid: str, learner_id: str):
+        p = self._get(parent_uid)
+        if learner_id not in p["children"]:
+            p["children"].append(learner_id)
+
+    def list_children(self, parent_uid: str) -> list[str]:
+        return list(self._get(parent_uid)["children"])

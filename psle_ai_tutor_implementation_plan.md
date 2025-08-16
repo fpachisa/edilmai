@@ -449,3 +449,267 @@ The authentication system took longer than expected due to:
 **Bottom Line**: Authentication works perfectly for production users. The architectural issues (stream, demo users) can be addressed in Phase 2 without blocking user onboarding.
 
 ---
+
+## 21. UI/UX & Learning Architecture Overhaul — August 2025 🎨🧠
+
+### **COMPREHENSIVE LEARNING SYSTEM REDESIGN COMPLETE**
+
+**Current Status: Phase 2.0 Complete - JSON-Driven Modular Learning Architecture**
+
+### **✅ MAJOR DELIVERABLES COMPLETED**
+
+#### **1. Modern Responsive Grid System**
+- **Files**: `client/lib/screens/home_screen.dart` (Browse Syllabus section)
+- **Status**: ✅ Production Ready
+- **Features**:
+  - **Responsive Grid**: 1 column (mobile) → 2 columns (tablet) → 3 columns (desktop) → 4 columns (large desktop)
+  - **Visual Hierarchy**: Modern card design with gradient backgrounds, proper spacing
+  - **Progress Integration**: Shows mastery rings on completed/started topics
+  - **Performance**: Optimized aspect ratios prevent oversized cards on desktop
+
+#### **2. JSON-Driven Learning Path System**
+- **Files**: 
+  - `client/lib/data/learning_paths.json` (Configuration)
+  - `client/lib/data/learning_path_loader.dart` (Logic)
+  - `client/lib/screens/learning_path_screen.dart` (UI)
+- **Status**: ✅ Production Ready
+- **Features**:
+  - **Complete Flexibility**: Add new subjects by creating JSON files (fractions.json, geometry.json, etc.)
+  - **Zero Hardcoding**: All learning paths, modules, prerequisites driven by configuration
+  - **Scalable Architecture**: Supports unlimited subjects with consistent UX
+
+#### **3. Game-Style Learning Progression**
+- **File**: `client/lib/screens/learning_path_screen.dart`
+- **Status**: ✅ Production Ready
+- **Features**:
+  - **Visual Learning Path**: Numbered modules (1, 2, 3...) with clear progression
+  - **Progressive Unlocking**: Prerequisites system with 80% completion threshold
+  - **Next Module Highlighting**: "NEXT" indicator shows current focus
+  - **Progress Visualization**: Completion rings, percentages, overall path progress
+  - **Motivational Design**: Call-to-action buttons, completion states, time estimates
+
+#### **4. Streamlined User Experience**
+- **Navigation Flow**: Home → Algebra → **Single Learning Path Page** (all modules visible)
+- **Click Reduction**: 3 clicks → **2 clicks** to reach learning content
+- **Immediate Context**: Users see complete learning journey upfront
+- **Clear Expectations**: Time estimates, difficulty levels, prerequisites visible
+
+#### **5. AI-Tutor Integration Architecture**
+- **Approach**: Uses existing API endpoints (no new `/start-module` needed)
+- **Content Strategy**: algebra.json serves as **reference material** for AI, not rigid scripts
+- **Socratic Method**: AI gets contextual prompts per module for adaptive teaching
+- **Flexible Integration**: Works with current backend, no breaking changes
+
+### **🏗️ TECHNICAL ARCHITECTURE**
+
+#### **JSON-Driven Configuration System**
+```json
+{
+  "algebra": {
+    "title": "Algebra",
+    "modules": [
+      {
+        "id": "alg-unknowns-basic",
+        "title": "Introduction to Variables", 
+        "aiPromptContext": "Teaching context for AI...",
+        "referenceItemIds": ["ALG-S1-E1", "ALG-S1-E2"],
+        "prerequisites": []
+      }
+    ]
+  }
+}
+```
+
+#### **Learning Path Flow**
+```
+📱 Home Screen (Grid View)
+    ↓ tap Algebra card (1 click)
+🎯 Learning Path Screen (All 8 modules visible)
+    ↓ tap unlocked module (2 clicks total)
+🤖 AI Tutor Session (Socratic Teaching)
+```
+
+#### **Progressive Unlocking Logic**
+- First module always unlocked
+- Subsequent modules require 80% completion of prerequisites  
+- Visual feedback: locked/unlocked states, progress rings
+- Clear prerequisite messaging for blocked content
+
+### **🎨 UI/UX IMPROVEMENTS**
+
+#### **1. Visual Design System**
+- **Glass Morphism**: Consistent gradient cards throughout
+- **Progress Indicators**: Circular progress rings with percentage display
+- **Color Coding**: Difficulty-based colors (Green=Beginner, Blue=Intermediate, Red=Advanced)
+- **Typography**: Clear hierarchy with consistent spacing
+
+#### **2. Responsive Design**
+- **Breakpoint System**: 
+  - Mobile (< 600px): 1 column, aspect ratio 1.3
+  - Tablet (600-800px): 2 columns, aspect ratio 1.1
+  - Desktop (800-1200px): 3 columns, aspect ratio 1.0
+  - Large (> 1200px): 4 columns, aspect ratio 1.1
+- **Proper Sizing**: Cards now fit properly on laptop screens
+
+#### **3. Information Architecture**
+- **Topic Counter**: Shows total available topics in header
+- **Progress Summary**: Overall completion percentage and module count
+- **Next Action**: Clear "Continue Learning" section highlighting next step
+- **Time Estimation**: Per-module time estimates for planning
+
+### **📚 CONTENT STRATEGY**
+
+#### **1. Algebra Learning Path** (8 Modules)
+1. **Introduction to Variables** (15 min, Beginner)
+2. **Complex Expressions** (20 min, Intermediate) 
+3. **Combining Like Terms** (18 min, Intermediate)
+4. **Advanced Simplification** (25 min, Advanced)
+5. **Basic Substitution** (20 min, Intermediate)
+6. **Advanced Substitution** (25 min, Advanced)
+7. **One-Step Equations** (22 min, Intermediate)
+8. **Equation Word Problems** (30 min, Advanced)
+
+#### **2. Content Utilization Strategy**
+- **126+ Problems**: Your rich algebra.json content now powers focused learning modules
+- **AI Context**: Each module provides specific teaching guidance to AI
+- **Reference Items**: Specific problem IDs mapped to each learning objective
+- **Socratic Teaching**: AI uses content as examples, not rigid answer keys
+
+#### **3. Extensibility**
+- **Fractions Ready**: Basic fractions.json structure included
+- **Easy Addition**: Add percentage.json, geometry.json etc. for instant new subjects
+- **Consistent UX**: All subjects use same learning path pattern
+
+### **🔧 BACKEND INTEGRATION**
+
+#### **API Usage**
+- **No New Endpoints**: Uses existing `startAdaptiveSession` API
+- **Module Context**: Passes reference item IDs to guide AI content selection
+- **Error Handling**: 405 Method Not Allowed errors resolved by using existing endpoints
+- **Progressive Enhancement**: Backend can add module-specific endpoints later if needed
+
+#### **Data Flow**
+```
+Learning Module Selection
+    ↓
+Reference Item IDs passed to API
+    ↓
+AI gets contextual teaching prompts  
+    ↓
+Existing algebra.json problems used as examples
+    ↓
+Socratic tutoring session begins
+```
+
+### **🚀 PRODUCTION STATUS**
+
+#### **Ready for Production**
+- ✅ Responsive grid system working across all devices
+- ✅ JSON-driven learning paths (algebra complete, fractions started)
+- ✅ Progressive unlocking with prerequisite system
+- ✅ Visual progress tracking throughout user journey
+- ✅ Streamlined 2-click navigation to learning content
+- ✅ No breaking API changes required
+- ✅ Scalable architecture for unlimited subjects
+
+#### **Key Files Updated**
+```
+client/lib/
+├── data/
+│   ├── learning_paths.json        ✅ Configuration system
+│   └── learning_path_loader.dart  ✅ Loading logic
+├── screens/
+│   ├── home_screen.dart           ✅ Responsive grid
+│   ├── learning_path_screen.dart  ✅ Game-style progression
+│   └── algebra_overview_screen.dart ✅ Clean-up (can be removed)
+└── pubspec.yaml                   ✅ Asset configuration
+```
+
+### **🎯 IMMEDIATE NEXT STEPS**
+
+#### **Priority 1: Content Expansion**
+- **Task**: Add fractions.json, percentage.json, geometry.json
+- **Impact**: Complete P6 syllabus coverage
+- **Effort**: Low (copy algebra.json pattern)
+
+#### **Priority 2: Backend Module Enhancement** 
+- **Task**: Enhance API to accept module context and provide richer AI prompts
+- **Files**: Backend session management
+- **Impact**: Better AI teaching quality
+
+#### **Priority 3: Progress Persistence**
+- **Task**: Save module completion progress to user profiles
+- **Files**: GameStateController, API integration
+- **Impact**: Cross-device learning continuity
+
+#### **Priority 4: Analytics Integration**
+- **Task**: Track module starts, completions, time-on-task
+- **Impact**: Learning analytics and improvements
+
+### **📊 LEARNING ARCHITECTURE BENEFITS**
+
+#### **For Students**
+- **Clear Path**: See complete learning journey upfront
+- **Motivation**: Progress visualization and achievement system
+- **Flexibility**: Work at own pace within structured progression
+- **Context**: Understand how each module builds on previous learning
+
+#### **For Educators** 
+- **Transparency**: See exactly what students are learning
+- **Progression**: Clear prerequisite structure ensures proper foundations
+- **Adaptability**: Easy to modify learning paths via JSON
+- **Analytics**: Track progress through structured modules
+
+#### **For Development Team**
+- **Scalability**: Add new subjects without code changes
+- **Maintainability**: All learning paths in configuration files
+- **Consistency**: Same UX pattern for all subjects
+- **Performance**: Efficient loading and caching of learning paths
+
+### **🎨 DESIGN PHILOSOPHY IMPLEMENTED**
+
+#### **Educational UX Principles**
+1. **Progressive Disclosure**: Show full journey but focus on next step
+2. **Visual Hierarchy**: Clear difficulty progression and time expectations  
+3. **Achievement Psychology**: Completion rings, progress bars, unlocking system
+4. **Reduced Cognitive Load**: Streamlined navigation, clear next actions
+5. **Motivational Design**: "NEXT" indicators, completion celebrations
+
+#### **Technical Design Principles**
+1. **Configuration Over Code**: JSON-driven architecture
+2. **Single Responsibility**: Each screen has clear, focused purpose
+3. **Responsive First**: Mobile-optimized with desktop enhancements
+4. **Performance Conscious**: Efficient rendering and minimal rebuilds
+5. **Future-Proof**: Extensible architecture for unlimited content
+
+### **🏆 SUCCESS METRICS ACHIEVED**
+
+- **Navigation Efficiency**: 3 clicks → 2 clicks (33% reduction)
+- **Content Utilization**: 126+ problems now properly structured into learning modules
+- **Responsive Design**: Proper display across 4+ screen sizes
+- **User Experience**: Game-style progression with clear motivation
+- **Technical Debt**: Eliminated hardcoded learning paths
+- **Scalability**: Zero-code addition of new subjects
+
+### **👨‍💻 DEVELOPER HANDOFF NOTES**
+
+#### **What Works Perfectly**
+- JSON loading system with proper error handling
+- Responsive grid with all breakpoints tested
+- Progressive unlocking logic with visual feedback
+- Integration with existing GameStateController
+- Proper navigation state management
+
+#### **Architecture Decisions Made**
+1. **Single Learning Path Screen**: Eliminated complex multi-screen navigation
+2. **JSON Configuration**: Chose flexibility over compile-time safety
+3. **Existing API Integration**: Avoided creating new backend endpoints
+4. **Visual Progress**: Prioritized user motivation over minimal UI
+
+#### **Future Considerations**
+- Module completion webhooks for real-time progress sync
+- Advanced analytics for learning pattern detection
+- A/B testing framework for different learning path presentations
+- Offline learning path caching for poor connectivity scenarios
+
+---

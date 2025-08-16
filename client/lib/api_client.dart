@@ -46,6 +46,11 @@ class ApiClient {
     return res.data as Map<String, dynamic>;
   }
 
+  Future<Map<String, dynamic>> startModuleSession({required Map<String, dynamic> sessionData}) async {
+    final res = await _dio.post('/v1/session/start-module', data: sessionData);
+    return res.data as Map<String, dynamic>;
+  }
+
   Future<Map<String, dynamic>> continueProgression({required String sessionId}) async {
     final res = await _dio.post('/v1/session/continue-progression', data: {
       'session_id': sessionId,
@@ -60,6 +65,11 @@ class ApiClient {
 
   Future<Map<String, dynamic>> getProgressionStatus({required String learnerId}) async {
     final res = await _dio.get('/v1/session/progression-status/$learnerId');
+    return res.data as Map<String, dynamic>;
+  }
+
+  Future<Map<String, dynamic>> getProfile({required String learnerId}) async {
+    final res = await _dio.get('/v1/profile/$learnerId');
     return res.data as Map<String, dynamic>;
   }
 
@@ -109,6 +119,20 @@ class ApiClient {
   Future<List<dynamic>> listCollections() async {
     final res = await _dio.get('/v1/catalog/collections');
     return res.data as List<dynamic>;
+  }
+
+  Future<List<dynamic>> listLearners() async {
+    final res = await _dio.get('/v1/parents/learners');
+    return res.data as List<dynamic>;
+  }
+
+  Future<Map<String, dynamic>> createLearner({required String name, String gradeLevel = 'P6', List<String> subjects = const ['maths']}) async {
+    final res = await _dio.post('/v1/parents/learners', data: {
+      'name': name,
+      'grade_level': gradeLevel,
+      'subjects': subjects,
+    });
+    return res.data as Map<String, dynamic>;
   }
 
   Future<void> ensureSampleItem() async {

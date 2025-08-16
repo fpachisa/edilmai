@@ -1,6 +1,6 @@
 from __future__ import annotations
 from typing import Optional, Dict, List, Any
-from core.config import settings
+from api.core.config import settings
 
 
 class LLMClient:
@@ -198,15 +198,47 @@ class GeminiLLM(LLMClient):
                 "should_advance": False
             }
         except Exception as e:
-            # Fallback response on error
+            # AI failure - no fallback, transparent error
             print(f"LLM Error: {e}")  # Debug logging
             import traceback
             traceback.print_exc()  # Debug logging
             return {
-                "is_correct": False,
-                "response": f"I'm having trouble right now. Let me try to help: What operation do you think we need here? (Debug: {str(e)[:100]})",
-                "should_advance": False
+                "is_correct": None,
+                "response": "Oops! I need a moment to think about your answer. Please try submitting it again!",
+                "should_advance": False,
+                "error": f"AI_EVALUATION_FAILED: {str(e)}"
             }
+
+    def generate(self, prompt: str, max_tokens: int = 500) -> str:
+        """Generate text response from AI model - for compatibility with orchestrator."""
+        try:
+            if self._use_vertex:
+                resp = self._model.generate_content(prompt)
+                return getattr(resp, "text", None) or (resp.candidates[0].content.parts[0].text if resp.candidates else "")
+            else:
+                # Google AI Studio API
+                resp = self._model.generate_content(prompt)
+                return resp.text if hasattr(resp, 'text') else ""
+        except Exception as e:
+            raise Exception(f"AI generation failed: {str(e)}")
+
+    def parse_json_response(self, response_text: str, fallback_dict: dict) -> dict:
+        """Parse JSON response from AI model - for compatibility with orchestrator."""
+        try:
+            import json
+            # Clean the response
+            text = response_text.strip()
+            if text.startswith("```json"):
+                text = text[7:]
+            if text.endswith("```"):
+                text = text[:-3]
+            text = text.strip()
+            
+            result = json.loads(text)
+            return result
+        except Exception as e:
+            # AI failure - no fallback to hardcoded values
+            raise Exception(f"AI JSON parsing failed: {str(e)}")
 
 
 def build_llm() -> Optional[LLMClient]:

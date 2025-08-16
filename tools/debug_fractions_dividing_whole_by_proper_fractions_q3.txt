@@ -1,0 +1,58 @@
+Question ID: FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q3
+Subtopic: 2.1 Dividing Whole Number By Proper Fractions
+Error: Expecting ',' delimiter: line 34 column 72 (char 1246)
+Content:
+{
+    "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q3",
+    "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+    "title": "Sharing a Fraction",
+    "complexity": "Easy",
+    "problem_text": "Sarah has a piece of ribbon that is \\frac{3}{4} m long. She wants to cut it into 3 equal smaller pieces to share with her friends. How long will each smaller piece of ribbon be?",
+    "asset": {
+        "image_url": null,
+        "svg_code": null
+    },
+    "marks": 1,
+    "answer_details": {
+        "correct_answer": "\\frac{1}{4} m",
+        "alternative_answers": [
+            "1/4 m",
+            "0.25 m",
+            "1/4",
+            "0.25"
+        ],
+        "answer_format": "numeric"
+    },
+    "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly sets up the division of the proper fraction by the whole number and simplifies the resulting fraction to its simplest form.",
+        "keywords": [
+            "fraction",
+            "division",
+            "proper fraction",
+            "whole number",
+            "share",
+            "equal parts",
+            "reciprocal"
+        ],
+        "common_misconceptions": {
+            "wrong_answer_1": "\\frac{3}{4} \\times 3 = \\frac{9}{4} m": "This is multiplication, not division. When you divide a quantity into smaller, equal pieces, the result for each piece should be smaller than the original quantity. Multiplying by 3 makes the quantity larger.",
+            "wrong_answer_2": "\\frac{4}{3} \\times 3 = 4 m": "You inverted the wrong fraction. When dividing a fraction by a whole number, you multiply the fraction by the reciprocal of the whole number, not by the whole number itself, and you should not invert the fraction being divided.",
+            "wrong_answer_3": "Cannot divide 3 by 4, so it's not possible.": "While you cannot directly divide the numerator (3) by the whole number (3) in this format without careful understanding, the standard method for dividing a fraction by a whole number is to multiply the fraction by the reciprocal of the whole number. It is always possible to divide."
+        },
+        "hints": [
+            {
+                "step": 1,
+                "hint_text": "Think about what operation you need to perform when you 'cut something into equal smaller pieces'."
+            },
+            {
+                "step": 2,
+                "hint_text": "Remember that dividing by a whole number is the same as multiplying by its reciprocal. What is the reciprocal of 3?"
+            },
+            {
+                "step": 3,
+                "hint_text": "To divide \\frac{3}{4} by 3, you can multiply \\frac{3}{4} by \\frac{1}{3}. Don't forget to simplify your final answer."
+            }
+        ],
+        "full_solution": "To find the length of each smaller piece of ribbon, we need to divide the total length of the ribbon by the number of pieces. \n\nTotal length of ribbon = \\frac{3}{4} m\nNumber of equal pieces = 3\n\nWe need to calculate: \\frac{3}{4} \\div 3\n\nTo divide a fraction by a whole number, we can multiply the fraction by the reciprocal of the whole number. The reciprocal of 3 is \\frac{1}{3}.\n\nSo, \\frac{3}{4} \\div 3 = \\frac{3}{4} \\times \\frac{1}{3}\n\nNow, multiply the numerators together and the denominators together:\n= \\frac{3 \\times 1}{4 \\times 3}\n= \\frac{3}{12}\n\nFinally, simplify the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor, which is 3:\n= \\frac{3 \\div 3}{12 \\div 3}\n= \\frac{1}{4}\n\nEach smaller piece of ribbon will be \\frac{1}{4} m long."
+    }
+}

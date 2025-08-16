@@ -5,13 +5,15 @@ import 'package:flutter/material.dart';
 import '../api_client.dart';
 import '../ui/app_theme.dart';
 import '../state/game_state.dart';
+import '../data/learning_modules.dart';
 
 class TutorScreen extends StatefulWidget {
   final String apiBase;
   final String sessionId;
   final String stepId;
   final String prompt;
-  const TutorScreen({super.key, required this.apiBase, required this.sessionId, required this.stepId, required this.prompt});
+  final LearningModule? moduleContext;
+  const TutorScreen({super.key, required this.apiBase, required this.sessionId, required this.stepId, required this.prompt, this.moduleContext});
 
   @override
   State<TutorScreen> createState() => _TutorScreenState();
@@ -56,6 +58,7 @@ class _TutorScreenState extends State<TutorScreen> {
       final res = await _api.step(sessionId: widget.sessionId, stepId: _currentStepId, userResponse: text);
       final correct = res['correctness'] as bool?;
       final hint = (res['hint'] as String?) ?? '';
+      final tutorMessage = (res['tutor_message'] as String?) ?? '';
       final finished = res['finished'] as bool? ?? false;
       final nextPrompt = (res['next_prompt'] as String?) ?? '';
       final updates = res['updates'] as Map<String, dynamic>? ?? {};
@@ -89,7 +92,11 @@ class _TutorScreenState extends State<TutorScreen> {
         }
         _attempts = 0; // reset ladder when moving to a new prompt
       } else {
-        if (hint.isNotEmpty) {
+        // Show AI tutor response for incorrect answers
+        if (tutorMessage.isNotEmpty) {
+          _messages.add(_Msg(agent: 'tutor', text: tutorMessage));
+          _attempts += 1;
+        } else if (hint.isNotEmpty) {
           _messages.add(_Msg(agent: 'tutor', text: 'Hint: $hint'));
           _attempts += 1;
         }

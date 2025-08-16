@@ -1,0 +1,224 @@
+{
+  "version": "v1.0",
+  "description": "Primary 6 Mathematics Topics and Subtopics - Singapore MOE Curriculum",
+  "subjects": [
+    {
+      "id": "algebra",
+      "display_name": "Algebra",
+      "description": "Chapter 1: Algebra",
+      "color": "#9C27B0",
+      "icon": "functions",
+      "order": 1,
+      "subtopics": [
+        {
+          "id": "introduction-to-algebra",
+          "display_name": "1.1 Introduction to Algebra",
+          "syllabus": ["using a letter to represent an unknown number",
+                      "notation, representations and interpretation of simple algebraic expressions such as a + 3, 3a, a/3"
+                      ]     
+        },
+        {
+          "id": "simplifying-algebraic-expressions",
+          "display_name": "1.2 Simplifying Algebraic Expressions",
+          "syllabus":["simplifying simple linear expressions excluding brackets"]
+        },
+        {
+          "id": "evaluating-algebraic-expressions",
+          "display_name": "1.3 Evaluating Algebraic Expressions",
+          "syllabus": ["evaluating simple linear expressions by substitution"]
+        },
+        {
+          "id": "algebra-word-problems",
+          "display_name": "1.4 Word Problems",
+          "syllabus": ["solving simple linear equations involving whole number coefficient only in simple context"]
+        }
+      ]
+    },
+    {
+      "id": "fractions",
+      "display_name": "Fractions",
+      "description": "Chapter 2: Fractions",
+      "color": "#4CAF50",
+      "icon": "pie_chart",
+      "order": 2,
+      "subtopics": [
+        {
+          "id": "dividing-whole-by-proper-fractions",
+          "display_name": "2.1 Dividing Whole Number By Proper Fractions",
+          "syllabus": ["dividing proper fractions by a whole number"]
+        },
+        {
+          "id": "dividing-proper-fractions-by-proper-fractions",
+          "display_name": "2.2 Dividing Proper Fractions by Proper Fractions",
+          "syllabus": ["dividing a whole number/proper fraction by a proper fraction"]
+        },
+        {
+          "id": "fractions-word-problems",
+          "display_name": "2.3 Word Problems",
+          "syllabus": ["solving word problems involving the 4 operations"]
+        }
+      ]
+    },
+    {
+      "id": "speed",
+      "display_name": "Speed",
+      "description": "Chapter 3: Speed",
+      "color": "#FF5722",
+      "icon": "speed",
+      "order": 3,
+      "subtopics": [
+        {
+          "id": "finding-distance-time-speed",
+          "display_name": "3.1 Finding Distance, Time and Speed",
+          "syllabus": ["relationship between distance, time and speed exclude conversion of units e.g. km/h to m/min"]
+        },
+        {
+          "id": "average-speed",
+          "display_name": "3.2 Average Speed",
+          "syllabus": ["finding average speed in simple context"]
+        },
+        {
+          "id": "speed-word-problems",
+          "display_name": "3.3 Word Problems",
+          "syllabus": ["solving up to 3-step word problems involving speed and average speed"]
+        }
+      ]
+    },
+    {
+      "id": "ratio",
+      "display_name": "Ratio",
+      "description": "Chapter 4: Ratio",
+      "color": "#E91E63",
+      "icon": "compare",
+      "order": 4,
+      "subtopics": [
+        {
+          "id": "ratios-and-fractions",
+          "display_name": "4.1 Ratios and Fractions",
+          "syllabus": ["expressing ratios in simplest form", "expressing ratios as fractions"]
+        },
+        {
+          "id": "equivalent-fractions-and-ratios",
+          "display_name": "4.2 Equivalent Fractions and Ratios",
+          "syllabus": ["finding equivalent fractions and ratios"]
+        },
+        {
+          "id": "ratio-word-problems",
+          "display_name": "4.3 Word Problems",
+          "syllabus": ["solving word problems involving ratio including changing ratios"]
+        }
+      ]
+    },
+    {
+      "id": "measurement",
+      "display_name": "Measurement",
+      "description": "Chapter 5: Measurement",
+      "color": "#795548",
+      "icon": "ruler",
+      "order": 5,
+      "subtopics": [
+        {
+          "id": "radius-and-diameter",
+          "display_name": "5.1 Radius and Diameter of a Circle",
+          "syllabus": ["finding radius and diameter of a circle"]
+        },
+        {
+          "id": "circumference-of-circle",
+          "display_name": "5.2 Circumference of a Circle",
+          "syllabus": ["finding circumference of a circle using π = 3.14"]
+        },
+        {
+          "id": "area-of-circle",
+          "display_name": "5.3 Area of a Circle",
+          "syllabus": ["finding area of a circle using π = 3.14"]
+        },
+        {
+          "id": "perimeter-semi-circles-quadrants",
+          "display_name": "5.4 Perimeter of Semi-circles and Quadrants",
+          "syllabus": ["finding perimeter of semi-circles and quadrants"]
+        },
+        {
+          "id": "area-semi-circles-quadrants",
+          "display_name": "5.5 Area of Semi-circles and Quadrants",
+          "syllabus": ["finding area of semi-circles and quadrants"]
+        },
+        {
+          "id": "area-perimeter-composite-figures",
+          "display_name": "5.6 Area and Perimeter of Composite Figures",
+          "syllabus": ["finding the area and perimeter of composite figures made up of square, rectangle, triangle, semicircle and quarter circle"]
+        },
+        {
+          "id": "volume-cubes-cuboids",
+          "display_name": "5.7 Volume of Cubes and Cuboids",
+          "syllabus": ["finding one dimension of a cuboid given its volume and the other dimensions",
+                        "finding the length of one edge of a cube given its volume",
+                        "finding the height of a cuboid given its volume and base area",
+                        "finding the area of a face of a cuboid given its volume and one dimension",
+                        "use of square root and cube root signs"]
+        }
+      ]
+    },
+    {
+      "id": "data-analysis",
+      "display_name": "Data Analysis",
+      "description": "Chapter 6: Data Analysis",
+      "color": "#607D8B",
+      "icon": "bar_chart",
+      "order": 6,
+      "subtopics": [
+        {
+          "id": "pie-charts",
+          "display_name": "6.1 Pie Charts",
+          "syllabus": ["reading and interpreting pie charts", "finding the fraction of a whole represented by a sector in a pie chart"]
+        },
+        {
+          "id": "pie-charts-word-problems",
+          "display_name": "6.2 Pie Charts - Word Problems",
+          "syllabus": ["solving 1-step problems using data from tables/graphs"]
+        }
+      ]
+    },
+    {
+      "id": "percentage",
+      "display_name": "Percentage",
+      "description": "Chapter 7: Percentage",
+      "color": "#FF9800",
+      "icon": "percent",
+      "order": 7,
+      "subtopics": [
+        {
+          "id": "finding-whole-given-part-percentage",
+          "display_name": "7.1 Finding Whole Given Part and Percentage",
+          "syllabus": ["finding the whole given a part and its percentage",
+                       "finding the part given a whole and its percentage",
+                       "finding the percentage given a part and a whole"]
+        },
+        {
+          "id": "percentage-increase-decrease",
+          "display_name": "7.2 Finding Percentage Increase and Decrease",
+          "syllabus": ["finding percentage increase and decrease in simple context"]  
+        },
+        {
+          "id": "percentage-word-problems",
+          "display_name": "7.3 Word Problems",
+          "syllabus": ["solving word problems involving percentages"]
+        }
+      ]
+    },
+    {
+      "id": "geometry",
+      "display_name": "Geometry",
+      "description": "Chapter 8: Geometry",
+      "color": "#00BCD4",
+      "icon": "geometry",
+      "order": 8,
+      "subtopics": [
+        {
+          "id": "finding-unknown-angles-advanced",
+          "display_name": "8.1 Finding Unknown Angles - Advanced Problems",
+          "syllabus": ["finding unknown angles in simple geometric figures involving square, rectangle, triangle, parallelogram, rhombus, trapezium"]
+        }
+      ]
+    }
+  ]
+}

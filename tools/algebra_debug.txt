@@ -1,0 +1,692 @@
+[
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q1",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Stickers Collection",
+        "complexity": "Easy",
+        "problem_text": "Amelia has collected some Pokémon stickers. Her friend, Ben, gives her another 15 stickers. Now Amelia has a total of 42 stickers. How many stickers did Amelia have at first?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 2,
+        "answer_details": {
+            "correct_answer": "27",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 27. The student should set up an equation like x + 15 = 42 and solve for x.",
+            "keywords": ["algebra", "equation", "stickers", "total", "at first", "solve"],
+            "common_misconceptions": {
+                "57": "Adding 42 and 15 instead of subtracting. This would represent the total if Amelia *started* with 42 and *got* 15 more, which is not what the question states.",
+                "15": "Stating the number of stickers Ben gave her, not how many she had initially."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'x' represent the number of stickers Amelia had at first. How would you write an equation to show the total number of stickers after Ben gave her more?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "The equation should look like: x + (stickers Ben gave) = (total stickers). Now, substitute the numbers from the problem into this equation."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "You should have x + 15 = 42. To find x, you need to perform the inverse operation. What is the opposite of adding 15?"
+                }
+            ],
+            "full_solution": "Let x be the number of stickers Amelia had at first.\nShe received 15 more stickers, so her total became x + 15.\nAccording to the problem, her total is 42 stickers.\nSo, x + 15 = 42.\nTo find x, subtract 15 from both sides of the equation:\nx = 42 - 15\nx = 27\nAmelia had 27 stickers at first."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q2",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Curry Puff Purchase",
+        "complexity": "Easy",
+        "problem_text": "Mrs. Tan bought 6 curry puffs from the hawker centre. If she paid a total of $18, how much did each curry puff cost?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 2,
+        "answer_details": {
+            "correct_answer": "3",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 3. The student should set up an equation like 6x = 18 and solve for x.",
+            "keywords": ["algebra", "equation", "cost", "total", "each", "divide"],
+            "common_misconceptions": {
+                "108": "Multiplying 18 by 6 instead of dividing. This would be if she paid $18 for *each* curry puff, not for all of them.",
+                "12": "Subtracting 6 from 18, which does not represent the cost of each item."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'c' represent the cost of one curry puff. If Mrs. Tan bought 6 curry puffs, how would you write the total cost in terms of 'c'?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "The total cost is 6 times the cost of one curry puff. So, 6c = (total paid). Substitute the total amount paid into this equation."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "You should have 6c = 18. To find 'c', you need to perform the inverse operation. What is the opposite of multiplying by 6?"
+                }
+            ],
+            "full_solution": "Let c be the cost of one curry puff.\nMrs. Tan bought 6 curry puffs, so the total cost is 6 * c.\nShe paid a total of $18.\nSo, 6c = 18.\nTo find c, divide both sides of the equation by 6:\nc = 18 / 6\nc = 3\nEach curry puff cost $3."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q3",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Savings for a Toy",
+        "complexity": "Easy",
+        "problem_text": "Jian Ming wants to buy a toy car that costs $45. He already has some money saved. After his grandmother gave him an additional $12 for his birthday, he now has exactly enough money to buy the toy car. How much money did Jian Ming have saved initially?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 2,
+        "answer_details": {
+            "correct_answer": "33",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 33. The student should set up an equation like x + 12 = 45 and solve for x.",
+            "keywords": ["algebra", "equation", "money", "saved", "initial", "total"],
+            "common_misconceptions": {
+                "57": "Adding 45 and 12. This would mean he started with $45 and then received $12 more, exceeding the toy car's cost.",
+                "12": "Stating the amount his grandmother gave him, not his initial savings."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'm' represent the amount of money Jian Ming had saved initially. He received an additional $12, and then he had enough for the $45 toy car. How would you write this as an equation?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "The equation should represent: (initial savings) + (money from grandmother) = (cost of toy car). Fill in the numbers."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "You should have m + 12 = 45. To find 'm', you need to isolate it. What operation should you perform to both sides of the equation?"
+                }
+            ],
+            "full_solution": "Let m be the amount of money Jian Ming had saved initially.\nHe received an additional $12, so his total money became m + 12.\nThis total is enough to buy a toy car that costs $45.\nSo, m + 12 = 45.\nTo find m, subtract 12 from both sides of the equation:\nm = 45 - 12\nm = 33\nJian Ming had $33 saved initially."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q4",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Sharing Marbles",
+        "complexity": "Easy",
+        "problem_text": "Raju shared his marbles equally among 4 friends. Each friend received 9 marbles. How many marbles did Raju have at first?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 2,
+        "answer_details": {
+            "correct_answer": "36",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 36. The student should set up an equation like x / 4 = 9 and solve for x.",
+            "keywords": ["algebra", "equation", "marbles", "shared equally", "each", "total", "multiply"],
+            "common_misconceptions": {
+                "13": "Adding 4 and 9, which doesn't represent the total marbles.",
+                "5": "Subtracting 4 from 9, which is incorrect for a sharing problem.",
+                "2.25": "Dividing 9 by 4, which would imply each friend received a fraction of a marble."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'x' represent the total number of marbles Raju had at first. If he shared them equally among 4 friends, how would you write the number of marbles each friend received in terms of 'x'?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "The number of marbles each friend received is (total marbles) divided by (number of friends). So, x / 4 = (marbles per friend). Substitute the given number into this equation."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "You should have x / 4 = 9. To find 'x', you need to perform the inverse operation. What is the opposite of dividing by 4?"
+                }
+            ],
+            "full_solution": "Let x be the number of marbles Raju had at first.\nHe shared them equally among 4 friends, so each friend received x / 4 marbles.\nEach friend received 9 marbles.\nSo, x / 4 = 9.\nTo find x, multiply both sides of the equation by 4:\nx = 9 * 4\nx = 36\nRaju had 36 marbles at first."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q5",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Ages of Siblings",
+        "complexity": "Easy",
+        "problem_text": "Siti is 3 years older than her brother, Adam. If Siti is 11 years old, how old is Adam?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 2,
+        "answer_details": {
+            "correct_answer": "8",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 8. The student should set up an equation like x + 3 = 11 or 11 - 3 = x and solve for x.",
+            "keywords": ["algebra", "equation", "age", "older than", "younger than"],
+            "common_misconceptions": {
+                "14": "Adding 11 and 3. This would be if Adam was 3 years older than Siti, not the other way around.",
+                "3": "Stating the age difference, not Adam's age."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'a' represent Adam's age. The problem states Siti is 3 years older than Adam. How would you express Siti's age in terms of 'a'?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "Siti's age is Adam's age plus 3. So, a + 3 = (Siti's age). Substitute Siti's actual age into the equation."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "You should have a + 3 = 11. To find 'a', perform the inverse operation. What is the opposite of adding 3?"
+                }
+            ],
+            "full_solution": "Let a be Adam's age.\nSiti is 3 years older than Adam, so Siti's age is a + 3.\nWe are given that Siti is 11 years old.\nSo, a + 3 = 11.\nTo find a, subtract 3 from both sides of the equation:\na = 11 - 3\na = 8\nAdam is 8 years old."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q6",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Fruits in a Basket",
+        "complexity": "Easy",
+        "problem_text": "A basket contains some apples and 8 oranges. If there are a total of 23 fruits in the basket, how many apples are there?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 2,
+        "answer_details": {
+            "correct_answer": "15",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 15. The student should set up an equation like x + 8 = 23 and solve for x.",
+            "keywords": ["algebra", "equation", "fruits", "total", "some", "apples", "oranges"],
+            "common_misconceptions": {
+                "31": "Adding 23 and 8 instead of subtracting. This would represent the total if there were 23 apples and 8 oranges.",
+                "8": "Stating the number of oranges, not apples."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'a' represent the number of apples. You know the number of oranges and the total number of fruits. How can you write an equation using these numbers?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "The total number of fruits is the sum of apples and oranges. So, a + (number of oranges) = (total fruits). Fill in the numbers."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "You should have a + 8 = 23. To find 'a', you need to perform the inverse operation. What is the opposite of adding 8?"
+                }
+            ],
+            "full_solution": "Let a be the number of apples in the basket.\nThere are 8 oranges.\nThe total number of fruits is 23.\nSo, a + 8 = 23.\nTo find a, subtract 8 from both sides of the equation:\na = 23 - 8\na = 15\nThere are 15 apples in the basket."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q7",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Laps in a Park",
+        "complexity": "Easy",
+        "problem_text": "Each lap around Bishan-Ang Mo Kio Park is 3 km. John jogged a certain number of laps and covered a total distance of 18 km. How many laps did John jog?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 2,
+        "answer_details": {
+            "correct_answer": "6",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 6. The student should set up an equation like 3x = 18 and solve for x.",
+            "keywords": ["algebra", "equation", "laps", "distance", "total", "each", "jog"],
+            "common_misconceptions": {
+                "54": "Multiplying 18 by 3 instead of dividing. This would be if he covered 18 km per lap.",
+                "15": "Subtracting 3 from 18, which is not relevant to distance and laps."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'L' represent the number of laps John jogged. You know the distance of one lap and the total distance covered. How can you write an equation using these numbers?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "The total distance is the distance per lap multiplied by the number of laps. So, (distance per lap) * L = (total distance). Fill in the numbers."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "You should have 3L = 18. To find 'L', you need to perform the inverse operation. What is the opposite of multiplying by 3?"
+                }
+            ],
+            "full_solution": "Let L be the number of laps John jogged.\nEach lap is 3 km.\nThe total distance covered is 18 km.\nSo, 3 * L = 18.\nTo find L, divide both sides of the equation by 3:\nL = 18 / 3\nL = 6\nJohn jogged 6 laps."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q8",
+        "sub_topic": "1.4 Word Problems",
+        "title": "School Supplies",
+        "complexity": "Medium",
+        "problem_text": "Cai Ling bought 4 pencils and a ruler. Each pencil cost $2 and the ruler cost $5. How much change did she get if she paid with a $20 note?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 3,
+        "answer_details": {
+            "correct_answer": "7",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 7. The student needs to calculate the total cost (4*2 + 5 = 13) and then find the change (20 - 13 = 7).",
+            "keywords": ["algebra", "equation", "cost", "change", "total", "pencils", "ruler", "money"],
+            "common_misconceptions": {
+                "15": "Only calculating the cost of pencils and ruler ($8 + $5 = $13) and not subtracting from $20, or making an error in calculation.",
+                "13": "Providing the total cost instead of the change.",
+                "10": "Calculating (20-5)/2 or some other incorrect operation, not following the sequence of cost calculation."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "First, calculate the total cost of the pencils. Then add the cost of the ruler to find the total amount Cai Ling spent."
+                },
+                {
+                    "step": 2,
+                    "hint_text": "Let 'P' be the cost of one pencil and 'R' be the cost of the ruler. The total spent is (number of pencils × P) + R. Calculate this value."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "Once you have the total amount spent, subtract this from the $20 note to find the change. Equation: Change = (Amount paid) - (Total spent)."
+                }
+            ],
+            "full_solution": "Let P be the cost of one pencil and R be the cost of the ruler.\nCost of 4 pencils = 4 × $2 = $8\nCost of 1 ruler = $5\nTotal amount spent = Cost of pencils + Cost of ruler\nTotal amount spent = $8 + $5 = $13\nAmount paid = $20\nChange received = Amount paid - Total amount spent\nChange received = $20 - $13 = $7\nCai Ling received $7 change."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q9",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Stamps Collection",
+        "complexity": "Medium",
+        "problem_text": "Chloe has 7 more stamps than David. Together, they have a total of 55 stamps. How many stamps does David have?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 3,
+        "answer_details": {
+            "correct_answer": "24",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 24. The student should set up an equation like x + (x + 7) = 55 or 2x + 7 = 55 and solve for x.",
+            "keywords": ["algebra", "equation", "stamps", "more than", "together", "total"],
+            "common_misconceptions": {
+                "31": "Calculating (55-7)/2 and then adding 7, giving Chloe's stamps (31) instead of David's.",
+                "48": "Subtracting 7 from 55, which assumes Chloe has 7 fewer stamps than David, or misunderstanding the 'together' part.",
+                "62": "Adding 7 to 55, or not correctly setting up the combined total."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'd' represent the number of stamps David has. How would you express the number of stamps Chloe has in terms of 'd'?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "Chloe has 'd + 7' stamps. Together, they have 55 stamps. So, (David's stamps) + (Chloe's stamps) = (Total stamps). Write this as an equation."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "You should have d + (d + 7) = 55, which simplifies to 2d + 7 = 55. Now, solve for 'd' by first subtracting 7 from both sides, then dividing by 2."
+                }
+            ],
+            "full_solution": "Let d be the number of stamps David has.\nChloe has 7 more stamps than David, so Chloe has d + 7 stamps.\nTogether, they have 55 stamps.\nSo, d + (d + 7) = 55\n2d + 7 = 55\nSubtract 7 from both sides:\n2d = 55 - 7\n2d = 48\nDivide both sides by 2:\nd = 48 / 2\nd = 24\nDavid has 24 stamps."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q10",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Sharing Sweets",
+        "complexity": "Medium",
+        "problem_text": "Mr. Lee distributed a packet of sweets equally among 7 children. Each child received 8 sweets, and Mr. Lee had 3 sweets left over. How many sweets were there in the packet at first?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 3,
+        "answer_details": {
+            "correct_answer": "59",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 59. The student should calculate 7 * 8 + 3 = 59.",
+            "keywords": ["algebra", "equation", "sweets", "equally", "left over", "total", "packet"],
+            "common_misconceptions": {
+                "56": "Only calculating 7 * 8, forgetting to add the leftover sweets.",
+                "61": "Calculating 7 * 8 + 3 + 2 or similar addition errors.",
+                "11": "Adding 7, 8, and 3 instead of multiplying and adding."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "First, consider the total number of sweets that were distributed among the children. If each of 7 children received 8 sweets, how many sweets were distributed?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "Let 'x' be the total number of sweets in the packet. The number of sweets distributed can be found by (number of children) × (sweets per child). After distribution, there were 3 left over. So, x = (sweets distributed) + (left over sweets)."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "You should calculate (7 × 8) + 3. Perform the multiplication first, then the addition, to find the total number of sweets."
+                }
+            ],
+            "full_solution": "Let x be the number of sweets in the packet at first.\nNumber of children = 7\nSweets per child = 8\nNumber of sweets distributed = 7 × 8 = 56\nSweets left over = 3\nTotal sweets in the packet = Sweets distributed + Sweets left over\nx = 56 + 3\nx = 59\nThere were 59 sweets in the packet at first."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q11",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Vehicles in a Carpark",
+        "complexity": "Medium",
+        "problem_text": "In a multi-storey carpark, there are cars and motorcycles. There are 15 more cars than motorcycles. If there are a total of 125 wheels, how many motorcycles are there? (A car has 4 wheels, a motorcycle has 2 wheels)",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 3,
+        "answer_details": {
+            "correct_answer": "29",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 29. The student should set up an equation. Let m be the number of motorcycles. Then cars = m+15. Total wheels = 2m + 4(m+15) = 125. Solve for m.",
+            "keywords": ["algebra", "equation", "vehicles", "wheels", "carpark", "more than", "total"],
+            "common_misconceptions": {
+                "25": "Guessing or incorrect substitution after solving for total vehicles. Or calculating (125/6) which is incorrect.",
+                "44": "Finding the number of cars (29+15=44) instead of motorcycles.",
+                "125/2 or 125/4": "Not accounting for both types of vehicles or the relationship between them."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'm' be the number of motorcycles. Since there are 15 more cars than motorcycles, how can you express the number of cars in terms of 'm'?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "The number of cars is 'm + 15'. Now, think about the total number of wheels. Each motorcycle has 2 wheels, and each car has 4 wheels. Set up an equation for the total wheels: (2 × m) + (4 × (m + 15)) = 125."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "Simplify the equation: 2m + 4m + 60 = 125. Combine the 'm' terms, then subtract 60 from both sides. Finally, divide to find 'm'."
+                }
+            ],
+            "full_solution": "Let m be the number of motorcycles.\nNumber of cars = m + 15\n\nNumber of wheels from motorcycles = 2m\nNumber of wheels from cars = 4(m + 15)\n\nTotal wheels = 125\n\nSo, 2m + 4(m + 15) = 125\n2m + 4m + 60 = 125 (Distribute 4 into the bracket)\n6m + 60 = 125 (Combine like terms)\n\nSubtract 60 from both sides:\n6m = 125 - 60\n6m = 65\n\nDivide by 6:\nm = 65 / 6\n\nAh, wait. 65 is not divisible by 6. This implies either my question value or my understanding of 'simple context' needs adjustment for P6. Let me re-check the problem for 'whole number coefficient only' and 'simple context'. A non-integer answer is usually not expected in P6 unless explicitly stated or for specific topics. Let me adjust the numbers to ensure a whole number answer.\n\nRevised problem with new numbers: Let's aim for m=20.\nIf m=20, cars = 35.\nWheels: 2*20 + 4*35 = 40 + 140 = 180.\n\nLet's try again with a revised total number of wheels.\nOriginal: 2m + 4m + 60 = 125 -> 6m = 65. Not suitable.\nNew total wheels, aiming for a whole number: Let's pick 180 as total wheels.\n\nUpdated Problem Text and Solution:\nIn a multi-storey carpark, there are cars and motorcycles. There are 15 more cars than motorcycles. If there are a total of 180 wheels, how many motorcycles are there? (A car has 4 wheels, a motorcycle has 2 wheels)\n\nLet m be the number of motorcycles.\nNumber of cars = m + 15\n\nNumber of wheels from motorcycles = 2m\nNumber of wheels from cars = 4(m + 15)\n\nTotal wheels = 180\n\nSo, 2m + 4(m + 15) = 180\n2m + 4m + 60 = 180\n6m + 60 = 180\n\nSubtract 60 from both sides:\n6m = 180 - 60\n6m = 120\n\nDivide by 6:\nm = 120 / 6\nm = 20\nThere are 20 motorcycles."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q12",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Hawker Centre Lunch",
+        "complexity": "Medium",
+        "problem_text": "Ali bought a plate of chicken rice and 2 packets of Milo from the hawker centre. The chicken rice cost $3 and each packet of Milo cost $x. If Ali paid a total of $9, how much did each packet of Milo cost?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 3,
+        "answer_details": {
+            "correct_answer": "3",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 3. The student should set up an equation like 3 + 2x = 9 and solve for x.",
+            "keywords": ["algebra", "equation", "cost", "total", "each", "hawker centre", "Milo", "chicken rice"],
+            "common_misconceptions": {
+                "6": "Only finding the cost of the two Milo packets (9-3=6) and not dividing by 2.",
+                "12": "Adding 3 and 9, or multiplying something incorrectly.",
+                "1.5": "Calculating 3/2, or incorrectly dividing (9-3)/3 instead of (9-3)/2."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'x' be the cost of one packet of Milo. If Ali bought 2 packets of Milo, how much did he spend on Milo in total?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "The total cost is the cost of chicken rice plus the cost of 2 Milo packets. So, 3 + 2x = (total paid). Set up the equation using the given total cost."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "You should have 3 + 2x = 9. First, subtract 3 from both sides. Then, divide by 2 to find 'x'."
+                }
+            ],
+            "full_solution": "Let x be the cost of each packet of Milo.\nCost of chicken rice = $3\nCost of 2 packets of Milo = 2x\nTotal amount paid = $9\n\nEquation: Cost of chicken rice + Cost of 2 Milo packets = Total paid\n3 + 2x = 9\n\nSubtract 3 from both sides:\n2x = 9 - 3\n2x = 6\n\nDivide by 2:\nx = 6 / 2\nx = 3\nEach packet of Milo cost $3."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q13",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Numbers in a Sequence",
+        "complexity": "Medium",
+        "problem_text": "The sum of three consecutive whole numbers is 63. What is the smallest of these three numbers?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 3,
+        "answer_details": {
+            "correct_answer": "20",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 20. The student should set up an equation like x + (x+1) + (x+2) = 63 or 3x + 3 = 63 and solve for x.",
+            "keywords": ["algebra", "equation", "consecutive", "whole numbers", "sum", "smallest"],
+            "common_misconceptions": {
+                "21": "Finding the middle number (63/3 = 21) but not identifying the smallest.",
+                "19": "Guessing or incorrect calculation of the smallest number, perhaps by subtracting 2 from the middle number instead of 1.",
+                "63/3": "Providing the average as the answer, which is the middle number, not the smallest."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'x' be the smallest of the three consecutive whole numbers. How would you represent the next two consecutive whole numbers in terms of 'x'?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "The three numbers are x, x+1, and x+2. Their sum is 63. Write this as an equation: x + (x+1) + (x+2) = 63."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "Simplify the equation by combining the 'x' terms and the constant terms. You should get 3x + 3 = 63. Then, solve for 'x' by first subtracting 3 from both sides, and then dividing by 3."
+                }
+            ],
+            "full_solution": "Let the smallest whole number be x.\nThe next consecutive whole number is x + 1.\nThe third consecutive whole number is x + 2.\n\nThe sum of these three numbers is 63.\nx + (x + 1) + (x + 2) = 63\nCombine like terms:\n3x + 3 = 63\n\nSubtract 3 from both sides:\n3x = 63 - 3\n3x = 60\n\nDivide by 3:\nx = 60 / 3\nx = 20\nThe smallest of the three numbers is 20."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q14",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Mother and Child Ages",
+        "complexity": "Medium",
+        "problem_text": "A mother is currently 3 times as old as her daughter. In 5 years' time, their combined age will be 66. How old is the daughter now?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 3,
+        "answer_details": {
+            "correct_answer": "14",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 14. The student needs to set up variables for current ages (daughter x, mother 3x), then adjust for future ages (daughter x+5, mother 3x+5), and sum them for the equation: (x+5) + (3x+5) = 66.",
+            "keywords": ["algebra", "equation", "age", "combined age", "in x years", "current age", "times as old"],
+            "common_misconceptions": {
+                "15": "Calculating 66/4 or similar, without adjusting for the 5 years in the future for *both* individuals.",
+                "19": "Getting the mother's age instead of the daughter's (14*3 + 5, or 14+5 + 3*14+5 = 19 + 47 = 66, mother is 42, 42+5=47. The daughter is 14. So 19 for daughter is wrong).",
+                "66/3 = 22": "Directly dividing total age by 3, ignoring the mother's multiple and future age."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'd' be the daughter's current age. How would you express the mother's current age in terms of 'd'? How would you express both their ages in 5 years' time?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "Daughter's current age = d. Mother's current age = 3d.\nIn 5 years: Daughter's age = d+5. Mother's age = 3d+5.\nTheir combined age in 5 years is 66. Set up the equation: (d+5) + (3d+5) = 66."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "Simplify the equation: d + 3d + 5 + 5 = 66, which becomes 4d + 10 = 66. Solve for 'd' by subtracting 10 from both sides, then dividing by 4."
+                }
+            ],
+            "full_solution": "Let the daughter's current age be d years.\nMother's current age = 3d years.\n\nIn 5 years' time:\nDaughter's age will be d + 5 years.\nMother's age will be 3d + 5 years.\n\nTheir combined age in 5 years will be 66.\n(d + 5) + (3d + 5) = 66\n\nCombine like terms:\nd + 3d + 5 + 5 = 66\n4d + 10 = 66\n\nSubtract 10 from both sides:\n4d = 66 - 10\n4d = 56\n\nDivide by 4:\nd = 56 / 4\nd = 14\n\nThe daughter is currently 14 years old."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q15",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Money Distribution",
+        "complexity": "Hard",
+        "problem_text": "Jiale, Kai, and Lim shared a sum of money. Jiale received twice as much as Kai. Lim received $10 less than Jiale. If the total sum of money shared was $170, how much money did Kai receive?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 4,
+        "answer_details": {
+            "correct_answer": "36",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 36. The student needs to define variables for each person based on one variable (e.g., Kai=x, Jiale=2x, Lim=2x-10) and sum them to form the equation: x + 2x + (2x-10) = 170.",
+            "keywords": ["algebra", "equation", "money", "twice as much", "less than", "total sum", "shared"],
+            "common_misconceptions": {
+                "72": "Finding Jiale's share instead of Kai's (36*2=72).",
+                "62": "Finding Lim's share instead of Kai's (72-10=62).",
+                "180/3 = 60": "Incorrectly assuming equal shares or simple division, not accounting for the relationships.",
+                "34": "Errors in combining terms or solving the equation, e.g., 5x = 170."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'k' represent the amount of money Kai received. Based on the problem, how can you express the amounts Jiale and Lim received in terms of 'k'?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "Jiale received 2k. Lim received 2k - 10. The total sum is the sum of all their shares: k + 2k + (2k - 10) = 170. Set up and simplify this equation."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "Simplify the equation to 5k - 10 = 170. First, add 10 to both sides. Then, divide by 5 to find 'k'."
+                }
+            ],
+            "full_solution": "Let k be the amount of money Kai received.\nJiale received twice as much as Kai, so Jiale received 2k.\nLim received $10 less than Jiale, so Lim received 2k - 10.\n\nThe total sum of money shared was $170.\nSum of their money = Kai's money + Jiale's money + Lim's money\nk + 2k + (2k - 10) = 170\n\nCombine like terms:\nk + 2k + 2k - 10 = 170\n5k - 10 = 170\n\nAdd 10 to both sides:\n5k = 170 + 10\n5k = 180\n\nDivide by 5:\nk = 180 / 5\nk = 36\nKai received $36."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q16",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Concert Ticket Sales",
+        "complexity": "Hard",
+        "problem_text": "A school concert sold 250 tickets in total. Adult tickets cost $15 each and child tickets cost $8 each. If the total amount collected from ticket sales was $3050, how many child tickets were sold?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 4,
+        "answer_details": {
+            "correct_answer": "100",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 100. The student needs to define one variable (e.g., child tickets = x), express the other (adult tickets = 250-x), and form the equation: 8x + 15(250-x) = 3050.",
+            "keywords": ["algebra", "equation", "tickets", "sales", "total amount", "cost", "adult", "child"],
+            "common_misconceptions": {
+                "150": "Finding the number of adult tickets instead of child tickets (250-100=150).",
+                "250/2 = 125": "Assuming an equal number of adult and child tickets.",
+                "3050/15 or 3050/8": "Only dividing by one type of ticket price, ignoring the mix.",
+                "200": "Errors in distribution (e.g., 15 * 250 - 15x is 3750 - 15x, but calculation errors lead to incorrect 'x')."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'c' be the number of child tickets sold. Since there were 250 tickets sold in total, how can you express the number of adult tickets in terms of 'c'?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "Number of adult tickets = 250 - c. Now, form an equation for the total amount collected: (cost of child tickets × c) + (cost of adult tickets × (250 - c)) = Total collected."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "The equation is 8c + 15(250 - c) = 3050. Distribute the 15, then combine the 'c' terms. You will get 8c + 3750 - 15c = 3050. Simplify this to -7c + 3750 = 3050, then solve for 'c' by rearranging terms."
+                }
+            ],
+            "full_solution": "Let c be the number of child tickets sold.\nTotal tickets sold = 250\nNumber of adult tickets sold = 250 - c\n\nCost of child tickets = $8 each\nCost of adult tickets = $15 each\nTotal amount collected = $3050\n\nEquation for total amount collected:\n(Number of child tickets × Cost per child ticket) + (Number of adult tickets × Cost per adult ticket) = Total collected\n8c + 15(250 - c) = 3050\n\nExpand the bracket:\n8c + (15 × 250) - (15 × c) = 3050\n8c + 3750 - 15c = 3050\n\nCombine like terms:\n-7c + 3750 = 3050\n\nSubtract 3750 from both sides:\n-7c = 3050 - 3750\n-7c = -700\n\nDivide by -7:\nc = -700 / -7\nc = 100\n\nThere were 100 child tickets sold."
+        }
+    },
+    {
+        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q17",
+        "sub_topic": "1.4 Word Problems",
+        "title": "Marbles in a Bag",
+        "complexity": "Hard",
+        "problem_text": "A bag contains red and blue marbles. The number of red marbles is 3 times the number of blue marbles. If 6 red marbles are removed and 2 blue marbles are added, the number of red marbles becomes twice the number of blue marbles. How many red marbles were there at first?",
+        "asset": {
+            "image_url": null,
+            "svg_code": null
+        },
+        "marks": 4,
+        "answer_details": {
+            "correct_answer": "42",
+            "alternative_answers": [],
+            "answer_format": "numeric"
+        },
+        "ai_guidance": {
+            "evaluation_strategy": "Check if the answer is 42. The student needs to define initial counts (blue=x, red=3x), then adjust for changes (red becomes 3x-6, blue becomes x+2), and set up the new relationship: 3x-6 = 2(x+2). Solve for x, then find 3x.",
+            "keywords": ["algebra", "equation", "marbles", "ratio", "removed", "added", "times", "at first"],
+            "common_misconceptions": {
+                "14": "Finding the initial number of blue marbles (x=14) instead of red (3x).",
+                "36": "Errors in distribution or calculation after setting up the equation, leading to wrong x.",
+                "48": "Adding 6 instead of subtracting, or similar sign errors."
+            },
+            "hints": [
+                {
+                    "step": 1,
+                    "hint_text": "Let 'x' be the initial number of blue marbles. How would you express the initial number of red marbles in terms of 'x'?"
+                },
+                {
+                    "step": 2,
+                    "hint_text": "Initial red marbles = 3x. Initial blue marbles = x. After changes: new red marbles = 3x - 6, new blue marbles = x + 2. Now, set up the new relationship: (new red marbles) = 2 × (new blue marbles)."
+                },
+                {
+                    "step": 3,
+                    "hint_text": "The equation is 3x - 6 = 2(x + 2). Distribute the 2 on the right side. You will get 3x - 6 = 2x + 4. Bring the 'x' terms to one side and constants to the other side to solve for 'x'. Remember to find the initial number of red marbles (3x) after finding 'x'."
+                }
+            ],
+            "full_solution": "Let x be the initial number of blue marbles.\nInitial number of red marbles = 3x (since red marbles is 3 times the blue marbles)\n\nAfter changes:\nNew number of red marbles = 3x - 6 (6 red marbles removed)\nNew number of blue marbles = x + 2 (2 blue marbles added)\n\nNew relationship: The number of red marbles becomes twice the number of blue marbles.\n3x - 6 = 2(x + 2)\n\nExpand the bracket:\n3x - 6 = 2x + 4\n\nSubtract 2x from both sides:\n3x - 2x - 6 = 4\nx - 6 = 4\n\nAdd 6 to both sides:\nx = 4 + 6\nx = 10\n\nThis 'x' is the initial number of blue marbles. The question asks for the initial number of red marbles.\nInitial number of red marbles = 3x = 3 × 10 = 30.\n\nLet me recheck my values. Oh, it's 3x-6 = 2(x+2) -> 3x-6 = 2x+4 -> 3x-2x = 4+6 -> x=10. Red at first = 3*10 = 30.\n\nI made an error in my own calculation during planning. I need to make sure the answer for the current setup is 30.\n\nLet's re-run the numbers to match an answer of 42.\nIf initial red = 42, then blue = 42/3 = 14.\nNew red = 42-6 = 36.\nNew blue = 14+2 = 16.\nIs new red = 2 * new blue? 36 = 2 * 16? 36 = 32. No, not quite.\n\nLet's adjust the problem statement slightly to ensure the answer matches a simple number for primary 6.\n\nLet blue marbles be x. Red marbles be 3x.\nRemoved 6 red, added 2 blue.\nNew red: 3x-6\nNew blue: x+2\nNew relationship: 3x-6 = 2(x+2)\n3x-6 = 2x+4\nx = 10.\nInitial red = 3*10 = 30.\n\nThe current solution (30) is correct for the problem stated. My previous self-correction note in planning was wrong. The plan output had '42', but my derived answer is 30. I will stick to the derived answer from the problem text.\n\nTherefore, the answer is 30. Let me update the correct_answer and full_solution to reflect 30.\n\nCorrected Answer for Q17: 30\nUpdated 'answer_details': 'correct_answer': '30'\nUpdated 'full_solution': 'Initial number of red marbles = 3x = 3 × 10 = 30. There were 30 red marbles at first.'\nUpdated 'misconceptions' for 30 being correct, not 42.\n\nRe-evaluating the desired 'Hard' level.\nThe setup 3x-6 = 2(x+2) is perfectly suitable for Hard P6. The numbers result in whole numbers.\n\nFinal check on Q17 answer and solution.\nLet blue marbles = x. Red marbles = 3x.\nRemove 6 red: 3x-6. Add 2 blue: x+2.\nNew red is twice new blue: 3x-6 = 2(x+2)\n3x-6 = 2x+4\n3x-2x = 4+6\nx = 10 (initial blue marbles)\nInitial red marbles = 3x = 3 * 10 = 30.\nThe answer is indeed 30.\n\nI will update the problem to have a final answer of 30.\n"correct_answer": "30"\n"common_misconceptions": {\n    "10": "Finding the initial number of blue marbles (x=10) instead of red (3x)."\n}\nMy self-correction was based on a mental slip; the math for 30 is sound.\n```json\n[\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q1",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Stickers Collection",\n        "complexity": "Easy",\n        "problem_text": "Amelia has collected some Pokémon stickers. Her friend, Ben, gives her another 15 stickers. Now Amelia has a total of 42 stickers. How many stickers did Amelia have at first?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 2,\n        "answer_details": {\n            "correct_answer": "27",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 27. The student should set up an equation like x + 15 = 42 and solve for x.",\n            "keywords": ["algebra", "equation", "stickers", "total", "at first", "solve"],\n            "common_misconceptions": {\n                "57": "Adding 42 and 15 instead of subtracting. This would represent the total if Amelia *started* with 42 and *got* 15 more, which is not what the question states.",\n                "15": "Stating the number of stickers Ben gave her, not how many she had initially."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'x' represent the number of stickers Amelia had at first. How would you write an equation to show the total number of stickers after Ben gave her more?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "The equation should look like: x + (stickers Ben gave) = (total stickers). Now, substitute the numbers from the problem into this equation."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "You should have x + 15 = 42. To find x, you need to perform the inverse operation. What is the opposite of adding 15?"\n                }\n            ],\n            "full_solution": "Let x be the number of stickers Amelia had at first.\nShe received 15 more stickers, so her total became x + 15.\nAccording to the problem, her total is 42 stickers.\nSo, x + 15 = 42.\nTo find x, subtract 15 from both sides of the equation:\nx = 42 - 15\nx = 27\nAmelia had 27 stickers at first."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q2",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Curry Puff Purchase",\n        "complexity": "Easy",\n        "problem_text": "Mrs. Tan bought 6 curry puffs from the hawker centre. If she paid a total of $18, how much did each curry puff cost?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 2,\n        "answer_details": {\n            "correct_answer": "3",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 3. The student should set up an equation like 6x = 18 and solve for x.",\n            "keywords": ["algebra", "equation", "cost", "total", "each", "divide"],\n            "common_misconceptions": {\n                "108": "Multiplying 18 by 6 instead of dividing. This would be if she paid $18 for *each* curry puff, not for all of them.",\n                "12": "Subtracting 6 from 18, which does not represent the cost of each item."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'c' represent the cost of one curry puff. If Mrs. Tan bought 6 curry puffs, how would you write the total cost in terms of 'c'?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "The total cost is 6 times the cost of one curry puff. So, 6c = (total paid). Substitute the total amount paid into this equation."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "You should have 6c = 18. To find 'c', you need to perform the inverse operation. What is the opposite of multiplying by 6?"\n                }\n            ],\n            "full_solution": "Let c be the cost of one curry puff.\nMrs. Tan bought 6 curry puffs, so the total cost is 6 * c.\nShe paid a total of $18.\nSo, 6c = 18.\nTo find c, divide both sides of the equation by 6:\nc = 18 / 6\nc = 3\nEach curry puff cost $3."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q3",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Savings for a Toy",\n        "complexity": "Easy",\n        "problem_text": "Jian Ming wants to buy a toy car that costs $45. He already has some money saved. After his grandmother gave him an additional $12 for his birthday, he now has exactly enough money to buy the toy car. How much money did Jian Ming have saved initially?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 2,\n        "answer_details": {\n            "correct_answer": "33",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 33. The student should set up an equation like x + 12 = 45 and solve for x.",\n            "keywords": ["algebra", "equation", "money", "saved", "initial", "total"],\n            "common_misconceptions": {\n                "57": "Adding 45 and 12. This would mean he started with $45 and then received $12 more, exceeding the toy car's cost.",\n                "12": "Stating the amount his grandmother gave him, not his initial savings."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'm' represent the amount of money Jian Ming had saved initially. He received an additional $12, and then he had enough for the $45 toy car. How would you write this as an equation?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "The equation should represent: (initial savings) + (money from grandmother) = (cost of toy car). Fill in the numbers."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "You should have m + 12 = 45. To find 'm', you need to isolate it. What operation should you perform to both sides of the equation?"\n                }\n            ],\n            "full_solution": "Let m be the amount of money Jian Ming had saved initially.\nHe received an additional $12, so his total money became m + 12.\nThis total is enough to buy a toy car that costs $45.\nSo, m + 12 = 45.\nTo find m, subtract 12 from both sides of the equation:\nm = 45 - 12\nm = 33\nJian Ming had $33 saved initially."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q4",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Sharing Marbles",\n        "complexity": "Easy",\n        "problem_text": "Raju shared his marbles equally among 4 friends. Each friend received 9 marbles. How many marbles did Raju have at first?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 2,\n        "answer_details": {\n            "correct_answer": "36",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 36. The student should set up an equation like x / 4 = 9 and solve for x.",\n            "keywords": ["algebra", "equation", "marbles", "shared equally", "each", "total", "multiply"],\n            "common_misconceptions": {\n                "13": "Adding 4 and 9, which doesn't represent the total marbles.",\n                "5": "Subtracting 4 from 9, which is incorrect for a sharing problem.",\n                "2.25": "Dividing 9 by 4, which would imply each friend received a fraction of a marble."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'x' represent the total number of marbles Raju had at first. If he shared them equally among 4 friends, how would you write the number of marbles each friend received in terms of 'x'?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "The number of marbles each friend received is (total marbles) divided by (number of friends). So, x / 4 = (marbles per friend). Substitute the given number into this equation."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "You should have x / 4 = 9. To find 'x', you need to perform the inverse operation. What is the opposite of dividing by 4?"\n                }\n            ],\n            "full_solution": "Let x be the number of marbles Raju had at first.\nHe shared them equally among 4 friends, so each friend received x / 4 marbles.\nEach friend received 9 marbles.\nSo, x / 4 = 9.\nTo find x, multiply both sides of the equation by 4:\nx = 9 * 4\nx = 36\nRaju had 36 marbles at first."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q5",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Ages of Siblings",\n        "complexity": "Easy",\n        "problem_text": "Siti is 3 years older than her brother, Adam. If Siti is 11 years old, how old is Adam?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 2,\n        "answer_details": {\n            "correct_answer": "8",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 8. The student should set up an equation like x + 3 = 11 or 11 - 3 = x and solve for x.",\n            "keywords": ["algebra", "equation", "age", "older than", "younger than"],\n            "common_misconceptions": {\n                "14": "Adding 11 and 3. This would be if Adam was 3 years older than Siti, not the other way around.",\n                "3": "Stating the age difference, not Adam's age."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'a' represent Adam's age. The problem states Siti is 3 years older than Adam. How would you express Siti's age in terms of 'a'?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "Siti's age is Adam's age plus 3. So, a + 3 = (Siti's age). Substitute Siti's actual age into the equation."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "You should have a + 3 = 11. To find 'a', perform the inverse operation. What is the opposite of adding 3?"\n                }\n            ],\n            "full_solution": "Let a be Adam's age.\nSiti is 3 years older than Adam, so Siti's age is a + 3.\nWe are given that Siti is 11 years old.\nSo, a + 3 = 11.\nTo find a, subtract 3 from both sides of the equation:\na = 11 - 3\na = 8\nAdam is 8 years old."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q6",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Fruits in a Basket",\n        "complexity": "Easy",\n        "problem_text": "A basket contains some apples and 8 oranges. If there are a total of 23 fruits in the basket, how many apples are there?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 2,\n        "answer_details": {\n            "correct_answer": "15",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 15. The student should set up an equation like x + 8 = 23 and solve for x.",\n            "keywords": ["algebra", "equation", "fruits", "total", "some", "apples", "oranges"],\n            "common_misconceptions": {\n                "31": "Adding 23 and 8 instead of subtracting. This would represent the total if there were 23 apples and 8 oranges.",\n                "8": "Stating the number of oranges, not apples."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'a' represent the number of apples. You know the number of oranges and the total number of fruits. How can you write an equation using these numbers?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "The total number of fruits is the sum of apples and oranges. So, a + (number of oranges) = (total fruits). Fill in the numbers."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "You should have a + 8 = 23. To find 'a', you need to perform the inverse operation. What is the opposite of adding 8?"\n                }\n            ],\n            "full_solution": "Let a be the number of apples in the basket.\nThere are 8 oranges.\nThe total number of fruits is 23.\nSo, a + 8 = 23.\nTo find a, subtract 8 from both sides of the equation:\na = 23 - 8\na = 15\nThere are 15 apples in the basket."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q7",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Laps in a Park",\n        "complexity": "Easy",\n        "problem_text": "Each lap around Bishan-Ang Mo Kio Park is 3 km. John jogged a certain number of laps and covered a total distance of 18 km. How many laps did John jog?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 2,\n        "answer_details": {\n            "correct_answer": "6",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 6. The student should set up an equation like 3x = 18 and solve for x.",\n            "keywords": ["algebra", "equation", "laps", "distance", "total", "each", "jog"],\n            "common_misconceptions": {\n                "54": "Multiplying 18 by 3 instead of dividing. This would be if he covered 18 km per lap.",\n                "15": "Subtracting 3 from 18, which is not relevant to distance and laps."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'L' represent the number of laps John jogged. You know the distance of one lap and the total distance covered. How can you write an equation using these numbers?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "The total distance is the distance per lap multiplied by the number of laps. So, (distance per lap) × L = (total distance). Fill in the numbers."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "You should have 3L = 18. To find 'L', you need to perform the inverse operation. What is the opposite of multiplying by 3?"\n                }\n            ],\n            "full_solution": "Let L be the number of laps John jogged.\nEach lap is 3 km.\nThe total distance covered is 18 km.\nSo, 3 * L = 18.\nTo find L, divide both sides of the equation by 3:\nL = 18 / 3\nL = 6\nJohn jogged 6 laps."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q8",\n        "sub_topic": "1.4 Word Problems",\n        "title": "School Supplies",\n        "complexity": "Medium",\n        "problem_text": "Cai Ling bought 4 pencils and a ruler. Each pencil cost $2 and the ruler cost $5. How much change did she get if she paid with a $20 note?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 3,\n        "answer_details": {\n            "correct_answer": "7",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 7. The student needs to calculate the total cost (4*2 + 5 = 13) and then find the change (20 - 13 = 7).",\n            "keywords": ["algebra", "equation", "cost", "change", "total", "pencils", "ruler", "money"],\n            "common_misconceptions": {\n                "15": "Only calculating the cost of pencils and ruler ($8 + $5 = $13) and not subtracting from $20, or making an error in calculation.",\n                "13": "Providing the total cost instead of the change.",\n                "10": "Calculating (20-5)/2 or some other incorrect operation, not following the sequence of cost calculation."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "First, calculate the total cost of the pencils. Then add the cost of the ruler to find the total amount Cai Ling spent."\n                },\n                {\n                    "step": 2,\n                    "hint_text": "Let 'P' be the cost of one pencil and 'R' be the cost of the ruler. The total spent is (number of pencils × P) + R. Calculate this value."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "Once you have the total amount spent, subtract this from the $20 note to find the change. Equation: Change = (Amount paid) - (Total spent)."\n                }\n            ],\n            "full_solution": "Let P be the cost of one pencil and R be the cost of the ruler.\nCost of 4 pencils = 4 × $2 = $8\nCost of 1 ruler = $5\nTotal amount spent = Cost of pencils + Cost of ruler\nTotal amount spent = $8 + $5 = $13\nAmount paid = $20\nChange received = Amount paid - Total amount spent\nChange received = $20 - $13 = $7\nCai Ling received $7 change."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q9",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Stamps Collection",\n        "complexity": "Medium",\n        "problem_text": "Chloe has 7 more stamps than David. Together, they have a total of 55 stamps. How many stamps does David have?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 3,\n        "answer_details": {\n            "correct_answer": "24",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 24. The student should set up an equation like x + (x + 7) = 55 or 2x + 7 = 55 and solve for x.",\n            "keywords": ["algebra", "equation", "stamps", "more than", "together", "total"],\n            "common_misconceptions": {\n                "31": "Calculating (55-7)/2 and then adding 7, giving Chloe's stamps (31) instead of David's.",\n                "48": "Subtracting 7 from 55, which assumes Chloe has 7 fewer stamps than David, or misunderstanding the 'together' part.",\n                "62": "Adding 7 to 55, or not correctly setting up the combined total."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'd' represent the number of stamps David has. How would you express the number of stamps Chloe has in terms of 'd'?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "Chloe has 'd + 7' stamps. Together, they have 55 stamps. So, (David's stamps) + (Chloe's stamps) = (Total stamps). Write this as an equation."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "You should have d + (d + 7) = 55, which simplifies to 2d + 7 = 55. Now, solve for 'd' by first subtracting 7 from both sides, then dividing by 2."\n                }\n            ],\n            "full_solution": "Let d be the number of stamps David has.\nChloe has 7 more stamps than David, so Chloe has d + 7 stamps.\nTogether, they have 55 stamps.\nSo, d + (d + 7) = 55\n2d + 7 = 55\nSubtract 7 from both sides:\n2d = 55 - 7\n2d = 48\nDivide both sides by 2:\nd = 48 / 2\nd = 24\nDavid has 24 stamps."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q10",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Sharing Sweets",\n        "complexity": "Medium",\n        "problem_text": "Mr. Lee distributed a packet of sweets equally among 7 children. Each child received 8 sweets, and Mr. Lee had 3 sweets left over. How many sweets were there in the packet at first?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 3,\n        "answer_details": {\n            "correct_answer": "59",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 59. The student should calculate 7 * 8 + 3 = 59.",\n            "keywords": ["algebra", "equation", "sweets", "equally", "left over", "total", "packet"],\n            "common_misconceptions": {\n                "56": "Only calculating 7 * 8, forgetting to add the leftover sweets.",\n                "61": "Calculating 7 * 8 + 3 + 2 or similar addition errors.",\n                "11": "Adding 7, 8, and 3 instead of multiplying and adding."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "First, consider the total number of sweets that were distributed among the children. If each of 7 children received 8 sweets, how many sweets were distributed?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "Let 'x' be the total number of sweets in the packet. The number of sweets distributed can be found by (number of children) × (sweets per child). After distribution, there were 3 left over. So, x = (sweets distributed) + (left over sweets)."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "You should calculate (7 × 8) + 3. Perform the multiplication first, then the addition, to find the total number of sweets."\n                }\n            ],\n            "full_solution": "Let x be the number of sweets in the packet at first.\nNumber of children = 7\nSweets per child = 8\nNumber of sweets distributed = 7 × 8 = 56\nSweets left over = 3\nTotal sweets in the packet = Sweets distributed + Sweets left over\nx = 56 + 3\nx = 59\nThere were 59 sweets in the packet at first."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q11",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Vehicles in a Carpark",\n        "complexity": "Medium",\n        "problem_text": "In a multi-storey carpark, there are cars and motorcycles. There are 15 more cars than motorcycles. If there are a total of 180 wheels, how many motorcycles are there? (A car has 4 wheels, a motorcycle has 2 wheels)",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 3,\n        "answer_details": {\n            "correct_answer": "20",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 20. The student should set up an equation. Let m be the number of motorcycles. Then cars = m+15. Total wheels = 2m + 4(m+15) = 180. Solve for m.",\n            "keywords": ["algebra", "equation", "vehicles", "wheels", "carpark", "more than", "total"],\n            "common_misconceptions": {\n                "35": "Finding the number of cars (20+15=35) instead of motorcycles.",\n                "180/4": "Only considering cars or ignoring the relationship between car and motorcycle numbers.",\n                "180/2": "Only considering motorcycles or ignoring the relationship between car and motorcycle numbers."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'm' be the number of motorcycles. Since there are 15 more cars than motorcycles, how can you express the number of cars in terms of 'm'?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "The number of cars is 'm + 15'. Now, think about the total number of wheels. Each motorcycle has 2 wheels, and each car has 4 wheels. Set up an equation for the total wheels: (2 × m) + (4 × (m + 15)) = 180."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "Simplify the equation: 2m + 4m + 60 = 180. Combine the 'm' terms (6m), then subtract 60 from both sides. Finally, divide to find 'm'."\n                }\n            ],\n            "full_solution": "Let m be the number of motorcycles.\nNumber of cars = m + 15\n\nNumber of wheels from motorcycles = 2m\nNumber of wheels from cars = 4(m + 15)\n\nTotal wheels = 180\n\nSo, 2m + 4(m + 15) = 180\n2m + 4m + 60 = 180 (Distribute 4 into the bracket)\n6m + 60 = 180 (Combine like terms)\n\nSubtract 60 from both sides:\n6m = 180 - 60\n6m = 120\n\nDivide by 6:\nm = 120 / 6\nm = 20\nThere are 20 motorcycles."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q12",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Hawker Centre Lunch",\n        "complexity": "Medium",\n        "problem_text": "Ali bought a plate of chicken rice and 2 packets of Milo from the hawker centre. The chicken rice cost $3 and each packet of Milo cost $x. If Ali paid a total of $9, how much did each packet of Milo cost?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 3,\n        "answer_details": {\n            "correct_answer": "3",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 3. The student should set up an equation like 3 + 2x = 9 and solve for x.",\n            "keywords": ["algebra", "equation", "cost", "total", "each", "hawker centre", "Milo", "chicken rice"],\n            "common_misconceptions": {\n                "6": "Only finding the cost of the two Milo packets (9-3=6) and not dividing by 2.",\n                "12": "Adding 3 and 9, or multiplying something incorrectly.",\n                "1.5": "Calculating 3/2, or incorrectly dividing (9-3)/3 instead of (9-3)/2."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'x' be the cost of one packet of Milo. If Ali bought 2 packets of Milo, how much did he spend on Milo in total?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "The total cost is the cost of chicken rice plus the cost of 2 Milo packets. So, 3 + 2x = (total paid). Set up the equation using the given total cost."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "You should have 3 + 2x = 9. First, subtract 3 from both sides. Then, divide by 2 to find 'x'."\n                }\n            ],\n            "full_solution": "Let x be the cost of each packet of Milo.\nCost of chicken rice = $3\nCost of 2 packets of Milo = 2x\nTotal amount paid = $9\n\nEquation: Cost of chicken rice + Cost of 2 Milo packets = Total paid\n3 + 2x = 9\n\nSubtract 3 from both sides:\n2x = 9 - 3\n2x = 6\n\nDivide by 2:\nx = 6 / 2\nx = 3\nEach packet of Milo cost $3."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q13",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Numbers in a Sequence",\n        "complexity": "Medium",\n        "problem_text": "The sum of three consecutive whole numbers is 63. What is the smallest of these three numbers?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 3,\n        "answer_details": {\n            "correct_answer": "20",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 20. The student should set up an equation like x + (x+1) + (x+2) = 63 or 3x + 3 = 63 and solve for x.",\n            "keywords": ["algebra", "equation", "consecutive", "whole numbers", "sum", "smallest"],\n            "common_misconceptions": {\n                "21": "Finding the middle number (63/3 = 21) but not identifying the smallest.",\n                "19": "Guessing or incorrect calculation of the smallest number, perhaps by subtracting 2 from the middle number instead of 1.",\n                "63/3": "Providing the average as the answer, which is the middle number, not the smallest."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'x' be the smallest of the three consecutive whole numbers. How would you represent the next two consecutive whole numbers in terms of 'x'?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "The three numbers are x, x+1, and x+2. Their sum is 63. Write this as an equation: x + (x+1) + (x+2) = 63."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "Simplify the equation by combining the 'x' terms and the constant terms. You should get 3x + 3 = 63. Then, solve for 'x' by first subtracting 3 from both sides, and then dividing by 3."\n                }\n            ],\n            "full_solution": "Let the smallest whole number be x.\nThe next consecutive whole number is x + 1.\nThe third consecutive whole number is x + 2.\n\nThe sum of these three numbers is 63.\nx + (x + 1) + (x + 2) = 63\nCombine like terms:\n3x + 3 = 63\n\nSubtract 3 from both sides:\n3x = 63 - 3\n3x = 60\n\nDivide by 3:\nx = 60 / 3\nx = 20\nThe smallest of the three numbers is 20."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q14",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Mother and Child Ages",\n        "complexity": "Medium",\n        "problem_text": "A mother is currently 3 times as old as her daughter. In 5 years' time, their combined age will be 66. How old is the daughter now?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 3,\n        "answer_details": {\n            "correct_answer": "14",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 14. The student needs to set up variables for current ages (daughter x, mother 3x), then adjust for future ages (daughter x+5, mother 3x+5), and sum them for the equation: (x+5) + (3x+5) = 66.",\n            "keywords": ["algebra", "equation", "age", "combined age", "in x years", "current age", "times as old"],\n            "common_misconceptions": {\n                "15": "Calculating 66/4 or similar, without adjusting for the 5 years in the future for *both* individuals.",\n                "19": "Getting the daughter's age in 5 years, instead of her current age.",\n                "22": "Directly dividing total age by 3, ignoring the mother's multiple and future age."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'd' be the daughter's current age. How would you express the mother's current age in terms of 'd'? How would you express both their ages in 5 years' time?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "Daughter's current age = d. Mother's current age = 3d.\nIn 5 years: Daughter's age = d+5. Mother's age = 3d+5.\nTheir combined age in 5 years is 66. Set up the equation: (d+5) + (3d+5) = 66."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "Simplify the equation: d + 3d + 5 + 5 = 66, which becomes 4d + 10 = 66. Solve for 'd' by subtracting 10 from both sides, then dividing by 4."\n                }\n            ],\n            "full_solution": "Let the daughter's current age be d years.\nMother's current age = 3d years.\n\nIn 5 years' time:\nDaughter's age will be d + 5 years.\nMother's age will be 3d + 5 years.\n\nTheir combined age in 5 years will be 66.\n(d + 5) + (3d + 5) = 66\n\nCombine like terms:\nd + 3d + 5 + 5 = 66\n4d + 10 = 66\n\nSubtract 10 from both sides:\n4d = 66 - 10\n4d = 56\n\nDivide by 4:\nd = 56 / 4\nd = 14\n\nThe daughter is currently 14 years old."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q15",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Money Distribution",\n        "complexity": "Hard",\n        "problem_text": "Jiale, Kai, and Lim shared a sum of money. Jiale received twice as much as Kai. Lim received $10 less than Jiale. If the total sum of money shared was $170, how much money did Kai receive?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 4,\n        "answer_details": {\n            "correct_answer": "36",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 36. The student needs to define variables for each person based on one variable (e.g., Kai=x, Jiale=2x, Lim=2x-10) and sum them to form the equation: x + 2x + (2x-10) = 170.",\n            "keywords": ["algebra", "equation", "money", "twice as much", "less than", "total sum", "shared"],\n            "common_misconceptions": {\n                "72": "Finding Jiale's share instead of Kai's (36*2=72).",\n                "62": "Finding Lim's share instead of Kai's (72-10=62).",\n                "60": "Incorrectly assuming equal shares or simple division, e.g. 180/3 = 60.",\n                "34": "Errors in combining terms or solving the equation, e.g., 5x = 170."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'k' represent the amount of money Kai received. Based on the problem, how can you express the amounts Jiale and Lim received in terms of 'k'?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "Jiale received 2k. Lim received 2k - 10. The total sum is the sum of all their shares: k + 2k + (2k - 10) = 170. Set up and simplify this equation."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "Simplify the equation to 5k - 10 = 170. First, add 10 to both sides. Then, divide by 5 to find 'k'."\n                }\n            ],\n            "full_solution": "Let k be the amount of money Kai received.\nJiale received twice as much as Kai, so Jiale received 2k.\nLim received $10 less than Jiale, so Lim received 2k - 10.\n\nThe total sum of money shared was $170.\nSum of their money = Kai's money + Jiale's money + Lim's money\nk + 2k + (2k - 10) = 170\n\nCombine like terms:\nk + 2k + 2k - 10 = 170\n5k - 10 = 170\n\nAdd 10 to both sides:\n5k = 170 + 10\n5k = 180\n\nDivide by 5:\nk = 180 / 5\nk = 36\nKai received $36."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q16",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Concert Ticket Sales",\n        "complexity": "Hard",\n        "problem_text": "A school concert sold 250 tickets in total. Adult tickets cost $15 each and child tickets cost $8 each. If the total amount collected from ticket sales was $3050, how many child tickets were sold?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 4,\n        "answer_details": {\n            "correct_answer": "100",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 100. The student needs to define one variable (e.g., child tickets = x), express the other (adult tickets = 250-x), and form the equation: 8x + 15(250-x) = 3050.",\n            "keywords": ["algebra", "equation", "tickets", "sales", "total amount", "cost", "adult", "child"],\n            "common_misconceptions": {\n                "150": "Finding the number of adult tickets instead of child tickets (250-100=150).",\n                "125": "Assuming an equal number of adult and child tickets (250/2 = 125).",\n                "200": "Errors in distribution or calculation after setting up the equation, leading to wrong x."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'c' be the number of child tickets sold. Since there were 250 tickets sold in total, how can you express the number of adult tickets in terms of 'c'?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "Number of adult tickets = 250 - c. Now, form an equation for the total amount collected: (cost of child tickets × c) + (cost of adult tickets × (250 - c)) = Total collected."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "The equation is 8c + 15(250 - c) = 3050. Distribute the 15, then combine the 'c' terms. You will get 8c + 3750 - 15c = 3050. Simplify this to -7c + 3750 = 3050, then solve for 'c' by rearranging terms."\n                }\n            ],\n            "full_solution": "Let c be the number of child tickets sold.\nTotal tickets sold = 250\nNumber of adult tickets sold = 250 - c\n\nCost of child tickets = $8 each\nCost of adult tickets = $15 each\nTotal amount collected = $3050\n\nEquation for total amount collected:\n(Number of child tickets × Cost per child ticket) + (Number of adult tickets × Cost per adult ticket) = Total collected\n8c + 15(250 - c) = 3050\n\nExpand the bracket:\n8c + (15 × 250) - (15 × c) = 3050\n8c + 3750 - 15c = 3050\n\nCombine like terms:\n-7c + 3750 = 3050\n\nSubtract 3750 from both sides:\n-7c = 3050 - 3750\n-7c = -700\n\nDivide by -7:\nc = -700 / -7\nc = 100\n\nThere were 100 child tickets sold."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q17",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Marbles in a Bag",\n        "complexity": "Hard",\n        "problem_text": "A bag contains red and blue marbles. The number of red marbles is 3 times the number of blue marbles. If 6 red marbles are removed and 2 blue marbles are added, the number of red marbles becomes twice the number of blue marbles. How many red marbles were there at first?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 4,\n        "answer_details": {\n            "correct_answer": "30",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 30. The student needs to define initial counts (blue=x, red=3x), then adjust for changes (red becomes 3x-6, blue becomes x+2), and set up the new relationship: 3x-6 = 2(x+2). Solve for x, then find 3x.",\n            "keywords": ["algebra", "equation", "marbles", "ratio", "removed", "added", "times", "at first"],\n            "common_misconceptions": {\n                "10": "Finding the initial number of blue marbles (x=10) instead of red (3x).",\n                "24": "Errors in distribution or calculation after setting up the equation, leading to wrong x.",\n                "36": "Adding 6 instead of subtracting, or similar sign errors when solving for x."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'x' be the initial number of blue marbles. How would you express the initial number of red marbles in terms of 'x'?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "Initial red marbles = 3x. Initial blue marbles = x. After changes: new red marbles = 3x - 6, new blue marbles = x + 2. Now, set up the new relationship: (new red marbles) = 2 × (new blue marbles)."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "The equation is 3x - 6 = 2(x + 2). Distribute the 2 on the right side. You will get 3x - 6 = 2x + 4. Bring the 'x' terms to one side and constants to the other side to solve for 'x'. Remember to find the initial number of red marbles (3x) after finding 'x'."\n                }\n            ],\n            "full_solution": "Let x be the initial number of blue marbles.\nInitial number of red marbles = 3x (since red marbles is 3 times the blue marbles)\n\nAfter changes:\nNew number of red marbles = 3x - 6 (6 red marbles removed)\nNew number of blue marbles = x + 2 (2 blue marbles added)\n\nNew relationship: The number of red marbles becomes twice the number of blue marbles.\n3x - 6 = 2(x + 2)\n\nExpand the bracket:\n3x - 6 = 2x + 4\n\nSubtract 2x from both sides:\n3x - 2x - 6 = 4\nx - 6 = 4\n\nAdd 6 to both sides:\nx = 4 + 6\nx = 10\n\nThis 'x' is the initial number of blue marbles. The question asks for the initial number of red marbles.\nInitial number of red marbles = 3x = 3 × 10 = 30.\nThere were 30 red marbles at first."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q18",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Community Garden Plot",\n        "complexity": "Hard",\n        "problem_text": "A rectangular community garden plot has a length that is 5 metres more than its width. If the perimeter of the garden plot is 70 metres, what is the width of the garden plot?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 4,\n        "answer_details": {\n            "correct_answer": "15",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 15. The student needs to define variables for width (x) and length (x+5), then use the perimeter formula P = 2(L+W) to form the equation: 2(x + x+5) = 70.",\n            "keywords": ["algebra", "equation", "perimeter", "rectangle", "length", "width", "metres", "more than"],\n            "common_misconceptions": {\n                "20": "Finding the length (15+5=20) instead of the width.",\n                "35": "Dividing the perimeter by 2 (semi-perimeter) but then miscalculating dimensions.",\n                "10": "Errors in combining terms or solving the equation, e.g., 4x = 70."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'w' be the width of the garden plot. How would you express the length of the garden plot in terms of 'w'?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "Length = w + 5. The formula for the perimeter of a rectangle is P = 2(Length + Width). Substitute the expressions for length and width, and the given perimeter, into this formula."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "You should have 2((w + 5) + w) = 70. Simplify the expression inside the bracket first: 2(2w + 5) = 70. Then, distribute the 2: 4w + 10 = 70. Now, solve for 'w' by subtracting 10 from both sides, then dividing by 4."\n                }\n            ],\n            "full_solution": "Let w be the width of the garden plot in metres.\nThe length of the garden plot is 5 metres more than its width, so length = w + 5 metres.\n\nThe perimeter of the garden plot is 70 metres.\nFormula for perimeter of a rectangle: P = 2(Length + Width)\n70 = 2((w + 5) + w)\n\nSimplify the expression inside the bracket:\n70 = 2(2w + 5)\n\nDistribute the 2:\n70 = 4w + 10\n\nSubtract 10 from both sides:\n70 - 10 = 4w\n60 = 4w\n\nDivide by 4:\nw = 60 / 4\nw = 15\n\nThe width of the garden plot is 15 metres."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q19",\n        "sub_topic": "1.4 Word Problems",\n        "title": "School Camp Attendance",\n        "complexity": "Hard",\n        "problem_text": "A total of 120 students signed up for a school camp. 2/3 of the students who signed up were boys. On the day of the camp, 5 boys were absent, and 3 girls joined last minute. How many girls attended the camp?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 4,\n        "answer_details": {\n            "correct_answer": "43",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 43. The student needs to calculate initial numbers (boys = 2/3 * 120 = 80, girls = 1/3 * 120 = 40), then adjust for changes (boys = 80-5=75, girls = 40+3=43) and answer for girls.",\n            "keywords": ["algebra", "equation", "fraction", "total", "boys", "girls", "absent", "joined", "attended"],\n            "common_misconceptions": {\n                "75": "Finding the number of boys who attended instead of girls.",\n                "80": "Finding the initial number of boys who signed up.",\n                "40": "Finding the initial number of girls who signed up, not accounting for changes.",\n                "115": "Calculating total attendees (120-5+3=118) and misinterpreting the question."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "First, calculate the initial number of boys and girls who signed up based on the fraction given for boys and the total number of students."\n                },\n                {\n                    "step": 2,\n                    "hint_text": "Number of boys signed up = (2/3) × 120. Number of girls signed up = (1/3) × 120 (or 120 - boys). Now, consider the changes: 5 boys absent, 3 girls joined last minute. Adjust the counts for boys and girls separately."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "To find the number of girls who attended: (Initial girls signed up) + (girls who joined). Only focus on the girls' numbers to get the final answer. Boys' numbers are for context."\n                }\n            ],\n            "full_solution": "Total students signed up = 120\n\nNumber of boys signed up = (2/3) × 120 = 80 boys\nNumber of girls signed up = 120 - 80 = 40 girls\n\nOn the day of the camp:\n5 boys were absent, so boys who attended = 80 - 5 = 75 boys.\n3 girls joined last minute, so girls who attended = 40 + 3 = 43 girls.\n\nThe question asks for the number of girls who attended the camp.\nNumber of girls who attended the camp = 43."\n        }\n    },\n    {\n        "id": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q20",\n        "sub_topic": "1.4 Word Problems",\n        "title": "Packing Goodie Bags",\n        "complexity": "Hard",\n        "problem_text": "Madam Lim has a large box of candy. If she packs 5 candies into each goodie bag, she will have 20 candies left over. If she packs 7 candies into each goodie bag, she will be short of 10 candies. How many goodie bags does Madam Lim have?",\n        "asset": {\n            "image_url": null,\n            "svg_code": null\n        },\n        "marks": 4,\n        "answer_details": {\n            "correct_answer": "15",\n            "alternative_answers": [],\n            "answer_format": "numeric"\n        },\n        "ai_guidance": {\n            "evaluation_strategy": "Check if the answer is 15. The student needs to define one variable (number of goodie bags = x), set up two expressions for the total number of candies, and equate them: 5x + 20 = 7x - 10.",\n            "keywords": ["algebra", "equation", "candies", "goodie bags", "left over", "short of", "total", "pack"],\n            "common_misconceptions": {\n                "150": "Finding the total number of candies instead of goodie bags (5*15+20=95 or 7*15-10=95).",\n                "10": "Errors in isolating the variable, such as adding 10 to both sides instead of subtracting, or misinterpreting the 'short of' part.",\n                "5": "Dividing the numbers incorrectly or not setting up the equation correctly."\n            },\n            "hints": [\n                {\n                    "step": 1,\n                    "hint_text": "Let 'g' be the number of goodie bags Madam Lim has. Can you write two different expressions for the total number of candies she has, based on the two scenarios given?"\n                },\n                {\n                    "step": 2,\n                    "hint_text": "Scenario 1: 5 candies per bag, 20 left over. Total candies = 5g + 20.\nScenario 2: 7 candies per bag, 10 short. Total candies = 7g - 10.\nSince the total number of candies is the same in both scenarios, you can set these two expressions equal to each other."\n                },\n                {\n                    "step": 3,\n                    "hint_text": "Your equation should be 5g + 20 = 7g - 10. To solve, collect the 'g' terms on one side and the constant terms on the other. For example, subtract 5g from both sides, then add 10 to both sides. Then divide to find 'g'."\n                }\n            ],\n            "full_solution": "Let g be the number of goodie bags Madam Lim has.\n\nFrom the first scenario:\nIf she packs 5 candies into each goodie bag, she will have 20 candies left over.\nTotal number of candies = 5g + 20\n\nFrom the second scenario:\nIf she packs 7 candies into each goodie bag, she will be short of 10 candies.\nTotal number of candies = 7g - 10\n\nSince the total number of candies is the same in both scenarios, we can set the two expressions equal to each other:\n5g + 20 = 7g - 10\n\nSubtract 5g from both sides:\n20 = 7g - 5g - 10\n20 = 2g - 10\n\nAdd 10 to both sides:\n20 + 10 = 2g\n30 = 2g\n\nDivide by 2:\ng = 30 / 2\ng = 15\n\nMadam Lim has 15 goodie bags."\n        }\n    }\n]
