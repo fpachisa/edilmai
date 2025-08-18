@@ -1,5 +1,6 @@
 from api.services.repositories import InMemoryItemsRepo, InMemorySessionsRepo, InMemoryProfilesRepo, InMemoryParentsRepo
 from api.services.firestore_repository import get_firestore_repository
+from api.services.progression import ProgressionService
 from api.core.config import settings
 import os
 
@@ -60,6 +61,21 @@ class FirestoreItemsRepo:
             if item:
                 return item
         return None
+    
+    def get_all_items(self) -> dict:
+        """Get all curriculum items across all subjects"""
+        all_items = {}
+        subjects = ['algebra', 'fractions', 'percentage', 'ratio', 'speed', 'geometry', 'statistics']
+        for subject in subjects:
+            try:
+                items = self._sync_call(self.firestore.get_all_curriculum_items(subject))
+                for item in items:
+                    if item and 'id' in item:
+                        all_items[item['id']] = item
+            except Exception:
+                # Subject might not exist yet, continue
+                pass
+        return all_items
         
     def _sync_call(self, coro):
         """Temporary sync wrapper - will be replaced with proper async"""
@@ -205,3 +221,6 @@ ITEMS_REPO = repos['items']
 SESSIONS_REPO = repos['sessions'] 
 PROFILES_REPO = repos['profiles']
 PARENTS_REPO = repos['parents']
+
+# Initialize progression service
+PROGRESSION_SERVICE = ProgressionService()

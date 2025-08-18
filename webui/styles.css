@@ -1,16 +1,63 @@
-:root { --bg: #0f1220; --fg: #e8eaf6; --muted: #9fa8da; --card: #161a2e; --accent: #7c83ff; }
+:root {
+  /* Brand */
+  --brand-primary: #5ba843;
+  --brand-secondary: #3b969d;
+  --brand-accent: #6c38b8;
+  --brand-accent2: #a24578;
+  --brand-accent3: #dbb10f;
+
+  /* Surfaces (dark default for demo UI) */
+  --surface-bg: #121316;
+  --surface-card: #17181d;
+  --surface-panel: #1f2026;
+
+  /* Text */
+  --text-primary: #edeff3;
+  --text-secondary: #c7cbd3;
+  --text-muted: #8b919d;
+
+  /* Outline */
+  --outline: #505765;
+
+  /* Semantic */
+  --success: #88e071; --success-contrast: #0e210a; --success-container: #1f4620; --success-container-contrast: #c9f3c1;
+  --warning: #ffd34d; --warning-contrast: #241a00; --warning-container: #3a2d00; --warning-container-contrast: #ffe89b;
+  --error: #ff8a50; --error-contrast: #230a02; --error-container: #4a1a06; --error-container-contrast: #ffd6c2;
+  --info: #70d4da; --info-contrast: #0b1a1b; --info-container: #124045; --info-container-contrast: #cbeff1;
+
+  /* Legacy aliases used in this file */
+  --bg: var(--surface-bg);
+  --fg: var(--text-primary);
+  --muted: var(--text-muted);
+  --card: var(--surface-card);
+  --accent: var(--brand-primary);
+}
 * { box-sizing: border-box; }
-body { margin: 0; font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: linear-gradient(180deg, #0e1224 0%, #0b0f1f 100%); color: var(--fg); }
+body { margin: 0; font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: linear-gradient(180deg, #0f1115 0%, #0b0f14 100%); color: var(--fg); }
 .container { max-width: 900px; margin: 40px auto; padding: 0 16px; }
 h1 { font-size: 24px; margin: 0 0 16px; color: #fff; }
 .row { display: flex; gap: 8px; align-items: center; margin: 12px 0; flex-wrap: wrap; }
-.card { background: var(--card); border: 1px solid #212648; border-radius: 12px; padding: 12px; margin: 12px 0; }
+.card { background: var(--card); border: 1px solid var(--outline); border-radius: 12px; padding: 12px; margin: 12px 0; }
 .card.small { font-size: 12px; color: var(--muted); }
 label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 6px; }
-input { background: #0b0f1f; border: 1px solid #2b315e; color: var(--fg); padding: 10px 12px; border-radius: 10px; min-width: 180px; }
+input { background: var(--surface-panel); border: 1px solid var(--outline); color: var(--fg); padding: 10px 12px; border-radius: 10px; min-width: 180px; }
 button { background: var(--accent); color: #0b0f1f; border: none; border-radius: 10px; padding: 10px 14px; font-weight: 600; cursor: pointer; }
 button:disabled { background: #3a3f6f; cursor: not-allowed; }
-.prompt { margin: 16px 0; padding: 16px; background: #121634; border: 1px solid #232a5b; border-radius: 12px; }
-.hint { margin: 8px 0 16px; color: #ffc385; }
-.log { background: #0b0f1f; border: 1px solid #232a5b; border-radius: 12px; padding: 12px; height: 160px; overflow: auto; color: #b3b8e0; }
+.prompt { margin: 16px 0; padding: 16px; background: var(--surface-panel); border: 1px solid var(--outline); border-radius: 12px; }
+.hint { margin: 8px 0 16px; color: var(--warning); }
+.log { background: var(--surface-panel); border: 1px solid var(--outline); border-radius: 12px; padding: 12px; height: 160px; overflow: auto; color: var(--text-secondary); }
 
+/* Light theme override */
+[data-theme="light"] {
+  --surface-bg: #ffffff;
+  --surface-card: #f8fafc;
+  --surface-panel: #eff2f6;
+  --text-primary: #0f1115;
+  --text-secondary: #343a45;
+  --text-muted: #6e7583;
+  --outline: #a8adb7;
+  --success: #5ba843; --success-contrast: #ffffff; --success-container: #e1f4dc; --success-container-contrast: #163312;
+  --warning: #dbb10f; --warning-contrast: #1f1600; --warning-container: #fff5cc; --warning-container-contrast: #2a2000;
+  --error: #e6662a; --error-contrast: #ffffff; --error-container: #ffe2d6; --error-container-contrast: #3b0b00;
+  --info: #3b969d; --info-contrast: #ffffff; --info-container: #d2eef0; --info-container-contrast: #0e2b2d;
+}

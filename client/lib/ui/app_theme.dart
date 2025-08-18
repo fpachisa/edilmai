@@ -7,14 +7,15 @@ class AppTheme {
   static ThemeData theme() {
     final base = ThemeData(useMaterial3: true, brightness: Brightness.dark);
     final scheme = ColorScheme.fromSeed(
-      seedColor: DesignTokens.primaryMagic,
+      seedColor: DesignTokens.primaryTechOrange,
       brightness: Brightness.dark,
     );
     
     return base.copyWith(
       colorScheme: scheme.copyWith(
-        primary: DesignTokens.primaryMagic,
-        secondary: DesignTokens.primaryMagicLight,
+        primary: DesignTokens.primaryTechOrange,
+        secondary: DesignTokens.accentTechCyan,
+        tertiary: DesignTokens.primaryTechOrangeLight,
         surface: DesignTokens.neutralSurface,
         background: DesignTokens.neutralDark,
         error: DesignTokens.errorPulse,
@@ -255,9 +256,10 @@ class AppTheme {
 }
 
 class AppGradients {
-  static const List<Color> hero = [Color(0xFF0F1024), Color(0xFF1A1E3A), Color(0xFF2B2F5B)];
+  // Neutral, sample-based dark hero gradient
+  static const List<Color> hero = [Color(0xFF121316), Color(0xFF17181D), Color(0xFF1F2026)];
   static const LinearGradient primary = LinearGradient(
-    colors: [Color(0xFF6C63FF), Color(0xFF00D4FF)],
+    colors: [Color(0xFF5BA843), Color(0xFF3B969D)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
@@ -353,9 +355,9 @@ class _AnimatedBackgroundState extends State<AnimatedBackground> with SingleTick
   void initState() {
     super.initState();
     _c = AnimationController(vsync: this, duration: const Duration(seconds: 8))..repeat(reverse: true);
-    _c1 = ColorTween(begin: const Color(0xFF0F1024), end: const Color(0xFF1B103A)).animate(CurvedAnimation(parent: _c, curve: Curves.easeInOut));
-    _c2 = ColorTween(begin: const Color(0xFF1A1E3A), end: const Color(0xFF22355A)).animate(CurvedAnimation(parent: _c, curve: Curves.easeInOut));
-    _c3 = ColorTween(begin: const Color(0xFF2B2F5B), end: const Color(0xFF163047)).animate(CurvedAnimation(parent: _c, curve: Curves.easeInOut));
+    _c1 = ColorTween(begin: const Color(0xFF121316), end: const Color(0xFF17181D)).animate(CurvedAnimation(parent: _c, curve: Curves.easeInOut));
+    _c2 = ColorTween(begin: const Color(0xFF17181D), end: const Color(0xFF1F2026)).animate(CurvedAnimation(parent: _c, curve: Curves.easeInOut));
+    _c3 = ColorTween(begin: const Color(0xFF1F2026), end: const Color(0xFF121316)).animate(CurvedAnimation(parent: _c, curve: Curves.easeInOut));
   }
 
   @override

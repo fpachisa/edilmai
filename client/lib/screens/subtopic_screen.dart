@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../ui/app_theme.dart';
+import '../ui/design_tokens.dart';
 import '../data/learning_modules.dart';
 import '../state/game_state.dart';
 import 'tutor_screen.dart';
@@ -26,6 +27,12 @@ class SubtopicScreen extends StatefulWidget {
 
 class _SubtopicScreenState extends State<SubtopicScreen> {
   bool _busy = false;
+  
+  Color _subjectColor() => DesignTokens.getSubjectColor(widget.subStrand);
+  Color _subjectLight() {
+    final h = HSLColor.fromColor(_subjectColor());
+    return h.withLightness((h.lightness + 0.2).clamp(0.0, 1.0)).toColor();
+  }
   
   @override
   Widget build(BuildContext context) {
@@ -131,11 +138,11 @@ class _SubtopicScreenState extends State<SubtopicScreen> {
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
-                  color: Colors.blueAccent.withOpacity(0.2),
+                  color: _subjectColor().withOpacity(0.2),
                 ),
                 child: Icon(
                   _getIconForSubTopic(widget.subTopic),
-                  color: Colors.blueAccent,
+                  color: _subjectColor(),
                   size: 24,
                 ),
               ),
@@ -173,19 +180,19 @@ class _SubtopicScreenState extends State<SubtopicScreen> {
               _InfoChip(
                 icon: Icons.access_time_rounded,
                 label: '${totalMinutes} mins',
-                color: Colors.greenAccent,
+                color: _subjectLight(),
               ),
               const SizedBox(width: 12),
               _InfoChip(
                 icon: Icons.psychology_rounded,
                 label: '${modules.length} modules',
-                color: Colors.purpleAccent,
+                color: Theme.of(context).colorScheme.tertiary,
               ),
               const SizedBox(width: 12),
               _InfoChip(
                 icon: Icons.smart_toy_rounded,
                 label: 'AI Tutor',
-                color: Colors.orangeAccent,
+                color: Theme.of(context).colorScheme.primary,
               ),
             ],
           ),
@@ -702,11 +709,11 @@ class _ModuleCard extends StatelessWidget {
   Color _getDifficultyColor(String difficulty) {
     switch (difficulty.toLowerCase()) {
       case 'beginner':
-        return Colors.greenAccent;
+        return _subjectLight();
       case 'advanced':
-        return Colors.redAccent;
+        return HSLColor.fromColor(_subjectColor()).withLightness((HSLColor.fromColor(_subjectColor()).lightness - 0.15).clamp(0.0, 1.0)).toColor();
       default:
-        return Colors.blueAccent;
+        return _subjectColor();
     }
   }
 }

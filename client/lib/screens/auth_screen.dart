@@ -261,9 +261,9 @@ class _AuthScreenState extends State<AuthScreen>
                   gradient: AppGradients.primary,
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFF6C63FF).withOpacity(0.4),
-                      blurRadius: 25,
-                      spreadRadius: 5,
+                      color: Theme.of(context).colorScheme.primary.withOpacity(0.35),
+                      blurRadius: 24,
+                      spreadRadius: 6,
                     ),
                   ],
                 ),

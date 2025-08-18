@@ -84,7 +84,7 @@ class _CreateLearnerScreenState extends State<CreateLearnerScreen> with TickerPr
                             shape: BoxShape.circle,
                             gradient: AppGradients.primary,
                             boxShadow: [
-                              BoxShadow(color: const Color(0xFF6C63FF).withOpacity(0.45), blurRadius: 28, spreadRadius: 8),
+                              BoxShadow(color: Theme.of(context).colorScheme.primary.withOpacity(0.45), blurRadius: 28, spreadRadius: 8),
                             ],
                           ),
                           child: const Icon(Icons.child_care_rounded, color: Colors.white, size: 46),

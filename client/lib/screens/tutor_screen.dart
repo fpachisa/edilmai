@@ -6,6 +6,7 @@ import '../api_client.dart';
 import '../ui/app_theme.dart';
 import '../state/game_state.dart';
 import '../data/learning_modules.dart';
+import '../ui/components/math_text.dart';
 
 class TutorScreen extends StatefulWidget {
   final String apiBase;
@@ -387,7 +388,7 @@ class _ChatView extends StatelessWidget {
               borderRadius: BorderRadius.circular(16),
               boxShadow: [if (!isTutor) BoxShadow(color: Colors.black.withOpacity(0.25), blurRadius: 18, offset: const Offset(0, 8))],
             ),
-            child: Text(
+            child: MathText(
               m.text,
               style: const TextStyle(height: 1.3),
             ),
@@ -623,7 +624,7 @@ class _MathPreview extends StatelessWidget {
             children: [
               const Icon(Icons.preview_rounded, size: 18, color: Colors.white70),
               const SizedBox(width: 8),
-              Flexible(child: Text(pretty, style: const TextStyle(fontFeatures: [FontFeature.tabularFigures()], height: 1.2))),
+              Flexible(child: SelectableText(pretty, style: const TextStyle(fontFeatures: [FontFeature.tabularFigures()], height: 1.2))),
             ],
           ),
         );
@@ -632,12 +633,35 @@ class _MathPreview extends StatelessWidget {
   }
 
   static String _prettyPrint(String s) {
+    // For input preview, we'll use the same math formatting logic
     var out = s;
+    
+    // Handle LaTeX fractions: $\frac{a}{b}$ -> a/b
+    out = out.replaceAllMapped(RegExp(r'\$\\frac\{([^}]+)\}\{([^}]+)\}\$'), (match) {
+      String numerator = match.group(1) ?? '';
+      String denominator = match.group(2) ?? '';
+      return '$numerator/$denominator';
+    });
+    
+    // Handle simple fractions without LaTeX markers: \frac{a}{b} -> a/b
+    out = out.replaceAllMapped(RegExp(r'\\frac\{([^}]+)\}\{([^}]+)\}'), (match) {
+      String numerator = match.group(1) ?? '';
+      String denominator = match.group(2) ?? '';
+      return '$numerator/$denominator';
+    });
+    
+    // Handle other LaTeX expressions by removing $ delimiters
+    out = out.replaceAllMapped(RegExp(r'\$([^$]+)\$'), (match) {
+      return match.group(1) ?? '';
+    });
+    
+    // Handle common mathematical symbols
     out = out.replaceAll('sqrt', '√');
     out = out.replaceAll('^2', '²');
     out = out.replaceAll('^3', '³');
     out = out.replaceAll('*', '×');
-    out = out.replaceAll('/', '÷');
+    // Note: Don't replace / with ÷ because fractions should show as 3/4, not 3÷4
+    
     return out;
   }
 }

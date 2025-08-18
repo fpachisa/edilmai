@@ -30,31 +30,20 @@ class _CompactSubjectCardState extends State<CompactSubjectCard> {
 
   String _getSubjectEmoji() {
     switch (widget.subject.toLowerCase()) {
-      case 'algebra': return '🔮';
-      case 'fractions': return '🍰';
-      case 'geometry': return '🏛️';
-      case 'speed': return '⚡';
-      case 'ratio': return '⚖️';
-      case 'percentage': return '📊';
-      case 'data-analysis': return '📈';
-      case 'measurement': return '📏';
-      default: return '🧮';
+      case 'algebra': return '🎮';        // Gaming controller for tech theme
+      case 'fractions': return '💾';      // Disk for tech theme
+      case 'geometry': return '🔷';       // Diamond for tech shapes
+      case 'speed': return '⚡';         // Lightning (perfect for tech)
+      case 'ratio': return '⚖️';        // Scale (classic)
+      case 'percentage': return '📊';    // Chart (data tech)
+      case 'data-analysis': return '📡'; // Satellite for tech data
+      case 'measurement': return '📐';   // Triangle ruler for geometry
+      case 'statistics': return '💻';    // Computer for data processing
+      default: return '🔧';             // Tool for tech theme
     }
   }
 
-  Color _getSubjectColor() {
-    switch (widget.subject.toLowerCase()) {
-      case 'algebra': return DesignTokens.algebraMystic;
-      case 'fractions': return DesignTokens.fractionForest;
-      case 'speed': return DesignTokens.speedStorm;
-      case 'ratio': return DesignTokens.ratioRealm;
-      case 'measurement': return DesignTokens.geometryGalaxy;
-      case 'data-analysis': return DesignTokens.statisticsSpace;
-      case 'percentage': return DesignTokens.percentagePlanet;
-      case 'geometry': return DesignTokens.geometryGalaxy;
-      default: return DesignTokens.primaryMagic;
-    }
-  }
+  Color _getSubjectColor() => DesignTokens.getSubjectColor(widget.subject);
 
   @override
   Widget build(BuildContext context) {

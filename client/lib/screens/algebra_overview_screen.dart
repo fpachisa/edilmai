@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../ui/app_theme.dart';
+import '../ui/design_tokens.dart';
 import '../data/syllabus.dart';
 import 'subtopic_screen.dart';
 
@@ -75,11 +76,11 @@ class AlgebraOverviewScreen extends StatelessWidget {
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16),
-                          color: Colors.blueAccent.withOpacity(0.2),
+                          color: DesignTokens.getSubjectColor('algebra').withOpacity(0.2),
                         ),
                         child: const Icon(
                           Icons.functions_rounded,
-                          color: Colors.blueAccent,
+                          color: Color(0xFF5BA843),
                           size: 32,
                         ),
                       ),
@@ -112,13 +113,13 @@ class AlgebraOverviewScreen extends StatelessWidget {
                                 _InfoChip(
                                   icon: Icons.psychology_rounded,
                                   label: 'AI Tutor',
-                                  color: Colors.orangeAccent,
+                                  color: Theme.of(context).colorScheme.primary,
                                 ),
                                 const SizedBox(width: 12),
                                 _InfoChip(
                                   icon: Icons.auto_awesome_rounded,
                                   label: '${algebraSubStrand.subTopics.length} Topics',
-                                  color: Colors.purpleAccent,
+                                  color: Theme.of(context).colorScheme.tertiary,
                                 ),
                               ],
                             ),
@@ -312,12 +313,14 @@ class _SubTopicCard extends StatelessWidget {
   }
 
   Color _getColorForTopic(String topic) {
+    // Derive shades from Algebra base color for consistency
+    final base = DesignTokens.getSubjectColor('algebra');
     final t = topic.toLowerCase();
-    if (t.contains('unknowns') || t.contains('notation')) return Colors.greenAccent;
-    if (t.contains('simplify')) return Colors.blueAccent;
-    if (t.contains('substitution')) return Colors.orangeAccent;
-    if (t.contains('equation')) return Colors.redAccent;
-    return Colors.purpleAccent;
+    if (t.contains('unknowns') || t.contains('notation')) return base;
+    if (t.contains('simplify')) return HSLColor.fromColor(base).withLightness((HSLColor.fromColor(base).lightness + 0.15).clamp(0.0, 1.0)).toColor();
+    if (t.contains('substitution')) return HSLColor.fromColor(base).withLightness((HSLColor.fromColor(base).lightness - 0.10).clamp(0.0, 1.0)).toColor();
+    if (t.contains('equation')) return HSLColor.fromColor(base).withSaturation((HSLColor.fromColor(base).saturation * 0.8).clamp(0.0, 1.0)).toColor();
+    return base;
   }
 
   String _getDescriptionForTopic(String topic) {

@@ -103,23 +103,30 @@ def _dev_auto_ingest_from_assets():
             return
         print(f"ℹ️ Dev auto-ingest scanning: {assets_dir}")
         for path in assets_dir.glob("*.json"):
+            print(f"📄 Processing file: {path.name}")
             try:
                 data = json.loads(path.read_text())
-            except Exception:
+            except Exception as e:
+                print(f"❌ Failed to parse {path.name}: {e}")
                 continue
             # Support both old "items" and new "questions" format
             items = data.get("questions") or data.get("items")
             if not isinstance(items, list):
+                print(f"⚠️ No 'questions' or 'items' list found in {path.name}")
                 continue
+            print(f"📦 Found {len(items)} items in {path.name}")
             for item in items:
                 if not isinstance(item, dict):
                     continue
                 item_id = item.get("id")
                 if not item_id:
+                    print(f"⚠️ Item missing 'id' field, skipping")
                     continue
                 # Skip if already present
                 if ITEMS_REPO.get_item(item_id):
+                    print(f"⏭️ Item {item_id} already exists, skipping")
                     continue
+                print(f"➕ Adding new item: {item_id}")
                 # Normalize minimal fields for backend consumption
                 sv = item.get("student_view") or {}
                 steps = sv.get("steps") or sv.get("socratic_steps") or []
@@ -163,6 +170,7 @@ def _dev_auto_ingest_from_assets():
                     item["evaluation"] = {"rules": {"regex": [], "algebraic_equivalence": True, "llm_fallback": True}, "notes": None}
                 # Put item into repo
                 ITEMS_REPO.put_item(item)
+                print(f"✅ Successfully added item: {item_id}")
         print("💾 Dev auto-ingest completed from client/assets")
     except Exception as e:
         print(f"⚠️ Dev auto-ingest failed: {e}")

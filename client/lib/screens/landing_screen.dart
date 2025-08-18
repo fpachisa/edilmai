@@ -125,7 +125,7 @@ class _LandingScreenState extends State<LandingScreen>
                       gradient: AppGradients.primary,
                       boxShadow: [
                         BoxShadow(
-                          color: const Color(0xFF6C63FF).withOpacity(0.4),
+                          color: Theme.of(context).colorScheme.primary.withOpacity(0.4),
                           blurRadius: 30,
                           spreadRadius: 10,
                         ),

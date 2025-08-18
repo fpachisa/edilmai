@@ -82,7 +82,7 @@ class _RingPainter extends CustomPainter {
       ..style = PaintingStyle.stroke
       ..strokeWidth = stroke
       ..shader = SweepGradient(
-        colors: [color.withOpacity(0.9), Colors.cyanAccent.withOpacity(0.9)],
+        colors: [color.withOpacity(0.9), const Color(0xFF3B969D).withOpacity(0.9)],
         startAngle: -1.5708,
         endAngle: -1.5708 + arcAngle,
       ).createShader(Rect.fromCircle(center: center, radius: r))

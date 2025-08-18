@@ -27,7 +27,7 @@ class AuthWrapper extends StatelessWidget {
         
         if (snapshot.connectionState == ConnectionState.waiting) {
           print('AuthWrapper: Showing loading screen');
-          return _buildLoadingScreen();
+          return _buildLoadingScreen(context);
         }
         
         if (snapshot.hasError) {
@@ -47,7 +47,7 @@ class AuthWrapper extends StatelessWidget {
     );
   }
 
-  Widget _buildLoadingScreen() {
+  Widget _buildLoadingScreen(BuildContext context) {
     return Scaffold(
       body: AnimatedBackground(
         child: Center(
@@ -62,7 +62,7 @@ class AuthWrapper extends StatelessWidget {
                   gradient: AppGradients.primary,
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFF6C63FF).withOpacity(0.4),
+                      color: Theme.of(context).colorScheme.primary.withOpacity(0.4),
                       blurRadius: 20,
                       spreadRadius: 5,
                     ),

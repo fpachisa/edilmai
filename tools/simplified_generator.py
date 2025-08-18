@@ -53,10 +53,10 @@ class SimplifiedProblemGenerator:
         except FileNotFoundError:
             raise FileNotFoundError(f"simplified_problem_structure.json not found at {template_path}")
     
-    def generate_single_question(self, subject_data: Dict[str, Any], 
+    def generate_question_batch(self, subject_data: Dict[str, Any], 
                                subtopic_data: Dict[str, Any], 
-                               question_number: int) -> Optional[Dict[str, Any]]:
-        """Generate a single question for a specific subtopic"""
+                               batch_number: int, batch_size: int = 5) -> List[Dict[str, Any]]:
+        """Generate a batch of questions for a specific subtopic"""
         
         subject_id = subject_data['id']
         subject_name = subject_data['display_name']
@@ -64,42 +64,50 @@ class SimplifiedProblemGenerator:
         subtopic_name = subtopic_data['display_name']
         syllabus_points = subtopic_data.get('syllabus', [])
         
-        # Determine difficulty based on question number
-        if question_number <= 7:
-            difficulty = "Easy"
-        elif question_number <= 14:
-            difficulty = "Medium"
-        else:
-            difficulty = "Hard"
+        # Determine difficulty distribution for this batch
+        start_question = (batch_number - 1) * batch_size + 1
+        end_question = start_question + batch_size - 1
         
-        # Create system prompt for single question
+        # Create difficulty distribution for batch
+        difficulties = []
+        for q_num in range(start_question, end_question + 1):
+            if q_num <= 7:
+                difficulties.append("Easy")
+            elif q_num <= 14:
+                difficulties.append("Medium")
+            else:
+                difficulties.append("Hard")
+        
+        difficulty_counts = {d: difficulties.count(d) for d in set(difficulties)}
+        difficulty_desc = ", ".join([f"{count} {diff}" for diff, count in difficulty_counts.items()])
+        
+        # Create system prompt for batch generation
         system_prompt = f"""
         You are an expert curriculum designer for Singapore Primary 6 Mathematics.
-        Generate 1 high-quality math problem for the subtopic: {subtopic_name}
+        Generate {batch_size} diverse, high-quality math problems for the subtopic: {subtopic_name}
         
         CRITICAL REQUIREMENTS:
         1. STRICTLY follow Singapore MOE Primary 6 Mathematics syllabus
         2. Address these specific syllabus points:
            {chr(10).join(f"   - {point}" for point in syllabus_points)}
-        3. Use natural, relatable contexts
-        4. Difficulty level: {difficulty}
-        5. Include proper AI guidance with hints and misconception handling
-        6. Return ONLY a single JSON object (NOT an array)
+        3. Each question must be different from the others
+        4. Use varied contexts, scenarios, and problem structures
+        5. Distribute difficulty: {difficulty_desc}
+        6. Include proper AI guidance with hints and misconception handling
+        7. Return ONLY a JSON array of {batch_size} question objects
         
-        SUBJECT CONTEXT: {subject_name}
-        SUBTOPIC: {subtopic_name}
-        QUESTION NUMBER: {question_number} (of 20)
-        DIFFICULTY: {difficulty}
+        DIVERSITY REQUIREMENTS:
+        - Use different real-world contexts for each question
+        - Vary the mathematical operations and problem types
+        - Test different aspects of the syllabus points
+        - Ensure no two questions are similar in structure or context
         
-        SYLLABUS REQUIREMENTS TO COVER:
-        {chr(10).join(f"- {point}" for point in syllabus_points)}
-        
-        OUTPUT FORMAT: Return ONLY a single valid JSON object with this exact structure:
+        OUTPUT FORMAT: Return ONLY a valid JSON array with {batch_size} objects, each with this structure:
         {{
-            "id": "{subject_id.upper()}-{subtopic_id.upper()}-Q{question_number}",
+            "id": "WILL_BE_SET_AUTOMATICALLY",
             "sub_topic": "{subtopic_name}",
-            "title": "Descriptive title",
-            "complexity": "{difficulty}",
+            "title": "Unique descriptive title",
+            "complexity": "Easy|Medium|Hard",
             "problem_text": "Clear problem statement with child friendly context",
             "asset": {{
                 "image_url": null,
@@ -141,25 +149,32 @@ class SimplifiedProblemGenerator:
         """
         
         user_prompt = f"""
-        Generate 1 question for {subtopic_name}.
+        Generate {batch_size} diverse questions for {subtopic_name}.
         
-        This is question #{question_number} of 20.
-        Difficulty level: {difficulty}
+        This is batch #{batch_number} (questions {start_question}-{end_question} of 20).
+        Difficulty distribution: {difficulty_desc}
         
         SYLLABUS FOCUS:
-        Address at least one of these MOE syllabus points:
+        Each question should address different aspects of these MOE syllabus points:
         {chr(10).join(f"- {point}" for point in syllabus_points)}
         
-        CONTEXT REQUIREMENTS:
-        - Use relatable general settings appropriate to children
-        - Appropriate for Primary 6 students (age 11-12)
-        - Real-world applications that make sense
+        DIVERSITY REQUIREMENTS:
+        - Question 1: Use one context/scenario type
+        - Question 2: Use a completely different context
+        - Question 3: Test a different mathematical aspect
+        - Question 4: Use different problem structure
+        - Question 5: Apply different real-world application
         
-        Return ONLY the single JSON object, no other text, no explanations.
+        CONTEXT REQUIREMENTS:
+        - Use varied, relatable settings appropriate to children
+        - Appropriate for Primary 6 students (age 11-12)
+        - Different real-world applications that make sense
+        
+        Return ONLY the JSON array of {batch_size} objects, no other text, no explanations.
         """
         
         try:
-            print(f"    🤖 Generating question {question_number} for {subtopic_name}...")
+            print(f"    🤖 Generating batch {batch_number} ({batch_size} questions) for {subtopic_name}...")
             response = self.model.generate_content([system_prompt, user_prompt])
             
             # Parse response
@@ -178,52 +193,68 @@ class SimplifiedProblemGenerator:
             content = re.sub(r',\s*\n\s*([}\]])', r'\n\1', content)
             
             try:
-                question = json.loads(content)
+                questions_array = json.loads(content)
+                if not isinstance(questions_array, list):
+                    print(f"    ❌ Expected JSON array, got {type(questions_array)}")
+                    return []
+                    
             except json.JSONDecodeError as json_error:
-                question_id = f"{subject_id.upper()}-{subtopic_id.upper()}-Q{question_number}"
-                print(f"    ❌ JSON parsing error for {question_id}: {json_error}")
+                batch_id = f"{subject_id.upper()}-{subtopic_id.upper()}-BATCH{batch_number}"
+                print(f"    ❌ JSON parsing error for {batch_id}: {json_error}")
                 
-                # Save debug file with question ID
-                debug_filename = f"debug_{question_id.replace('-', '_').lower()}.txt"
+                # Save debug file with batch ID
+                debug_filename = f"debug_{batch_id.replace('-', '_').lower()}.txt"
                 with open(debug_filename, "w") as debug_file:
-                    debug_file.write(f"Question ID: {question_id}\n")
+                    debug_file.write(f"Batch ID: {batch_id}\n")
                     debug_file.write(f"Subtopic: {subtopic_name}\n")
+                    debug_file.write(f"Expected: {batch_size} questions\n")
                     debug_file.write(f"Error: {json_error}\n")
                     debug_file.write(f"Content:\n{content}")
                 print(f"    📄 Debug saved to: {debug_filename}")
-                return None
+                return []
             
-            # Validate and fix question structure
-            question_id = f"{subject_id.upper()}-{subtopic_id.upper()}-Q{question_number}"
-            question['id'] = question_id
-            question.setdefault('marks', 1)
-            question.setdefault('asset', {"image_url": None, "svg_code": None})
+            # Validate and fix each question in the batch
+            validated_questions = []
+            for i, question in enumerate(questions_array):
+                if not isinstance(question, dict):
+                    print(f"    ⚠️  Skipping non-dict question {i+1}")
+                    continue
+                    
+                # Set question ID based on batch position
+                question_number = start_question + i
+                question_id = f"{subject_id.upper()}-{subtopic_id.upper()}-Q{question_number}"
+                question['id'] = question_id
+                question.setdefault('marks', 1)
+                question.setdefault('asset', {"image_url": None, "svg_code": None})
+                
+                # Validate answer_details structure
+                if 'answer_details' not in question:
+                    question['answer_details'] = {
+                        "correct_answer": "Answer needed",
+                        "alternative_answers": [],
+                        "answer_format": "text"
+                    }
+                
+                # Validate ai_guidance structure
+                if 'ai_guidance' not in question:
+                    question['ai_guidance'] = {
+                        "evaluation_strategy": "Direct comparison",
+                        "keywords": [],
+                        "common_misconceptions": {},
+                        "hints": [],
+                        "full_solution": "Solution needed"
+                    }
+                
+                validated_questions.append(question)
+                print(f"    ✅ Question {question_number}: {question.get('title', 'No title')}")
             
-            # Validate answer_details structure
-            if 'answer_details' not in question:
-                question['answer_details'] = {
-                    "correct_answer": "Answer needed",
-                    "alternative_answers": [],
-                    "answer_format": "text"
-                }
-            
-            # Validate ai_guidance structure
-            if 'ai_guidance' not in question:
-                question['ai_guidance'] = {
-                    "evaluation_strategy": "Direct comparison",
-                    "keywords": [],
-                    "common_misconceptions": {},
-                    "hints": [],
-                    "full_solution": "Solution needed"
-                }
-            
-            print(f"    ✅ Generated: {question.get('title', 'No title')}")
-            return question
+            print(f"    📊 Batch complete: {len(validated_questions)}/{batch_size} questions generated")
+            return validated_questions
             
         except Exception as e:
-            question_id = f"{subject_id.upper()}-{subtopic_id.upper()}-Q{question_number}"
-            print(f"    ❌ Question generation failed for {question_id}: {e}")
-            return None
+            batch_id = f"{subject_id.upper()}-{subtopic_id.upper()}-BATCH{batch_number}"
+            print(f"    ❌ Batch generation failed for {batch_id}: {e}")
+            return []
     
     def generate_subject_curriculum(self, subject_id: str) -> Dict[str, Any]:
         """Generate complete curriculum for one subject"""
@@ -268,41 +299,46 @@ class SimplifiedProblemGenerator:
             
             subtopic_questions = []
             
-            # Generate 20 questions one by one
-            for question_num in range(1, 21):
-                question = self.generate_single_question(
+            # Generate 20 questions in batches of 5
+            batch_size = 5
+            total_batches = 4  # 20 questions / 5 per batch = 4 batches
+            
+            for batch_num in range(1, total_batches + 1):
+                batch_questions = self.generate_question_batch(
                     subject_data, 
                     subtopic_data, 
-                    question_num
+                    batch_num,
+                    batch_size
                 )
                 
-                if question:
-                    subtopic_questions.append(question)
-                    total_questions += 1
-                    print(f"    ✅ Question {question_num}/20: {question.get('title', 'Generated')}")
+                if batch_questions:
+                    subtopic_questions.extend(batch_questions)
+                    total_questions += len(batch_questions)
+                    print(f"    ✅ Batch {batch_num}/4: Generated {len(batch_questions)} questions")
                 else:
-                    print(f"    ❌ Failed to generate question {question_num}/20")
+                    print(f"    ❌ Failed to generate batch {batch_num}/4")
                 
-                # Brief pause between questions
-                time.sleep(1)
+                # Brief pause between batches
+                time.sleep(2)
                 
-                # Save progress every 5 questions
-                if len(subtopic_questions) % 5 == 0:
-                    curriculum["questions"].extend(subtopic_questions[-5:])
+                # Save progress after each batch
+                if batch_questions:
+                    curriculum["questions"].extend(batch_questions)
                     progress_filename = f"{subject_id}_progress.json"
                     with open(progress_filename, 'w', encoding='utf-8') as f:
                         json.dump(curriculum, f, indent=2, ensure_ascii=False)
                     print(f"    💾 Progress saved: {total_questions} total questions")
             
-            # Add remaining questions to curriculum
-            remaining = len(subtopic_questions) % 5
-            if remaining > 0:
-                curriculum["questions"].extend(subtopic_questions[-remaining:])
+            # All questions already added to curriculum during batch processing
             
             print(f"    📊 Subtopic complete: {len(subtopic_questions)}/20 questions generated")
             
-            # Longer pause between subtopics
-            time.sleep(3)
+            # Validate we got exactly 20 questions
+            if len(subtopic_questions) < 20:
+                print(f"    ⚠️  Warning: Only generated {len(subtopic_questions)} questions instead of 20")
+            
+            # Longer pause between subtopics (reduced since we have fewer API calls)
+            time.sleep(5)
         
         # Update metadata with final counts
         curriculum["metadata"]["total_questions"] = total_questions

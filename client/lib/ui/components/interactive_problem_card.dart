@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../design_tokens.dart';
 import '../app_theme.dart';
+import 'math_text.dart';
 
 /// Interactive Problem Card - An engaging card for displaying and solving math problems
 /// 
@@ -429,7 +430,7 @@ class _InteractiveProblemCardState extends State<InteractiveProblemCard>
           width: 1,
         ),
       ),
-      child: Text(
+      child: MathText(
         _problemText,
         style: DesignTokens.problemText.copyWith(
           color: Colors.white,
@@ -479,7 +480,7 @@ class _InteractiveProblemCardState extends State<InteractiveProblemCard>
                       ),
                     ),
                     const SizedBox(height: DesignTokens.spaceXS),
-                    Text(
+                    MathText(
                       widget.currentHint!,
                       style: DesignTokens.bodyText.copyWith(
                         color: Colors.white.withOpacity(0.9),

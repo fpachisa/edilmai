@@ -13,6 +13,10 @@ class InMemoryItemsRepo:
 
     def get_item(self, item_id: str) -> Optional[dict]:
         return self.items.get(item_id)
+    
+    def get_all_items(self) -> Dict[str, dict]:
+        """Get all items in the repository."""
+        return self.items.copy()
 
 
 @dataclass

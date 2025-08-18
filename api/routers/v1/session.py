@@ -7,26 +7,88 @@ from api.models.schemas import (
     SessionStepResponse,
     SessionEndRequest,
 )
-from api.services.container import ITEMS_REPO, SESSIONS_REPO, PROFILES_REPO
+from api.services.container import ITEMS_REPO, SESSIONS_REPO, PROFILES_REPO, PROGRESSION_SERVICE
 from api.services.orchestrator import SimpleOrchestrator
-from api.services.progression import PROGRESSION_SERVICE
 
 router = APIRouter()
 _ORCH = SimpleOrchestrator()
 
 
-def _map_legacy_item_id(legacy_id: str) -> str:
-    """Map old-style item IDs to new question IDs."""
-    # Map subtopic names to their first question ID
-    legacy_mapping = {
-        "introduction-to-algebra": "ALGEBRA-INTRODUCTION-TO-ALGEBRA-Q1",
-        "simplifying-algebraic-expressions": "ALGEBRA-SIMPLIFYING-ALGEBRAIC-EXPRESSIONS-Q1",
-        "evaluating-algebraic-expressions": "ALGEBRA-EVALUATING-ALGEBRAIC-EXPRESSIONS-Q1",
-        "algebra-word-problems": "ALGEBRA-ALGEBRA-WORD-PROBLEMS-Q1",
-        "algebra": "ALGEBRA-INTRODUCTION-TO-ALGEBRA-Q1",  # Default algebra start
-    }
+def _map_legacy_item_id(item_id: str) -> str:
+    """Map legacy topic names to first available item ID for that topic. 
+    Returns the item_id unchanged if it's already a valid item ID."""
     
-    return legacy_mapping.get(legacy_id.lower(), legacy_id)
+    # If this is already a valid item ID, don't map it
+    if ITEMS_REPO.get_item(item_id):
+        return item_id
+    
+    # First detect the topic properly
+    class MockRequest:
+        def __init__(self, item_id):
+            self.item_id = item_id
+    
+    mock_req = MockRequest(item_id)
+    topic_name = _extract_topic_from_request(mock_req)
+    
+    # Get first item for this topic
+    progression = PROGRESSION_SERVICE.get_topic_progression(topic_name)
+    result = progression[0] if progression else None
+    return result
+
+
+def _extract_topic_from_request(req) -> str:
+    """Extract topic from request item_id - FAIL if not found."""
+    print(f"🔍 DEBUG: Request has item_id: {getattr(req, 'item_id', 'NO ITEM_ID')}")
+    
+    if not hasattr(req, 'item_id') or not req.item_id:
+        print(f"🔍 DEBUG: No item_id provided in request")
+        raise HTTPException(status_code=400, detail="item_id is required")
+    
+    return _extract_topic_from_item_id(req.item_id)
+
+
+def _extract_topic_from_item_id(item_id: str) -> str:
+    """Extract topic from item_id using direct mapping from p6_maths_topics.json."""
+    if not item_id:
+        raise HTTPException(status_code=400, detail="item_id cannot be empty")
+        
+    item_id_lower = item_id.lower()
+    print(f"🔍 DEBUG: Looking up topic for item_id '{item_id_lower}'")
+    
+    # Load the topic mapping
+    try:
+        import json
+        import os
+        topics_file = os.path.join(os.path.dirname(__file__), "../../..", "client", "assets", "p6_maths_topics.json")
+        with open(topics_file, 'r') as f:
+            topics_data = json.load(f)
+        
+        # Search through subjects and their subtopics
+        for subject in topics_data.get("subjects", []):
+            subject_id = subject.get("id", "")
+            
+            # Check if item_id matches any subtopic
+            for subtopic in subject.get("subtopics", []):
+                subtopic_id = subtopic.get("id", "")
+                if subtopic_id == item_id_lower:
+                    print(f"🔍 DEBUG: Found direct mapping: '{item_id}' → '{subject_id}'")
+                    return subject_id
+        
+        # If not found in subtopics, check if it's a direct subject match
+        subjects = [s.get("id", "") for s in topics_data.get("subjects", [])]
+        for subject_id in subjects:
+            if subject_id in item_id_lower:
+                print(f"🔍 DEBUG: Found subject in item_id: '{item_id}' → '{subject_id}'")
+                return subject_id
+    
+    except Exception as e:
+        print(f"🔍 DEBUG: Error loading p6_maths_topics.json: {e}")
+    
+    # NO FALLBACKS - Fail clearly if topic can't be determined
+    print(f"🔍 DEBUG: Could not determine topic from item_id '{item_id}'")
+    raise HTTPException(status_code=400, detail=f"Cannot determine topic from item_id: {item_id}. Make sure it exists in p6_maths_topics.json")
+
+
 
 
 @router.post("/session/start", response_model=SessionStartResponse)
@@ -70,19 +132,30 @@ def get_session(session_id: str):
 
 @router.post("/session/start-adaptive", response_model=SessionStartResponse)
 def start_adaptive_session(req: AdaptiveSessionStartRequest):
-    """Start an adaptive session that progresses through algebra topics."""
+    """Start an adaptive session that progresses through any math topic."""
+    print(f"🔍 DEBUG: start_adaptive_session called with learner_id={req.learner_id}, item_id={getattr(req, 'item_id', None)}")
+    
     learner_profile = PROFILES_REPO.get_profile(req.learner_id)
+    
+    # Detect topic from request
+    topic_name = _extract_topic_from_request(req)
+    print(f"🔍 DEBUG: Detected topic: {topic_name}")
     
     # If item_id is provided, use it; otherwise find next in progression
     item_id = req.item_id
+    print(f"🔍 DEBUG: Original item_id from request: {item_id}")
+    
     if item_id:
-        # Handle old-style item_id mapping (e.g., "introduction-to-algebra" -> actual question ID)
+        # Handle old-style item_id mapping (e.g., "fractions-intro" -> actual question ID)
         item_id = _map_legacy_item_id(item_id)
+        print(f"🔍 DEBUG: After legacy mapping: {item_id}")
     
     if not item_id:
-        item_id = PROGRESSION_SERVICE.recommend_next_session(learner_profile)
+        print(f"🔍 DEBUG: No item_id, getting recommendation for topic '{topic_name}'")
+        item_id = PROGRESSION_SERVICE.recommend_next_session(learner_profile, topic_name)
+        print(f"🔍 DEBUG: Recommended item_id: {item_id}")
         if not item_id:
-            raise HTTPException(status_code=404, detail="No more items available in progression")
+            raise HTTPException(status_code=404, detail=f"No more items available in {topic_name} progression")
     
     item = ITEMS_REPO.get_item(item_id)
     if not item:
@@ -92,9 +165,9 @@ def start_adaptive_session(req: AdaptiveSessionStartRequest):
     PROFILES_REPO.set_current_session(req.learner_id, sid)
     
     # Add system message about progression
-    progression_status = PROGRESSION_SERVICE.get_progression_status(learner_profile["completed_items"])
+    progression_status = PROGRESSION_SERVICE.get_progression_status(learner_profile["completed_items"], topic_name)
     SESSIONS_REPO.add_to_conversation(sid, "system", 
-                                    f"Starting adaptive session. Progress: {progression_status['completed_count']}/{progression_status['total_items']} items completed.",
+                                    f"Starting {topic_name} session. Progress: {progression_status['completed_count']}/{progression_status['total_items']} items completed.",
                                     {"progression_status": progression_status})
     
     # Pure problem presentation - let AI handle all context and guidance
@@ -177,7 +250,9 @@ def do_step(req: SessionStepRequest):
         
         # Check if there's a next item in progression
         learner_profile = PROFILES_REPO.get_profile(learner_id)
-        next_item_id = PROGRESSION_SERVICE.recommend_next_session(learner_profile)
+        # Extract topic from current item to find next item in same topic progression
+        topic_name = _extract_topic_from_item_id(session["item_id"])
+        next_item_id = PROGRESSION_SERVICE.recommend_next_session(learner_profile, topic_name)
         
         if next_item_id:
             next_item = ITEMS_REPO.get_item(next_item_id)
@@ -228,16 +303,19 @@ def do_step(req: SessionStepRequest):
 
 @router.post("/session/continue-progression", response_model=SessionStartResponse)
 def continue_progression(req: SessionEndRequest):
-    """Continue with next item in algebra progression."""
+    """Continue with next item in progression."""
     session = SESSIONS_REPO.get(req.session_id)
     if not session:
         raise HTTPException(status_code=404, detail="Session not found")
     
     learner_id = session["learner_id"]
+    current_item_id = session["item_id"]
     learner_profile = PROFILES_REPO.get_profile(learner_id)
     
     # Get next item in progression
-    next_item_id = PROGRESSION_SERVICE.recommend_next_session(learner_profile)
+    # Extract topic from current session to continue in same topic
+    topic_name = _extract_topic_from_item_id(current_item_id)
+    next_item_id = PROGRESSION_SERVICE.recommend_next_session(learner_profile, topic_name)
     if not next_item_id:
         raise HTTPException(status_code=404, detail="No more items available in progression")
     
@@ -245,11 +323,11 @@ def continue_progression(req: SessionEndRequest):
     return start_adaptive_session(AdaptiveSessionStartRequest(learner_id=learner_id, item_id=next_item_id))
 
 
-@router.get("/session/progression-status/{learner_id}")
-def get_progression_status(learner_id: str):
-    """Get learner's progression status through algebra topics."""
+@router.get("/session/progression-status/{learner_id}/{topic_name}")
+def get_progression_status(learner_id: str, topic_name: str):
+    """Get learner's progression status through any topic."""
     learner_profile = PROFILES_REPO.get_profile(learner_id)
-    progression_status = PROGRESSION_SERVICE.get_progression_status(learner_profile["completed_items"])
+    progression_status = PROGRESSION_SERVICE.get_progression_status(learner_profile["completed_items"], topic_name)
     
     return {
         **progression_status,

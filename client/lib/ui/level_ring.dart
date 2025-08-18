@@ -52,7 +52,7 @@ class _RingPainter extends CustomPainter {
     final fg = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = stroke
-      ..shader = SweepGradient(colors: [color.withOpacity(0.9), Colors.cyanAccent.withOpacity(0.9)], startAngle: -1.5708, endAngle: -1.5708 + arcAngle)
+      ..shader = SweepGradient(colors: [color.withOpacity(0.9), const Color(0xFF3B969D).withOpacity(0.9)], startAngle: -1.5708, endAngle: -1.5708 + arcAngle)
           .createShader(Rect.fromCircle(center: center, radius: r))
       ..strokeCap = StrokeCap.round;
     canvas.drawArc(Rect.fromCircle(center: center, radius: r), -1.5708, arcAngle, false, fg);
@@ -61,4 +61,3 @@ class _RingPainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant _RingPainter oldDelegate) => oldDelegate.pct != pct || oldDelegate.color != color;
 }
-

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../ui/app_theme.dart';
+import '../ui/design_tokens.dart';
 import '../data/learning_path_loader.dart';
 import '../data/problem_loader.dart';
 import '../state/game_state.dart';
@@ -25,6 +26,12 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
   LearningPath? _learningPath;
   bool _loading = true;
   bool _busy = false;
+
+  Color _subjectColor() => DesignTokens.getSubjectColor(widget.pathId);
+  Color _subjectLight() {
+    final h = HSLColor.fromColor(_subjectColor());
+    return h.withLightness((h.lightness + 0.2).clamp(0.0, 1.0)).toColor();
+  }
 
   @override
   void initState() {
@@ -159,6 +166,7 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
                                       ? () => _startModule(module)
                                       : null,
                                   busy: _busy,
+                                  subjectColor: _subjectColor(),
                                 ),
                               ),
                             ),
@@ -218,11 +226,11 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
-                    color: Colors.blueAccent.withOpacity(0.2),
+                    color: _subjectColor().withOpacity(0.2),
                   ),
                   child: Icon(
                     Icons.functions_rounded,
-                    color: Colors.blueAccent,
+                    color: _subjectColor(),
                     size: 32,
                   ),
                 ),
@@ -270,7 +278,7 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(4),
-                    color: Colors.blueAccent,
+                    color: _subjectColor(),
                   ),
                 ),
               ),
@@ -292,7 +300,7 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
                 Text(
                   '${(overallProgress * 100).round()}%',
                   style: TextStyle(
-                    color: Colors.blueAccent,
+                    color: _subjectColor(),
                     fontSize: 14,
                     fontWeight: FontWeight.w700,
                   ),
@@ -308,7 +316,7 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
                   borderRadius: BorderRadius.circular(16),
                   color: Colors.white.withOpacity(0.1),
                   border: Border.all(
-                    color: Colors.blueAccent.withOpacity(0.3),
+                    color: _subjectColor().withOpacity(0.3),
                     width: 1,
                   ),
                 ),
@@ -316,7 +324,7 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
                   children: [
                     Icon(
                       Icons.play_arrow_rounded,
-                      color: Colors.blueAccent,
+                      color: _subjectColor(),
                       size: 20,
                     ),
                     const SizedBox(width: 12),
@@ -346,7 +354,7 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
                     FilledButton(
                       onPressed: _busy ? null : () => _startModule(nextModule),
                       style: FilledButton.styleFrom(
-                        backgroundColor: Colors.blueAccent,
+                        backgroundColor: _subjectColor(),
                         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       ),
                       child: _busy 
@@ -455,8 +463,8 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    Colors.blueAccent,
-                    Colors.blueAccent.withOpacity(0.7),
+                    _subjectColor(),
+                    _subjectLight(),
                   ],
                 ),
                 borderRadius: BorderRadius.circular(12),
@@ -555,6 +563,7 @@ class _ModuleProgressCard extends StatelessWidget {
   final int moduleIndex;
   final VoidCallback? onTap;
   final bool busy;
+  final Color subjectColor;
 
   const _ModuleProgressCard({
     required this.module,
@@ -564,6 +573,7 @@ class _ModuleProgressCard extends StatelessWidget {
     required this.moduleIndex,
     required this.onTap,
     required this.busy,
+    required this.subjectColor,
   });
 
   @override
@@ -591,11 +601,11 @@ class _ModuleProgressCard extends StatelessWidget {
           ),
           border: Border.all(
             color: isCompleted
-                ? Colors.greenAccent.withOpacity(0.5)
+                ? subjectColor.withOpacity(0.6)
                 : isNext
-                    ? Colors.blueAccent.withOpacity(0.5)
+                    ? subjectColor.withOpacity(0.5)
                     : isStarted
-                        ? Colors.blueAccent.withOpacity(0.3)
+                        ? subjectColor.withOpacity(0.3)
                         : Colors.white.withOpacity(0.1),
             width: isCompleted || isNext || isStarted ? 2 : 1,
           ),
@@ -614,11 +624,11 @@ class _ModuleProgressCard extends StatelessWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: isCompleted
-                          ? Colors.greenAccent
+                          ? subjectColor
                           : isNext
-                              ? Colors.blueAccent
+                              ? subjectColor
                               : isUnlocked
-                                  ? Colors.blueAccent.withOpacity(0.3)
+                                  ? subjectColor.withOpacity(0.3)
                                   : Colors.white.withOpacity(0.1),
                     ),
                     child: Center(
@@ -674,12 +684,12 @@ class _ModuleProgressCard extends StatelessWidget {
                             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
-                              color: Colors.blueAccent.withOpacity(0.2),
+                              color: Theme.of(context).colorScheme.secondary.withOpacity(0.2),
                             ),
-                            child: const Text(
+                            child: Text(
                               'NEXT',
                               style: TextStyle(
-                                color: Colors.blueAccent,
+                                color: subjectColor,
                                 fontSize: 10,
                                 fontWeight: FontWeight.w700,
                                 letterSpacing: 0.5,
@@ -700,7 +710,7 @@ class _ModuleProgressCard extends StatelessWidget {
   }
 
   Color _getDifficultyColor() {
-    return Colors.blueAccent;
+    return subjectColor;
   }
 }
 
@@ -985,7 +995,7 @@ class _RealTutorScreenState extends State<_RealTutorScreen> {
                     ),
                     decoration: BoxDecoration(
                       color: isStudent 
-                          ? Colors.blueAccent.withOpacity(0.8)
+                          ? Theme.of(context).colorScheme.secondary.withOpacity(0.8)
                           : Colors.white.withOpacity(0.1),
                       borderRadius: BorderRadius.circular(16),
                     ),
@@ -1030,7 +1040,7 @@ class _RealTutorScreenState extends State<_RealTutorScreen> {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(24),
-                        borderSide: const BorderSide(color: Colors.blueAccent),
+                        borderSide: BorderSide(color: Theme.of(context).colorScheme.secondary),
                       ),
                       contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
                     ),
@@ -1040,7 +1050,7 @@ class _RealTutorScreenState extends State<_RealTutorScreen> {
                 const SizedBox(width: 12),
                 FloatingActionButton(
                   onPressed: _sendMessage,
-                  backgroundColor: Colors.blueAccent,
+                  backgroundColor: Theme.of(context).colorScheme.secondary,
                   child: const Icon(Icons.send_rounded, color: Colors.white),
                 ),
               ],

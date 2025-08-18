@@ -8,12 +8,22 @@ class DesignTokens {
   
   // ============ CORE COLORS ============
   
-  /// Primary brand colors with magical theme
-  static const Color primaryMagic = Color(0xFF6C63FF);
-  static const Color primaryMagicLight = Color(0xFF9C95FF);
-  static const Color primaryMagicDark = Color(0xFF4A43CC);
+  /// Primary brand colors with tech gaming theme (Orange-Cyan from sample)
+  static const Color primaryTechOrange = Color(0xFFFF6B35);
+  static const Color primaryTechOrangeLight = Color(0xFFFF8A5C);
+  static const Color primaryTechOrangeDark = Color(0xFFE55A2B);
   
-  /// Feedback colors with glowing effects
+  /// Accent colors with cyan tech theme
+  static const Color accentTechCyan = Color(0xFF00B4D8);
+  static const Color accentTechCyanLight = Color(0xFF33C3E0);
+  static const Color accentTechCyanDark = Color(0xFF0081A7);
+  
+  /// Legacy support - map to new colors
+  static const Color primaryMagic = Color(0xFFFF6B35);        // Orange
+  static const Color primaryMagicLight = Color(0xFFFF8A5C);   // Light orange
+  static const Color primaryMagicDark = Color(0xFFE55A2B);    // Dark orange
+  
+  /// Feedback colors with tech gaming effects
   static const Color successGlow = Color(0xFF00E676);
   static const Color successGlowLight = Color(0xFF66FFA6);
   static const Color successGlowDark = Color(0xFF00C853);
@@ -26,170 +36,146 @@ class DesignTokens {
   static const Color errorPulseLight = Color(0xFFFF8A80);
   static const Color errorPulseDark = Color(0xFFD32F2F);
   
-  /// Neutral colors for backgrounds and text
-  static const Color neutralDark = Color(0xFF0F1024);
-  static const Color neutralMedium = Color(0xFF1A1E3A);
-  static const Color neutralLight = Color(0xFF2B2F5B);
-  static const Color neutralSurface = Color(0xFF1E2139);
+  /// Neutral colors for tech dark theme (based on sample)
+  static const Color neutralDark = Color(0xFF2C3E50);         // Dark gray from sample
+  static const Color neutralMedium = Color(0xFF34495E);       // Medium gray tech
+  static const Color neutralLight = Color(0xFF455A64);        // Light gray tech
+  static const Color neutralSurface = Color(0xFF37474F);      // Surface gray tech
   
-  // ============ MAGICAL SUBJECT COLORS ============
+  // ============ TECH GAMING SUBJECT COLORS ============
   
-  /// Each mathematical subject has its own vibrant, engaging color palette
-  /// Designed to be fun, memorable, and inspiring for young learners
+  /// Each mathematical subject uses the orange-cyan tech gaming spectrum
+  /// Designed for modern digital appeal and high visual impact
   
-  // 🟣 ALGEBRA MYSTIC - Deep purple with magical vibes
-  static const Color algebraMystic = Color(0xFF8E44AD);
-  static const Color algebraMysticLight = Color(0xFFE8DAEF);
-  static const Color algebraMysticDark = Color(0xFF6C3483);
-  static const Color algebraMysticGlow = Color(0xFFBB8FCE);
+  // 🟠 ALGEBRA TECH - Primary orange with gaming vibes
+  static const Color algebraTechOrange = Color(0xFFFF6B35);
+  static const Color algebraTechOrangeLight = Color(0xFFFF8A5C);
+  static const Color algebraTechOrangeDark = Color(0xFFE55A2B);
+  static const Color algebraTechOrangeGlow = Color(0xFFFFB399);
   
-  // 🟢 FRACTIONS FOREST - Vibrant green like a lush forest
-  static const Color fractionForest = Color(0xFF27AE60);
-  static const Color fractionForestLight = Color(0xFFD5F4E6);
-  static const Color fractionForestDark = Color(0xFF1E8449);
-  static const Color fractionForestGlow = Color(0xFF82E0AA);
+  // Legacy support
+  static const Color algebraMystic = Color(0xFFFF6B35);
+  static const Color algebraMysticLight = Color(0xFFFF8A5C);
+  static const Color algebraMysticDark = Color(0xFFE55A2B);
+  static const Color algebraMysticGlow = Color(0xFFFFB399);
   
-  // 🟠 PERCENTAGE PLANET - Warm orange like a sunset planet
-  static const Color percentagePlanet = Color(0xFFE67E22);
-  static const Color percentagePlanetLight = Color(0xFFFDEBD0);
-  static const Color percentagePlanetDark = Color(0xFFD35400);
-  static const Color percentagePlanetGlow = Color(0xFFF8C471);
+  // 🔵 FRACTIONS CYBER - Primary cyan with tech appeal
+  static const Color fractionCyberBlue = Color(0xFF00B4D8);
+  static const Color fractionCyberBlueLight = Color(0xFF33C3E0);
+  static const Color fractionCyberBlueDark = Color(0xFF0081A7);
+  static const Color fractionCyberBlueGlow = Color(0xFF66D9EF);
   
-  // ⚡ SPEED STORM - Electric yellow like lightning
-  static const Color speedStorm = Color(0xFFF1C40F);
-  static const Color speedStormLight = Color(0xFFFEF9E7);
-  static const Color speedStormDark = Color(0xFFD4AC0D);
-  static const Color speedStormGlow = Color(0xFFF7DC6F);
+  // Legacy support
+  static const Color fractionForest = Color(0xFF00B4D8);
+  static const Color fractionForestLight = Color(0xFF33C3E0);
+  static const Color fractionForestDark = Color(0xFF0081A7);
+  static const Color fractionForestGlow = Color(0xFF66D9EF);
   
-  // 💖 RATIO REALM - Bright pink like magical crystals
-  static const Color ratioRealm = Color(0xFFE91E63);
-  static const Color ratioRealmLight = Color(0xFFFCE4EC);
-  static const Color ratioRealmDark = Color(0xFFC2185B);
-  static const Color ratioRealmGlow = Color(0xFFF8BBD9);
+  // 🟠 PERCENTAGE TECH - Light orange tech variant
+  static const Color percentageTechOrange = Color(0xFFFF8A5C);
+  static const Color percentageTechOrangeLight = Color(0xFFFFB399);
+  static const Color percentageTechOrangeDark = Color(0xFFE55A2B);
+  static const Color percentageTechOrangeGlow = Color(0xFFFFCCB3);
   
-  // 🔵 GEOMETRY GALAXY - Cosmic blue like deep space
-  static const Color geometryGalaxy = Color(0xFF3498DB);
-  static const Color geometryGalaxyLight = Color(0xFFEBF5FB);
-  static const Color geometryGalaxyDark = Color(0xFF2980B9);
-  static const Color geometryGalaxyGlow = Color(0xFF85C1E9);
+  // Legacy support
+  static const Color percentagePlanet = Color(0xFFFF8A5C);
+  static const Color percentagePlanetLight = Color(0xFFFFB399);
+  static const Color percentagePlanetDark = Color(0xFFE55A2B);
+  static const Color percentagePlanetGlow = Color(0xFFFFCCB3);
   
-  // 🟤 STATISTICS SPACE - Rich copper like ancient treasures
-  static const Color statisticsSpace = Color(0xFFD68910);
-  static const Color statisticsSpaceLight = Color(0xFFFDF2E9);
-  static const Color statisticsSpaceDark = Color(0xFFB7950B);
-  static const Color statisticsSpaceGlow = Color(0xFFF4D03F);
+  // 🔵 SPEED CYBER - Medium cyan for dynamic movement
+  static const Color speedCyberBlue = Color(0xFF0081A7);
+  static const Color speedCyberBlueLight = Color(0xFF33A4C7);
+  static const Color speedCyberBlueDark = Color(0xFF005577);
+  static const Color speedCyberBlueGlow = Color(0xFF66B8D1);
   
-  /// Get subject color by key
+  // Legacy support
+  static const Color speedStorm = Color(0xFF0081A7);
+  static const Color speedStormLight = Color(0xFF33A4C7);
+  static const Color speedStormDark = Color(0xFF005577);
+  static const Color speedStormGlow = Color(0xFF66B8D1);
+  
+  // 🔵 RATIO TECH - Light cyan for ratios
+  static const Color ratioTechCyan = Color(0xFF33C3E0);
+  static const Color ratioTechCyanLight = Color(0xFF66D3E7);
+  static const Color ratioTechCyanDark = Color(0xFF00B4D8);
+  static const Color ratioTechCyanGlow = Color(0xFF99E3ED);
+  
+  // Legacy support
+  static const Color ratioRealm = Color(0xFF33C3E0);
+  static const Color ratioRealmLight = Color(0xFF66D3E7);
+  static const Color ratioRealmDark = Color(0xFF00B4D8);
+  static const Color ratioRealmGlow = Color(0xFF99E3ED);
+  
+  // 🟠 GEOMETRY TECH - Coral orange for geometry
+  static const Color geometryTechCoral = Color(0xFFFF7F66);
+  static const Color geometryTechCoralLight = Color(0xFFFF9980);
+  static const Color geometryTechCoralDark = Color(0xFFFF5A3D);
+  static const Color geometryTechCoralGlow = Color(0xFFFFB3A6);
+  
+  // Legacy support
+  static const Color geometryGalaxy = Color(0xFFFF7F66);
+  static const Color geometryGalaxyLight = Color(0xFFFF9980);
+  static const Color geometryGalaxyDark = Color(0xFFFF5A3D);
+  static const Color geometryGalaxyGlow = Color(0xFFFFB3A6);
+  
+  // 🔵 STATISTICS TECH - Deep cyan navy for data
+  static const Color statisticsTechNavy = Color(0xFF023047);
+  static const Color statisticsTechNavyLight = Color(0xFF034561);
+  static const Color statisticsTechNavyDark = Color(0xFF011A2D);
+  static const Color statisticsTechNavyGlow = Color(0xFF0B5A7B);
+  
+  // Legacy support
+  static const Color statisticsSpace = Color(0xFF023047);
+  static const Color statisticsSpaceLight = Color(0xFF034561);
+  static const Color statisticsSpaceDark = Color(0xFF011A2D);
+  static const Color statisticsSpaceGlow = Color(0xFF0B5A7B);
+  
+  /// Get subject color by key (palette-based distinct hues)
   static Color getSubjectColor(String subjectKey) {
     switch (subjectKey.toLowerCase()) {
-      case 'algebra': return algebraMystic;
-      case 'fractions': return fractionForest;
-      case 'geometry': return geometryGalaxy;
-      case 'speed': return speedStorm;
-      case 'ratio': return ratioRealm;
-      case 'percentage': return percentagePlanet;
-      case 'statistics': return statisticsSpace;
-      default: return primaryMagic;
+      case 'algebra': return const Color(0xFF5BA843);      // green
+      case 'fractions': return const Color(0xFF3B969D);    // teal
+      case 'geometry': return const Color(0xFF6C38B8);     // purple
+      case 'speed': return const Color(0xFFE6662A);        // orange
+      case 'ratio': return const Color(0xFF9CB027);        // yellow-green
+      case 'percentage': return const Color(0xFFDBB10F);   // gold
+      case 'statistics': return const Color(0xFFA24578);   // magenta
+      case 'measurement': return _lighten(const Color(0xFF3B969D), 0.25); // light teal
+      case 'data-analysis': return const Color(0xFF5BC8CF); // bright teal
+      default: return const Color(0xFF5BA843);
     }
   }
   
   /// Get subject light variant
   static Color getSubjectColorLight(String subjectKey) {
-    switch (subjectKey.toLowerCase()) {
-      case 'algebra': return algebraMysticLight;
-      case 'fractions': return fractionForestLight;
-      case 'geometry': return geometryGalaxyLight;
-      case 'speed': return speedStormLight;
-      case 'ratio': return ratioRealmLight;
-      case 'percentage': return percentagePlanetLight;
-      case 'statistics': return statisticsSpaceLight;
-      default: return primaryMagicLight;
-    }
+    final base = getSubjectColor(subjectKey);
+    return _lighten(base, 0.22);
   }
   
   /// Get subject dark variant
   static Color getSubjectColorDark(String subjectKey) {
-    switch (subjectKey.toLowerCase()) {
-      case 'algebra': return algebraMysticDark;
-      case 'fractions': return fractionForestDark;
-      case 'geometry': return geometryGalaxyDark;
-      case 'speed': return speedStormDark;
-      case 'ratio': return ratioRealmDark;
-      case 'percentage': return percentagePlanetDark;
-      case 'statistics': return statisticsSpaceDark;
-      default: return primaryMagicDark;
-    }
+    final base = getSubjectColor(subjectKey);
+    return _darken(base, 0.18);
   }
   
   /// Get subject glow variant for magical effects
   static Color getSubjectColorGlow(String subjectKey) {
-    switch (subjectKey.toLowerCase()) {
-      case 'algebra': return algebraMysticGlow;
-      case 'fractions': return fractionForestGlow;
-      case 'geometry': return geometryGalaxyGlow;
-      case 'speed': return speedStormGlow;
-      case 'ratio': return ratioRealmGlow;
-      case 'percentage': return percentagePlanetGlow;
-      case 'statistics': return statisticsSpaceGlow;
-      default: return primaryMagicLight;
-    }
+    final base = getSubjectColor(subjectKey);
+    return _blendWithWhite(base, 0.45);
   }
   
   /// Get magical gradient that makes topics come alive
   static LinearGradient getMagicalSubjectGradient(String subjectKey) {
-    switch (subjectKey.toLowerCase()) {
-      case 'algebra':
-        return const LinearGradient(
-          colors: [algebraMystic, algebraMysticGlow, algebraMysticLight],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          stops: [0.0, 0.5, 1.0],
-        );
-      case 'fractions':
-        return const LinearGradient(
-          colors: [fractionForest, fractionForestGlow, fractionForestLight],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          stops: [0.0, 0.5, 1.0],
-        );
-      case 'percentage':
-        return const LinearGradient(
-          colors: [percentagePlanet, percentagePlanetGlow, percentagePlanetLight],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          stops: [0.0, 0.5, 1.0],
-        );
-      case 'speed':
-        return const LinearGradient(
-          colors: [speedStorm, speedStormGlow, speedStormLight],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          stops: [0.0, 0.5, 1.0],
-        );
-      case 'ratio':
-        return const LinearGradient(
-          colors: [ratioRealm, ratioRealmGlow, ratioRealmLight],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          stops: [0.0, 0.5, 1.0],
-        );
-      case 'geometry':
-        return const LinearGradient(
-          colors: [geometryGalaxy, geometryGalaxyGlow, geometryGalaxyLight],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          stops: [0.0, 0.5, 1.0],
-        );
-      case 'statistics':
-        return const LinearGradient(
-          colors: [statisticsSpace, statisticsSpaceGlow, statisticsSpaceLight],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          stops: [0.0, 0.5, 1.0],
-        );
-      default:
-        return primaryGradient;
-    }
+    final base = getSubjectColor(subjectKey);
+    final glow = getSubjectColorGlow(subjectKey);
+    final light = getSubjectColorLight(subjectKey);
+    return LinearGradient(
+      colors: [base, glow, light],
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+      stops: const [0.0, 0.5, 1.0],
+    );
   }
   
   // ============ TYPOGRAPHY SCALE ============
@@ -325,6 +311,23 @@ class DesignTokens {
       begin: Alignment.topLeft,
       end: Alignment.bottomRight,
     );
+  }
+  
+  // ===== Helpers to derive color variants =====
+  static Color _lighten(Color c, double amount) {
+    final hsl = HSLColor.fromColor(c);
+    final l = (hsl.lightness + amount).clamp(0.0, 1.0);
+    return hsl.withLightness(l).toColor();
+    }
+
+  static Color _darken(Color c, double amount) {
+    final hsl = HSLColor.fromColor(c);
+    final l = (hsl.lightness - amount).clamp(0.0, 1.0);
+    return hsl.withLightness(l).toColor();
+  }
+
+  static Color _blendWithWhite(Color c, double amount) {
+    return Color.lerp(c, Colors.white, amount) ?? c;
   }
   
   // ============ SHADOWS ============

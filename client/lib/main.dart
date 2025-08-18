@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'ui/app_theme.dart';
+import 'theme/new_theme.dart';
 import 'state/game_state.dart';
 import 'config.dart';
 import 'auth_service.dart';
@@ -33,10 +34,11 @@ class EdilApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = AppTheme.theme();
     return MaterialApp(
       title: 'PSLE AI Tutor',
-      theme: theme,
+      theme: NewAppTheme.light(),
+      darkTheme: NewAppTheme.dark(),
+      themeMode: ThemeMode.system,
       home: const AuthWrapper(),
       routes: {
         '/auth': (context) => const AuthScreen(),
@@ -44,4 +46,3 @@ class EdilApp extends StatelessWidget {
     );
   }
 }
-

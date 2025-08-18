@@ -10,6 +10,10 @@ This repository contains the API (FastAPI on GAE), Flutter client, and infra con
 - `.github/workflows/` — CI pipelines for API and client.
 - `webui/` — Lightweight local web UI to exercise the API.
 
+## Developer Docs
+
+- Developer overview and handover guide: `docs/DEVELOPER_OVERVIEW.md`
+
 ## Phase 0 Checklist
 
 - API skeleton with `/healthz` — done.
