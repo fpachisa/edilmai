@@ -23,5 +23,6 @@ client/web/build/
 .DS_Store
 api/.env
 .env
-.env
-.env
+api/.env.production
+.env.production
+api/.env.production
