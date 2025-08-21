@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 /// New application theme derived from sample-theme.jpg palette.
 /// Applied behind the feature flag `kNewThemeEnabled` (see config.dart).
@@ -15,11 +16,11 @@ class NewAppTheme {
   static const Color _neutral600 = Color(0xFF6E7583);
   static const Color _neutral100 = Color(0xFFEFF1F3);
 
-  // Light scheme
+  // Light scheme - SUPER BRIGHT!
   static const Color _lightBackground = Color(0xFFFFFFFF);
   static const Color _lightSurface = Color(0xFFFFFFFF);
-  static const Color _lightSurfaceVariant = Color(0xFFEFF2F6);
-  static const Color _onLight = Color(0xFF0F1115);
+  static const Color _lightSurfaceVariant = Color(0xFFF8FAFC);
+  static const Color _onLight = Color(0xFF1E293B);  // Dark text for visibility
 
   // Dark scheme
   static const Color _darkBackground = Color(0xFF121316);
@@ -61,7 +62,7 @@ class NewAppTheme {
       surface: _lightSurface,
       onSurface: _onLight,
       surfaceVariant: _lightSurfaceVariant,
-      onSurfaceVariant: _neutral700,
+      onSurfaceVariant: Color(0xFF64748B),  // Better contrast
       outline: Color(0xFFA8ADB7),
       outlineVariant: Color(0xFFD4D8E0),
       shadow: Colors.black12,
@@ -114,13 +115,48 @@ class NewAppTheme {
   static ThemeData _themeFromScheme(ColorScheme scheme, {required bool isDark}) {
     final base = ThemeData(useMaterial3: true, brightness: scheme.brightness, colorScheme: scheme);
     final onText = scheme.onSurface;
+
+    // Typography: friendly, modern, readable
+    final bodyTextTheme = GoogleFonts.nunitoTextTheme(base.textTheme).apply(
+      displayColor: onText,
+      bodyColor: onText,
+    );
+    final headingFamily = GoogleFonts.poppinsTextTheme(base.textTheme).apply(
+      displayColor: onText,
+      bodyColor: onText,
+    );
+
+    final textTheme = bodyTextTheme.copyWith(
+      displayLarge: headingFamily.displayLarge?.copyWith(fontWeight: FontWeight.w800, letterSpacing: -0.5),
+      displayMedium: headingFamily.displayMedium?.copyWith(fontWeight: FontWeight.w700, letterSpacing: -0.3),
+      displaySmall: headingFamily.displaySmall?.copyWith(fontWeight: FontWeight.w700),
+      headlineLarge: headingFamily.headlineLarge?.copyWith(fontWeight: FontWeight.w700),
+      headlineMedium: headingFamily.headlineMedium?.copyWith(fontWeight: FontWeight.w700),
+      headlineSmall: headingFamily.headlineSmall?.copyWith(fontWeight: FontWeight.w700),
+      titleLarge: headingFamily.titleLarge?.copyWith(fontWeight: FontWeight.w700),
+    );
+
     return base.copyWith(
       scaffoldBackgroundColor: scheme.background,
+      textTheme: textTheme,
       appBarTheme: AppBarTheme(
         backgroundColor: Colors.transparent,
         elevation: 0,
         scrolledUnderElevation: 0,
         foregroundColor: onText,
+      ),
+      navigationBarTheme: NavigationBarThemeData(
+        backgroundColor: scheme.surface,
+        indicatorColor: scheme.primary.withOpacity(isDark ? 0.22 : 0.18),
+        surfaceTintColor: scheme.surface,
+        labelTextStyle: WidgetStateProperty.all(TextStyle(
+          color: onText,
+          fontWeight: FontWeight.w600,
+        )),
+        iconTheme: WidgetStateProperty.resolveWith((states) {
+          final selected = states.contains(WidgetState.selected);
+          return IconThemeData(color: selected ? scheme.primary : scheme.onSurfaceVariant);
+        }),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(

@@ -1,4 +1,4 @@
-from . import items, session, leaderboards, profiles, home
+from . import items, session, leaderboards, profiles, home, parents, admin
 
 __all__ = [
     'items',
@@ -6,4 +6,6 @@ __all__ = [
     'leaderboards',
     'profiles',
     'home',
+    'parents',
+    'admin',
 ]

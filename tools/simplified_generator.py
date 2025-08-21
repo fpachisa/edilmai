@@ -143,7 +143,6 @@ class SimplifiedProblemGenerator:
                         "hint_text": "Final hint with answer guidance"
                     }}
                 ],
-                "full_solution": "Complete step-by-step solution"
             }}
         }}
         """

@@ -1,0 +1,1943 @@
+{
+  "curriculum": "Singapore PSLE Mathematics",
+  "topic": "Data Analysis",
+  "metadata": {
+    "generated_at": "2025-08-19T17:46:52.560177",
+    "generator_version": "simplified-v1.0",
+    "subject_id": "data-analysis",
+    "total_subtopics": 2,
+    "questions_per_subtopic": 20,
+    "singapore_moe_aligned": true,
+    "total_questions": 40,
+    "completed_at": "2025-08-19T17:53:52.841183"
+  },
+  "questions": [
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q1",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Favourite Sports Survey",
+      "complexity": "Easy",
+      "problem_text": "A group of Primary 6 students were surveyed about their favourite sport. The pie chart below shows the results.\n\nWhat fraction of the students prefer Football?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"#f0f0f0\" stroke=\"black\" stroke-width=\"1\"/>\n  <g>\n    <!-- Football (1/2) -->\n    <path d=\"M50 50 L50 10 A40 40 0 0 1 50 90 L50 50 Z\" fill=\"#FFC107\"/>\n    <text x=\"60\" y=\"50\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Football (1/2)</text>\n    <!-- Basketball (1/4) -->\n    <path d=\"M50 50 L50 90 A40 40 0 0 1 10 50 L50 50 Z\" fill=\"#4CAF50\"/>\n    <text x=\"30\" y=\"70\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Basketball (1/4)</text>\n    <!-- Badminton (1/8) -->\n    <path d=\"M50 50 L10 50 A40 40 0 0 1 20.29 19.71 L50 50 Z\" fill=\"#2196F3\"/>\n    <text x=\"25\" y=\"35\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Badminton (1/8)</text>\n    <!-- Swimming (1/8) -->\n    <path d=\"M50 50 L20.29 19.71 A40 40 0 0 1 50 10 L50 50 Z\" fill=\"#9C27B0\"/>\n    <text x=\"40\" y=\"25\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Swimming (1/8)</text>\n  </g>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/2",
+        "alternative_answers": [
+          "0.5",
+          "1/2",
+          "one-half"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identifies the fraction labelled for 'Football' from the pie chart.",
+        "keywords": [
+          "pie chart",
+          "fraction",
+          "reading",
+          "interpret"
+        ],
+        "common_misconceptions": {
+          "1/4": "This is the fraction for Basketball, not Football. Always read the label carefully for the specific category asked.",
+          "0.5": "While 0.5 is equivalent to 1/2, the question asks for a fraction, and it's best to provide it in its simplest fractional form as seen in the chart.",
+          "2": "This is not a fraction and does not represent a part of the whole. A fraction for a part of a pie chart must be less than 1."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Look at the pie chart provided."
+          },
+          {
+            "step": 2,
+            "hint_text": "Find the sector labelled 'Football'."
+          },
+          {
+            "step": 3,
+            "hint_text": "Read the fraction written next to 'Football' on the chart. That is your answer."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q2",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Colours of Balloons",
+      "complexity": "Easy",
+      "problem_text": "A party pack contains balloons of different colours. The pie chart shows the fraction of balloons for each colour: 1/3 are red, 1/4 are blue, and 1/6 are green. The remaining balloons are yellow.\n\nWhat fraction of the balloons are yellow?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"#f0f0f0\" stroke=\"black\" stroke-width=\"1\"/>\n  <g>\n    <!-- Red (1/3 = 120 deg) -->\n    <path d=\"M50 50 L50 10 A40 40 0 0 1 84.64 30 L50 50 Z\" fill=\"#F44336\"/>\n    <text x=\"70\" y=\"30\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Red (1/3)</text>\n    <!-- Blue (1/4 = 90 deg) -->\n    <path d=\"M50 50 L84.64 30 A40 40 0 0 1 90 50 L50 50 Z\" fill=\"#2196F3\"/>\n    <text x=\"75\" y=\"60\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Blue (1/4)</text>\n    <!-- Green (1/6 = 60 deg) -->\n    <path d=\"M50 50 L90 50 A40 40 0 0 1 84.64 70 L50 50 Z\" fill=\"#4CAF50\"/>\n    <text x=\"70\" y=\"70\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Green (1/6)</text>\n    <!-- Yellow (Remaining = 1/4 = 90 deg) -->\n    <path d=\"M50 50 L84.64 70 A40 40 0 0 1 50 90 L50 50 Z\" fill=\"#FFEB3B\"/>\n    <text x=\"30\" y=\"75\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Yellow (?)</text>\n  </g>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/4",
+        "alternative_answers": [
+          "0.25",
+          "2/8",
+          "3/12"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculates the remaining fraction by subtracting the sum of known fractions from 1.",
+        "keywords": [
+          "pie chart",
+          "fraction",
+          "remainder",
+          "whole",
+          "subtract"
+        ],
+        "common_misconceptions": {
+          "5/12": "This might be the sum of 1/3 + 1/4 + 1/6. Remember that the sum of all fractions in a pie chart must equal 1 whole. You need to subtract this sum from 1, not just give the sum.",
+          "9/12": "Incorrect addition or subtraction. Double-check your common denominator and calculations.",
+          "Adding the given fractions without subtracting from 1": "The question asks for the 'remaining' balloons, which implies finding the fraction that completes the whole pie, not just summing the given parts."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Remember that a whole pie chart represents 1 (or the whole)."
+          },
+          {
+            "step": 2,
+            "hint_text": "First, find the total fraction of balloons that are red, blue, and green. You will need a common denominator for 3, 4, and 6."
+          },
+          {
+            "step": 3,
+            "hint_text": "Subtract the total fraction of red, blue, and green balloons from 1 to find the fraction of yellow balloons."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q3",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Bakery Cookie Sales",
+      "complexity": "Easy",
+      "problem_text": "A bakery recorded the types of cookies sold on a particular day. The pie chart shows the percentage of each type sold.\n\nWhat fraction of the cookies sold were Chocolate Chip?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"#f0f0f0\" stroke=\"black\" stroke-width=\"1\"/>\n  <g>\n    <!-- Chocolate Chip (40% = 144 deg) -->\n    <path d=\"M50 50 L50 10 A40 40 0 0 1 88.09 38.31 L50 50 Z\" fill=\"#795548\"/>\n    <text x=\"75\" y=\"30\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Chocolate Chip (40%)</text>\n    <!-- Oatmeal (30% = 108 deg) -->\n    <path d=\"M50 50 L88.09 38.31 A40 40 0 0 1 79.02 70.98 L50 50 Z\" fill=\"#FFC107\"/>\n    <text x=\"75\" y=\"65\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Oatmeal (30%)</text>\n    <!-- Butter (15% = 54 deg) -->\n    <path d=\"M50 50 L79.02 70.98 A40 40 0 0 1 50 90 L50 50 Z\" fill=\"#FFEB3B\"/>\n    <text x=\"55\" y=\"85\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Butter (15%)</text>\n    <!-- Sugar (Remaining 15% = 54 deg) -->\n    <path d=\"M50 50 L50 90 A40 40 0 0 1 20.98 70.98 L50 50 Z\" fill=\"#E0F2F7\"/>\n    <text x=\"25\" y=\"70\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Sugar (15%)</text>\n  </g>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "2/5",
+        "alternative_answers": [
+          "0.4",
+          "4/10",
+          "40/100"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly converts the given percentage for 'Chocolate Chip' to its simplest fractional form.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "fraction",
+          "convert"
+        ],
+        "common_misconceptions": {
+          "40": "This is a percentage, not a fraction. A fraction represents a part of a whole as a division.",
+          "4/10": "While mathematically correct, it's not in its simplest form. Remember to simplify fractions where possible (e.g., by dividing both numerator and denominator by their greatest common divisor).",
+          "1/4": "This is incorrect conversion or misreading of the percentage. 40% is not 1/4."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Identify the percentage for Chocolate Chip cookies from the pie chart."
+          },
+          {
+            "step": 2,
+            "hint_text": "Remember that a percentage can be written as a fraction by placing it over 100. For example, 25% = 25/100."
+          },
+          {
+            "step": 3,
+            "hint_text": "Write the percentage as a fraction and then simplify it to its lowest terms."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q4",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Land Use in Town",
+      "complexity": "Easy",
+      "problem_text": "The pie chart shows how land is used in a small town. The land used for residential area takes up exactly half of the town's land. The land used for parks takes up exactly a quarter of the town's land. The rest is for commercial buildings.\n\nWhat fraction of the town's land is used for residential area?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"#f0f0f0\" stroke=\"black\" stroke-width=\"1\"/>\n  <g>\n    <!-- Residential (1/2 = 180 deg) -->\n    <path d=\"M50 50 L50 10 A40 40 0 0 1 50 90 L50 50 Z\" fill=\"#8BC34A\"/>\n    <text x=\"60\" y=\"50\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Residential</text>\n    <!-- Parks (1/4 = 90 deg) -->\n    <path d=\"M50 50 L50 90 A40 40 0 0 1 10 50 L50 50 Z\" fill=\"#4CAF50\"/>\n    <text x=\"30\" y=\"70\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Parks</text>\n    <!-- Commercial (1/4 = 90 deg) -->\n    <path d=\"M50 50 L10 50 A40 40 0 0 1 50 10 L50 50 Z\" fill=\"#FF9800\"/>\n    <text x=\"30\" y=\"30\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Commercial</text>\n  </g>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/2",
+        "alternative_answers": [
+          "0.5",
+          "2/4",
+          "half"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identifies the described fraction for 'Residential area' from the problem text and the visual representation.",
+        "keywords": [
+          "pie chart",
+          "fraction",
+          "reading",
+          "half",
+          "interpreting"
+        ],
+        "common_misconceptions": {
+          "1/4": "This is the fraction for Parks (or Commercial buildings). The problem states that residential area takes up 'exactly half'.",
+          "2/3": "This is an incorrect estimation. The 'half' sector is a clear and exact division of the circle.",
+          "Not providing a fraction": "The question specifically asks for a fraction. Remember that 'half' can be written as 1/2."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Look at the problem description and identify the key phrase about 'residential area'."
+          },
+          {
+            "step": 2,
+            "hint_text": "The problem states that 'residential area takes up exactly half of the town's land'. Think about how 'half' is written as a fraction."
+          },
+          {
+            "step": 3,
+            "hint_text": "The fraction for 'half' is 1/2."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q5",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Favourite Fruits Survey",
+      "complexity": "Easy",
+      "problem_text": "A survey was conducted among P6 students to find their favourite fruit. The pie chart below shows the results.\n\nWhich fruit is the favourite among the students (i.e., represents the largest fraction)?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"#f0f0f0\" stroke=\"black\" stroke-width=\"1\"/>\n  <g>\n    <!-- Orange (largest, ~40% = 144 deg) -->\n    <path d=\"M50 50 L50 10 A40 40 0 0 1 88.09 38.31 L50 50 Z\" fill=\"#FF9800\"/>\n    <text x=\"75\" y=\"30\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Orange</text>\n    <!-- Apple (~20% = 72 deg) -->\n    <path d=\"M50 50 L88.09 38.31 A40 40 0 0 1 80.98 74.02 L50 50 Z\" fill=\"#F44336\"/>\n    <text x=\"75\" y=\"65\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Apple</text>\n    <!-- Banana (~20% = 72 deg) -->\n    <path d=\"M50 50 L80.98 74.02 A40 40 0 0 1 50 90 L50 50 Z\" fill=\"#FFEB3B\"/>\n    <text x=\"55\" y=\"85\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Banana</text>\n    <!-- Grape (~20% = 72 deg) -->\n    <path d=\"M50 50 L50 90 A40 40 0 0 1 19.02 74.02 L50 50 Z\" fill=\"#9C27B0\"/>\n    <text x=\"25\" y=\"70\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\">Grape</text>\n  </g>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "Orange",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identifies the sector with the largest area, which represents the largest fraction, and states the corresponding fruit name.",
+        "keywords": [
+          "pie chart",
+          "largest fraction",
+          "favourite",
+          "interpret",
+          "compare"
+        ],
+        "common_misconceptions": {
+          "Apple": "This is not the largest sector. Carefully compare the sizes of all the sectors in the pie chart.",
+          "Stating a number or fraction": "The question asks 'Which fruit', so the answer should be the name of the fruit, not a numerical value."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Look at the pie chart and observe the different sections (sectors)."
+          },
+          {
+            "step": 2,
+            "hint_text": "The larger the section, the larger the fraction it represents, and therefore the more students chose that option."
+          },
+          {
+            "step": 3,
+            "hint_text": "Identify the sector that takes up the most space in the pie chart. This represents the largest fraction."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q6",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Favourite Fruit Survey",
+      "complexity": "Easy",
+      "problem_text": "The pie chart below shows the results of a survey on favourite fruits among a group of Primary 6 students. The chart is divided into four equal parts.\n\nWhat fraction of the students chose 'Apple' as their favourite fruit?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='300' height='300' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='1'/><path d='M50 50 L50 10 A40 40 0 0 1 90 50 Z' fill='#FFDDC1'/><text x='70' y='30' font-size='8' text-anchor='middle'>Apple</text><path d='M50 50 L90 50 A40 40 0 0 1 50 90 Z' fill='#ADD8E6'/><text x='70' y='70' font-size='8' text-anchor='middle'>Orange</text><path d='M50 50 L50 90 A40 40 0 0 1 10 50 Z' fill='#90EE90'/><text x='30' y='70' font-size='8' text-anchor='middle'>Banana</text><path d='M50 50 L10 50 A40 40 0 0 1 50 10 Z' fill='#DDA0DD'/><text x='30' y='30' font-size='8' text-anchor='middle'>Grapes</text></svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/4",
+        "alternative_answers": [
+          "0.25",
+          "1/4"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identified the fraction corresponding to the 'Apple' sector, which is clearly a quarter of the circle.",
+        "keywords": [
+          "pie chart",
+          "fraction",
+          "part of a whole",
+          "quarter",
+          "interpret"
+        ],
+        "common_misconceptions": {
+          "1": "Student might count the number of categories instead of looking at the proportion of the circle.",
+          "4": "Student might give '4' as an answer, thinking it's the number of categories, not a fraction."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Look at the 'Apple' section of the pie chart. What part of the whole circle does it cover?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Imagine dividing the entire pie chart into equal slices based on the lines shown. How many of those slices would the 'Apple' section take up, compared to the total number of slices?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The circle is divided into 4 equal parts. The 'Apple' section occupies one of these parts. How do we write this as a fraction?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q7",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Classroom Cleanup Tasks",
+      "complexity": "Easy",
+      "problem_text": "The pie chart shows how cleanup tasks are distributed among students in a class. 'Tidying' takes up 1/2 of the tasks. 'Wiping' takes up 1/4 of the tasks. The 'Sweeping' section is equal in size to the 'Mopping' section.\n\nWhat fraction of the tasks is assigned to 'Sweeping'?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='300' height='300' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='1'/><path d='M50 50 L50 10 A40 40 0 0 1 90 50 Z' fill='#ADD8E6'/><text x='70' y='30' font-size='8' text-anchor='middle'>Tidying (1/2)</text><path d='M50 50 L90 50 A40 40 0 0 1 50 90 Z' fill='#90EE90'/><text x='70' y='70' font-size='8' text-anchor='middle'>Wiping (1/4)</text><path d='M50 50 L50 90 A40 40 0 0 1 32.5 75.5 Z' fill='#FFDDC1'/><text x='40' y='75' font-size='8' text-anchor='middle'>Sweeping</text><path d='M50 50 L32.5 75.5 A40 40 0 0 1 50 10 Z' fill='#DDA0DD'/><text x='40' y='25' font-size='8' text-anchor='middle'>Mopping</text></svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/8",
+        "alternative_answers": [
+          "0.125"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the remaining fraction of tasks after accounting for 'Tidying' and 'Wiping', and then divided that remainder equally between 'Sweeping' and 'Mopping'.",
+        "keywords": [
+          "pie chart",
+          "fraction",
+          "subtract",
+          "divide",
+          "equal parts",
+          "whole"
+        ],
+        "common_misconceptions": {
+          "1/4": "Student might think Sweeping is 1/4 if they only subtract 1/2 from 1 whole, forgetting to include the 'Wiping' fraction, or not dividing the remaining portion by two.",
+          "1/2": "Student might think Sweeping is 1/2 of the remaining part but forget to divide it by 2 for the two equal sections, or simply state 1/2 as the largest fraction."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out what fraction of the tasks is taken up by 'Tidying' and 'Wiping' combined."
+          },
+          {
+            "step": 2,
+            "hint_text": "Subtract the combined fraction from the whole (which is 1) to find the fraction remaining for 'Sweeping' and 'Mopping'."
+          },
+          {
+            "step": 3,
+            "hint_text": "Since 'Sweeping' and 'Mopping' sections are equal, divide the remaining fraction by 2 to find the fraction for 'Sweeping'."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q8",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Favourite Colours Survey (Percentages)",
+      "complexity": "Medium",
+      "problem_text": "A survey was conducted among students to find their favourite colours. The pie chart shows the results:\n- Blue: 25%\n- Green: 50%\n- Red and Yellow sections are equal in size.\n\nWhat fraction of the students chose 'Yellow' as their favourite colour?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='300' height='300' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='1'/><path d='M50 50 L50 10 A40 40 0 0 1 90 50 Z' fill='#ADD8E6'/><text x='70' y='30' font-size='8' text-anchor='middle'>Blue (25%)</text><path d='M50 50 L90 50 A40 40 0 0 1 50 90 Z' fill='#90EE90'/><text x='70' y='70' font-size='8' text-anchor='middle'>Green (50%)</text><path d='M50 50 L50 90 A40 40 0 0 1 32.5 75.5 Z' fill='#FFDDC1'/><text x='40' y='75' font-size='8' text-anchor='middle'>Red</text><path d='M50 50 L32.5 75.5 A40 40 0 0 1 50 10 Z' fill='#DDA0DD'/><text x='40' y='25' font-size='8' text-anchor='middle'>Yellow</text></svg>"
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "1/8",
+        "alternative_answers": [
+          "0.125"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly found the total percentage for Red and Yellow, then divided it by 2, and finally converted the resulting percentage to a simplified fraction.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "fraction",
+          "convert",
+          "total",
+          "equal parts",
+          "deduction"
+        ],
+        "common_misconceptions": {
+          "1/4": "Student might correctly find that Red and Yellow combined is 25% (1/4) but forget to divide it into two equal parts for Yellow only.",
+          "25%": "Student might give the answer in percentage instead of fraction, or simply state 25% for Yellow without dividing."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The total percentage for a whole pie chart is 100%. What percentage is left after accounting for Blue (25%) and Green (50%)?"
+          },
+          {
+            "step": 2,
+            "hint_text": "The remaining percentage is split equally between Red and Yellow. Find the percentage for Yellow."
+          },
+          {
+            "step": 3,
+            "hint_text": "Now, convert the percentage for Yellow into a simplified fraction. Remember that X% is X/100."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q9",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Pet Ownership Survey",
+      "complexity": "Medium",
+      "problem_text": "The pie chart illustrates the results of a survey on pet ownership among families in a neighbourhood. \n- The sector for 'Dogs' is 1/4 of the circle.\n- The sector for 'Cats' is 1/2 of the circle.\n- The 'Birds' sector is half the size of the 'Fish' sector.\n\nWhat fraction of the families own 'Birds'?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='300' height='300' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='1'/><path d='M50 50 L50 10 A40 40 0 0 1 90 50 Z' fill='#ADD8E6'/><text x='70' y='30' font-size='8' text-anchor='middle'>Dogs (1/4)</text><path d='M50 50 L90 50 A40 40 0 0 1 50 90 Z' fill='#90EE90'/><text x='70' y='70' font-size='8' text-anchor='middle'>Cats (1/2)</text><path d='M50 50 L50 90 A40 40 0 0 1 36.5 83.3 Z' fill='#FFDDC1'/><text x='43' y='80' font-size='8' text-anchor='middle'>Birds</text><path d='M50 50 L36.5 83.3 A40 40 0 0 1 50 10 Z' fill='#DDA0DD'/><text x='43' y='20' font-size='8' text-anchor='middle'>Fish</text></svg>"
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "1/12",
+        "alternative_answers": [
+          "0.0833",
+          "1/12"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly found the remaining fraction after Dogs and Cats, and then correctly split that remaining fraction into two parts where one is half the other (ratio 1:2) to find the 'Birds' fraction.",
+        "keywords": [
+          "pie chart",
+          "fraction",
+          "subtract",
+          "ratio",
+          "parts of a whole",
+          "remaining"
+        ],
+        "common_misconceptions": {
+          "1/6": "Student might correctly find the remaining 1/4 but miscalculate the division for Birds and Fish, perhaps assuming they are equal (giving 1/8) or incorrectly applying the ratio.",
+          "1/8": "Student might calculate the remaining portion as 1/4 and then divide it by 2, assuming Birds and Fish are equal in size."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the total fraction of families who own 'Dogs' (1/4) and 'Cats' (1/2)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Subtract this total from the whole (1) to find the fraction of families who own 'Birds' or 'Fish'."
+          },
+          {
+            "step": 3,
+            "hint_text": "The 'Birds' sector is half the size of the 'Fish' sector. This means if 'Birds' is 1 part, 'Fish' is 2 parts. So, the remaining fraction is divided into a total of 1 + 2 = 3 parts. Find the value of 1 part, which represents 'Birds'."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q10",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Transport to School",
+      "complexity": "Medium",
+      "problem_text": "The pie chart shows the different modes of transport students use to get to school.\n- 'Walk' makes up 1/5 of the students.\n- 'Bus' makes up 1/2 of the students.\n- The number of students who travel by 'Car' is twice the number of students who travel by 'Bicycle'.\n\nWhat fraction of the students travel by 'Bicycle'?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='300' height='300' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='1'/><path d='M50 50 L50 10 A40 40 0 0 1 90 50 Z' fill='#ADD8E6'/><text x='70' y='30' font-size='8' text-anchor='middle'>Walk (1/5)</text><path d='M50 50 L90 50 A40 40 0 0 1 50 90 Z' fill='#90EE90'/><text x='70' y='70' font-size='8' text-anchor='middle'>Bus (1/2)</text><path d='M50 50 L50 90 A40 40 0 0 1 36.5 83.3 Z' fill='#FFDDC1'/><text x='43' y='80' font-size='8' text-anchor='middle'>Car</text><path d='M50 50 L36.5 83.3 A40 40 0 0 1 50 10 Z' fill='#DDA0DD'/><text x='43' y='20' font-size='8' text-anchor='middle'>Bicycle</text></svg>"
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "1/10",
+        "alternative_answers": [
+          "0.1"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly found the remaining fraction after 'Walk' and 'Bus', and then correctly split that remaining fraction based on the 2:1 ratio for 'Car' and 'Bicycle' to find the 'Bicycle' fraction.",
+        "keywords": [
+          "pie chart",
+          "fraction",
+          "subtract",
+          "ratio",
+          "modes of transport",
+          "whole"
+        ],
+        "common_misconceptions": {
+          "3/20": "Student might calculate the remaining fraction as 3/10 and then incorrectly assume Car and Bicycle each take 1/2 of that, leading to 3/20 for Bicycle.",
+          "1/15": "Student might calculate the remaining fraction as 3/10 but misinterpret the 'twice' relationship, leading to incorrect division."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Find the total fraction of students who travel by 'Walk' (1/5) and 'Bus' (1/2)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Subtract this total from the whole (1) to find the fraction of students who travel by 'Car' or 'Bicycle'."
+          },
+          {
+            "step": 3,
+            "hint_text": "If 'Car' is twice 'Bicycle', it means 'Car' is 2 parts and 'Bicycle' is 1 part. The remaining fraction needs to be divided into a total of 2 + 1 = 3 parts. Find the value of 1 part, which represents 'Bicycle'."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q11",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Favourite Sports Survey",
+      "complexity": "Medium",
+      "problem_text": "A survey was conducted among 200 students to find out their favourite sports. The results are shown in the pie chart. \n\n<svg width='250' height='250' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='white' stroke='black' stroke-width='1'/><text x='50' y='50' font-size='8' text-anchor='middle' dominant-baseline='middle'>Favourite Sports</text><text x='50' y='65' font-size='6' text-anchor='middle'>(Details below)</text></svg>\n\n*   Football: 40%\n*   Basketball: 25%\n*   Swimming: 15%\n*   Athletics: The remaining percentage\n\nWhat fraction of the students chose Athletics as their favourite sport? Express your answer in its simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='250' height='250' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='white' stroke='black' stroke-width='1'/><text x='50' y='50' font-size='8' text-anchor='middle' dominant-baseline='middle'>Favourite Sports</text><text x='50' y='65' font-size='6' text-anchor='middle'>(Details in problem text)</text></svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/5",
+        "alternative_answers": [
+          "20/100",
+          "2/10"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the percentage for Athletics and then converted it to a fraction in its simplest form.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "fraction",
+          "remainder",
+          "simplify"
+        ],
+        "common_misconceptions": {
+          "Miscalculated remainder percentage": "A common mistake is incorrectly adding up the given percentages or subtracting from 90% or 360 degrees instead of 100%. Remember a whole pie chart represents 100% of the total.",
+          "Incorrect fraction conversion": "Students might convert the percentage to a fraction but forget to simplify it to its lowest terms, or make errors during simplification.",
+          "Confusing total students with percentages": "The 200 students is extra information not needed to find the fraction for Athletics, only the percentages matter here. Don't let numerical values distract you from proportional reasoning."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the total percentage of students for Football, Basketball, and Swimming."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, subtract this total from 100% to find the percentage of students who chose Athletics."
+          },
+          {
+            "step": 3,
+            "hint_text": "Finally, convert this percentage into a fraction and simplify it to its simplest form."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q12",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "School Carnival Snack Sales",
+      "complexity": "Medium",
+      "problem_text": "A school carnival sold a total of 360 snacks. The pie chart below shows the distribution of different types of snacks sold.\n\n<svg width='250' height='250' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='white' stroke='black' stroke-width='1'/><text x='50' y='50' font-size='8' text-anchor='middle' dominant-baseline='middle'>Snack Sales</text><text x='50' y='65' font-size='6' text-anchor='middle'>(Details below)</text></svg>\n\n*   Pizza: 120°\n*   Hotdogs: 90°\n*   Sandwiches: 60°\n*   Fruits: The remaining portion\n\nWhat fraction of the snacks sold were Fruits? Express your answer in its simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='250' height='250' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='white' stroke='black' stroke-width='1'/><text x='50' y='50' font-size='8' text-anchor='middle' dominant-baseline='middle'>Snack Sales</text><text x='50' y='65' font-size='6' text-anchor='middle'>(Details in problem text)</text></svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/4",
+        "alternative_answers": [
+          "90/360"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the angle for Fruits and then converted it to a fraction of 360 degrees, simplifying it.",
+        "keywords": [
+          "pie chart",
+          "angle",
+          "fraction",
+          "remainder",
+          "degrees",
+          "simplify"
+        ],
+        "common_misconceptions": {
+          "Incorrect total angle": "A common mistake is forgetting that a whole circle (pie chart) represents 360 degrees, not 100 or 180.",
+          "Arithmetic errors in subtraction": "Carefully add the given angles and subtract from 360 degrees to find the remaining angle.",
+          "Not simplifying the fraction": "Always ensure the fraction is in its simplest form as required by the question."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the sum of the angles for Pizza, Hotdogs, and Sandwiches."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, subtract this sum from the total degrees in a circle (360°) to find the angle for Fruits."
+          },
+          {
+            "step": 3,
+            "hint_text": "Finally, express this angle as a fraction of 360° and simplify it to its simplest form."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q13",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Mr. Tan's Monthly Budget",
+      "complexity": "Medium",
+      "problem_text": "The pie chart below shows how Mr. Tan allocates his monthly budget. \n\n<svg width='250' height='250' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='white' stroke='black' stroke-width='1'/><text x='50' y='50' font-size='8' text-anchor='middle' dominant-baseline='middle'>Mr. Tan's Budget</text><text x='50' y='65' font-size='6' text-anchor='middle'>(Details below)</text></svg>\n\n*   Rent: 1/3\n*   Food: 2/5\n*   Transport: 1/6\n*   Savings: The remaining fraction\n\nWhat fraction of his budget is allocated to Savings? Express your answer in its simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='250' height='250' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='white' stroke='black' stroke-width='1'/><text x='50' y='50' font-size='8' text-anchor='middle' dominant-baseline='middle'>Mr. Tan's Budget</text><text x='50' y='65' font-size='6' text-anchor='middle'>(Details in problem text)</text></svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/10",
+        "alternative_answers": [
+          "3/30"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student found a common denominator for the fractions, correctly summed them, and then subtracted from 1 (the whole) to find the remaining fraction for Savings, simplifying it if necessary.",
+        "keywords": [
+          "pie chart",
+          "fraction",
+          "budget",
+          "remainder",
+          "common denominator",
+          "simplify"
+        ],
+        "common_misconceptions": {
+          "Incorrect common denominator": "Choosing a common denominator that is too small or incorrect will lead to wrong sums. The least common multiple (LCM) of 3, 5, and 6 is 30.",
+          "Error in adding or subtracting fractions": "Remember to add or subtract only the numerators once the fractions have a common denominator. The denominator remains the same.",
+          "Forgetting to subtract from the whole (1)": "The entire budget represents '1 whole'. To find the remainder, subtract the sum of the known parts from 1."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To add or subtract fractions, they must have a common denominator. Find the Least Common Multiple (LCM) of 3, 5, and 6."
+          },
+          {
+            "step": 2,
+            "hint_text": "Convert Rent, Food, and Transport into equivalent fractions with this common denominator and sum them up."
+          },
+          {
+            "step": 3,
+            "hint_text": "Subtract the sum from 1 (representing the whole budget) to find the fraction for Savings. Simplify your answer."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q14",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Student Pet Ownership Survey",
+      "complexity": "Hard",
+      "problem_text": "A survey was conducted among a group of students to find out what type of pets they own. The results are shown in the pie chart.\n\n<svg width='250' height='250' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='white' stroke='black' stroke-width='1'/><text x='50' y='50' font-size='8' text-anchor='middle' dominant-baseline='middle'>Pet Ownership</text><text x='50' y='65' font-size='6' text-anchor='middle'>(Details below)</text></svg>\n\n*   Cats: 30%\n*   Dogs: 40%\n*   Fish: 2/3 of those who own Dogs\n*   Other Pets: The remaining students\n\nIf 60 students own 'Other Pets', what fraction of the total students own Fish? Express your answer in its simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='250' height='250' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='white' stroke='black' stroke-width='1'/><text x='50' y='50' font-size='8' text-anchor='middle' dominant-baseline='middle'>Pet Ownership</text><text x='50' y='65' font-size='6' text-anchor='middle'>(Details in problem text)</text></svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "4/15",
+        "alternative_answers": [
+          "8/30",
+          "80/300"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "This is a multi-step problem. Evaluate if the student correctly found the percentage for 'Other Pets', used that to find the total number of students, then calculated the number of students who own Dogs and Fish, and finally expressed Fish owners as a fraction of the total students.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "fraction",
+          "total",
+          "part of a whole",
+          "multi-step problem",
+          "proportion"
+        ],
+        "common_misconceptions": {
+          "Confusing 'part of a part'": "The number of students owning Fish is 2/3 *of those who own Dogs*, not 2/3 of the total. Students might incorrectly calculate 2/3 of the total students.",
+          "Incorrectly calculating 'Other Pets' percentage": "Carefully add Cats and Dogs percentages, then find the percentage for Fish. The 'Other Pets' percentage is 100% minus the sum of Cats, Dogs, and Fish.",
+          "Failure to find total students first": "Some students might try to work with fractions or percentages without establishing the total number of students first, which is crucial when a numerical value for a category is given.",
+          "Not simplifying the final fraction": "Always simplify the fraction to its simplest form."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the percentage of students who own Fish. Remember Fish owners are 2/3 *of* Dog owners (40%)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Calculate the total percentage for Cats, Dogs, and Fish. Use this to find the percentage of students who own 'Other Pets'."
+          },
+          {
+            "step": 3,
+            "hint_text": "You know 60 students own 'Other Pets' and you know their percentage. Use this information to find the total number of students in the survey. Then, find the number of students who own Fish and express it as a fraction of the total."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q15",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Community Garden Flowers",
+      "complexity": "Medium",
+      "problem_text": "A community garden has different types of flowers. The pie chart below shows the fraction of the garden covered by Roses and Orchids. The remaining portion is equally divided between Lilies and Daisies.\n\n<svg width='250' height='250' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='white' stroke='black' stroke-width='1'/><text x='50' y='50' font-size='8' text-anchor='middle' dominant-baseline='middle'>Garden Flowers</text><text x='50' y='65' font-size='6' text-anchor='middle'>(Details below)</text></svg>\n\n*   Roses: 1/4\n*   Orchids: 1/3\n*   Lilies: Equal to Daisies\n*   Daisies: Equal to Lilies\n\nWhat fraction of the garden's flowers are Daisies? Express your answer in its simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='250' height='250' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='white' stroke='black' stroke-width='1'/><text x='50' y='50' font-size='8' text-anchor='middle' dominant-baseline='middle'>Garden Flowers</text><text x='50' y='65' font-size='6' text-anchor='middle'>(Details in problem text)</text></svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "5/24",
+        "alternative_answers": [
+          "10/48"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly found the combined fraction for Roses and Orchids, subtracted it from 1 to find the remaining fraction, and then divided that remainder equally by 2 for Daisies, simplifying the result.",
+        "keywords": [
+          "pie chart",
+          "fraction",
+          "remainder",
+          "equal parts",
+          "common denominator",
+          "simplify"
+        ],
+        "common_misconceptions": {
+          "Arithmetic errors with fractions": "Ensure accurate addition and subtraction of fractions, especially finding the correct common denominator (LCM of 4 and 3 is 12).",
+          "Forgetting to divide the remainder": "Students might correctly find the remainder but forget to split it equally between Lilies and Daisies, or divide by 1/2 instead of multiplying by 1/2.",
+          "Not simplifying the final fraction": "Always simplify the fraction to its simplest form."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the total fraction covered by Roses and Orchids. Remember to use a common denominator (LCM of 4 and 3)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, subtract this total fraction from 1 (the whole garden) to find the fraction covered by Lilies and Daisies combined."
+          },
+          {
+            "step": 3,
+            "hint_text": "Since Lilies and Daisies cover the remaining portion equally, divide this remainder by 2 to find the fraction for Daisies. Simplify your answer."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q16",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Favourite Sports Survey",
+      "complexity": "Hard",
+      "problem_text": "The pie chart shows the results of a survey on the favourite sports of a group of students. The number of students who chose Swimming is 90. The number of students who chose Athletics is half the number of students who chose Swimming.\n\nFavourite Sports\n\n[Pie chart description: A pie chart titled 'Favourite Sports'. Sectors are labelled: Football, Swimming, Basketball, Athletics, and Others. The 'Others' sector takes up 1/5 of the pie chart. The 'Football' sector takes up 1/4 of the pie chart. The angle for 'Basketball' is 90 degrees. No other numerical information is given on the chart itself, other than the labels.]\n\nWhat is the total number of students surveyed?",
+      "asset": {
+        "image_url": "https://i.imgur.com/example_pie_chart_16.png",
+        "svg_code": "<svg width='400' height='400' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='40' fill='#f0f0f0' stroke='black' stroke-width='0.5'/><g transform='translate(50,50)'><path d='M 0 0 L 40 0 A 40 40 0 0 1 23.511 -32.361 Z' fill='#FFDDC1'/><text x='30' y='-10' font-size='5' text-anchor='middle'>Football</text><path d='M 0 0 L 23.511 -32.361 A 40 40 0 0 1 -23.511 -32.361 Z' fill='#FFB3BA'/><text x='0' y='-25' font-size='5' text-anchor='middle'>Swimming</text><path d='M 0 0 L -23.511 -32.361 A 40 40 0 0 1 -40 -0 Z' fill='#BAFFC9'/><text x='-30' y='-10' font-size='5' text-anchor='middle'>Basketball</text><path d='M 0 0 L -40 -0 A 40 40 0 0 1 -23.511 32.361 Z' fill='#BAE1FF'/><text x='-30' y='10' font-size='5' text-anchor='middle'>Athletics</text><path d='M 0 0 L -23.511 32.361 A 40 40 0 0 1 40 0 Z' fill='#FFFFBA'/><text x='0' y='25' font-size='5' text-anchor='middle'>Others</text></g></svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "450",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student must correctly calculate the number of students for Athletics, then determine the fraction of the total represented by Swimming and Athletics combined. They must also correctly convert the angle for Basketball to a fraction and combine it with the given fractions for Football and Others. Finally, they need to find the total number of students by relating the known number of students (Swimming + Athletics) to their combined fraction.",
+        "keywords": [
+          "pie chart",
+          "fraction",
+          "total",
+          "percentage",
+          "angle",
+          "deduction",
+          "ratio"
+        ],
+        "common_misconceptions": {
+          "Incorrectly calculating Athletics": "Students might not halve the number for Swimming correctly, or make a calculation error.",
+          "Incorrectly converting angle to fraction": "Students might forget that 90 degrees is 1/4 of a circle, or calculate it incorrectly.",
+          "Miscalculating the fraction for Swimming and Athletics": "Students might sum up fractions of the whole instead of finding the combined fraction for 'Swimming + Athletics' accurately.",
+          "Forgetting to subtract known fractions from the whole": "Students might not realise they need to find the fraction for (Swimming + Athletics) by subtracting the fractions for Football, Basketball, and Others from 1.",
+          "Errors in finding the total": "Students might divide by the wrong number, or multiply instead of divide when finding the whole from a part."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the number of students who chose Athletics. Remember it's half the number of students who chose Swimming."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, identify the fractions of the whole represented by 'Others' and 'Football'. Convert the angle for 'Basketball' (90 degrees) into a fraction of the whole pie chart (360 degrees)."
+          },
+          {
+            "step": 3,
+            "hint_text": "Now, sum up the known fractions (Others, Football, Basketball). Subtract this sum from 1 (the whole) to find the combined fraction for 'Swimming' and 'Athletics'. You have the total number of students for 'Swimming' and 'Athletics' from step 1."
+          },
+          {
+            "step": 4,
+            "hint_text": "If you know the number of students for a certain combined fraction, how can you find the total number of students? Think: (Number of students) ÷ (Fraction they represent) = Total students."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q17",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "School Budget Allocation",
+      "complexity": "Hard",
+      "problem_text": "The pie chart illustrates how a school's annual budget is allocated. The amount spent on 'Utility Bills' is $36,000 less than the amount spent on 'Programmes & Activities'. The total budget is not given.\n\nSchool Annual Budget Allocation\n\n[Pie chart description: A pie chart titled 'School Annual Budget Allocation'. Sectors are labelled: Staff Salaries, Facilities Maintenance, Utility Bills, Programmes & Activities, and Others. The 'Staff Salaries' sector is 45%. The 'Facilities Maintenance' sector is 25%. The 'Others' sector is 10%. No other numerical information is given on the chart itself.]\n\nWhat is the total annual budget of the school?",
+      "asset": {
+        "image_url": "https://i.imgur.com/example_pie_chart_17.png",
+        "svg_code": "<svg width='400' height='400' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='40' fill='#f0f0f0' stroke='black' stroke-width='0.5'/><g transform='translate(50,50)'><path d='M 0 0 L 40 0 A 40 40 0 0 1 -12.361 -38.042 Z' fill='#FFDDC1'/><text x='15' y='-20' font-size='5' text-anchor='middle'>Staff Salaries (45%)</text><path d='M 0 0 L -12.361 -38.042 A 40 40 0 0 1 -38.042 -12.361 Z' fill='#FFB3BA'/><text x='-25' y='-20' font-size='5' text-anchor='middle'>Facilities Maintenance (25%)</text><path d='M 0 0 L -38.042 -12.361 A 40 40 0 0 1 -23.511 32.361 Z' fill='#BAFFC9'/><text x='-25' y='10' font-size='5' text-anchor='middle'>Utility Bills</text><path d='M 0 0 L -23.511 32.361 A 40 40 0 0 1 23.511 32.361 Z' fill='#BAE1FF'/><text x='0' y='25' font-size='5' text-anchor='middle'>Programmes & Activities</text><path d='M 0 0 L 23.511 32.361 A 40 40 0 0 1 40 0 Z' fill='#FFFFBA'/><text x='30' y='10' font-size='5' text-anchor='middle'>Others (10%)</text></g></svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "480000",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student must first find the combined percentage for 'Utility Bills' and 'Programmes & Activities'. Then, use the difference in amount to deduce the individual percentages for these two categories. Finally, use one of the categories' percentages and its corresponding amount to calculate the total budget.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "budget",
+          "difference",
+          "total",
+          "allocation"
+        ],
+        "common_misconceptions": {
+          "Incorrectly calculating remaining percentage": "Students might sum known percentages incorrectly or forget to subtract from 100%.",
+          "Misinterpreting the difference": "Students might treat $36,000 as a direct percentage, or not realise it represents the difference between the two unknown percentages.",
+          "Incorrectly distributing the remaining percentage": "Once they find the combined percentage for 'Utility Bills' and 'Programmes & Activities', they might not correctly split it using the difference information (e.g., adding or subtracting the difference directly from the percentage instead of the value).",
+          "Errors in finding the total budget": "Students might divide the amount by the wrong percentage, or make calculation errors with decimals."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the total percentage taken up by 'Staff Salaries', 'Facilities Maintenance', and 'Others'. What percentage of the budget remains for 'Utility Bills' and 'Programmes & Activities' combined?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Let P be the percentage for 'Programmes & Activities' and U be the percentage for 'Utility Bills'. You know P - U and P + U. Use these to find P and U individually. For example, if P + U = X% and P - U = Y%, then 2P = X% + Y%."
+          },
+          {
+            "step": 3,
+            "hint_text": "You are given that the amount for 'Utility Bills' is $36,000 less than 'Programmes & Activities'. This means the difference in *percentage* (P - U) corresponds to $36,000. Use this to find the total budget. Remember, Total Budget = (Amount for a category) / (Percentage for that category)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q18",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Mr. Lee's Monthly Expenses",
+      "complexity": "Hard",
+      "problem_text": "The pie chart shows how Mr. Lee spends his monthly income. He spends 1/6 of his income on 'Transport' and 3/8 of his income on 'Food'. He spends $1,050 more on 'Rent' than on 'Transport'.\n\nMr. Lee's Monthly Expenses\n\n[Pie chart description: A pie chart titled 'Mr. Lee's Monthly Expenses'. Sectors are labelled: Rent, Food, Transport, Savings, and Others. No numerical information is given on the chart itself, other than the labels.]\n\nWhat is the total amount of money Mr. Lee saves each month?",
+      "asset": {
+        "image_url": "https://i.imgur.com/example_pie_chart_18.png",
+        "svg_code": "<svg width='400' height='400' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='40' fill='#f0f0f0' stroke='black' stroke-width='0.5'/><g transform='translate(50,50)'><path d='M 0 0 L 40 0 A 40 40 0 0 1 38.042 -12.361 Z' fill='#FFDDC1'/><text x='30' y='-5' font-size='5' text-anchor='middle'>Rent</text><path d='M 0 0 L 38.042 -12.361 A 40 40 0 0 1 12.361 -38.042 Z' fill='#FFB3BA'/><text x='20' y='-25' font-size='5' text-anchor='middle'>Food</text><path d='M 0 0 L 12.361 -38.042 A 40 40 0 0 1 -12.361 -38.042 Z' fill='#BAFFC9'/><text x='-5' y='-25' font-size='5' text-anchor='middle'>Transport</text><path d='M 0 0 L -12.361 -38.042 A 40 40 0 0 1 -38.042 -12.361 Z' fill='#BAE1FF'/><text x='-25' y='-20' font-size='5' text-anchor='middle'>Savings</text><path d='M 0 0 L -38.042 -12.361 A 40 40 0 0 1 40 0 Z' fill='#FFFFBA'/><text x='0' y='15' font-size='5' text-anchor='middle'>Others</text></g></svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "1200",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student must first convert all known fractions/percentages to a common base (e.g., fractions with a common denominator, or percentages). Then, deduce the fraction/percentage for 'Rent' using the information about 'Transport'. Use the difference in amounts for 'Rent' and 'Transport' to find the total income. Finally, calculate the 'Savings' amount by finding its fraction/percentage of the total income.",
+        "keywords": [
+          "pie chart",
+          "fraction",
+          "income",
+          "expenses",
+          "difference",
+          "total",
+          "savings"
+        ],
+        "common_misconceptions": {
+          "Incorrectly calculating the fraction for Rent": "Students might add $1,050 to the fraction for Transport instead of understanding it's an amount difference, or simply make calculation errors.",
+          "Errors in finding the common denominator for fractions": "When combining 1/6 and 3/8, students might use an incorrect common denominator.",
+          "Not finding the total income first": "Students might try to find Savings directly without knowing the total income, which is a necessary intermediate step.",
+          "Calculation errors when finding the total income": "Dividing the difference in amount by the wrong fraction/percentage difference.",
+          "Confusing amount and fraction/percentage": "Directly adding or subtracting numerical amounts from fractions/percentages."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find a common denominator for the fractions 1/6 (Transport) and 3/8 (Food). This will help you manage the fractions more easily."
+          },
+          {
+            "step": 2,
+            "hint_text": "Let the total income be 'X'. The amount for Transport is (1/6)X. The amount for Rent is (1/6)X + $1,050. The difference in fraction between Rent and Transport is (Rent fraction - Transport fraction). This fraction difference corresponds to $1,050. Use this to find the total income, X."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the total income, calculate the fraction of income spent on Rent. Then, sum up the fractions for Rent, Food, and Transport. The remaining fraction is for Savings and Others. If there is no 'Others' category mentioned or it's implicitly zero, then the remaining fraction is for Savings."
+          },
+          {
+            "step": 4,
+            "hint_text": "If the pie chart only has 'Rent', 'Food', 'Transport', and 'Savings' as visible categories, then 1 - (fraction of Rent + fraction of Food + fraction of Transport) will give you the fraction for Savings. Multiply this fraction by the total income to find the amount saved."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q19",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Sales of School Merchandise",
+      "complexity": "Hard",
+      "problem_text": "The pie chart shows the breakdown of the 2,400 school T-shirts sold last year by type (e.g., Round Neck, V-Neck, Polo T-Shirt). This year, the total number of T-shirts sold increased by 25%. The percentage of 'Round Neck' T-shirts sold remained the same, but the actual number of 'V-Neck' T-shirts sold decreased by 150 compared to last year.\n\nSales of School T-shirts Last Year\n\n[Pie chart description: A pie chart titled 'Sales of School T-shirts Last Year'. Sectors are labelled: Round Neck (40%), V-Neck (30%), Polo T-shirt (20%), and Others (10%).]\n\nWhat is the percentage of 'Polo T-shirts' sold this year?",
+      "asset": {
+        "image_url": "https://i.imgur.com/example_pie_chart_19.png",
+        "svg_code": "<svg width='400' height='400' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='40' fill='#f0f0f0' stroke='black' stroke-width='0.5'/><g transform='translate(50,50)'><path d='M 0 0 L 40 0 A 40 40 0 0 1 -23.511 -32.361 Z' fill='#FFDDC1'/><text x='15' y='-20' font-size='5' text-anchor='middle'>Round Neck (40%)</text><path d='M 0 0 L -23.511 -32.361 A 40 40 0 0 1 -38.042 -12.361 Z' fill='#FFB3BA'/><text x='-25' y='-20' font-size='5' text-anchor='middle'>V-Neck (30%)</text><path d='M 0 0 L -38.042 -12.361 A 40 40 0 0 1 -23.511 32.361 Z' fill='#BAFFC9'/><text x='-25' y='10' font-size='5' text-anchor='middle'>Polo T-shirt (20%)</text><path d='M 0 0 L -23.511 32.361 A 40 40 0 0 1 40 0 Z' fill='#BAE1FF'/><text x='0' y='25' font-size='5' text-anchor='middle'>Others (10%)</text></g></svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "18.33",
+        "alternative_answers": [
+          "18.3",
+          "18 1/3"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student needs to calculate the total sales this year. Then, calculate the number of 'Round Neck' T-shirts sold this year (same percentage of new total). Calculate the number of 'V-Neck' T-shirts sold last year and this year. From this, determine the number of 'Polo T-shirts' and 'Others' combined (by subtracting Round Neck and V-Neck from the new total). If 'Others' also maintained its actual number or a specific relationship, that needs to be considered to isolate 'Polo T-shirts' to find its new percentage.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "sales",
+          "increase",
+          "decrease",
+          "total",
+          "proportion"
+        ],
+        "common_misconceptions": {
+          "Applying percentage changes incorrectly": "Students might apply the 25% increase to individual categories directly or not understand that percentages are of the *new* total.",
+          "Confusing actual numbers with percentages": "They might subtract 150 from a percentage instead of converting to actual numbers first.",
+          "Assuming 'Others' percentage or number remains constant": "The problem only states 'Round Neck' percentage remained the same. It does not explicitly state the actual number or percentage for 'Others' remained constant. This needs careful deduction. If not specified, 'Others' will be grouped with 'Polo T-shirts' as the remaining category to be calculated.",
+          "Calculation errors with fractions or percentages": "Mistakes in calculating 25% increase or decreasing actual numbers."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the total number of T-shirts sold this year. It's an increase of 25% from last year's 2,400 T-shirts."
+          },
+          {
+            "step": 2,
+            "hint_text": "Calculate the number of 'Round Neck' T-shirts sold this year. Its *percentage* (40%) remains the same, but it's 40% of the *new total* calculated in Step 1."
+          },
+          {
+            "step": 3,
+            "hint_text": "Calculate the number of 'V-Neck' T-shirts sold *last year*. Then, use the information that the actual number of 'V-Neck' T-shirts sold *this year* decreased by 150 to find the actual number of 'V-Neck' T-shirts sold this year."
+          },
+          {
+            "step": 4,
+            "hint_text": "Now you have the total T-shirts sold this year, and the actual numbers for 'Round Neck' and 'V-Neck'. Subtract these from the total this year to find the combined number for 'Polo T-shirts' and 'Others' this year. As nothing is mentioned about 'Others' changing its composition, it is implicit its actual number remains the same as last year. So, first calculate 'Others' last year."
+          },
+          {
+            "step": 5,
+            "hint_text": "Calculate the actual number of 'Others' last year (10% of 2400). Assume this number remained constant this year. Then, subtract this number from the combined 'Polo T-shirts' and 'Others' figure (from Step 4) to get the actual number of 'Polo T-shirts' sold this year. Finally, express this number as a percentage of the *total T-shirts sold this year*."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-Q20",
+      "sub_topic": "6.1 Pie Charts",
+      "title": "Students' Preferred After-School Activities",
+      "complexity": "Hard",
+      "problem_text": "A survey was conducted among Primary 6 students about their preferred after-school activities. The pie chart shows the results. 1/3 of the students preferred 'Reading'. The angle representing 'Sports' is 108 degrees. The number of students who preferred 'Art & Craft' is 1/4 of the number of students who preferred 'Music'. There were 150 students who preferred 'Sports'.\n\nPreferred After-School Activities\n\n[Pie chart description: A pie chart titled 'Preferred After-School Activities'. Sectors are labelled: Reading, Sports, Music, Art & Craft, and Other Activities. No numerical information is given on the chart itself.]\n\nHow many students preferred 'Other Activities'?",
+      "asset": {
+        "image_url": "https://i.imgur.com/example_pie_chart_20.png",
+        "svg_code": "<svg width='400' height='400' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='40' fill='#f0f0f0' stroke='black' stroke-width='0.5'/><g transform='translate(50,50)'><path d='M 0 0 L 40 0 A 40 40 0 0 1 12.361 -38.042 Z' fill='#FFDDC1'/><text x='25' y='-15' font-size='5' text-anchor='middle'>Reading</text><path d='M 0 0 L 12.361 -38.042 A 40 40 0 0 1 -23.511 -32.361 Z' fill='#FFB3BA'/><text x='-5' y='-25' font-size='5' text-anchor='middle'>Sports</text><path d='M 0 0 L -23.511 -32.361 A 40 40 0 0 1 -38.042 -12.361 Z' fill='#BAFFC9'/><text x='-25' y='-20' font-size='5' text-anchor='middle'>Music</text><path d='M 0 0 L -38.042 -12.361 A 40 40 0 0 1 -23.511 32.361 Z' fill='#BAE1FF'/><text x='-25' y='10' font-size='5' text-anchor='middle'>Art & Craft</text><path d='M 0 0 L -23.511 32.361 A 40 40 0 0 1 40 0 Z' fill='#FFFFBA'/><text x='0' y='25' font-size='5' text-anchor='middle'>Other Activities</text></g></svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "100",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student must first use the given angle for 'Sports' and its corresponding number of students to find the total number of students in the survey. Then, calculate the number of students for 'Reading'. Next, work with the relationship between 'Art & Craft' and 'Music' to determine their individual numbers. Finally, subtract all known categories from the total to find the number of students for 'Other Activities'.",
+        "keywords": [
+          "pie chart",
+          "angle",
+          "fraction",
+          "ratio",
+          "total",
+          "survey",
+          "deduction"
+        ],
+        "common_misconceptions": {
+          "Incorrectly calculating total students from angle": "Students might misuse the relationship between angle and total, e.g., dividing 360 by 150 instead of 150 by (108/360).",
+          "Errors in fractional calculations": "Mistakes in finding 1/3 of the total, or distributing the remaining portion between Music and Art & Craft.",
+          "Misinterpreting '1/4 of the number...':": "Students might think 'Art & Craft' is 1/4 of the *remaining* students after Reading and Sports, rather than 1/4 of *Music*.",
+          "Arithmetic errors in multi-step calculations": "Summing up values incorrectly or making subtraction errors when finding the final category."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The angle for 'Sports' is 108 degrees, and 150 students preferred 'Sports'. A full circle is 360 degrees. Use this to find the total number of students surveyed. (Total students = 150 / (108/360))."
+          },
+          {
+            "step": 2,
+            "hint_text": "Calculate the number of students who preferred 'Reading'. It's 1/3 of the total number of students you found in Step 1."
+          },
+          {
+            "step": 3,
+            "hint_text": "Subtract the number of students for 'Reading' and 'Sports' from the total number of students. The remaining number represents the combined students for 'Music', 'Art & Craft', and 'Other Activities'."
+          },
+          {
+            "step": 4,
+            "hint_text": "Let M be the number of students for Music and A be for Art & Craft. You know A = 1/4 M. So, M + A = M + 1/4 M = 5/4 M. The combined angle for Music, Art & Craft and Other Activities can be calculated. Or, calculate the actual number of students for Music and Art & Craft combined from the total remaining number of students if 'Other Activities' is unknown."
+          },
+          {
+            "step": 5,
+            "hint_text": "Find the total angle for 'Reading' (1/3 of 360 degrees). Sum the angles for 'Reading' and 'Sports'. Subtract this from 360 degrees to find the combined angle for 'Music', 'Art & Craft', and 'Other Activities'. If Art & Craft is 1/4 of Music, let Music be '4 units' and Art & Craft be '1 unit', so their combined total is '5 units'. Use the remaining number of students (from Step 3) to find the number of students for Music and Art & Craft. Then, subtract these from the remaining total from Step 3 to find 'Other Activities'."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q1",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Students' Favourite Colours Survey",
+      "complexity": "Easy",
+      "problem_text": "A primary school conducted a survey among 150 students to find out their favourite colours. The results are shown in a pie chart. If 30% of the students chose blue as their favourite colour, how many students chose blue?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "45",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated 30% of the total number of students (150).",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "total",
+          "part"
+        ],
+        "common_misconceptions": {
+          "30": "The student might have just given the percentage as the answer, not converted it to a number of students.",
+          "50": "The student might have misunderstood the percentage calculation, perhaps dividing 150 by 3 instead of multiplying by 0.3."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "A pie chart shows the whole quantity, which is 150 students. You need to find a part of this whole."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find a percentage of a number, convert the percentage to a decimal (divide by 100) or a fraction."
+          },
+          {
+            "step": 3,
+            "hint_text": "Multiply the total number of students by the percentage (as a decimal or fraction): 150 × 0.30 or 150 × (30/100)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q2",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Zoo Animal Population",
+      "complexity": "Easy",
+      "problem_text": "A pie chart shows the types of animals in a small zoo. If 20% of the animals are monkeys, and there are 15 monkeys in the zoo, what is the total number of animals in the zoo?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "75",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly found the total by dividing the number of monkeys by their corresponding percentage.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "part",
+          "whole",
+          "total"
+        ],
+        "common_misconceptions": {
+          "3": "The student might have multiplied 15 by 0.20 instead of dividing, confusing finding a part with finding the whole.",
+          "12": "The student might have incorrectly calculated 20% of 15, or made a division error."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You know that 15 monkeys represent 20% of the total animals. You need to find the full 100%."
+          },
+          {
+            "step": 2,
+            "hint_text": "If 20% is 15 animals, what would 1% be? And then what would 100% be?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Divide the number of monkeys by their percentage (as a decimal): 15 ÷ 0.20."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q3",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Fruit Stall Sales Breakdown",
+      "complexity": "Easy",
+      "problem_text": "A fruit stall sold 100 apples, 60 oranges, and 40 pears in a day. This data is represented in a pie chart. What percentage of the fruits sold were oranges?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "30",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the total number of fruits and then found the percentage of oranges.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "part",
+          "total",
+          "fraction"
+        ],
+        "common_misconceptions": {
+          "60": "The student might have just given the number of oranges, not converted it to a percentage.",
+          "25": "The student might have miscalculated the total or the percentage, e.g., using 60/240 or 60/250 instead of 60/200."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the total number of fruits sold from all types."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find the percentage of oranges, you need to compare the number of oranges to the total number of fruits. This forms a fraction."
+          },
+          {
+            "step": 3,
+            "hint_text": "Divide the number of oranges (60) by the total number of fruits. Then, multiply the result by 100%."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q4",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Students' Preferred Sports",
+      "complexity": "Easy",
+      "problem_text": "A survey was done among students about their favourite sport. The pie chart shows that 40% like badminton, 25% like basketball, and 20% like swimming. The rest of the students like football. What percentage of the students like football?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "15",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student understood that a pie chart represents 100% and correctly subtracted the given percentages from 100%.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "total",
+          "sum",
+          "remainder"
+        ],
+        "common_misconceptions": {
+          "85": "The student might have added the percentages instead of subtracting from 100%.",
+          "40": "The student might have picked the largest given percentage, not understanding how to find the remaining part."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Remember that a whole pie chart represents 100% of the surveyed students."
+          },
+          {
+            "step": 2,
+            "hint_text": "Find the total percentage of students who like badminton, basketball, and swimming combined."
+          },
+          {
+            "step": 3,
+            "hint_text": "Subtract the combined percentage from 100% to find the percentage that likes football."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q5",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Vehicles at a Checkpoint",
+      "complexity": "Easy",
+      "problem_text": "Over a period of time, 240 vehicles passed a checkpoint. The types of vehicles are represented in a pie chart. If 1/4 of the vehicles were lorries, how many lorries passed the checkpoint?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "60",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated 1/4 of the total number of vehicles.",
+        "keywords": [
+          "pie chart",
+          "fraction",
+          "total",
+          "part",
+          "of"
+        ],
+        "common_misconceptions": {
+          "4": "The student might have given the denominator of the fraction as the answer.",
+          "240": "The student might have misunderstood the question and given the total number of vehicles instead of the number of lorries."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You have the total number of vehicles and the fraction that are lorries. You need to find the actual number of lorries."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find a fraction 'of' a number, you multiply the fraction by the number."
+          },
+          {
+            "step": 3,
+            "hint_text": "Multiply the total vehicles (240) by the fraction (1/4): 240 × 1/4."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q6",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Favorite Juice Flavours Survey",
+      "complexity": "Easy",
+      "problem_text": "A school canteen conducted a survey on 400 students to find out their favourite juice flavours. The pie chart below shows the results of the survey.\n\nHow many students chose Orange juice as their favourite?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"400\" height=\"350\" viewBox=\"0 0 400 350\" xmlns=\"http://www.w3.org/2000/svg\">\n  <style>\n    .slice { stroke: white; stroke-width: 1; }\n    .label { font-family: Arial, sans-serif; font-size: 14px; fill: black; text-anchor: middle; }\n    .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; text-anchor: middle; fill: black; }\n  </style>\n  <text x=\"200\" y=\"30\" class=\"title\">Favourite Juice Flavours (400 Students)</text>\n\n  <g transform=\"translate(200, 180)\">\n    <!-- Orange: 30% (108 deg) -->\n    <path d=\"M 0 0 L 100 0 A 100 100 0 0 1 -30.90 95.11 Z\" fill=\"#FFD700\" class=\"slice\" />\n    <text x=\"40\" y=\"-30\" class=\"label\">Orange (30%)</text>\n\n    <!-- Apple: 25% (90 deg) -->\n    <path d=\"M 0 0 L -30.90 95.11 A 100 100 0 0 1 -95.11 30.90 Z\" fill=\"#9ACD32\" class=\"slice\" />\n    <text x=\"-80\" y=\"60\" class=\"label\">Apple (25%)</text>\n\n    <!-- Grape: 20% (72 deg) -->\n    <path d=\"M 0 0 L -95.11 30.90 A 100 100 0 0 1 -95.11 -30.90 Z\" fill=\"#BA55D3\" class=\"slice\" />\n    <text x=\"-90\" y=\"-30\" class=\"label\">Grape (20%)</text>\n\n    <!-- Mango: 15% (54 deg) -->\n    <path d=\"M 0 0 L -95.11 -30.90 A 100 100 0 0 1 -30.90 -95.11 Z\" fill=\"#FFA07A\" class=\"slice\" />\n    <text x=\"-80\" y=\"-60\" class=\"label\">Mango (15%)</text>\n\n    <!-- Lychee: 10% (36 deg) -->\n    <path d=\"M 0 0 L -30.90 -95.11 A 100 100 0 0 1 100 0 Z\" fill=\"#FFC0CB\" class=\"slice\" />\n    <text x=\"40\" y=\"30\" class=\"label\">Lychee (10%)</text>\n  </g>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "120",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated 30% of 400.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "total",
+          "part",
+          "calculate"
+        ],
+        "common_misconceptions": {
+          "30": "Student might have given 30 as the answer, forgetting to calculate 30% of the total number of students (400). The percentage is not the count.",
+          "120%": "Student might accidentally include the percentage sign, or confuse the value with a percentage."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, identify the total number of students surveyed and the percentage of students who chose Orange juice from the pie chart."
+          },
+          {
+            "step": 2,
+            "hint_text": "Remember that '30%' means 30 out of every 100. To find the actual number, you need to calculate 30% of the total number of students."
+          },
+          {
+            "step": 3,
+            "hint_text": "To calculate 30% of 400, you can multiply 0.30 by 400, or (30/100) * 400."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q7",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "School Donation Drive Collection",
+      "complexity": "Easy",
+      "problem_text": "The pie chart below shows the amount of money collected by different groups for a school donation drive.\n\nWhat was the total amount of money collected in the donation drive?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"400\" height=\"350\" viewBox=\"0 0 400 350\" xmlns=\"http://www.w3.org/2000/svg\">\n  <style>\n    .slice { stroke: white; stroke-width: 1; }\n    .label { font-family: Arial, sans-serif; font-size: 14px; fill: black; text-anchor: middle; }\n    .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; text-anchor: middle; fill: black; }\n  </style>\n  <text x=\"200\" y=\"30\" class=\"title\">Donation Drive Collection</text>\n\n  <g transform=\"translate(200, 180)\">\n    <!-- Group A: $150 (21.4%) -->\n    <path d=\"M 0 0 L 100 0 A 100 100 0 0 1 65.61 75.47 Z\" fill=\"#6495ED\" class=\"slice\" />\n    <text x=\"70\" y=\"-30\" class=\"label\">Group A: $150</text>\n\n    <!-- Group B: $200 (28.6%) -->\n    <path d=\"M 0 0 L 65.61 75.47 A 100 100 0 0 1 -30.90 95.11 Z\" fill=\"#FF6347\" class=\"slice\" />\n    <text x=\"0\" y=\"80\" class=\"label\">Group B: $200</text>\n\n    <!-- Group C: $100 (14.3%) -->\n    <path d=\"M 0 0 L -30.90 95.11 A 100 100 0 0 1 -80.90 58.78 Z\" fill=\"#20B2AA\" class=\"slice\" />\n    <text x=\"-90\" y=\"60\" class=\"label\">Group C: $100</text>\n\n    <!-- Group D: $250 (35.7%) -->\n    <path d=\"M 0 0 L -80.90 58.78 A 100 100 0 0 1 100 0 Z\" fill=\"#FFD700\" class=\"slice\" />\n    <text x=\"-20\" y=\"-70\" class=\"label\">Group D: $250</text>\n  </g>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "700",
+        "alternative_answers": [
+          "$700"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly summed up all the values shown in the pie chart.",
+        "keywords": [
+          "pie chart",
+          "total",
+          "sum",
+          "add",
+          "parts"
+        ],
+        "common_misconceptions": {
+          "150": "Student might have just picked one value from the chart instead of finding the sum of all values.",
+          "Incorrect sum": "Arithmetic error when adding the numbers."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Observe the pie chart carefully. Each section represents the amount collected by a different group."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find the total amount collected, you need to combine the amounts from all the groups."
+          },
+          {
+            "step": 3,
+            "hint_text": "Add the amounts from Group A, Group B, Group C, and Group D together."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q8",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Library Book Collection",
+      "complexity": "Medium",
+      "problem_text": "The pie chart below shows the distribution of different types of books in a library.\n\nIf there are 1600 Fiction books, how many Science books are there in the library?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"400\" height=\"350\" viewBox=\"0 0 400 350\" xmlns=\"http://www.w3.org/2000/svg\">\n  <style>\n    .slice { stroke: white; stroke-width: 1; }\n    .label { font-family: Arial, sans-serif; font-size: 14px; fill: black; text-anchor: middle; }\n    .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; text-anchor: middle; fill: black; }\n  </style>\n  <text x=\"200\" y=\"30\" class=\"title\">Library Book Distribution</text>\n\n  <g transform=\"translate(200, 180)\">\n    <!-- Fiction: 40% (144 deg) -->\n    <path d=\"M 0 0 L 100 0 A 100 100 0 0 1 -80.90 58.78 Z\" fill=\"#FF6347\" class=\"slice\" />\n    <text x=\"0\" y=\"-40\" class=\"label\">Fiction (40%)</text>\n\n    <!-- Science: 25% (90 deg) -->\n    <path d=\"M 0 0 L -80.90 58.78 A 100 100 0 0 1 -100 0 Z\" fill=\"#6495ED\" class=\"slice\" />\n    <text x=\"-80\" y=\"40\" class=\"label\">Science (25%)</text>\n\n    <!-- History: 20% (72 deg) -->\n    <path d=\"M 0 0 L -100 0 A 100 100 0 0 1 -30.90 -95.11 Z\" fill=\"#20B2AA\" class=\"slice\" />\n    <text x=\"-80\" y=\"-50\" class=\"label\">History (20%)</text>\n\n    <!-- Biography: 15% (54 deg) -->\n    <path d=\"M 0 0 L -30.90 -95.11 A 100 100 0 0 1 100 0 Z\" fill=\"#FFD700\" class=\"slice\" />\n    <text x=\"50\" y=\"30\" class=\"label\">Biography (15%)</text>\n  </g>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1000",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly used the given number of Fiction books (1600) and its corresponding percentage (40%) to find the number of Science books (25%). This involves finding the value of 1% or the total first.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "proportion",
+          "value",
+          "find part",
+          "ratio"
+        ],
+        "common_misconceptions": {
+          "400": "Student might have divided 1600 by 4, assuming 25% is a quarter of 40%. This is incorrect as 1600 is not the total, it's 40% of the total.",
+          "640": "Student might have calculated 40% of 1600 (1600 * 0.40) instead of using 1600 as the 40% value.",
+          "Incorrect calculation for 1%": "Error in calculating the value represented by 1%."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You are given that 1600 Fiction books represent 40% of the total books. Use this information to find out what 1% of the books represents."
+          },
+          {
+            "step": 2,
+            "hint_text": "If 40% is 1600 books, then 1% would be 1600 divided by 40."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you know the value of 1%, you can find the number of Science books by multiplying this value by the percentage for Science books (25%)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q9",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Household Pet Ownership Survey",
+      "complexity": "Medium",
+      "problem_text": "A survey was conducted on 800 households to find out the types of pets they own. The results are shown in the pie chart below.\n\nHow many more households own Dogs than Cats?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"400\" height=\"350\" viewBox=\"0 0 400 350\" xmlns=\"http://www.w3.org/2000/svg\">\n  <style>\n    .slice { stroke: white; stroke-width: 1; }\n    .label { font-family: Arial, sans-serif; font-size: 14px; fill: black; text-anchor: middle; }\n    .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; text-anchor: middle; fill: black; }\n  </style>\n  <text x=\"200\" y=\"30\" class=\"title\">Household Pet Ownership (800 Households)</text>\n\n  <g transform=\"translate(200, 180)\">\n    <!-- Dogs: 45% (162 deg) -->\n    <path d=\"M 0 0 L 100 0 A 100 100 0 0 1 -95.11 30.90 Z\" fill=\"#FF6347\" class=\"slice\" />\n    <text x=\"0\" y=\"-40\" class=\"label\">Dogs (45%)</text>\n\n    <!-- Cats: 30% (108 deg) -->\n    <path d=\"M 0 0 L -95.11 30.90 A 100 100 0 0 1 -30.90 -95.11 Z\" fill=\"#6495ED\" class=\"slice\" />\n    <text x=\"-80\" y=\"-50\" class=\"label\">Cats (30%)</text>\n\n    <!-- Fish: 15% (54 deg) -->\n    <path d=\"M 0 0 L -30.90 -95.11 A 100 100 0 0 1 65.61 -75.47 Z\" fill=\"#20B2AA\" class=\"slice\" />\n    <text x=\"40\" y=\"-80\" class=\"label\">Fish (15%)</text>\n\n    <!-- Birds: 10% (36 deg) -->\n    <path d=\"M 0 0 L 65.61 -75.47 A 100 100 0 0 1 100 0 Z\" fill=\"#FFD700\" class=\"slice\" />\n    <text x=\"80\" y=\"-30\" class=\"label\">Birds (10%)</text>\n  </g>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "120",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the number of households for Dogs and Cats, then found their difference.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "difference",
+          "compare",
+          "total",
+          "part"
+        ],
+        "common_misconceptions": {
+          "360": "Student only calculated the number of households owning Dogs, not the difference.",
+          "240": "Student only calculated the number of households owning Cats, not the difference.",
+          "15": "Student might have calculated the percentage difference (45% - 30% = 15%) but forgot to apply it to the total number of households.",
+          "Incorrect calculation for numbers": "Arithmetic error when calculating 45% or 30% of 800, or when finding the difference."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out how many households own Dogs. Use the total number of households (800) and the percentage for Dogs (45%)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, find out how many households own Cats. Use the total number of households (800) and the percentage for Cats (30%)."
+          },
+          {
+            "step": 3,
+            "hint_text": "Finally, to find 'how many more', you need to find the difference between the number of households owning Dogs and the number of households owning Cats."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q10",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Daily Food Court Sales",
+      "complexity": "Medium",
+      "problem_text": "The pie chart illustrates the distribution of daily sales for different stalls at a food court. Some percentages are given, and one category is labelled 'Others'.\n\nIf the Laksa stall made $300 in sales, what were the sales for the 'Others' category?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"400\" height=\"350\" viewBox=\"0 0 400 350\" xmlns=\"http://www.w3.org/2000/svg\">\n  <style>\n    .slice { stroke: white; stroke-width: 1; }\n    .label { font-family: Arial, sans-serif; font-size: 14px; fill: black; text-anchor: middle; }\n    .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; text-anchor: middle; fill: black; }\n  </style>\n  <text x=\"200\" y=\"30\" class=\"title\">Daily Food Court Sales Distribution</text>\n\n  <g transform=\"translate(200, 180)\">\n    <!-- Chicken Rice: 35% (126 deg) -->\n    <path d=\"M 0 0 L 100 0 A 100 100 0 0 1 -58.78 80.90 Z\" fill=\"#FFD700\" class=\"slice\" />\n    <text x=\"30\" y=\"-40\" class=\"label\">Chicken Rice (35%)</text>\n\n    <!-- Laksa: 25% (90 deg) -->\n    <path d=\"M 0 0 L -58.78 80.90 A 100 100 0 0 1 -100 0 Z\" fill=\"#FF6347\" class=\"slice\" />\n    <text x=\"-80\" y=\"50\" class=\"label\">Laksa (25%)</text>\n\n    <!-- Nasi Lemak: 20% (72 deg) -->\n    <path d=\"M 0 0 L -100 0 A 100 100 0 0 1 -30.90 -95.11 Z\" fill=\"#6495ED\" class=\"slice\" />\n    <text x=\"-80\" y=\"-50\" class=\"label\">Nasi Lemak (20%)</text>\n\n    <!-- Others: ?% (72 deg) -->\n    <path d=\"M 0 0 L -30.90 -95.11 A 100 100 0 0 1 100 0 Z\" fill=\"#20B2AA\" class=\"slice\" />\n    <text x=\"40\" y=\"30\" class=\"label\">Others (?%)</text>\n  </g>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "240",
+        "alternative_answers": [
+          "$240"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly deduced the percentage for 'Others', then used the given Laksa sales ($300 for 25%) to find the sales for 'Others'.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "deduce",
+          "missing value",
+          "proportion",
+          "sales"
+        ],
+        "common_misconceptions": {
+          "75": "Student might have found the percentage for 'Others' (20%) but then incorrectly calculated 25% of 300.",
+          "1200": "Student might have found the total sales (1200) but not the sales for 'Others'.",
+          "Incorrect percentage for Others": "Arithmetic error when summing up known percentages or subtracting from 100%."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the percentage of sales that the 'Others' category represents. Remember that the total percentage for a pie chart is 100%."
+          },
+          {
+            "step": 2,
+            "hint_text": "You know that Laksa sales ($300) represent 25% of the total sales. Use this to find out what 1% of the total sales is worth."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you know the value of 1% and the percentage for 'Others', you can calculate the sales for the 'Others' category."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q11",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Favourite Colours Survey",
+      "complexity": "Medium",
+      "problem_text": "The pie chart below shows the results of a survey asking 400 students about their favourite colours. How many students chose Blue as their favourite colour?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"200\" height=\"200\" viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"#f0f0f0\" />\n  \n  <!-- Blue: 30% (0-108 deg) -->\n  <path d=\"M100,100 L100,20 A80,80 0 0,1 176.08,54.72 Z\" fill=\"#4285F4\" />\n  <text x=\"130\" y=\"50\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">30% Blue</text>\n\n  <!-- Green: 25% (108-198 deg) -->\n  <path d=\"M100,100 L176.08,54.72 A80,80 0 0,1 176.08,145.28 Z\" fill=\"#34A853\" />\n  <text x=\"150\" y=\"100\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">25% Green</text>\n\n  <!-- Red: 20% (198-270 deg) -->\n  <path d=\"M100,100 L176.08,145.28 A80,80 0 0,1 100,180 Z\" fill=\"#EA4335\" />\n  <text x=\"130\" y=\"150\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">20% Red</text>\n\n  <!-- Yellow: 15% (270-324 deg) -->\n  <path d=\"M100,100 L100,180 A80,80 0 0,1 23.92,145.28 Z\" fill=\"#FBBC04\" />\n  <text x=\"70\" y=\"150\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">15% Yellow</text>\n\n  <!-- Purple: 10% (324-360 deg) -->\n  <path d=\"M100,100 L23.92,145.28 A80,80 0 0,1 100,20 Z\" fill=\"#9C27B0\" />\n  <text x=\"70\" y=\"50\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">10% Purple</text>\n</svg>"
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "120",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated 30% of the total number of students (400).",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "total",
+          "favourite colour"
+        ],
+        "common_misconceptions": {
+          "30": "Student mistakenly thought the percentage itself was the answer, instead of calculating the number of students.",
+          "40": "Student might have calculated 10% of 400 or confused 30% with 30 students."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Understand that the pie chart shows the proportion of students who chose each colour. 'Blue' accounts for 30% of the total students."
+          },
+          {
+            "step": 2,
+            "hint_text": "The total number of students surveyed is 400. To find the number of students who chose Blue, you need to calculate 30% of 400."
+          },
+          {
+            "step": 3,
+            "hint_text": "Calculate 30/100 * 400."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q12",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Monthly Family Budget Breakdown",
+      "complexity": "Medium",
+      "problem_text": "The pie chart illustrates how a family spends its monthly income of $3000. How much money is spent on Transport each month?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"200\" height=\"200\" viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"#f0f0f0\" />\n\n  <!-- Food: 35% (0-126 deg) -->\n  <path d=\"M100,100 L100,20 A80,80 0 0,1 179.9,64.2 Z\" fill=\"#FF6347\" />\n  <text x=\"130\" y=\"50\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">35% Food</text>\n\n  <!-- Rent: 30% (126-234 deg) -->\n  <path d=\"M100,100 L179.9,64.2 A80,80 0 0,1 123.5,173.1 Z\" fill=\"#6A5ACD\" />\n  <text x=\"150\" y=\"100\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">30% Rent</text>\n\n  <!-- Transport: 20% (234-306 deg) -->\n  <path d=\"M100,100 L123.5,173.1 A80,80 0 0,1 20.1,135.8 Z\" fill=\"#32CD32\" />\n  <text x=\"130\" y=\"150\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">20% Transport</text>\n\n  <!-- Utilities: 15% (306-360 deg) -->\n  <path d=\"M100,100 L20.1,135.8 A80,80 0 0,1 100,20 Z\" fill=\"#FFD700\" />\n  <text x=\"70\" y=\"150\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">15% Utilities</text>\n</svg>"
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "$600",
+        "alternative_answers": [
+          "600"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated 20% of the total monthly income ($3000).",
+        "keywords": [
+          "pie chart",
+          "budget",
+          "expenses",
+          "percentage",
+          "income"
+        ],
+        "common_misconceptions": {
+          "20": "Student confused the percentage with the actual amount spent.",
+          "60": "Student may have divided $3000 by 50 or made a calculation error."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Locate 'Transport' on the pie chart and identify the percentage of income spent on it."
+          },
+          {
+            "step": 2,
+            "hint_text": "The family's total monthly income is $3000. You need to find 20% of this amount."
+          },
+          {
+            "step": 3,
+            "hint_text": "Calculate 20/100 * $3000."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q13",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "School Canteen Drink Sales",
+      "complexity": "Medium",
+      "problem_text": "The pie chart shows the proportion of different drinks sold at a school canteen in a day. If 80 bottles of Apple Juice were sold, what was the total number of drinks sold that day?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"200\" height=\"200\" viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"#f0f0f0\" />\n\n  <!-- Milo: 40% (0-144 deg) -->\n  <path d=\"M100,100 L100,20 A80,80 0 0,1 179.9,92.5 Z\" fill=\"#8B4513\" />\n  <text x=\"130\" y=\"50\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">40% Milo</text>\n\n  <!-- Orange Juice: 25% (144-234 deg) -->\n  <path d=\"M100,100 L179.9,92.5 A80,80 0 0,1 123.5,173.1 Z\" fill=\"#FFA500\" />\n  <text x=\"150\" y=\"100\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">25% Orange Juice</text>\n\n  <!-- Apple Juice: 20% (234-306 deg) -->\n  <path d=\"M100,100 L123.5,173.1 A80,80 0 0,1 20.1,135.8 Z\" fill=\"#9ACD32\" />\n  <text x=\"130\" y=\"150\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">20% Apple Juice</text>\n\n  <!-- Water: 15% (306-360 deg) -->\n  <path d=\"M100,100 L20.1,135.8 A80,80 0 0,1 100,20 Z\" fill=\"#ADD8E6\" />\n  <text x=\"70\" y=\"150\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">15% Water</text>\n</svg>"
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "400",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly understood that 20% of the total represents 80 bottles, and then calculated the total (100%).",
+        "keywords": [
+          "pie chart",
+          "sales",
+          "drinks",
+          "percentage",
+          "total"
+        ],
+        "common_misconceptions": {
+          "16": "Student might have calculated 20% of 80 instead of finding the total.",
+          "800": "Student might have multiplied 80 by 10 (incorrectly assuming 10% is 80)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The pie chart shows that 20% of the total drinks sold were Apple Juice."
+          },
+          {
+            "step": 2,
+            "hint_text": "You know that 20% of the total number of drinks is equal to 80 bottles. Think about how to find what 1% or 100% would be."
+          },
+          {
+            "step": 3,
+            "hint_text": "If 20% corresponds to 80, then 1% corresponds to 80/20. To find the total (100%), multiply this value by 100."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q14",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Community Pet Ownership",
+      "complexity": "Medium",
+      "problem_text": "A survey was conducted in a neighbourhood to find out the types of pets owned by families. The pie chart shows the results. If 90 families owned Cats, how many families owned Dogs?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"200\" height=\"200\" viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"#f0f0f0\" />\n\n  <!-- Dogs: 45% (0-162 deg) -->\n  <path d=\"M100,100 L100,20 A80,80 0 0,1 176.08,124.72 Z\" fill=\"#FF6347\" />\n  <text x=\"130\" y=\"50\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">45% Dogs</text>\n\n  <!-- Cats: 30% (162-270 deg) -->\n  <path d=\"M100,100 L176.08,124.72 A80,80 0 0,1 100,180 Z\" fill=\"#6A5ACD\" />\n  <text x=\"150\" y=\"100\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">30% Cats</text>\n\n  <!-- Fish: 15% (270-324 deg) -->\n  <path d=\"M100,100 L100,180 A80,80 0 0,1 23.92,145.28 Z\" fill=\"#32CD32\" />\n  <text x=\"70\" y=\"150\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">15% Fish</text>\n\n  <!-- Hamsters: 10% (324-360 deg) -->\n  <path d=\"M100,100 L23.92,145.28 A80,80 0 0,1 100,20 Z\" fill=\"#FFD700\" />\n  <text x=\"70\" y=\"50\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">10% Hamsters</text>\n</svg>"
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "135",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly used the given information (30% = 90 families) to find the value of 1%, then used that to find the value for 45%.",
+        "keywords": [
+          "pie chart",
+          "survey",
+          "pets",
+          "percentage",
+          "proportion"
+        ],
+        "common_misconceptions": {
+          "45": "Student mistakenly provided the percentage for Dogs instead of the number of families.",
+          "60": "Student might have calculated the difference between percentages (45-30=15) and incorrectly applied it to numbers, or other calculation errors."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "From the pie chart, you know that 30% of the families owned Cats, and this corresponds to 90 families. You need to find the number of families who owned Dogs, which is 45%."
+          },
+          {
+            "step": 2,
+            "hint_text": "If 30% represents 90 families, first find out how many families 1% represents. Then, use this value to calculate how many families 45% represents."
+          },
+          {
+            "step": 3,
+            "hint_text": "Calculate (90 / 30) * 45."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q15",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Class Excursion Activities Choice",
+      "complexity": "Hard",
+      "problem_text": "The pie chart shows the activities chosen by a Primary 6 class for their school excursion. Some students chose the Science Centre, Zoo, or Museum, and the rest chose the Nature Park. If 40 students chose the Zoo, how many students chose the Nature Park?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"200\" height=\"200\" viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"#f0f0f0\" />\n\n  <!-- Science Centre: 30% (0-108 deg) -->\n  <path d=\"M100,100 L100,20 A80,80 0 0,1 176.08,54.72 Z\" fill=\"#FFD700\" />\n  <text x=\"130\" y=\"50\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">30% Science Centre</text>\n\n  <!-- Zoo: 40% (108-252 deg) -->\n  <path d=\"M100,100 L176.08,54.72 A80,80 0 0,1 123.5,173.1 Z\" fill=\"#32CD32\" />\n  <text x=\"150\" y=\"100\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">40% Zoo</text>\n\n  <!-- Museum: 20% (252-324 deg) -->\n  <path d=\"M100,100 L123.5,173.1 A80,80 0 0,1 23.92,145.28 Z\" fill=\"#8A2BE2\" />\n  <text x=\"130\" y=\"150\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">20% Museum</text>\n\n  <!-- Nature Park: 10% (324-360 deg) -->\n  <path d=\"M100,100 L23.92,145.28 A80,80 0 0,1 100,20 Z\" fill=\"#4682B4\" />\n  <text x=\"70\" y=\"150\" font-size=\"12\" font-weight=\"bold\" fill=\"#333\">?% Nature Park</text>\n</svg>"
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "10",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student first calculated the percentage for 'Nature Park', then used the given data for 'Zoo' (40% = 40 students) to find the number of students for 'Nature Park'.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "total",
+          "excursion",
+          "deduction",
+          "unitary method"
+        ],
+        "common_misconceptions": {
+          "20": "Student might have incorrectly calculated the percentage for Nature Park or confused it with Museum's percentage.",
+          "8": "Student might have made a calculation error in the unitary method or miscalculated the total."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The sum of all percentages in a pie chart must be 100%. First, find the percentage of students who chose the Nature Park by subtracting the known percentages from 100%."
+          },
+          {
+            "step": 2,
+            "hint_text": "You are given that 40 students chose the Zoo, which corresponds to 40% of the class. Use this information to find out how many students correspond to 1% of the class."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you know the percentage for the Nature Park and the number of students for 1%, you can find the number of students who chose the Nature Park. (100% - 30% - 40% - 20% = ?%; then (40 students / 40%) * ?%)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q16",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Bakery Sales Analysis",
+      "complexity": "Hard",
+      "problem_text": "The pie chart below shows the types of pastries sold at a bakery yesterday. 35% of the pastries sold were Croissants, 25% were Muffins, and 20% were Brownies. The rest were Danishes. If 105 Danishes were sold, how many pastries were sold in total?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='300' height='300' viewBox='0 0 100 100' style='font-family: Arial, sans-serif; font-size: 8px;'> <circle cx='50' cy='50' r='40' fill='#f0f0f0' stroke='#333' stroke-width='1'/> <path d='M50 50 L50 10 A40 40 0 0 1 70.71 29.29 L50 50 Z' fill='#FFC107'/> <text x='65' y='25' text-anchor='middle'>Croissants</text> <text x='65' y='32' text-anchor='middle'>35%</text> <path d='M50 50 L70.71 29.29 A40 40 0 0 1 75 75 L50 50 Z' fill='#2196F3'/> <text x='80' y='55' text-anchor='middle'>Muffins</text> <text x='80' y='62' text-anchor='middle'>25%</text> <path d='M50 50 L75 75 A40 40 0 0 1 25 75 L50 50 Z' fill='#4CAF50'/> <text x='45' y='85' text-anchor='middle'>Brownies</text> <text x='45' y='92' text-anchor='middle'>20%</text> <path d='M50 50 L25 75 A40 40 0 0 1 50 10 L50 50 Z' fill='#9C27B0'/> <text x='25' y='45' text-anchor='middle'>Danishes</text> <text x='25' y='52' text-anchor='middle'>?</text> <text x='50' y='50' text-anchor='middle' font-size='10px' font-weight='bold'>Pastry Sales</text> </svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "700",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Evaluate if the student correctly calculated the percentage for Danishes and then used it to find the total number of pastries. The final calculation is a single division step, but requires prior deduction.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "total",
+          "part",
+          "Danishes",
+          "remainder"
+        ],
+        "common_misconceptions": {
+          "105 / 0.35 = 300": "The student might mistakenly use the percentage of Croissants (35%) instead of Danishes to find the total. Always ensure the percentage used corresponds to the given number.",
+          "105 / 0.8 = 131.25": "The student might sum up the given percentages (35%+25%+20%=80%) and divide 105 by 0.8, incorrectly assuming 80% represents Danishes or that it's the total. Remember to find the percentage for the 'rest' category.",
+          "35 + 25 + 20 = 80, then 105 * 0.8 = 84": "The student might correctly find the sum of known percentages but then incorrectly multiply the number of Danishes by this sum. This confuses part and total, or percentage and actual count. The 105 Danishes represent the *remainder* percentage."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the percentage of Danishes sold. Remember that the sum of all percentages in a pie chart must be 100%."
+          },
+          {
+            "step": 2,
+            "hint_text": "You know the number of Danishes (105) and their corresponding percentage. If 105 Danishes represent X% of the total, how can you find 100% of the total?"
+          },
+          {
+            "step": 3,
+            "hint_text": "If (100% - (35% + 25% + 20%)) represents 105 pastries, what is 100%? Calculate (105 / percentage of Danishes) * 100."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q17",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Movie Preference Survey",
+      "complexity": "Hard",
+      "problem_text": "A survey was conducted among 400 students to find out their favourite movie genres. The pie chart below shows the results. 30% prefer Action, 25% prefer Comedy, and 20% prefer Sci-Fi. The remaining students prefer either Drama or Animation. The number of students who prefer Drama is 3 times the number of students who prefer Animation. How many more students prefer Drama than Animation?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='300' height='300' viewBox='0 0 100 100' style='font-family: Arial, sans-serif; font-size: 8px;'> <circle cx='50' cy='50' r='40' fill='#f0f0f0' stroke='#333' stroke-width='1'/> <path d='M50 50 L50 10 A40 40 0 0 1 74.34 22.84 L50 50 Z' fill='#FFEB3B'/> <text x='70' y='20' text-anchor='middle'>Action</text> <text x='70' y='27' text-anchor='middle'>30%</text> <path d='M50 50 L74.34 22.84 A40 40 0 0 1 81.65 58.66 L50 50 Z' fill='#F44336'/> <text x='85' y='45' text-anchor='middle'>Comedy</text> <text x='85' y='52' text-anchor='middle'>25%</text> <path d='M50 50 L81.65 58.66 A40 40 0 0 1 50 90 L50 50 Z' fill='#9C27B0'/> <text x='65' y='80' text-anchor='middle'>Sci-Fi</text> <text x='65' y='87' text-anchor='middle'>20%</text> <path d='M50 50 L50 90 A40 40 0 0 1 50 10 L50 50 Z' fill='#2196F3'/> <text x='30' y='50' text-anchor='middle'>Drama/</text> <text x='30' y='57' text-anchor='middle'>Animation</text> <text x='50' y='50' text-anchor='middle' font-size='10px' font-weight='bold'>Movie Genres</text> </svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "60",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly found the combined percentage for Drama/Animation, calculated the number of students for this combined category, then correctly split it based on the 3:1 ratio and found the difference. The final step is finding the difference after multiple deductions.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "ratio",
+          "difference",
+          "total",
+          "combined"
+        ],
+        "common_misconceptions": {
+          "400 * 0.15 = 60 (Drama), 400 * 0.05 = 20 (Animation), 60-20=40": "The student might incorrectly guess specific percentages for Drama and Animation (e.g., 15% and 5%) without first calculating the 'remaining' percentage and then dividing it based on the ratio. Ensure the remaining percentage is correctly identified and split.",
+          "400 * (0.3 - 0.1) = 80": "The student might assume the difference relates to the given percentages directly without considering the 'rest' category or the specific ratio for Drama/Animation. They might incorrectly subtract percentages of named categories.",
+          "Incorrectly applying the ratio": "The student might misinterpret '3 times' or incorrectly divide the total number of remaining students by 3 or 4. If Drama is 3 times Animation, their ratio is 3:1, making 4 parts in total. The difference is 2 parts (3-1)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the combined percentage for Drama and Animation. What percentage of students are not accounted for by Action, Comedy, and Sci-Fi?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you have the combined percentage for Drama and Animation, determine the total number of students who prefer these two genres (out of 400 students)."
+          },
+          {
+            "step": 3,
+            "hint_text": "The number of students for Drama is 3 times Animation. This means for every 1 part Animation, there are 3 parts Drama. How many total parts are there for Drama and Animation combined? How many parts represent the difference between Drama and Animation? Use this to find the number."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q18",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "School Outdoor Activities Survey",
+      "complexity": "Hard",
+      "problem_text": "The pie chart below shows the results of a survey on preferred outdoor activities among students. 40% prefer Cycling, 15% prefer Swimming. The 'Others' category represents 40 students. The number of students who prefer Cycling is 1.5 times the number of students who prefer Swimming. How many students prefer Hiking?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='300' height='300' viewBox='0 0 100 100' style='font-family: Arial, sans-serif; font-size: 8px;'> <circle cx='50' cy='50' r='40' fill='#f0f0f0' stroke='#333' stroke-width='1'/> <path d='M50 50 L50 10 A40 40 0 0 1 81.66 40 L50 50 Z' fill='#FFC107'/> <text x='70' y='25' text-anchor='middle'>Cycling</text> <text x='70' y='32' text-anchor='middle'>40%</text> <path d='M50 50 L81.66 40 A40 40 0 0 1 70.71 70.71 L50 50 Z' fill='#2196F3'/> <text x='75' y='60' text-anchor='middle'>Swimming</text> <text x='75' y='67' text-anchor='middle'>15%</text> <path d='M50 50 L70.71 70.71 A40 40 0 0 1 50 10 L50 50 Z' fill='#4CAF50'/> <text x='25' y='50' text-anchor='middle'>Hiking</text> <text x='25' y='57' text-anchor='middle'>?</text> <text x='50' y='50' text-anchor='middle' font-size='10px' font-weight='bold'>Activities Survey</text> </svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "100",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identified the percentage for 'Others' and 'Hiking', used the 'Others' data to find the total, and then calculated the number of students who prefer Hiking. The information about Cycling and Swimming relationship is a distractor, testing careful reading.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "total",
+          "part",
+          "deduction",
+          "extraneous information"
+        ],
+        "common_misconceptions": {
+          "40 / 0.4 = 100": "The student might mistakenly assume 40 students correspond to 40% (Cycling) instead of the 'Others' category. Always ensure the given number corresponds to the correct sector/percentage.",
+          "Total students = 40 / 0.45 = 88.88": "The student might sum up Cycling and Swimming (40%+15%=55%) and incorrectly assume 40 students represent the remaining (45%) and try to find total from there. They need to find 'Others' percentage first.",
+          "Trying to use the Cycling/Swimming ratio to solve for Hiking": "The information about Cycling and Swimming's relationship is a distractor. Students might waste time trying to use it. The problem can be solved by directly finding the percentage for 'Hiking' and the total number of students."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "What is the combined percentage for Cycling and Swimming? What percentage is left for the 'Others' and 'Hiking' categories?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Since 'Others' represents 40 students and you know its percentage, you can find the total number of students surveyed. (Hint: The problem states 'Others' as a category alongside Cycling, Swimming, and Hiking)."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the total number of students, find the percentage for 'Hiking' (100% - Cycling% - Swimming% - Others%). Then, use this percentage and the total number to find the number of students who prefer Hiking."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q19",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "Community Carnival Participants Shift",
+      "complexity": "Hard",
+      "problem_text": "The pie chart below shows the initial distribution of participants in a community sports carnival. Running: 40%, Cycling: 30%, Swimming: 20%, Chess: 10%. After 50 participants withdrew from Running and joined Chess, the percentage of Chess participants in the carnival increased to 20%. What was the total number of participants in the carnival originally?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='300' height='300' viewBox='0 0 100 100' style='font-family: Arial, sans-serif; font-size: 8px;'> <circle cx='50' cy='50' r='40' fill='#f0f0f0' stroke='#333' stroke-width='1'/> <path d='M50 50 L50 10 A40 40 0 0 1 81.66 40 L50 50 Z' fill='#FFC107'/> <text x='70' y='25' text-anchor='middle'>Running</text> <text x='70' y='32' text-anchor='middle'>40%</text> <path d='M50 50 L81.66 40 A40 40 0 0 1 81.65 58.66 L50 50 Z' fill='#2196F3'/> <text x='85' y='45' text-anchor='middle'>Cycling</text> <text x='85' y='52' text-anchor='middle'>30%</text> <path d='M50 50 L81.65 58.66 A40 40 0 0 1 70.71 70.71 L50 50 Z' fill='#4CAF50'/> <text x='75' y='60' text-anchor='middle'>Swimming</text> <text x='75' y='67' text-anchor='middle'>20%</text> <path d='M50 50 L70.71 70.71 A40 40 0 0 1 50 10 L50 50 Z' fill='#9C27B0'/> <text x='25' y='50' text-anchor='middle'>Chess</text> <text x='25' y='57' text-anchor='middle'>10%</text> <text x='50' y='50' text-anchor='middle' font-size='10px' font-weight='bold'>Carnival Initial</text> </svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "500",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identified the percentage increase for Chess and used this percentage increase, corresponding to the 50 participants, to find the original total number of participants. This is a single division step after calculating the percentage difference.",
+        "keywords": [
+          "pie chart",
+          "percentage change",
+          "total",
+          "shift",
+          "original",
+          "increase"
+        ],
+        "common_misconceptions": {
+          "50 / 0.20 = 250": "The student might mistakenly use the new percentage of Chess (20%) directly with the 50 participants. The 50 participants represent the *change* in percentage, not the new total's 20%.",
+          "Calculating new total and then trying to find original": "Some students might try to find the new total participants first then work backward. It's more direct to use the percentage *change* which relates directly to the 50 participants who moved."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "What was the initial percentage for Chess? What is the new percentage for Chess? What is the *increase* in percentage for Chess?"
+          },
+          {
+            "step": 2,
+            "hint_text": "The 50 participants who moved from Running to Chess caused this *increase* in Chess's percentage. This means 50 participants correspond to the percentage increase you found in Step 1."
+          },
+          {
+            "step": 3,
+            "hint_text": "If X% (the increase) corresponds to 50 participants, how many participants correspond to 100% (the total number of participants in the carnival originally)? Use a unitary method or equation."
+          }
+        ]
+      }
+    },
+    {
+      "id": "DATA-ANALYSIS-PIE-CHARTS-WORD-PROBLEMS-Q20",
+      "sub_topic": "6.2 Pie Charts - Word Problems",
+      "title": "School Uniform Colour Poll",
+      "complexity": "Hard",
+      "problem_text": "A poll was conducted among students to determine their preferred uniform colours. The pie chart below shows the results. 30% chose Blue, 25% chose Green, and 20% chose Red. The remaining students chose either Yellow or Purple. If 120 students chose Blue, and the number of students who chose Yellow is 1/3 of those who chose Purple, what is the total number of students who chose Yellow and Purple?",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='300' height='300' viewBox='0 0 100 100' style='font-family: Arial, sans-serif; font-size: 8px;'> <circle cx='50' cy='50' r='40' fill='#f0f0f0' stroke='#333' stroke-width='1'/> <path d='M50 50 L50 10 A40 40 0 0 1 74.34 22.84 L50 50 Z' fill='#2196F3'/> <text x='70' y='20' text-anchor='middle'>Blue</text> <text x='70' y='27' text-anchor='middle'>30%</text> <path d='M50 50 L74.34 22.84 A40 40 0 0 1 81.65 58.66 L50 50 Z' fill='#4CAF50'/> <text x='85' y='45' text-anchor='middle'>Green</text> <text x='85' y='52' text-anchor='middle'>25%</text> <path d='M50 50 L81.65 58.66 A40 40 0 0 1 50 90 L50 50 Z' fill='#F44336'/> <text x='65' y='80' text-anchor='middle'>Red</text> <text x='65' y='87' text-anchor='middle'>20%</text> <path d='M50 50 L50 90 A40 40 0 0 1 50 10 L50 50 Z' fill='#FFC107'/> <text x='30' y='50' text-anchor='middle'>Yellow/</text> <text x='30' y='57' text-anchor='middle'>Purple</text> <text x='50' y='50' text-anchor='middle' font-size='10px' font-weight='bold'>Uniform Poll</text> </svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "100",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly used the Blue category's data to find the total, then found the combined percentage for Yellow/Purple, and finally calculated the total number of students for these two categories. The ratio information for Yellow and Purple is a distractor as the question asks for their combined total.",
+        "keywords": [
+          "pie chart",
+          "percentage",
+          "ratio",
+          "total",
+          "combined",
+          "extraneous information"
+        ],
+        "common_misconceptions": {
+          "120 / (0.3+0.25+0.2) = 160": "The student might divide 120 by the sum of percentages of other categories, which is incorrect. 120 students specifically represent 30% (Blue).",
+          "Total = 120 / 0.3 = 400. Then 400 * (1/3) = 133.33": "The student might correctly find the total, but then apply the ratio '1/3 of Purple' directly to the total, or misunderstand what to calculate for 'Yellow and Purple'. They need to find the percentage/number for the combined Yellow+Purple first.",
+          "Attempting to find individual numbers for Yellow and Purple": "The problem asks for the *total* number of students who chose Yellow and Purple, not their individual numbers. The ratio (Yellow is 1/3 of Purple) is extraneous information for answering *this specific question*."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You know that 120 students chose Blue, and Blue represents 30% of the total. How can you find the total number of students surveyed?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you have the total number of students, find the combined percentage for Yellow and Purple. Remember that all percentages in a pie chart add up to 100%."
+          },
+          {
+            "step": 3,
+            "hint_text": "You have the total number of students and the combined percentage for Yellow and Purple. To find the total number of students who chose Yellow and Purple, calculate that percentage of the overall total. (Hint: The ratio given for Yellow and Purple is not needed if you are just finding their combined total)."
+          }
+        ]
+      }
+    }
+  ]
+}

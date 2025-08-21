@@ -7,6 +7,7 @@ import 'config.dart';
 import 'auth_service.dart';
 import 'auth_wrapper.dart';
 import 'screens/auth_screen.dart';
+import 'services/firestore_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -38,7 +39,7 @@ class EdilApp extends StatelessWidget {
       title: 'PSLE AI Tutor',
       theme: NewAppTheme.light(),
       darkTheme: NewAppTheme.dark(),
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.dark,
       home: const AuthWrapper(),
       routes: {
         '/auth': (context) => const AuthScreen(),

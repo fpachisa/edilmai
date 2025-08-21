@@ -40,8 +40,7 @@
             "step": 3,
             "hint_text": "The expression should show the starting number of books ('b') plus the new books. The final expression is simply 'b + 4'."
           }
-        ],
-        "full_solution": "Let 'b' be the initial number of books Amelia has. When she buys 4 more books, we add 4 to the initial amount. Therefore, the expression for the total number of books is b + 4."
+        ]
       }
     }
   ]

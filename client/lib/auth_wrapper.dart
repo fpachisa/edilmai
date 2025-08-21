@@ -5,6 +5,7 @@ import 'screens/enhanced_home_screen.dart';
 import 'screens/progress_screen.dart';
 import 'screens/profile_screen.dart';
 import 'screens/create_learner_screen.dart';
+import 'screens/user_registration_screen.dart';
 import 'auth_service.dart';
 import 'ui/app_theme.dart';
 import 'state/app_mode.dart';
@@ -17,16 +18,20 @@ class AuthWrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('AuthWrapper: Building AuthWrapper widget');
+    print('AuthWrapper: Building AuthWrapper widget at ${DateTime.now()}');
     return StreamBuilder<User?>(
       stream: AuthService.authStateChanges,
       builder: (context, snapshot) {
+        print('AuthWrapper: StreamBuilder triggered at ${DateTime.now()}');
         print('AuthWrapper: ConnectionState = ${snapshot.connectionState}');
         print('AuthWrapper: HasError = ${snapshot.hasError}');
+        print('AuthWrapper: HasData = ${snapshot.hasData}');
         print('AuthWrapper: User = ${snapshot.data?.uid ?? 'null'}');
+        print('AuthWrapper: Data type = ${snapshot.data.runtimeType}');
+        print('AuthWrapper: Full user object = ${snapshot.data}');
         
         if (snapshot.connectionState == ConnectionState.waiting) {
-          print('AuthWrapper: Showing loading screen');
+          print('AuthWrapper: Showing loading screen - waiting for auth state');
           return _buildLoadingScreen(context);
         }
         
@@ -37,11 +42,12 @@ class AuthWrapper extends StatelessWidget {
         
         final user = snapshot.data;
         if (user == null) {
-          print('AuthWrapper: No user - showing landing');
+          print('AuthWrapper: No user - showing landing screen');
           return const LandingScreen();
         } else {
-          print('AuthWrapper: User authenticated - showing app');
-          return const AppShell();
+          print('AuthWrapper: User authenticated - checking profile for ${user.uid}');
+          print('AuthWrapper: About to return ProfileChecker widget');
+          return const ProfileChecker();
         }
       },
     );
@@ -75,14 +81,152 @@ class AuthWrapper extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 24),
-              const CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Colors.white70),
+              CircularProgressIndicator(
+                valueColor: AlwaysStoppedAnimation<Color>(Theme.of(context).colorScheme.primary),
               ),
               const SizedBox(height: 16),
-              const Text(
+              Text(
                 'Loading your learning journey...',
                 style: TextStyle(
-                  color: Colors.white70,
+                  color: Theme.of(context).colorScheme.onSurface.withOpacity(0.8),
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class ProfileChecker extends StatefulWidget {
+  const ProfileChecker({super.key});
+
+  @override
+  State<ProfileChecker> createState() => _ProfileCheckerState();
+}
+
+class _ProfileCheckerState extends State<ProfileChecker> {
+  bool _loading = true;
+  bool _hasProfile = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _checkUserProfile();
+  }
+
+  Future<void> _checkUserProfile() async {
+    try {
+      print('ProfileChecker: Starting profile check...');
+      final api = ApiClient(kDefaultApiBase);
+      final profile = await api.getUserProfile().timeout(Duration(seconds: 10));
+      print('ProfileChecker: Profile check succeeded: $profile');
+      // If we get here without exception, user has a profile
+      setState(() {
+        _hasProfile = true;
+        _loading = false;
+      });
+      print('ProfileChecker: Set hasProfile = true');
+    } catch (e) {
+      // User doesn't have a profile - try to auto-create from Google Sign-In
+      print('ProfileChecker: Profile check failed - error: $e');
+      print('ProfileChecker: Error type: ${e.runtimeType}');
+      print('ProfileChecker: Error details: ${e.toString()}');
+      
+      // Try to auto-create profile for Google users
+      final currentUser = AuthService.currentUser;
+      if (currentUser != null && currentUser.displayName != null && currentUser.email != null) {
+        print('ProfileChecker: Auto-creating profile for Google user: ${currentUser.displayName}');
+        try {
+          final api = ApiClient(kDefaultApiBase);
+          await api.createUserProfile(
+            email: currentUser.email!,
+            name: currentUser.displayName!,
+            role: 'parent'
+          );
+          print('ProfileChecker: Auto-created profile successfully');
+          // Profile created, user now has profile
+          if (mounted) {
+            setState(() {
+              _hasProfile = true;
+              _loading = false;
+            });
+          }
+          return;
+        } catch (createError) {
+          print('ProfileChecker: Auto-create failed: $createError');
+          // Fall through to show registration form
+        }
+      }
+      
+      // Auto-create failed or not Google user, show registration form
+      if (mounted) {
+        setState(() {
+          _hasProfile = false;
+          _loading = false;
+        });
+      }
+      print('ProfileChecker: Set hasProfile = false - showing registration');
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    print('ProfileChecker: build() called - loading: $_loading, hasProfile: $_hasProfile');
+    
+    if (_loading) {
+      print('ProfileChecker: Showing loading screen');
+      return _buildLoadingScreen(context);
+    }
+    
+    if (_hasProfile) {
+      print('ProfileChecker: Has profile - showing AppShell');
+      return const AppShell();
+    } else {
+      print('ProfileChecker: No profile - showing UserRegistrationScreen');
+      return const UserRegistrationScreen();
+    }
+  }
+
+  Widget _buildLoadingScreen(BuildContext context) {
+    return Scaffold(
+      body: AnimatedBackground(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: 80,
+                height: 80,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: AppGradients.primary,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Theme.of(context).colorScheme.primary.withOpacity(0.4),
+                      blurRadius: 20,
+                      spreadRadius: 5,
+                    ),
+                  ],
+                ),
+                child: const Icon(
+                  Icons.person_rounded,
+                  size: 40,
+                  color: Colors.white,
+                ),
+              ),
+              const SizedBox(height: 24),
+              CircularProgressIndicator(
+                valueColor: AlwaysStoppedAnimation<Color>(Theme.of(context).colorScheme.primary),
+              ),
+              const SizedBox(height: 16),
+              Text(
+                'Setting up your profile...',
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.onSurface.withOpacity(0.8),
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
                 ),

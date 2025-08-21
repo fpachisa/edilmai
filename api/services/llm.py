@@ -1,6 +1,6 @@
 from __future__ import annotations
 from typing import Optional, Dict, List, Any
-from api.core.config import settings
+from core.config import settings
 
 
 class LLMClient:

@@ -36,15 +36,7 @@ def init_firebase(project_id: Optional[str] = None) -> None:
         
     except Exception as e:
         logger.error(f"Firebase initialization failed: {e}")
-        # As a fallback, try default initialization
-        try:
-            if not firebase_admin._apps:
-                firebase_admin.initialize_app()
-            _firebase_initialized = True
-            logger.info("Firebase Admin initialized with default credentials")
-        except Exception as e2:
-            logger.error(f"Firebase default initialization failed: {e2}")
-            raise
+        raise
 
 
 def verify_bearer_token(auth_header: Optional[str]) -> Optional[Dict[str, Any]]:
@@ -86,7 +78,7 @@ def verify_bearer_token(auth_header: Optional[str]) -> Optional[Dict[str, Any]]:
             "email": email,
             "name": name,
             "role": role,
-            "roles": [role],  # For backward compatibility
+            "roles": [role],
             "custom_claims": custom_claims,
             "claims": decoded,
             "auth_time": decoded.get("auth_time"),

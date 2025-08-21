@@ -13,6 +13,11 @@ class Settings(BaseSettings):
     vertex_project_id: str | None = None
     vertex_location: str = "asia-southeast1"
     google_api_key: str | None = None
+    
+    # Firebase Configuration
+    firebase_project_id: str = "edilmai"
+    google_application_credentials: str | None = None
+    admin_api_key: str | None = None
 
     class Config:
         env_file = ".env"

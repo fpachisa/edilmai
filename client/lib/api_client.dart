@@ -135,6 +135,20 @@ class ApiClient {
     return res.data as Map<String, dynamic>;
   }
 
+  Future<Map<String, dynamic>> createUserProfile({required String email, required String name, String role = 'parent'}) async {
+    final res = await _dio.post('/v1/auth/register', data: {
+      'email': email,
+      'name': name,
+      'role': role,
+    });
+    return res.data as Map<String, dynamic>;
+  }
+
+  Future<Map<String, dynamic>> getUserProfile() async {
+    final res = await _dio.get('/v1/auth/profile');
+    return res.data as Map<String, dynamic>;
+  }
+
   Future<void> ensureSampleItem() async {
     try {
       await _dio.get('/v1/items/ALG-S1-E1');

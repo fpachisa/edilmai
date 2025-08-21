@@ -18,7 +18,7 @@ except ImportError:
     FIRESTORE_AVAILABLE = False
     logging.warning("Firestore SDK not available. Install: pip install google-cloud-firestore")
 
-from api.models.firestore_models import (
+from models.firestore_models import (
     FirestoreUser, 
     FirestoreLearner, 
     FirestoreSession, 
@@ -39,8 +39,14 @@ class FirestoreRepository:
         if not FIRESTORE_AVAILABLE:
             raise ImportError("Firestore SDK required: pip install google-cloud-firestore")
         
-        self.db: FirestoreClient = firestore.Client(project=project_id)
-        self._batch_size = 500  # Firestore batch limit
+        try:
+            # Use the production database (Firestore Native mode) instead of default (Datastore mode)
+            self.db: FirestoreClient = firestore.Client(project=project_id, database='production')
+            self._batch_size = 500  # Firestore batch limit
+            logger.info(f"Firestore client initialized successfully for project: {project_id or 'default'}, database: production")
+        except Exception as e:
+            logger.error(f"Failed to initialize Firestore client: {e}")
+            raise
         
         # Collection references for performance
         self.users = self.db.collection(COLLECTIONS['users'])
@@ -49,18 +55,30 @@ class FirestoreRepository:
         
     # ============ USER MANAGEMENT ============
     
-    async def create_user(self, user_id: str, email: str, name: str, role: str = 'parent') -> FirestoreUser:
+    def create_user(self, user_id: str, email: str, name: str, role: str = 'parent') -> FirestoreUser:
         """Create new user with proper error handling"""
         try:
             user = FirestoreUser.create_new(user_id, email, name, role)
-            self.users.document(user_id).set(user.__dict__)
+            # Convert dataclass to dict for Firestore
+            user_data = {
+                'user_id': user.user_id,
+                'email': user.email, 
+                'name': user.name,
+                'role': user.role,
+                'profile': user.profile,
+                'children_ids': user.children_ids,
+                'students_ids': user.students_ids,
+                'created_at': user.created_at,
+                'updated_at': user.updated_at
+            }
+            self.users.document(user_id).set(user_data)
             logger.info(f"Created user: {user_id}")
             return user
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to create user {user_id}: {e}")
             raise
     
-    async def get_user(self, user_id: str) -> Optional[FirestoreUser]:
+    def get_user(self, user_id: str) -> Optional[FirestoreUser]:
         """Get user with caching and error handling"""
         try:
             doc = self.users.document(user_id).get()
@@ -68,7 +86,7 @@ class FirestoreRepository:
                 return None
             data = doc.to_dict()
             return FirestoreUser(**data)
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to get user {user_id}: {e}")
             return None
     
@@ -79,19 +97,49 @@ class FirestoreRepository:
             self.users.document(user_id).update(updates)
             logger.info(f"Updated user: {user_id}")
             return True
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to update user {user_id}: {e}")
             return False
     
     # ============ LEARNER MANAGEMENT ============
     
-    async def create_learner(self, parent_id: str, name: str, grade_level: str = 'P6') -> FirestoreLearner:
+    def create_learner(self, parent_id: str, name: str, grade_level: str = 'P6') -> FirestoreLearner:
         """Create new learner and link to parent"""
         learner_id = str(uuid.uuid4())
         try:
+            # Ensure parent user exists first - if not, this is an error condition
+            parent_doc = self.users.document(parent_id).get()
+            if not parent_doc.exists:
+                logger.error(f"Parent user {parent_id} not found - user must register first")
+                raise ValueError(f"Parent user {parent_id} not found. Please complete user registration first.")
+            
             # Create learner document
             learner = FirestoreLearner.create_new(learner_id, parent_id, name, grade_level)
-            self.learners.document(learner_id).set(learner.__dict__)
+            # Convert dataclass to dict for Firestore
+            learner_data = {
+                'learner_id': learner.learner_id,
+                'parent_id': learner.parent_id,
+                'teacher_ids': learner.teacher_ids,
+                'name': learner.name,
+                'grade_level': learner.grade_level,
+                'subjects': learner.subjects,
+                'learning_style': learner.learning_style,
+                'xp': learner.xp,
+                'level': learner.level,
+                'streaks': learner.streaks,
+                'badges': learner.badges,
+                'completed_items': learner.completed_items,
+                'mastery_scores': learner.mastery_scores,
+                'current_session_id': learner.current_session_id,
+                'total_sessions': learner.total_sessions,
+                'total_time_spent': learner.total_time_spent,
+                'performance_stats': learner.performance_stats,
+                'misconceptions': learner.misconceptions,
+                'learning_insights': learner.learning_insights,
+                'created_at': learner.created_at,
+                'updated_at': learner.updated_at
+            }
+            self.learners.document(learner_id).set(learner_data)
             
             # Add learner to parent's children list
             self.users.document(parent_id).update({
@@ -102,7 +150,7 @@ class FirestoreRepository:
             logger.info(f"Created learner: {learner_id} for parent: {parent_id}")
             return learner
             
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to create learner for {parent_id}: {e}")
             raise
     
@@ -114,11 +162,11 @@ class FirestoreRepository:
                 return None
             data = doc.to_dict()
             return FirestoreLearner(**data)
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to get learner {learner_id}: {e}")
             return None
     
-    async def get_learners_by_parent(self, parent_id: str) -> List[FirestoreLearner]:
+    def get_learners_by_parent(self, parent_id: str) -> List[FirestoreLearner]:
         """Get all learners for a parent"""
         try:
             # Query learners by parent_id
@@ -128,7 +176,7 @@ class FirestoreRepository:
                 data = doc.to_dict()
                 learners.append(FirestoreLearner(**data))
             return learners
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to get learners for parent {parent_id}: {e}")
             return []
     
@@ -139,7 +187,7 @@ class FirestoreRepository:
             self.learners.document(learner_id).update(updates)
             logger.debug(f"Updated learner progress: {learner_id}")
             return True
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to update learner {learner_id}: {e}")
             return False
     
@@ -151,7 +199,7 @@ class FirestoreRepository:
                 'updated_at': datetime.now(timezone.utc).isoformat()
             })
             return True
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to add XP to learner {learner_id}: {e}")
             return False
     
@@ -194,7 +242,7 @@ class FirestoreRepository:
             logger.info(f"Marked item {item_id} completed for learner {learner_id}")
             return True
             
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to mark item completed for {learner_id}: {e}")
             return False
     
@@ -204,7 +252,31 @@ class FirestoreRepository:
         """Create new tutoring session"""
         try:
             session = FirestoreSession.create_new(learner_id, item_id, subject, module_id)
-            self.sessions.document(session.session_id).set(session.__dict__)
+            # Convert dataclass to dict for Firestore
+            session_data = {
+                'session_id': session.session_id,
+                'learner_id': session.learner_id,
+                'item_id': session.item_id,
+                'subject': session.subject,
+                'module_id': session.module_id,
+                'current_step_idx': session.current_step_idx,
+                'attempts_current': session.attempts_current,
+                'hints_used': session.hints_used,
+                'finished': session.finished,
+                'success': session.success,
+                'conversation_history': session.conversation_history,
+                'learning_insights': session.learning_insights,
+                'misconceptions': session.misconceptions,
+                'total_time_spent': session.total_time_spent,
+                'steps_completed': session.steps_completed,
+                'final_accuracy': session.final_accuracy,
+                'hint_efficiency': session.hint_efficiency,
+                'started_at': session.started_at,
+                'completed_at': session.completed_at,
+                'created_at': session.created_at,
+                'updated_at': session.updated_at
+            }
+            self.sessions.document(session.session_id).set(session_data)
             
             # Update learner's current session
             await self.update_learner_progress(learner_id, {
@@ -214,7 +286,7 @@ class FirestoreRepository:
             logger.info(f"Created session: {session.session_id}")
             return session.session_id
             
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to create session for learner {learner_id}: {e}")
             raise
     
@@ -226,7 +298,7 @@ class FirestoreRepository:
                 return None
             data = doc.to_dict()
             return FirestoreSession(**data)
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to get session {session_id}: {e}")
             return None
     
@@ -247,7 +319,7 @@ class FirestoreRepository:
             })
             return True
             
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to add conversation entry to {session_id}: {e}")
             return False
     
@@ -287,7 +359,7 @@ class FirestoreRepository:
             
             return True
             
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to record misconceptions for {session_id}: {e}")
             return False
     
@@ -319,7 +391,7 @@ class FirestoreRepository:
             logger.info(f"Finished session: {session_id}")
             return True
             
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to finish session {session_id}: {e}")
             return False
     
@@ -347,7 +419,7 @@ class FirestoreRepository:
             logger.info(f"Stored curriculum item: {subject}/{item_id}")
             return True
             
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to store curriculum item {item.get('id')}: {e}")
             return False
     
@@ -359,25 +431,83 @@ class FirestoreRepository:
             if not doc.exists:
                 return None
             return doc.to_dict()
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to get curriculum item {subject}/{item_id}: {e}")
             return None
     
     async def get_curriculum_by_subject(self, subject: str, limit: int = 100) -> List[Dict[str, Any]]:
         """Get all curriculum items for a subject, ordered by learning progression"""
         try:
-            collection_path = f"curriculum/{subject}/items"
-            docs = (self.db.collection(collection_path)
-                    .order_by('learn_step')
-                    .limit(limit)
-                    .get())
+            # CRITICAL DEBUG: First let's inspect what's actually in the database
+            logger.info(f"🔍 CRITICAL DEBUG: Starting curriculum query for subject '{subject}'")
             
-            items = []
-            for doc in docs:
-                items.append(doc.to_dict())
-            return items
+            # Check if collection exists and has documents
+            collection_ref = self.db.collection(COLLECTIONS["curriculum_questions"])
+            logger.info(f"🔍 CRITICAL DEBUG: Collection name: {COLLECTIONS['curriculum_questions']}")
             
-        except exceptions.GoogleCloudError as e:
+            # Get all documents first to see what's actually there
+            all_docs = collection_ref.limit(5).get()
+            logger.info(f"🔍 CRITICAL DEBUG: Total documents in collection: {len(all_docs)}")
+            
+            if all_docs:
+                # Inspect first document structure
+                first_doc = all_docs[0]
+                first_data = first_doc.to_dict()
+                logger.info(f"🔍 CRITICAL DEBUG: First document ID: {first_doc.id}")
+                logger.info(f"🔍 CRITICAL DEBUG: First document keys: {list(first_data.keys()) if first_data else 'EMPTY'}")
+                if first_data:
+                    topic_value = first_data.get('topic', 'FIELD_NOT_FOUND')
+                    logger.info(f"🔍 CRITICAL DEBUG: First document topic field: '{topic_value}'")
+                    title_value = first_data.get('title', 'FIELD_NOT_FOUND')
+                    logger.info(f"🔍 CRITICAL DEBUG: First document title field: '{title_value}'")
+                    
+                    # Show ALL field values for debugging
+                    for key, value in first_data.items():
+                        if isinstance(value, str) and len(value) < 100:  # Only show short string values
+                            logger.info(f"🔍 CRITICAL DEBUG: Field '{key}': '{value}'")
+                        else:
+                            logger.info(f"🔍 CRITICAL DEBUG: Field '{key}': {type(value).__name__}")
+            else:
+                logger.error(f"🔍 CRITICAL DEBUG: Collection {COLLECTIONS['curriculum_questions']} is EMPTY!")
+                return []
+            
+            # Now try the original query with variations
+            subject_variations = [subject, subject.capitalize(), subject.upper(), subject.lower()]
+            logger.info(f"🔍 DEBUG: Trying subject variations for '{subject}': {subject_variations}")
+            
+            all_items = []
+            for topic_variant in subject_variations:
+                try:
+                    docs = (self.db.collection(COLLECTIONS["curriculum_questions"])
+                            .where("topic", "==", topic_variant)
+                            .limit(limit)
+                            .get())
+                    
+                    items = []
+                    for doc in docs:
+                        data = doc.to_dict()
+                        # Ensure the document has an 'id' field
+                        if 'id' not in data:
+                            data['id'] = doc.id
+                        items.append(data)
+                    
+                    logger.info(f"🔍 DEBUG: Topic variant '{topic_variant}' returned {len(items)} items")
+                    if items:
+                        all_items.extend(items)
+                        break  # Found items, stop trying variations
+                        
+                except Exception as e:
+                    logger.info(f"🔍 DEBUG: Topic variant '{topic_variant}' failed: {e}")
+                    continue
+            
+            # Sort by learn_step if we have items
+            if all_items:
+                all_items.sort(key=lambda x: x.get('learn_step', 0))
+            
+            logger.info(f"🔍 DEBUG: Final result for subject '{subject}': {len(all_items)} items")
+            return all_items
+            
+        except Exception as e:
             logger.error(f"Failed to get curriculum for {subject}: {e}")
             return []
     
@@ -438,7 +568,7 @@ class FirestoreRepository:
                 'recent_sessions': sessions_data
             }
             
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Failed to get analytics for learner {learner_id}: {e}")
             return {}
     
@@ -460,7 +590,7 @@ class FirestoreRepository:
                 return True
             return False
             
-        except exceptions.GoogleCloudError as e:
+        except Exception as e:
             logger.error(f"Firestore health check failed: {e}")
             return False
 

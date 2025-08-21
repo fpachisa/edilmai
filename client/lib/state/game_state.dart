@@ -1,10 +1,19 @@
 import 'package:flutter/foundation.dart';
+import 'dart:async';
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'game_state_persistence.dart';
+import 'game_state_store_firestore.dart';
+import '../config.dart';
 
 class GameStateController extends ChangeNotifier {
   static final GameStateController instance = GameStateController._();
   GameStateController._();
-  final GameStateStore _store = createDefaultGameStateStore();
+  
+  // Use Firestore in production, local storage in development
+  late final GameStateStore _store;
+  FirestoreGameStateStore? _firestoreStore;
+  StreamSubscription? _gameStateStreamSubscription;
+  StreamSubscription? _connectivitySubscription;
 
   // Core gamification
   int _xp = 0;
@@ -39,29 +48,86 @@ class GameStateController extends ChangeNotifier {
 
   Future<void> load() async {
     if (_loaded) return;
+    
+    // Initialize appropriate store based on configuration
+    _initializeStore();
+    
     final snap = await _store.load();
     if (snap != null) {
-      _xp = snap.xp;
-      _streakDays = snap.streakDays;
-      _sessions = snap.sessions;
-      _steps = snap.steps;
-      _correct = snap.correct;
-      _badges
-        ..clear()
-        ..addAll(snap.badges);
-      _mastery
-        ..clear()
-        ..addAll({
-          for (final e in snap.masteryPct.entries) e.key: _SkillProgress.fromPct(e.value),
-        });
-      if (snap.lastActiveIso != null) {
-        try {
-          _lastActiveDay = DateTime.tryParse(snap.lastActiveIso!);
-        } catch (_) {}
-      }
-      notifyListeners();
+      _applySnapshot(snap);
     }
+    
+    // Set up real-time sync if using Firestore
+    _setupRealTimeSync();
+    
+    // Monitor connectivity for offline/online sync
+    _setupConnectivityMonitoring();
+    
     _loaded = true;
+  }
+
+  void _initializeStore() {
+    if (kUseFirebaseAuth) {
+      // Production mode: Use Firestore with local fallback
+      _firestoreStore = FirestoreGameStateStore();
+      _store = _firestoreStore!;
+      print('GameStateController: Using Firestore store (production mode)');
+    } else {
+      // Development mode: Use local storage
+      _store = createDefaultGameStateStore();
+      print('GameStateController: Using local store (development mode)');
+    }
+  }
+
+  void _applySnapshot(GameStateSnapshot snap) {
+    _xp = snap.xp;
+    _streakDays = snap.streakDays;
+    _sessions = snap.sessions;
+    _steps = snap.steps;
+    _correct = snap.correct;
+    _badges
+      ..clear()
+      ..addAll(snap.badges);
+    _mastery
+      ..clear()
+      ..addAll({
+        for (final e in snap.masteryPct.entries) e.key: _SkillProgress.fromPct(e.value),
+      });
+    if (snap.lastActiveIso != null) {
+      try {
+        _lastActiveDay = DateTime.tryParse(snap.lastActiveIso!);
+      } catch (_) {}
+    }
+    notifyListeners();
+  }
+
+  void _setupRealTimeSync() {
+    if (_firestoreStore == null) return;
+    
+    // Listen to real-time updates from Firestore
+    _gameStateStreamSubscription = _firestoreStore!.getGameStateStream().listen(
+      (snapshot) {
+        if (snapshot != null && _loaded) {
+          print('GameStateController: Received real-time game state update');
+          _applySnapshot(snapshot);
+        }
+      },
+      onError: (error) {
+        print('GameStateController: Error in real-time sync: $error');
+      },
+    );
+  }
+
+  void _setupConnectivityMonitoring() {
+    _connectivitySubscription = Connectivity().onConnectivityChanged.listen(
+      (List<ConnectivityResult> results) {
+        final result = results.isNotEmpty ? results.first : ConnectivityResult.none;
+        if (result != ConnectivityResult.none && _firestoreStore != null) {
+          print('GameStateController: Back online, forcing sync');
+          _firestoreStore!.forcSync();
+        }
+      },
+    );
   }
 
   Future<void> _save() async {
@@ -166,6 +232,36 @@ class GameStateController extends ChangeNotifier {
 
   void _checkStreakBadges() {
     if (_streakDays >= 3) _badges.add('Streak 3');
+  }
+
+  /// Force sync to cloud (useful for critical updates)
+  Future<bool> forceCloudSync() async {
+    if (_firestoreStore == null) return false;
+    return await _firestoreStore!.forcSync();
+  }
+
+  /// Check if using cloud storage
+  bool get isUsingCloudStorage => _firestoreStore != null;
+
+  /// Get current game state snapshot
+  GameStateSnapshot get currentSnapshot => GameStateSnapshot(
+    xp: _xp,
+    streakDays: _streakDays,
+    sessions: _sessions,
+    steps: _steps,
+    correct: _correct,
+    badges: {..._badges},
+    masteryPct: {for (final e in _mastery.entries) e.key: e.value.pct},
+    lastActiveIso: _lastActiveDay?.toIso8601String(),
+  );
+
+  /// Clean up resources
+  @override
+  void dispose() {
+    _gameStateStreamSubscription?.cancel();
+    _connectivitySubscription?.cancel();
+    _firestoreStore?.dispose();
+    super.dispose();
   }
 }
 

@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from api.models.schemas import (
+from typing import Optional
+from models.schemas import (
     SessionStartRequest,
     AdaptiveSessionStartRequest,
     SessionStartResponse,
@@ -7,33 +8,13 @@ from api.models.schemas import (
     SessionStepResponse,
     SessionEndRequest,
 )
-from api.services.container import ITEMS_REPO, SESSIONS_REPO, PROFILES_REPO, PROGRESSION_SERVICE
-from api.services.orchestrator import SimpleOrchestrator
+from services.container import ITEMS_REPO, SESSIONS_REPO, PROFILES_REPO, PROGRESSION_SERVICE
+from services.orchestrator import SimpleOrchestrator
 
 router = APIRouter()
 _ORCH = SimpleOrchestrator()
 
 
-def _map_legacy_item_id(item_id: str) -> str:
-    """Map legacy topic names to first available item ID for that topic. 
-    Returns the item_id unchanged if it's already a valid item ID."""
-    
-    # If this is already a valid item ID, don't map it
-    if ITEMS_REPO.get_item(item_id):
-        return item_id
-    
-    # First detect the topic properly
-    class MockRequest:
-        def __init__(self, item_id):
-            self.item_id = item_id
-    
-    mock_req = MockRequest(item_id)
-    topic_name = _extract_topic_from_request(mock_req)
-    
-    # Get first item for this topic
-    progression = PROGRESSION_SERVICE.get_topic_progression(topic_name)
-    result = progression[0] if progression else None
-    return result
 
 
 def _extract_topic_from_request(req) -> str:
@@ -47,53 +28,76 @@ def _extract_topic_from_request(req) -> str:
     return _extract_topic_from_item_id(req.item_id)
 
 
+def _extract_subtopic_from_item_id(item_id: str) -> Optional[str]:
+    """Extract subtopic identifier from item_id if it's a subtopic (not a specific question)."""
+    if not item_id:
+        return None
+        
+    # Check if this looks like a subtopic identifier (kebab-case, no question numbers)
+    # Examples: "dividing-whole-by-proper-fractions", "introduction-to-algebra"
+    if "-" in item_id and not item_id.startswith(("ALGEBRA-", "FRACTIONS-", "GEOMETRY-", "PERCENTAGE-", "RATIO-", "SPEED-", "STATISTICS-")):
+        # This looks like a subtopic identifier
+        return item_id.lower()
+        
+    return None
+
+
 def _extract_topic_from_item_id(item_id: str) -> str:
-    """Extract topic from item_id using direct mapping from p6_maths_topics.json."""
+    """Extract topic from item_id using curriculum service."""
     if not item_id:
         raise HTTPException(status_code=400, detail="item_id cannot be empty")
         
     item_id_lower = item_id.lower()
     print(f"🔍 DEBUG: Looking up topic for item_id '{item_id_lower}'")
     
-    # Load the topic mapping
     try:
-        import json
-        import os
-        topics_file = os.path.join(os.path.dirname(__file__), "../../..", "client", "assets", "p6_maths_topics.json")
-        with open(topics_file, 'r') as f:
-            topics_data = json.load(f)
+        # Get the question from hybrid ITEMS_REPO (loaded from Firestore at startup)
+        question = ITEMS_REPO.get_item(item_id)
+        if question:
+            topic = question.get("topic", "")
+            print(f"🔍 DEBUG: Found topic from hybrid repo: '{item_id}' → '{topic}'")
+            return topic
         
-        # Search through subjects and their subtopics
-        for subject in topics_data.get("subjects", []):
-            subject_id = subject.get("id", "")
-            
-            # Check if item_id matches any subtopic
-            for subtopic in subject.get("subtopics", []):
-                subtopic_id = subtopic.get("id", "")
-                if subtopic_id == item_id_lower:
-                    print(f"🔍 DEBUG: Found direct mapping: '{item_id}' → '{subject_id}'")
-                    return subject_id
+        # If question not found, try to infer topic from item_id patterns
+        # This handles legacy item_ids and subtopic mapping
+        topic_patterns = {
+            'algebra': ['algebra', 'algebraic', 'equation', 'expression'],
+            'fractions': ['fraction', 'mixed', 'numerator', 'denominator'],
+            'percentage': ['percent', '%', 'increase', 'decrease'],
+            'ratio': ['ratio', 'proportion', 'equivalent'],
+            'speed': ['speed', 'distance', 'time', 'velocity'],
+            'geometry': ['area', 'perimeter', 'angle', 'shape', 'measurement'],
+            'data-analysis': ['graph', 'chart', 'data', 'bar', 'pie', 'line']
+        }
         
-        # If not found in subtopics, check if it's a direct subject match
-        subjects = [s.get("id", "") for s in topics_data.get("subjects", [])]
-        for subject_id in subjects:
-            if subject_id in item_id_lower:
-                print(f"🔍 DEBUG: Found subject in item_id: '{item_id}' → '{subject_id}'")
-                return subject_id
+        # Check if item_id contains any topic keywords
+        for topic, keywords in topic_patterns.items():
+            for keyword in keywords:
+                if keyword in item_id_lower:
+                    print(f"🔍 DEBUG: Inferred topic from pattern: '{item_id}' → '{topic}'")
+                    return topic
+        
+        # Last resort: check if it's a direct topic match
+        known_topics = list(topic_patterns.keys())
+        for topic in known_topics:
+            if topic.replace('-', '') in item_id_lower or topic in item_id_lower:
+                print(f"🔍 DEBUG: Direct topic match: '{item_id}' → '{topic}'")
+                return topic
     
     except Exception as e:
-        print(f"🔍 DEBUG: Error loading p6_maths_topics.json: {e}")
+        print(f"🔍 DEBUG: Error looking up topic: {e}")
     
-    # NO FALLBACKS - Fail clearly if topic can't be determined
+    # Fail clearly if topic can't be determined
     print(f"🔍 DEBUG: Could not determine topic from item_id '{item_id}'")
-    raise HTTPException(status_code=400, detail=f"Cannot determine topic from item_id: {item_id}. Make sure it exists in p6_maths_topics.json")
+    raise HTTPException(status_code=400, detail=f"Cannot determine topic from item_id: {item_id}. Question may not exist in curriculum database.")
 
 
 
 
 @router.post("/session/start", response_model=SessionStartResponse)
 def start_session(req: SessionStartRequest):
-    item = ITEMS_REPO.get_item(req.item_id)
+    curriculum_service = get_curriculum_service()
+    item = curriculum_service.get_question(req.item_id)
     if not item:
         raise HTTPException(status_code=404, detail="Item not found")
     sid = SESSIONS_REPO.create_session(req.learner_id, req.item_id)
@@ -108,7 +112,14 @@ def start_session(req: SessionStartRequest):
     # Clean, minimal prompt - AI will provide all tutoring context
     clean_prompt = f"{title}\n\n{problem_text}"
     
-    return SessionStartResponse(session_id=sid, step_id="main", prompt=clean_prompt)
+    # Include assets from the item data
+    assets = None
+    if 'assets' in item:
+        assets = item['assets']
+    elif 'asset' in item:  # Handle different naming conventions
+        assets = item['asset']
+    
+    return SessionStartResponse(session_id=sid, step_id="main", prompt=clean_prompt, assets=assets)
 
 
 @router.get("/session/{session_id}", response_model=SessionStartResponse)
@@ -127,7 +138,15 @@ def get_session(session_id: str):
     
     # Clean, minimal prompt - AI will provide all tutoring context
     clean_prompt = f"{title}\n\n{problem_text}"
-    return SessionStartResponse(session_id=session_id, step_id="main", prompt=clean_prompt)
+    
+    # Include assets from the item data
+    assets = None
+    if 'assets' in item:
+        assets = item['assets']
+    elif 'asset' in item:  # Handle different naming conventions
+        assets = item['asset']
+    
+    return SessionStartResponse(session_id=session_id, step_id="main", prompt=clean_prompt, assets=assets)
 
 
 @router.post("/session/start-adaptive", response_model=SessionStartResponse)
@@ -141,18 +160,34 @@ def start_adaptive_session(req: AdaptiveSessionStartRequest):
     topic_name = _extract_topic_from_request(req)
     print(f"🔍 DEBUG: Detected topic: {topic_name}")
     
+    # Try both lowercase and capitalized versions for Firestore query
+    topic_variations = [topic_name, topic_name.capitalize(), topic_name.upper()]
+    print(f"🔍 DEBUG: Will try topic variations: {topic_variations}")
+    
     # If item_id is provided, use it; otherwise find next in progression
     item_id = req.item_id
     print(f"🔍 DEBUG: Original item_id from request: {item_id}")
     
+    # FIRST: Check if item_id is a subtopic identifier BEFORE any legacy mapping
+    subtopic_filter = None
     if item_id:
-        # Handle old-style item_id mapping (e.g., "fractions-intro" -> actual question ID)
-        item_id = _map_legacy_item_id(item_id)
-        print(f"🔍 DEBUG: After legacy mapping: {item_id}")
+        subtopic_filter = _extract_subtopic_from_item_id(item_id)
+        if subtopic_filter:
+            print(f"🔍 DEBUG: Detected subtopic identifier '{item_id}' -> filter: '{subtopic_filter}'")
+            # Get first question from this specific subtopic
+            item_id = PROGRESSION_SERVICE.recommend_next_session(learner_profile, topic_name, subtopic_filter)
+            print(f"🔍 DEBUG: Recommended item_id for subtopic '{subtopic_filter}': {item_id}")
+            if not item_id:
+                raise HTTPException(status_code=404, detail=f"No more items available in {topic_name} subtopic '{subtopic_filter}' progression")
+        else:
+            # No subtopic filter detected, continue with original item_id
+            print(f"🔍 DEBUG: No subtopic detected, using original item_id: {item_id}")
     
     if not item_id:
-        print(f"🔍 DEBUG: No item_id, getting recommendation for topic '{topic_name}'")
-        item_id = PROGRESSION_SERVICE.recommend_next_session(learner_profile, topic_name)
+        print(f"🔍 DEBUG: No item_id, getting recommendation for topic '{topic_name}' with subtopic_filter '{subtopic_filter}'")
+        # Use progression service to get next question in progression (more reliable than curriculum service)
+        # CRITICAL FIX: Pass subtopic_filter to maintain subtopic filtering context
+        item_id = PROGRESSION_SERVICE.recommend_next_session(learner_profile, topic_name, subtopic_filter)
         print(f"🔍 DEBUG: Recommended item_id: {item_id}")
         if not item_id:
             raise HTTPException(status_code=404, detail=f"No more items available in {topic_name} progression")
@@ -177,7 +212,14 @@ def start_adaptive_session(req: AdaptiveSessionStartRequest):
     # Clean, minimal prompt - AI will provide all tutoring context
     clean_prompt = f"{title}\n\n{problem_text}"
     
-    return SessionStartResponse(session_id=sid, step_id="main", prompt=clean_prompt)
+    # Include assets from the item data
+    assets = None
+    if 'assets' in item:
+        assets = item['assets']
+    elif 'asset' in item:  # Handle different naming conventions
+        assets = item['asset']
+    
+    return SessionStartResponse(session_id=sid, step_id="main", prompt=clean_prompt, assets=assets)
 
 
 @router.post("/session/step", response_model=SessionStepResponse)
@@ -252,7 +294,14 @@ def do_step(req: SessionStepRequest):
         learner_profile = PROFILES_REPO.get_profile(learner_id)
         # Extract topic from current item to find next item in same topic progression
         topic_name = _extract_topic_from_item_id(session["item_id"])
-        next_item_id = PROGRESSION_SERVICE.recommend_next_session(learner_profile, topic_name)
+        # CRITICAL FIX: Extract subtopic from completed item to stay within same subtopic
+        # Now using hybrid repo which loads from Firestore at startup
+        completed_item = ITEMS_REPO.get_item(item_id)
+        subtopic_filter = completed_item.get("subtopic") if completed_item else None
+        print(f"🔍 DEBUG: Looking for next item in topic '{topic_name}' subtopic '{subtopic_filter}' after completing '{item_id}'")
+        print(f"🔍 DEBUG: Learner completed items: {learner_profile.get('completed_items', [])}")
+        next_item_id = PROGRESSION_SERVICE.recommend_next_session(learner_profile, topic_name, subtopic_filter)
+        print(f"🔍 DEBUG: Progression service recommended: {next_item_id}")
         
         if next_item_id:
             next_item = ITEMS_REPO.get_item(next_item_id)
@@ -274,8 +323,8 @@ def do_step(req: SessionStepRequest):
                 step_id=None
             )
         else:
-            completion_message = f"🎉 Congratulations! You've completed '{item.get('title', 'this problem')}' and finished all available algebra topics!\n\n" + \
-                               f"You're now an algebra expert! 🌟"
+            completion_message = f"🎉 Congratulations! You've completed '{item.get('title', 'this problem')}' and finished all available {topic_name} topics!\n\n" + \
+                               f"You're now a {topic_name} expert! 🌟"
             return SessionStepResponse(
                 correctness=True, 
                 next_prompt=completion_message, 
@@ -315,7 +364,11 @@ def continue_progression(req: SessionEndRequest):
     # Get next item in progression
     # Extract topic from current session to continue in same topic
     topic_name = _extract_topic_from_item_id(current_item_id)
-    next_item_id = PROGRESSION_SERVICE.recommend_next_session(learner_profile, topic_name)
+    # CRITICAL FIX: Extract subtopic from current item to maintain subtopic filtering
+    current_item = ITEMS_REPO.get_item(current_item_id)
+    subtopic_filter = current_item.get("subtopic") if current_item else None
+    print(f"🔍 DEBUG: continue-progression topic '{topic_name}' subtopic '{subtopic_filter}'")
+    next_item_id = PROGRESSION_SERVICE.recommend_next_session(learner_profile, topic_name, subtopic_filter)
     if not next_item_id:
         raise HTTPException(status_code=404, detail="No more items available in progression")
     

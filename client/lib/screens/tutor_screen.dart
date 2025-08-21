@@ -1,20 +1,29 @@
+import 'dart:async';
 import 'dart:math';
 import 'dart:ui' show FontFeature;
 import 'package:confetti/confetti.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../api_client.dart';
 import '../ui/app_theme.dart';
 import '../state/game_state.dart';
 import '../data/learning_modules.dart';
 import '../ui/components/math_text.dart';
+import '../services/session_persistence_service.dart';
+import '../services/progress_tracking_service.dart';
+import '../state/active_learner.dart';
+import '../ui/components/progress_indicator_widget.dart';
+import '../ui/components/problem_display_widget.dart';
 
 class TutorScreen extends StatefulWidget {
   final String apiBase;
   final String sessionId;
   final String stepId;
   final String prompt;
+  final Map<String, dynamic>? assets;
   final LearningModule? moduleContext;
-  const TutorScreen({super.key, required this.apiBase, required this.sessionId, required this.stepId, required this.prompt, this.moduleContext});
+  const TutorScreen({super.key, required this.apiBase, required this.sessionId, required this.stepId, required this.prompt, this.assets, this.moduleContext});
 
   @override
   State<TutorScreen> createState() => _TutorScreenState();
@@ -25,10 +34,16 @@ class _TutorScreenState extends State<TutorScreen> {
   final TextEditingController _answerCtrl = TextEditingController();
   final FocusNode _inputFocus = FocusNode();
   final _confetti = ConfettiController(duration: const Duration(seconds: 1));
+  final SessionPersistenceService _sessionService = SessionPersistenceService();
+  final ProgressTrackingService _progressService = ProgressTrackingService();
   bool _busy = false;
   bool _aiTyping = false;
   String _currentStepId = 's1';
   int _attempts = 0; // for hint-ladder visualization
+  bool _sessionRestored = false;
+  int _totalSteps = 0;
+  int _correctSteps = 0;
+  Map<String, dynamic>? _currentAssets;
 
   ApiClient get _api => ApiClient(widget.apiBase);
 
@@ -36,8 +51,104 @@ class _TutorScreenState extends State<TutorScreen> {
   void initState() {
     super.initState();
     _currentStepId = widget.stepId;
-    _messages.add(_Msg(agent: 'tutor', text: widget.prompt));
-    WidgetsBinding.instance.addPostFrameCallback((_) => _inputFocus.requestFocus());
+    _initializeSession();
+    // Don't auto-focus on web as it can interfere with navigation
+    if (!kIsWeb) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _inputFocus.requestFocus());
+    }
+  }
+
+  Future<void> _initializeSession() async {
+    await _sessionService.initialize();
+    await _progressService.initialize();
+    
+    // Initialize assets from widget
+    _currentAssets = widget.assets;
+    
+    // Try to restore previous session
+    final previousSession = await _sessionService.loadSessionState();
+    
+    if (previousSession != null && previousSession.sessionId == widget.sessionId) {
+      // Restore conversation history
+      _sessionRestored = true;
+      _currentStepId = previousSession.stepId;
+      _attempts = previousSession.attempts;
+      
+      // Calculate restored session stats
+      _totalSteps = previousSession.conversationHistory.where((msg) => msg.role == 'user').length;
+      _correctSteps = 0; // This would need to be tracked in metadata for accurate restoration
+      
+      // Restore messages from conversation history
+      for (final msg in previousSession.conversationHistory) {
+        if (msg.role == 'tutor') {
+          // Create problem display for tutor messages
+          _messages.add(_Msg(
+            agent: 'tutor', 
+            text: msg.content,
+            problemContent: ProblemContent.fromText(msg.content),
+          ));
+        } else {
+          _messages.add(_Msg(
+            agent: msg.role == 'user' ? 'you' : msg.role, 
+            text: msg.content
+          ));
+        }
+      }
+      
+      print('TutorScreen: Restored session ${widget.sessionId} with ${previousSession.conversationHistory.length} messages');
+      
+      // Force UI update after restoring messages
+      if (mounted) {
+        setState(() {});
+        // Ensure Flutter web renders the restored content
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) setState(() {});
+        });
+      }
+    } else {
+      // Start new session with enhanced problem display
+      final problemContent = ProblemContent.fromContent(
+        text: widget.prompt,
+        svgCode: _currentAssets?['svg_code'] as String?,
+        imageUrl: _currentAssets?['image_url'] as String?,
+        metadata: _currentAssets,
+      );
+      
+      _messages.add(_Msg(
+        agent: 'tutor', 
+        text: widget.prompt,
+        problemContent: problemContent,
+      ));
+      
+      // Create new session state
+      final newSession = SessionState(
+        sessionId: widget.sessionId,
+        learnerId: ActiveLearner.instance.id ?? '',
+        stepId: _currentStepId,
+        itemId: widget.moduleContext?.id ?? '',
+        subject: widget.moduleContext?.title ?? 'Math',
+        conversationHistory: [ConversationMessage(
+          role: 'tutor',
+          content: widget.prompt,
+          timestamp: DateTime.now(),
+        )],
+        attempts: 0,
+        lastActive: DateTime.now(),
+        completed: false,
+      );
+      
+      await _sessionService.saveSessionState(newSession);
+      
+      // Force UI update after adding the initial message
+      if (mounted) {
+        setState(() {});
+        // Ensure Flutter web renders the content
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) setState(() {});
+        });
+      }
+    }
+    
     GameStateController.instance.onPromptShown();
   }
 
@@ -50,13 +161,31 @@ class _TutorScreenState extends State<TutorScreen> {
   }
 
   Future<void> _submit() async {
+    print('TutorScreen: Submit called, busy: $_busy');
     if (_busy) return;
     setState(() { _busy = true; _aiTyping = true; });
+    print('TutorScreen: Set busy=true, aiTyping=true');
     final text = _answerCtrl.text.trim();
     _answerCtrl.clear();
     _messages.add(_Msg(agent: 'you', text: text));
+    
+    // Save user message to session
+    await _sessionService.addConversationMessage(
+      sessionId: widget.sessionId,
+      role: 'user',
+      content: text,
+    );
+    
     try {
-      final res = await _api.step(sessionId: widget.sessionId, stepId: _currentStepId, userResponse: text);
+      print('TutorScreen: Calling API step...');
+      final res = await _api.step(sessionId: widget.sessionId, stepId: _currentStepId, userResponse: text).timeout(
+        const Duration(seconds: 30),
+        onTimeout: () {
+          print('TutorScreen: API timeout after 30 seconds');
+          throw TimeoutException('Request timed out', const Duration(seconds: 30));
+        },
+      );
+      print('TutorScreen: API step completed successfully');
       final correct = res['correctness'] as bool?;
       final hint = (res['hint'] as String?) ?? '';
       final tutorMessage = (res['tutor_message'] as String?) ?? '';
@@ -64,7 +193,33 @@ class _TutorScreenState extends State<TutorScreen> {
       final nextPrompt = (res['next_prompt'] as String?) ?? '';
       final updates = res['updates'] as Map<String, dynamic>? ?? {};
       // Record attempt for stats
+      print('TutorScreen: About to call GameStateController.recordAttempt');
       GameStateController.instance.recordAttempt(correct: correct == true, skill: 'Algebraic Expressions');
+      print('TutorScreen: GameStateController.recordAttempt completed');
+      
+      // Update step tracking
+      _totalSteps += 1;
+      print('TutorScreen: Updated _totalSteps to $_totalSteps, _correctSteps: $_correctSteps');
+      if (correct == true) {
+        _correctSteps += 1;
+      }
+      
+      // Record progress in real-time
+      print('TutorScreen: About to call ProgressTrackingService.recordStepProgress');
+      await _progressService.recordStepProgress(
+        topic: widget.moduleContext?.subStrand ?? widget.moduleContext?.title ?? 'Math',
+        skill: widget.moduleContext?.subStrand ?? 'Problem Solving',
+        correct: correct == true,
+      );
+      print('TutorScreen: ProgressTrackingService.recordStepProgress completed');
+      
+      // Update session progress
+      print('TutorScreen: About to call SessionPersistenceService.updateSessionProgress');
+      await _sessionService.updateSessionProgress(
+        sessionId: widget.sessionId,
+        attempts: _attempts + 1,
+      );
+      print('TutorScreen: SessionPersistenceService.updateSessionProgress completed');
 
       if (correct == true) {
         final baseXp = (updates['xp_earned'] as int?) ?? 10;
@@ -76,40 +231,121 @@ class _TutorScreenState extends State<TutorScreen> {
           final nextItemAvailable = updates['next_item_available'] as bool? ?? false;
           final nextItemTitle = updates['next_item_title'] as String? ?? '';
           
+          // Mark session as completed
+          await _sessionService.markSessionCompleted(widget.sessionId, success: true);
+          
+          // Record session completion in progress tracking
+          await _progressService.recordSessionCompleted(
+            topic: widget.moduleContext?.subStrand ?? widget.moduleContext?.title ?? 'Math',
+            stepsCompleted: _totalSteps,
+            correctAnswers: _correctSteps,
+            skill: 'Algebraic Expressions',
+            skillAccuracy: _totalSteps > 0 ? _correctSteps / _totalSteps : 0.0,
+          );
+          
           if (itemCompleted && nextItemAvailable) {
-            GameStateController.instance.onItemCompleted(topic: 'Algebra');
+            GameStateController.instance.onItemCompleted(topic: widget.moduleContext?.subStrand ?? widget.moduleContext?.title ?? 'Math');
             // Show completion message with next item info
-            _messages.add(_Msg(agent: 'tutor', text: nextPrompt.isNotEmpty ? nextPrompt : 'Great job! Ready for the next challenge?'));
+            final completionMessage = nextPrompt.isNotEmpty ? nextPrompt : 'Great job! Ready for the next challenge?';
+            _messages.add(_Msg(
+              agent: 'tutor', 
+              text: completionMessage,
+              problemContent: ProblemContent.fromText(completionMessage),
+            ));
+            await _sessionService.addConversationMessage(
+              sessionId: widget.sessionId,
+              role: 'tutor',
+              content: completionMessage,
+            );
             // Add a button or automatic continuation
             _showNextItemDialog(nextItemTitle);
           } else if (updates['progression_completed'] == true) {
-            _messages.add(_Msg(agent: 'tutor', text: nextPrompt.isNotEmpty ? nextPrompt : 'Congratulations! You\'ve mastered algebra! 🌟'));
+            final completionMessage = nextPrompt.isNotEmpty ? nextPrompt : 'Congratulations! You\'ve mastered algebra! 🌟';
+            _messages.add(_Msg(
+              agent: 'tutor', 
+              text: completionMessage,
+              problemContent: ProblemContent.fromText(completionMessage),
+            ));
+            await _sessionService.addConversationMessage(
+              sessionId: widget.sessionId,
+              role: 'tutor',
+              content: completionMessage,
+            );
           } else {
-            _messages.add(_Msg(agent: 'tutor', text: 'Brilliant! You\'ve completed the quest.'));
+            final completionMessage = 'Brilliant! You\'ve completed the quest.';
+            _messages.add(_Msg(
+              agent: 'tutor', 
+              text: completionMessage,
+              problemContent: ProblemContent.fromText(completionMessage),
+            ));
+            await _sessionService.addConversationMessage(
+              sessionId: widget.sessionId,
+              role: 'tutor',
+              content: completionMessage,
+            );
           }
         } else if (nextPrompt.isNotEmpty) {
-          _messages.add(_Msg(agent: 'tutor', text: nextPrompt));
+          _messages.add(_Msg(
+            agent: 'tutor', 
+            text: nextPrompt,
+            problemContent: ProblemContent.fromText(nextPrompt),
+          ));
+          await _sessionService.addConversationMessage(
+            sessionId: widget.sessionId,
+            role: 'tutor',
+            content: nextPrompt,
+          );
           GameStateController.instance.onPromptShown();
         }
         _attempts = 0; // reset ladder when moving to a new prompt
       } else {
         // Show AI tutor response for incorrect answers
         if (tutorMessage.isNotEmpty) {
-          _messages.add(_Msg(agent: 'tutor', text: tutorMessage));
+          _messages.add(_Msg(
+            agent: 'tutor', 
+            text: tutorMessage,
+            problemContent: null, // Test: disable ProblemDisplayWidget for AI responses
+          ));
+          await _sessionService.addConversationMessage(
+            sessionId: widget.sessionId,
+            role: 'tutor',
+            content: tutorMessage,
+          );
           _attempts += 1;
         } else if (hint.isNotEmpty) {
-          _messages.add(_Msg(agent: 'tutor', text: 'Hint: $hint'));
+          final hintMessage = 'Hint: $hint';
+          _messages.add(_Msg(
+            agent: 'tutor', 
+            text: hintMessage,
+            problemContent: null, // Test: disable ProblemDisplayWidget for hints too
+          ));
+          await _sessionService.addConversationMessage(
+            sessionId: widget.sessionId,
+            role: 'tutor',
+            content: hintMessage,
+          );
           _attempts += 1;
         }
       }
-      setState(() {});
+      if (mounted) {
+        setState(() {});
+        // Force a refresh on Flutter web to ensure rendering
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) setState(() {});
+        });
+      }
     } catch (e) {
+      print('TutorScreen: Submit error: $e');
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Error: $e')));
     } finally {
+      print('TutorScreen: Submit finally block, mounted: $mounted');
       if (mounted) {
         setState(() { _busy = false; _aiTyping = false; });
-        // Keep focus in the input for fast continued answers
-        _inputFocus.requestFocus();
+        print('TutorScreen: Reset busy=false, aiTyping=false');
+        // Only auto-focus on mobile, not web
+        if (!kIsWeb) {
+          _inputFocus.requestFocus();
+        }
       }
     }
   }
@@ -121,10 +357,27 @@ class _TutorScreenState extends State<TutorScreen> {
       final res = await _api.step(sessionId: widget.sessionId, stepId: _currentStepId, userResponse: '');
       final hint = (res['hint'] as String?) ?? '';
       if (hint.isNotEmpty) {
-        _messages.add(_Msg(agent: 'tutor', text: 'Hint: $hint'));
+        final hintMessage = 'Hint: $hint';
+        _messages.add(_Msg(
+          agent: 'tutor', 
+          text: hintMessage,
+          problemContent: null, // Test: disable ProblemDisplayWidget for hint requests too
+        ));
+        await _sessionService.addConversationMessage(
+          sessionId: widget.sessionId,
+          role: 'tutor',
+          content: hintMessage,
+          metadata: {'type': 'hint'},
+        );
         _attempts += 1;
       }
-      setState(() {});
+      if (mounted) {
+        setState(() {});
+        // Force a refresh on Flutter web to ensure rendering
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) setState(() {});
+        });
+      }
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Error getting hint: $e')));
@@ -132,7 +385,10 @@ class _TutorScreenState extends State<TutorScreen> {
     } finally {
       if (mounted) {
         setState(() { _busy = false; _aiTyping = false; });
-        _inputFocus.requestFocus();
+        // Only auto-focus on mobile, not web
+        if (!kIsWeb) {
+          _inputFocus.requestFocus();
+        }
       }
     }
   }
@@ -167,6 +423,7 @@ class _TutorScreenState extends State<TutorScreen> {
       final newSessionId = res['session_id'] as String;
       final newStepId = res['step_id'] as String;
       final newPrompt = res['prompt'] as String;
+      final newAssets = res['assets'] as Map<String, dynamic>?;
       
       // Navigate to new tutor screen with new session
       if (mounted) {
@@ -177,6 +434,8 @@ class _TutorScreenState extends State<TutorScreen> {
               sessionId: newSessionId,
               stepId: newStepId,
               prompt: newPrompt,
+              assets: newAssets,
+              moduleContext: widget.moduleContext,
             ),
           ),
         );
@@ -194,19 +453,56 @@ class _TutorScreenState extends State<TutorScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Algebra Quest'),
-        actions: [
-          AnimatedBuilder(
-            animation: GameStateController.instance,
-            builder: (context, _) => Padding(
-              padding: const EdgeInsets.only(right: 12.0),
-              child: Chip(label: Text('XP: ${GameStateController.instance.xp}')),
-            ),
+    print('TutorScreen: Building widget - busy: $_busy, totalSteps: $_totalSteps, messages: ${_messages.length}');
+    print('TutorScreen: moduleContext - title: ${widget.moduleContext?.title}, subStrand: ${widget.moduleContext?.subStrand}');
+    
+    // Create stable AppBar separately from the main widget tree
+    final stableAppBar = PreferredSize(
+      preferredSize: const Size.fromHeight(kToolbarHeight),
+      child: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Color(0xFF1E2139), Color(0xFF2A2F4F)],
           ),
-        ],
+        ),
+        child: SafeArea(
+          child: Row(
+            children: [
+              // Back button
+              IconButton(
+                icon: const Icon(Icons.arrow_back, color: Colors.white),
+                onPressed: () {
+                  print('TutorScreen: Stable back button pressed');
+                  Navigator.of(context).pop();
+                },
+              ),
+              // Dynamic title based on topic
+              Expanded(
+                child: Text(
+                  '${widget.moduleContext?.subStrand ?? widget.moduleContext?.title ?? 'Math'} Quest',
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+              // Test back button
+              IconButton(
+                icon: const Icon(Icons.exit_to_app, color: Colors.white),
+                onPressed: () {
+                  print('TutorScreen: Stable test back button pressed');
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          ),
+        ),
       ),
+    );
+
+    return Scaffold(
+      appBar: stableAppBar,
       body: AnimatedBackground(
         child: Stack(
           children: [
@@ -222,7 +518,7 @@ class _TutorScreenState extends State<TutorScreen> {
                         padding: const EdgeInsets.fromLTRB(16, 8, 8, 16),
                         child: Glass(
                           child: Column(children: [
-                            Expanded(child: _ChatView(messages: _messages, typing: _aiTyping)),
+                            Expanded(child: _ChatView(key: ValueKey('chat_${_messages.length}'), messages: _messages, typing: _aiTyping)),
                             _InputBar(
                               controller: _answerCtrl,
                               focusNode: _inputFocus,
@@ -239,8 +535,19 @@ class _TutorScreenState extends State<TutorScreen> {
                       child: Padding(
                         padding: const EdgeInsets.fromLTRB(8, 8, 16, 16),
                         child: Column(
-                          children: const [
-                            Glass(child: _ScratchPad(height: 260)),
+                          children: [
+                            // Progress tracking widget
+                            Glass(
+                              child: Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: ProgressIndicatorWidget(
+                                  topic: widget.moduleContext?.subStrand ?? widget.moduleContext?.title ?? 'Math',
+                                  showDetailed: true,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 8),
+                            const Glass(child: _ScratchPad(height: 160)),
                           ],
                         ),
                       ),
@@ -251,7 +558,7 @@ class _TutorScreenState extends State<TutorScreen> {
               return Padding(
                 padding: const EdgeInsets.fromLTRB(12, 8, 12, 12),
                 child: Column(children: [
-                  Expanded(child: Glass(child: _ChatView(messages: _messages, typing: _aiTyping))),
+                  Expanded(child: Glass(child: _ChatView(key: ValueKey('chat_mobile_${_messages.length}'), messages: _messages, typing: _aiTyping))),
                   const SizedBox(height: 8),
                   Glass(
                     child: _InputBar(
@@ -332,7 +639,9 @@ class _InputBar extends StatelessWidget {
             controller.text = newText;
             final newPos = start + txt.length;
             controller.selection = TextSelection.collapsed(offset: newPos);
-            focusNode?.requestFocus();
+            if (!kIsWeb) {
+              focusNode?.requestFocus();
+            }
           }, onHint: onHint),
           const SizedBox(height: 8),
           _MathKeypad(onInsert: (txt, {int? cursorOffset}) {
@@ -344,7 +653,9 @@ class _InputBar extends StatelessWidget {
             controller.text = newText;
             final newPos = start + (cursorOffset ?? txt.length);
             controller.selection = TextSelection.collapsed(offset: newPos);
-            focusNode?.requestFocus();
+            if (!kIsWeb) {
+              focusNode?.requestFocus();
+            }
           }),
         ],
       ),
@@ -355,30 +666,57 @@ class _InputBar extends StatelessWidget {
 class _Msg {
   final String agent; // 'tutor' | 'you'
   final String text;
-  _Msg({required this.agent, required this.text});
+  final ProblemContent? problemContent;
+  _Msg({required this.agent, required this.text, this.problemContent});
 }
 
-class _ChatView extends StatelessWidget {
+class _ChatView extends StatefulWidget {
   final List<_Msg> messages;
   final bool typing;
-  const _ChatView({required this.messages, this.typing = false});
+  const _ChatView({super.key, required this.messages, this.typing = false});
+  @override
+  State<_ChatView> createState() => _ChatViewState();
+}
+
+class _ChatViewState extends State<_ChatView> {
+  @override
+  void didUpdateWidget(_ChatView oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // Force a rebuild when messages change
+    if (oldWidget.messages.length != widget.messages.length || oldWidget.typing != widget.typing) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) setState(() {});
+      });
+    }
+  }
+  
   @override
   Widget build(BuildContext context) {
+    print('ChatView building with ${widget.messages.length} messages, typing: ${widget.typing}');
+    if (widget.messages.length >= 3) {
+      final aiMessage = widget.messages[2]; // The AI response message
+      print('ChatView: AI message content: "${aiMessage.text.substring(0, aiMessage.text.length.clamp(0, 100))}..."');
+      print('ChatView: AI message has problemContent: ${aiMessage.problemContent != null}');
+    }
     final bgTutor = Colors.white.withOpacity(0.08);
     final bgYou = Theme.of(context).colorScheme.primaryContainer.withOpacity(0.9);
+    final chatKey = ValueKey('chat_${widget.messages.length}_${widget.typing.toString()}');
     return ListView.separated(
+      key: chatKey,
       padding: const EdgeInsets.all(16),
-      itemCount: messages.length + (typing ? 1 : 0),
+      itemCount: widget.messages.length + (widget.typing ? 1 : 0),
       separatorBuilder: (_, __) => const SizedBox(height: 8),
       itemBuilder: (context, i) {
-        if (i >= messages.length) {
+        if (i >= widget.messages.length) {
           return const _TypingIndicator();
         }
-        final m = messages[i];
+        final m = widget.messages[i];
         final isTutor = m.agent == 'tutor';
+        final messageKey = ValueKey('msg_${i}_${m.text.hashCode}');
         return Align(
           alignment: isTutor ? Alignment.centerLeft : Alignment.centerRight,
           child: AnimatedContainer(
+            key: messageKey,
             duration: const Duration(milliseconds: 250),
             curve: Curves.easeOut,
             constraints: const BoxConstraints(maxWidth: 560),
@@ -388,10 +726,16 @@ class _ChatView extends StatelessWidget {
               borderRadius: BorderRadius.circular(16),
               boxShadow: [if (!isTutor) BoxShadow(color: Colors.black.withOpacity(0.25), blurRadius: 18, offset: const Offset(0, 8))],
             ),
-            child: MathText(
-              m.text,
-              style: const TextStyle(height: 1.3),
-            ),
+            child: isTutor && m.problemContent != null
+              ? ProblemDisplayWidget(
+                  content: m.problemContent!,
+                  textStyle: const TextStyle(height: 1.3),
+                  isCompact: true,
+                )
+              : MathText(
+                  m.text,
+                  style: const TextStyle(height: 1.3),
+                ),
           ),
         );
       },

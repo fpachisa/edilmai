@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from api.services.container import ITEMS_REPO, PROFILES_REPO, SESSIONS_REPO
+from services.container import ITEMS_REPO, PROFILES_REPO, SESSIONS_REPO
 
 router = APIRouter()
 

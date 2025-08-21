@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from api.services.container import PROFILES_REPO
+from services.container import PROFILES_REPO
 
 router = APIRouter()
 

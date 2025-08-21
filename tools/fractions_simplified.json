@@ -1,0 +1,2644 @@
+{
+  "curriculum": "Singapore PSLE Mathematics",
+  "topic": "Fractions",
+  "metadata": {
+    "generated_at": "2025-08-21T15:48:59.022437",
+    "generator_version": "simplified-v1.0",
+    "subject_id": "fractions",
+    "total_subtopics": 3,
+    "questions_per_subtopic": 20,
+    "singapore_moe_aligned": true,
+    "total_questions": 55,
+    "completed_at": "2025-08-21T15:56:15.306863"
+  },
+  "questions": [
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q1",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Sharing Juice Equally",
+      "complexity": "Easy",
+      "problem_text": "A jug contains 3/4 litre of orange juice. Mrs. Tan pours the juice equally into 3 glasses. How much juice is in each glass?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/4 litre",
+        "alternative_answers": [
+          "0.25 litre"
+        ],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly divides the fraction by the whole number and simplifies the result. The unit 'litre' should also be present.",
+        "keywords": [
+          "fraction",
+          "divide",
+          "whole number",
+          "share equally",
+          "litre"
+        ],
+        "common_misconceptions": {
+          "4 litres": "This indicates the student might have inverted the fraction and multiplied, or divided the whole number by the fraction (3 ÷ 3/4), which is incorrect. Remember, you are dividing a smaller amount (3/4) into parts, so the result must be smaller than 3/4.",
+          "9/4 litres": "This suggests the student multiplied 3/4 by 3 instead of dividing. When sharing equally, you divide, not multiply."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You have a total amount of juice (a fraction) and you are sharing it equally among a certain number of glasses (a whole number). What operation should you use?"
+          },
+          {
+            "step": 2,
+            "hint_text": "To divide a fraction by a whole number, remember to 'Keep, Change, Flip'. This means keep the fraction, change division to multiplication, and flip the whole number to its reciprocal. For example, the reciprocal of 3 is 1/3."
+          },
+          {
+            "step": 3,
+            "hint_text": "So, the calculation should be 3/4 ÷ 3. This becomes 3/4 × 1/3. Now, multiply the numerators and the denominators. Remember to simplify your answer if possible."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q2",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Cutting Ribbon into Pieces",
+      "complexity": "Easy",
+      "problem_text": "A ribbon is 2/5 metres long. Sarah cuts it into 4 equal pieces. What is the length of one piece?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/10 metre",
+        "alternative_answers": [
+          "0.1 metre"
+        ],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly divides the fraction by the whole number and simplifies the result. The unit 'metre' should be included.",
+        "keywords": [
+          "fraction",
+          "length",
+          "cut",
+          "equal pieces",
+          "divide",
+          "metre"
+        ],
+        "common_misconceptions": {
+          "8/5 metres": "This suggests multiplying the fraction by the whole number (2/5 × 4). Cutting into equal pieces implies division, making the pieces smaller.",
+          "20/2 metres or 10 metres": "This indicates the student might have divided the whole number by the fraction (4 ÷ 2/5) or performed an incorrect inversion and multiplication. The length of one piece must be smaller than the original ribbon length."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You have a total length of ribbon (a fraction) and you are dividing it into a certain number of equal parts (a whole number). Which mathematical operation should you use?"
+          },
+          {
+            "step": 2,
+            "hint_text": "To perform the division 2/5 ÷ 4, remember to rewrite the whole number as a fraction (4/1). Then apply the 'Keep, Change, Flip' rule."
+          },
+          {
+            "step": 3,
+            "hint_text": "The calculation becomes 2/5 × 1/4. Multiply the numerators together and the denominators together. Don't forget to simplify your final fraction."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q3",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Dividing a Painted Wall",
+      "complexity": "Easy",
+      "problem_text": "Peter painted 3/5 of a wall. He painted this section over 3 days, painting an equal amount each day. What fraction of the wall did he paint each day?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/5",
+        "alternative_answers": [
+          "0.2"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly divides the fraction by the whole number and simplifies. The answer should be a fraction.",
+        "keywords": [
+          "fraction",
+          "wall",
+          "paint",
+          "equal amount",
+          "daily",
+          "divide"
+        ],
+        "common_misconceptions": {
+          "9/5": "This indicates multiplication (3/5 × 3) instead of division. When an amount is spread equally over several days, it implies division.",
+          "5/9": "This suggests an incorrect inversion or confusion about which number is the divisor. The fraction of the wall (3/5) is being divided by the number of days (3)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Peter painted a fraction of the wall. He spread this work equally over 3 days. To find out how much he painted each day, you need to share the total painted fraction into 3 equal parts. What operation is this?"
+          },
+          {
+            "step": 2,
+            "hint_text": "The operation is 3/5 ÷ 3. Remember that 3 can be written as 3/1. To divide by a fraction, you multiply by its reciprocal. What is the reciprocal of 3/1?"
+          },
+          {
+            "step": 3,
+            "hint_text": "So, the calculation is 3/5 × 1/3. Multiply the numerators and the denominators. Simplify your answer to its simplest form."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q4",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Dividing a Garden Plot",
+      "complexity": "Easy",
+      "problem_text": "Mr. Lee has a garden. He uses 5/6 of his garden to plant vegetables. He divides this vegetable section equally into 5 smaller beds. What fraction of the whole garden does each small vegetable bed cover?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/6",
+        "alternative_answers": [
+          "0.1666..."
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identifies the fraction to be divided and the whole number divisor, then performs the division and simplification.",
+        "keywords": [
+          "fraction",
+          "garden",
+          "divide",
+          "equal sections",
+          "area"
+        ],
+        "common_misconceptions": {
+          "25/6": "This suggests multiplying the fraction by the whole number (5/6 × 5). When dividing a section into smaller, equal parts, you perform division.",
+          "6/25": "This indicates an incorrect inversion of the fraction or the whole number, or attempting to divide the whole number by the fraction (5 ÷ 5/6)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You are starting with a certain fraction of the garden (5/6) and dividing that specific section into 5 equal parts. What operation should you perform?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Set up the division: 5/6 ÷ 5. Remember to convert the whole number 5 into a fraction (5/1). Then apply the 'Keep, Change, Flip' rule for division."
+          },
+          {
+            "step": 3,
+            "hint_text": "The calculation becomes 5/6 × 1/5. Look for opportunities to simplify before or after multiplying the numerators and denominators."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q5",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Pouring Water into Cups",
+      "complexity": "Easy",
+      "problem_text": "A bottle is 7/8 full of water. If the water is poured equally into 7 small cups, what fraction of the bottle's capacity does each cup hold?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/8",
+        "alternative_answers": [
+          "0.125"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly divides the initial fraction by the number of cups and simplifies the final fraction.",
+        "keywords": [
+          "fraction",
+          "capacity",
+          "pour",
+          "equally",
+          "cups",
+          "divide"
+        ],
+        "common_misconceptions": {
+          "49/8": "This suggests multiplying 7/8 by 7. When liquid is divided into smaller, equal portions, the operation is division, not multiplication.",
+          "8/49": "This indicates an incorrect inversion or misunderstanding of the divisor. The fraction (7/8) is being divided by the whole number (7)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You have a certain amount of water (a fraction of the bottle) and you are splitting this amount into 7 equal parts. What mathematical operation is needed?"
+          },
+          {
+            "step": 2,
+            "hint_text": "The problem asks for 7/8 ÷ 7. Remember that any whole number, like 7, can be written as a fraction, 7/1. Then, you can use the 'Keep, Change, Flip' method."
+          },
+          {
+            "step": 3,
+            "hint_text": "The calculation becomes 7/8 × 1/7. Multiply the numerators and the denominators. Remember to simplify your answer to its simplest form."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q6",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Sharing a Fraction of a Pizza",
+      "complexity": "Easy",
+      "problem_text": "Aunt May had 1/2 of a pizza left after a party. She wants to share this remaining pizza equally among her 4 nephews. What fraction of the whole pizza does each nephew get?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/8",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Compare the student's final fraction with 1/8. Ensure it is in its simplest form.",
+        "keywords": [
+          "fraction",
+          "division",
+          "whole number",
+          "sharing",
+          "equal parts",
+          "reciprocal"
+        ],
+        "common_misconceptions": {
+          "1/2": "This is the amount of pizza left, not what each nephew gets. The student might have forgotten to divide.",
+          "2": "The student might have divided the whole number by the fraction, or made a conceptual error regarding division.",
+          "1/4": "The student might have divided the denominator by the whole number, or multiplied 1/2 by 2 instead of dividing by 4."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You have a fraction (1/2) that needs to be divided equally among a certain number of people (4 nephews). What mathematical operation should you use?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Remember that dividing a fraction by a whole number is the same as multiplying the fraction by the reciprocal of that whole number. What is the reciprocal of 4?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The reciprocal of 4 is 1/4. So, you need to calculate 1/2 × 1/4. Multiply the numerators and the denominators."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q7",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Cutting a Length of Ribbon",
+      "complexity": "Easy",
+      "problem_text": "Susan has 3/4 metre of ribbon. She wants to cut it into 3 equal pieces to make bookmarks. What is the length of each piece of ribbon?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/4",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student's answer is 1/4. Ensure the fraction is simplified.",
+        "keywords": [
+          "fraction",
+          "division",
+          "whole number",
+          "length",
+          "equal parts",
+          "metre"
+        ],
+        "common_misconceptions": {
+          "9/4": "The student might have multiplied the fraction by the whole number instead of dividing.",
+          "3/12": "The student might have performed the correct multiplication (3/4 * 1/3) but forgot to simplify the resulting fraction.",
+          "4/3": "The student might have inverted the original fraction incorrectly or mixed up the operation."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You have a total length of ribbon (a fraction) and you want to divide it into an equal number of pieces (a whole number). What operation is needed?"
+          },
+          {
+            "step": 2,
+            "hint_text": "To divide a fraction by a whole number, you can multiply the fraction by the reciprocal of the whole number. What is the reciprocal of 3?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The reciprocal of 3 is 1/3. So, the calculation is 3/4 × 1/3. Remember to simplify your answer to its simplest form."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q8",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Filling Buckets from a Tank",
+      "complexity": "Medium",
+      "problem_text": "A water tank was 4/5 full. Mr. Tan decided to pour all the water from the tank equally into 8 identical buckets. What fraction of the *total* tank volume does each bucket hold?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/10",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Verify the answer is 1/10 and in simplest form. The student must understand that the answer is a fraction of the *total* tank volume.",
+        "keywords": [
+          "fraction",
+          "division",
+          "volume",
+          "equal distribution",
+          "simplest form",
+          "reciprocal"
+        ],
+        "common_misconceptions": {
+          "4/40": "The student performed the correct multiplication but did not simplify the fraction to its simplest form.",
+          "32/5": "The student might have multiplied the fraction by the whole number instead of dividing.",
+          "5/32": "The student might have inverted the initial fraction (4/5) incorrectly before multiplying."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The tank is 4/5 full. This amount of water is being divided equally among 8 buckets. How can you write this as a division problem?"
+          },
+          {
+            "step": 2,
+            "hint_text": "To divide a fraction by a whole number, you multiply the fraction by the reciprocal of the whole number. What is the reciprocal of 8?"
+          },
+          {
+            "step": 3,
+            "hint_text": "You need to calculate 4/5 × 1/8. Remember to simplify the fraction to its simplest form after multiplication."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q9",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Re-reading a Book Portion",
+      "complexity": "Medium",
+      "problem_text": "John has read 2/3 of a storybook. He wants to re-read this portion equally over the next 4 days to prepare for a test. What fraction of the *entire* book will John re-read each day?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/6",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Confirm the answer is 1/6 and correctly simplified. Ensure the student understood they needed to find a fraction of the *entire* book.",
+        "keywords": [
+          "fraction",
+          "division",
+          "whole number",
+          "equal parts",
+          "book",
+          "re-read",
+          "portion"
+        ],
+        "common_misconceptions": {
+          "8/3": "The student might have multiplied the fraction by the whole number.",
+          "2/12": "The student performed the correct multiplication (2/3 * 1/4) but did not simplify the resulting fraction.",
+          "3/8": "The student might have inverted the initial fraction incorrectly."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "John has read 2/3 of the book. He wants to divide this specific portion into 4 equal parts (for each day). How would you write this as a division problem?"
+          },
+          {
+            "step": 2,
+            "hint_text": "When dividing a fraction by a whole number, remember to multiply the fraction by the reciprocal of the whole number. What is the reciprocal of 4?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Calculate 2/3 × 1/4. Don't forget to simplify your final fraction to its simplest form."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q10",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Portioning Leftover Juice",
+      "complexity": "Medium",
+      "problem_text": "After a party, 5/6 litre of orange juice was left. Mrs. Lee wants to pour this remaining juice equally into 5 small cups. How many litres of orange juice will be in each cup? Give your answer in simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/6",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the answer is 1/6 and is correctly simplified. The student must handle the division and simplification correctly.",
+        "keywords": [
+          "fraction",
+          "division",
+          "whole number",
+          "capacity",
+          "equal parts",
+          "simplest form",
+          "litre"
+        ],
+        "common_misconceptions": {
+          "25/6": "The student might have multiplied the fraction by the whole number instead of dividing.",
+          "5/30": "The student performed the correct calculation (5/6 × 1/5) but did not simplify the fraction to its simplest form.",
+          "6/25": "The student might have inverted the initial fraction or made an error in multiplication after inversion."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You have 5/6 litre of juice to be divided equally among 5 cups. What operation represents this situation?"
+          },
+          {
+            "step": 2,
+            "hint_text": "To divide a fraction by a whole number, you can change the division problem into a multiplication problem. Remember to use the reciprocal of the whole number."
+          },
+          {
+            "step": 3,
+            "hint_text": "You need to calculate 5/6 × 1/5. Look for common factors to simplify the calculation before multiplying, or simplify the answer after multiplying. Ensure your final answer is in simplest form."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q11",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Sharing Pizza Equally",
+      "complexity": "Medium",
+      "problem_text": "Mrs. Lee bought 3/4 of a large pizza. She shared it equally among her 5 children. What fraction of the whole pizza did each child receive?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "3/20",
+        "alternative_answers": [
+          "0.15"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly divided the fraction of pizza by the number of children. The answer should be a simplified fraction.",
+        "keywords": [
+          "proper fraction",
+          "divide",
+          "sharing",
+          "whole number",
+          "fraction of pizza"
+        ],
+        "common_misconceptions": {
+          "5/12": "You might have accidentally multiplied by 5 instead of dividing, or inverted the wrong number. Remember, when dividing a fraction by a whole number, you multiply the denominator by the whole number.",
+          "15/4": "You might have mistakenly multiplied the numerator by the whole number. Remember that sharing means dividing, which makes the quantity smaller, not larger."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To find out how much each child receives, you need to divide the fraction of pizza Mrs. Lee has by the number of children."
+          },
+          {
+            "step": 2,
+            "hint_text": "When dividing a fraction by a whole number, you can think of it as multiplying the fraction by the reciprocal of the whole number. For example, a ÷ b = a × (1/b)."
+          },
+          {
+            "step": 3,
+            "hint_text": "So, you need to calculate (3/4) ÷ 5. This is equivalent to (3/4) × (1/5). Remember to multiply the numerators and the denominators. Simplify your final answer if possible."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q12",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Cutting Yarn for Bracelets",
+      "complexity": "Medium",
+      "problem_text": "Jamie has a piece of yarn that is 2/5 m long. She wants to cut it into 4 equal shorter pieces to make bracelets. What is the length of each shorter piece of yarn?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "1/10",
+        "alternative_answers": [
+          "0.1"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly divided the length of yarn by the number of pieces. The answer should be a simplified fraction in metres.",
+        "keywords": [
+          "proper fraction",
+          "divide",
+          "cutting",
+          "equal pieces",
+          "length",
+          "yarn"
+        ],
+        "common_misconceptions": {
+          "8/5": "You might have mistakenly multiplied instead of dividing. Cutting into smaller pieces means the length of each piece will be shorter.",
+          "2/20": "While the numerical value is correct, ensure you simplify your fraction to its simplest form (1/10)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Jamie is dividing a total length of yarn into equal parts. This means you need to perform a division operation."
+          },
+          {
+            "step": 2,
+            "hint_text": "The length of the yarn is 2/5 m, and she is cutting it into 4 equal pieces. So, you need to calculate (2/5) ÷ 4."
+          },
+          {
+            "step": 3,
+            "hint_text": "Remember, dividing a fraction by a whole number is the same as multiplying the fraction by the reciprocal of the whole number. So, (2/5) ÷ 4 = (2/5) × (1/4). Don't forget to simplify your final fraction."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q13",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Portioning Maple Syrup",
+      "complexity": "Medium",
+      "problem_text": "A bottle contains 5/6 litre of maple syrup. Mr. Tan poured all the syrup equally into 3 small containers. How much maple syrup is in each small container?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "5/18",
+        "alternative_answers": [
+          "0.277..."
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly divided the volume of syrup by the number of containers. The answer should be a simplified fraction in litres.",
+        "keywords": [
+          "proper fraction",
+          "divide",
+          "pouring",
+          "equal parts",
+          "volume",
+          "litre"
+        ],
+        "common_misconceptions": {
+          "15/6": "You might have accidentally multiplied the numerator by the whole number. Remember, when you divide, the quantity becomes smaller.",
+          "1/10": "Check your calculations carefully. Ensure you are multiplying the denominator by the whole number correctly and simplifying the fraction."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The total amount of syrup is 5/6 litre, and it's being distributed equally into 3 containers. What mathematical operation should you use?"
+          },
+          {
+            "step": 2,
+            "hint_text": "You need to perform (5/6) ÷ 3. Think about how division of a fraction by a whole number is related to multiplication."
+          },
+          {
+            "step": 3,
+            "hint_text": "Recall that dividing by a whole number is the same as multiplying by its reciprocal. So, (5/6) ÷ 3 is equivalent to (5/6) × (1/3). Calculate the product and ensure your final answer is in simplest form."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q14",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Watering Plants and Evaporation",
+      "complexity": "Hard",
+      "problem_text": "Mdm Lim used 7/8 of a watering can full of water for her plants. She watered 7 identical pots, pouring an equal amount of water into each. After watering, 1/3 of the water in one pot evaporated. What fraction of the *original watering can's volume* was left in that one pot after evaporation?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 4,
+      "answer_details": {
+        "correct_answer": "1/12",
+        "alternative_answers": [
+          "0.0833..."
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "This is a multi-step problem. 1. Check if the student correctly calculated the fraction of water per pot. 2. Check if the student correctly calculated the amount of water evaporated from that pot. 3. Check if the student correctly subtracted the evaporated water from the initial amount in one pot. The answer should be a simplified fraction.",
+        "keywords": [
+          "proper fraction",
+          "divide",
+          "multi-step",
+          "evaporation",
+          "fraction of a fraction",
+          "subtraction of fractions",
+          "volume"
+        ],
+        "common_misconceptions": {
+          "1/8": "This is the amount of water initially poured into one pot, but it does not account for the evaporation.",
+          "7/24": "You might have calculated the evaporated amount (1/24) but then added it, or made an error in subtraction. Double-check your calculation for 'water left'.",
+          "1/3": "This is the fraction that evaporated, not the fraction left in the pot relative to the original watering can."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, figure out what fraction of the *original watering can's volume* was poured into *each* of the 7 pots. You have 7/8 of the can's water, divided equally among 7 pots."
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you know the fraction of water in one pot (from Step 1), you then need to consider the evaporation. If 1/3 of the water *in that one pot* evaporated, then what fraction of the water *in that pot* is left? Then, find this remaining fraction *of the fraction you found in Step 1*."
+          },
+          {
+            "step": 3,
+            "hint_text": "Step 1: (7/8) ÷ 7 = ? This gives the fraction of the original can in one pot. Step 2: If 1/3 evaporated, then (1 - 1/3) = 2/3 of the water remains in the pot. So, multiply the fraction found in the first step by 2/3. Simplify your final answer."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q15",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Running Laps on a Track",
+      "complexity": "Medium",
+      "problem_text": "Kevin ran 1/2 of a track in 3 equal laps. What fraction of the entire track did Kevin run in one lap?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "1/6",
+        "alternative_answers": [
+          "0.166..."
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly divided the total fraction of the track run by the number of laps. The answer should be a simplified fraction.",
+        "keywords": [
+          "proper fraction",
+          "divide",
+          "equal laps",
+          "track",
+          "distance",
+          "fraction of track"
+        ],
+        "common_misconceptions": {
+          "3/2": "You might have incorrectly multiplied instead of dividing. Running more laps means each lap covers a smaller fraction of the *total distance covered* (1/2 of the track).",
+          "2/3": "You might have inverted the fraction or the whole number incorrectly. Remember, dividing by a whole number means making the fraction smaller."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Kevin covered a total of 1/2 of the track, and he did this in 3 equal laps. To find out how much of the track was covered in one lap, you need to divide."
+          },
+          {
+            "step": 2,
+            "hint_text": "The calculation required is (1/2) ÷ 3. Remember the rule for dividing a fraction by a whole number."
+          },
+          {
+            "step": 3,
+            "hint_text": "Dividing by a whole number is the same as multiplying by its reciprocal. So, (1/2) ÷ 3 is the same as (1/2) × (1/3). Perform the multiplication to find the answer and simplify if necessary."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q16",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Ribbon Length Challenge",
+      "complexity": "Hard",
+      "problem_text": "Miss Lim had a long ribbon. She used 3/5 of it to wrap 6 identical presents. The remaining ribbon was then cut into 3 equal pieces, and each of these pieces was 1/8 m long. What was the total length of the ribbon Miss Lim had at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "15/16 m",
+        "alternative_answers": [
+          "0.9375 m"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly determines the total length of the remaining ribbon, identifies the fraction this represents, and then works backwards to find the total original length, ensuring the division of a proper fraction by a whole number is performed accurately as a key step.",
+        "keywords": [
+          "fractions",
+          "division",
+          "whole number",
+          "remaining",
+          "total length",
+          "multi-step problem"
+        ],
+        "common_misconceptions": {
+          "Misunderstanding 'remaining'": "Students might mistakenly apply calculations to the 3/5 used portion instead of the remaining portion (1 - 3/5).",
+          "Incorrect fraction operation": "Students might incorrectly multiply instead of divide when finding the value of a unit fraction, or perform the division of a fraction by a whole number incorrectly (e.g., dividing both numerator and denominator, or not multiplying by the reciprocal).",
+          "Not working backwards": "Students may struggle to connect the final known length to the initial unknown total length, failing to divide the numerical value by the corresponding fraction to find the whole."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the total length of the 'remaining' ribbon. You know it was cut into 3 pieces, and each piece is 1/8 m long."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, determine what fraction of the *original* ribbon this 'remaining' length represents. If Miss Lim used 3/5 of the ribbon, what fraction was left?"
+          },
+          {
+            "step": 3,
+            "hint_text": "You now know a specific length (from Step 1) corresponds to a specific fraction (from Step 2). If 'x' fraction of the ribbon is 'y' metres, you can find 1/5 of the ribbon by dividing 'y' metres by 'x' units (the numerator of the fraction). This is where you will divide a proper fraction by a whole number. Then, multiply to find the total (5/5)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q17",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Bakery Cake Division",
+      "complexity": "Hard",
+      "problem_text": "A bakery made a large rectangular cake. 3/5 of the cake was set aside for a special event. The remaining cake was cut into 8 equal slices for sale. Each of these slices was then divided equally among 3 children. What fraction of the original cake did each child receive?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "1/60",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Assess if the student correctly calculates the fraction of cake remaining, then the fraction of each slice, and finally the fraction each child receives. Ensure the division of proper fractions by whole numbers is handled correctly at each relevant step.",
+        "keywords": [
+          "fractions",
+          "division",
+          "multiplication",
+          "remaining",
+          "equal shares",
+          "cake"
+        ],
+        "common_misconceptions": {
+          "Incorrect 'remaining' fraction": "Students might mistakenly use 3/5 as the remaining portion instead of calculating 1 - 3/5.",
+          "Multiplying instead of dividing": "When a quantity (like a cake slice) is 'divided equally' among a number of people, students might mistakenly multiply the fraction by the number instead of dividing.",
+          "Confusing 'of' with division": "Students might misinterpret phrasing like 'divided into 8 equal slices' as meaning to multiply by 8, rather than dividing by 8."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, determine what fraction of the original cake was 'remaining' after 3/5 was set aside for the special event."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, this 'remaining' fraction was cut into 8 equal slices. How much (as a fraction of the original cake) is one slice? This involves dividing a proper fraction by a whole number."
+          },
+          {
+            "step": 3,
+            "hint_text": "Finally, each of these slices was divided equally among 3 children. Take the fraction you found for one slice (from Step 2) and divide it by 3. This is another step where you divide a proper fraction by a whole number."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q18",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Painter's Paint Puzzle",
+      "complexity": "Hard",
+      "problem_text": "A painter had 5/6 of a can of paint. He used a portion of this paint to paint 4 identical small rooms. He then found that 1/3 of the *remaining* paint was exactly 1/12 of the original full can. What fraction of the original full can of paint was used for each small room?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "7/48",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly deduces the total fraction of paint remaining, then calculates the total paint used for the rooms, and finally divides this by the number of rooms, ensuring the proper fraction divided by whole number operation is accurate and all steps are logical.",
+        "keywords": [
+          "fractions",
+          "remaining",
+          "portion",
+          "division",
+          "subtraction",
+          "multi-step",
+          "working backwards"
+        ],
+        "common_misconceptions": {
+          "Misinterpreting '1/3 of remaining'": "Students might incorrectly calculate 1/3 of the *initial* 5/6, or fail to use the given 1/12 information to work backwards to find the total remaining paint.",
+          "Incorrect subtraction of fractions": "Errors in finding a common denominator when subtracting fractions or misinterpreting which fractions to subtract.",
+          "Dividing by the wrong number": "Students might divide by 5 or another incorrect number instead of 4 when finding paint per room."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Start by finding the total fraction of paint remaining after the rooms were painted. If 1/3 of the remaining paint is 1/12 of the original can, what is the full 'remaining' fraction? (Hint: Think about how to find the whole when you know a part of it.)"
+          },
+          {
+            "step": 2,
+            "hint_text": "Now you know the initial amount of paint the painter had (5/6 of a can) and the amount remaining after painting the rooms (from Step 1). Calculate the fraction of paint that was actually used for the 4 small rooms."
+          },
+          {
+            "step": 3,
+            "hint_text": "The paint used for the 4 rooms (which should be a proper fraction of the original can) was divided equally among these 4 rooms. Divide that fraction by 4 to find out how much paint was used for each room. This step directly involves dividing a proper fraction by a whole number."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q19",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Bakery Frosting Distribution",
+      "complexity": "Hard",
+      "problem_text": "A bakery has 5/6 of a large tub of chocolate frosting. They use 2/5 of this frosting to decorate 4 identical cakes. The remaining frosting is then used to fill 15 small pastry shells. How much frosting, as a fraction of the *original full tub*, is needed for one pastry shell?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "1/30",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculates the fraction of frosting used for cakes (fraction of a fraction), then the fraction remaining, and finally accurately divides this remaining fraction by the number of pastry shells to find the fraction for one shell. Verify the accuracy of all fraction operations, especially the proper fraction divided by a whole number.",
+        "keywords": [
+          "fractions",
+          "multiplication",
+          "subtraction",
+          "division",
+          "remaining",
+          "equal sharing",
+          "baking"
+        ],
+        "common_misconceptions": {
+          "Incorrect 'of' calculation": "Students might mistakenly calculate 2/5 of the *whole tub* instead of 2/5 of the *5/6 tub* when finding the frosting used for cakes.",
+          "Error in finding remaining fraction": "Students might make calculation errors when subtracting fractions to find the remaining amount, or subtract the wrong quantities.",
+          "Dividing by the cake count instead of shells": "Students might mistakenly divide the remaining frosting by 4 (number of cakes) instead of 15 (number of pastry shells) in the final step."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out what fraction of the *original full tub* of frosting was used to decorate the 4 cakes. Remember, they used 2/5 of the frosting they *had* (which was 5/6 of a tub)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, calculate the fraction of frosting *remaining* after the cakes were decorated. Subtract the amount used for cakes (from Step 1) from the initial amount the bakery had (5/6 of the tub)."
+          },
+          {
+            "step": 3,
+            "hint_text": "This remaining frosting (which should be a proper fraction of the original tub) was used to fill 15 small pastry shells equally. To find out how much frosting is needed for one pastry shell, you need to divide this remaining fraction by 15. This step directly involves dividing a proper fraction by a whole number."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-WHOLE-BY-PROPER-FRACTIONS-Q20",
+      "sub_topic": "2.1 Dividing Whole Number By Proper Fractions",
+      "title": "Sarah's Reading Journey",
+      "complexity": "Hard",
+      "problem_text": "Sarah read 3/8 of a book on Monday. On Tuesday, she read 1/2 of the *remaining* pages. The pages she read on Tuesday were then split equally into 4 reading sessions. If each session covered 20 pages, how many pages did the entire book have?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "256 pages",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Assess if the student correctly determines the fraction of pages remaining, then the fraction of pages read on Tuesday (fraction of a remainder), and finally the fraction of pages per session. Ensure the proper fraction divided by whole number operation is correctly applied. The final step involves using the concrete page count to find the total book pages by working backwards.",
+        "keywords": [
+          "fractions",
+          "remaining",
+          "multiplication",
+          "division",
+          "whole number",
+          "total pages",
+          "reading",
+          "multi-step problem"
+        ],
+        "common_misconceptions": {
+          "Confusing 'remaining' pages": "Students might calculate 1/2 of the *total* book instead of 1/2 of the *remaining* pages after Monday.",
+          "Incorrect order of operations": "Students might apply fraction operations in the wrong sequence, leading to incorrect intermediate fractions.",
+          "Errors in finding the whole from a part": "Students may struggle to translate the '20 pages' to the corresponding fraction of the book and then use that to find the total pages (e.g., dividing 20 by the numerator of the fraction and then multiplying by the denominator)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the fraction of the book that was 'remaining' after Sarah read 3/8 of the book on Monday."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, find out what fraction of the *entire book* Sarah read on Tuesday. Remember, it was 1/2 of the *remaining* pages (the fraction you found in Step 1)."
+          },
+          {
+            "step": 3,
+            "hint_text": "The pages Sarah read on Tuesday (as a proper fraction of the entire book) were then split equally into 4 reading sessions. To find the fraction of the book covered in each session, you need to divide this fraction by 4. This step directly involves dividing a proper fraction by a whole number."
+          },
+          {
+            "step": 4,
+            "hint_text": "You now know that a specific fraction of the book (from Step 3) is equal to 20 pages. Use this information to find the total number of pages in the entire book. If a certain fraction represents 20 pages, what is the value of the whole (1 unit)?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q1",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Sharing Chocolate Bar Portions",
+      "complexity": "Easy",
+      "problem_text": "A large chocolate bar weighs 3/4 kg. If each serving is 1/8 kg, how many servings are there in the chocolate bar?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "6",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student's numerical answer must exactly match '6'.",
+        "keywords": [
+          "divide fractions",
+          "proper fraction",
+          "reciprocal",
+          "invert and multiply",
+          "servings"
+        ],
+        "common_misconceptions": {
+          "3/32": "This results from multiplying the numerators and denominators directly instead of inverting the second fraction.",
+          "2/3": "This might come from dividing the first numerator by the second, and the first denominator by the second, which is incorrect.",
+          "1/2": "This might come from inverting the first fraction and multiplying or other procedural errors."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "When dividing fractions, remember the rule: 'Keep, Change, Flip' (or 'Invert and Multiply'). This means you keep the first fraction, change the division sign to multiplication, and flip (find the reciprocal of) the second fraction."
+          },
+          {
+            "step": 2,
+            "hint_text": "Set up the problem: 3/4 ÷ 1/8. Apply the 'Keep, Change, Flip' rule. What does the new multiplication problem look like?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The problem becomes 3/4 × 8/1. Now, multiply the numerators and the denominators. Remember to simplify your answer to the simplest form."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q2",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Cutting Fabric Strips",
+      "complexity": "Easy",
+      "problem_text": "Mrs. Lee has 4 metres of fabric. She wants to cut it into pieces, each 1/3 metre long. How many pieces of fabric can she get?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "12",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student's numerical answer must exactly match '12'.",
+        "keywords": [
+          "whole number",
+          "proper fraction",
+          "divide",
+          "metres",
+          "pieces",
+          "reciprocal"
+        ],
+        "common_misconceptions": {
+          "4/3": "This is a common error when dividing a whole number by a fraction; the student might multiply by the fraction itself instead of its reciprocal.",
+          "1": "This might happen if the student tries to divide 4 by 1/3 by simply dividing 4 by 1 and ignoring the denominator 3.",
+          "3/4": "This could result from mistakenly dividing 1/3 by 4, or flipping the whole number instead of the fraction."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Remember that a whole number can be written as a fraction by putting it over 1 (e.g., 4 = 4/1). When dividing by a fraction, use the 'Keep, Change, Flip' method."
+          },
+          {
+            "step": 2,
+            "hint_text": "So, the problem is 4/1 ÷ 1/3. What happens when you 'Keep, Change, Flip' the fractions?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The problem becomes 4/1 × 3/1. Now, multiply the numerators and the denominators to find the number of pieces."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q3",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Filling Small Water Bottles",
+      "complexity": "Easy",
+      "problem_text": "A large bottle contains 5/8 litre of water. If a small bottle can hold 1/16 litre of water, how many small bottles can be filled completely from the large bottle?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "10",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student's numerical answer must exactly match '10'.",
+        "keywords": [
+          "divide",
+          "proper fraction",
+          "capacity",
+          "litres",
+          "reciprocal",
+          "fill"
+        ],
+        "common_misconceptions": {
+          "5/128": "This is a result of multiplying the numerators and denominators without inverting the second fraction.",
+          "1/10": "This indicates an inversion error or confusion between the dividend and divisor.",
+          "5/2": "This might happen if the student incorrectly simplifies or makes an error with the reciprocal (e.g., 5/8 x 1/16)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To find out how many times a smaller quantity fits into a larger quantity, you need to use division. Remember how to divide fractions: 'Keep, Change, Flip'."
+          },
+          {
+            "step": 2,
+            "hint_text": "Set up the division problem: 5/8 ÷ 1/16. What is the reciprocal of 1/16? How does the problem change when you use multiplication instead of division?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The problem becomes 5/8 × 16/1. Multiply the numerators and the denominators, then simplify your answer to find the number of small bottles."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q4",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Filling Plant Pots",
+      "complexity": "Easy",
+      "problem_text": "A gardener has 3 bags of soil. Each plant pot needs 1/5 of a bag of soil to be filled. How many plant pots can the gardener fill completely?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "15",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student's numerical answer must exactly match '15'.",
+        "keywords": [
+          "whole number",
+          "proper fraction",
+          "divide",
+          "portions",
+          "reciprocal",
+          "fill"
+        ],
+        "common_misconceptions": {
+          "3/5": "This indicates that the student multiplied by the fraction instead of its reciprocal.",
+          "5/3": "This is an inversion error, where the whole number might have been inverted instead of the proper fraction.",
+          "1": "This might be from incorrect division or thinking the answer should be less than the original whole number."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To find out how many times a smaller part (1/5 of a bag) fits into a whole quantity (3 bags), you need to perform division. Remember to express the whole number as a fraction (e.g., 3 = 3/1)."
+          },
+          {
+            "step": 2,
+            "hint_text": "The problem is 3/1 ÷ 1/5. Use the 'Keep, Change, Flip' method. What is the reciprocal of 1/5? What does the new multiplication problem look like?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The problem becomes 3/1 × 5/1. Now, multiply the numerators and the denominators to get your final answer."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q5",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Baking Cupcakes",
+      "complexity": "Easy",
+      "problem_text": "A baker has 7/10 kg of sugar. If each cupcake requires 1/20 kg of sugar, how many cupcakes can the baker make?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "14",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student's numerical answer must exactly match '14'.",
+        "keywords": [
+          "divide",
+          "proper fraction",
+          "kilograms",
+          "recipe",
+          "reciprocal",
+          "cupcakes"
+        ],
+        "common_misconceptions": {
+          "7/200": "This occurs when the numerators and denominators are multiplied directly without inverting the second fraction.",
+          "1/14": "This suggests an error in setting up the division or an incorrect inversion (e.g., inverting the first fraction).",
+          "7/2": "This could result from incorrect simplification after the multiplication, or a misstep in finding the reciprocal."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To find out how many individual portions (cupcakes) can be made from a total quantity of sugar, you need to divide the total sugar by the amount needed for one cupcake."
+          },
+          {
+            "step": 2,
+            "hint_text": "Set up the division problem: 7/10 ÷ 1/20. Apply the 'Keep, Change, Flip' rule. What does the problem look like as a multiplication problem?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The problem becomes 7/10 × 20/1. Multiply the numerators and the denominators. Remember to simplify your answer to the simplest form to get the number of cupcakes."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q6",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Baking Cakes with Flour",
+      "complexity": "Easy",
+      "problem_text": "Mrs. Lim has 4 kg of flour. If each cake requires 2/5 kg of flour, how many cakes can she bake?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "10 cakes",
+        "alternative_answers": [
+          "10"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly divided the total amount of flour by the amount needed per cake. Look for inversion of the divisor and multiplication.",
+        "keywords": [
+          "divide",
+          "whole number",
+          "proper fraction",
+          "kg",
+          "cakes",
+          "flour"
+        ],
+        "common_misconceptions": {
+          "8/5 cakes": "This likely results from multiplying 4 by 2/5 instead of dividing. Remember that to find out 'how many groups' fit into a total, you need to divide.",
+          "2/20 cakes": "This might come from incorrect division of fractions, perhaps dividing numerators and denominators without inverting. Always remember to 'Keep, Change, Flip' when dividing fractions."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To find out how many cakes can be made, you need to divide the total amount of flour by the amount of flour needed for one cake."
+          },
+          {
+            "step": 2,
+            "hint_text": "When dividing a whole number by a fraction, remember to change the whole number into an improper fraction (e.g., 4 = 4/1) and then multiply by the reciprocal (flip) of the divisor fraction."
+          },
+          {
+            "step": 3,
+            "hint_text": "The calculation will be 4 ÷ 2/5. This is equivalent to 4/1 × 5/2. Simplify before multiplying if possible, or multiply directly and then simplify."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q7",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Cutting Ribbon into Pieces",
+      "complexity": "Easy",
+      "problem_text": "A roll of ribbon is 5/6 metres long. Siti wants to cut it into smaller pieces, each 1/12 metres long. How many smaller pieces can she cut?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "10 pieces",
+        "alternative_answers": [
+          "10"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly divided the total length of the ribbon by the length of each smaller piece. Ensure proper fraction division steps (KCF - Keep, Change, Flip) are applied.",
+        "keywords": [
+          "divide",
+          "proper fraction",
+          "metres",
+          "ribbon",
+          "pieces",
+          "cut"
+        ],
+        "common_misconceptions": {
+          "5/72 pieces": "This error occurs if the student multiplies the fractions directly instead of dividing. Remember that to find out how many times one length fits into another, you must divide.",
+          "1/10 pieces": "This indicates an incorrect application of the 'Keep, Change, Flip' rule, perhaps by inverting the first fraction or not flipping the second correctly."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To find the number of smaller pieces, you need to divide the total length of the ribbon by the length of each small piece."
+          },
+          {
+            "step": 2,
+            "hint_text": "Remember the rule for dividing fractions: Keep the first fraction, Change the division sign to multiplication, and Flip (take the reciprocal of) the second fraction."
+          },
+          {
+            "step": 3,
+            "hint_text": "The calculation should be 5/6 ÷ 1/12. This becomes 5/6 × 12/1. Can you simplify before multiplying?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q8",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Calculating Paint Used",
+      "complexity": "Medium",
+      "problem_text": "John painted 3/4 of a wall. If each litre of paint covers 1/8 of the wall, how many litres of paint did John use for the part of the wall he painted?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "6 litres",
+        "alternative_answers": [
+          "6"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identified that the total portion of the wall painted needs to be divided by the portion covered by one litre of paint. Verify accurate fraction division.",
+        "keywords": [
+          "divide",
+          "proper fraction",
+          "wall",
+          "paint",
+          "litres",
+          "coverage"
+        ],
+        "common_misconceptions": {
+          "3/32 litres": "This suggests multiplying the fractions instead of dividing. To find how many 'units' (litres of paint) fit into a total 'area' (portion of wall), division is needed.",
+          "2/3 litres": "This may result from an incorrect inversion or cross-multiplication. Ensure the 'Keep, Change, Flip' rule is applied correctly: 3/4 stays, division changes to multiplication, and 1/8 becomes 8/1."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Think about what the problem is asking: 'How many 1/8s are there in 3/4?' This indicates a division problem."
+          },
+          {
+            "step": 2,
+            "hint_text": "Set up the division: (portion of wall painted) ÷ (portion covered by 1 litre). Remember the 'Keep, Change, Flip' method for dividing fractions."
+          },
+          {
+            "step": 3,
+            "hint_text": "The calculation is 3/4 ÷ 1/8. This can be rewritten as 3/4 × 8/1. Simplify the fractions before multiplying for an easier calculation."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q9",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Total Cookies Baked",
+      "complexity": "Medium",
+      "problem_text": "Mrs. Tan baked some cookies. She packed 15 cookies into a box, and this amount was 3/4 of the total cookies she baked. How many cookies did she bake in total?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "20 cookies",
+        "alternative_answers": [
+          "20"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly set up the equation to find the total when a fraction of the total is given. The key is understanding that '15 is 3/4 of total' translates to 15 ÷ 3/4.",
+        "keywords": [
+          "divide",
+          "whole number",
+          "proper fraction",
+          "total",
+          "part",
+          "cookies"
+        ],
+        "common_misconceptions": {
+          "11 1/4 cookies": "This result comes from multiplying 15 by 3/4. When you know a 'part' and what 'fraction' that part represents of the 'whole', you need to divide the part by the fraction to find the whole.",
+          "5 cookies": "This might come from dividing 15 by 3 to find '1/4' but then forgetting to multiply by 4, or incorrect division with fractions. Think: If 3 parts are 15, then 1 part is 5. If the whole has 4 such parts, then the total is 4 x 5 = 20."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You know that 15 cookies represent a 'part' (3/4) of the 'whole' amount of cookies baked. To find the 'whole', you need to perform an inverse operation."
+          },
+          {
+            "step": 2,
+            "hint_text": "If 3/4 of the total is 15, then 1/4 of the total would be 15 ÷ 3. Once you find 1/4, you can find the whole (4/4)."
+          },
+          {
+            "step": 3,
+            "hint_text": "Alternatively, you can solve this using division directly: Total = (Part) ÷ (Fraction representing the part). So, Total = 15 ÷ 3/4. Remember to 'Keep, Change, Flip'."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q10",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Cutting Wire and Finding Remainder",
+      "complexity": "Medium",
+      "problem_text": "A piece of wire is 7/8 m long. It is cut into shorter pieces, each 1/4 m long. How many shorter pieces can be cut from the wire, and what is the length of the wire left over?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "3 pieces, 1/8 m left over",
+        "alternative_answers": [
+          "3 pieces and 1/8 m",
+          "3 pieces, 0.125 m"
+        ],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Award marks for correctly calculating the number of whole pieces and the length of the remaining wire. Student must show understanding of how to interpret the remainder from fraction division.",
+        "keywords": [
+          "divide",
+          "proper fraction",
+          "metres",
+          "wire",
+          "pieces",
+          "remainder",
+          "left over"
+        ],
+        "common_misconceptions": {
+          "3.5 pieces": "While the division results in 3.5, you can only cut whole pieces of wire. Students need to understand that the decimal or fractional part of the quotient indicates the remainder, not a partial piece that can be cut.",
+          "1/2 m left over": "This likely comes from miscalculating the remainder after cutting 3 pieces. Ensure the student multiplies the number of whole pieces by the length of each piece (3 * 1/4 m = 3/4 m) and then subtracts this from the original length (7/8 m - 3/4 m)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out how many times 1/4 m fits into 7/8 m. This is a division problem: 7/8 ÷ 1/4."
+          },
+          {
+            "step": 2,
+            "hint_text": "When you perform the division, you might get a mixed number or a decimal. The whole number part of your answer tells you how many complete pieces can be cut. For example, if you get 3 1/2, it means 3 whole pieces can be cut."
+          },
+          {
+            "step": 3,
+            "hint_text": "To find the length left over, calculate the total length of the 'whole' pieces cut (e.g., if 3 pieces were cut, 3 × 1/4 m). Then, subtract this total from the original length of the wire (7/8 m)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q11",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Fabric Cutting Challenge",
+      "complexity": "Medium",
+      "problem_text": "Siti has a ribbon that is 7/8 metre long. She wants to cut it into smaller pieces, each 1/4 metre long, to make bookmarks. How many bookmarks can she make?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "3",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must correctly perform fraction division and interpret the whole number result when a remainder exists in a 'how many' context.",
+        "keywords": [
+          "fraction",
+          "division",
+          "proper fraction",
+          "reciprocal",
+          "invert and multiply",
+          "whole number"
+        ],
+        "common_misconceptions": {
+          "3.5": "The question asks 'how many bookmarks can she make', implying whole bookmarks. Even though there might be ribbon left over, it's not enough to make another full bookmark.",
+          "7/2": "This is the correct mathematical result of the division, but it needs to be interpreted in the context of the problem as a whole number of items.",
+          "7/32": "This likely results from multiplying the numerators (7x1) and multiplying the denominators (8x4) instead of using the reciprocal method for division."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To find out how many times a smaller length fits into a larger length, you need to use division. Which fraction is being divided and which is the divisor?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Remember the rule for dividing fractions: 'invert and multiply'. This means you keep the first fraction, change the division sign to multiplication, and flip the second fraction (find its reciprocal)."
+          },
+          {
+            "step": 3,
+            "hint_text": "After performing the multiplication, simplify your answer. If your answer is an improper fraction or a decimal, think about what the question is asking – how many *whole* bookmarks can be made?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q12",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Pancake Batter Portions",
+      "complexity": "Medium",
+      "problem_text": "A chef has 5/6 litre of pancake batter. If each pancake requires 1/12 litre of batter, how many pancakes can the chef make?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "10",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must correctly set up and execute the division of two proper fractions, simplifying the result to a whole number.",
+        "keywords": [
+          "fraction division",
+          "quantity",
+          "proper fraction",
+          "reciprocal",
+          "invert and multiply",
+          "simplest form"
+        ],
+        "common_misconceptions": {
+          "5/72": "This common error happens when students multiply fractions without inverting the divisor (5/6 × 1/12). Remember to invert the second fraction when dividing.",
+          "5/2": "This might occur if the reciprocal of 1/12 was incorrectly taken or if simplification steps were missed (e.g., 5/6 * 12/1 = 60/6, not 5/2 directly)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You have a total amount of batter and you know how much is needed for each pancake. To find out how many pancakes can be made, you need to divide the total batter by the amount per pancake."
+          },
+          {
+            "step": 2,
+            "hint_text": "Recall the method for dividing fractions: Keep the first fraction, change the division sign to multiplication, and flip (invert) the second fraction."
+          },
+          {
+            "step": 3,
+            "hint_text": "Multiply the numerators and the denominators, then simplify your resulting fraction to its simplest form. Is it possible to cross-simplify before multiplying?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q13",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Painting Walls",
+      "complexity": "Medium",
+      "problem_text": "A painter has 4 litres of paint. He uses 2/5 litres of paint for each small section of a wall. How many such sections can he paint?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "10",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must correctly perform division of a whole number by a proper fraction, showing understanding of whole numbers as fractions.",
+        "keywords": [
+          "whole number",
+          "proper fraction",
+          "division",
+          "reciprocal",
+          "invert and multiply",
+          "simplification"
+        ],
+        "common_misconceptions": {
+          "8/5": "This error occurs if the student multiplies 4 by 2/5 directly (4 × 2/5), instead of dividing. Remember that division is the opposite of multiplication.",
+          "2/20": "This indicates an incorrect inversion or attempt to divide directly (e.g., 2 divided by 4 for numerator, and 5 for denominator).",
+          "5/2": "This indicates the whole number was inverted (1/4) instead of the proper fraction (2/5)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To find out how many sections can be painted, you need to divide the total amount of paint by the amount of paint used per section."
+          },
+          {
+            "step": 2,
+            "hint_text": "Remember that a whole number can be written as a fraction by putting it over 1 (e.g., 4 = 4/1). Now apply the 'invert and multiply' rule for dividing fractions."
+          },
+          {
+            "step": 3,
+            "hint_text": "Perform the multiplication and simplify your final answer. The answer should be a whole number, representing the number of sections."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q14",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Juice Servings",
+      "complexity": "Medium",
+      "problem_text": "A bottle contains 3/4 litre of orange juice. If each serving is 1/8 litre, how many servings of orange juice are there in the bottle?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "6",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must accurately divide a proper fraction by another proper fraction and provide the simplified whole number answer.",
+        "keywords": [
+          "proper fraction",
+          "division",
+          "reciprocal",
+          "invert and multiply",
+          "servings",
+          "simplest form"
+        ],
+        "common_misconceptions": {
+          "3/32": "This error occurs from multiplying fractions directly (3/4 × 1/8) instead of applying the 'invert and multiply' rule for division.",
+          "2/1": "This might indicate a mistake in simplifying or cross-cancellation after the correct inversion.",
+          "3/2": "This might occur if only partial simplification was done or if the reciprocal was inverted incorrectly."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To find out how many servings can be made, you need to divide the total amount of juice by the amount of juice in one serving."
+          },
+          {
+            "step": 2,
+            "hint_text": "Remember the steps for dividing fractions: Keep the first fraction, change division to multiplication, and flip the second fraction (find its reciprocal)."
+          },
+          {
+            "step": 3,
+            "hint_text": "Multiply the numerators and then the denominators. Don't forget to simplify your final fraction to its simplest form. Can you cross-simplify before multiplying?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q15",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "School Fundraiser Cakes",
+      "complexity": "Hard",
+      "problem_text": "For a school fundraiser, Mrs. Lee baked 2 cakes and Mrs. Tan baked 3/4 of a cake.\nEach slice of cake sold is 1/16 of a whole cake.\nHow many slices of cake did they bake altogether?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "44",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must correctly sum a whole number and a proper fraction, convert the mixed number to an improper fraction, and then perform division by a proper fraction. All steps and final simplification must be accurate.",
+        "keywords": [
+          "mixed number",
+          "improper fraction",
+          "whole number",
+          "proper fraction",
+          "addition",
+          "division",
+          "reciprocal",
+          "invert and multiply",
+          "multi-step problem"
+        ],
+        "common_misconceptions": {
+          "36": "This could happen if 2 cakes were incorrectly translated to 2/16 (e.g., 2 x 16 = 32, then 3/4 converted to 12/16, so 32+12 = 44. Then 3/4 becomes 12/16, so 12/16 divided by 1/16 is 12, so 32+12=44. This is a possible correct path, but if they just took 2 cakes * 16 slices = 32 slices, then 3/4 cakes * 16 slices = 12 slices, so 32+12=44. This approach is valid. A wrong answer of 36 might come from a calculation error or a misinterpretation of one of the fractions.",
+          "40": "Likely an arithmetic error after setting up the problem correctly, perhaps 11/4 * 16/1 was simplified incorrectly.",
+          "3/64": "This suggests multiplying the total fractional cakes (if calculated as 3/4 instead of 2 3/4) by 1/16 without inverting, or performing division incorrectly."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the total amount of cake baked. How do you combine Mrs. Lee's cakes and Mrs. Tan's cake?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you have the total amount of cake (it might be a mixed number), convert it to an improper fraction. This makes it easier to divide."
+          },
+          {
+            "step": 3,
+            "hint_text": "Now, divide the total amount of cake (as an improper fraction) by the size of each slice (which is 1/16). Remember to 'invert and multiply' for fraction division."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q16",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Baking Flour Challenge",
+      "complexity": "Hard",
+      "problem_text": "A baker had a large bag of flour. He used 1/3 of the flour for baking bread. Of the *remaining* flour, he used 3/4 to make several batches of cake. Each batch of cake required 1/12 kg of flour. If the baker made 9 batches of cake, what was the total amount of flour (in kg) in the bag at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "1.5",
+        "alternative_answers": [
+          "3/2"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must show steps for calculating flour used for cakes, total flour for cakes, then work backwards to find the original amount. Correct answer is 1.5 kg or 3/2 kg.",
+        "keywords": [
+          "fraction of remainder",
+          "division of fractions",
+          "working backwards",
+          "total amount"
+        ],
+        "common_misconceptions": {
+          "0.75": "This might be the amount of flour used for cakes (3/4 kg), but not the original total. Remember to work backwards to the initial amount.",
+          "2.25": "This could result from incorrect calculation of the remaining fraction or a misstep in the final division.",
+          "1.125": "This might come from errors in determining 'fraction of a fraction' or in the reverse calculation."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, figure out what fraction of the *original* total flour was used for cakes. Start by finding the fraction of flour *remaining* after bread was made."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, calculate the total amount of flour (in kg) used for 9 batches of cake. This will give you the actual weight corresponding to the fraction of flour used for cakes."
+          },
+          {
+            "step": 3,
+            "hint_text": "You now know that a certain fraction of the original flour equals a specific weight. Use division to find the total initial amount of flour. Remember, if 1/2 of the original amount is 3/4 kg, what is the whole amount?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q17",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Ribbon Length Mystery",
+      "complexity": "Hard",
+      "problem_text": "A long ribbon was used for a craft project. 2/5 of its original length was cut off for one part of the project. The *remaining* ribbon was then cut into 18 equal smaller pieces. If each small piece was 1/10 m long, what was the original length of the ribbon in metres?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "3",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must correctly calculate the total length of the 18 small pieces, then determine what fraction of the original ribbon this total length represents, and finally work backwards to find the original total length. Correct answer is 3 m.",
+        "keywords": [
+          "remaining fraction",
+          "total length",
+          "division of fractions",
+          "working backwards"
+        ],
+        "common_misconceptions": {
+          "1.8": "This is the total length of the 18 pieces (18 * 1/10 m), but it's only a *fraction* of the original ribbon. You need to find the whole original length.",
+          "0.72": "This may come from an incorrect calculation of 2/5 of 1.8 m, or misinterpreting 'remaining ribbon'.",
+          "4.5": "This might be the result of incorrect division or inverse operation when finding the original length."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the total length of the 18 small pieces of ribbon. Each piece is 1/10 m long."
+          },
+          {
+            "step": 2,
+            "hint_text": "The 18 pieces were cut from the *remaining* ribbon after 2/5 of the original length was used. What fraction of the original ribbon's length was remaining?"
+          },
+          {
+            "step": 3,
+            "hint_text": "You now know the actual length of the remaining ribbon (from Hint 1) and what fraction it represents of the original ribbon (from Hint 2). Use this information to find the total original length of the ribbon."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q18",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Sweet Packaging Comparison",
+      "complexity": "Hard",
+      "problem_text": "Mary had 5/6 kg of sweets. She packed them into small bags, with each bag containing 1/12 kg of sweets. Her friend, Susan, had 3/4 kg of sweets and packed them into bags, with each bag containing 1/16 kg of sweets. How many more bags of sweets did Susan pack than Mary?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "2",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must perform two separate division calculations (Mary's bags and Susan's bags) and then subtract to find the difference. Correct answer is 2 bags.",
+        "keywords": [
+          "division of fractions",
+          "comparison",
+          "difference"
+        ],
+        "common_misconceptions": {
+          "10": "This is the number of bags Mary packed. Remember to calculate for both Mary and Susan, then find the difference.",
+          "12": "This is the number of bags Susan packed. Remember to calculate for both Mary and Susan, then find the difference.",
+          "-2": "This indicates correct calculation but the order of subtraction is reversed. The question asks 'How many more bags did Susan pack than Mary?', so Susan's bags minus Mary's bags."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate how many bags of sweets Mary packed. Divide the total amount of sweets she had by the amount in each bag."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, calculate how many bags of sweets Susan packed, using the same method as for Mary."
+          },
+          {
+            "step": 3,
+            "hint_text": "Finally, compare the number of bags packed by Susan and Mary. How many more did Susan pack?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q19",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Road Trip Fuel Efficiency",
+      "complexity": "Hard",
+      "problem_text": "A car consumes 1/15 litres of petrol to travel 1/2 km. If the car has a full tank of 5 litres of petrol, how many *full* trips of 3/4 km can the car make?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "50",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must first calculate the distance the car can travel per litre of petrol, then the total distance it can travel with 5 litres, and finally divide the total distance by the length of one trip, taking only full trips. Correct answer is 50.",
+        "keywords": [
+          "unit rate",
+          "distance",
+          "petrol consumption",
+          "division of fractions",
+          "full trips"
+        ],
+        "common_misconceptions": {
+          "75": "This is the total distance the car can travel (75/2 km = 37.5 km). You need to find how many 3/4 km trips can be made.",
+          "37.5": "This is the total distance in km. The question asks for the number of *full* trips of a specific length.",
+          "66": "This might be a rounding error if decimal approximations were used, or an error in the final division."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, figure out how many kilometres the car can travel using 1 litre of petrol. You'll need to divide the distance by the petrol consumed."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, calculate the total distance the car can travel with its 5-litre full tank."
+          },
+          {
+            "step": 3,
+            "hint_text": "Finally, divide the total distance the car can travel by the length of one trip (3/4 km). Remember to only count *full* trips."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-DIVIDING-PROPER-FRACTIONS-BY-PROPER-FRACTIONS-Q20",
+      "sub_topic": "2.2 Dividing Proper Fractions by Proper Fractions",
+      "title": "Water Tank Distribution",
+      "complexity": "Hard",
+      "problem_text": "A water tank was initially 5/6 full of water. 1/4 of the water *in the tank* was then used for washing. The remaining water was poured equally into several small bottles, each holding 1/16 of the *original full capacity* of the tank. How many small bottles were filled?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "10",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must first calculate the fraction of water used for washing (a fraction of a fraction), then subtract this from the initial amount to find the remaining water. Finally, divide the remaining water by the capacity of each small bottle. Correct answer is 10 bottles.",
+        "keywords": [
+          "fraction of a fraction",
+          "remaining water",
+          "subtraction of fractions",
+          "division of fractions",
+          "tank capacity"
+        ],
+        "common_misconceptions": {
+          "20": "This might result from incorrectly calculating the remaining fraction or a mistake in the final division (e.g., dividing by 1/8 instead of 1/16).",
+          "12": "This could be a miscalculation of the remaining water after washing, leading to an incorrect fraction for division.",
+          "5/8": "This is the fraction of the tank's capacity that remained. The question asks for the number of bottles filled."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate what fraction of the *original full capacity* of the tank was used for washing. Remember it was 1/4 of the water *in the tank* (which was 5/6 full)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, find out what fraction of the *original full capacity* of the tank was *remaining* after the washing. Subtract the amount used from the initial amount."
+          },
+          {
+            "step": 3,
+            "hint_text": "Finally, divide the fraction of remaining water by the capacity of each small bottle (1/16 of the original full capacity) to find out how many bottles were filled."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q1",
+      "sub_topic": "2.3 Word Problems",
+      "title": "Grocery Shopping Change",
+      "complexity": "Easy",
+      "problem_text": "John bought an apple for $0.85 and a banana for $0.60. He paid with a $2 note. How much change did he receive?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "$0.55",
+        "alternative_answers": [
+          "0.55",
+          "55 cents"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the total cost and then subtracted it from the amount paid to find the change.",
+        "keywords": [
+          "addition",
+          "subtraction",
+          "money",
+          "change",
+          "total cost"
+        ],
+        "common_misconceptions": {
+          "$1.45": "This is the total cost of the apple and banana, not the change received.",
+          "$1.15": "This might be from subtracting $0.85 from $2.00, forgetting to add the banana cost first, or a calculation error.",
+          "$2.55": "This indicates adding all numbers instead of finding the difference for change."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the total cost of the items John bought. What operation should you use for that?"
+          },
+          {
+            "step": 2,
+            "hint_text": "After finding the total cost, think about how to find the change. If John paid with a $2 note, what operation will tell you how much money he gets back?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The total cost is $0.85 + $0.60. Then, subtract this total from $2.00 to find the change."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q2",
+      "sub_topic": "2.3 Word Problems",
+      "title": "Baker's Cookie Packs",
+      "complexity": "Easy",
+      "problem_text": "A baker packs 8 cookies into each box. If she packs 5 boxes, how many cookies did she pack in total?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "40",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly multiplied the number of cookies per box by the number of boxes.",
+        "keywords": [
+          "multiplication",
+          "total",
+          "per box",
+          "groups"
+        ],
+        "common_misconceptions": {
+          "13": "This is from adding 8 and 5 instead of multiplying.",
+          "3": "This is from subtracting 5 from 8.",
+          "1.6": "This is from dividing 8 by 5."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Think about what 'each box' means. If there are 8 cookies in one box, how would you find the total for multiple boxes?"
+          },
+          {
+            "step": 2,
+            "hint_text": "You have a certain number of cookies per box, and a certain number of boxes. What operation combines these to find a total?"
+          },
+          {
+            "step": 3,
+            "hint_text": "To find the total number of cookies, you need to multiply the number of cookies in one box by the number of boxes: 8 cookies/box * 5 boxes."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q3",
+      "sub_topic": "2.3 Word Problems",
+      "title": "Sharing Marbles Equally",
+      "complexity": "Easy",
+      "problem_text": "Sarah has 48 marbles. She wants to share them equally among herself and 5 friends. How many marbles will each person get?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "8",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identified the total number of people sharing and then divided the marbles equally.",
+        "keywords": [
+          "division",
+          "sharing",
+          "equally",
+          "groups"
+        ],
+        "common_misconceptions": {
+          "9.6": "This indicates dividing 48 by 5 (only the friends), forgetting to include Sarah.",
+          "43": "This is from subtracting 5 from 48 instead of dividing.",
+          "53": "This is from adding 5 to 48 instead of dividing."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Who are the people sharing the marbles? Count everyone who will receive marbles."
+          },
+          {
+            "step": 2,
+            "hint_text": "Now that you know the total number of marbles and the total number of people, what operation should you use to share them equally?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Sarah plus 5 friends means there are 1 + 5 = 6 people. To share 48 marbles equally among 6 people, you should calculate 48 ÷ 6."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q4",
+      "sub_topic": "2.3 Word Problems",
+      "title": "School Trip Student Count",
+      "complexity": "Easy",
+      "problem_text": "A school bus can carry 35 students. If there are 3 buses fully loaded, and 15 more students need to be transported by a smaller van, how many students are there in total?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "120",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student first calculated the total students in the buses and then added the students from the van.",
+        "keywords": [
+          "multiplication",
+          "addition",
+          "total",
+          "capacity"
+        ],
+        "common_misconceptions": {
+          "53": "This is from adding 35, 3, and 15 without correctly multiplying first.",
+          "105": "This is the number of students in the buses only, forgetting to add the students from the van.",
+          "165": "This might indicate multiplying 35 by 3 and then adding 35 and 15 (adding 35 multiple times)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out how many students are transported by the 3 fully loaded buses. What operation should you use to find a total for repeated groups?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Now you know the total students in the buses. You also have 15 more students from a van. What operation will combine these two groups to find the overall total?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Calculate students in buses: 35 students/bus * 3 buses. Then, add the 15 students from the van to this number."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q5",
+      "sub_topic": "2.3 Word Problems",
+      "title": "Bookstore Book Inventory",
+      "complexity": "Easy",
+      "problem_text": "A bookstore had 150 storybooks. They sold 68 storybooks on Monday and 45 storybooks on Tuesday. How many storybooks were left?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "37",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly subtracted the total number of sold books from the initial number of books, or subtracted sales day-by-day.",
+        "keywords": [
+          "subtraction",
+          "addition",
+          "total sold",
+          "remaining",
+          "left"
+        ],
+        "common_misconceptions": {
+          "105": "This might be from only subtracting one day's sales (e.g., 150 - 45 = 105), or calculation error.",
+          "263": "This indicates adding all numbers together, instead of finding the difference.",
+          "82": "This is the number of books left after Monday's sales, but does not account for Tuesday's sales."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, figure out the total number of storybooks sold on Monday and Tuesday combined. What operation do you use to combine amounts?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Now that you know the total number of books sold, how would you find out how many were left from the initial 150 storybooks?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Calculate total sold: 68 + 45. Then, subtract this total from the initial 150 books: 150 - (total sold)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q6",
+      "sub_topic": "2.3 Word Problems",
+      "title": "School Fair Earnings",
+      "complexity": "Easy",
+      "problem_text": "John helped out at the school fair. He sold 12 cookies at $1.50 each and 8 brownies at $2.20 each. How much money did he collect in total?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "$35.60",
+        "alternative_answers": [
+          "35.60",
+          "35.6"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Evaluate if the student correctly calculated the cost of cookies, the cost of brownies, and then added these two amounts together.",
+        "keywords": [
+          "multiplication",
+          "addition",
+          "total",
+          "cost",
+          "money"
+        ],
+        "common_misconceptions": {
+          "18": "This is only the cost of the cookies. Remember to calculate the cost of the brownies too.",
+          "17.60": "This is only the cost of the brownies. Remember to calculate the cost of the cookies too.",
+          "3560": "You've missed the decimal point. Remember that money is usually represented with two decimal places for cents.",
+          "35.6": "Correct value, but often money is shown with two decimal places for cents, so $35.60 is preferred, but $35.6 is acceptable."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the total amount of money John collected from selling cookies."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, calculate the total amount of money John collected from selling brownies."
+          },
+          {
+            "step": 3,
+            "hint_text": "Finally, add the money collected from cookies and brownies to find the total amount collected. Remember to be careful with decimal points in your calculations."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q7",
+      "sub_topic": "2.3 Word Problems",
+      "title": "Library Book Count",
+      "complexity": "Easy",
+      "problem_text": "The school library had 450 storybooks. In January, 75 new storybooks were bought. In February, 110 storybooks were borrowed by students. How many storybooks were left in the library at the end of February?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "415",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Evaluate if the student correctly added the new books and then subtracted the borrowed books from the initial total.",
+        "keywords": [
+          "addition",
+          "subtraction",
+          "increase",
+          "decrease",
+          "remaining"
+        ],
+        "common_misconceptions": {
+          "525": "This is the number of books after new ones were bought. Remember to account for the books that were borrowed.",
+          "340": "This is the result of only subtracting the borrowed books from the initial amount. Remember that new books were also added.",
+          "485": "You might have added the initial books and borrowed books instead of subtracting, or made a calculation error."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Start by finding out how many storybooks the library had after buying new ones in January."
+          },
+          {
+            "step": 2,
+            "hint_text": "After finding the total number of books in January, think about what happened in February. Did the number of books increase or decrease?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Subtract the number of books borrowed in February from the total you found in Step 1 to get the final count."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q8",
+      "sub_topic": "2.3 Word Problems",
+      "title": "Stationery Shopping Spree",
+      "complexity": "Medium",
+      "problem_text": "Mary bought 3 pens at $1.80 each and 5 notebooks at $2.50 each. She paid with a $20 note. How much change did she receive?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "$2.10",
+        "alternative_answers": [
+          "2.10",
+          "2.1"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Evaluate if the student correctly calculated the total cost of pens, the total cost of notebooks, summed these to get the total amount spent, and then subtracted this from the $20 note.",
+        "keywords": [
+          "multiplication",
+          "addition",
+          "subtraction",
+          "total cost",
+          "change",
+          "money"
+        ],
+        "common_misconceptions": {
+          "17.90": "This is the total cost of the items. The question asks for the change Mary received.",
+          "14.50": "You might have only calculated the cost of the notebooks and pens and not subtracted from the amount paid, or made a calculation error for the total cost.",
+          "2.1": "Correct value, but money is usually shown with two decimal places for cents, so $2.10 is preferred, but $2.1 is acceptable."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the total cost of the pens. Then, calculate the total cost of the notebooks."
+          },
+          {
+            "step": 2,
+            "hint_text": "Add the total cost of the pens and the total cost of the notebooks to find out how much Mary spent in total."
+          },
+          {
+            "step": 3,
+            "hint_text": "Finally, subtract the total amount Mary spent from the $20 note she paid with to find her change. Remember to be careful with decimals."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q9",
+      "sub_topic": "2.3 Word Problems",
+      "title": "Sticker Collection Sharing",
+      "complexity": "Medium",
+      "problem_text": "Tom had a collection of stickers. He gave half of them to his sister. Then, he bought 25 more stickers. If he now has 85 stickers, how many stickers did he have at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "120",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Evaluate if the student correctly applied inverse operations, working backwards from the final number of stickers. This involves subtracting the newly bought stickers, then multiplying by 2 to reverse the 'gave half' step.",
+        "keywords": [
+          "inverse operations",
+          "working backwards",
+          "subtraction",
+          "multiplication",
+          "half"
+        ],
+        "common_misconceptions": {
+          "60": "This is the number of stickers Tom had before he bought 25 more. Remember that this number was half of his original collection.",
+          "170": "You might have only multiplied the final amount by 2. Remember that he bought 25 stickers *after* giving half away, so you need to account for that first.",
+          "42.5": "You might have divided 85 by 2 instead of multiplying when working backwards, or made a calculation error."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Think about the last thing Tom did. He bought 25 more stickers, ending up with 85. What can you do to find out how many stickers he had *before* buying the 25?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Before he bought 25 stickers, he had 'X' stickers. This 'X' was half of his original collection. What operation can you use to find the original collection if 'X' is half of it?"
+          },
+          {
+            "step": 3,
+            "hint_text": "If Tom had 60 stickers *before* buying the 25 new ones, and this 60 was half of his original amount, then to find his original amount, you should multiply 60 by 2."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q10",
+      "sub_topic": "2.3 Word Problems",
+      "title": "Toy Car Production",
+      "complexity": "Medium",
+      "problem_text": "A factory produced 870 toy cars in a day. The toy cars are packed into boxes, with 6 cars in each box. If 55 boxes were sent to a department store, how many boxes of toy cars were left in the factory?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "90",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Evaluate if the student correctly calculated the total number of boxes produced and then subtracted the number of boxes sent to the store.",
+        "keywords": [
+          "division",
+          "subtraction",
+          "total",
+          "remaining",
+          "per box"
+        ],
+        "common_misconceptions": {
+          "145": "This is the total number of boxes produced. Remember that some boxes were sent to a store.",
+          "815": "This looks like you subtracted the boxes sent from the total cars. Remember to convert total cars into total boxes first.",
+          "495": "This might be the result of multiplying the boxes sent by cars per box, which isn't what the question asks for."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out the total number of boxes of toy cars the factory produced from the 870 toy cars, knowing that each box holds 6 cars."
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you know the total number of boxes produced, think about what happened next. Some boxes were sent away."
+          },
+          {
+            "step": 3,
+            "hint_text": "Subtract the number of boxes sent to the department store from the total number of boxes produced to find out how many boxes were left."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q11",
+      "sub_topic": "2.3 Word Problems",
+      "title": "Snack Party Shopping",
+      "complexity": "Medium",
+      "problem_text": "Samy bought 4 packets of potato chips at $2.20 each and 3 bottles of juice at $1.50 each. He also bought a large cake for $18.50. If he paid with a $50 note, how much change did he receive?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "$18.20",
+        "alternative_answers": [
+          "18.20"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the cost of chips, juice, total cost, and then the change received. Partial credit for correct intermediate steps.",
+        "keywords": [
+          "cost",
+          "total",
+          "change",
+          "multiplication",
+          "addition",
+          "subtraction"
+        ],
+        "common_misconceptions": {
+          "Did not calculate total cost correctly": "Students might make calculation errors when adding up the costs of the different items or forget to include the cost of the cake.",
+          "Calculated only total spent, not change": "Students might stop after finding the total amount Samy spent and forget the final step of subtracting from the amount paid to find the change.",
+          "Incorrect multiplication for multiple items": "Students might incorrectly multiply the number of items by their unit price (e.g., adding instead of multiplying)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the total cost of the potato chips and the total cost of the juice bottles separately."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, add the cost of the chips, juice, and the cake to find the total amount Samy spent."
+          },
+          {
+            "step": 3,
+            "hint_text": "Finally, subtract the total amount Samy spent from the $50 he paid to find the change received."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q12",
+      "sub_topic": "2.3 Word Problems",
+      "title": "Water Tank Challenge",
+      "complexity": "Medium",
+      "problem_text": "A rectangular water tank contains 250 litres of water. After 75 litres of water were drained out, a tap was turned on to fill the tank with water at a rate of 15 litres per minute for 8 minutes. How much water is in the tank now?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "295 litres",
+        "alternative_answers": [
+          "295L"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Verify if the student performed the operations in the correct sequence: subtraction for draining, multiplication for filling, and addition for the final total.",
+        "keywords": [
+          "volume",
+          "litres",
+          "drain",
+          "fill",
+          "rate",
+          "time",
+          "subtraction",
+          "multiplication",
+          "addition"
+        ],
+        "common_misconceptions": {
+          "Incorrect order of operations": "Students might add the water filled before draining, or drain twice instead of once.",
+          "Calculated only water added": "Students might calculate how much water was added, but forget to add it to the remaining water in the tank.",
+          "Mistake in rate calculation": "Students might incorrectly calculate the total amount of water added from the tap (e.g., 15 + 8 instead of 15 x 8)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out how much water was left in the tank after 75 litres were drained out."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, calculate the total amount of water added to the tank by the tap (rate multiplied by time)."
+          },
+          {
+            "step": 3,
+            "hint_text": "Finally, add the water remaining after draining to the water added by the tap to find the total amount of water in the tank."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q13",
+      "sub_topic": "2.3 Word Problems",
+      "title": "Toy Factory Production",
+      "complexity": "Medium",
+      "problem_text": "A toy factory produces 200 toy cars per hour during the first 6 hours of operation daily. For the remaining 2 hours of operation, it produces 180 toy cars per hour. How many toy cars does the factory produce in 5 working days?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "7800 toy cars",
+        "alternative_answers": [
+          "7800"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Assess if the student correctly calculated daily production for each phase, summed them for total daily production, and then multiplied by the number of days.",
+        "keywords": [
+          "production",
+          "rate",
+          "per hour",
+          "daily",
+          "total",
+          "multiplication",
+          "addition"
+        ],
+        "common_misconceptions": {
+          "Did not calculate total daily production": "Students might only calculate production for one phase or forget to sum the production from both phases.",
+          "Forgot to multiply by number of days": "Students might correctly find the daily production but forget the final step of multiplying by 5 days.",
+          "Incorrectly identifying 'remaining hours'": "Students might misinterpret the 'remaining 2 hours' or assume a full 8-hour day is involved for all production."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the number of toy cars produced during the first 6 hours each day."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, calculate the number of toy cars produced during the remaining 2 hours each day."
+          },
+          {
+            "step": 3,
+            "hint_text": "Find the total number of toy cars produced in one day. Then, multiply this daily total by the number of working days."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q14",
+      "sub_topic": "2.3 Word Problems",
+      "title": "Mathematics Test Scores",
+      "complexity": "Medium",
+      "problem_text": "The average score of Mark's first 3 Mathematics tests was 78 marks. After his fourth test, his average score for all 4 tests became 81 marks. How many more marks did Mark score in his fourth test than his average score for the first 3 tests?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "12 marks",
+        "alternative_answers": [
+          "12"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the total marks for 3 tests, total marks for 4 tests, the score for the 4th test, and finally the difference.",
+        "keywords": [
+          "average",
+          "total marks",
+          "score",
+          "difference",
+          "multiplication",
+          "subtraction"
+        ],
+        "common_misconceptions": {
+          "Confusing average with total": "Students might think 78 and 81 are the scores of the tests themselves, not averages.",
+          "Incorrectly calculating the 4th test score": "Students might simply subtract the averages (81-78) instead of calculating total marks.",
+          "Forgetting the final comparison": "Students might stop after finding the score of the 4th test and not complete the final step of comparing it to the initial average."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Calculate the total marks Mark scored for his first 3 tests. (Average × Number of tests)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Calculate the total marks Mark scored for all 4 tests. Use the new average."
+          },
+          {
+            "step": 3,
+            "hint_text": "Find the score Mark achieved in his fourth test by subtracting the total marks from the first 3 tests from the total marks of all 4 tests. Then, compare this 4th test score with his average for the first 3 tests."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FRACTIONS-FRACTIONS-WORD-PROBLEMS-Q15",
+      "sub_topic": "2.3 Word Problems",
+      "title": "Library Book Inventory",
+      "complexity": "Hard",
+      "problem_text": "A library has a total of 1500 fiction and non-fiction books. 2/5 of the books are fiction. After some fiction books were loaned out, the number of fiction books remaining was 1/3 of the total number of non-fiction books. How many fiction books were loaned out?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "300 books",
+        "alternative_answers": [
+          "300"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Assess if the student correctly calculated the initial number of fiction books, the number of non-fiction books, the remaining fiction books after loan, and finally the number of books loaned out. This problem requires a logical step-by-step approach involving fractions and absolute numbers.",
+        "keywords": [
+          "fractions",
+          "total",
+          "fiction",
+          "non-fiction",
+          "remaining",
+          "loaned out",
+          "part-whole",
+          "multiplication",
+          "subtraction",
+          "division"
+        ],
+        "common_misconceptions": {
+          "Incorrectly calculating initial fiction/non-fiction books": "Errors in applying the fraction (2/5) to the total to find the initial number of fiction books or non-fiction books.",
+          "Misinterpreting '1/3 of non-fiction books'": "Students might incorrectly apply the 1/3 fraction to the total books or the initial fiction books, instead of the non-fiction books.",
+          "Stopping at an intermediate step": "Students might find the number of remaining fiction books but forget to subtract this from the initial fiction books to find how many were loaned out.",
+          "Fraction calculation errors": "Mistakes in multiplying or dividing by fractions."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the initial number of fiction books. (2/5 of the total books)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, calculate the total number of non-fiction books."
+          },
+          {
+            "step": 3,
+            "hint_text": "Then, find the number of fiction books remaining after some were loaned out. (This is 1/3 of the non-fiction books you calculated in the previous step)."
+          },
+          {
+            "step": 4,
+            "hint_text": "Finally, subtract the number of fiction books remaining from the initial number of fiction books to find out how many were loaned out."
+          }
+        ]
+      }
+    }
+  ]
+}

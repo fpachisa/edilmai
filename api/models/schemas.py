@@ -74,6 +74,7 @@ class SessionStartResponse(BaseModel):
     session_id: str
     step_id: str
     prompt: str
+    assets: Optional[dict] = None  # Include SVG and image assets
     ui: list[str] = ["chat", "math_input", "scratchpad"]
 
 
@@ -91,6 +92,7 @@ class SessionStepResponse(BaseModel):
     updates: dict = {}
     finished: bool = False
     step_id: Optional[str] = None
+    assets: Optional[dict] = None  # Include SVG and image assets for next prompt
     ui: list[str] = ["chat", "math_input", "scratchpad"]
 
 

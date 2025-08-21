@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../ui/app_theme.dart';
 import '../ui/design_tokens.dart';
 import '../data/learning_path_loader.dart';
+import '../data/learning_modules.dart';
 import '../data/problem_loader.dart';
 import '../state/game_state.dart';
 import 'tutor_screen.dart';
@@ -403,6 +404,22 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
       
       if (!mounted) return;
       
+      // Create a mock LearningModule with topic info for the AppBar
+      final topicName = _extractTopicFromPathId(widget.pathId);
+      final mockLearningModule = LearningModule(
+        id: module.id,
+        title: module.title,
+        description: module.title,
+        strand: 'Mathematics',
+        subStrand: topicName,
+        prerequisites: [],
+        estimatedMinutes: 15,
+        difficulty: 'Mixed',
+        learningObjectives: [],
+        aiPromptContext: '',
+        referenceItemIds: [],
+      );
+      
       Navigator.of(context).push(
         PageRouteBuilder(
           pageBuilder: (_, __, ___) => TutorScreen(
@@ -410,7 +427,8 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
             sessionId: res['session_id'] as String,
             stepId: (res['step_id'] as String?) ?? 's1',
             prompt: (res['prompt'] as String?) ?? "Let's explore ${module.title} together!",
-            moduleContext: null, // Will be handled by API with item context
+            assets: res['assets'] as Map<String, dynamic>?,
+            moduleContext: mockLearningModule, // Pass topic information
           ),
           transitionsBuilder: (_, a, __, child) => 
             FadeTransition(opacity: a, child: child),
@@ -551,6 +569,34 @@ class _LearningPathScreenState extends State<LearningPathScreen> {
         ],
       ),
     );
+  }
+
+  /// Extract topic name from pathId for dynamic AppBar titles
+  String _extractTopicFromPathId(String pathId) {
+    // Convert pathId to proper topic name for AppBar
+    switch (pathId.toLowerCase()) {
+      case 'algebra':
+        return 'Algebra';
+      case 'fractions':
+        return 'Fractions';
+      case 'geometry':
+        return 'Geometry';
+      case 'percentage':
+        return 'Percentage';
+      case 'ratio':
+        return 'Ratio';
+      case 'speed':
+        return 'Speed';
+      case 'measurement':
+        return 'Measurement';
+      case 'statistics':
+        return 'Statistics';
+      default:
+        // Capitalize first letter as fallback
+        return pathId.isNotEmpty 
+          ? pathId[0].toUpperCase() + pathId.substring(1).toLowerCase()
+          : 'Math';
+    }
   }
 
 }

@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, Request
 from typing import Dict
-from api.models.schemas import EnhancedItemFile
-from api.services.container import ITEMS_REPO
-from api.core.security import require_roles
+from models.schemas import EnhancedItemFile
+from services.container import ITEMS_REPO
+from core.security import require_roles
 
 router = APIRouter()
 

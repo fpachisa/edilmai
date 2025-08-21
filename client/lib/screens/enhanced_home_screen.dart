@@ -365,19 +365,15 @@ class _EnhancedHomeScreenState extends State<EnhancedHomeScreen>
   }
 
   Widget _buildLoadingState() {
-    return const Center(
+    return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CircularProgressIndicator(color: Colors.white),
-          SizedBox(height: 16),
-          Text(
+          CircularProgressIndicator(color: Theme.of(context).colorScheme.primary),
+          const SizedBox(height: 16),
+          const Text(
             'Loading your learning journey...',
-            style: TextStyle(
-              color: Colors.white70,
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-            ),
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
           ),
         ],
       ),
@@ -391,19 +387,15 @@ class _EnhancedHomeScreenState extends State<EnhancedHomeScreen>
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
+            Icon(
               Icons.error_outline_rounded,
               size: 64,
-              color: Colors.white70,
+              color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
             ),
             const SizedBox(height: 16),
             Text(
               _feedError ?? 'Something went wrong',
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 18,
-                fontWeight: FontWeight.w600,
-              ),
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w600),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 24),

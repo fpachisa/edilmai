@@ -1,7 +1,7 @@
 from __future__ import annotations
 from typing import Any, Dict, Iterable
 from fastapi import Request, HTTPException
-from api.core.config import settings
+from core.config import settings
 
 
 def user_has_any_role(user: Dict[str, Any] | None, roles: Iterable[str]) -> bool:

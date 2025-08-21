@@ -1,0 +1,2135 @@
+{
+  "curriculum": "Singapore PSLE Mathematics",
+  "topic": "Ratio",
+  "metadata": {
+    "generated_at": "2025-08-19T11:45:11.426246",
+    "generator_version": "simplified-v1.0",
+    "subject_id": "ratio",
+    "total_subtopics": 3,
+    "questions_per_subtopic": 20,
+    "singapore_moe_aligned": true,
+    "total_questions": 45,
+    "completed_at": "2025-08-19T11:55:48.774846"
+  },
+  "questions": [
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q1",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Comparing Fruits in a Basket",
+      "complexity": "Easy",
+      "problem_text": "In a fruit basket, there are 12 apples and 18 oranges. What is the ratio of apples to oranges in its simplest form?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "2:3",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identified the initial ratio and simplified it by dividing both numbers by their greatest common divisor.",
+        "keywords": [
+          "ratio",
+          "simplest form",
+          "apples",
+          "oranges"
+        ],
+        "common_misconceptions": {
+          "18:12": "This ratio is in the wrong order (oranges to apples instead of apples to oranges). Remember the order matters in a ratio.",
+          "6:9": "This ratio is correct in order but not in its simplest form. You need to divide by the largest possible common factor.",
+          "12:18": "This is the initial ratio but it is not in its simplest form. Both numbers can be divided further by a common factor."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, write down the ratio of apples to oranges as given."
+          },
+          {
+            "step": 2,
+            "hint_text": "Now, find the greatest common factor (GCF) for both numbers in the ratio."
+          },
+          {
+            "step": 3,
+            "hint_text": "Divide both numbers in the ratio by their GCF to get the simplest form. For 12 and 18, the GCF is 6."
+          }
+        ],
+        "full_solution": "1. The number of apples is 12.\n2. The number of oranges is 18.\n3. The ratio of apples to oranges is 12 : 18.\n4. To express the ratio in its simplest form, find the greatest common factor (GCF) of 12 and 18. The GCF of 12 and 18 is 6.\n5. Divide both numbers in the ratio by 6:\n   12 ÷ 6 = 2\n   18 ÷ 6 = 3\n6. The ratio in its simplest form is 2 : 3.\n\nAnswer: 2:3"
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q2",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Classroom Composition Fractions",
+      "complexity": "Easy",
+      "problem_text": "A Primary 6 class has 15 boys and 20 girls. What fraction of the class are girls? Express your answer in its simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "4/7",
+        "alternative_answers": [
+          "4/7"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identified the total number of students and then formed the fraction of girls to total, simplifying it to its lowest terms.",
+        "keywords": [
+          "fraction",
+          "girls",
+          "total",
+          "simplest form",
+          "class"
+        ],
+        "common_misconceptions": {
+          "20/15": "This fraction represents girls to boys, not girls to the whole class. Remember to find the total number of students first.",
+          "20/35": "This fraction is correct in value but not in its simplest form. Both numerator and denominator can be divided by a common factor.",
+          "15/35": "This fraction represents boys to the total class, not girls to the total class. Read the question carefully to identify the numerator."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the total number of students in the class."
+          },
+          {
+            "step": 2,
+            "hint_text": "Identify the number of girls. Then, write the fraction as (number of girls) / (total number of students)."
+          },
+          {
+            "step": 3,
+            "hint_text": "Simplify the fraction to its simplest form by dividing the numerator and denominator by their greatest common factor."
+          }
+        ],
+        "full_solution": "1. Number of boys = 15\n2. Number of girls = 20\n3. Total number of students in the class = Number of boys + Number of girls = 15 + 20 = 35.\n4. The fraction of the class that are girls is (Number of girls) / (Total number of students) = 20/35.\n5. To express the fraction in its simplest form, find the greatest common factor (GCF) of 20 and 35. The GCF of 20 and 35 is 5.\n6. Divide both the numerator and the denominator by 5:\n   20 ÷ 5 = 4\n   35 ÷ 5 = 7\n7. The fraction in its simplest form is 4/7.\n\nAnswer: 4/7"
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q3",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Baking Ingredients Ratio",
+      "complexity": "Easy",
+      "problem_text": "A recipe requires 400g of flour and 250g of sugar. What is the ratio of flour to sugar in its simplest form?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "8:5",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identified the initial ratio (400:250) and then simplified it to its lowest terms by dividing by the greatest common divisor.",
+        "keywords": [
+          "ratio",
+          "simplest form",
+          "flour",
+          "sugar",
+          "recipe"
+        ],
+        "common_misconceptions": {
+          "250:400": "This ratio is in the wrong order (sugar to flour instead of flour to sugar). Pay attention to the order specified in the question.",
+          "40:25": "This is a partially simplified ratio, but not in its simplest form. You need to continue dividing by common factors.",
+          "400:250": "This is the initial ratio but it is not in its simplest form. Both numbers can be divided by common factors."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Write the ratio of flour to sugar as given by their weights."
+          },
+          {
+            "step": 2,
+            "hint_text": "To simplify the ratio, find a common factor that divides both numbers. Start with an easy one, like 10."
+          },
+          {
+            "step": 3,
+            "hint_text": "Continue dividing by common factors until you cannot divide them further by any common factor other than 1. The greatest common factor (GCF) of 400 and 250 is 50."
+          }
+        ],
+        "full_solution": "1. The amount of flour is 400g.\n2. The amount of sugar is 250g.\n3. The ratio of flour to sugar is 400 : 250.\n4. To simplify the ratio, we find the greatest common factor (GCF) of 400 and 250. The GCF is 50.\n5. Divide both numbers in the ratio by 50:\n   400 ÷ 50 = 8\n   250 ÷ 50 = 5\n6. The ratio in its simplest form is 8 : 5.\n\nAnswer: 8:5"
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q4",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Farm Animals Fraction",
+      "complexity": "Easy",
+      "problem_text": "At a farm, the ratio of chickens to ducks is 3:5. What fraction of the total number of birds are chickens? Express your answer in its simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "3/8",
+        "alternative_answers": [
+          "3/8"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly understood that the ratio parts add up to the total parts, and then formed the fraction of chickens to total birds.",
+        "keywords": [
+          "ratio",
+          "fraction",
+          "chickens",
+          "ducks",
+          "total",
+          "birds"
+        ],
+        "common_misconceptions": {
+          "3/5": "This fraction represents chickens to ducks, not chickens to the total number of birds. Remember the denominator should be the total parts.",
+          "5/8": "This fraction represents ducks to the total number of birds, not chickens. Read the question carefully to identify the correct numerator."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "In the ratio 3:5, '3' represents the number of parts for chickens and '5' represents the number of parts for ducks. What does the total number of parts represent?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Add the parts of the ratio together to find the total number of 'parts' that represent all birds."
+          },
+          {
+            "step": 3,
+            "hint_text": "Form the fraction: (number of chicken parts) / (total number of parts). Simplify if necessary."
+          }
+        ],
+        "full_solution": "1. The ratio of chickens to ducks is 3:5.\n2. This means for every 3 'parts' of chickens, there are 5 'parts' of ducks.\n3. The total number of 'parts' representing all birds is 3 (chickens) + 5 (ducks) = 8 parts.\n4. The fraction of the total number of birds that are chickens is (number of chicken parts) / (total number of parts) = 3/8.\n5. The fraction 3/8 is already in its simplest form because the only common factor for 3 and 8 is 1.\n\nAnswer: 3/8"
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q5",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Library Book Collection",
+      "complexity": "Easy",
+      "problem_text": "In a school library, there are 45 fiction books and 30 non-fiction books. What fraction of the total books are non-fiction? Express your answer in its simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "2/5",
+        "alternative_answers": [
+          "2/5"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the total number of books, identified the number of non-fiction books, and then formed and simplified the fraction.",
+        "keywords": [
+          "fraction",
+          "non-fiction",
+          "total books",
+          "simplest form",
+          "library"
+        ],
+        "common_misconceptions": {
+          "30/45": "This fraction represents non-fiction to fiction books, not non-fiction to the total. You need to calculate the total number of books first.",
+          "30/75": "This fraction is correct in value but not in its simplest form. Both numerator and denominator can be divided by a common factor.",
+          "45/75": "This fraction represents fiction books to the total, not non-fiction. Read the question carefully to identify the correct part for the numerator."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the total number of books in the library by adding the number of fiction and non-fiction books."
+          },
+          {
+            "step": 2,
+            "hint_text": "Now, write the fraction that represents non-fiction books out of the total books."
+          },
+          {
+            "step": 3,
+            "hint_text": "Simplify the fraction by dividing both the numerator and the denominator by their greatest common factor."
+          }
+        ],
+        "full_solution": "1. Number of fiction books = 45\n2. Number of non-fiction books = 30\n3. Total number of books = Number of fiction books + Number of non-fiction books = 45 + 30 = 75.\n4. The fraction of the total books that are non-fiction is (Number of non-fiction books) / (Total number of books) = 30/75.\n5. To express the fraction in its simplest form, find the greatest common factor (GCF) of 30 and 75. The GCF of 30 and 75 is 15.\n6. Divide both the numerator and the denominator by 15:\n   30 ÷ 15 = 2\n   75 ÷ 15 = 5\n7. The fraction in its simplest form is 2/5.\n\nAnswer: 2/5"
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q6",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Basketball Game Points Ratio",
+      "complexity": "Easy",
+      "problem_text": "In a basketball game, Team A scored 45 points and Team B scored 30 points. What is the ratio of Team A's points to Team B's points in its simplest form?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "3:2",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly formed the ratio and then simplified it to its lowest terms by dividing both parts by their greatest common divisor.",
+        "keywords": [
+          "ratio",
+          "simplest form",
+          "points",
+          "basketball"
+        ],
+        "common_misconceptions": {
+          "30:45": "This is the correct ratio, but it is not in its simplest form. You need to divide both numbers by their greatest common factor.",
+          "2:3": "This is the inverted ratio. Remember the order matters: Team A's points to Team B's points.",
+          "1.5:1": "Ratios should generally be expressed using whole numbers, not decimals."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, write down the initial ratio of Team A's points to Team B's points."
+          },
+          {
+            "step": 2,
+            "hint_text": "To express a ratio in its simplest form, you need to find the largest number that can divide both parts of the ratio evenly. Think about common factors of 45 and 30."
+          },
+          {
+            "step": 3,
+            "hint_text": "Both 45 and 30 can be divided by 15. Divide both numbers by 15 to get the simplest form."
+          }
+        ],
+        "full_solution": "The points scored are: Team A = 45, Team B = 30.\n\nStep 1: Write the ratio of Team A's points to Team B's points.\nRatio = 45 : 30\n\nStep 2: Find the greatest common factor (GCF) of 45 and 30.\nFactors of 45: 1, 3, 5, 9, 15, 45\nFactors of 30: 1, 2, 3, 5, 6, 10, 15, 30\nThe GCF is 15.\n\nStep 3: Divide both parts of the ratio by the GCF.\n45 ÷ 15 = 3\n30 ÷ 15 = 2\n\nSo, the ratio of Team A's points to Team B's points in its simplest form is 3:2."
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q7",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Classroom Gender Fraction",
+      "complexity": "Easy",
+      "problem_text": "In a Primary 6 class, there are 15 boys and 20 girls. What fraction of the total number of students in the class are boys?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "3/7",
+        "alternative_answers": [],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the total number of students, then formed the fraction of boys to the total, and finally simplified the fraction to its lowest terms.",
+        "keywords": [
+          "fraction",
+          "ratio",
+          "total",
+          "boys",
+          "girls",
+          "class"
+        ],
+        "common_misconceptions": {
+          "15/20": "This fraction represents the ratio of boys to girls, not boys to the total class. Remember to find the total number of students first.",
+          "15/35": "You found the correct fraction, but it is not in its simplest form. You need to divide both the numerator and denominator by their greatest common factor.",
+          "4/7": "This fraction represents the girls out of the total, not the boys."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the total number of students in the class."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find the fraction of boys, place the number of boys as the numerator and the total number of students as the denominator."
+          },
+          {
+            "step": 3,
+            "hint_text": "Simplify the fraction to its simplest form by dividing both the numerator and denominator by their greatest common factor."
+          }
+        ],
+        "full_solution": "Step 1: Calculate the total number of students.\nTotal students = Number of boys + Number of girls = 15 + 20 = 35 students.\n\nStep 2: Form the fraction of boys to the total number of students.\nFraction of boys = (Number of boys) / (Total number of students) = 15 / 35\n\nStep 3: Simplify the fraction.\nFind the greatest common factor (GCF) of 15 and 35. The GCF is 5.\nDivide both the numerator and denominator by 5:\n15 ÷ 5 = 3\n35 ÷ 5 = 7\n\nSo, the fraction of the total number of students that are boys is 3/7."
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q8",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Fruit Juice Mixture Ratio and Fraction",
+      "complexity": "Medium",
+      "problem_text": "A fruit juice recipe requires 80 ml of orange juice, 60 ml of apple juice, and 20 ml of lime juice.\n\na) What is the ratio of orange juice to apple juice to lime juice in its simplest form?\nb) What fraction of the total mixture is lime juice?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 4,
+      "answer_details": {
+        "correct_answer": "a) 4:3:1, b) 1/8",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "For part (a), check if the student correctly formed the 3-part ratio and simplified it by dividing all parts by their greatest common divisor. For part (b), check if the student found the total volume, formed the correct fraction for lime juice, and simplified it.",
+        "keywords": [
+          "ratio",
+          "simplest form",
+          "fraction",
+          "mixture",
+          "volume"
+        ],
+        "common_misconceptions": {
+          "a) 8:6:2": "This is the correct ratio, but it is not in its simplest form. All parts can be divided by a common factor.",
+          "b) 20/140": "You found the correct fraction but did not simplify it. Always simplify fractions to their lowest terms.",
+          "b) 20/80": "This is the ratio of lime juice to orange juice, not lime juice to the total mixture."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "For part (a), write the ratio of the three types of juice. Then, find the greatest common factor (GCF) of all three numbers to simplify the ratio."
+          },
+          {
+            "step": 2,
+            "hint_text": "For part (b), first calculate the total volume of the juice mixture by adding all the individual volumes."
+          },
+          {
+            "step": 3,
+            "hint_text": "For part (b), form a fraction with the volume of lime juice as the numerator and the total volume as the denominator. Remember to simplify this fraction to its lowest terms."
+          }
+        ],
+        "full_solution": "a) What is the ratio of orange juice to apple juice to lime juice in its simplest form?\nOrange juice : Apple juice : Lime juice\n80 ml : 60 ml : 20 ml\n\nFind the greatest common factor (GCF) of 80, 60, and 20. The GCF is 20.\nDivide each part of the ratio by 20:\n80 ÷ 20 = 4\n60 ÷ 20 = 3\n20 ÷ 20 = 1\n\nSo, the ratio in simplest form is 4:3:1.\n\nb) What fraction of the total mixture is lime juice?\nStep 1: Calculate the total volume of the mixture.\nTotal volume = 80 ml (orange) + 60 ml (apple) + 20 ml (lime) = 160 ml\n\nStep 2: Form the fraction of lime juice to the total mixture.\nFraction of lime juice = (Volume of lime juice) / (Total volume) = 20 / 160\n\nStep 3: Simplify the fraction.\nDivide both the numerator and denominator by their GCF, which is 20.\n20 ÷ 20 = 1\n160 ÷ 20 = 8\n\nSo, the fraction of the total mixture that is lime juice is 1/8."
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q9",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Savings and Spending Fraction",
+      "complexity": "Medium",
+      "problem_text": "Mr. Tan saves some money and spends the rest. The ratio of the money he saves to the money he spends is 2:7.\n\na) What fraction of his total money does Mr. Tan save?\nb) If Mr. Tan spends $210, how much money does he save?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 4,
+      "answer_details": {
+        "correct_answer": "a) 2/9, b) $60",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "For part (a), check if the student correctly identified the parts for saving and spending, found the total parts, and formed the fraction for saving. For part (b), check if the student used the ratio to find the value of one 'unit' and then calculated the savings.",
+        "keywords": [
+          "ratio",
+          "fraction",
+          "savings",
+          "spending",
+          "total"
+        ],
+        "common_misconceptions": {
+          "a) 2/7": "This fraction represents savings to spending, not savings to his total money. You need to consider the 'total parts' first.",
+          "b) $140": "This might come from 210 * (2/3), perhaps mixing up saving vs spending or units.",
+          "b) $490": "This is likely from 210 * (7/2), which is incorrect."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "For part (a), the ratio 2:7 means 2 parts saved and 7 parts spent. What is the total number of parts?"
+          },
+          {
+            "step": 2,
+            "hint_text": "For part (a), once you have the total parts, you can form the fraction for savings (parts saved / total parts)."
+          },
+          {
+            "step": 3,
+            "hint_text": "For part (b), the 7 parts of spending correspond to $210. How much does 1 part represent? Then use that to find the money saved (2 parts)."
+          }
+        ],
+        "full_solution": "a) What fraction of his total money does Mr. Tan save?\nRatio of saves to spends = 2:7\n\nStep 1: Find the total number of 'parts'.\nTotal parts = parts saved + parts spent = 2 + 7 = 9 parts.\n\nStep 2: Form the fraction of money saved to total money.\nFraction saved = (Parts saved) / (Total parts) = 2 / 9\n\nSo, Mr. Tan saves 2/9 of his total money.\n\nb) If Mr. Tan spends $210, how much money does he save?\nFrom the ratio 2:7, we know 7 parts correspond to the money spent.\n7 parts = $210\n\nStep 1: Find the value of 1 part.\n1 part = $210 ÷ 7 = $30\n\nStep 2: Calculate the money saved (which is 2 parts).\nMoney saved = 2 parts × $30/part = $60\n\nSo, Mr. Tan saves $60."
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q10",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Toy Car Collection Ratio",
+      "complexity": "Medium",
+      "problem_text": "Devin has a collection of toy cars. He has 18 red cars, 24 blue cars, and 6 yellow cars.\n\na) What is the ratio of red cars to blue cars to yellow cars in its simplest form?\nb) What fraction of Devin's total car collection is made up of blue cars?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 4,
+      "answer_details": {
+        "correct_answer": "a) 3:4:1, b) 2/7",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "For part (a), check if the student correctly formed the 3-part ratio and simplified it by finding the greatest common divisor for all three numbers. For part (b), check if the student calculated the total number of cars, formed the correct fraction for blue cars, and simplified it.",
+        "keywords": [
+          "ratio",
+          "simplest form",
+          "fraction",
+          "toy cars",
+          "collection",
+          "total"
+        ],
+        "common_misconceptions": {
+          "a) 18:24:6": "This ratio is correct but not in its simplest form. You need to divide all numbers by their greatest common factor.",
+          "b) 24/48": "You found the correct numbers but did not simplify the fraction to its lowest terms.",
+          "b) 24/18": "This is the ratio of blue cars to red cars, not blue cars to the total collection."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "For part (a), write down the ratio of red, blue, and yellow cars. Then, find the largest number that divides all three quantities evenly to simplify the ratio."
+          },
+          {
+            "step": 2,
+            "hint_text": "For part (b), you first need to find the total number of toy cars Devin has."
+          },
+          {
+            "step": 3,
+            "hint_text": "For part (b), once you have the total, create a fraction where the numerator is the number of blue cars and the denominator is the total number of cars. Simplify this fraction."
+          }
+        ],
+        "full_solution": "a) What is the ratio of red cars to blue cars to yellow cars in its simplest form?\nRed cars : Blue cars : Yellow cars\n18 : 24 : 6\n\nStep 1: Find the greatest common factor (GCF) of 18, 24, and 6.\nFactors of 18: 1, 2, 3, 6, 9, 18\nFactors of 24: 1, 2, 3, 4, 6, 8, 12, 24\nFactors of 6: 1, 2, 3, 6\nThe GCF is 6.\n\nStep 2: Divide each part of the ratio by the GCF.\n18 ÷ 6 = 3\n24 ÷ 6 = 4\n6 ÷ 6 = 1\n\nSo, the ratio in simplest form is 3:4:1.\n\nb) What fraction of Devin's total car collection is made up of blue cars?\nStep 1: Calculate the total number of cars.\nTotal cars = Red cars + Blue cars + Yellow cars = 18 + 24 + 6 = 48 cars.\n\nStep 2: Form the fraction of blue cars to the total number of cars.\nFraction of blue cars = (Number of blue cars) / (Total number of cars) = 24 / 48\n\nStep 3: Simplify the fraction.\nDivide both the numerator and denominator by their GCF, which is 24.\n24 ÷ 24 = 1\n48 ÷ 24 = 2\n\nSo, the fraction of Devin's total car collection that is made up of blue cars is 1/2."
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q11",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Fruit Basket Ratio",
+      "complexity": "Medium",
+      "problem_text": "In a fruit basket, there are 12 apples and 18 oranges.\n(a) What is the ratio of the number of apples to the number of oranges in its simplest form?\n(b) What fraction of the total fruits are apples? Express your answer in simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "(a) 2:3\n(b) 2/5",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Evaluate if the ratio is correct and in simplest form for (a). For (b), evaluate if the total fruits are calculated correctly, the fraction is formed correctly, and is in simplest form.",
+        "keywords": [
+          "ratio",
+          "simplest form",
+          "fraction",
+          "total",
+          "apples",
+          "oranges"
+        ],
+        "common_misconceptions": {
+          "12:18": "This ratio is correct but not in its simplest form. Remember to divide both numbers by their greatest common factor.",
+          "18:12": "The order of the ratio matters. It asks for apples to oranges, so apples should come first.",
+          "12/18": "This fraction represents apples out of oranges, not apples out of total fruits. Also, it's not in simplest form.",
+          "12/30": "This fraction is correct for apples out of total, but it's not in simplest form. Always simplify fractions."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "For part (a), start by writing down the initial ratio of apples to oranges. Then, find the greatest common factor (GCF) of both numbers to simplify the ratio."
+          },
+          {
+            "step": 2,
+            "hint_text": "For part (b), first find the total number of fruits in the basket. Then, form a fraction with the number of apples as the numerator and the total number of fruits as the denominator. Remember to simplify this fraction to its simplest form."
+          },
+          {
+            "step": 3,
+            "hint_text": "For (a), 12 : 18. Both are divisible by 6. So, 12 ÷ 6 : 18 ÷ 6. For (b), total fruits = 12 + 18. Fraction = (number of apples) / (total fruits). Simplify this fraction."
+          }
+        ],
+        "full_solution": "(a) Ratio of apples to oranges = 12 : 18\nDivide both numbers by their greatest common factor, which is 6.\n12 ÷ 6 : 18 ÷ 6 = 2 : 3\n\n(b) Total number of fruits = Number of apples + Number of oranges = 12 + 18 = 30\nFraction of total fruits that are apples = Number of apples / Total number of fruits = 12 / 30\nDivide both numerator and denominator by their greatest common factor, which is 6.\n12 ÷ 6 / 30 ÷ 6 = 2 / 5\n\nAnswer:\n(a) 2:3\n(b) 2/5"
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q12",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Classroom Gender Ratio",
+      "complexity": "Medium",
+      "problem_text": "In a Primary 6 class, the ratio of the number of boys to the number of girls is 4:5. If there are 20 boys in the class,\n(a) how many girls are there?\n(b) What fraction of the students in the class are girls? Express your answer in simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "(a) 25\n(b) 5/9",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Evaluate if the number of girls is correctly calculated for (a). For (b), check if the total number of students is correct, the fraction is formed correctly, and is in simplest form.",
+        "keywords": [
+          "ratio",
+          "units",
+          "total",
+          "fraction",
+          "simplest form",
+          "boys",
+          "girls"
+        ],
+        "common_misconceptions": {
+          "4 units = 20 boys, so 5 units = 20 / 5 = 4 girls": "This calculation is incorrect. If 4 units represent 20 boys, then 1 unit is 20 divided by 4, not 20 divided by 5.",
+          "5/4": "This fraction represents girls to boys, not girls out of the total students in the class.",
+          "5/25": "This fraction represents girls out of girls, not girls out of total students. You need to include the boys in the total."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "For part (a), the ratio tells you that 4 'units' represent the number of boys and 5 'units' represent the number of girls. If 4 units are equal to 20 boys, how much does 1 unit represent?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you know the value of 1 unit, you can find the number of girls (5 units). For part (b), you'll need the total number of students in the class. Add the number of boys and girls to get the total."
+          },
+          {
+            "step": 3,
+            "hint_text": "For (a), 4 units = 20. So, 1 unit = 20 ÷ 4 = 5. Number of girls = 5 units = 5 × 5. For (b), total students = boys + girls. Fraction of girls = (number of girls) / (total students)."
+          }
+        ],
+        "full_solution": "(a) The ratio of boys to girls is 4:5.\nThis means 4 units represent the number of boys and 5 units represent the number of girls.\nGiven that there are 20 boys, so 4 units = 20.\n1 unit = 20 ÷ 4 = 5.\nNumber of girls = 5 units = 5 × 5 = 25.\n\n(b) Total number of students in the class = Number of boys + Number of girls = 20 + 25 = 45.\nFraction of students that are girls = Number of girls / Total number of students = 25 / 45.\nDivide both numerator and denominator by their greatest common factor, which is 5.\n25 ÷ 5 / 45 ÷ 5 = 5 / 9.\n\nAnswer:\n(a) 25\n(b) 5/9"
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q13",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Sharing Savings",
+      "complexity": "Medium",
+      "problem_text": "Sarah and Tom shared some savings in the ratio 7:3. If Sarah received $140,\n(a) how much money did Tom receive?\n(b) What fraction of the total savings did Tom receive? Express your answer in simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "(a) $60\n(b) 3/10",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Evaluate if Tom's amount is correctly calculated for (a). For (b), check if the total savings are correct, the fraction is formed correctly, and is in simplest form.",
+        "keywords": [
+          "ratio",
+          "units",
+          "money",
+          "total savings",
+          "fraction",
+          "simplest form"
+        ],
+        "common_misconceptions": {
+          "7 units = $140, so 3 units = $140 / 3": "Incorrect division. If 7 units is $140, find 1 unit first.",
+          "3/7": "This fraction represents Tom's share to Sarah's share, not Tom's share out of the total savings.",
+          "3/140": "This fraction does not represent a part of the whole, as $140 is Sarah's share, not the total."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "For part (a), the ratio 7:3 means Sarah has 7 units and Tom has 3 units. If Sarah's 7 units are equal to $140, how much money does 1 unit represent?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you find the value of 1 unit, multiply it by the number of units Tom has to find his share. For part (b), you need the total savings. Add Sarah's savings and Tom's savings."
+          },
+          {
+            "step": 3,
+            "hint_text": "For (a), 7 units = $140. So, 1 unit = $140 ÷ 7. Then Tom's share = 3 units × (value of 1 unit). For (b), total savings = Sarah's savings + Tom's savings. Fraction for Tom = (Tom's savings) / (total savings)."
+          }
+        ],
+        "full_solution": "(a) The ratio of Sarah's savings to Tom's savings is 7:3.\nThis means 7 units represent Sarah's savings and 3 units represent Tom's savings.\nGiven that Sarah received $140, so 7 units = $140.\n1 unit = $140 ÷ 7 = $20.\nAmount Tom received = 3 units = 3 × $20 = $60.\n\n(b) Total savings = Sarah's savings + Tom's savings = $140 + $60 = $200.\nFraction of total savings Tom received = Tom's savings / Total savings = $60 / $200.\nDivide both numerator and denominator by their greatest common factor, which is 20.\n60 ÷ 20 / 200 ÷ 20 = 3 / 10.\n\nAnswer:\n(a) $60\n(b) 3/10"
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q14",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Coloured Marbles",
+      "complexity": "Medium",
+      "problem_text": "A bag contains 24 red marbles, 16 blue marbles, and 20 green marbles.\n(a) What is the ratio of the number of red marbles to the number of green marbles in its simplest form?\n(b) What fraction of the total marbles are blue? Express your answer in simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "(a) 6:5\n(b) 4/15",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Evaluate if the ratio for (a) is correct and in simplest form. For (b), check if the total marbles are calculated correctly, the fraction is formed correctly, and is in simplest form.",
+        "keywords": [
+          "ratio",
+          "simplest form",
+          "fraction",
+          "total",
+          "red",
+          "blue",
+          "green",
+          "marbles"
+        ],
+        "common_misconceptions": {
+          "24:16:20": "This is a 3-part ratio. Part (a) asks for the ratio of red marbles to green marbles only.",
+          "24:20": "This ratio is correct but not in its simplest form. Remember to divide by the greatest common factor.",
+          "16/24": "This fraction represents blue out of red, not blue out of the total marbles. Also, it's not in simplest form.",
+          "16/60": "This fraction is correct for blue out of total, but it's not in simplest form. Always simplify fractions."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "For part (a), focus only on the number of red marbles and green marbles. Write their ratio and then simplify it by dividing both numbers by their greatest common factor."
+          },
+          {
+            "step": 2,
+            "hint_text": "For part (b), first calculate the total number of marbles in the bag (red + blue + green). Then, form a fraction with the number of blue marbles as the numerator and the total marbles as the denominator. Simplify this fraction."
+          },
+          {
+            "step": 3,
+            "hint_text": "For (a), ratio of red to green = 24 : 20. Find the GCF of 24 and 20. For (b), total marbles = 24 + 16 + 20. Fraction = (number of blue marbles) / (total marbles)."
+          }
+        ],
+        "full_solution": "(a) Number of red marbles = 24\nNumber of green marbles = 20\nRatio of red marbles to green marbles = 24 : 20\nDivide both numbers by their greatest common factor, which is 4.\n24 ÷ 4 : 20 ÷ 4 = 6 : 5\n\n(b) Total number of marbles = Number of red marbles + Number of blue marbles + Number of green marbles\nTotal marbles = 24 + 16 + 20 = 60\nFraction of total marbles that are blue = Number of blue marbles / Total number of marbles = 16 / 60\nDivide both numerator and denominator by their greatest common factor, which is 4.\n16 ÷ 4 / 60 ÷ 4 = 4 / 15\n\nAnswer:\n(a) 6:5\n(b) 4/15"
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q15",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Baking Ingredients Mix",
+      "complexity": "Hard",
+      "problem_text": "A baker uses flour, sugar, and butter for a recipe. The ratio of flour to sugar is 5:3. The ratio of sugar to butter is 2:1.\n(a) What is the ratio of flour to sugar to butter in its simplest form?\n(b) What fraction of the total ingredients is butter? Express your answer in simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 4,
+      "answer_details": {
+        "correct_answer": "(a) 10:6:3\n(b) 3/19",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "For (a), evaluate if the combined ratio is correct and in simplest form. For (b), check if the total units are correctly calculated, the fraction is formed correctly, and is in simplest form.",
+        "keywords": [
+          "ratio",
+          "combine ratios",
+          "common multiple",
+          "simplest form",
+          "fraction",
+          "total units",
+          "flour",
+          "sugar",
+          "butter"
+        ],
+        "common_misconceptions": {
+          "5:3:1": "This is incorrect. The '3' from the first ratio and '1' from the second ratio for sugar do not align directly. You need a common value for sugar.",
+          "5:3:2:1": "This just lists the ratios separately. You need to combine them into one ratio.",
+          "1/10": "This fraction is incorrect. It seems to use an incorrect combined ratio or does not account for total parts properly.",
+          "1/19": "This fraction might be a result of using '1' unit for butter but incorrect total units due to incorrect combining of ratios."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "For part (a), notice that 'sugar' is common to both ratios (Flour:Sugar and Sugar:Butter). To combine these ratios, you need to make the 'sugar' value the same in both. Find the least common multiple (LCM) of the sugar values (3 and 2)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Multiply the terms in each ratio by a factor that makes the sugar component equal to the LCM. For example, to make the sugar in 5:3 into 6, you multiply both 5 and 3 by a certain number. Do the same for the 2:1 ratio to make its sugar component into 6. Once the sugar values are the same, you can write the combined ratio Flour:Sugar:Butter."
+          },
+          {
+            "step": 3,
+            "hint_text": "For (a), the LCM of 3 and 2 is 6. So, multiply Flour:Sugar (5:3) by 2 to get 10:6. Multiply Sugar:Butter (2:1) by 3 to get 6:3. The combined ratio is 10:6:3. For (b), the total units are 10 + 6 + 3. The fraction of butter is (butter units) / (total units)."
+          }
+        ],
+        "full_solution": "(a) Given ratios:\nFlour : Sugar = 5 : 3\nSugar : Butter = 2 : 1\n\nTo combine these ratios, we need to make the 'sugar' component the same in both ratios. The current sugar values are 3 and 2.\nThe least common multiple (LCM) of 3 and 2 is 6.\n\nAdjust the first ratio (Flour : Sugar):\nTo change 3 to 6, multiply by 2.\n(5 × 2) : (3 × 2) = 10 : 6\nSo, Flour : Sugar = 10 : 6\n\nAdjust the second ratio (Sugar : Butter):\nTo change 2 to 6, multiply by 3.\n(2 × 3) : (1 × 3) = 6 : 3\nSo, Sugar : Butter = 6 : 3\n\nNow, we can combine them as the sugar value is consistent:\nFlour : Sugar : Butter = 10 : 6 : 3\nThis ratio is already in its simplest form as there is no common factor for 10, 6, and 3 other than 1.\n\n(b) Total number of units in the combined ratio = 10 (flour) + 6 (sugar) + 3 (butter) = 19 units.\nNumber of units for butter = 3.\nFraction of the total ingredients that is butter = (Units for butter) / (Total units)\n= 3 / 19\nThis fraction is already in its simplest form.\n\nAnswer:\n(a) 10:6:3\n(b) 3/19"
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q16",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Gourmet Coffee Blend Ratios",
+      "complexity": "Hard",
+      "problem_text": "In a special blend of coffee, the ratio of Arabica beans to Robusta beans to Liberica beans is 4:3:1. After the blending and roasting process, 20% of the original total weight of beans is lost due to water evaporation and chaff. If the final roasted blend weighs 1.6 kg, what fraction of the *original* total blend was Robusta beans? Express your answer in simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "3/8",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly worked backwards from the final weight to the original weight, identified the Robusta units from the ratio, and expressed it as a fraction of the total original units in simplest form.",
+        "keywords": [
+          "ratio",
+          "fraction",
+          "percentage loss",
+          "total weight",
+          "simplest form"
+        ],
+        "common_misconceptions": {
+          "Incorrect original total weight": "Students might incorrectly calculate the original total weight by subtracting 20% from 1.6kg instead of understanding that 1.6kg represents 80% of the original weight.",
+          "Robusta fraction of final weight": "Students might mistakenly express Robusta beans as a fraction of the *final* roasted weight (1.6kg) instead of the *original* total blend as required by the question."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "If 20% of the original weight was lost, what percentage of the original weight is remaining in the final roasted blend?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Use the remaining percentage and the final weight (1.6 kg) to calculate the original total weight of the beans before roasting."
+          },
+          {
+            "step": 3,
+            "hint_text": "Now, consider the original ratio of Arabica:Robusta:Liberica (4:3:1). What is the total number of units for the original blend? How many units represent Robusta beans? This will help you form the fraction of Robusta beans to the original total blend."
+          }
+        ],
+        "full_solution": "1. If 20% of the original weight was lost, then 100% - 20% = 80% of the original weight remains.\n2. The remaining weight is 1.6 kg. So, 80% of Original Total Weight = 1.6 kg.\n   Original Total Weight = 1.6 kg / 0.80 = 2 kg.\n3. The ratio of Arabica : Robusta : Liberica is 4 : 3 : 1.\n   Total number of units = 4 + 3 + 1 = 8 units.\n4. Robusta beans make up 3 units out of the total 8 units.\n5. Therefore, the fraction of the *original* total blend that was Robusta beans is 3/8.\n   The fraction 3/8 is already in its simplest form."
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q17",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Changing Pen Collection",
+      "complexity": "Hard",
+      "problem_text": "The ratio of the number of red pens to blue pens in a stationery box was 3:5. 12 red pens were added to the box and 6 blue pens were removed from the box. The ratio of red pens to blue pens then became 5:4. What fraction of the *total* number of pens in the box was red pens in the end? Express your answer in simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "5/9",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Assess if the student correctly sets up algebraic equations based on the 'before' and 'after' ratios, solves for the unknown unit value, calculates the final number of red pens and total pens, and then expresses the fraction in simplest form.",
+        "keywords": [
+          "ratio change",
+          "before and after",
+          "algebra",
+          "fraction",
+          "simplest form"
+        ],
+        "common_misconceptions": {
+          "Incorrect setup of equations": "Students might struggle to correctly represent the 'before' and 'after' quantities with an unknown variable (e.g., 'u' or 'x') and form the correct equation for the changed ratio.",
+          "Arithmetic errors": "Mistakes in solving the algebraic equation (e.g., cross-multiplication, collecting like terms) can lead to an incorrect value for the unit."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Let the initial number of red pens be 3u and blue pens be 5u. Write down expressions for the number of red and blue pens *after* the changes."
+          },
+          {
+            "step": 2,
+            "hint_text": "Form an equation using the new ratio (5:4) and your expressions from Hint 1. Remember, (New Red Pens) / (New Blue Pens) = 5/4."
+          },
+          {
+            "step": 3,
+            "hint_text": "Solve the equation for 'u'. Once you have 'u', calculate the final number of red pens and the final total number of pens. Then, express red pens as a fraction of the total and simplify."
+          }
+        ],
+        "full_solution": "1. Let the initial number of red pens be 3u and blue pens be 5u.\n2. After changes:\n   New number of red pens = 3u + 12\n   New number of blue pens = 5u - 6\n3. The new ratio of red pens to blue pens is 5:4. So, (3u + 12) / (5u - 6) = 5/4.\n4. Cross-multiply to solve for u:\n   4(3u + 12) = 5(5u - 6)\n   12u + 48 = 25u - 30\n   48 + 30 = 25u - 12u\n   78 = 13u\n   u = 78 / 13 = 6\n5. Calculate the final number of pens:\n   Final red pens = 3u + 12 = 3(6) + 12 = 18 + 12 = 30 pens.\n   Final blue pens = 5u - 6 = 5(6) - 6 = 30 - 6 = 24 pens.\n   Total number of pens in the end = 30 + 24 = 54 pens.\n6. Fraction of total pens that were red pens in the end = (Number of red pens) / (Total number of pens) = 30/54.\n7. Simplify the fraction by dividing both numerator and denominator by their greatest common divisor (6): 30 ÷ 6 / 54 ÷ 6 = 5/9.\n   The answer is 5/9."
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q18",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Mr. Tan's Savings Distribution",
+      "complexity": "Hard",
+      "problem_text": "Mr. Tan spent 1/4 of his money on groceries. Of the remaining money, he gave it to his two children, Amy and Ben, in the ratio 5:3 respectively. If Ben received $180, what fraction of Mr. Tan's *original* money did Amy receive? Express your answer in simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "15/32",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculates the fraction of money remaining after groceries, uses the given ratio and Ben's amount to find Amy's amount and the total remaining, and then expresses Amy's share as a fraction of the original total money in simplest form.",
+        "keywords": [
+          "fraction of a whole",
+          "remainder",
+          "ratio",
+          "original amount",
+          "simplest form"
+        ],
+        "common_misconceptions": {
+          "Confusing 'remainder' with 'original'": "Students might mistakenly calculate Amy's share as a fraction of the *remaining* money instead of the *original* total money Mr. Tan had.",
+          "Incorrectly applying ratio to full amount": "Students might incorrectly apply the 5:3 ratio to Mr. Tan's original money instead of only the *remaining* money after grocery spending."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out what fraction of Mr. Tan's money was remaining after he spent on groceries. Then, consider how this remaining portion was distributed to Amy and Ben."
+          },
+          {
+            "step": 2,
+            "hint_text": "Ben received $180, and the ratio of Amy:Ben was 5:3. How many units does Ben's share represent? Use this to find the value of one unit, and subsequently, Amy's share and the total 'remaining money'."
+          },
+          {
+            "step": 3,
+            "hint_text": "You now know the amount of 'remaining money' and what fraction it represents of the 'original money'. Use this to find the 'original money'. Finally, express Amy's share as a fraction of the 'original money' and simplify."
+          }
+        ],
+        "full_solution": "1. Mr. Tan spent 1/4 of his money on groceries.\n   Fraction of money remaining = 1 - 1/4 = 3/4.\n2. The remaining money was given to Amy and Ben in the ratio 5:3.\n   Total units for remaining money = 5 + 3 = 8 units.\n   Ben received 3 units, which is $180.\n3. Value of 1 unit = $180 / 3 = $60.\n4. Amy received 5 units = 5 * $60 = $300.\n5. The total remaining money (8 units) = 8 * $60 = $480.\n6. This $480 represents 3/4 of Mr. Tan's *original* money.\n   So, 3/4 * Original Money = $480.\n   Original Money = $480 * (4/3) = $160 * 4 = $640.\n7. The fraction of Mr. Tan's original money that Amy received = (Amy's share) / (Original Money)\n   = $300 / $640.\n8. Simplify the fraction:\n   300/640 = 30/64 (divide by 10)\n   30/64 = 15/32 (divide by 2).\n   The answer is 15/32."
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q19",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Library Book Collection Growth",
+      "complexity": "Hard",
+      "problem_text": "The number of fiction books to non-fiction books in a library was in the ratio 7:3. There were 2400 more fiction books than non-fiction books. The library then bought more non-fiction books, and the total number of books increased by 20%. The ratio of fiction books to non-fiction books became 5:3. What fraction of the *new* total number of books were the *newly added* non-fiction books? Express your answer in simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/10",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Verify if the student correctly uses the initial ratio and difference to find initial quantities, applies percentage increase to find new total, identifies the constant quantity (fiction books), uses the new ratio to find new non-fiction books, calculates the added amount, and expresses it as a fraction of the new total in simplest form.",
+        "keywords": [
+          "ratio",
+          "difference",
+          "percentage increase",
+          "changing ratio",
+          "part-whole fraction",
+          "simplest form"
+        ],
+        "common_misconceptions": {
+          "Incorrectly identifying constant quantity": "Students might assume both types of books increased, rather than only non-fiction books, leading to incorrect calculations for the new quantities.",
+          "Misinterpreting percentage increase": "Students might apply the 20% increase to only one type of book or incorrectly calculate the new total, instead of increasing the *initial total* by 20%."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Use the initial ratio (7:3) and the difference (2400 more fiction books) to find the exact initial number of fiction and non-fiction books. What is the 'unit' value?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Calculate the initial total number of books. Then, apply the 20% increase to find the *new* total number of books in the library."
+          },
+          {
+            "step": 3,
+            "hint_text": "Since only non-fiction books were added, the number of fiction books remained constant. Use this constant number and the *new* ratio (5:3) to find the new number of non-fiction books. Then, calculate the number of *newly added* non-fiction books. Finally, express this added amount as a fraction of the *new total* books and simplify."
+          }
+        ],
+        "full_solution": "1. **Initial quantities:**\n   Ratio of Fiction : Non-fiction = 7 : 3.\n   Difference in units = 7 - 3 = 4 units.\n   4 units = 2400 books.\n   1 unit = 2400 / 4 = 600 books.\n   Initial Fiction books = 7 * 600 = 4200 books.\n   Initial Non-fiction books = 3 * 600 = 1800 books.\n   Initial Total books = 4200 + 1800 = 6000 books.\n2. **New Total books:**\n   The total number of books increased by 20%.\n   New Total books = 6000 * (100% + 20%) / 100% = 6000 * 1.20 = 7200 books.\n3. **New quantities and newly added non-fiction books:**\n   The new ratio of Fiction : Non-fiction = 5 : 3.\n   Since only non-fiction books were added, the number of fiction books remained 4200.\n   In the new ratio, 5 units (for fiction) = 4200 books.\n   1 new unit = 4200 / 5 = 840 books.\n   New Non-fiction books = 3 new units * 840 = 2520 books.\n   Newly added non-fiction books = New Non-fiction books - Initial Non-fiction books\n   = 2520 - 1800 = 720 books.\n4. **Fraction of newly added non-fiction books to new total:**\n   Fraction = (Newly added non-fiction books) / (New Total books)\n   = 720 / 7200\n   Simplify the fraction:\n   720/7200 = 72/720 (divide by 10)\n   72/720 = 1/10 (divide by 72).\n   The answer is 1/10."
+      }
+    },
+    {
+      "id": "RATIO-RATIOS-AND-FRACTIONS-Q20",
+      "sub_topic": "4.1 Ratios and Fractions",
+      "title": "Fruit Stall Inventory",
+      "complexity": "Hard",
+      "problem_text": "The ratio of the number of apples to bananas in a fruit stall is 5:3. The ratio of the number of bananas to oranges is 4:7. If there are 140 oranges, what fraction of the *total* number of fruits are apples? Express your answer in simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "20/53",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly combines the two ratios using a common multiple for the connecting term (bananas), uses the given quantity of oranges to find the value of one unit, calculates the number of apples and the total number of fruits, and then expresses the fraction in simplest form.",
+        "keywords": [
+          "combined ratio",
+          "common multiple",
+          "proportion",
+          "fraction of total",
+          "simplest form"
+        ],
+        "common_misconceptions": {
+          "Incorrectly combining ratios": "Students might try to add or average the banana units (3 and 4) instead of finding a common multiple to scale both ratios properly.",
+          "Calculation errors with fractional units": "Students may find a fractional value for 1 unit, leading to errors if they try to convert to decimals prematurely."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You have two ratios involving bananas: Apples:Bananas (5:3) and Bananas:Oranges (4:7). To combine them into one ratio (Apples:Bananas:Oranges), you need to make the number of banana units the same in both ratios. Find the Lowest Common Multiple (LCM) of 3 and 4."
+          },
+          {
+            "step": 2,
+            "hint_text": "Scale both original ratios using the LCM you found in Hint 1. This will give you a single combined ratio for Apples:Bananas:Oranges."
+          },
+          {
+            "step": 3,
+            "hint_text": "You are given that there are 140 oranges. Use the combined ratio to determine how many units represent 140 oranges. From this, find the value of one combined unit. Then, calculate the number of apples and the total number of all fruits. Finally, express the number of apples as a fraction of the total number of fruits and simplify."
+          }
+        ],
+        "full_solution": "1. **Combine the ratios:**\n   Ratio 1: Apples : Bananas = 5 : 3\n   Ratio 2: Bananas : Oranges = 4 : 7\n   The common term is Bananas. The units for Bananas are 3 and 4.\n   The Lowest Common Multiple (LCM) of 3 and 4 is 12.\n2. **Scale the ratios to have 12 units for Bananas:**\n   For Apples : Bananas (5:3), multiply by 4: (5x4) : (3x4) = 20 : 12\n   For Bananas : Oranges (4:7), multiply by 3: (4x3) : (7x3) = 12 : 21\n3. **Form the combined ratio:**\n   Apples : Bananas : Oranges = 20 : 12 : 21\n4. **Calculate the value of one unit and total fruits:**\n   The number of oranges is 140. In the combined ratio, oranges are 21 units.\n   So, 21 units = 140 fruits.\n   1 unit = 140 / 21 = 20/3 fruits.\n   Number of apples = 20 units = 20 * (20/3) = 400/3 fruits.\n   Number of bananas = 12 units = 12 * (20/3) = 80 fruits.\n   Number of oranges = 21 units = 140 fruits (given).\n   Total number of fruits = Apples + Bananas + Oranges = 400/3 + 80 + 140 = 400/3 + 220 = 400/3 + 660/3 = 1060/3 fruits.\n   (Alternatively, Total units = 20 + 12 + 21 = 53 units. Total fruits = 53 * (20/3) = 1060/3 fruits).\n5. **Express apples as a fraction of the total fruits:**\n   Fraction = (Number of apples) / (Total number of fruits)\n   = (400/3) / (1060/3)\n   = 400 / 1060\n   Simplify the fraction:\n   400/1060 = 40/106 (divide by 10)\n   40/106 = 20/53 (divide by 2).\n   The fraction 20/53 is in its simplest form as 53 is a prime number and not a factor of 20.\n   The answer is 20/53."
+      }
+    },
+    {
+      "id": "RATIO-EQUIVALENT-FRACTIONS-AND-RATIOS-Q1",
+      "sub_topic": "4.2 Equivalent Fractions and Ratios",
+      "title": "Sharing a Pizza Fairly",
+      "complexity": "Easy",
+      "problem_text": "A large pizza is cut into 12 equal slices. Sarah ate 3 slices. Express the fraction of the pizza Sarah ate as an equivalent fraction with a denominator of 4.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "1/4",
+        "alternative_answers": [],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly simplifies the fraction 3/12 to its equivalent form 1/4.",
+        "keywords": [
+          "equivalent fraction",
+          "simplify",
+          "divide",
+          "numerator",
+          "denominator"
+        ],
+        "common_misconceptions": {
+          "3/4": "This is incorrect. While 3 is the numerator, 4 is not the original denominator. You need to simplify the original fraction 3/12.",
+          "1/12": "This is incorrect. 1/12 is not equivalent to 3/12. You need to find an equivalent fraction with a denominator of 4.",
+          "9/12": "This is incorrect. This is what's left, not what Sarah ate. You need to focus on the fraction 3/12 and simplify it."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, write down the fraction of pizza Sarah ate. It's the number of slices she ate over the total number of slices."
+          },
+          {
+            "step": 2,
+            "hint_text": "You have the fraction 3/12. To get a denominator of 4 from 12, what operation do you need to perform on 12? Apply the same operation to the numerator."
+          },
+          {
+            "step": 3,
+            "hint_text": "Both 3 and 12 can be divided by the same number to simplify the fraction. Think about the common factor."
+          }
+        ],
+        "full_solution": "Sarah ate 3 slices out of 12. So the fraction of pizza she ate is 3/12.\nTo express this as an equivalent fraction with a denominator of 4, we need to find what number we divide 12 by to get 4.\n12 ÷ 3 = 4.\nSo, we must also divide the numerator (3) by 3.\n3 ÷ 3 = 1.\nTherefore, the equivalent fraction is 1/4.\n\nAnswer: 1/4"
+      }
+    },
+    {
+      "id": "RATIO-EQUIVALENT-FRACTIONS-AND-RATIOS-Q2",
+      "sub_topic": "4.2 Equivalent Fractions and Ratios",
+      "title": "Colourful Balloons Ratio",
+      "complexity": "Easy",
+      "problem_text": "In a party, there are 8 red balloons and 12 blue balloons. What is the ratio of red balloons to blue balloons in its simplest form?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "2:3",
+        "alternative_answers": [
+          "2 to 3"
+        ],
+        "answer_format": "expression"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly forms the ratio 8:12 and then simplifies it to 2:3.",
+        "keywords": [
+          "ratio",
+          "simplest form",
+          "equivalent ratio",
+          "common factor"
+        ],
+        "common_misconceptions": {
+          "8:12": "This is the correct initial ratio, but the question asks for the 'simplest form'. You need to divide both numbers by their largest common factor.",
+          "12:8": "This is incorrect. The order matters in a ratio. It asks for 'red balloons to blue balloons', so red should come first.",
+          "4:6": "This is incorrect. While 4:6 is equivalent to 8:12, it is not in its 'simplest form'. You can still divide both numbers by a common factor."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, write down the ratio of red balloons to blue balloons as given. Remember the order (red : blue)."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find the simplest form of a ratio, you need to divide both parts of the ratio by their greatest common factor (GCF)."
+          },
+          {
+            "step": 3,
+            "hint_text": "What is the largest number that can divide both 8 and 12 evenly?"
+          }
+        ],
+        "full_solution": "The ratio of red balloons to blue balloons is 8 : 12.\nTo express this ratio in its simplest form, find the greatest common factor (GCF) of 8 and 12.\nThe factors of 8 are 1, 2, 4, 8.\nThe factors of 12 are 1, 2, 3, 4, 6, 12.\nThe greatest common factor is 4.\nDivide both parts of the ratio by 4:\n8 ÷ 4 = 2\n12 ÷ 4 = 3\nSo, the ratio in its simplest form is 2:3.\n\nAnswer: 2:3"
+      }
+    },
+    {
+      "id": "RATIO-EQUIVALENT-FRACTIONS-AND-RATIOS-Q3",
+      "sub_topic": "4.2 Equivalent Fractions and Ratios",
+      "title": "Baking Cookies Recipe",
+      "complexity": "Easy",
+      "problem_text": "A recipe for cookies requires butter and sugar in the ratio 2:3. If you use 60 grams of butter, how many grams of sugar do you need?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "90",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identifies the scaling factor for butter and applies it to sugar.",
+        "keywords": [
+          "ratio",
+          "equivalent ratio",
+          "scaling",
+          "proportion",
+          "multiply"
+        ],
+        "common_misconceptions": {
+          "62": "This is incorrect. You cannot simply add the ratio parts (2+3=5) to the given quantity. You need to find a scaling factor.",
+          "40": "This is incorrect. This might happen if you incorrectly applied the scaling factor or reversed the ratio.",
+          "60": "This is incorrect. The quantities are not equal. The ratio 2:3 means for every 2 parts of butter, you need 3 parts of sugar."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The ratio of butter to sugar is 2:3. This means for every 2 units of butter, you need 3 units of sugar."
+          },
+          {
+            "step": 2,
+            "hint_text": "You are using 60 grams of butter. How many 'groups of 2' are there in 60 grams? (i.e., What is 60 divided by 2?)"
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you find how many times the butter amount has increased, multiply the sugar part of the ratio (3) by the same number."
+          }
+        ],
+        "full_solution": "The ratio of butter to sugar is 2:3.\nThis means that for every 2 parts of butter, there are 3 parts of sugar.\nYou are using 60 grams of butter. The '2 parts' of butter now correspond to 60 grams.\nTo find the scaling factor, divide the new amount of butter by the ratio part for butter: 60 grams ÷ 2 = 30.\nThis means everything is scaled up by a factor of 30.\nNow, apply this scaling factor to the sugar part of the ratio:\nSugar needed = 3 parts × 30 = 90 grams.\n\nAnswer: 90"
+      }
+    },
+    {
+      "id": "RATIO-EQUIVALENT-FRACTIONS-AND-RATIOS-Q4",
+      "sub_topic": "4.2 Equivalent Fractions and Ratios",
+      "title": "Matching Equivalent Fractions",
+      "complexity": "Easy",
+      "problem_text": "Complete the equivalent fraction: 4/10 = ?/5",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "2",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identifies the division factor used for the denominator and applies it to the numerator.",
+        "keywords": [
+          "equivalent fraction",
+          "simplify",
+          "divide",
+          "numerator",
+          "denominator"
+        ],
+        "common_misconceptions": {
+          "1": "This is incorrect. This might happen if you subtract instead of divide, or guess.",
+          "4": "This is incorrect. You can't just keep the numerator the same if the denominator changes.",
+          "20": "This is incorrect. This would happen if you multiplied instead of divided. The denominator became smaller."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Look at the denominators: 10 changed to 5. What operation was performed on 10 to get 5?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Whatever you do to the denominator, you must do the exact same thing to the numerator to keep the fraction equivalent."
+          },
+          {
+            "step": 3,
+            "hint_text": "Since 10 was divided by 2 to get 5, you need to divide the numerator (4) by 2."
+          }
+        ],
+        "full_solution": "We are given the equivalent fraction: 4/10 = ?/5\nLook at the change in the denominator: 10 became 5.\nTo get from 10 to 5, we divide by 2 (10 ÷ 2 = 5).\nFor the fractions to be equivalent, we must perform the same operation on the numerator.\nSo, we divide the numerator 4 by 2:\n4 ÷ 2 = 2.\nTherefore, the missing number is 2.\n\nAnswer: 2"
+      }
+    },
+    {
+      "id": "RATIO-EQUIVALENT-FRACTIONS-AND-RATIOS-Q5",
+      "sub_topic": "4.2 Equivalent Fractions and Ratios",
+      "title": "Fruits in Baskets Comparison",
+      "complexity": "Easy",
+      "problem_text": "Basket A has 6 apples and 9 oranges. Basket B has 4 apples and 6 oranges. Is the ratio of apples to oranges in Basket A equivalent to the ratio of apples to oranges in Basket B? (Yes/No)",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "Yes",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculates the simplest form of both ratios and compares them.",
+        "keywords": [
+          "ratio",
+          "equivalent ratio",
+          "simplest form",
+          "compare"
+        ],
+        "common_misconceptions": {
+          "No": "This is incorrect. You need to simplify both ratios to their simplest form to compare them accurately.",
+          "Calculations are incorrect": "Double-check your simplification for both ratios. Make sure you divide by the greatest common factor."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, write down the ratio of apples to oranges for Basket A and simplify it to its simplest form."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, write down the ratio of apples to oranges for Basket B and simplify it to its simplest form."
+          },
+          {
+            "step": 3,
+            "hint_text": "Now, compare the two simplified ratios. Are they the same? If yes, then the original ratios are equivalent."
+          }
+        ],
+        "full_solution": "For Basket A:\nRatio of apples to oranges = 6 : 9\nTo simplify, find the greatest common factor (GCF) of 6 and 9, which is 3.\nDivide both parts of the ratio by 3: 6 ÷ 3 = 2 and 9 ÷ 3 = 3.\nSo, the simplest ratio for Basket A is 2:3.\n\nFor Basket B:\nRatio of apples to oranges = 4 : 6\nTo simplify, find the greatest common factor (GCF) of 4 and 6, which is 2.\nDivide both parts of the ratio by 2: 4 ÷ 2 = 2 and 6 ÷ 2 = 3.\nSo, the simplest ratio for Basket B is 2:3.\n\nSince both simplified ratios are 2:3, the ratio of apples to oranges in Basket A is equivalent to the ratio of apples to oranges in Basket B.\n\nAnswer: Yes"
+      }
+    },
+    {
+      "id": "RATIO-EQUIVALENT-FRACTIONS-AND-RATIOS-Q6",
+      "sub_topic": "4.2 Equivalent Fractions and Ratios",
+      "title": "Cushion Cover Fabric Calculation",
+      "complexity": "Easy",
+      "problem_text": "Mdm Lee used 2/5 of a piece of cloth to make a cushion cover. If the entire piece of cloth had 30 squares marked on it, how many squares did Mdm Lee use for the cushion cover?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "12",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly found the equivalent fraction of 2/5 with a denominator of 30, and then identified the numerator as the answer.",
+        "keywords": [
+          "equivalent fraction",
+          "numerator",
+          "denominator",
+          "scaling"
+        ],
+        "common_misconceptions": {
+          "6": "Student might have incorrectly divided 30 by 5, then divided 2 by the result, or thought of 2/5 as 2 squares out of 5 total squares and applied that directly without scaling.",
+          "15": "Student might have incorrectly multiplied 2 by 30 instead of scaling the fraction."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You know that 2/5 of the cloth was used. The total cloth has 30 squares. You need to find an equivalent fraction to 2/5 where the denominator is 30."
+          },
+          {
+            "step": 2,
+            "hint_text": "Think about how 5 (the original denominator) was changed to 30. What operation was performed? Apply the same operation to the numerator (2)."
+          },
+          {
+            "step": 3,
+            "hint_text": "Since 5 x 6 = 30, you need to multiply the numerator by 6 as well. So, 2 x 6 = ?"
+          }
+        ],
+        "full_solution": "To find how many squares Mdm Lee used, we need to find an equivalent fraction to 2/5 with a denominator of 30.\nWe observe that to change the denominator from 5 to 30, we multiply by 6 (since 5 × 6 = 30).\nTo keep the fraction equivalent, we must multiply the numerator by the same number.\nSo, 2 × 6 = 12.\nTherefore, 2/5 is equivalent to 12/30.\nMdm Lee used 12 squares for the cushion cover."
+      }
+    },
+    {
+      "id": "RATIO-EQUIVALENT-FRACTIONS-AND-RATIOS-Q7",
+      "sub_topic": "4.2 Equivalent Fractions and Ratios",
+      "title": "Fish Tank Population",
+      "complexity": "Easy",
+      "problem_text": "Mr. Tan has a fish tank where the ratio of guppies to swordtails is 3:5. If he has 15 guppies, how many swordtails does he have?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "25",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identified the scaling factor from the known part of the ratio (guppies) and applied it to the other part (swordtails).",
+        "keywords": [
+          "ratio",
+          "equivalent ratio",
+          "scaling",
+          "parts"
+        ],
+        "common_misconceptions": {
+          "17": "Student might have added 2 to 15 (5-3=2, then 15+2=17), assuming a difference rather than a multiplicative relationship.",
+          "9": "Student might have divided 15 by 5 and multiplied by 3, or simply reversed the ratio."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The ratio 3:5 means for every 3 guppies, there are 5 swordtails. You know Mr. Tan has 15 guppies."
+          },
+          {
+            "step": 2,
+            "hint_text": "How many 'sets' of 3 guppies are there in 15 guppies? Divide 15 by 3 to find this scaling factor."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you find the scaling factor, multiply the number of swordtails in one 'set' (which is 5) by this factor to find the total number of swordtails."
+          }
+        ],
+        "full_solution": "The ratio of guppies to swordtails is 3:5.\nMr. Tan has 15 guppies.\nWe need to find the scaling factor from the original ratio to the current number of guppies:\nNumber of sets = Current guppies / Ratio part for guppies = 15 / 3 = 5.\nThis means the ratio has been scaled up by a factor of 5.\nTo find the number of swordtails, multiply the swordtail part of the ratio by the same scaling factor:\nNumber of swordtails = Ratio part for swordtails × Scaling factor = 5 × 5 = 25.\nMr. Tan has 25 swordtails."
+      }
+    },
+    {
+      "id": "RATIO-EQUIVALENT-FRACTIONS-AND-RATIOS-Q8",
+      "sub_topic": "4.2 Equivalent Fractions and Ratios",
+      "title": "Bead Count for School Project",
+      "complexity": "Medium",
+      "problem_text": "For a school project, the ratio of blue beads to red beads needed is 4:7. If a group of students uses a total of 55 beads, how many red beads did they use?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "35",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the total number of parts in the ratio, determined the value of one 'part', and then used it to find the number of red beads.",
+        "keywords": [
+          "ratio",
+          "total parts",
+          "unit value",
+          "scaling"
+        ],
+        "common_misconceptions": {
+          "20": "Student might have calculated the blue beads (4/11 of 55) instead of red beads.",
+          "28": "Student might have incorrectly divided 55 by 4 or 7, or added 55 to parts of the ratio."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The ratio 4:7 represents blue beads to red beads. First, find the total number of 'parts' in this ratio."
+          },
+          {
+            "step": 2,
+            "hint_text": "Add the ratio parts together (4 + 7) to find the total parts. Then, divide the total number of beads (55) by this total number of parts to find the value of one 'part'."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you know the value of one part, multiply it by the ratio part for red beads (which is 7) to find the total number of red beads."
+          }
+        ],
+        "full_solution": "1. Find the total number of parts in the ratio:\n   Total parts = 4 (blue) + 7 (red) = 11 parts.\n2. Find the value of one 'part':\n   Value of 1 part = Total beads / Total parts = 55 / 11 = 5 beads per part.\n3. Calculate the number of red beads:\n   Number of red beads = Ratio part for red beads × Value of 1 part = 7 × 5 = 35.\nTherefore, the group used 35 red beads."
+      }
+    },
+    {
+      "id": "RATIO-EQUIVALENT-FRACTIONS-AND-RATIOS-Q9",
+      "sub_topic": "4.2 Equivalent Fractions and Ratios",
+      "title": "Total Pages in Storybook",
+      "complexity": "Medium",
+      "problem_text": "Chloe has read 5/8 of a storybook. If she has read 125 pages, what is the total number of pages in the storybook?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "200",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly understood that 125 pages represent 5 parts of the book, found the value of 1 part, and then calculated the total (8 parts).",
+        "keywords": [
+          "fraction of a whole",
+          "equivalent fraction",
+          "finding the whole",
+          "unit method"
+        ],
+        "common_misconceptions": {
+          "156.25": "Student might have directly multiplied 125 by 8/5 without understanding the 'part' concept, leading to a decimal which is unlikely for pages.",
+          "75": "Student might have calculated the remaining pages (125 / 5 * 3)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The fraction 5/8 means that the book is divided into 8 equal parts, and Chloe has read 5 of these parts. You know that these 5 parts are equal to 125 pages."
+          },
+          {
+            "step": 2,
+            "hint_text": "If 5 parts are 125 pages, how many pages are in 1 part? Divide 125 by 5."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you know the number of pages in 1 part, multiply it by the total number of parts in the book (which is 8) to find the total number of pages."
+          }
+        ],
+        "full_solution": "1. Understand the given information: 5/8 of the book is 125 pages.\n   This means 5 'parts' of the book correspond to 125 pages.\n2. Find the number of pages in 1 'part':\n   1 part = 125 pages / 5 = 25 pages.\n3. The whole book consists of 8 'parts' (as per the denominator of the fraction 5/8).\n   Total pages = 8 parts × 25 pages/part = 200 pages.\nTherefore, the total number of pages in the storybook is 200."
+      }
+    },
+    {
+      "id": "RATIO-EQUIVALENT-FRACTIONS-AND-RATIOS-Q10",
+      "sub_topic": "4.2 Equivalent Fractions and Ratios",
+      "title": "Basketball Free Throw Comparison",
+      "complexity": "Medium",
+      "problem_text": "In a basketball match, Player A scored 6 out of 10 free throws. Player B scored 9 out of 15 free throws. Which player had a better free throw record? Show your working by expressing their records as fractions in simplest form.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "Both players had the same record.",
+        "alternative_answers": [
+          "Both players had an equal record.",
+          "Both players have the same record.",
+          "Neither, their records are equal."
+        ],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly expressed each player's record as a fraction, simplified both fractions, and then correctly compared them to determine if one was better or if they were equal.",
+        "keywords": [
+          "fraction",
+          "ratio",
+          "simplest form",
+          "equivalent fractions",
+          "comparison"
+        ],
+        "common_misconceptions": {
+          "Player A": "Student might have compared the numerators or denominators directly without simplifying or finding a common denominator. e.g., 6/10 vs 9/15, might think 9 is more than 6.",
+          "Player B": "Student might have compared the numerators or denominators directly without simplifying or finding a common denominator."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, write down each player's free throw record as a fraction (successful throws / total throws)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Now, simplify each of these fractions to their simplest form. Find the greatest common divisor (GCD) for the numerator and denominator of each fraction."
+          },
+          {
+            "step": 3,
+            "hint_text": "Compare the two simplified fractions. Are they the same? If so, their records are equal. If not, which one represents a larger portion?"
+          }
+        ],
+        "full_solution": "1. Express Player A's record as a fraction:\n   Player A: 6 out of 10 free throws = 6/10.\n   Simplify 6/10 by dividing both numerator and denominator by their GCD, which is 2.\n   6 ÷ 2 = 3\n   10 ÷ 2 = 5\n   So, Player A's record in simplest form is 3/5.\n\n2. Express Player B's record as a fraction:\n   Player B: 9 out of 15 free throws = 9/15.\n   Simplify 9/15 by dividing both numerator and denominator by their GCD, which is 3.\n   9 ÷ 3 = 3\n   15 ÷ 3 = 5\n   So, Player B's record in simplest form is 3/5.\n\n3. Compare the simplified fractions:\n   Player A's record (3/5) is equal to Player B's record (3/5).\n\nTherefore, both players had the same free throw record."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q1",
+      "sub_topic": "4.3 Word Problems",
+      "title": "Books on a Shelf: Adding Fiction",
+      "complexity": "Easy",
+      "problem_text": "On a bookshelf, the ratio of fiction books to non-fiction books was 3:4. After 10 new fiction books were added, the ratio of fiction books to non-fiction books became 5:4. How many non-fiction books were there on the shelf?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "20",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student's answer must be the numerical value of the number of non-fiction books.",
+        "keywords": [
+          "ratio",
+          "changing ratio",
+          "fiction books",
+          "non-fiction books",
+          "units method"
+        ],
+        "common_misconceptions": {
+          "15": "This might be the initial number of fiction books. Remember the question asks for non-fiction books.",
+          "25": "This might be the new total number of fiction books (15+10). Ensure you are calculating the correct quantity."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Notice that the number of non-fiction books did not change. This means the 'units' representing non-fiction books in both ratios should be the same. In this problem, they are already both 4 units."
+          },
+          {
+            "step": 2,
+            "hint_text": "Compare the number of units for fiction books before and after the change. The initial units for fiction was 3, and it became 5. What is the increase in units? This increase corresponds to the 10 fiction books added."
+          },
+          {
+            "step": 3,
+            "hint_text": "If 2 units represent 10 books, how many books does 1 unit represent? Once you find the value of 1 unit, you can find the number of non-fiction books (which is 4 units)."
+          }
+        ],
+        "full_solution": "Let the initial ratio of fiction books to non-fiction books be 3u : 4u.\nWhen 10 new fiction books were added, the number of non-fiction books remained unchanged. \nThe new ratio of fiction books to non-fiction books became 5:4.\nSince the non-fiction books remained constant, we can directly compare the units for fiction books.\nInitial fiction units = 3u\nNew fiction units = 5u\nIncrease in fiction units = 5u - 3u = 2u\nThis increase of 2u corresponds to the 10 fiction books added.\nSo, 2 units = 10 books\n1 unit = 10 / 2 = 5 books\nThe number of non-fiction books is 4 units.\nNumber of non-fiction books = 4 * 5 = 20 books.\nThus, there were 20 non-fiction books on the shelf."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q2",
+      "sub_topic": "4.3 Word Problems",
+      "title": "Money Wallets: Constant Difference",
+      "complexity": "Easy",
+      "problem_text": "The ratio of the amount of money Alice had to the amount of money Ben had was 7:5. After each of them spent $5, the ratio of Alice's money to Ben's money became 3:2. How much money did they have altogether at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "60",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student's answer must be the numerical value of the initial total amount of money.",
+        "keywords": [
+          "ratio",
+          "changing ratio",
+          "constant difference",
+          "money",
+          "units method"
+        ],
+        "common_misconceptions": {
+          "30": "This might be Ben's initial amount. Remember to find the total.",
+          "35": "This might be Alice's initial amount. Remember to find the total.",
+          "50": "This might be the total money after spending. The question asks for the initial total."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "When both Alice and Ben spend the same amount of money, what remains constant between their amounts? Think about the difference in their money."
+          },
+          {
+            "step": 2,
+            "hint_text": "Calculate the difference in units for the initial ratio (7:5) and the new ratio (3:2). Make these differences equal by finding a common multiple for the units in the second ratio."
+          },
+          {
+            "step": 3,
+            "hint_text": "After making the differences constant, compare the units each person had before and after spending. The difference in their units should correspond to the $5 they spent. Use this to find the value of one unit, then calculate the initial total."
+          }
+        ],
+        "full_solution": "Let the initial amounts be Alice:Ben = 7u : 5u.\nThe difference in their money initially = 7u - 5u = 2u.\nAfter each spent $5, the new ratio became Alice:Ben = 3:2.\nThe difference in their money now = 3 units - 2 units = 1 unit.\nSince both spent the same amount, the difference in their money remains constant.\nWe need to make the differences in units equal.\nInitial difference = 2u\nNew difference = 1 unit\nTo make the new difference 2 units, multiply the new ratio by 2:\nNew ratio becomes (3x2) : (2x2) = 6:4.\nNow, compare the units:\nAlice: Initial 7u, New 6u. Change = 7u - 6u = 1u.\nBen: Initial 5u, New 4u. Change = 5u - 4u = 1u.\nThis 1 unit represents the $5 each of them spent.\nSo, 1 unit = $5.\nThe initial total money they had altogether = 7u + 5u = 12u.\nInitial total money = 12 * $5 = $60.\nThey had $60 altogether at first."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q3",
+      "sub_topic": "4.3 Word Problems",
+      "title": "Sweets Sharing: Constant Total",
+      "complexity": "Easy",
+      "problem_text": "The ratio of sweets Amy had to Bala had was 4:1. Amy gave 10 sweets to Bala. As a result, the ratio of sweets Amy had to Bala had became 2:3. How many sweets were there in total?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "25",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student's answer must be the numerical value of the total number of sweets.",
+        "keywords": [
+          "ratio",
+          "changing ratio",
+          "constant total",
+          "transfer",
+          "sweets",
+          "units method"
+        ],
+        "common_misconceptions": {
+          "20": "This might be Amy's initial number of sweets. Remember to find the total.",
+          "30": "This might be Bala's new number of sweets. Remember to find the total."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "When sweets are transferred from Amy to Bala, but no sweets are added or removed from the total, what remains constant about the total number of sweets?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Calculate the total number of units for the initial ratio (4:1) and the new ratio (2:3). If the total units are not the same, find a common multiple to make them equal."
+          },
+          {
+            "step": 3,
+            "hint_text": "After making the total units consistent, observe the change in Amy's units (or Bala's units). This change in units corresponds to the 10 sweets transferred. Use this to find the value of one unit, then calculate the total number of sweets."
+          }
+        ],
+        "full_solution": "Let the initial ratio of sweets Amy had to Bala had be 4u : 1u. Total initial units = 4u + 1u = 5u.\nAfter Amy gave 10 sweets to Bala, the new ratio became 2:3. Total new units = 2 + 3 = 5 units.\nNotice that the total number of units in both ratios is already the same (5 units). This means the total amount of sweets remains constant, which is correct as sweets are only transferred.\nCompare Amy's units:\nInitial Amy's units = 4u\nNew Amy's units = 2u\nThe decrease in Amy's units = 4u - 2u = 2u.\nThis decrease of 2u corresponds to the 10 sweets Amy gave away.\nSo, 2 units = 10 sweets\n1 unit = 10 / 2 = 5 sweets\nThe total number of sweets is 5 units.\nTotal sweets = 5 * 5 = 25 sweets.\nThere were 25 sweets in total."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q4",
+      "sub_topic": "4.3 Word Problems",
+      "title": "Fruits in a Basket: One Quantity Changed to a Fraction",
+      "complexity": "Easy",
+      "problem_text": "The ratio of apples to oranges in a fruit basket was 5:2. After 10 apples were eaten, the number of oranges remained the same. Now, the number of oranges is half the number of apples. How many fruits were there in total at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "70",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student's answer must be the numerical value of the initial total number of fruits.",
+        "keywords": [
+          "ratio",
+          "changing ratio",
+          "apples",
+          "oranges",
+          "fraction",
+          "units method"
+        ],
+        "common_misconceptions": {
+          "50": "This might be the initial number of apples. Remember to find the total initial fruits.",
+          "60": "This might be the total fruits after some apples were eaten. The question asks for the total at first."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Identify the initial ratio and how it changes. Note that the number of oranges stays the same. The new relationship 'oranges is half the number of apples' can be expressed as a ratio."
+          },
+          {
+            "step": 2,
+            "hint_text": "Let the initial number of apples be 5 units and oranges be 2 units. Express the new number of apples in terms of units after 10 apples were eaten. Then, use the new ratio (Apples : Oranges = 2:1, since oranges are half of apples) to set up an equation."
+          },
+          {
+            "step": 3,
+            "hint_text": "Equate the 'new apples' and 'new oranges' using the new ratio. This will help you find the value of one unit. Once you have the value of one unit, calculate the initial total number of fruits."
+          }
+        ],
+        "full_solution": "Let the initial number of apples be 5u and oranges be 2u.\nAfter 10 apples were eaten, the number of oranges remained unchanged (2u).\nThe new number of apples = 5u - 10.\nThe problem states that the number of oranges is half the number of apples. This means the ratio of Apples : Oranges is 2 : 1.\nSo, (5u - 10) : 2u = 2 : 1.\nUsing cross-multiplication or by comparing ratios:\nApples (new) / Oranges (new) = 2 / 1\n(5u - 10) / 2u = 2 / 1\n5u - 10 = 2 * (2u)\n5u - 10 = 4u\n5u - 4u = 10\n1u = 10\nInitial total number of fruits = initial apples + initial oranges\nInitial total = 5u + 2u = 7u\nInitial total = 7 * 10 = 70 fruits.\nThere were 70 fruits in total at first."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q5",
+      "sub_topic": "4.3 Word Problems",
+      "title": "Balloons for a Party: Percentage to Ratio Change",
+      "complexity": "Easy",
+      "problem_text": "For a party, the number of red balloons was initially 75% of the number of blue balloons. After 12 red balloons burst, the number of blue balloons remained unchanged. Now, the ratio of red balloons to blue balloons is 3:5. How many blue balloons were there?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "80",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student's answer must be the numerical value of the number of blue balloons.",
+        "keywords": [
+          "ratio",
+          "percentage",
+          "changing ratio",
+          "balloons",
+          "units method"
+        ],
+        "common_misconceptions": {
+          "60": "This might be the initial number of red balloons. Make sure you're finding the blue balloons.",
+          "48": "This might be the number of red balloons left. Double check what the question is asking for."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, convert the percentage '75%' into a fraction or ratio. 'Red balloons was 75% of blue balloons' means Red : Blue is equivalent to 75:100. Simplify this ratio."
+          },
+          {
+            "step": 2,
+            "hint_text": "Let the initial number of red balloons be 3u and blue balloons be 4u (from the simplified ratio). After 12 red balloons burst, express the new number of red balloons in terms of 'u'. The number of blue balloons remains unchanged."
+          },
+          {
+            "step": 3,
+            "hint_text": "Now you have expressions for the new number of red balloons and blue balloons in terms of 'u'. Use the new ratio (3:5) to set up an equation. Solve for 'u' and then find the number of blue balloons."
+          }
+        ],
+        "full_solution": "Step 1: Convert percentage to ratio.\n'The number of red balloons was initially 75% of the number of blue balloons.'\nThis means Red : Blue = 75 : 100.\nSimplify the ratio by dividing both by 25: Red : Blue = 3 : 4.\n\nStep 2: Set up initial and final units.\nLet the initial number of red balloons be 3u and blue balloons be 4u.\nAfter 12 red balloons burst, the number of red balloons becomes (3u - 12).\nThe number of blue balloons remains unchanged, so it is still 4u.\n\nStep 3: Use the new ratio to solve for 'u'.\nThe new ratio of red balloons to blue balloons is 3:5.\nSo, (3u - 12) : 4u = 3 : 5.\nThis can be written as a fraction: (3u - 12) / 4u = 3 / 5.\nCross-multiply:\n5 * (3u - 12) = 3 * (4u)\n15u - 60 = 12u\nSubtract 12u from both sides:\n15u - 12u - 60 = 0\n3u - 60 = 0\nAdd 60 to both sides:\n3u = 60\nDivide by 3:\nu = 60 / 3\nu = 20\n\nStep 4: Find the number of blue balloons.\nThe number of blue balloons is 4u.\nNumber of blue balloons = 4 * 20 = 80.\nThere were 80 blue balloons."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q6",
+      "sub_topic": "4.3 Word Problems",
+      "title": "Colourful Marbles",
+      "complexity": "Easy",
+      "problem_text": "A bag contains red and blue marbles in the ratio 3:5. When 8 red marbles are added, the ratio of red marbles to blue marbles becomes 2:3. How many blue marbles are there in the bag?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "120",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identifies the constant quantity (blue marbles) and equates its units in both ratios. Then, calculate the value of one unit from the change in red marbles and finally find the number of blue marbles.",
+        "keywords": [
+          "ratio",
+          "changing ratio",
+          "constant quantity",
+          "units",
+          "before and after"
+        ],
+        "common_misconceptions": {
+          "Adding to ratio parts directly": "Students might incorrectly add 8 directly to the 'red' part of the initial ratio (e.g., 3+8 = 11), which is mathematically incorrect as ratio parts are not absolute numbers.",
+          "Not equating the constant quantity": "Failing to make the units for the unchanged quantity (blue marbles) the same in both the 'before' and 'after' ratios before comparing the changing quantity."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Notice that the number of blue marbles did not change. This is your 'constant quantity'."
+          },
+          {
+            "step": 2,
+            "hint_text": "Express both the initial ratio (Red:Blue = 3:5) and the final ratio (Red:Blue = 2:3) with the same number of 'units' for the blue marbles. Find the Least Common Multiple (LCM) of the blue marble units (5 and 3)."
+          },
+          {
+            "step": 3,
+            "hint_text": "After making the blue marble units the same, compare the 'units' for red marbles in both ratios. The difference in red marble units should correspond to the 8 red marbles added. Use this to find the value of 1 unit, then calculate the total blue marbles."
+          }
+        ],
+        "full_solution": "1. Identify the constant quantity: The number of blue marbles remains unchanged.\n2. Express both ratios with the same number of units for blue marbles:\n   Initial Ratio (Red:Blue) = 3:5\n   Final Ratio (Red:Blue) = 2:3\n   LCM of 5 and 3 (blue marble units) is 15.\n   Multiply the initial ratio by 3:  3:5 = 9:15\n   Multiply the final ratio by 5:  2:3 = 10:15\n3. Compare the change in red marbles:\n   Initial red marbles = 9 units\n   Final red marbles = 10 units\n   The increase in red marbles is 10 - 9 = 1 unit.\n4. Determine the value of 1 unit:\n   Since 8 red marbles were added, 1 unit = 8 marbles.\n5. Calculate the number of blue marbles:\n   Blue marbles = 15 units = 15 × 8 = 120 marbles.\n\nAnswer: There are 120 blue marbles in the bag."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q7",
+      "sub_topic": "4.3 Word Problems",
+      "title": "Choir Practice",
+      "complexity": "Easy",
+      "problem_text": "The ratio of the number of girls to the number of boys in a choir was 7:4. After 6 girls left the choir, the ratio of the number of girls to the number of boys became 5:4. How many students were in the choir at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "33",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identifies the constant quantity (boys). Determine the change in girl units and equate it to the number of girls who left. Calculate the value of one unit and then the initial total number of students.",
+        "keywords": [
+          "ratio",
+          "changing ratio",
+          "constant quantity",
+          "units",
+          "total"
+        ],
+        "common_misconceptions": {
+          "Assuming both quantities changed": "Students might try to adjust both ratios, even though only the number of girls changed.",
+          "Calculating final total instead of initial total": "After finding the value of one unit, students might calculate the final number of students instead of the initial number asked for."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Who left the choir? Only girls. This means the number of boys remained constant throughout the change. Look at the units for boys in both ratios."
+          },
+          {
+            "step": 2,
+            "hint_text": "The ratio of girls to boys changed from 7:4 to 5:4. Since the boys' units are already the same (4 units), you can directly compare the girls' units. How many units of girls left?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The difference in the number of girl units corresponds to the 6 girls who left. Use this to find the value of 1 unit. Then, calculate the total initial units (girls + boys) and find the initial total number of students."
+          }
+        ],
+        "full_solution": "1. Identify the constant quantity: The number of boys remained the same.\n2. Compare the initial and final ratios:\n   Initial Ratio (Girls:Boys) = 7:4\n   Final Ratio (Girls:Boys) = 5:4\n   Since the number of boys (4 units) is already the same in both ratios, we can directly compare the girls' units.\n3. Determine the change in girls' units:\n   Girls changed from 7 units to 5 units.\n   The decrease in girls' units is 7 - 5 = 2 units.\n4. Determine the value of 1 unit:\n   Since 6 girls left, 2 units = 6 girls.\n   1 unit = 6 ÷ 2 = 3 students.\n5. Calculate the initial total number of students:\n   Initial total units = 7 (girls) + 4 (boys) = 11 units.\n   Initial total students = 11 units × 3 students/unit = 33 students.\n\nAnswer: There were 33 students in the choir at first."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q8",
+      "sub_topic": "4.3 Word Problems",
+      "title": "Monthly Savings",
+      "complexity": "Medium",
+      "problem_text": "The ratio of money Siti saved to money Bala saved was 2:3. After each of them saved an additional $40, the ratio of Siti's savings to Bala's savings became 3:4. How much money did Siti have at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 4,
+      "answer_details": {
+        "correct_answer": "80",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student uses the 'constant difference' method or a similar unit comparison. Verify that they correctly set up the relationship between the unit changes and the added amount to find the value of one unit, then calculate Siti's initial savings.",
+        "keywords": [
+          "ratio",
+          "changing ratio",
+          "constant difference",
+          "units",
+          "before and after"
+        ],
+        "common_misconceptions": {
+          "Treating units as absolute values": "Assuming the '1 unit' difference in both ratios has the same absolute value, without considering the change in value of each unit due to the addition.",
+          "Incorrectly setting up equations": "Errors in cross-multiplication or algebraic setup when using that approach."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "When both quantities change by the same absolute amount (both saved $40), what remains constant about their relationship? Think about the difference in their savings."
+          },
+          {
+            "step": 2,
+            "hint_text": "Calculate the difference in units for the initial ratio (3-2 = 1 unit) and the final ratio (4-3 = 1 unit). Since the absolute difference in their savings is constant, make the 'difference in units' the same for both ratios. In this case, it's already the same (1 unit)."
+          },
+          {
+            "step": 3,
+            "hint_text": "Compare the change in Siti's units (from 2 to 3) and Bala's units (from 3 to 4). Both increased by 1 unit. Since each saved $40, what does 1 unit represent in terms of money? Use this to find Siti's initial savings."
+          }
+        ],
+        "full_solution": "1. Understand the 'constant difference' concept: When both quantities change by the same amount, the difference between them remains constant.\n2. Calculate the difference in units for both ratios:\n   Initial Ratio (Siti:Bala) = 2:3. Difference in units = 3 - 2 = 1 unit.\n   Final Ratio (Siti:Bala) = 3:4. Difference in units = 4 - 3 = 1 unit.\n   Since the difference in units is already the same (1 unit), we can directly compare the changes in individual savings.\n3. Observe the change in units for Siti and Bala:\n   Siti's savings changed from 2 units to 3 units. (Increase of 1 unit)\n   Bala's savings changed from 3 units to 4 units. (Increase of 1 unit)\n4. Determine the value of 1 unit:\n   Since both Siti and Bala saved an additional $40, this means the 1 unit increase for each represents $40.\n   So, 1 unit = $40.\n5. Calculate Siti's initial savings:\n   Siti's initial savings = 2 units = 2 × $40 = $80.\n\nAnswer: Siti had $80 at first."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q9",
+      "sub_topic": "4.3 Word Problems",
+      "title": "Fruit Baskets",
+      "complexity": "Medium",
+      "problem_text": "There were some apples and oranges in Basket A and Basket B. Initially, the ratio of the number of apples to oranges in Basket A was 3:2. 10 apples were moved from Basket A to Basket B. The new ratio of apples to oranges in Basket A became 2:3. There was no change in the number of oranges in Basket A. How many apples were in Basket A at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 4,
+      "answer_details": {
+        "correct_answer": "18",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly focuses only on Basket A and identifies oranges as the constant quantity. Verify the calculation for the change in apple units and the value of one unit, leading to the initial number of apples in Basket A.",
+        "keywords": [
+          "ratio",
+          "changing ratio",
+          "constant quantity",
+          "units",
+          "before and after",
+          "transfer"
+        ],
+        "common_misconceptions": {
+          "Overcomplicating with Basket B information": "Students might try to use the information about Basket B (5:1 ratio) which is not needed to solve for apples in Basket A, leading to confusion.",
+          "Incorrectly assuming a different constant": "Misidentifying which quantity (apples or oranges) remained constant within Basket A."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The question asks only about Basket A. Focus only on the changes within Basket A. What item in Basket A remained unchanged?"
+          },
+          {
+            "step": 2,
+            "hint_text": "The number of oranges in Basket A did not change. Make the 'units' for oranges the same in both the initial ratio (Apples:Oranges = 3:2) and the final ratio (Apples:Oranges = 2:3) for Basket A."
+          },
+          {
+            "step": 3,
+            "hint_text": "After making the orange units the same, compare the 'units' for apples in Basket A before and after. The difference in these apple units should correspond to the 10 apples that were moved out. Use this to find the value of 1 unit and then the initial number of apples in Basket A."
+          }
+        ],
+        "full_solution": "1. Focus on Basket A and identify the constant quantity: The number of oranges in Basket A did not change.\n2. Express both Basket A ratios with the same number of units for oranges:\n   Initial Ratio (Apples:Oranges) = 3:2\n   Final Ratio (Apples:Oranges) = 2:3\n   LCM of 2 and 3 (orange units) is 6.\n   Multiply the initial ratio by 3:  3:2 = 9:6\n   Multiply the final ratio by 2:  2:3 = 4:6\n3. Compare the change in apples in Basket A:\n   Initial apples = 9 units\n   Final apples = 4 units\n   The decrease in apples is 9 - 4 = 5 units.\n4. Determine the value of 1 unit:\n   Since 10 apples were moved out, 5 units = 10 apples.\n   1 unit = 10 ÷ 5 = 2 apples.\n5. Calculate the initial number of apples in Basket A:\n   Initial apples in Basket A = 9 units = 9 × 2 = 18 apples.\n\nAnswer: There were 18 apples in Basket A at first."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q10",
+      "sub_topic": "4.3 Word Problems",
+      "title": "Stamp Collection",
+      "complexity": "Medium",
+      "problem_text": "Ali and Ben had stamps in the ratio 5:2. After Ali gave away 30 stamps, and Ben bought 10 new stamps, the ratio of Ali's stamps to Ben's stamps became 2:3. How many stamps did Ali have at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "50",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student uses an algebraic approach with 'units' (e.g., 5u and 2u initially) to form equations representing the 'before' and 'after' quantities and ratios. Verify correct setup of equations and solving for the unknown unit value.",
+        "keywords": [
+          "ratio",
+          "changing ratio",
+          "units",
+          "before and after",
+          "algebraic approach"
+        ],
+        "common_misconceptions": {
+          "Incorrectly applying changes to ratio parts": "Students might try to modify the ratio parts (e.g., 5-30 and 2+10) directly, which is incorrect.",
+          "Setup errors in simultaneous equations/cross-multiplication": "Algebraic mistakes when solving for the unknown 'unit' value."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Let the initial number of stamps Ali had be 5 units (5u) and Ben had be 2 units (2u)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Form expressions for their stamps after the changes: Ali's stamps = (5u - 30) and Ben's stamps = (2u + 10). The new ratio of Ali's stamps to Ben's stamps is 2:3. Set up an equation using these expressions and the new ratio."
+          },
+          {
+            "step": 3,
+            "hint_text": "The equation will be (5u - 30) / (2u + 10) = 2/3. Use cross-multiplication to solve for 'u'. Once you find the value of 1 unit, calculate Ali's initial stamps."
+          }
+        ],
+        "full_solution": "1. Let the initial number of stamps Ali had be 5u and Ben had be 2u.\n2. After the changes:\n   Ali's new number of stamps = 5u - 30\n   Ben's new number of stamps = 2u + 10\n3. The new ratio of Ali's stamps to Ben's stamps is 2:3. We can write this as an equation:\n   (5u - 30) / (2u + 10) = 2 / 3\n4. Cross-multiply to solve for 'u':\n   3 × (5u - 30) = 2 × (2u + 10)\n   15u - 90 = 4u + 20\n5. Group terms with 'u' on one side and constants on the other:\n   15u - 4u = 20 + 90\n   11u = 110\n   u = 110 ÷ 11\n   u = 10\n6. Calculate the number of stamps Ali had at first:\n   Ali had 5u stamps at first = 5 × 10 = 50 stamps.\n\nAnswer: Ali had 50 stamps at first."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q16",
+      "sub_topic": "4.3 Word Problems",
+      "title": "The School Fundraising Drive",
+      "complexity": "Hard",
+      "problem_text": "A school started a fundraising drive with small and large donation boxes in the ratio 4:7. After 15 small boxes were added and 12 large boxes were removed, the number of small boxes became 3 times the number of large boxes. How many donation boxes were there at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "33",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Evaluate if the student correctly sets up the initial and final states using units, forms an equation based on the final relationship, solves for the unit value, and then calculates the initial total number of boxes.",
+        "keywords": [
+          "ratio",
+          "changing ratio",
+          "units method",
+          "before and after",
+          "algebraic equation",
+          "total"
+        ],
+        "common_misconceptions": {
+          "Misconception 1: Incorrectly setting up the equation.": "Students might incorrectly form the equation, for example, by mixing initial and final units directly without considering the changes, or by misinterpreting '3 times' (e.g., 4u + 15 = (7u - 12)/3 instead of 4u + 15 = 3 * (7u - 12)). Ensure they translate the 'times' relationship correctly to the quantities after the changes.",
+          "Misconception 2: Calculating the wrong total.": "After finding the value of 'u', students might calculate the total number of boxes after the changes, instead of 'at first' as requested by the question. Remind them to always refer back to what the question asks for."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Represent the initial number of small and large boxes using units (e.g., 4u and 7u). Then, write expressions for the number of small and large boxes *after* the changes (adding 15 small, removing 12 large)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Form an equation based on the final relationship: 'the number of small boxes became 3 times the number of large boxes'. This means (Small boxes after change) = 3 × (Large boxes after change). Solve this equation to find the value of one unit (u)."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the value of 'u', calculate the initial number of small boxes and large boxes. Then, find the total number of donation boxes at first."
+          }
+        ],
+        "full_solution": "Let the initial number of small boxes be 4u and large boxes be 7u.\n\nAfter changes:\nNumber of small boxes = 4u + 15\nNumber of large boxes = 7u - 12\n\nAccording to the problem, the number of small boxes became 3 times the number of large boxes:\n4u + 15 = 3 × (7u - 12)\n4u + 15 = 21u - 36\n\nTo solve for u, gather 'u' terms on one side and constant terms on the other:\n15 + 36 = 21u - 4u\n51 = 17u\nu = 51 ÷ 17\nu = 3\n\nNow, find the initial number of boxes:\nInitial number of small boxes = 4u = 4 × 3 = 12\nInitial number of large boxes = 7u = 7 × 3 = 21\n\nTotal number of donation boxes at first = Initial small boxes + Initial large boxes\nTotal = 12 + 21 = 33\n\nFinal Answer: There were 33 donation boxes at first."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q17",
+      "sub_topic": "4.3 Word Problems",
+      "title": "The School Library's Book Collection",
+      "complexity": "Hard",
+      "problem_text": "The ratio of fiction to non-fiction books in a library was 5:7. After 1/5 of the fiction books were donated away and 105 more non-fiction books were added, the ratio of fiction to non-fiction books became 1:2. How many fiction books were there initially?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "525",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Assess if the student correctly applies the fractional change to the initial units, incorporates the absolute change, forms the correct ratio equation, and solves for the initial number of fiction books.",
+        "keywords": [
+          "ratio",
+          "fractional change",
+          "absolute change",
+          "units method",
+          "before and after",
+          "equation"
+        ],
+        "common_misconceptions": {
+          "Misconception 1: Miscalculating the fractional part remaining.": "Students might calculate 1/5 of the fiction books and use that as the new amount, instead of calculating the remaining 4/5 of the fiction books. Emphasize that 'donated away' means a reduction, so the remaining quantity is important for the new ratio.",
+          "Misconception 2: Errors in algebraic manipulation.": "When dealing with fractions in the equation (e.g., 15u/2 from 2 * (15u/4)), students might make errors in multiplying across or clearing denominators, leading to an incorrect value for 'u'."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Let the initial number of fiction books be 5u and non-fiction books be 7u. Calculate the number of fiction books remaining after 1/5 were donated away. Then, write an expression for the new number of non-fiction books after 105 were added."
+          },
+          {
+            "step": 2,
+            "hint_text": "Form an equation using the new ratio 1:2. The new number of fiction books (in terms of u) divided by the new number of non-fiction books (in terms of u and the added amount) should equal 1/2. Solve this equation for 'u'."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the value of 'u', calculate the initial number of fiction books."
+          }
+        ],
+        "full_solution": "Let the initial number of fiction books be 5u and non-fiction books be 7u.\n\nAfter 1/5 of fiction books were donated away:\nRemaining fiction books = 5u - (1/5) * 5u = 5u - u = 4u\n\nAfter 105 more non-fiction books were added:\nNew number of non-fiction books = 7u + 105\n\nThe new ratio of fiction to non-fiction books is 1:2.\nSo, (4u) : (7u + 105) = 1 : 2\n\nThis can be written as an equation:\n2 * (4u) = 1 * (7u + 105)\n8u = 7u + 105\n\nSubtract 7u from both sides:\n8u - 7u = 105\nu = 105\n\nThe question asks for the initial number of fiction books.\nInitial fiction books = 5u = 5 × 105 = 525\n\nFinal Answer: There were 525 fiction books initially."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q18",
+      "sub_topic": "4.3 Word Problems",
+      "title": "The Fruit Stall's Sales",
+      "complexity": "Hard",
+      "problem_text": "A fruit stall had mangoes and durians in the ratio 4:5. After selling 45 mangoes, the ratio of mangoes to durians became 7:10. If the stall then bought another 30 mangoes, what would be the new ratio of mangoes to durians?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "23:30",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly uses the constant quantity (durians) to find the initial units, calculates the number of fruits after the first change, then applies the second change, and finally simplifies the new ratio correctly.",
+        "keywords": [
+          "ratio",
+          "changing ratio",
+          "constant quantity",
+          "before and after",
+          "multi-stage problem",
+          "simplification"
+        ],
+        "common_misconceptions": {
+          "Misconception 1: Incorrectly equating units across different ratios.": "Students might try to use the '7' and '10' from the new ratio directly with the '4u' and '5u' without setting up an equation or recognizing that the durian quantity is constant. They need to understand that the 'units' change their value when the ratio changes.",
+          "Misconception 2: Forgetting to simplify the final ratio.": "Even if calculations are correct, students might leave the final ratio unsimplified (e.g., 345:450) instead of simplifying it to its simplest form (23:30)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Start by representing the initial number of mangoes and durians using units (e.g., 4u and 5u). After selling 45 mangoes, the number of durians remains the same (5u). Form an equation using the new ratio of mangoes to durians (7:10) and solve for 'u'."
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you have the value of 'u', calculate the actual number of mangoes and durians after the first change (selling 45 mangoes). This gives you the current number of fruits."
+          },
+          {
+            "step": 3,
+            "hint_text": "Now, apply the second change: the stall bought another 30 mangoes. Add this to the current number of mangoes. The number of durians remains unchanged. Form the new ratio and simplify it to its simplest form."
+          }
+        ],
+        "full_solution": "Let the initial number of mangoes be 4u and durians be 5u.\n\nAfter selling 45 mangoes:\nNumber of mangoes = 4u - 45\nNumber of durians = 5u (remains constant)\n\nThe new ratio of mangoes to durians is 7:10.\nSo, (4u - 45) / 5u = 7 / 10\n\nCross-multiply to form an equation:\n10 * (4u - 45) = 7 * (5u)\n40u - 450 = 35u\n\nSolve for u:\n40u - 35u = 450\n5u = 450\nu = 90\n\nNow, find the actual number of fruits after the first change:\nNumber of mangoes after selling = 4u - 45 = 4(90) - 45 = 360 - 45 = 315\nNumber of durians = 5u = 5(90) = 450\n(Check: 315:450 simplifies to 7:10, which is correct.)\n\nNext, the stall bought another 30 mangoes:\nNew number of mangoes = 315 + 30 = 345\nNumber of durians = 450 (still unchanged)\n\nFinally, find the new ratio of mangoes to durians:\nNew ratio = 345 : 450\n\nSimplify the ratio by dividing by common factors:\nDivide by 5: 345 ÷ 5 = 69, 450 ÷ 5 = 90. Ratio is 69:90.\nDivide by 3: 69 ÷ 3 = 23, 90 ÷ 3 = 30. Ratio is 23:30.\n\nFinal Answer: The new ratio of mangoes to durians would be 23:30."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q19",
+      "sub_topic": "4.3 Word Problems",
+      "title": "The Gift Shop's Sales",
+      "complexity": "Hard",
+      "problem_text": "A gift shop had mugs and keychains. The number of mugs was 2/3 the number of keychains. After selling 48 mugs and 30 keychains, the ratio of mugs to keychains became 1:2. How many mugs and keychains were there altogether at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "330",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Verify if the student correctly translates the initial fractional relationship into a ratio, sets up the 'before-after' model with two subtractions, forms the correct equation from the final ratio, solves for 'u', and calculates the initial total.",
+        "keywords": [
+          "ratio",
+          "fractional relationship",
+          "changing ratio",
+          "before and after",
+          "units method",
+          "total"
+        ],
+        "common_misconceptions": {
+          "Misconception 1: Incorrectly setting up the initial ratio from the fraction.": "Students might interpret 'mugs was 2/3 the number of keychains' as a ratio of 3:2 instead of 2:3, or fail to convert it into units (e.g., M=2u, K=3u).",
+          "Misconception 2: Errors in cross-multiplication or distributing terms.": "When setting up the equation 2(2u - 48) = 1(3u - 30), students might forget to distribute the '2' to both terms inside the parenthesis (e.g., writing 4u - 48 instead of 4u - 96), leading to an incorrect value for 'u'."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, convert the statement 'the number of mugs was 2/3 the number of keychains' into an initial ratio of mugs to keychains. Represent these initial amounts using units (e.g., 2u and 3u)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, write expressions for the number of mugs and keychains *after* selling (subtracting 48 mugs and 30 keychains). Then, use the new ratio (1:2) to form an equation relating the new quantities. Solve this equation to find the value of one unit (u)."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the value of 'u', calculate the initial number of mugs and keychains. Finally, find the total number of mugs and keychains at first."
+          }
+        ],
+        "full_solution": "Step 1: Understand the initial relationship and represent with units.\n'The number of mugs was 2/3 the number of keychains' means for every 2 mugs, there are 3 keychains.\nInitial ratio of Mugs : Keychains = 2 : 3.\nLet the initial number of mugs be 2u and keychains be 3u.\n\nStep 2: Express quantities after changes and form an equation.\nAfter selling 48 mugs: Number of mugs = 2u - 48\nAfter selling 30 keychains: Number of keychains = 3u - 30\n\nThe new ratio of mugs to keychains is 1:2.\nSo, (2u - 48) / (3u - 30) = 1 / 2\n\nCross-multiply:\n2 * (2u - 48) = 1 * (3u - 30)\n4u - 96 = 3u - 30\n\nSolve for u:\n4u - 3u = 96 - 30\nu = 66\n\nStep 3: Calculate initial quantities and the total.\nInitial number of mugs = 2u = 2 * 66 = 132\nInitial number of keychains = 3u = 3 * 66 = 198\n\nTotal number of mugs and keychains at first = 132 + 198 = 330\n\nFinal Answer: There were 330 mugs and keychains altogether at first."
+      }
+    },
+    {
+      "id": "RATIO-RATIO-WORD-PROBLEMS-Q20",
+      "sub_topic": "4.3 Word Problems",
+      "title": "The Animal Shelter's Initial Cat Count",
+      "complexity": "Hard",
+      "problem_text": "At an animal shelter, the number of cats was 3/4 the number of dogs. After 24 cats were adopted and 15 dogs were brought in, the total number of animals in the shelter became 201. How many cats were there at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "90",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly converts the initial fractional relationship to a ratio, sets up unit expressions for both categories before and after changes, correctly forms an equation based on the *final total*, solves for 'u', and then determines the initial number of cats.",
+        "keywords": [
+          "ratio",
+          "fractional relationship",
+          "changing quantity",
+          "total quantity",
+          "units method",
+          "equation"
+        ],
+        "common_misconceptions": {
+          "Misconception 1: Confusing initial total with final total.": "Students might incorrectly use the initial total (7u) to set up the equation with the final total (201), instead of forming an expression for the final total based on changes to the units (7u - 9).",
+          "Misconception 2: Errors in combining positive and negative changes to the total.": "When calculating the final total (7u - 24 + 15), students might incorrectly combine -24 and +15, leading to arithmetic errors that throw off the value of 'u'."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, convert the statement 'the number of cats was 3/4 the number of dogs' into an initial ratio of cats to dogs. Represent these initial amounts using units (e.g., 3u and 4u)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, write expressions for the number of cats and dogs *after* the changes (24 cats adopted, 15 dogs brought in). Then, sum these expressions to form an expression for the *total* number of animals after the changes. Equate this expression to the given final total (201) to form an equation. Solve this equation for 'u'."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the value of 'u', calculate the initial number of cats."
+          }
+        ],
+        "full_solution": "Step 1: Understand the initial relationship and represent with units.\n'The number of cats was 3/4 the number of dogs' means for every 3 cats, there are 4 dogs.\nInitial ratio of Cats : Dogs = 3 : 4.\nLet the initial number of cats be 3u and dogs be 4u.\n\nStep 2: Express quantities after changes and form an equation for the total.\nAfter 24 cats were adopted: Number of cats = 3u - 24\nAfter 15 dogs were brought in: Number of dogs = 4u + 15\n\nThe total number of animals in the shelter after the changes is the sum of the new number of cats and dogs:\nTotal animals = (3u - 24) + (4u + 15)\nTotal animals = 3u + 4u - 24 + 15\nTotal animals = 7u - 9\n\nWe are given that the total number of animals became 201.\nSo, 7u - 9 = 201\n\nSolve for u:\n7u = 201 + 9\n7u = 210\nu = 210 ÷ 7\nu = 30\n\nStep 3: Calculate the initial number of cats.\nThe initial number of cats was 3u.\nInitial cats = 3 * 30 = 90\n\nFinal Answer: There were 90 cats at first."
+      }
+    }
+  ]
+}

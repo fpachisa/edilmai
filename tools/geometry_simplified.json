@@ -1,0 +1,696 @@
+{
+  "curriculum": "Singapore PSLE Mathematics",
+  "topic": "Geometry",
+  "metadata": {
+    "generated_at": "2025-08-19T17:55:15.476572",
+    "generator_version": "simplified-v1.0",
+    "subject_id": "geometry",
+    "total_subtopics": 1,
+    "questions_per_subtopic": 20,
+    "singapore_moe_aligned": true,
+    "total_questions": 15,
+    "completed_at": "2025-08-19T18:04:27.611276"
+  },
+  "questions": [
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q1",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Angles in a Rectangular Desk Design",
+      "complexity": "Easy",
+      "problem_text": "A rectangular desk top ABCD is being designed. A decorative line is drawn from corner A to a point E on the side CD. Another line is drawn from B to E. Given that ∠DAE = 20° and ∠ABE = 50°, find the measure of ∠AEB.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"300\" height=\"200\" viewBox=\"0 0 120 100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"0\" y=\"0\" width=\"120\" height=\"100\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"0\" y1=\"0\" x2=\"60\" y2=\"0\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"120\" y1=\"100\" x2=\"60\" y2=\"0\" stroke=\"black\" stroke-width=\"1\"/>\n\n  <text x=\"-5\" y=\"-5\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">A</text>\n  <text x=\"125\" y=\"-5\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">B</text>\n  <text x=\"125\" y=\"105\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">C</text>\n  <text x=\"-5\" y=\"105\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">D</text>\n  <text x=\"58\" y=\"-5\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">E</text>\n\n  <path d=\"M0 10 L 10 10 L 10 0\" fill=\"none\" stroke=\"black\" stroke-width=\"0.5\"/>\n  <path d=\"M110 90 L 110 100 L 120 100\" fill=\"none\" stroke=\"black\" stroke-width=\"0.5\"/>\n\n  <path d=\"M0 10 L 10 10 L 10 0\" fill=\"none\" stroke=\"black\" stroke-width=\"0.5\"/>\n  <path d=\"M10 0 A 10 10 0 0 1 0 10\" fill=\"none\" stroke=\"black\" stroke-width=\"0.5\"/>\n\n  <path d=\"M10 90 A 10 10 0 0 0 0 100\" fill=\"none\" stroke=\"black\" stroke-width=\"0.5\"/>\n  <path d=\"M110 90 A 10 10 0 0 1 120 100\" fill=\"none\" stroke=\"black\" stroke-width=\"0.5\"/>\n  \n  <path d=\"M0 0 L 60 0\" stroke=\"black\" stroke-width=\"1\"/>\n  <path d=\"M120 100 L 60 0\" stroke=\"black\" stroke-width=\"1\"/>\n\n  <path d=\"M0 15 A 15 15 0 0 1 15 0\" fill=\"none\" stroke=\"blue\" stroke-width=\"1\"/>\n  <text x=\"15\" y=\"15\" font-family=\"Arial\" font-size=\"10\" fill=\"blue\">20°</text>\n\n  <path d=\"M115 5 L 115 15 A 15 15 0 0 0 105 15\" fill=\"none\" stroke=\"red\" stroke-width=\"1\"/>\n  <text x=\"95\" y=\"18\" font-family=\"Arial\" font-size=\"10\" fill=\"red\">50°</text>\n\n  <text x=\"0\" y=\"0\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">A</text>\n  <text x=\"120\" y=\"0\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">B</text>\n  <text x=\"120\" y=\"100\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">C</text>\n  <text x=\"0\" y=\"100\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">D</text>\n  <text x=\"60\" y=\"100\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">E</text>\n\n  <line x1=\"0\" y1=\"0\" x2=\"60\" y2=\"100\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"120\" y1=\"0\" x2=\"60\" y2=\"100\" stroke=\"black\" stroke-width=\"1\"/>\n\n  <path d=\"M10 100 A 10 10 0 0 1 0 90\" fill=\"none\" stroke=\"black\" stroke-width=\"0.5\"/>\n  <path d=\"M110 100 A 10 10 0 0 0 120 90\" fill=\"none\" stroke=\"black\" stroke-width=\"0.5\"/>\n  <path d=\"M10 0 A 10 10 0 0 0 0 10\" fill=\"none\" stroke=\"black\" stroke-width=\"0.5\"/>\n  <path d=\"M110 0 A 10 10 0 0 1 120 10\" fill=\"none\" stroke=\"black\" stroke-width=\"0.5\"/>\n\n  <path d=\"M0 80 A 20 20 0 0 1 20 100\" fill=\"none\" stroke=\"red\" stroke-width=\"1\"/>\n  <text x=\"20\" y=\"85\" font-family=\"Arial\" font-size=\"10\" fill=\"red\">20°</text>\n  \n  <path d=\"M105 0 A 15 15 0 0 0 120 15\" fill=\"none\" stroke=\"blue\" stroke-width=\"1\"/>\n  <text x=\"98\" y=\"18\" font-family=\"Arial\" font-size=\"10\" fill=\"blue\">50°</text>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "70",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student should correctly identify the angle properties of a rectangle and the sum of angles in a triangle. Steps: 1. Find angle ADE (90 degrees). 2. Find angle AED using angle sum in triangle ADE. 3. Find angle BAE using alternate interior angles (AB || DC). 4. Find angle AEB using angle sum in triangle ABE.",
+        "keywords": [
+          "rectangle",
+          "triangle",
+          "angles in a triangle",
+          "alternate interior angles",
+          "sum of angles",
+          "90 degrees"
+        ],
+        "common_misconceptions": {
+          "80": "This might come from assuming triangle ADE is isosceles or miscalculating angle ADE. Remember angles in a rectangle are 90 degrees.",
+          "60": "This could be angle AED. The problem asks for angle AEB, which requires an additional step involving triangle ABE.",
+          "90": "This indicates confusion with angles in a rectangle or not applying triangle properties correctly."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Remember that all angles in a rectangle are 90 degrees. What is the measure of angle D?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Now, consider triangle ADE. You know two of its angles. How can you find the third angle, ∠AED?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Since AB is parallel to DC, what is the relationship between ∠AED and ∠BAE? (Think about alternate interior angles). Once you find ∠BAE, you can use the sum of angles in triangle ABE to find ∠AEB."
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q2",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Angles in an Isosceles Triangle Display",
+      "complexity": "Easy",
+      "problem_text": "A decorative display features an isosceles triangle ABC, where AB = AC. The angle BAC is 70°. A straight line is drawn from B through C to point D. Find the measure of ∠ACD.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"300\" height=\"150\" viewBox=\"0 0 150 80\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"75\" y1=\"0\" x2=\"0\" y2=\"75\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"75\" y1=\"0\" x2=\"100\" y2=\"75\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"0\" y1=\"75\" x2=\"100\" y2=\"75\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"100\" y1=\"75\" x2=\"140\" y2=\"75\" stroke=\"black\" stroke-width=\"1\"/>\n\n  <text x=\"70\" y=\"-5\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">A</text>\n  <text x=\"-5\" y=\"80\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">B</text>\n  <text x=\"100\" y=\"80\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">C</text>\n  <text x=\"140\" y=\"80\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">D</text>\n\n  <path d=\"M75 10 A 10 10 0 0 0 85 15\" fill=\"none\" stroke=\"blue\" stroke-width=\"1\"/>\n  <path d=\"M75 10 A 10 10 0 0 1 65 15\" fill=\"none\" stroke=\"blue\" stroke-width=\"1\"/>\n  <text x=\"72\" y=\"18\" font-family=\"Arial\" font-size=\"10\" fill=\"blue\">70°</text>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "125",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student should correctly apply the properties of an isosceles triangle (base angles are equal) and angles on a straight line.",
+        "keywords": [
+          "isosceles triangle",
+          "angles in a triangle",
+          "angles on a straight line",
+          "base angles"
+        ],
+        "common_misconceptions": {
+          "70": "This might be if they thought ACD is the same as BAC, or simply wrote the given angle. Remember to apply the properties of the shapes.",
+          "55": "This is angle ACB. The question asks for angle ACD, which is on a straight line with angle ACB.",
+          "110": "This indicates a possible miscalculation after finding the base angles, e.g., (180-70)/2 = 55, then 180-55 = 125. Maybe 180-70-55? Always recheck calculations."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Since triangle ABC is an isosceles triangle with AB = AC, what does that tell you about its base angles, ∠ABC and ∠ACB?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you find ∠ACB, remember that BCD is a straight line. What is the sum of angles on a straight line?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Use the property of angles on a straight line to find ∠ACD. ∠ACD = 180° - ∠ACB."
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q3",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Angles in a Parallelogram Gate Frame",
+      "complexity": "Easy",
+      "problem_text": "A decorative metal gate has a frame in the shape of a parallelogram ABCD. The diagonal AC is drawn. If ∠BAC = 40° and ∠BCA = 65°, find the measure of ∠ADC.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"300\" height=\"150\" viewBox=\"0 0 120 70\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"0\" y1=\"50\" x2=\"80\" y2=\"50\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"80\" y1=\"50\" x2=\"110\" y2=\"0\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"110\" y1=\"0\" x2=\"30\" y2=\"0\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"30\" y1=\"0\" x2=\"0\" y2=\"50\" stroke=\"black\" stroke-width=\"1\"/>\n\n  <line x1=\"0\" y1=\"50\" x2=\"110\" y2=\"0\" stroke=\"black\" stroke-width=\"1\"/>\n\n  <text x=\"-5\" y=\"55\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">A</text>\n  <text x=\"80\" y=\"55\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">B</text>\n  <text x=\"115\" y=\"-5\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">C</text>\n  <text x=\"25\" y=\"-5\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">D</text>\n\n  <path d=\"M10 40 A 10 10 0 0 1 0 50 L 10 50\" fill=\"none\" stroke=\"blue\" stroke-width=\"1\"/>\n  <text x=\"10\" y=\"45\" font-family=\"Arial\" font-size=\"10\" fill=\"blue\">40°</text>\n\n  <path d=\"M100 10 A 10 10 0 0 1 110 0 L 100 0\" fill=\"none\" stroke=\"red\" stroke-width=\"1\"/>\n  <text x=\"95\" y=\"10\" font-family=\"Arial\" font-size=\"10\" fill=\"red\">65°</text>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "105",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student should first find the third angle in triangle ABC using the angle sum property, then use the property of consecutive angles in a parallelogram.",
+        "keywords": [
+          "parallelogram",
+          "angles in a triangle",
+          "consecutive angles",
+          "opposite angles"
+        ],
+        "common_misconceptions": {
+          "75": "This is angle ABC. The question asks for angle ADC, which is a consecutive angle to ABC, not necessarily equal unless it's a rectangle.",
+          "110": "This might indicate guessing the value based on other properties or misinterpreting the problem. Always calculate step-by-step.",
+          "85": "This is likely a calculation error after finding angle ABC (180 - (40+65) = 75), then 180 - 75 = 105. Check arithmetic (180 - 75 = 105)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, focus on triangle ABC. You know two of its angles. How can you find the third angle, ∠ABC?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Remember that in a parallelogram, consecutive angles (angles next to each other, like ∠ABC and ∠ADC) add up to a specific sum."
+          },
+          {
+            "step": 3,
+            "hint_text": "Find ∠ABC using the sum of angles in a triangle. Then, use the property that ∠ABC + ∠ADC = 180° to find ∠ADC."
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q4",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Angles in a Rhombus Floor Tile",
+      "complexity": "Easy",
+      "problem_text": "A decorative floor tile is shaped like a rhombus ABCD. The diagonal BD is drawn. If ∠ABD = 55°, find the measure of ∠BCD.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"300\" height=\"150\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"50\" y1=\"0\" x2=\"100\" y2=\"50\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"100\" y1=\"50\" x2=\"50\" y2=\"100\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"50\" y1=\"100\" x2=\"0\" y2=\"50\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"0\" y1=\"50\" x2=\"50\" y2=\"0\" stroke=\"black\" stroke-width=\"1\"/>\n\n  <line x1=\"100\" y1=\"50\" x2=\"0\" y2=\"50\" stroke=\"black\" stroke-width=\"1\"/>\n\n  <text x=\"47\" y=\"-5\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">A</text>\n  <text x=\"103\" y=\"50\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">B</text>\n  <text x=\"47\" y=\"108\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">C</text>\n  <text x=\"-8\" y=\"50\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">D</text>\n\n  <path d=\"M90 50 A 10 10 0 0 0 92 60\" fill=\"none\" stroke=\"blue\" stroke-width=\"1\"/>\n  <text x=\"80\" y=\"60\" font-family=\"Arial\" font-size=\"10\" fill=\"blue\">55°</text>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "70",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student should use the property that all sides of a rhombus are equal, making triangle ABD an isosceles triangle. Then use the sum of angles in a triangle to find angle DAB, and finally the property that opposite angles in a rhombus are equal.",
+        "keywords": [
+          "rhombus",
+          "isosceles triangle",
+          "angles in a triangle",
+          "opposite angles"
+        ],
+        "common_misconceptions": {
+          "110": "This might be angle ADC or ABC, which are consecutive angles to angle DAB. Remember to find DAB first and then use the opposite angle property.",
+          "55": "This is angle ABD. Remember the properties of the triangle and rhombus.",
+          "75": "Possible arithmetic error after finding angle DAB. Ensure calculations are correct."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Remember that all sides of a rhombus are equal in length. What does this tell you about triangle ABD?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Since triangle ABD is an isosceles triangle, find its third angle, ∠DAB, using the sum of angles in a triangle."
+          },
+          {
+            "step": 3,
+            "hint_text": "In a rhombus, what is the relationship between opposite angles, such as ∠DAB and ∠BCD?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q5",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Angles in a Trapezium Shelf Bracket",
+      "complexity": "Easy",
+      "problem_text": "A shelf bracket is shaped like a trapezium ABCD, where AB is parallel to DC. The diagonal DB is drawn. If ∠ABD = 40° and ∠BCD = 70°, find the measure of ∠DBC.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width=\"300\" height=\"120\" viewBox=\"0 0 100 60\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"20\" y1=\"0\" x2=\"80\" y2=\"0\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"80\" y1=\"0\" x2=\"100\" y2=\"50\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"100\" y1=\"50\" x2=\"0\" y2=\"50\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"0\" y1=\"50\" x2=\"20\" y2=\"0\" stroke=\"black\" stroke-width=\"1\"/>\n\n  <line x1=\"0\" y1=\"50\" x2=\"80\" y2=\"0\" stroke=\"black\" stroke-width=\"1\"/>\n\n  <text x=\"17\" y=\"-5\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">A</text>\n  <text x=\"80\" y=\"-5\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">B</text>\n  <text x=\"103\" y=\"55\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">C</text>\n  <text x=\"-5\" y=\"55\" font-family=\"Arial\" font-size=\"12\" fill=\"black\">D</text>\n\n  <path d=\"M70 5 A 10 10 0 0 1 80 15 L 80 5\" fill=\"none\" stroke=\"blue\" stroke-width=\"1\"/>\n  <text x=\"68\" y=\"15\" font-family=\"Arial\" font-size=\"10\" fill=\"blue\">40°</text>\n\n  <path d=\"M90 40 A 10 10 0 0 1 100 50 L 90 50\" fill=\"none\" stroke=\"red\" stroke-width=\"1\"/>\n  <text x=\"85\" y=\"40\" font-family=\"Arial\" font-size=\"10\" fill=\"red\">70°</text>\n</svg>"
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "40",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student should recognize that AB is parallel to DC in a trapezium. This means alternate interior angles are equal. Thus, angle ABD equals angle BDC. Then, use the sum of angles in triangle BCD to find angle DBC.",
+        "keywords": [
+          "trapezium",
+          "parallel lines",
+          "alternate interior angles",
+          "angles in a triangle"
+        ],
+        "common_misconceptions": {
+          "110": "This might be angle DBC if they assumed triangle DBC is isosceles (it's not given). Or a miscalculation of 180 - 70. Remember the angles add up to 180 degrees only for certain angle pairs, not always.",
+          "70": "This is angle BCD, the question asks for angle DBC. Do not confuse the given angles with the unknown.",
+          "40": "This is the correct answer. A common misconception is to confuse the property that angles on parallel lines add to 180 degrees (consecutive interior angles) with alternate interior angles. Here, ∠ABD and ∠BDC are alternate interior angles."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "In a trapezium, AB is parallel to DC. What does this tell you about the relationship between ∠ABD and ∠BDC? (Think about alternate interior angles and the transversal DB)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Now that you know ∠BDC, consider triangle BCD. You know two of its angles (∠BCD and ∠BDC). How can you find the third angle, ∠DBC?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Use the sum of angles in a triangle (180°) to find ∠DBC."
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q6",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Park Path Design",
+      "complexity": "Easy",
+      "problem_text": "A park committee is designing a new path. Part of the design forms a rectangle ABCD. Points E is on side BC. A straight path AE and another straight path DE are drawn. If angle BAE is 30 degrees and angle CDE is 20 degrees, find the size of angle AED.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "50",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Compare numerical answer.",
+        "keywords": [
+          "rectangle",
+          "angles in a rectangle",
+          "sum of angles in a triangle",
+          "angles on a straight line"
+        ],
+        "common_misconceptions": {
+          "130": "This might happen if you incorrectly assume angle AED is 180 - (angle BAE + angle CDE) or similar. Remember to find angles in the small triangles first and then use angles on a straight line.",
+          "90": "This suggests only considering properties of the rectangle without the internal triangles or the straight line."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Recall the properties of a rectangle. What is the measure of each corner angle?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Focus on triangle ABE first. Use the sum of angles in a triangle (180°) to find angle AEB. Then do the same for triangle CDE to find angle CED."
+          },
+          {
+            "step": 3,
+            "hint_text": "Angles AEB, AED, and CED lie on a straight line (BC is a straight line, but here, A,E,D are not collinear. The angles at point E are what we're interested in, and BC is a straight line segment, meaning B-E-C is a straight line). The sum of angles on a straight line is 180°. Use your calculated angles to find angle AED."
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q7",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Staircase Railing Angle",
+      "complexity": "Easy",
+      "problem_text": "A carpenter is designing a new staircase railing in the shape of a parallelogram ABCD. The side AB is extended to a point E, forming a straight line ABE. If angle CBE is 110 degrees, what is the measure of angle ADC?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "70",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Compare numerical answer.",
+        "keywords": [
+          "parallelogram",
+          "opposite angles",
+          "angles on a straight line",
+          "interior angles"
+        ],
+        "common_misconceptions": {
+          "110": "You might have confused adjacent angles with opposite angles, or not correctly applied the straight line property. Remember, angle ADC is opposite to angle ABC, not angle CBE.",
+          "180": "This might come from thinking about the sum of angles in a parallelogram or total angle in a circle, which isn't relevant here for finding one specific angle."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Angles CBE and ABC are on a straight line. What is the sum of angles on a straight line?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you find angle ABC, remember the properties of a parallelogram. How are opposite angles related in a parallelogram?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Angle ABC and angle ADC are opposite angles in the parallelogram."
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q8",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Kite String Pattern",
+      "complexity": "Medium",
+      "problem_text": "A kite maker is adding decorative strings to a rhombus-shaped kite, ABCD. A string CE is added such that E is a point on AD. If triangle CDE is an isosceles triangle with CD = CE, and angle BCD is 110 degrees, find the measure of angle AEC.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "110",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Compare numerical answer.",
+        "keywords": [
+          "rhombus",
+          "isosceles triangle",
+          "angles on a straight line",
+          "opposite angles",
+          "adjacent angles",
+          "base angles"
+        ],
+        "common_misconceptions": {
+          "70": "You might have correctly found angle CDE but then incorrectly assumed angle AEC is the same, or confused it with angles within the rhombus.",
+          "35": "This could arise if you thought angle DEC was part of an angle bisection or a different type of triangle property."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Recall the properties of a rhombus. How are adjacent angles related? How are opposite angles related? Use angle BCD to find angle ADC."
+          },
+          {
+            "step": 2,
+            "hint_text": "Now focus on triangle CDE. Since CD = CE, what type of triangle is it? What does this mean for its base angles?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Angle AEC and angle DEC form angles on a straight line. Use the angle you found in the isosceles triangle to determine angle AEC."
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q9",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Garden Path Layout",
+      "complexity": "Medium",
+      "problem_text": "A landscape architect is designing a garden path in the shape of a trapezium ABCD, where AB is parallel to DC. A diagonal path AC is laid. If angle BAC is 40 degrees, angle ACD is 30 degrees, and angle BCD is 80 degrees, what is the measure of angle ABC?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "90",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Compare numerical answer.",
+        "keywords": [
+          "trapezium",
+          "parallel lines",
+          "alternate interior angles",
+          "sum of angles in a triangle"
+        ],
+        "common_misconceptions": {
+          "70": "This might come from incorrectly using interior angles or assuming something about angles that are not related.",
+          "100": "If you try to sum angles from different parts of the trapezium incorrectly, this error might occur."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Consider angle BCD. It is made up of two smaller angles: angle BCA and angle ACD. You are given angle BCD and angle ACD. Can you find angle BCA?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Now focus on triangle ABC. You have found angle BCA, and you are given angle BAC. What is the sum of angles in a triangle?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Use the sum of angles in triangle ABC to find angle ABC."
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q10",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Building Facade Design",
+      "complexity": "Medium",
+      "problem_text": "A building's facade features a decorative pattern made from a square PQRS and an equilateral triangle QRT attached to one of its sides inside the square. Find the measure of angle PST.",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "15",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Compare numerical answer.",
+        "keywords": [
+          "square",
+          "equilateral triangle",
+          "isosceles triangle",
+          "angles in a square",
+          "angles in a triangle"
+        ],
+        "common_misconceptions": {
+          "30": "You might have found angle SRT correctly but then assumed it directly related to angle PST, or missed the isosceles triangle PST.",
+          "45": "This could be from assuming triangle PST is a right-angled isosceles triangle, which it is not."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Start with the known properties of a square and an equilateral triangle. What are the side lengths and angle measures of square PQRS and equilateral triangle QRT?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Since QRT is an equilateral triangle inside the square, consider the lengths of the sides. What can you say about the lengths of SR, RT, and ST? This will help you identify the type of triangle SRT."
+          },
+          {
+            "step": 3,
+            "hint_text": "Find angle SRT by subtracting angle TRQ from angle SRQ. Then, use the properties of triangle SRT to find angle TSR. Finally, subtract angle TSR from angle PSR (angle of the square) to get angle PST."
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q16",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Rhombus and Equilateral Tile Design",
+      "complexity": "Hard",
+      "problem_text": "A decorative tile has a design of a rhombus ABCD. Point E is inside the rhombus such that triangle ABE is an equilateral triangle. Given that angle ADC = 100°, find angle BCE.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><!-- Rhombus ABCD --><polygon points='100,150 200,50 300,150 200,250' fill='lightblue' stroke='black' stroke-width='2'/><text x='95' y='155' font-family='Arial' font-size='16'>A</text><text x='195' y='45' font-family='Arial' font-size='16'>B</text><text x='305' y='155' font-family='Arial' font-size='16'>C</text><text x='195' y='265' font-family='Arial' font-size='16'>D</text><!-- Equilateral Triangle ABE --><polygon points='100,150 200,50 150,110' fill='lightgreen' stroke='black' stroke-width='2'/><text x='145' y='115' font-family='Arial' font-size='16'>E</text><!-- Label for angle ADC --><path d='M200,230 A20,20 0 0 0 220,225' fill='none' stroke='grey' stroke-width='1'/><text x='200' y='235' font-family='Arial' font-size='12'>100°</text></svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "70",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student's answer should be 70. Award full marks for correct answer. Partial marks for identifying properties of rhombus (equal sides, opposite angles) and equilateral triangle (equal sides, 60° angles), and correctly deducing the isosceles triangle BCE and its angles.",
+        "keywords": [
+          "rhombus",
+          "equilateral triangle",
+          "isosceles triangle",
+          "angle sum of triangle",
+          "angles in a rhombus"
+        ],
+        "common_misconceptions": {
+          "140": "This likely comes from adding angle ABC (100°) and a miscalculated angle CBE. Remember to find angle CBE by subtracting angle ABE from angle ABC, and then use that in triangle BCE.",
+          "60": "Confusing angle BCE with angle ABE or another angle of the equilateral triangle. BCE is part of the rhombus's angle.",
+          "50": "Possible error in calculating angles of isosceles triangle BCE or incorrect base angle assumption."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, use the properties of a rhombus to find all its interior angles, especially angle ABC and angle BCD. Remember that opposite angles are equal and consecutive angles sum to 180°."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, use the properties of an equilateral triangle ABE. What are the lengths of its sides, and what are its interior angles? How does AB (side of rhombus) relate to BE (side of equilateral triangle) and BC (side of rhombus)?"
+          },
+          {
+            "step": 3,
+            "hint_text": "You should be able to deduce that triangle BCE is an isosceles triangle. Find angle CBE by subtracting angle ABE from angle ABC. Then, use the angle sum property of an isosceles triangle to find angle BCE."
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q17",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Square and Equilateral Structure",
+      "complexity": "Hard",
+      "problem_text": "A building block toy consists of a square ABCD and an equilateral triangle ADE, where the equilateral triangle is built on the side AD and is outside the square. Find angle BCE.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><!-- Square ABCD --><polygon points='100,200 200,200 200,100 100,100' fill='lightblue' stroke='black' stroke-width='2'/><text x='95' y='215' font-family='Arial' font-size='16'>A</text><text x='195' y='215' font-family='Arial' font-size='16'>B</text><text x='205' y='95' font-family='Arial' font-size='16'>C</text><text x='95' y='95' font-family='Arial' font-size='16'>D</text><!-- Equilateral Triangle ADE --><polygon points='100,100 200,100 150,20' fill='lightgreen' stroke='black' stroke-width='2'/><text x='145' y='15' font-family='Arial' font-size='16'>E</text></svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "15",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student's answer should be 15. Award full marks for correct answer. Partial marks for correctly identifying and using properties of square (90° angles, equal sides) and equilateral triangle (60° angles, equal sides), and deducing the two isosceles triangles (ABE and CDE) and their angles.",
+        "keywords": [
+          "square",
+          "equilateral triangle",
+          "isosceles triangle",
+          "angle sum of triangle",
+          "angles on a straight line"
+        ],
+        "common_misconceptions": {
+          "30": "Likely confused angle BCE with angle DEC or angle ABE. Ensure to find angle DCE first.",
+          "75": "Incorrectly calculated angles in isosceles triangles or missed a step in combining angles.",
+          "90": "Assuming BCE is 90 degrees due to it being within the square, but it's part of a composite figure."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Start by finding the angles around vertices A and D. What is angle DAB (from the square) and angle DAE (from the equilateral triangle)? Add them to find angle BAE. Do the same for angle ADC and angle CDE."
+          },
+          {
+            "step": 2,
+            "hint_text": "Since AD is a side of both the square and the equilateral triangle, what does this tell you about the lengths of AB, AE, CD, and DE? Use this to identify two isosceles triangles: triangle ABE and triangle CDE."
+          },
+          {
+            "step": 3,
+            "hint_text": "Calculate the base angles of triangle ABE using angle BAE. Similarly, calculate the base angles of triangle CDE using angle CDE. Finally, use angle BCD (from the square) and angle DCE to find angle BCE."
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q18",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Parallelogram Robot Arm",
+      "complexity": "Hard",
+      "problem_text": "A blueprint for a mechanical part shows a parallelogram ABCD. Point E is on the side AD such that triangle BCE is an isosceles triangle with BC = BE. Given that angle ABC = 108°, find angle DEC.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><!-- Parallelogram ABCD --><polygon points='100,100 250,100 200,250 50,250' fill='lightblue' stroke='black' stroke-width='2'/><text x='95' y='95' font-family='Arial' font-size='16'>A</text><text x='255' y='95' font-family='Arial' font-size='16'>B</text><text x='205' y='260' font-family='Arial' font-size='16'>C</text><text x='45' y='260' font-family='Arial' font-size='16'>D</text><!-- Point E on AD --><circle cx='75' cy='175' r='3' fill='red'/><text x='70' y='165' font-family='Arial' font-size='16'>E</text><!-- Line segment BE --><line x1='250' y1='100' x2='75' y2='175' stroke='red' stroke-width='2'/><!-- Label angle ABC --> <path d='M240,100 A20,20 0 0 0 230,120' fill='none' stroke='grey' stroke-width='1'/><text x='230' y='110' font-family='Arial' font-size='12'>108°</text></svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "72",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student's answer should be 72. Award full marks for correct answer. Partial marks for correctly applying parallelogram properties (opposite angles, interior angles, parallel sides) and isosceles triangle properties, and using alternate interior angles correctly.",
+        "keywords": [
+          "parallelogram",
+          "isosceles triangle",
+          "alternate interior angles",
+          "angle sum of triangle",
+          "angles in a quadrilateral"
+        ],
+        "common_misconceptions": {
+          "36": "Calculated angle EBC but incorrectly used it as angle DEC, or made an error in the final step. Angle DEC is an alternate interior angle.",
+          "108": "Assuming angle DEC is the same as angle ADC or ABC directly, without considering the effects of point E and triangle BCE.",
+          "54": "Correctly identified angle ABE or EBC, but did not use the alternate interior angle property for the final step."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, use the properties of a parallelogram. What are the relationships between adjacent angles (like ABC and DAB) and opposite sides (AD and BC)?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Since AD is parallel to BC, and BE is a transversal, what is the relationship between angle AEB and angle EBC (alternate interior angles)? How does this help you with the isosceles triangle BCE?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Using the properties from the previous steps, you should be able to find the values of angle ABE, angle EBC, angle BCE, and angle BEC. Finally, use the property that AD is parallel to BC to find angle DEC. (Hint: angle DEC is an alternate interior angle to which angle?)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q19",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Kite with Three Equal Sides",
+      "complexity": "Hard",
+      "problem_text": "A child is designing a kite in the shape of a quadrilateral ABCD, where AB is parallel to DC. Given that AB = BC = CD, and angle ABC = 100°. Find angle ADC.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><!-- Trapezium ABCD with AB || DC --><polygon points='100,100 250,100 300,250 50,250' fill='lightpink' stroke='black' stroke-width='2'/><text x='95' y='95' font-family='Arial' font-size='16'>A</text><text x='255' y='95' font-family='Arial' font-size='16'>B</text><text x='305' y='260' font-family='Arial' font-size='16'>C</text><text x='45' y='260' font-family='Arial' font-size='16'>D</text><!-- Diagonal AC --><line x1='100' y1='100' x2='300' y2='250' stroke='darkgrey' stroke-dasharray='5,5' stroke-width='1'/><!-- Diagonal BD --><line x1='250' y1='100' x2='50' y2='250' stroke='darkgrey' stroke-dasharray='5,5' stroke-width='1'/><!-- Label angle ABC --><path d='M240,100 A20,20 0 0 0 230,120' fill='none' stroke='grey' stroke-width='1'/><text x='230' y='110' font-family='Arial' font-size='12'>100°</text></svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "100",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student's answer should be 100. Award full marks for correct answer. Partial marks for correctly identifying and using properties of isosceles triangles (ABC, BCD, ACD) and parallel lines (alternate interior angles, interior angles).",
+        "keywords": [
+          "trapezium",
+          "isosceles triangle",
+          "alternate interior angles",
+          "angle sum of triangle",
+          "parallel lines"
+        ],
+        "common_misconceptions": {
+          "80": "Incorrectly assumed that ADC is supplementary to ABC, which is true only if AD || BC, but the problem states AB || DC.",
+          "50": "May have only found angle CDB or angle ADB and assumed it's the full angle.",
+          "40": "Confused angle ADC with a part of it, like angle ACD or CAD."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Since AB is parallel to DC, what is the relationship between angle ABC and angle BCD (interior angles)? Use this to find angle BCD."
+          },
+          {
+            "step": 2,
+            "hint_text": "Use the given information that AB = BC = CD to identify isosceles triangles within the quadrilateral. Specifically, consider triangle ABC and triangle BCD. Find the base angles for these triangles."
+          },
+          {
+            "step": 3,
+            "hint_text": "Use alternate interior angles (because AB || DC) to find angle ABD from angle CDB. Then, find angle BAC and angle BCA from triangle ABC. From angle BCD, subtract angle BCA to find angle ACD. Finally, consider triangle ACD to find angle ADC, noting that triangle ACD might also be isosceles."
+          }
+        ]
+      }
+    },
+    {
+      "id": "GEOMETRY-FINDING-UNKNOWN-ANGLES-ADVANCED-Q20",
+      "sub_topic": "8.1 Finding Unknown Angles - Advanced Problems",
+      "title": "Road Network Design",
+      "complexity": "Hard",
+      "problem_text": "A city planner is designing a road intersection. ABCE is a parallelogram. CD is a straight road. Given that angle EAB = 70°, angle BCD = 130°, and angle EDC = 40°. Find angle BED.",
+      "asset": {
+        "image_url": null,
+        "svg_code": "<svg width='400' height='300' viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><!-- Parallelogram ABCE --><polygon points='100,100 250,100 200,200 50,200' fill='lightyellow' stroke='black' stroke-width='2'/><text x='95' y='95' font-family='Arial' font-size='16'>A</text><text x='255' y='95' font-family='Arial' font-size='16'>B</text><text x='205' y='210' font-family='Arial' font-size='16'>C</text><text x='45' y='210' font-family='Arial' font-size='16'>E</text><!-- Straight line CD extending --><line x1='200' y1='200' x2='350' y2='200' stroke='black' stroke-width='2'/><text x='355' y='205' font-family='Arial' font-size='16'>D</text><!-- Angle labels --><path d='M100,105 A20,20 0 0 1 120,100' fill='none' stroke='grey' stroke-width='1'/><text x='110' y='105' font-family='Arial' font-size='12'>70°</text><path d='M200,195 A20,20 0 0 0 215,190' fill='none' stroke='grey' stroke-width='1'/><text x='205' y='190' font-family='Arial' font-size='12'>130°</text><path d='M350,195 A20,20 0 0 0 335,190' fill='none' stroke='grey' stroke-width='1'/><text x='330' y='190' font-family='Arial' font-size='12'>40°</text></svg>"
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "30",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student's answer should be 30. Award full marks for correct answer. Partial marks for correctly applying parallelogram properties (opposite angles, parallel sides), angles on a straight line, and angle sum of triangle.",
+        "keywords": [
+          "parallelogram",
+          "angles on a straight line",
+          "angle sum of triangle",
+          "interior angles",
+          "alternate angles"
+        ],
+        "common_misconceptions": {
+          "80": "May have correctly found angle CED but assumed it was angle BED.",
+          "60": "Incorrectly calculated angle ECD or other angles in triangle ECD.",
+          "110": "Confused angle BED with angle AEC (opposite angle in parallelogram) or other larger angles."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, use the properties of parallelogram ABCE. What is the relationship between angle EAB and angle BCE? What are the other angles of the parallelogram?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, use the fact that CD is a straight road (line). What is the relationship between angle BCD and angle BCE + angle ECD? Use angle BCD and angle BCE to find angle ECD."
+          },
+          {
+            "step": 3,
+            "hint_text": "Now you have two angles in triangle ECD (angle ECD and angle EDC). Find the third angle, angle CED. Finally, consider the relationship between angle AEC (an angle in the parallelogram) and angle CED to find angle AED. What is angle BED?"
+          }
+        ]
+      }
+    }
+  ]
+}

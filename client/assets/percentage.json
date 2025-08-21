@@ -1,0 +1,2638 @@
+{
+  "curriculum": "Singapore PSLE Mathematics",
+  "topic": "Percentage",
+  "metadata": {
+    "generated_at": "2025-08-19T15:17:56.013594",
+    "generator_version": "simplified-v1.0",
+    "subject_id": "percentage",
+    "total_subtopics": 3,
+    "questions_per_subtopic": 20,
+    "singapore_moe_aligned": true,
+    "total_questions": 55,
+    "completed_at": "2025-08-19T15:26:51.412503"
+  },
+  "questions": [
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q1",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Apple Basket Mystery",
+      "complexity": "Easy",
+      "problem_text": "In a basket of apples, 7 apples are red. These red apples make up 35% of all the apples in the basket. How many apples are there in the basket altogether?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "20",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the final numerical answer is 20.",
+        "keywords": [
+          "percentage",
+          "whole",
+          "part",
+          "unit method",
+          "fraction",
+          "decimal"
+        ],
+        "common_misconceptions": {
+          "24.5": "This answer comes from multiplying 7 by 35%, which is incorrect. 35% is the proportion, not a multiplier for the whole amount directly.",
+          "2.45": "This suggests dividing 7 by 35 then multiplying by 100, but using 0.35 incorrectly or dividing 7 by 3.5. Ensure you divide the part by the percentage (as a decimal or fraction)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Think about what 35% represents in terms of the number of apples. If 7 apples represent 35% of the total, how can you find what 1% represents?"
+          },
+          {
+            "step": 2,
+            "hint_text": "To find 1% of the total apples, divide the number of red apples (the part) by its percentage. So, 1% = 7 ÷ 35."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you know what 1% of the apples is, multiply that value by 100 to find 100% (the total number of apples). Alternatively, you can directly calculate 7 ÷ 0.35."
+          }
+        ],
+        "full_solution": "Let the total number of apples be 'A'.\nWe are given that 35% of the total apples is 7.\nThis can be written as: 35% of A = 7\nConvert 35% to a decimal: 0.35\nSo, 0.35 × A = 7\nTo find A, divide 7 by 0.35:\nA = 7 ÷ 0.35\nA = 20\n\nAlternatively, using the unit method:\n35% → 7 apples\n1% → 7 ÷ 35 = 0.2 apples\n100% → 0.2 × 100 = 20 apples\n\nThere are 20 apples in the basket altogether."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q2",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Spending on a Toy Car",
+      "complexity": "Easy",
+      "problem_text": "Sarah had $150 saved. She spent 20% of her savings on a toy car. How much money did Sarah spend on the toy car?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "30",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the final numerical answer is 30.",
+        "keywords": [
+          "percentage",
+          "whole",
+          "part",
+          "savings",
+          "money",
+          "decimal",
+          "fraction"
+        ],
+        "common_misconceptions": {
+          "7.5": "This could come from dividing 150 by 20. Remember, you need to find a part of the whole, not divide the whole by the percentage value.",
+          "120": "This suggests subtracting 20 from 150, or finding 80% instead of 20%. The question asks for the amount spent (20%), not the amount remaining."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The total amount Sarah saved is $150. You need to find a 'part' of this total, which is 20%."
+          },
+          {
+            "step": 2,
+            "hint_text": "Remember that 20% can be written as a fraction (20/100) or a decimal (0.20)."
+          },
+          {
+            "step": 3,
+            "hint_text": "To find 20% of $150, you can multiply $150 by 20/100 or by 0.20."
+          }
+        ],
+        "full_solution": "Total savings = $150\nPercentage spent = 20%\n\nAmount spent = 20% of $150\nAmount spent = (20/100) × 150\nAmount spent = 0.20 × 150\nAmount spent = 30\n\nSarah spent $30 on the toy car."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q3",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Class Survey: Walking to School",
+      "complexity": "Easy",
+      "problem_text": "There are 40 students in a Primary 6 class. 14 of them walk to school every day. What percentage of the students walk to school?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "35%",
+        "alternative_answers": [
+          "35"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the final numerical answer is 35. Accept '35%' or '35'.",
+        "keywords": [
+          "percentage",
+          "whole",
+          "part",
+          "ratio",
+          "fraction",
+          "decimal",
+          "convert"
+        ],
+        "common_misconceptions": {
+          "0.35": "This is the decimal equivalent, not the percentage. Remember to multiply by 100 to convert a decimal or fraction into a percentage.",
+          "2.857": "This might come from dividing 40 by 14 instead of 14 by 40. Always divide the 'part' by the 'whole' when finding a percentage."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You need to express the number of students who walk to school (the 'part') as a fraction of the total number of students (the 'whole')."
+          },
+          {
+            "step": 2,
+            "hint_text": "Form a fraction: (number of students who walk) / (total number of students)."
+          },
+          {
+            "step": 3,
+            "hint_text": "To convert a fraction or decimal into a percentage, multiply it by 100%."
+          }
+        ],
+        "full_solution": "Total number of students = 40\nNumber of students who walk to school = 14\n\nTo find the percentage, we set up a fraction and multiply by 100%:\nPercentage = (Part / Whole) × 100%\nPercentage = (14 / 40) × 100%\nPercentage = (7 / 20) × 100%\nPercentage = 0.35 × 100%\nPercentage = 35%\n\n35% of the students walk to school."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q4",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Library Book Collection",
+      "complexity": "Easy",
+      "problem_text": "In the school library, 180 books are non-fiction books. These non-fiction books make up 60% of the total number of books in the library. How many books are there in the library altogether?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "300",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the final numerical answer is 300.",
+        "keywords": [
+          "percentage",
+          "whole",
+          "part",
+          "library",
+          "books",
+          "unit method",
+          "decimal"
+        ],
+        "common_misconceptions": {
+          "108": "This result comes from multiplying 180 by 60% (0.60), which incorrectly assumes 180 is the total. Remember 180 is only a part of the total.",
+          "30": "This suggests dividing 180 by 60. You need to divide the part by the percentage (as a decimal or fraction), then multiply by 100 if using 1% unit."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The 180 non-fiction books represent 60% of the *total* books. If 60% is 180 books, can you find what 1% is?"
+          },
+          {
+            "step": 2,
+            "hint_text": "To find 1% of the total books, divide the number of non-fiction books (the part) by its percentage. So, 1% = 180 ÷ 60."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you know what 1% of the books is, multiply that value by 100 to find 100% (the total number of books). Alternatively, divide 180 by 0.60."
+          }
+        ],
+        "full_solution": "Let the total number of books in the library be 'B'.\nWe are given that 60% of the total books is 180.\nThis can be written as: 60% of B = 180\nConvert 60% to a decimal: 0.60\nSo, 0.60 × B = 180\nTo find B, divide 180 by 0.60:\nB = 180 ÷ 0.60\nB = 300\n\nAlternatively, using the unit method:\n60% → 180 books\n1% → 180 ÷ 60 = 3 books\n100% → 3 × 100 = 300 books\n\nThere are 300 books in the library altogether."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q5",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Basketball Team Points",
+      "complexity": "Easy",
+      "problem_text": "In a basketball game, the Mighty Eagles team scored a total of 80 points. John contributed 25% of the team's total points. How many points did John score?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "20",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the final numerical answer is 20.",
+        "keywords": [
+          "percentage",
+          "whole",
+          "part",
+          "points",
+          "basketball",
+          "fraction",
+          "decimal"
+        ],
+        "common_misconceptions": {
+          "3.2": "This results from dividing 80 by 25. Remember to convert the percentage to a decimal or fraction before calculation, and multiply, not divide.",
+          "60": "This suggests subtracting 20 from 80, or finding 75% (the remaining points) instead of 25% (John's points). Read the question carefully to find out what is being asked."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The total points scored by the team is 80. You need to find a 'part' of this total, which is 25%."
+          },
+          {
+            "step": 2,
+            "hint_text": "Remember that 25% can be written as a fraction (25/100 or 1/4) or a decimal (0.25)."
+          },
+          {
+            "step": 3,
+            "hint_text": "To find 25% of 80, you can multiply 80 by 25/100 or by 0.25."
+          }
+        ],
+        "full_solution": "Total team points = 80\nJohn's contribution = 25%\n\nPoints scored by John = 25% of 80\nPoints scored by John = (25/100) × 80\nPoints scored by John = (1/4) × 80\nPoints scored by John = 20\n\nJohn scored 20 points."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q6",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Discount on a Toy Car",
+      "complexity": "Easy",
+      "problem_text": "A remote-control toy car originally costs $60. During a sale, there is a 20% discount on the toy car. How much is the discount amount?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "12",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculates 20% of $60.",
+        "keywords": [
+          "percentage",
+          "discount",
+          "part",
+          "whole",
+          "amount"
+        ],
+        "common_misconceptions": {
+          "48": "This is the discounted price, not the discount amount. The question asks for 'how much is the discount amount', which is the reduction from the original price.",
+          "20": "This is the percentage, not the dollar amount. Remember to convert the percentage into a value in dollars."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To find a percentage of a whole, you can express the percentage as a fraction (e.g., 20% = 20/100) or a decimal (e.g., 20% = 0.20)."
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you have the percentage in fraction or decimal form, multiply it by the original cost of the toy car."
+          },
+          {
+            "step": 3,
+            "hint_text": "Calculate 20% of $60. This will give you the discount amount."
+          }
+        ],
+        "full_solution": "The original cost of the toy car is $60.\nThe discount is 20%.\nDiscount amount = 20% of $60\n= (20/100) * $60\n= 0.20 * $60\n= $12\nThe discount amount is $12."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q7",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Students at the Art Club",
+      "complexity": "Easy",
+      "problem_text": "There are 32 students in the Art Club. 12 of them are boys. What percentage of the students in the Art Club are boys?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "37.5",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculates the ratio of boys to total students and expresses it as a percentage.",
+        "keywords": [
+          "percentage",
+          "part",
+          "whole",
+          "ratio"
+        ],
+        "common_misconceptions": {
+          "0.375": "This is the decimal equivalent, not the percentage. Remember to multiply by 100 to convert to a percentage.",
+          "2.66": "This indicates dividing the total number of students by the number of boys, which is incorrect. The part should be divided by the whole.",
+          "20": "This indicates subtracting the number of boys from the total, which is incorrect. The question asks for percentage."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To find the percentage, you need to set up a fraction first. The number of boys (the part) should be the numerator, and the total number of students (the whole) should be the denominator."
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you have the fraction, multiply it by 100% to convert it into a percentage."
+          },
+          {
+            "step": 3,
+            "hint_text": "Calculate (Number of boys / Total students) x 100%."
+          }
+        ],
+        "full_solution": "Total students in Art Club = 32\nNumber of boys = 12\nPercentage of boys = (Number of boys / Total students) * 100%\n= (12 / 32) * 100%\n= (3 / 8) * 100%\n= 0.375 * 100%\n= 37.5%\n37.5% of the students in the Art Club are boys."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q8",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Stamps in a Collection",
+      "complexity": "Medium",
+      "problem_text": "Ryan has a stamp collection. He gave away 40% of his stamps to his friend. If he gave away 160 stamps, how many stamps did Ryan have at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "400",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student uses the given part and its percentage to find the whole (original number of stamps).",
+        "keywords": [
+          "percentage",
+          "part",
+          "whole",
+          "original",
+          "total"
+        ],
+        "common_misconceptions": {
+          "64": "This is 40% of 160, not the original number. The 160 stamps represent the 40%, not the total.",
+          "266.67": "This might come from calculating 160 divided by 60% (100%-40%), assuming 160 is the remaining stamps. The problem states 160 is the amount given away (40%).",
+          "40": "This is the percentage given, not the number of stamps. Remember to find the value of 100%."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You are given that 40% of Ryan's stamps is equal to 160 stamps. Think about what 1% of his stamps would be."
+          },
+          {
+            "step": 2,
+            "hint_text": "If 40% is 160 stamps, you can find the value of 1% by dividing 160 by 40."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you know the value of 1% of his stamps, you can find the total number of stamps (which is 100%) by multiplying that value by 100."
+          }
+        ],
+        "full_solution": "40% of Ryan's stamps = 160 stamps\nTo find 1% of Ryan's stamps:\n1% = 160 stamps / 40\n1% = 4 stamps\nTo find the total number of stamps (100%):\n100% = 4 stamps/%\n * 100\n100% = 400 stamps\nRyan had 400 stamps at first."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q9",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Fruits in a Grocery Store",
+      "complexity": "Medium",
+      "problem_text": "A grocery store had 300 kg of fruits. 40% of the fruits were apples, and the rest were oranges. 25% of the oranges were sold. How many kilograms of oranges were sold?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "45",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculates the amount of oranges first, and then finds 25% of that amount.",
+        "keywords": [
+          "percentage",
+          "whole",
+          "part",
+          "remainder",
+          "multi-step"
+        ],
+        "common_misconceptions": {
+          "30": "This is 25% of the apples (if calculated 40% of 300, then 25% of that). The question asks for oranges.",
+          "75": "This is 25% of the total fruits, not just the oranges. You need to find the amount of oranges first.",
+          "180": "This is the total amount of oranges, not the amount sold. Remember to find 25% of the oranges."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out what percentage of the fruits are oranges. If 40% are apples, then the rest (100% - 40%) are oranges."
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, calculate the actual weight (in kg) of oranges. This will be the percentage of oranges you found in Step 1, applied to the total 300 kg of fruits."
+          },
+          {
+            "step": 3,
+            "hint_text": "Finally, calculate 25% of the weight of oranges you found in Step 2. This will be the amount of oranges sold."
+          }
+        ],
+        "full_solution": "Total fruits = 300 kg\nPercentage of apples = 40%\nPercentage of oranges = 100% - 40% = 60%\nAmount of oranges = 60% of 300 kg\n= (60/100) * 300 kg\n= 0.6 * 300 kg\n= 180 kg\n\nPercentage of oranges sold = 25%\nAmount of oranges sold = 25% of 180 kg\n= (25/100) * 180 kg\n= 0.25 * 180 kg\n= 45 kg\n45 kg of oranges were sold."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q10",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Mr. Tan's Monthly Salary",
+      "complexity": "Medium",
+      "problem_text": "Mr. Tan spends 65% of his monthly salary and saves the rest. If he saves $700 each month, what is his monthly salary? How much does he spend each month?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "Monthly Salary: 2000, Spending: 1300",
+        "alternative_answers": [],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculates the percentage saved, then uses it to find the total monthly salary (the whole). Finally, check if the student calculates the amount spent.",
+        "keywords": [
+          "percentage",
+          "whole",
+          "part",
+          "salary",
+          "savings",
+          "spending"
+        ],
+        "common_misconceptions": {
+          "Monthly Salary: 1076.92, Spending: 700": "This assumes 700 is 65% of his salary, which is incorrect. 700 is the amount saved, not spent.",
+          "Monthly Salary: 700, Spending: 455": "This treats 700 as the total salary, which is wrong. 700 is only the savings part.",
+          "Monthly Salary: 2000, Spending: 700": "The monthly salary is correct, but the spending calculation is incorrect. Spending is 65% of the total salary, not the savings."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, determine what percentage of his salary Mr. Tan saves. If he spends 65%, then the rest (100% - 65%) is saved."
+          },
+          {
+            "step": 2,
+            "hint_text": "You know the amount he saves ($700) and the percentage he saves. Use this information to find his total monthly salary (100%)."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have his total monthly salary, you can find the amount he spends each month by calculating 65% of his total salary."
+          }
+        ],
+        "full_solution": "Mr. Tan spends 65% of his monthly salary.\nThe rest is saved, so the percentage saved is: 100% - 65% = 35%\nHe saves $700 each month.\nSo, 35% of his salary = $700.\n\nTo find 1% of his salary:\n1% = $700 / 35\n1% = $20\n\nTo find his total monthly salary (100%):\nMonthly Salary = $20 * 100\nMonthly Salary = $2000\n\nAmount he spends each month:\nSpending = 65% of $2000\nSpending = (65/100) * $2000\nSpending = 0.65 * $2000\nSpending = $1300\n\nHis monthly salary is $2000 and he spends $1300 each month."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q11",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "School Library Books",
+      "complexity": "Medium",
+      "problem_text": "A school library has 700 fiction books. If fiction books make up 35% of all books in the library, what is the total number of books in the library?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "2000",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identified that 35% corresponds to 700 books and then calculated 100%.",
+        "keywords": [
+          "percentage",
+          "whole",
+          "part",
+          "library",
+          "books",
+          "total"
+        ],
+        "common_misconceptions": {
+          "24500": "This occurs if the student incorrectly multiplies 700 by 35, perhaps thinking 35% means 'times 35'.",
+          "245": "This happens if the student calculates 35% of 700, which is finding a part, not the whole.",
+          "20": "This is likely the result of calculating 1% without finding the 100%."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Understand what the given percentage (35%) represents. It represents the 700 fiction books."
+          },
+          {
+            "step": 2,
+            "hint_text": "If 35% of the total books is 700, how can you find out how many books represent 1%?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you know what 1% is, you can find the total number of books by calculating 100%."
+          }
+        ],
+        "full_solution": "Let the total number of books be 'T'.\n35% of T = 700\n0.35 * T = 700\nT = 700 / 0.35\nT = 2000\n\nAlternatively, using the unitary method:\n35% --> 700 books\n1% --> 700 / 35 = 20 books\n100% --> 20 * 100 = 2000 books\n\nTotal number of books in the library is 2000."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q12",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Laptop Discount Calculation",
+      "complexity": "Medium",
+      "problem_text": "A laptop costs $950. During a sale, it is given a 15% discount. How much is the discount amount in dollars?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "142.50",
+        "alternative_answers": [
+          "142.5"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Verify that the student correctly calculates 15% of the original price, ensuring they provide the discount amount and not the final price.",
+        "keywords": [
+          "percentage",
+          "discount",
+          "amount",
+          "part",
+          "whole",
+          "cost",
+          "sale"
+        ],
+        "common_misconceptions": {
+          "807.50": "This is the final price after the discount, not the discount amount itself. The question asks for 'how much is the discount amount'.",
+          "15": "This is the percentage value, not the dollar amount.",
+          "14.25": "A common error is a decimal point misplacement, perhaps by dividing by 1000 instead of 100."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The question asks for the 'discount amount', not the price after discount. What percentage of the original price is the discount?"
+          },
+          {
+            "step": 2,
+            "hint_text": "To find 15% of $950, you can express 15% as a fraction (15/100) or a decimal (0.15)."
+          },
+          {
+            "step": 3,
+            "hint_text": "Multiply the original price by the percentage (in fraction or decimal form) to get the discount amount."
+          }
+        ],
+        "full_solution": "Original price = $950\nDiscount percentage = 15%\n\nDiscount amount = 15% of $950\n= (15/100) * 950\n= 0.15 * 950\n= $142.50\n\nThe discount amount is $142.50."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q13",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Fruit Stall Inventory",
+      "complexity": "Medium",
+      "problem_text": "At a fruit stall, there are 150 apples and 90 oranges. What percentage of the fruits are apples?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "62.5",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Confirm the student first calculated the total number of fruits, then set up the correct fraction (apples/total) and converted it to a percentage.",
+        "keywords": [
+          "percentage",
+          "part",
+          "whole",
+          "ratio",
+          "apples",
+          "oranges",
+          "fruits",
+          "total"
+        ],
+        "common_misconceptions": {
+          "37.5": "This is the percentage of oranges, not apples. The question specifically asks for the percentage of apples.",
+          "150": "This is the number of apples, not the percentage.",
+          "62": "This indicates an incomplete or rounded calculation (e.g., 150/240 * 100 = 62.5, but rounded down)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the total number of fruits at the stall. This will be your 'whole'."
+          },
+          {
+            "step": 2,
+            "hint_text": "You want to find the percentage of apples. So, the 'part' is the number of apples. The formula for percentage is (Part / Whole) * 100%."
+          },
+          {
+            "step": 3,
+            "hint_text": "Divide the number of apples by the total number of fruits, and then multiply by 100 to get the percentage."
+          }
+        ],
+        "full_solution": "Number of apples = 150\nNumber of oranges = 90\n\nTotal number of fruits = Number of apples + Number of oranges\nTotal number of fruits = 150 + 90 = 240\n\nPercentage of fruits that are apples = (Number of apples / Total number of fruits) * 100%\n= (150 / 240) * 100%\n= (15 / 24) * 100%\n= (5 / 8) * 100%\n= 0.625 * 100%\n= 62.5%\n\n62.5% of the fruits are apples."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q14",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Lily's Savings",
+      "complexity": "Medium",
+      "problem_text": "Lily spent 30% of her savings on a new pair of shoes. She then had $210 left. How much money did she have in her savings at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "300",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identified that $210 represents 70% of her total savings (100% - 30%) and then used this to find 100%.",
+        "keywords": [
+          "percentage",
+          "savings",
+          "spent",
+          "left",
+          "at first",
+          "whole",
+          "remaining"
+        ],
+        "common_misconceptions": {
+          "63": "This is 30% of $210, incorrectly assuming $210 is the total, or finding the amount spent instead of the original amount.",
+          "273": "This might be $210 + (30% of $210), which is incorrect because 30% is of the original amount, not the remaining.",
+          "700": "This might arise from an arithmetic error like 210 / 0.3 or 210 * 100 / 30."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "If Lily spent 30% of her savings, what percentage of her savings did she have left?"
+          },
+          {
+            "step": 2,
+            "hint_text": "The amount she had left ($210) corresponds to the percentage you found in Step 1. So, X% = $210."
+          },
+          {
+            "step": 3,
+            "hint_text": "Using this relationship, find out how much money represents 1%, and then calculate 100% to find her total savings at first."
+          }
+        ],
+        "full_solution": "Total savings at first = 100%\nPercentage spent = 30%\nPercentage left = 100% - 30% = 70%\n\nThe amount she had left ($210) represents 70% of her total savings.\n\n70% --> $210\n1% --> $210 / 70 = $3\n100% --> $3 * 100 = $300\n\nLily had $300 in her savings at first."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q15",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Greenvale Primary School Clubs",
+      "complexity": "Hard",
+      "problem_text": "60% of the students in Greenvale Primary are boys. 25% of the boys join the Football Club. 40% of the girls join the Dance Club. If there are 180 boys in the Football Club, how many girls are there in the Dance Club?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "192",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "This is a multi-step problem. The student needs to: 1) Find the total number of boys. 2) Find the total number of students in the school. 3) Find the total number of girls. 4) Calculate 40% of the total number of girls. Partial credit for correct intermediate steps.",
+        "keywords": [
+          "percentage",
+          "whole",
+          "part",
+          "multi-step",
+          "boys",
+          "girls",
+          "students",
+          "clubs",
+          "total"
+        ],
+        "common_misconceptions": {
+          "72": "This might be 40% of 180, confusing boys in Football Club with total students or girls. Incorrect base for calculation.",
+          "288": "This might be if they incorrectly assumed 40% of all students or some other miscalculation of the girls' population.",
+          "108": "Perhaps if they found 60% of girls, instead of 40%."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Start with the known information: 180 boys in the Football Club represents 25% of ALL boys. Use this to find the total number of boys in the school."
+          },
+          {
+            "step": 2,
+            "hint_text": "Now you know the total number of boys. You are told that 60% of ALL students are boys. Use this to find the total number of students in Greenvale Primary."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the total number of students and the total number of boys, you can find the total number of girls. Remember, the remaining percentage of students will be girls."
+          },
+          {
+            "step": 4,
+            "hint_text": "Finally, calculate how many girls joined the Dance Club, knowing that 40% of the total number of girls joined it."
+          }
+        ],
+        "full_solution": "Step 1: Find the total number of boys.\n25% of boys = 180\n1% of boys = 180 / 25 = 7.2\nTotal boys (100%) = 7.2 * 100 = 720 boys\n\nStep 2: Find the total number of students in the school.\n60% of total students = 720 boys\n1% of total students = 720 / 60 = 12\nTotal students (100%) = 12 * 100 = 1200 students\n\nStep 3: Find the total number of girls in the school.\nTotal girls = Total students - Total boys\nTotal girls = 1200 - 720 = 480 girls\n\nStep 4: Find the number of girls in the Dance Club.\n40% of girls join the Dance Club.\nNumber of girls in Dance Club = 40% of 480\n= (40/100) * 480\n= 0.40 * 480\n= 192 girls\n\nThere are 192 girls in the Dance Club."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q16",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Discount Dilemma",
+      "complexity": "Hard",
+      "problem_text": "During a sale, a bicycle was sold at a 20% discount. The discounted price was $360. A scooter was priced 25% more than the *original* price of the bicycle. What was the original price of the scooter?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "562.50",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly found the original price of the bicycle and then correctly calculated the original price of the scooter based on that.",
+        "keywords": [
+          "discount",
+          "percentage",
+          "original price",
+          "more than",
+          "whole",
+          "part"
+        ],
+        "common_misconceptions": {
+          "360 * 1.25": "This would incorrectly assume the scooter's price is based on the *discounted* bicycle price, not the original price.",
+          "360 / 0.2": "Student might think $360 is 20% of the original, not 80%.",
+          "450 * 0.25": "Student might calculate 25% *of* the original price and add it incorrectly, or just state 25% of it instead of 25% *more* than.",
+          "540": "This indicates student found the original price of the bike ($450) and then calculated 25% of it ($112.50) and added it, but may have made an error or rounded prematurely."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "The discounted price of $360 represents a certain percentage of the bicycle's *original* price. What percentage is that?"
+          },
+          {
+            "step": 2,
+            "hint_text": "If $360 is 80% of the original price, how can you find the value of 100% (the original price of the bicycle)?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the original price of the bicycle, remember that the scooter was priced 25% *more* than this original price. What percentage of the bicycle's original price does the scooter's price represent?"
+          }
+        ],
+        "full_solution": "1. The bicycle was sold at a 20% discount, so the discounted price of $360 represents 100% - 20% = 80% of its original price.\n2. To find the original price of the bicycle:\n   80% = $360\n   1% = $360 / 80 = $4.50\n   100% = $4.50 * 100 = $450\n   The original price of the bicycle was $450.\n3. The scooter was priced 25% more than the *original* price of the bicycle. This means the scooter's price is 100% + 25% = 125% of the bicycle's original price.\n4. To find the original price of the scooter:\n   Scooter's price = 125% of $450\n   Scooter's price = (125/100) * $450\n   Scooter's price = 1.25 * $450 = $562.50\n\nThe original price of the scooter was $562.50."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q17",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Library Books",
+      "complexity": "Hard",
+      "problem_text": "In a library, 30% of the books are fiction. The rest are non-fiction. After 150 non-fiction books were borrowed, the number of non-fiction books remaining was 60% of the total number of books left in the library. How many books were there in the library at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "600",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly set up equations or used a units method to find the initial total number of books.",
+        "keywords": [
+          "percentage",
+          "whole",
+          "part",
+          "remaining",
+          "total"
+        ],
+        "common_misconceptions": {
+          "450": "Student might have found 60% of 150, or calculated something based on initial non-fiction only.",
+          "250": "Student might have calculated 0.7T - 150 = 0.6T, forgetting the 'total left' part."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Let the initial total number of books be 'T'. How can you express the initial number of non-fiction books in terms of 'T'?"
+          },
+          {
+            "step": 2,
+            "hint_text": "After 150 non-fiction books were borrowed, what is the new expression for the number of non-fiction books, and what is the new expression for the *total* number of books left in the library?"
+          },
+          {
+            "step": 3,
+            "hint_text": "You are told that the remaining non-fiction books are 60% of the total books left. Set up an equation using your expressions from Step 2: (Remaining Non-Fiction) = 0.60 * (Total Books Left)."
+          }
+        ],
+        "full_solution": "1. Let the initial total number of books be T.\n2. Initial fiction books = 30% of T = 0.3T.\n3. Initial non-fiction books = 100% - 30% = 70% of T = 0.7T.\n4. After 150 non-fiction books were borrowed:\n   Number of non-fiction books remaining = 0.7T - 150.\n   Total number of books left in the library = T - 150.\n5. According to the problem, the number of non-fiction books remaining was 60% of the total number of books left:\n   0.7T - 150 = 0.60 * (T - 150)\n6. Expand the equation:\n   0.7T - 150 = 0.6T - 90\n7. Gather like terms:\n   0.7T - 0.6T = 150 - 90\n   0.1T = 60\n8. Solve for T:\n   T = 60 / 0.1\n   T = 600\n\nThere were 600 books in the library at first."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q18",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Reading Marathon",
+      "complexity": "Hard",
+      "problem_text": "Chloe read 40% of her book on Monday. On Tuesday, she read 25% of the *remaining* pages. If she still has 135 pages unread, what percentage of the *total* book did she read on Tuesday?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "15",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the percentage of the *total* book read on Tuesday, accounting for the 'remaining' part, and then confirmed the total pages to verify the overall calculation.",
+        "keywords": [
+          "percentage of remaining",
+          "total",
+          "part",
+          "unread",
+          "fraction"
+        ],
+        "common_misconceptions": {
+          "25": "Student might just state 25%, not understanding it's 25% of the *remaining*, not the total.",
+          "10": "Student might have calculated 25% of 40%.",
+          "22.5": "Student might have found 25% of 60% which is 15%, then added 7.5% from 40% * 0.25 (miscalculation).",
+          "45": "Student might have given the total percentage unread, or the actual number of pages read on Tuesday instead of the percentage of the total."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "If Chloe read 40% on Monday, what percentage of the book was *remaining*?"
+          },
+          {
+            "step": 2,
+            "hint_text": "On Tuesday, she read 25% of that *remaining* percentage. How much is 25% of the remaining percentage? This will be the percentage of the *total* book read on Tuesday."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you know the percentage read on Monday and Tuesday, you can find the total percentage read and thus the percentage unread. Use the 135 pages to find the total number of pages in the book if needed to verify your percentage calculation for Tuesday."
+          }
+        ],
+        "full_solution": "1. On Monday, Chloe read 40% of the book. So, the percentage of pages remaining was 100% - 40% = 60%.\n2. On Tuesday, she read 25% of the *remaining* pages. This means she read 25% of 60% of the total book.\n   Percentage read on Tuesday = 25/100 * 60/100 = 1/4 * 0.60 = 0.15 = 15% of the total book.\n3. (Optional step to verify calculation by finding total pages): \n   Total percentage read = 40% (Monday) + 15% (Tuesday) = 55%.\n   Percentage of pages unread = 100% - 55% = 45%.\n   Since 45% of the total book is 135 pages:\n   Total pages = 135 / 0.45 = 300 pages.\n   Pages read on Tuesday = 15% of 300 = 0.15 * 300 = 45 pages.\n   The question asks for the percentage of the *total* book read on Tuesday, which we found in step 2.\n\nChloe read 15% of the total book on Tuesday."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q19",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Factory Quality Control",
+      "complexity": "Hard",
+      "problem_text": "In a batch of electronic components produced, 30% were found to be defective. 2/5 of these defective components were repaired and then sold. The remaining 126 defective components were discarded. What was the total number of electronic components produced in that batch?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "700",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly used the fraction to find the total defective components first, and then used the percentage to find the overall total production.",
+        "keywords": [
+          "defective",
+          "fraction",
+          "percentage",
+          "total",
+          "part",
+          "whole",
+          "remaining"
+        ],
+        "common_misconceptions": {
+          "420": "Student might have calculated 126 / (2/5) or 126 * 0.3. This means they confused the fractions or percentages.",
+          "1050": "Student might have calculated 126 / 0.3 or made other miscalculations with the fractions.",
+          "350": "Student may have correctly found defective parts as 210, but then thought 210 was 60% instead of 30% of total."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Focus on the defective components first. If 2/5 of them were repaired, what fraction of the defective components were discarded?"
+          },
+          {
+            "step": 2,
+            "hint_text": "You know that 126 defective components were discarded. Use the fraction you found in Step 1 to find the *total number* of defective components."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the total number of defective components, remember that this number represents 30% of the *total number of components produced*. Use this information to find the final answer."
+          }
+        ],
+        "full_solution": "1. First, determine the fraction of defective components that were discarded:\n   If 2/5 of defective components were repaired, then 1 - 2/5 = 3/5 of the defective components were discarded.\n2. We are told that 126 defective components were discarded. So, 3/5 of the total defective components is 126.\n   Total defective components = 126 ÷ (3/5)\n   Total defective components = 126 * (5/3)\n   Total defective components = 42 * 5 = 210\n3. These 210 defective components represent 30% of the *total number of electronic components produced*.\n   Let the total number of components produced be 'C'.\n   30% of C = 210\n   0.30 * C = 210\n   C = 210 / 0.30\n   C = 700\n\nThe total number of electronic components produced in that batch was 700."
+      }
+    },
+    {
+      "id": "PERCENTAGE-FINDING-WHOLE-GIVEN-PART-PERCENTAGE-Q20",
+      "sub_topic": "7.1 Finding Whole Given Part and Percentage",
+      "title": "Allowance Budgeting",
+      "complexity": "Hard",
+      "problem_text": "Benjamin spent 30% of his allowance on food. He then spent 25% of the *remaining* allowance on transport. After these two expenses, he had $168 left. What was Benjamin's original allowance?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "320",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly worked backwards through the 'remaining' percentages to find the original allowance.",
+        "keywords": [
+          "allowance",
+          "expenses",
+          "remaining",
+          "percentage",
+          "whole",
+          "part",
+          "reverse calculation"
+        ],
+        "common_misconceptions": {
+          "280": "Student might have calculated 168 / 0.6, thinking the remaining was 60% without accounting for the nested percentage. (100-30 = 70, 70*0.25 = 17.5. 70-17.5 = 52.5. 168/0.525 = 320)",
+          "240": "Student might have misunderstood the 'remaining' and incorrectly calculated the final percentage. (e.g., 100-30-25=45%, then 168/0.45, which is approx 373.33)",
+          "400": "Student might have correctly identified that 75% of remaining after food is 168, so 168/0.75 = 224, but then calculated 224 / 0.5 (for 50%) instead of 224 / 0.7 (for 70%)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Let's work backwards. Before transport expenses, Benjamin had some money left after spending on food. If he spent 25% of *that amount* on transport, what percentage of *that amount* did he have left (which is $168)?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Now you know the amount Benjamin had *after food expenses* (which is the amount before transport). This amount represents what percentage of his *original* allowance, since he spent 30% on food?"
+          },
+          {
+            "step": 3,
+            "hint_text": "If you know the amount that represents 70% of his original allowance, how can you find his original allowance (100%)?"
+          }
+        ],
+        "full_solution": "1. Let Benjamin's original allowance be A.\n2. After spending 30% on food, he had 100% - 30% = 70% of his allowance left.\n   Amount left after food = 0.70 * A.\n3. He then spent 25% of the *remaining* allowance (0.70 * A) on transport. This means he had 100% - 25% = 75% of the amount left after food remaining.\n   Amount remaining after transport = 75% of (0.70 * A)\n   Amount remaining after transport = 0.75 * 0.70 * A\n   Amount remaining after transport = 0.525 * A\n4. We are given that the amount left after these two expenses is $168.\n   So, 0.525 * A = $168\n5. To find A:\n   A = $168 / 0.525\n   A = $320\n\nBenjamin's original allowance was $320."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q1",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Price Increase at the Bookstore",
+      "complexity": "Easy",
+      "problem_text": "A children's storybook originally cost $20. During a special reprinting, its price increased by 10%. What is the new price of the storybook?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "22",
+        "alternative_answers": [
+          "$22",
+          "22.00",
+          "$22.00"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated 10% of $20 and added it to the original price, or calculated 110% of $20.",
+        "keywords": [
+          "percentage increase",
+          "original price",
+          "new price",
+          "cost"
+        ],
+        "common_misconceptions": {
+          "10": "Students might mistakenly add the percentage value (10) directly to the dollar amount ($20) instead of calculating 10% of $20.",
+          "2": "Students might correctly calculate the increase ($2) but forget to add it to the original price to find the new price."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out how much the price increased in dollars. The increase is 10% of the original price."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find 10% of $20, you can calculate (10/100) * $20."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the amount of increase, add it to the original price to find the new price."
+          }
+        ],
+        "full_solution": "Original price = $20\nPercentage increase = 10%\n\nAmount of increase = 10% of $20\n= (10/100) * 20\n= (1/10) * 20\n= $2\n\nNew price = Original price + Amount of increase\n= $20 + $2\n= $22\n\nThe new price of the storybook is $22."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q2",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Fewer Attendees at the Workshop",
+      "complexity": "Easy",
+      "problem_text": "There were 60 students who attended a coding workshop on Monday. On Tuesday, the number of students decreased by 5%. How many students attended the workshop on Tuesday?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "57",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated 5% of 60 and subtracted it from the original number of students, or calculated 95% of 60.",
+        "keywords": [
+          "percentage decrease",
+          "original number",
+          "new number",
+          "students"
+        ],
+        "common_misconceptions": {
+          "55": "Students might mistakenly subtract the percentage value (5) directly from the number of students (60) instead of calculating 5% of 60.",
+          "3": "Students might correctly calculate the decrease (3 students) but forget to subtract it from the original number of students to find the new total."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out how many fewer students attended on Tuesday. This is 5% of the original number of students."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find 5% of 60, you can calculate (5/100) * 60."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the number of students who did not attend, subtract that from the original number of students to find the number of attendees on Tuesday."
+          }
+        ],
+        "full_solution": "Original number of students = 60\nPercentage decrease = 5%\n\nAmount of decrease = 5% of 60\n= (5/100) * 60\n= (1/20) * 60\n= 3 students\n\nNumber of students on Tuesday = Original number - Amount of decrease\n= 60 - 3\n= 57 students\n\n57 students attended the workshop on Tuesday."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q3",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Plant Growth Challenge",
+      "complexity": "Easy",
+      "problem_text": "A sunflower plant was 80 cm tall last month. This month, it grew to 100 cm. What was the percentage increase in its height?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "25",
+        "alternative_answers": [
+          "25%"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly found the difference in height, divided it by the original height, and then multiplied by 100%.",
+        "keywords": [
+          "percentage increase",
+          "original height",
+          "new height",
+          "difference",
+          "growth"
+        ],
+        "common_misconceptions": {
+          "20": "Students might just state the increase in cm (20 cm) instead of converting it to a percentage.",
+          "20/100 * 100% = 20%": "Students might incorrectly divide the increase (20 cm) by the new height (100 cm) instead of the original height (80 cm)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the actual increase in height. How much taller did the plant get?"
+          },
+          {
+            "step": 2,
+            "hint_text": "To find the percentage increase, you need to compare the amount of increase to the original height. The formula is (Amount of Increase / Original Height) * 100%."
+          },
+          {
+            "step": 3,
+            "hint_text": "Substitute your values into the formula: (20 / 80) * 100%."
+          }
+        ],
+        "full_solution": "Original height = 80 cm\nNew height = 100 cm\n\nAmount of increase in height = New height - Original height\n= 100 cm - 80 cm\n= 20 cm\n\nPercentage increase = (Amount of increase / Original height) * 100%\n= (20 / 80) * 100%\n= (1/4) * 100%\n= 25%\n\nThe percentage increase in its height was 25%."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q4",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Toy Sale Discount",
+      "complexity": "Easy",
+      "problem_text": "A toy robot was originally priced at $50. During a school holiday sale, its price dropped to $40. What was the percentage decrease in the price of the toy robot?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "20",
+        "alternative_answers": [
+          "20%"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly found the difference in price, divided it by the original price, and then multiplied by 100%.",
+        "keywords": [
+          "percentage decrease",
+          "original price",
+          "sale price",
+          "discount",
+          "drop"
+        ],
+        "common_misconceptions": {
+          "10": "Students might just state the decrease in dollars ($10) instead of converting it to a percentage.",
+          "10/40 * 100% = 25%": "Students might incorrectly divide the decrease ($10) by the new price ($40) instead of the original price ($50)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the actual decrease in price. How much less is the toy robot now?"
+          },
+          {
+            "step": 2,
+            "hint_text": "To find the percentage decrease, you need to compare the amount of decrease to the original price. The formula is (Amount of Decrease / Original Price) * 100%."
+          },
+          {
+            "step": 3,
+            "hint_text": "Substitute your values into the formula: ($10 / $50) * 100%."
+          }
+        ],
+        "full_solution": "Original price = $50\nNew price = $40\n\nAmount of decrease in price = Original price - New price\n= $50 - $40\n= $10\n\nPercentage decrease = (Amount of decrease / Original price) * 100%\n= ($10 / $50) * 100%\n= (1/5) * 100%\n= 20%\n\nThe percentage decrease in the price of the toy robot was 20%."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q5",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Library Book Collection Growth",
+      "complexity": "Easy",
+      "problem_text": "A school library had 400 storybooks at the beginning of the year. After a successful book donation drive, the number of storybooks increased by 25%. How many storybooks does the library have now?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "500",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated 25% of 400 and added it to the original number of storybooks, or calculated 125% of 400.",
+        "keywords": [
+          "percentage increase",
+          "original total",
+          "new total",
+          "storybooks",
+          "donation"
+        ],
+        "common_misconceptions": {
+          "100": "Students might correctly calculate the increase (100 books) but forget to add it to the original number of books to find the new total.",
+          "425": "Students might mistakenly add the percentage value (25) directly to the number of books (400) instead of calculating 25% of 400."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out how many additional storybooks were added due to the increase. This is 25% of the original number of storybooks."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find 25% of 400, you can calculate (25/100) * 400. Remember that 25% is equivalent to a common fraction."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the number of new books, add them to the original number of storybooks to find the total number of books in the library now."
+          }
+        ],
+        "full_solution": "Original number of storybooks = 400\nPercentage increase = 25%\n\nAmount of increase = 25% of 400\n= (25/100) * 400\n= (1/4) * 400\n= 100 storybooks\n\nNew total number of storybooks = Original number + Amount of increase\n= 400 + 100\n= 500 storybooks\n\nThe library now has 500 storybooks."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q6",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Storybook Collection Growth",
+      "complexity": "Easy",
+      "problem_text": "Ahmad had 40 storybooks. He bought 10 more storybooks. What was the percentage increase in the number of storybooks he had?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "25%",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the increase amount, divided by the original amount, and multiplied by 100 to get the percentage. Accept '25' or '25%'.",
+        "keywords": [
+          "percentage increase",
+          "original amount",
+          "increase amount"
+        ],
+        "common_misconceptions": {
+          "125%": "This is the new number of books as a percentage of the original, not the percentage increase.",
+          "20%": "This might come from dividing the increase by the new total (10/50), which is incorrect. The increase is always compared to the *original* amount.",
+          "0.25": "Student likely calculated the correct fraction but forgot to multiply by 100 to express it as a percentage."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out how many more storybooks Ahmad bought. This is the 'increase amount'."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find the percentage increase, you need to compare the 'increase amount' to the *original* number of storybooks. What was the original number?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Divide the increase amount by the original number of storybooks, then multiply the result by 100 to express it as a percentage."
+          }
+        ],
+        "full_solution": "Original number of storybooks = 40\nNumber of storybooks bought = 10\nIncrease in storybooks = 10\n\nPercentage increase = (Increase in storybooks / Original number of storybooks) × 100%\nPercentage increase = (10 / 40) × 100%\nPercentage increase = (1/4) × 100%\nPercentage increase = 25%\n\nThe percentage increase in the number of storybooks Ahmad had was 25%."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q7",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Changes in Outdoor Playtime",
+      "complexity": "Easy",
+      "problem_text": "Sarah used to spend 60 minutes playing outdoors every day. During the exam period, she reduced her playtime to 45 minutes a day. What was the percentage decrease in her daily outdoor playtime?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "25%",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated the decrease amount, divided by the original amount, and multiplied by 100 to get the percentage. Accept '25' or '25%'.",
+        "keywords": [
+          "percentage decrease",
+          "original amount",
+          "decrease amount"
+        ],
+        "common_misconceptions": {
+          "75%": "This is the new playtime as a percentage of the original (45/60 * 100%). The question asks for the *percentage decrease*.",
+          "33.3% or 33 1/3%": "This might come from dividing the decrease by the new amount (15/45), which is incorrect. The decrease is always compared to the *original* amount.",
+          "0.25": "Student likely calculated the correct fraction but forgot to multiply by 100 to express it as a percentage."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out how many minutes Sarah reduced her playtime by. This is the 'decrease amount'."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find the percentage decrease, you need to compare the 'decrease amount' to her *original* daily playtime. What was her original playtime?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Divide the decrease amount by the original playtime, then multiply the result by 100 to express it as a percentage."
+          }
+        ],
+        "full_solution": "Original daily outdoor playtime = 60 minutes\nNew daily outdoor playtime = 45 minutes\nDecrease in playtime = Original - New = 60 - 45 = 15 minutes\n\nPercentage decrease = (Decrease in playtime / Original playtime) × 100%\nPercentage decrease = (15 / 60) × 100%\nPercentage decrease = (1/4) × 100%\nPercentage decrease = 25%\n\nThe percentage decrease in her daily outdoor playtime was 25%."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q8",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "T-Shirt Sale Price",
+      "complexity": "Medium",
+      "problem_text": "A t-shirt costs $25. During a special sale, its price increased by 20%. What is the new price of the t-shirt?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "$30",
+        "alternative_answers": [
+          "30"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated 20% of $25 and added it to the original price. Accept '30' or '$30'.",
+        "keywords": [
+          "percentage increase",
+          "original price",
+          "new price",
+          "calculate percentage of a quantity"
+        ],
+        "common_misconceptions": {
+          "$5": "This is only the amount of the increase, not the new price.",
+          "$20": "Student might have calculated 20% and then subtracted it from the original price, treating it as a decrease.",
+          "$45": "Student might have added 20 (assuming 20%) directly to $25 without converting percentage to an amount."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the actual dollar amount of the price increase. It's 20% of the original price ($25)."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find 20% of $25, you can calculate (20/100) * $25 or (1/5) * $25."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the increase amount, add it to the original price to find the new price of the t-shirt."
+          }
+        ],
+        "full_solution": "Original price of t-shirt = $25\nPercentage increase = 20%\n\nAmount of increase = 20% of $25\nAmount of increase = (20/100) × $25\nAmount of increase = (1/5) × $25\nAmount of increase = $5\n\nNew price of t-shirt = Original price + Amount of increase\nNew price of t-shirt = $25 + $5\nNew price of t-shirt = $30\n\nThe new price of the t-shirt is $30."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q9",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Nature Park Visitor Count",
+      "complexity": "Medium",
+      "problem_text": "Last month, the Nature Park had 800 visitors. This month, the number of visitors decreased by 15%. How many visitors were there this month?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "680",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated 15% of 800 and subtracted it from the original number of visitors. Accept '680'.",
+        "keywords": [
+          "percentage decrease",
+          "original number",
+          "new number",
+          "calculate percentage of a quantity"
+        ],
+        "common_misconceptions": {
+          "120": "This is only the amount of the decrease, not the new number of visitors.",
+          "920": "Student might have calculated 15% and then added it to the original number, treating it as an increase.",
+          "695": "Student might have subtracted 15 from 800, treating the percentage as an absolute number."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the actual number of visitors that represents the decrease. It's 15% of the original number (800 visitors)."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find 15% of 800, you can calculate (15/100) * 800."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the decrease amount, subtract it from the original number of visitors to find how many visitors there were this month."
+          }
+        ],
+        "full_solution": "Original number of visitors = 800\nPercentage decrease = 15%\n\nAmount of decrease = 15% of 800\nAmount of decrease = (15/100) × 800\nAmount of decrease = 15 × 8\nAmount of decrease = 120 visitors\n\nNumber of visitors this month = Original number - Amount of decrease\nNumber of visitors this month = 800 - 120\nNumber of visitors this month = 680\n\nThere were 680 visitors this month."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q10",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Art Club Enrollment",
+      "complexity": "Medium",
+      "problem_text": "The number of students in the Art Club increased by 20% this year. There are now 48 students in the club. How many students were in the Art Club last year?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "40",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly identified that 48 students represent 120% of the original number and then calculated 100%. Accept '40'.",
+        "keywords": [
+          "percentage increase",
+          "original amount",
+          "new amount",
+          "reverse percentage",
+          "working backwards"
+        ],
+        "common_misconceptions": {
+          "38.4": "This might come from calculating 20% of 48 (9.6) and subtracting it from 48. This is incorrect because 48 is the *new* amount, not the original.",
+          "57.6": "This might come from calculating 20% of 48 (9.6) and adding it to 48, which is also incorrect for similar reasons.",
+          "60": "This might happen if the student assumes 48 is 80% and tries to find 100% by dividing 48 by 0.8."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "If the number of students increased by 20%, what percentage of the *original* number of students does the new number (48) represent?"
+          },
+          {
+            "step": 2,
+            "hint_text": "The original number of students is 100%. If it increased by 20%, then 48 students represent 100% + 20% = 120% of the original number."
+          },
+          {
+            "step": 3,
+            "hint_text": "You know that 120% corresponds to 48 students. To find the original number (100%), you can first find what 1% is equal to (48 divided by 120), then multiply that by 100."
+          }
+        ],
+        "full_solution": "Let the original number of students last year be 100%.\n\nThis year, the number of students increased by 20%.\nSo, the new number of students represents 100% + 20% = 120% of the original number.\n\nWe are given that there are now 48 students in the club, so:\n120% = 48 students\n\nTo find the original number (100%), we can find 1% first:\n1% = 48 / 120\n1% = 0.4 students\n\nNow, find 100%:\n100% = 0.4 × 100\n100% = 40 students\n\nThere were 40 students in the Art Club last year."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q11",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Price Hike at the Bookshop",
+      "complexity": "Medium",
+      "problem_text": "A popular novel originally cost $25. Due to high demand, its price increased by 15%. What is the new price of the novel?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "28.75",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated 15% of the original price and then added it to the original price. Final answer must be in dollars and cents.",
+        "keywords": [
+          "percentage increase",
+          "original price",
+          "new price",
+          "15%"
+        ],
+        "common_misconceptions": {
+          "3.75": "This is only the amount of increase, not the new price. Remember to add this increase to the original price.",
+          "10": "Incorrect calculation. Ensure you calculate 15% of $25, not a simple subtraction or misinterpretation."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the amount of the price increase. What is 15% of $25?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you have the amount of increase, what should you do with this value and the original price to find the new price?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The increase is (15/100) * $25 = $3.75. Now, add this to the original price: $25 + $3.75."
+          }
+        ],
+        "full_solution": "1. Calculate the increase in price:\n   Increase = 15% of $25\n   Increase = (15/100) × $25\n   Increase = $3.75\n\n2. Calculate the new price:\n   New Price = Original Price + Increase\n   New Price = $25 + $3.75\n   New Price = $28.75\n\nThe new price of the novel is $28.75."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q12",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Library Book Collection",
+      "complexity": "Medium",
+      "problem_text": "The school library had 800 non-fiction books. To make space for new arrivals, 10% of the non-fiction books were removed. How many non-fiction books are left in the library?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "720",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly calculated 10% of the original number of books and then subtracted it from the original number. The final answer should be a whole number of books.",
+        "keywords": [
+          "percentage decrease",
+          "total books",
+          "removed",
+          "remaining"
+        ],
+        "common_misconceptions": {
+          "80": "This is the number of books removed, not the number of books left. Remember to subtract the removed books from the original total.",
+          "790": "Incorrect calculation. Ensure you calculate 10% of 800 accurately."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out how many books were removed. What is 10% of 800 books?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you know the number of books removed, how do you find the number of books remaining?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The number of books removed is (10/100) * 800 = 80 books. Now, subtract this from the original total: 800 - 80."
+          }
+        ],
+        "full_solution": "1. Calculate the number of books removed:\n   Books removed = 10% of 800\n   Books removed = (10/100) × 800\n   Books removed = 80\n\n2. Calculate the number of books left:\n   Books left = Original number of books - Books removed\n   Books left = 800 - 80\n   Books left = 720\n\nThere are 720 non-fiction books left in the library."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q13",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Discounted Toy Price",
+      "complexity": "Medium",
+      "problem_text": "During a sale, a toy car was sold at a 20% discount. If its discounted price was $36, what was the original price of the toy car before the discount?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "45",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student understood that the discounted price represents 100% - 20% = 80% of the original price, and then used this to find the original 100%.",
+        "keywords": [
+          "discount",
+          "discounted price",
+          "original price",
+          "percentage"
+        ],
+        "common_misconceptions": {
+          "43.20": "This error likely comes from calculating 20% of $36 and adding it. The 20% discount is on the *original* price, not the discounted price.",
+          "7.20": "This is 20% of $36. You need to find the original price, not just calculate a portion of the discounted price."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "If the toy car was sold at a 20% discount, what percentage of its original price is the discounted price ($36)?"
+          },
+          {
+            "step": 2,
+            "hint_text": "If 80% of the original price is $36, how can you find 1% of the original price?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Since 100% (original price) - 20% (discount) = 80% (discounted price), we know that 80% corresponds to $36. So, 1% = $36 / 80. Then, 100% = (36 / 80) × 100."
+          }
+        ],
+        "full_solution": "1. Understand the percentage of the original price:\n   If there was a 20% discount, the discounted price is 100% - 20% = 80% of the original price.\n\n2. Set up the relationship:\n   80% → $36\n\n3. Find 1%:\n   1% → $36 ÷ 80 = $0.45\n\n4. Find 100% (the original price):\n   100% → $0.45 × 100 = $45\n\nThe original price of the toy car before the discount was $45."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q14",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Company's Annual Profit Changes",
+      "complexity": "Hard",
+      "problem_text": "A company's profit in 2021 was $150,000. In 2022, its profit increased by 20% compared to 2021. However, in 2023, the profit decreased by 10% compared to 2022. What was the company's profit in 2023, and what is the overall percentage change in profit from 2021 to 2023?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 4,
+      "answer_details": {
+        "correct_answer": "162000, 8%",
+        "alternative_answers": [
+          "Profit in 2023: $162000, Overall change: 8% increase",
+          "$162000 and 8% increase"
+        ],
+        "answer_format": "text"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "The student must correctly calculate the profit for 2022, then for 2023, and finally the overall percentage change from 2021 to 2023. Pay attention to the base for each percentage calculation.",
+        "keywords": [
+          "percentage increase",
+          "percentage decrease",
+          "profit",
+          "overall percentage change",
+          "multi-step problem"
+        ],
+        "common_misconceptions": {
+          "165000, 10%": "This error likely comes from adding 20% and subtracting 10% directly, or applying the 10% decrease to the original 2021 profit. Remember that the decrease is based on the 2022 profit, not 2021's.",
+          "162000, 2%": "The profit in 2023 is correct, but the overall percentage change calculation might be wrong (e.g., just subtracting 20%-10% = 10% and applying to 2021). You need to calculate the actual difference and divide by the *original* 2021 profit."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the company's profit in 2022. It increased by 20% from $150,000. What is 120% of $150,000?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Next, calculate the profit in 2023. This profit decreased by 10% *compared to 2022's profit*. So, what is 90% of the profit you calculated for 2022?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Now you have the profit for 2023. To find the overall percentage change from 2021 to 2023, first find the total change in profit ($2023 profit - $2021 profit). Then, express this change as a percentage of the *original* 2021 profit."
+          }
+        ],
+        "full_solution": "1.  **Calculate profit in 2022:**\n    Profit in 2022 = Original Profit + 20% of Original Profit\n    Profit in 2022 = $150,000 + (20/100) * $150,000\n    Profit in 2022 = $150,000 + $30,000 = $180,000\n\n2.  **Calculate profit in 2023:**\n    Profit in 2023 = Profit in 2022 - 10% of Profit in 2022\n    Profit in 2023 = $180,000 - (10/100) * $180,000\n    Profit in 2023 = $180,000 - $18,000 = $162,000\n    *(This is the company's profit in 2023.)*\n\n3.  **Calculate overall change in profit from 2021 to 2023:**\n    Change in profit = Profit in 2023 - Profit in 2021\n    Change in profit = $162,000 - $150,000 = $12,000 (increase)\n\n4.  **Calculate overall percentage change:**\n    Overall percentage change = (Change in profit / Original profit in 2021) * 100%\n    Overall percentage change = ($12,000 / $150,000) * 100%\n    Overall percentage change = (12/150) * 100%\n    Overall percentage change = (2/25) * 100%\n    Overall percentage change = 0.08 * 100% = 8%\n\n    The company's profit in 2023 was $162,000, and the overall percentage change in profit from 2021 to 2023 is an 8% increase."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q15",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Student's Test Score Improvement",
+      "complexity": "Medium",
+      "problem_text": "Last term, Chloe scored 60 marks in her Math test. This term, she worked harder and scored 75 marks. What was the percentage increase in Chloe's Math score?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "25",
+        "alternative_answers": [
+          "25%"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the student correctly found the difference in marks and then expressed that difference as a percentage of the *original* score (last term's score).",
+        "keywords": [
+          "percentage increase",
+          "score",
+          "marks",
+          "original score",
+          "change"
+        ],
+        "common_misconceptions": {
+          "20": "This error likely occurs if the student calculates (15/75)*100%. Remember to divide the change by the *original* score, not the new score.",
+          "15": "This is the difference in marks, not the percentage increase. You need to express this difference as a percentage of the original score."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the actual increase in marks. How many more marks did Chloe score this term compared to last term?"
+          },
+          {
+            "step": 2,
+            "hint_text": "To find the percentage increase, you need to compare the increase in marks to the *original* score. What fraction is the increase out of the original score?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The increase is 75 - 60 = 15 marks. The original score was 60 marks. So, the percentage increase is (15 / 60) × 100%."
+          }
+        ],
+        "full_solution": "1.  **Calculate the increase in marks:**\n    Increase = New score - Original score\n    Increase = 75 - 60 = 15 marks\n\n2.  **Calculate the percentage increase:**\n    Percentage Increase = (Increase / Original score) × 100%\n    Percentage Increase = (15 / 60) × 100%\n    Percentage Increase = (1/4) × 100%\n    Percentage Increase = 25%\n\nThe percentage increase in Chloe's Math score was 25%."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q16",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Discount Dilemma: Finding the Original Price",
+      "complexity": "Hard",
+      "problem_text": "During a special store promotion, a brand new video game console was sold at a 30% discount from its original price. If the discounted price of the console was $525, what was the original price of the console before the discount?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 4,
+      "answer_details": {
+        "correct_answer": "750",
+        "alternative_answers": [
+          "$750",
+          "$750.00"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must correctly identify that the discounted price represents 70% of the original price and use this to find the 100% original price. Look for working like '$525 / 70 * 100' or '$525 / 0.7'.",
+        "keywords": [
+          "discount",
+          "original price",
+          "percentage decrease",
+          "reverse percentage",
+          "100 percent"
+        ],
+        "common_misconceptions": {
+          "705": "A common mistake is to calculate 30% of the discounted price ($525 * 0.30 = $157.50) and then add it to $525, leading to $682.50. This is incorrect because the 30% discount is applied to the *original* price, not the sale price.",
+          "367.5": "Another error is to subtract 30% of $525 from $525 ($525 * 0.7 = $367.5). This incorrectly assumes $525 is the original price, and we are finding the discounted price from it."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "If there was a 30% discount, what percentage of the original price does the discounted price ($525) represent?"
+          },
+          {
+            "step": 2,
+            "hint_text": "The original price is 100%. After a 30% discount, the console is sold for (100% - 30%) = 70% of its original price. So, 70% of the original price is $525."
+          },
+          {
+            "step": 3,
+            "hint_text": "If 70% of the original price is $525, how can you find what 1% is? Then, how can you find 100% (the original price)?"
+          }
+        ],
+        "full_solution": "Let the original price be 100%.\nAfter a 30% discount, the price is (100% - 30%) = 70% of the original price.\nWe are given that 70% of the original price is $525.\n\nTo find 1% of the original price:\n1% = $525 ÷ 70\n1% = $7.50\n\nTo find the original price (100%):\nOriginal price = $7.50 × 100\nOriginal price = $750\n\nAlternatively:\nOriginal price = $525 / 0.70 = $750"
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q17",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Community Growth Reversal",
+      "complexity": "Hard",
+      "problem_text": "The number of residents in Town A increased by 15% this year, reaching a total of 11,500 residents. Last year, the number of residents had decreased by 20% from the number two years ago. How many residents were there in Town A two years ago?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "12500",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must work backwards in two steps. First, find last year's residents by treating 11,500 as 115% of last year's. Second, find residents from two years ago by treating last year's number as 80% of the number two years ago.",
+        "keywords": [
+          "population",
+          "percentage increase",
+          "percentage decrease",
+          "reverse calculation",
+          "two-step problem"
+        ],
+        "common_misconceptions": {
+          "10000": "This is the number of residents last year. Students might stop here after the first reverse calculation.",
+          "9200": "Some students might try to subtract 15% from 11,500, or mistakenly think 11,500 is 100% and then calculate based on that.",
+          "11730": "Incorrectly calculating 15% of 11,500 and 20% of 11,500 and trying to add/subtract."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Start by finding the number of residents last year. If the current number (11,500) is a 15% increase from last year, what percentage of last year's number does 11,500 represent?"
+          },
+          {
+            "step": 2,
+            "hint_text": "This year's residents (11,500) represent 100% + 15% = 115% of last year's residents. So, to find last year's residents, calculate (11,500 / 115) * 100."
+          },
+          {
+            "step": 3,
+            "hint_text": "Now that you have last year's number, say X, remember that X was a 20% decrease from two years ago. So, X represents (100% - 20%) = 80% of the number of residents two years ago. Use this to find the number of residents two years ago."
+          }
+        ],
+        "full_solution": "Step 1: Find the number of residents last year.\nThis year's residents (11,500) increased by 15% from last year. So, 11,500 represents 100% + 15% = 115% of last year's residents.\n115% → 11,500\n1% → 11,500 ÷ 115 = 100\n100% (Last year's residents) → 100 × 100 = 10,000 residents\n\nStep 2: Find the number of residents two years ago.\nLast year's residents (10,000) decreased by 20% from two years ago. So, 10,000 represents 100% - 20% = 80% of the residents two years ago.\n80% → 10,000\n1% → 10,000 ÷ 80 = 125\n100% (Residents two years ago) → 125 × 100 = 12,500 residents\n\nTherefore, there were 12,500 residents in Town A two years ago."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q18",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Stock Market Swings",
+      "complexity": "Hard",
+      "problem_text": "A particular stock's value initially increased by 20% on Monday. On Tuesday, its value then decreased by 25% from its value at the end of Monday. If the stock's initial value was $800, what was its value at the end of Tuesday?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 4,
+      "answer_details": {
+        "correct_answer": "720",
+        "alternative_answers": [
+          "$720",
+          "$720.00"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must correctly calculate the value after the first percentage change, then use that new value as the base for the second percentage change. Look for two sequential calculations, not a single combined percentage.",
+        "keywords": [
+          "stock value",
+          "percentage increase",
+          "percentage decrease",
+          "consecutive change",
+          "new base"
+        ],
+        "common_misconceptions": {
+          "760": "A common error is to directly calculate 20% of $800 (which is $160) and 25% of $800 (which is $200), then add the increase and subtract the decrease from the original: $800 + $160 - $200 = $760. This is wrong because the 25% decrease is applied to the *new* value after Monday's increase, not the original $800.",
+          "820": "Some students might mistakenly add/subtract the percentages (20% - 25% = -5%) and then apply this net change to the original value: $800 * (1 - 0.05) = $760. This is also incorrect as percentage changes are not simply additive or subtractive when applied consecutively."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the stock's value at the end of Monday. If its initial value was $800 and it increased by 20%, what is its value then?"
+          },
+          {
+            "step": 2,
+            "hint_text": "The value at the end of Monday becomes the *new base* for Tuesday's decrease. Calculate the value after a 25% decrease from this new base."
+          },
+          {
+            "step": 3,
+            "hint_text": "Monday's value: $800 × (100% + 20%) = $800 × 1.20. Tuesday's value: (Monday's value) × (100% - 25%) = (Monday's value) × 0.75."
+          }
+        ],
+        "full_solution": "Step 1: Calculate the stock's value at the end of Monday.\nInitial value = $800\nIncrease = 20% of $800 = 0.20 × $800 = $160\nValue at end of Monday = $800 + $160 = $960\n\nAlternatively, Value at end of Monday = $800 × (1 + 0.20) = $800 × 1.20 = $960\n\nStep 2: Calculate the stock's value at the end of Tuesday.\nThe decrease on Tuesday is 25% from the value at the end of Monday ($960).\nDecrease = 25% of $960 = 0.25 × $960 = $240\nValue at end of Tuesday = $960 - $240 = $720\n\nAlternatively, Value at end of Tuesday = $960 × (1 - 0.25) = $960 × 0.75 = $720\n\nTherefore, the stock's value at the end of Tuesday was $720."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q19",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Comparing Athletic Distances",
+      "complexity": "Hard",
+      "problem_text": "During a training session, Cyclist A covered a distance that was 20% more than Cyclist B. Cyclist C covered a distance that was 25% less than Cyclist A. By what percentage was Cyclist C's distance less than Cyclist B's distance?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "10",
+        "alternative_answers": [
+          "10%",
+          "10 percent"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must assign a base value (e.g., 100 units) to Cyclist B, then correctly calculate A's distance relative to B, then C's distance relative to A. Finally, find the percentage difference between C and B, ensuring the base for the final percentage is B's distance.",
+        "keywords": [
+          "relative percentage",
+          "comparison",
+          "percentage more than",
+          "percentage less than",
+          "base value",
+          "units method"
+        ],
+        "common_misconceptions": {
+          "5": "This might come from calculating 25% of 20% (0.25 * 0.20 = 0.05) or from incorrect base for final comparison.",
+          "45": "A common mistake is to simply add or subtract percentages: 20% + 25% = 45% or 25% - 20% = 5%. Percentages are based on different reference points.",
+          "10.5": "Calculation error after finding values. E.g. (90-100)/100 = -10 which means 10% less. Incorrectly rounding intermediate values."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To make calculations easier, let's assume a convenient distance for Cyclist B. For example, let Cyclist B's distance be 100 units."
+          },
+          {
+            "step": 2,
+            "hint_text": "Based on Cyclist B's distance, calculate Cyclist A's distance. Then, using Cyclist A's distance as the new base, calculate Cyclist C's distance."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the 'unit' distances for Cyclist B and Cyclist C, compare them. Find the difference and express it as a percentage of Cyclist B's distance, since the question asks 'less than Cyclist B's distance'."
+          }
+        ],
+        "full_solution": "Step 1: Assign a base value for Cyclist B.\nLet Cyclist B's distance = 100 units.\n\nStep 2: Calculate Cyclist A's distance.\nCyclist A covered 20% more than Cyclist B.\nCyclist A's distance = 100 units + (20% of 100 units)\n= 100 + 20 = 120 units.\n\nStep 3: Calculate Cyclist C's distance.\nCyclist C covered 25% less than Cyclist A.\nCyclist C's distance = 120 units - (25% of 120 units)\n= 120 - (0.25 × 120)\n= 120 - 30 = 90 units.\n\nStep 4: Compare Cyclist C's distance to Cyclist B's distance.\nCyclist B's distance = 100 units\nCyclist C's distance = 90 units\nDifference = 100 - 90 = 10 units.\n\nStep 5: Calculate the percentage difference.\nThe question asks: \"By what percentage was Cyclist C's distance less than Cyclist B's distance?\" This means we compare the difference to Cyclist B's distance.\nPercentage less = (Difference / Cyclist B's distance) × 100%\n= (10 / 100) × 100%\n= 10%\n\nTherefore, Cyclist C's distance was 10% less than Cyclist B's distance."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-INCREASE-DECREASE-Q20",
+      "sub_topic": "7.2 Finding Percentage Increase and Decrease",
+      "title": "Holiday Budgeting",
+      "complexity": "Hard",
+      "problem_text": "Mr. Lim spent 30% of his total holiday budget on air tickets. He then spent 60% of his *remaining* budget on accommodation. If he had $840 left after these two expenses, what was his total holiday budget at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "3000",
+        "alternative_answers": [
+          "$3000",
+          "$3000.00"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must work backwards in two steps, correctly identifying the base for each percentage. The key is understanding 'remaining budget'. First, find the amount before accommodation, then find the original total amount.",
+        "keywords": [
+          "budget",
+          "spending",
+          "remaining amount",
+          "percentage decrease",
+          "reverse calculation",
+          "multi-step problem"
+        ],
+        "common_misconceptions": {
+          "933.33": "This might come from calculating 100 - 30 - 60 = 10% and then assuming $840 is 10% of the original. This is wrong because the 60% is of the *remaining* amount, not the original.",
+          "2100": "This is the amount Mr. Lim had after buying air tickets. Students might stop after the first reverse calculation.",
+          "1344": "A mistake might be to treat both 30% and 60% as percentages of the *original* amount, or trying to subtract 30% and 60% from the $840."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Start by looking at the last expense: accommodation. Mr. Lim had $840 left *after* spending 60% of his *remaining* budget on accommodation. What percentage of that 'remaining budget' does $840 represent?"
+          },
+          {
+            "step": 2,
+            "hint_text": "If he spent 60% of his remaining budget, then $840 is (100% - 60%) = 40% of the money he had just before buying accommodation (which is the money left after air tickets). Calculate that amount."
+          },
+          {
+            "step": 3,
+            "hint_text": "The amount you found in Step 2 is the money left after spending 30% on air tickets. This amount represents (100% - 30%) = 70% of his *total original* budget. Use this to find the total holiday budget at first."
+          }
+        ],
+        "full_solution": "Step 1: Find the amount of money Mr. Lim had after buying air tickets (before accommodation).\nHe spent 60% of his *remaining* budget on accommodation and had $840 left.\nThis means $840 represents (100% - 60%) = 40% of the money he had *after* buying air tickets.\n\n40% → $840\n1% → $840 ÷ 40 = $21\n100% (Money after air tickets) → $21 × 100 = $2100\n\nStep 2: Find his total holiday budget at first.\nThe $2100 he had after buying air tickets represents the money left after spending 30% of his *total* holiday budget on air tickets.\nThis means $2100 represents (100% - 30%) = 70% of his total original budget.\n\n70% → $2100\n1% → $2100 ÷ 70 = $30\n100% (Total original budget) → $30 × 100 = $3000\n\nTherefore, Mr. Lim's total holiday budget at first was $3000."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q1",
+      "sub_topic": "7.3 Word Problems",
+      "title": "Discounted Toy Car Price",
+      "complexity": "Easy",
+      "problem_text": "A toy car costs $40. It is on sale with a 15% discount. How much does the toy car cost after the discount?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "34",
+        "alternative_answers": [
+          "$34",
+          "34.00"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the final price after discount is correctly calculated. The student must find 15% of $40 and then subtract it from the original price.",
+        "keywords": [
+          "percentage",
+          "discount",
+          "sale",
+          "cost",
+          "price"
+        ],
+        "common_misconceptions": {
+          "6": "This is the amount of the discount, not the final price after the discount. Remember to subtract the discount from the original price.",
+          "46": "This implies an increase in price. Discounts mean the price goes down, so you should subtract the discount amount, not add it."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out what 15% of the original price ($40) is. This is the amount of the discount."
+          },
+          {
+            "step": 2,
+            "hint_text": "To calculate 15% of $40, you can multiply 0.15 by 40, or (15/100) * 40."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the discount amount, subtract it from the original price to find the new cost of the toy car."
+          }
+        ],
+        "full_solution": "Original price = $40\nDiscount percentage = 15%\n\nAmount of discount = 15% of $40\n= (15/100) * $40\n= 0.15 * 40\n= $6\n\nCost after discount = Original price - Amount of discount\n= $40 - $6\n= $34\n\nThe toy car costs $34 after the discount."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q2",
+      "sub_topic": "7.3 Word Problems",
+      "title": "School Gender Distribution",
+      "complexity": "Easy",
+      "problem_text": "There are 800 students in Sunshine Primary School. 45% of the students are girls. How many boys are there in the school?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "440",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the number of boys is correctly calculated. This requires finding the percentage of boys first (100% - 45%) and then applying it to the total number of students, or finding the number of girls and subtracting from the total.",
+        "keywords": [
+          "percentage",
+          "total",
+          "part",
+          "students",
+          "boys",
+          "girls"
+        ],
+        "common_misconceptions": {
+          "360": "This is the number of girls. The question asks for the number of boys. Remember to find the percentage of boys first, or subtract the number of girls from the total number of students.",
+          "45": "This is the percentage of girls, not the number of boys."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "If 45% of the students are girls, what percentage of the students are boys?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you know the percentage of boys, calculate that percentage of the total number of students (800)."
+          },
+          {
+            "step": 3,
+            "hint_text": "You can find 55% of 800 by multiplying 0.55 by 800, or (55/100) * 800."
+          }
+        ],
+        "full_solution": "Total number of students = 800\nPercentage of girls = 45%\n\nPercentage of boys = 100% - Percentage of girls\n= 100% - 45%\n= 55%\n\nNumber of boys = 55% of 800\n= (55/100) * 800\n= 0.55 * 800\n= 440\n\nThere are 440 boys in the school."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q3",
+      "sub_topic": "7.3 Word Problems",
+      "title": "Aisha's February Savings",
+      "complexity": "Easy",
+      "problem_text": "Aisha saved $120 in January. In February, she saved 10% more than she did in January. How much money did Aisha save in February?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "132",
+        "alternative_answers": [
+          "$132",
+          "132.00"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the total amount saved in February is correctly calculated, which involves finding 10% of January's savings and adding it to the original amount.",
+        "keywords": [
+          "percentage",
+          "increase",
+          "more than",
+          "savings",
+          "money"
+        ],
+        "common_misconceptions": {
+          "12": "This is the extra amount Aisha saved in February, not the total amount she saved in February. Remember to add this extra amount to her January savings.",
+          "108": "This suggests a decrease in savings. '10% more' means an increase, so you should add the extra amount, not subtract it."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the amount of money that represents 10% of Aisha's January savings ($120)."
+          },
+          {
+            "step": 2,
+            "hint_text": "To find 10% of $120, you can multiply 0.10 by 120, or (10/100) * 120."
+          },
+          {
+            "step": 3,
+            "hint_text": "Since she saved '10% more', you need to add this calculated amount to her January savings ($120) to find her total savings for February."
+          }
+        ],
+        "full_solution": "January savings = $120\nPercentage increase in February = 10%\n\nAmount of increase = 10% of $120\n= (10/100) * $120\n= 0.10 * 120\n= $12\n\nFebruary savings = January savings + Amount of increase\n= $120 + $12\n= $132\n\nAisha saved $132 in February."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q4",
+      "sub_topic": "7.3 Word Problems",
+      "title": "Percentage of Apples in a Box",
+      "complexity": "Easy",
+      "problem_text": "In a box of 25 fruits, there are 7 apples and the rest are oranges. What percentage of the fruits are apples?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "28",
+        "alternative_answers": [
+          "28%"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the percentage of apples is correctly calculated by dividing the number of apples by the total number of fruits and multiplying by 100%.",
+        "keywords": [
+          "percentage",
+          "fraction",
+          "total",
+          "part",
+          "apples",
+          "fruits"
+        ],
+        "common_misconceptions": {
+          "7": "This is the number of apples, not the percentage. Remember to convert the fraction to a percentage.",
+          "72": "This is the percentage of oranges (18/25 * 100%). The question asks for the percentage of apples."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "To find a percentage, you need to form a fraction first: (part / whole)."
+          },
+          {
+            "step": 2,
+            "hint_text": "The 'part' is the number of apples, and the 'whole' is the total number of fruits in the box. Set up this fraction."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the fraction (7/25), multiply it by 100% to convert it into a percentage."
+          }
+        ],
+        "full_solution": "Total number of fruits = 25\nNumber of apples = 7\n\nFraction of fruits that are apples = (Number of apples) / (Total number of fruits)\n= 7 / 25\n\nPercentage of apples = (7/25) * 100%\n= 0.28 * 100%\n= 28%\n\n28% of the fruits are apples."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q5",
+      "sub_topic": "7.3 Word Problems",
+      "title": "Swimming Preference Decrease",
+      "complexity": "Easy",
+      "problem_text": "Last year, 200 students chose swimming as their favourite sport. This year, the number of students who chose swimming decreased by 10%. How many students chose swimming this year?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 1,
+      "answer_details": {
+        "correct_answer": "180",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Check if the final number of students after a 10% decrease is correctly calculated. This involves finding 10% of 200 and subtracting it from the original number.",
+        "keywords": [
+          "percentage",
+          "decrease",
+          "students",
+          "sport",
+          "number"
+        ],
+        "common_misconceptions": {
+          "20": "This is the amount of the decrease, not the final number of students. Remember to subtract the decrease from the original number.",
+          "220": "This implies an increase in students. 'Decreased by' means the number goes down, so you should subtract the decrease amount, not add it."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find out what 10% of the original number of students (200) is. This is the amount of the decrease."
+          },
+          {
+            "step": 2,
+            "hint_text": "To calculate 10% of 200, you can multiply 0.10 by 200, or (10/100) * 200."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you have the decrease amount, subtract it from the original number of students to find how many chose swimming this year."
+          }
+        ],
+        "full_solution": "Original number of students = 200\nPercentage decrease = 10%\n\nAmount of decrease = 10% of 200\n= (10/100) * 200\n= 0.10 * 200\n= 20 students\n\nNumber of students this year = Original number - Amount of decrease\n= 200 - 20\n= 180 students\n\n180 students chose swimming this year."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q6",
+      "sub_topic": "7.3 Word Problems",
+      "title": "Discount on a Toy Car",
+      "complexity": "Easy",
+      "problem_text": "A toy car costs $45. During a sale, it is given a 20% discount. How much does the toy car cost after the discount?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "$36",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must correctly calculate 20% of $45 and then subtract this amount from the original price. Award partial marks for finding the discount amount.",
+        "keywords": [
+          "percentage",
+          "discount",
+          "sale",
+          "subtraction"
+        ],
+        "common_misconceptions": {
+          "25": "Calculated 20% of $45 ($9) and then subtracted 20 instead of $9 from $45, or made a calculation error.",
+          "9": "Found only the discount amount ($9) but did not subtract it from the original price to find the final cost."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the amount of the discount. What is 20% of $45?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you have the discount amount, you need to subtract it from the original price to find the price after the discount."
+          },
+          {
+            "step": 3,
+            "hint_text": "Discount amount = 20/100 × $45 = $9. Final price = Original price - Discount amount."
+          }
+        ],
+        "full_solution": "1. Calculate the discount amount:\n   Discount = 20% of $45\n   Discount = (20/100) × $45\n   Discount = 0.20 × $45 = $9\n\n2. Calculate the price after the discount:\n   Price after discount = Original price - Discount\n   Price after discount = $45 - $9 = $36\n\n**Answer: $36**"
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q7",
+      "sub_topic": "7.3 Word Problems",
+      "title": "Mrs. Tan's Book Collection",
+      "complexity": "Easy",
+      "problem_text": "60% of the books in Mrs. Tan's collection are storybooks. If she has 180 storybooks, how many books does she have in total?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 2,
+      "answer_details": {
+        "correct_answer": "300",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must correctly identify that 180 books represent 60% of the total and use this to find 100%. Award partial marks for finding what 1% represents.",
+        "keywords": [
+          "percentage",
+          "total",
+          "part",
+          "reverse percentage"
+        ],
+        "common_misconceptions": {
+          "108": "Calculated 60% of 180 instead of finding the total when 180 is 60%. This assumes 180 is the total.",
+          "60": "Incorrectly assumed 180 is 100% and divided by 3, or made a calculation error linking percentage to quantity."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You know that 180 storybooks make up 60% of the total collection. Can you find out how many books represent 1%?"
+          },
+          {
+            "step": 2,
+            "hint_text": "If 60% corresponds to 180 books, then 1% corresponds to 180 divided by 60."
+          },
+          {
+            "step": 3,
+            "hint_text": "Once you know what 1% represents, multiply it by 100 to find the total number of books (100%)."
+          }
+        ],
+        "full_solution": "1. Understand the given information:\n   60% of the total books = 180 storybooks\n\n2. Find what 1% of the total books represents:\n   1% = 180 books ÷ 60\n   1% = 3 books\n\n3. Find the total number of books (100%):\n   Total books = 100% × 3 books/%\n   Total books = 300 books\n\n**Answer: 300**"
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q8",
+      "sub_topic": "7.3 Word Problems",
+      "title": "Library Visitors Fluctuations",
+      "complexity": "Medium",
+      "problem_text": "Last month, the local library had 2000 visitors. This month, the number of visitors increased by 20%. Next month, the library expects a 10% decrease from this month's number. How many visitors are expected next month?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "2160",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must correctly calculate the number of visitors for 'this month' first, and then apply the 10% decrease to 'this month's' total. Award partial marks for correct calculation of 'this month's' visitors.",
+        "keywords": [
+          "percentage increase",
+          "percentage decrease",
+          "consecutive percentage",
+          "multi-step problem"
+        ],
+        "common_misconceptions": {
+          "2200": "Calculated 20% of 2000 = 400, then 10% of 2000 = 200, then added 400 and subtracted 200 from 2000 (2000+400-200=2200). This is wrong because the decrease is based on the *new* total, not the original.",
+          "2180": "Made a calculation error, or applied 10% decrease to the original amount, or simply combined percentages (20%-10%=10% increase from original) which is incorrect."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the number of visitors for 'this month'. The number increased by 20% from last month's 2000 visitors."
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you have 'this month's' total, you need to calculate the 10% decrease based on *that* number, not the original 2000 visitors."
+          },
+          {
+            "step": 3,
+            "hint_text": "This month's visitors = 2000 × (100% + 20%) = 2000 × 1.20. Next month's visitors = (This month's visitors) × (100% - 10%) = (This month's visitors) × 0.90."
+          }
+        ],
+        "full_solution": "1. Calculate the number of visitors this month:\n   Increase = 20% of 2000 = (20/100) × 2000 = 400 visitors\n   Visitors this month = 2000 + 400 = 2400 visitors\n   (Alternatively: 2000 × 1.20 = 2400)\n\n2. Calculate the number of visitors expected next month:\n   Decrease = 10% of this month's visitors (2400)\n   Decrease = (10/100) × 2400 = 240 visitors\n   Visitors next month = 2400 - 240 = 2160 visitors\n   (Alternatively: 2400 × 0.90 = 2160)\n\n**Answer: 2160**"
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q9",
+      "sub_topic": "7.3 Word Problems",
+      "title": "School Garden Flowers",
+      "complexity": "Medium",
+      "problem_text": "In a school garden, 70% of the plants are flowering plants. Of the flowering plants, 40% are roses. If there are 84 roses, how many plants are there in total in the garden?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "300",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must work backward. First, find the total number of flowering plants from the number of roses. Then, use the number of flowering plants to find the total number of plants in the garden. Award partial marks for finding the total number of flowering plants.",
+        "keywords": [
+          "percentage of a part",
+          "reverse percentage",
+          "total",
+          "multi-step problem"
+        ],
+        "common_misconceptions": {
+          "120": "Incorrectly found 84 is 70% of something, or 40% of something, but did not chain the reverse calculations correctly.",
+          "210": "Correctly found the number of flowering plants, but failed to calculate the total number of plants."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You know that 84 roses make up 40% of the *flowering plants*. Use this to find the total number of flowering plants."
+          },
+          {
+            "step": 2,
+            "hint_text": "If 40% of flowering plants is 84, then 100% of flowering plants is (84 ÷ 40) × 100."
+          },
+          {
+            "step": 3,
+            "hint_text": "Now you know the total number of flowering plants. This amount represents 70% of the *total plants in the garden*. Use this to find the grand total."
+          }
+        ],
+        "full_solution": "1. Find the total number of flowering plants:\n   Given: 40% of flowering plants = 84 roses\n   So, 1% of flowering plants = 84 ÷ 40 = 2.1 plants\n   Total flowering plants (100%) = 2.1 × 100 = 210 plants\n   (Alternatively: 84 ÷ 0.40 = 210)\n\n2. Find the total number of plants in the garden:\n   Given: 70% of total plants = 210 flowering plants\n   So, 1% of total plants = 210 ÷ 70 = 3 plants\n   Total plants in garden (100%) = 3 × 100 = 300 plants\n   (Alternatively: 210 ÷ 0.70 = 300)\n\n**Answer: 300**"
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q10",
+      "sub_topic": "7.3 Word Problems",
+      "title": "Charity Donation Comparison",
+      "complexity": "Medium",
+      "problem_text": "John donated 25% of his savings to charity. Mary donated 15% of her savings to charity. If both John and Mary had the same amount of savings to begin with, and John donated $30 more than Mary, how much savings did each of them have at first?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "$300",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Student must understand that the difference in donation amounts directly corresponds to the difference in percentages, as their initial savings were the same. Award partial marks for finding the percentage difference.",
+        "keywords": [
+          "percentage difference",
+          "same base",
+          "savings",
+          "reverse percentage"
+        ],
+        "common_misconceptions": {
+          "120": "Incorrectly assumed $30 is 25% or 15% of the total, or did not correctly identify the percentage difference.",
+          "450": "Added the percentages (25%+15%=40%) and then tried to use 40% for calculation, or made a calculation error after finding the correct percentage difference."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "Since John and Mary had the 'same amount of savings', the difference in their donation amounts is purely due to the difference in the percentages they donated."
+          },
+          {
+            "step": 2,
+            "hint_text": "What is the percentage difference between John's donation and Mary's donation? This percentage difference corresponds to the $30 that John donated more."
+          },
+          {
+            "step": 3,
+            "hint_text": "If (Percentage Difference)% of the total savings is $30, how can you find the total savings (100%)?"
+          }
+        ],
+        "full_solution": "1. Find the percentage difference in their donations:\n   John donated 25% and Mary donated 15%. \n   Difference in percentage = 25% - 15% = 10%\n\n2. Relate the percentage difference to the dollar amount:\n   Since John donated $30 more than Mary, this 10% difference in donation corresponds to $30.\n   So, 10% of their total savings = $30\n\n3. Find their total savings (100%):\n   If 10% = $30\n   Then 1% = $30 ÷ 10 = $3\n   Total savings (100%) = $3 × 100 = $300\n\n**Answer: $300**"
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q11",
+      "sub_topic": "7.3 Word Problems",
+      "title": "Discount on a Handbag",
+      "complexity": "Medium",
+      "problem_text": "A handbag was originally priced at $120. During a sale, Mrs. Tan bought it at a 25% discount. How much did Mrs. Tan pay for the handbag?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "$90",
+        "alternative_answers": [
+          "90"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Award full marks for the correct final answer of $90. Partial marks can be awarded for correctly calculating the discount amount ($30) or for identifying that Mrs. Tan paid 75% of the original price.",
+        "keywords": [
+          "percentage",
+          "discount",
+          "sale",
+          "original price",
+          "final price"
+        ],
+        "common_misconceptions": {
+          "$30": "This is the amount of discount, not the amount Mrs. Tan paid. Remember to subtract the discount from the original price.",
+          "$150": "This answer suggests adding the discount instead of subtracting it. A discount means the price goes down."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the amount of the discount in dollars. What is 25% of $120?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you have the discount amount, remember that a discount means the price is reduced. What operation should you perform with the original price and the discount amount?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Alternatively, if Mrs. Tan received a 25% discount, what percentage of the original price did she actually pay? You can calculate this percentage directly."
+          }
+        ],
+        "full_solution": "Method 1: Calculate discount then subtract\nDiscount amount = 25% of $120\n= (25/100) * $120\n= 0.25 * $120\n= $30\n\nAmount Mrs. Tan paid = Original price - Discount amount\n= $120 - $30\n= $90\n\nMethod 2: Calculate percentage paid directly\nPercentage paid = 100% - 25% = 75%\nAmount Mrs. Tan paid = 75% of $120\n= (75/100) * $120\n= 0.75 * $120\n= $90\n\nMrs. Tan paid $90 for the handbag."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q12",
+      "sub_topic": "7.3 Word Problems",
+      "title": "School Concert Attendance",
+      "complexity": "Medium",
+      "problem_text": "280 students attended the school concert. This number was 70% of the total student population of the school. How many students are there in the school?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "400 students",
+        "alternative_answers": [
+          "400"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Award full marks for the correct final answer of 400. Partial marks can be awarded for correctly setting up the proportion or finding the value of 1% of the student population.",
+        "keywords": [
+          "percentage",
+          "total",
+          "part",
+          "population",
+          "inverse percentage"
+        ],
+        "common_misconceptions": {
+          "196": "This is 70% of 280, not the total population. You need to find the whole, not a part of the given number.",
+          "350": "This might come from 280 / 0.8. Ensure you are dividing by the correct percentage (70%)."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "You know that 280 students represent 70% of the total student population. How can you find out what 1% of the student population is equal to?"
+          },
+          {
+            "step": 2,
+            "hint_text": "Once you know the number of students that represents 1%, how can you use this to find the total student population (which is 100%)?"
+          },
+          {
+            "step": 3,
+            "hint_text": "Set up a proportion: If 70% corresponds to 280 students, what does 100% correspond to?"
+          }
+        ],
+        "full_solution": "If 70% of the total student population is 280 students,\nThen, 1% of the total student population = 280 / 70 = 4 students.\n\nTo find the total student population (100%), we multiply the value of 1% by 100:\nTotal student population = 4 students/percent * 100 percent = 400 students.\n\nThere are 400 students in the school."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q13",
+      "sub_topic": "7.3 Word Problems",
+      "title": "Monthly Spending on Food",
+      "complexity": "Medium",
+      "problem_text": "Mr. Lim earns $3200 a month. He saves 20% of his salary and spends the rest. Of the money he spends, 40% is for food. How much does Mr. Lim spend on food each month?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 4,
+      "answer_details": {
+        "correct_answer": "$1024",
+        "alternative_answers": [
+          "1024"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Award full marks for the correct final answer of $1024. Partial marks for correctly calculating the amount Mr. Lim spends in total, or for correctly identifying the percentage of salary spent (80%) and then calculating the money spent on food from that (40% of 80%).",
+        "keywords": [
+          "salary",
+          "savings",
+          "spending",
+          "percentage of remaining",
+          "multi-step percentage"
+        ],
+        "common_misconceptions": {
+          "$1280": "This is 40% of his total salary, but he only spends 80% of his salary. Remember to calculate 40% of the *spending* amount, not the total salary.",
+          "$640": "This is 20% of his salary. This is what he saves, not what he spends on food."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate how much money Mr. Lim saves each month. This is 20% of his salary ($3200)."
+          },
+          {
+            "step": 2,
+            "hint_text": "After finding his savings, determine how much money he *spends*. This is his total salary minus his savings."
+          },
+          {
+            "step": 3,
+            "hint_text": "Finally, calculate 40% of the *amount he spends* to find out how much he spends on food."
+          }
+        ],
+        "full_solution": "Step 1: Calculate amount saved\nSavings = 20% of $3200\n= (20/100) * $3200\n= 0.20 * $3200\n= $640\n\nStep 2: Calculate amount spent\nAmount spent = Total salary - Savings\n= $3200 - $640\n= $2560\n\nStep 3: Calculate amount spent on food\nAmount spent on food = 40% of amount spent\n= 40% of $2560\n= (40/100) * $2560\n= 0.40 * $2560\n= $1024\n\nMr. Lim spends $1024 on food each month."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q14",
+      "sub_topic": "7.3 Word Problems",
+      "title": "Bicycle Shop Total Profit",
+      "complexity": "Hard",
+      "problem_text": "A bicycle shop bought 80 bicycles at $450 each. It sold 75% of them at a profit of 20%. The remaining bicycles were sold at a discount of 10% on their original cost price. What was the total profit made by the shop?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 5,
+      "answer_details": {
+        "correct_answer": "$4500",
+        "alternative_answers": [
+          "4500"
+        ],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Award full marks for the correct final answer of $4500. Partial marks for correctly calculating the total cost, the revenue from the first batch, the revenue from the second batch, or the profit/loss for each batch.",
+        "keywords": [
+          "profit",
+          "loss",
+          "cost price",
+          "selling price",
+          "percentage profit",
+          "percentage discount",
+          "total revenue",
+          "total cost"
+        ],
+        "common_misconceptions": {
+          "Incorrect total cost or revenue calculations": "Ensure you calculate the cost and revenue for ALL 80 bicycles, not just a portion.",
+          "Confusing profit/loss for each batch": "Calculate the profit/loss for the first batch, and the profit/loss (or smaller profit/loss/actual loss) for the second batch separately, then sum them up.",
+          "$4050": "This might come from calculation errors in summing profits or not accounting for the total number of bicycles correctly."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, calculate the total cost price of all 80 bicycles. Then, determine how many bicycles were sold in the first batch (75% of 80) and how many in the second batch (the remainder)."
+          },
+          {
+            "step": 2,
+            "hint_text": "For the first batch, calculate the selling price per bicycle with a 20% profit, and then the total revenue from this batch. For the second batch, calculate the selling price per bicycle with a 10% discount on the cost price, and then the total revenue from this batch."
+          },
+          {
+            "step": 3,
+            "hint_text": "Sum up the revenues from both batches to get the total revenue. Finally, calculate the total profit by subtracting the total cost from the total revenue. Remember: Profit = Total Revenue - Total Cost."
+          }
+        ],
+        "full_solution": "Step 1: Calculate Total Cost Price\nTotal Bicycles = 80\nCost Price per bicycle = $450\nTotal Cost Price = 80 * $450 = $36,000\n\nStep 2: Calculate sales for the first batch (75% of bicycles)\nNumber of bicycles in first batch = 75% of 80 = (75/100) * 80 = 60 bicycles\nSelling Price per bicycle (first batch) = Cost Price + 20% Profit\n= $450 + (20/100 * $450)\n= $450 + $90\n= $540\nRevenue from first batch = 60 * $540 = $32,400\n\nStep 3: Calculate sales for the remaining bicycles\nNumber of remaining bicycles = 80 - 60 = 20 bicycles\nSelling Price per bicycle (remaining) = Cost Price - 10% Discount\n= $450 - (10/100 * $450)\n= $450 - $45\n= $405\nRevenue from remaining bicycles = 20 * $405 = $8100\n\nStep 4: Calculate Total Revenue\nTotal Revenue = Revenue from first batch + Revenue from remaining bicycles\n= $32,400 + $8100 = $40,500\n\nStep 5: Calculate Total Profit\nTotal Profit = Total Revenue - Total Cost Price\n= $40,500 - $36,000 = $4500\n\nThe total profit made by the shop was $4500."
+      }
+    },
+    {
+      "id": "PERCENTAGE-PERCENTAGE-WORD-PROBLEMS-Q15",
+      "sub_topic": "7.3 Word Problems",
+      "title": "Fruit Stall Sales Increase",
+      "complexity": "Medium",
+      "problem_text": "Madam Koh sold 400 kg of apples in January. In February, she sold 500 kg of apples. What was the percentage increase in the sale of apples from January to February?",
+      "asset": {
+        "image_url": null,
+        "svg_code": null
+      },
+      "marks": 3,
+      "answer_details": {
+        "correct_answer": "25%",
+        "alternative_answers": [],
+        "answer_format": "numeric"
+      },
+      "ai_guidance": {
+        "evaluation_strategy": "Award full marks for the correct final answer of 25%. Partial marks for correctly calculating the increase in kg (100 kg) or for correctly setting up the fraction before converting to percentage.",
+        "keywords": [
+          "percentage increase",
+          "change",
+          "original amount",
+          "new amount",
+          "difference"
+        ],
+        "common_misconceptions": {
+          "20%": "This might come from calculating (100/500)*100%. Remember to divide the increase by the *original* amount (January sales) when finding percentage increase.",
+          "100%": "This is the raw increase in kg, not the percentage increase."
+        },
+        "hints": [
+          {
+            "step": 1,
+            "hint_text": "First, find the actual increase in the sale of apples from January to February. How many more kg of apples were sold?"
+          },
+          {
+            "step": 2,
+            "hint_text": "To calculate the percentage increase, you need to compare the increase to the *original* amount. Which month's sales represent the original amount?"
+          },
+          {
+            "step": 3,
+            "hint_text": "The formula for percentage increase is: (Increase / Original Amount) * 100%. Apply this formula using your calculated increase and the original sales amount."
+          }
+        ],
+        "full_solution": "Step 1: Calculate the increase in sale of apples\nIncrease = Sales in February - Sales in January\n= 500 kg - 400 kg\n= 100 kg\n\nStep 2: Calculate the percentage increase\nPercentage Increase = (Increase / Original Amount) * 100%\nOriginal Amount = Sales in January = 400 kg\n\nPercentage Increase = (100 kg / 400 kg) * 100%\n= (1/4) * 100%\n= 0.25 * 100%\n= 25%\n\nThe percentage increase in the sale of apples from January to February was 25%."
+      }
+    }
+  ]
+}

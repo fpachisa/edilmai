@@ -252,6 +252,7 @@ COLLECTIONS = {
     'users': 'users',
     'learners': 'learners', 
     'sessions': 'sessions',
+    'curriculum_questions': 'curriculum_questions',  # Flat collection containing all questions
     'curriculum_algebra': 'curriculum/algebra/items',
     'curriculum_fractions': 'curriculum/fractions/items',
     'curriculum_percentage': 'curriculum/percentage/items',

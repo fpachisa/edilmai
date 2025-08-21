@@ -1,7 +1,9 @@
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 import '../auth_service.dart';
 import '../state/game_state_types.dart';
+import '../config.dart';
 
 /**
  * Production Firestore Service for PSLE AI Tutor
@@ -21,7 +23,12 @@ class FirestoreService {
   Future<void> initialize() async {
     if (_initialized) return;
     
-    _firestore = FirebaseFirestore.instance;
+    // Connect to the production database (Firestore Native mode) instead of default (Datastore mode)
+    _firestore = FirebaseFirestore.instanceFor(
+      app: Firebase.app(),
+      databaseId: 'production',
+    );
+    print('✅ Connected to Firestore production database');
     
     // Configure for offline support
     await _firestore.enablePersistence();
@@ -49,6 +56,10 @@ class FirestoreService {
     Map<String, dynamic>? additionalData,
   }) async {
     try {
+      if (!kAllowClientFirestoreWrites) {
+        // No-op in production; backend API owns writes
+        return;
+      }
       final userData = {
         'user_id': userId,
         'email': email,
@@ -99,6 +110,10 @@ class FirestoreService {
     List<String> subjects = const ['maths'],
   }) async {
     try {
+      if (!kAllowClientFirestoreWrites) {
+        // No-op in production; backend API owns writes
+        return Future.error(FirestoreServiceException('Client learner creation disabled in production'));
+      }
       final learnerId = _firestore.collection('learners').doc().id;
       
       final learnerData = {
@@ -194,6 +209,9 @@ class FirestoreService {
   /// Update learner progress
   Future<void> updateLearnerProgress(String learnerId, Map<String, dynamic> updates) async {
     try {
+      if (!kAllowClientFirestoreWrites) {
+        return; // No-op in production
+      }
       updates['updated_at'] = FieldValue.serverTimestamp();
       await _firestore.collection('learners').doc(learnerId).update(updates);
     } catch (e) {
@@ -204,6 +222,9 @@ class FirestoreService {
   /// Add XP to learner
   Future<void> addXP(String learnerId, int amount) async {
     try {
+      if (!kAllowClientFirestoreWrites) {
+        return; // No-op in production
+      }
       await _firestore.collection('learners').doc(learnerId).update({
         'xp': FieldValue.increment(amount),
         'updated_at': FieldValue.serverTimestamp(),
@@ -216,6 +237,9 @@ class FirestoreService {
   /// Mark item as completed
   Future<void> markItemCompleted(String learnerId, String itemId, String subject) async {
     try {
+      if (!kAllowClientFirestoreWrites) {
+        return; // No-op in production
+      }
       await _firestore.runTransaction((transaction) async {
         final learnerRef = _firestore.collection('learners').doc(learnerId);
         final learnerDoc = await transaction.get(learnerRef);
@@ -263,6 +287,9 @@ class FirestoreService {
     required String moduleId,
   }) async {
     try {
+      if (!kAllowClientFirestoreWrites) {
+        return Future.error(FirestoreServiceException('Client session creation disabled in production'));
+      }
       final sessionId = _firestore.collection('sessions').doc().id;
       
       final sessionData = {
@@ -328,6 +355,9 @@ class FirestoreService {
     Map<String, dynamic>? metadata,
   }) async {
     try {
+      if (!kAllowClientFirestoreWrites) {
+        return; // No-op in production
+      }
       final conversationEntry = {
         'timestamp': FieldValue.serverTimestamp(),
         'role': role,
@@ -351,6 +381,9 @@ class FirestoreService {
     double confidence = 1.0,
   }) async {
     try {
+      if (!kAllowClientFirestoreWrites) {
+        return; // No-op in production
+      }
       await _firestore.runTransaction((transaction) async {
         final sessionRef = _firestore.collection('sessions').doc(sessionId);
         final sessionDoc = await transaction.get(sessionRef);
@@ -397,6 +430,9 @@ class FirestoreService {
     required double finalAccuracy,
   }) async {
     try {
+      if (!kAllowClientFirestoreWrites) {
+        return; // No-op in production
+      }
       await _firestore.runTransaction((transaction) async {
         final sessionRef = _firestore.collection('sessions').doc(sessionId);
         final sessionDoc = await transaction.get(sessionRef);
@@ -467,6 +503,9 @@ class FirestoreService {
   /// Sync local game state with Firestore
   Future<void> syncGameState(String learnerId, GameStateSnapshot gameState) async {
     try {
+      if (!kAllowClientFirestoreWrites) {
+        return; // No-op in production
+      }
       await updateLearnerProgress(learnerId, {
         'xp': gameState.xp,
         'streaks': {

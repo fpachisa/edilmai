@@ -307,6 +307,7 @@ class _SubtopicScreenState extends State<SubtopicScreen> {
             sessionId: res['session_id'] as String,
             stepId: (res['step_id'] as String?) ?? 's1',
             prompt: (res['prompt'] as String?) ?? "Let's explore ${module.title} together!",
+            assets: res['assets'] as Map<String, dynamic>?,
             moduleContext: module,
           ),
           transitionsBuilder: (_, a, __, child) => 

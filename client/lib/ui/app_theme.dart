@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'design_tokens.dart';
@@ -257,11 +258,14 @@ class AppTheme {
 
 class AppGradients {
   // Neutral, sample-based dark hero gradient
-  static const List<Color> hero = [Color(0xFF121316), Color(0xFF17181D), Color(0xFF1F2026)];
+  static const List<Color> heroDark = [Color(0xFF121316), Color(0xFF17181D), Color(0xFF1F2026)];
+  static const List<Color> heroLight = [Color(0xFFFFFFFF), Color(0xFFF8FAFC), Color(0xFFF2F4F8)];
+
   static const LinearGradient primary = LinearGradient(
-    colors: [Color(0xFF5BA843), Color(0xFF3B969D)],
+    colors: [Color(0xFF5BA843), Color(0xFF3B969D), Color(0xFF6C38B8)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
+    stops: [0.0, 0.5, 1.0],
   );
 }
 
@@ -347,17 +351,11 @@ class AnimatedBackground extends StatefulWidget {
 
 class _AnimatedBackgroundState extends State<AnimatedBackground> with SingleTickerProviderStateMixin {
   late final AnimationController _c;
-  late final Animation<Color?> _c1;
-  late final Animation<Color?> _c2;
-  late final Animation<Color?> _c3;
 
   @override
   void initState() {
     super.initState();
     _c = AnimationController(vsync: this, duration: const Duration(seconds: 8))..repeat(reverse: true);
-    _c1 = ColorTween(begin: const Color(0xFF121316), end: const Color(0xFF17181D)).animate(CurvedAnimation(parent: _c, curve: Curves.easeInOut));
-    _c2 = ColorTween(begin: const Color(0xFF17181D), end: const Color(0xFF1F2026)).animate(CurvedAnimation(parent: _c, curve: Curves.easeInOut));
-    _c3 = ColorTween(begin: const Color(0xFF1F2026), end: const Color(0xFF121316)).animate(CurvedAnimation(parent: _c, curve: Curves.easeInOut));
   }
 
   @override
@@ -371,15 +369,35 @@ class _AnimatedBackgroundState extends State<AnimatedBackground> with SingleTick
     return AnimatedBuilder(
       animation: _c,
       builder: (context, _) {
+        final scheme = Theme.of(context).colorScheme;
+        final isDark = scheme.brightness == Brightness.dark;
+
+        // Base tones derived from theme to support light/dark
+        final base1 = isDark ? AppGradients.heroDark[0] : AppGradients.heroLight[0];
+        final base2 = isDark ? AppGradients.heroDark[1] : AppGradients.heroLight[1];
+        final base3 = isDark ? AppGradients.heroDark[2] : AppGradients.heroLight[2];
+
+        // Subtle breathing using lightness shift
+        Color shift(Color c, double amount) {
+          final hsl = HSLColor.fromColor(c);
+          final l = (hsl.lightness + amount).clamp(0.0, 1.0);
+          return hsl.withLightness(l).toColor();
+        }
+
+        final t = (math.sin(_c.value * math.pi) * (isDark ? 0.04 : 0.03));
+        final c1 = shift(base1, t);
+        final c2 = shift(base2, -t * 0.8);
+        final c3 = shift(base3, t * 0.6);
+
         return Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: [
-                _c1.value ?? AppGradients.hero[0],
-                _c2.value ?? AppGradients.hero[1],
-                _c3.value ?? AppGradients.hero[2],
+                c1,
+                c2,
+                c3,
               ],
             ),
           ),

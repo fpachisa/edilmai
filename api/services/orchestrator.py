@@ -2,8 +2,8 @@ from __future__ import annotations
 from typing import Tuple, Optional, Dict, Any, List
 from sympy import sympify, Eq
 
-from api.core.config import settings
-from api.services.llm import build_llm, LLMClient
+from core.config import settings
+from services.llm import build_llm, LLMClient
 
 
 def cas_equivalent(user: str, target: str) -> bool:
@@ -177,7 +177,8 @@ Example responses:
             "confidence_level": confidence_level
         }
         
-        if is_correct and should_advance:
+        # Advance strictly on correctness; ignore should_advance to avoid dead-ends
+        if is_correct:
             return True, response_text, None, result
         else:
             # Return as hint for incorrect responses

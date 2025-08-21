@@ -89,13 +89,10 @@ class _AuthScreenState extends State<AuthScreen>
       final userCredential = await AuthService.signInWithGoogle();
       print('AuthScreen: Google Sign-in result: ${userCredential?.user?.uid ?? 'null'}');
       if (userCredential?.user != null && mounted) {
-        print('AuthScreen: Sign-in successful, setting loading false');
+        print('AuthScreen: Sign-in successful, navigating back to AuthWrapper');
         print('AuthScreen: Current user after sign-in: ${AuthService.currentUser?.uid}');
-        
-        // Manual navigation since AuthWrapper stream isn't working
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => const AppShell()),
-        );
+        // Navigate back to home (AuthWrapper) so it can detect the auth state change
+        Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
       }
     } on AuthException catch (e) {
       print('AuthScreen: AuthException - ${e.message}');
@@ -121,10 +118,9 @@ class _AuthScreenState extends State<AuthScreen>
     try {
       final userCredential = await AuthService.signInWithApple();
       if (userCredential?.user != null && mounted) {
-        // Manual navigation since AuthWrapper stream isn't working
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => const AppShell()),
-        );
+        print('AuthScreen: Apple Sign-in successful, letting AuthWrapper handle navigation');
+        // Let AuthWrapper handle navigation via auth state stream - don't manually navigate
+        setState(() => _loading = false);
       }
     } on AuthException catch (e) {
       setState(() {
@@ -167,10 +163,9 @@ class _AuthScreenState extends State<AuthScreen>
       }
 
       if (userCredential.user != null && mounted) {
-        // Manual navigation since AuthWrapper stream isn't working
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => const AppShell()),
-        );
+        print('AuthScreen: Email Sign-in successful, letting AuthWrapper handle navigation');
+        // Let AuthWrapper handle navigation via auth state stream - don't manually navigate
+        setState(() => _loading = false);
       }
     } on AuthException catch (e) {
       setState(() {
